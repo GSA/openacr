@@ -1,0 +1,25 @@
+name: pre-commit
+
+on:
+  pull_request:
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v2
+      # Skip checks that don't auto-fix issues initially.
+      - uses: pre-commit/action@v2.0.0
+        env:
+          SKIP: remark,check-yaml,check-json,check-added-large-files
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      # Final run without committing to ensure passes.
+      - uses: pre-commit/action@v2.0.0
+        env:
+          # We skip checks that have their own actions.
+          SKIP: remark.
