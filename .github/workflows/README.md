@@ -1,10 +1,10 @@
 # Workflows
 
-## backlog-issues.yml
+## backlog-issues.yaml
 
 Automatically place new/reopened issues in to the project board.
 
-## pre-commit.yml
+## pre-commit.yaml
 
 Run pre-commit hooks to clean up site based on configurations in .pre-commit-config.yaml include searching and replacing smart quotes defined in .pre-commit-search-and-replace.yaml.
 
