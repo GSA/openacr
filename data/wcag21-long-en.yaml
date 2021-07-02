@@ -4568,12 +4568,12 @@ principles:
               pages are identified consistently.
             sufficientNotes:
               - >-
-                Text alternatives that are “consistent” are not always
-                “identical.” For instance, you may have an graphical arrow at
+                Text alternatives that are "consistent" are not always
+                "identical." For instance, you may have an graphical arrow at
                 the bottom of a Web page that links to the next Web page. The
-                text alternative may say “Go to page 4.” Naturally, it would not
+                text alternative may say "Go to page 4." Naturally, it would not
                 be appropriate to repeat this exact text alternative on the next
-                Web page. It would be more appropriate to say “Go to page 5”.
+                Web page. It would be more appropriate to say "Go to page 5".
                 Although these text alternatives would not be identical, they
                 would be consistent, and therefore would satisfy this Success
                 Criterion.
@@ -4584,8 +4584,8 @@ principles:
                 with the use of icons such as check marks, cross marks, and
                 traffic signs. Their functions can be different depending on the
                 context of the Web page. A check mark icon may function as
-                “approved”, “completed”, or “included”, to name a few, depending
-                on the situation. Using “check mark” as text alternative across
+                "approved", "completed", or "included", to name a few, depending
+                on the situation. Using "check mark" as text alternative across
                 all Web pages does not help users understand the function of the
                 icon. Different text alternatives can be used when the same
                 non-text content serves multiple functions.
@@ -4803,7 +4803,7 @@ principles:
             sufficientNotes:
               - >-
                 The techniques at the end of the above list should be considered
-                “last resort” and only used when the other techniques cannot be
+                "last resort" and only used when the other techniques cannot be
                 applied to the page. The earlier techniques are preferred
                 because they increase accessibility to a wider user group.
             techniques:
