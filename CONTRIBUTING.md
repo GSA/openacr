@@ -1,4 +1,4 @@
-This document is about how to contribute to the 18f.gsa.gov site. This process looks a bit different depending on whether you’re a member of the public, an 18F employee, or a member of the outreach or site team. Here’s what you can find in this doc:
+This document is about how to contribute to the 18f.gsa.gov site. This process looks a bit different depending on whether you're a member of the public, an 18F employee, or a member of the outreach or site team. Here's what you can find in this doc:
 
 * [Public contributions](#public-contributions)
 * [18F contributions](#18f-contributions)
@@ -33,7 +33,7 @@ Because new blog posts are published several times a week, we use several branch
 * Submit **blog posts and minor content edits** as pull requests to the `master` branch.
 * Submit **new design work, content changes, and features** as pull requests to the `dev` branch. This will allow us to test and review batches of changes before deploying them.
 
-**The `master`, `staging`, and `production` branches are protected.** Only administrators of the repo can push directly to those branches. 18F teammates who don’t think they have the correct permissions should ask in the #18f-site channel.
+**The `master`, `staging`, and `production` branches are protected.** Only administrators of the repo can push directly to those branches. 18F teammates who don't think they have the correct permissions should ask in the #18f-site channel.
 
 ### Submitting pull requests
 
@@ -49,7 +49,7 @@ Complete the PR message by detailing all fixes and tagging GitHub users who shou
 - If you are an admin for the repo or a member of the 18F site team, you are responsible for merging your own PRs **after they have been reviewed and approved by someone else on the team**
 - If you have been asked to review a PR, leave a clear message indicating your approval, either through the formal PR review feature or by commenting (at the very least, with a note saying `LGTM`, or "Looks good to me")
 - If your PR includes many small, incremental commits, consider squashing them
-- Don’t merge until linters pass, unless you have discussed with reviewers and approved exceptions
+- Don't merge until linters pass, unless you have discussed with reviewers and approved exceptions
 
 ### Front end architecture
 
