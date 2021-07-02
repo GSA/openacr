@@ -1,0 +1,313 @@
+non-text-content:
+  dev: captcha images text-alternatives video
+  int: audio video buttons carousels captcha
+  vis: images images-of-text animation progress-steps text-alternatives video
+  con: audio captions content images live-stream moving-content text-alternatives video visual-cues buttons
+audio-only-and-video-only-prerecorded:
+  dev: video text-alternatives
+  int: audio video
+  vis: animation text-alternatives video
+  con: audio captions content moving-content text-alternatives video
+captions-prerecorded:
+  dev: video text text-alternatives
+  int: audio video
+  vis: animation text-alternatives video
+  con: audio captions content moving-content text-alternatives video
+audio-description-or-media-alternative-prerecorded:
+  dev: video
+  int: audio video
+  vis: animation video
+  con: content video
+captions-live:
+  dev: video text text-alternatives
+  int: audio video streaming
+  vis: animation text-alternatives video
+  con: audio captions content live-stream
+audio-description-prerecorded:
+  dev: video
+  int: audio video streaming
+  vis: animation text-alternatives video
+  con: content live-stream video
+sign-language-prerecorded:
+  dev: video
+  int: audio video
+  vis: video
+  con: audio content video
+extended-audio-description-prerecorded:
+  dev: video
+  int: audio video
+  vis: animation video
+  con: content video
+media-alternative-prerecorded:
+  dev: video text text-alternatives images
+  int: audio video
+  vis: animation text-alternatives video
+  con: audio content video
+audio-only-live:
+  dev: text text-alternatives
+  int: audio streaming
+  vis: text-alternatives
+  con: audio live-stream
+info-and-relationships:
+  dev: forms headings labels menus markup structure tables
+  int: buttons carousels changing-content controls errors forms modals navigation skip-to-content
+  vis: hidden-content layout progress-steps structure tables
+  con: consistent-experience content headings hidden-content progress-steps structure visual-cues
+meaningful-sequence:
+  dev: forms keyboard structure
+  int: buttons carousels controls errors focus forms navigation skip-to-content tab-order
+  vis: hidden-content layout progress-steps structure tables
+  con: consistent-experience content hidden-content messaging progress-steps structure
+sensory-characteristics:
+  dev: text
+  int: buttons controls errors navigation
+  vis: color layout structure
+  con: audio consistent-experience content messaging visual-cues
+orientation:
+  dev: meta-tag viewport mobile
+  int: meta-tag viewport mobile
+  vis: user-interface orientation mobile layout
+identify-input-purpose:
+  dev: forms controls auto-complete
+  int: forms controls auto-complete
+identify-purpose:
+  dev: regions icons components controls forms
+  int: regions icons components controls forms
+  vis: regions icons
+  con: regions icons
+use-of-color:
+  int: buttons controls errors focus forms navigation
+  vis: color text
+  con: content links messaging text
+audio-control:
+  dev: controls video
+  int: audio autoplay controls streaming video
+  con: buttons
+contrast-minimum:
+  int: buttons errors focus forms navigation
+  vis: color contrast images-of-text text
+  con: content messaging
+resize-text:
+  dev: text
+  vis: layout text zoom
+images-of-text:
+  dev: images text
+  int: buttons
+  vis: contrast images-of-text text text-alternatives
+  con: content images text text-alternatives
+contrast-enhanced:
+  int: buttons errors focus forms navigation
+  vis: color contrast images-of-text text
+  con: content messaging
+low-or-no-background-audio:
+  dev: captcha video
+  int: audio autoplay controls streaming captcha
+visual-presentation:
+  dev: controls text
+  int: controls
+  vis: color contrast layout structure text zoom
+  con: content structure text
+images-of-text-no-exception:
+  dev: images text
+  int: buttons
+  vis: contrast images images-of-text text text-alternatives
+  con: consistent-experience structure text
+reflow:
+  dev: media-queries screen-size orientation mobile zoom
+  int: media-queries screen-size orientation mobile zoom
+  vis: text screen-size orientation layout mobile reflow
+  con: text screen-size orientation reflow
+non-text-contrast:
+  int: contrast graphical-objects
+  vis: color controls contrast graphical-objects
+  con: contrast graphical-objects
+text-spacing:
+  dev: reflow layout text
+  int: reflow layout text
+  vis: reflow text readability
+  con: reflow text readability
+content-on-hover-or-focus:
+  dev: interaction pop-up keyboard hover focus navigation
+  int: interaction pop-up keyboard hover focus navigation
+  vis: interaction pop-up hover focus navigation
+keyboard:
+  dev: controls focus keyboard events video
+  int: autoplay buttons carousels controls errors focus forms events navigation streaming video tab-order skip-to-content
+  con: links messaging
+no-keyboard-trap:
+  dev: controls focus keyboard events video
+  int: autoplay buttons carousels controls errors focus forms events navigation streaming video tab-order skip-to-content
+keyboard-no-exception:
+  dev: controls focus keyboard events video
+  int: autoplay buttons carousels controls errors focus forms events navigation streaming video tab-order skip-to-content
+character-key-shortcuts:
+  dev: focus keyboard
+  int: focus keyboard
+timing-adjustable:
+  dev: controls
+  int: controls time-limits
+pause-stop-hide:
+  dev: controls video
+  int: audio autoplay carousels changing-content controls video time-limits
+  vis: blinking animation video
+  con: buttons
+no-timing:
+  dev: controls
+  int: controls time-limits
+interruptions:
+  dev: controls
+  int: controls errors changing-content time-limits
+re-authenticating:
+  int: forms time-limits
+  vis: text
+timeouts:
+  dev: controls errors changing-content time-limits
+  int: controls errors changing-content time-limits notifications
+  vis: content visual-cues notifications
+three-flashes-or-below-threshold:
+  vis: flashing animation
+  con: content video moving-content
+three-flashes:
+  vis: flashing animation
+  con: content video moving-content
+animation-from-interactions:
+  dev: controls animation keyboard focus interaction
+  int: controls animation keyboard focus interaction
+  vis: consistent-experience visual-cues controls animation interaction
+bypass-blocks:
+  dev: headings menus markup structure iframes
+  int: navigation skip-to-content
+  vis: layout structure
+  con: headings
+page-titled:
+  dev: page-title
+  int: navigation
+  vis: structure progress-steps
+  con: content page-title structure
+focus-order:
+  dev: errors focus forms keyboard links menus events
+  int: buttons carousels controls errors focus forms modals events navigation skip-to-content tab-order
+  vis: structure
+  con: buttons
+link-purpose-in-context:
+  dev: links menus
+  int: buttons navigation
+  con: content links buttons
+multiple-ways:
+  dev: menus
+  int: navigation
+  vis: structure
+headings-and-labels:
+  dev: errors forms headings labels menus tables
+  int: errors forms navigation
+  vis: text
+  con: content headings messaging
+focus-visible:
+  dev: controls focus keyboard menus
+  int: controls focus navigation skip-to-content tab-order
+  vis: color contrast progress-steps
+  con: buttons
+location:
+  dev: menus
+  int: navigation
+link-purpose-link-only:
+  dev: menus links
+  int: buttons navigation
+  con: content links buttons
+section-headings:
+  dev: headings markup structure
+  vis: structure text
+  con: content headings progress-steps
+pointer-gestures:
+  dev: controls events mobile
+  int: controls events mobile
+pointer-cancellation:
+  dev: controls events mobile
+  int: controls events mobile
+label-in-name:
+  dev: controls buttons forms labels links
+  int: controls buttons forms labels links
+  vis: consistent-experience content visual-cues controls buttons forms labels
+  con: consistent-experience content visual-cues controls buttons forms labels
+motion-actuation:
+  dev: controls keyboard mobile
+  int: controls keyboard mobile
+target-size:
+  int: buttons controls forms mobile
+  vis: buttons controls forms mobile
+concurrent-input-mechanisms:
+  dev: navigation links controls events mobile keyboard
+language-of-page:
+  dev: language text
+  vis: text
+language-of-parts:
+  dev: language text
+  vis: text
+unusual-words:
+  dev: text markup
+  vis: text
+  con: content
+abbreviations:
+  dev: text markup
+  vis: text
+  con: content
+reading-level:
+  vis: text
+  con: content
+pronunciation:
+  vis: text
+  con: content
+on-focus:
+  dev: controls focus forms menus events
+  int: controls forms events navigation
+on-input:
+  dev: controls forms menus events
+  int: controls forms events navigation
+consistent-navigation:
+  dev: menus
+  int: navigation
+  vis: layout progress-steps
+  con: progress-steps
+consistent-identification:
+  dev:  controls forms menus structure
+  int: buttons controls forms modals navigation
+  vis: progress-steps structure
+  con: consistent-experience content visual-cues buttons
+change-on-request:
+  dev:  controls forms menus events
+  int: controls forms events navigation
+error-identification:
+  dev: controls errors focus forms labels
+  int: controls errors focus forms
+  con: content
+labels-or-instructions:
+  dev: controls focus forms labels
+  int: controls errors focus forms
+  con: content messaging progress-steps visual-cues
+error-suggestion:
+  dev: controls errors focus forms labels
+  int: controls errors focus forms
+  con: content messaging
+error-prevention-legal-financial-data:
+  dev: errors forms
+  int: errors forms
+  con: content messaging
+help:
+  dev: errors forms text
+  int: errors
+  vis: text
+  con: content messaging
+error-prevention-all:
+  dev: errors forms
+  int: errors forms
+  con: content
+parsing:
+  dev: markup structure
+name-role-value:
+  dev: markup structure forms labels menus video
+  con: messaging moving-content
+status-messages:
+  dev: forms errors
+  int: errors forms messaging
+  vis: content messaging progress-steps visual-cues
+  con: content messaging
