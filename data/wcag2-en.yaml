@@ -1227,20 +1227,20 @@ principles:
       text: Components that have the same functionality within a set of Web pages
         are identified consistently.
       sufficientNotes:
-      - Text alternatives that are “consistent” are not always “identical.” For instance,
+      - Text alternatives that are "consistent" are not always "identical." For instance,
         you may have an graphical arrow at the bottom of a Web page that links to
-        the next Web page. The text alternative may say “Go to page 4.” Naturally,
+        the next Web page. The text alternative may say "Go to page 4." Naturally,
         it would not be appropriate to repeat this exact text alternative on the next
-        Web page. It would be more appropriate to say “Go to page 5”. Although these
+        Web page. It would be more appropriate to say "Go to page 5". Although these
         text alternatives would not be identical, they would be consistent, and therefore
         would satisfy this Success Criterion.
       - A single non-text-content-item may be used to serve different functions. In
         such cases, different text alternatives are necessary and should be used.
         Examples can be commonly found with the use of icons such as check marks,
         cross marks, and traffic signs. Their functions can be different depending
-        on the context of the Web page. A check mark icon may function as “approved”,
-        “completed”, or “included”, to name a few, depending on the situation. Using
-        “check mark” as text alternative across all Web pages does not help users
+        on the context of the Web page. A check mark icon may function as "approved",
+        "completed", or "included", to name a few, depending on the situation. Using
+        "check mark" as text alternative across all Web pages does not help users
         understand the function of the icon. Different text alternatives can be used
         when the same non-text content serves multiple functions.
     - id: WCAG2:change-on-request
@@ -1286,7 +1286,7 @@ principles:
       handle: Labels or Instructions
       text: Labels or instructions are provided when content requires user input.
       sufficientNotes:
-      - The techniques at the end of the above list should be considered “last resort”
+      - The techniques at the end of the above list should be considered "last resort"
         and only used when the other techniques cannot be applied to the page. The
         earlier techniques are preferred because they increase accessibility to a
         wider user group.
@@ -1427,4 +1427,3 @@ principles:
       text: In content implemented using markup languages, status messages can be
         programmatically determined through role or properties such that they can
         be presented to the user by assistive technologies without receiving focus.
-
