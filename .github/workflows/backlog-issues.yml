@@ -17,4 +17,4 @@ jobs:
         with:
           action-token: ${{ secrets.GITHUB_TOKEN }}
           project-url: 'https://github.com/GSA/vpat-digitization/projects/1'
-          column-name: 'To do'
+          column-name: 'Product Backlog'
