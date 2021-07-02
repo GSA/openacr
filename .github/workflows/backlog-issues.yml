@@ -8,7 +8,7 @@ on:
 
 jobs:
   triage_issues:
-    if: github.repository == 'GSA/vpat-digitization'
+    if: github.repository == 'GSA/open-product-accessibility-template'
     runs-on: ubuntu-latest
 
     steps:
@@ -16,5 +16,5 @@ jobs:
         uses: rachmari/actions-add-new-issue-to-column@1a459ef92308ba7c9c9dc2fcdd72f232495574a9
         with:
           action-token: ${{ secrets.GITHUB_TOKEN }}
-          project-url: 'https://github.com/GSA/vpat-digitization/projects/1'
+          project-url: 'https://github.com/GSA/open-product-accessibility-template/projects/1'
           column-name: 'Product Backlog'
