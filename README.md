@@ -8,11 +8,11 @@ This project will develop a digital product accessibility template minimum viabl
 
 ## Approach
 
-The team is building OPAT to be an open standard initially based on the framework provided by the [ITI VPAT®](https://www.itic.org/policy/accessibility/vpat). The VPAT® is well recognized and [VPAT 2.4Rev 508 (March 07, 2020)](https://www.itic.org/dotAsset/b282ab06-0ab2-4540-adc2-78698058dfc3.doc) (Word) allows us to build on WCAG 2.0 specifications for the initial framework. 
+The team is building OPAT to be an open standard initially based on the framework provided by the [ITI VPAT®](https://www.itic.org/policy/accessibility/vpat). The VPAT® is well recognized and [VPAT 2.4Rev 508 (March 07, 2020)](https://www.itic.org/dotAsset/b282ab06-0ab2-4540-adc2-78698058dfc3.doc) (Word) allows us to build on WCAG 2.0 specifications for the initial framework.
 
-The ACR will be written in YAML to allow the text to be more human readable and allow us to include comments. This will be part of the JSON Schema used to associate a catalog/schema and provide further expansion. 
+The ACR will be written in YAML to allow the text to be more human readable and allow us to include comments. This will be part of the JSON Schema used to associate a catalog/schema and provide further expansion.
 
-Most users will interact with the ACR as accessible HTML files. These will be generated from the YAML files by JavaScript tool which extracts the content into structured HTML. The style elements will then be added by CSS, which vendors will be free to customize to include their branding. 
+Most users will interact with the ACR as accessible HTML files. These will be generated from the YAML files by JavaScript tool which extracts the content into structured HTML. The style elements will then be added by CSS, which vendors will be free to customize to include their branding.
 
 The repositories will be built on a git repository like GitHub so that version control is included. Authors can write the compliance report as JSON files manually, or use a tool similar to WCAG-EM.
 
