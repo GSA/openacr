@@ -5,9 +5,13 @@ This project includes a mix of the following:
 
 ## Parts of this project that are not in the public domain
 
-This site is based on the Draft U.S. Web Design System (WDS), which also includes works under the SIL Open Font License, MIT license, and public domain. Files from the WDS are in `_sass/_libs/wds/`, and the full license details for those assets are described in the [WDS license file](https://github.com/uswds/uswds/blob/develop/LICENSE.md).
+Presently some W3C data files are included which would be under a MIT license.
 
-This site also includes a number of images that have various copyright statuses, including Creative Commons licenses and public domain. These images are in the `assets` directory, and license details are available on the posts and pages that display the images.
+### WCAG 2.0
+Copyright © 2008 W3C® (MIT, ERCIM, Keio), All Rights Reserved. W3C liability, trademark and document use rules apply.
+
+### WCAG 2.1
+Copyright © 2017-2018 W3C® (MIT, ERCIM, Keio, Beihang). W3C liability, trademark and document use rules apply.
 
 ## The rest of this project is in the worldwide public domain
 
