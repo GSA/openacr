@@ -10,3 +10,4 @@
 
 ## [Mapping of WCAG 2.0 to Functional Performance Criteria](https://www.section508.gov/content/mapping-wcag-to-fpc)
 - mapping-wcag-to-fpc.csv is a CSV file from the HTML table with an alt_id added for engagement with WCAG references
+- mapping-wcag-to-fpc.yaml ia YAML file from the CSV above
