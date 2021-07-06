@@ -5,7 +5,7 @@ This project includes a mix of the following:
 
 ## Parts of this project that are not in the public domain
 
-Presently some W3C data files are included which would be under a MIT license.
+Presently some W3C data files and derrivitive files are included which are released under the [W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE](https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).
 
 ### WCAG 2.0
 Copyright © 2008 W3C® (MIT, ERCIM, Keio), All Rights Reserved. W3C liability, trademark and document use rules apply.
