@@ -1,0 +1,39 @@
+WCAG 2.0 SC,WCAG Alt_id,Without Vision (WV),Limited Vision (LV),Without Perception of Color (WPC),Without Hearing (WH),Limited Hearing (LH),Without Speech (WS),Limited Manipulation (LM),Limited Reach and Strength (LRS),"Limited Language, Cognitive, and Learning Abilities (LLCLA)"
+1.1.1 Non-text content,text-equiv-all,WV,LV,,WH,LH,,,,LLCLA
+1.2.1 Audio-only and video only (prerecorded),media-equiv-av-only-alt,WV,LV,,WH,LH,,,,LLCLA
+1.2.2 Captions (prerecorded),media-equiv-captions,,,,WH,LH,,,,LLCLA
+1.2.3 Audio description or media alternative (prerecorded),media-equiv-audio-desc,WV,LV,,,,,,,LLCLA
+1.2.4 Captions (live),media-equiv-real-time-captions,,,,WH,LH,,,,LLCLA
+1.2.5 Audio description (precorded),media-equiv-audio-desc-only,WV,LV,,,,,,,LLCLA
+1.3.1 Info and relationships,content-structure-separation-programmatic,WV,LV,,,,,,,LLCLA
+1.3.2 Meaningful sequence,content-structure-separation-sequence,WV,LV,,,,,,,LLCLA
+1.3.3 Sensory characteristics,content-structure-separation-understanding,WV,LV,,WH,LH,,,,LLCLA
+1.4.1 Use of colour,visual-audio-contrast-without-color,WV,LV,WPC,,,,,,LLCLA
+1.4.2 Audio control,visual-audio-contrast-dis-audio,WV,,,,LH,,,,LLCLA
+1.4.3 Contrast (minimum),visual-audio-contrast-contrast,,LV,WPC,,,,,,
+1.4.4 Resize text,visual-audio-contrast-scale,,LV,,,,,,,
+1.4.5 Images of text,visual-audio-contrast-text-presentation,,LV,,,,,,,LLCLA
+2.1.1 Keyboard,keyboard-operation,WV,LV,,,,,LM,,LLCLA
+2.1.2 No keyboard trap,keyboard-operation-trapping,WV,LV,,,,,LM,,
+2.2.1 Timing adjustable,timing-adjustable,WV,LV,,,,,LM,,LLCLA
+"2.2.2 Pause, stop, hide",time-limits-pause,,,,,,,,,LLCLA
+2.3.1 Three flashes or below threshold,seizure-three-times,,,,,,,,,
+2.4.1 Bypass blocks,navigation-mechanisms-skip,WV,LV,,,,,LM,,LLCLA
+2.4.2 Page titled,navigation-mechanisms-title,WV,LV,,,,,LM,,LLCLA
+2.4.3 Focus order,navigation-mechanisms-focus-order,WV,LV,,,,,LM,,LLCLA
+2.4.4 Link purpose (in context),navigation-mechanisms-refs,WV,LV,,,,,LM,,LLCLA
+2.4.5 Multiple ways,navigation-mechanisms-descriptive,WV,LV,,,,,LM,,LLCLA
+2.4.6 Headings and labels,navigation-mechanisms-descriptive,WV,LV,,,,,LM,,LLCLA
+2.4.7 Focus visible,navigation-mechanisms-focus-visible,,LV,,,,,LM,,LLCLA
+3.1.1 Language of page,meaning-doc-lang-id,WV,LV,,WH,LH,,,,LLCLA
+3.1.2 Language of parts,meaning-other-lang-id,WV,LV,,WH,LH,,,,LLCLA
+3.2.1 On focus,consistent-behavior-receive-focus,WV,LV,,,,,LM,,LLCLA
+3.2.2 On Input,consistent-behavior-unpredictable-change,WV,LV,,,,,,,LLCLA
+3.2.3 Consistent navigation,consistent-behavior-consistent-locations,WV,LV,,,,,,,LLCLA
+3.2.4 Consistent identification,consistent-behavior-consistent-functionality,WV,LV,,,,,LM,,LLCLA
+3.3.1 Error identification,minimize-error-identified,WV,LV,WPC,,,,,,LLCLA
+3.3.2 Labels or instructions,minimize-error-cues,,LV,,,,,,,LLCLA
+3.3.3 Error suggestion,minimize-error-suggestions,WV,LV,,,,,LM,,LLCLA
+"3.3.4 Error prevention (legal, financial, data)",minimize-error-reversible,WV,LV,WPC,WH,LH,,LM,,LLCLA
+4.1.1 Parsing,ensure-compat-parses,WV,,,,,,LM,,LLCLA
+"4.1.2 Name, role, value",ensure-compat-rsv,WV,LV,,,,,LM,,LLCLA
