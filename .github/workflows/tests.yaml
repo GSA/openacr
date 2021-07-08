@@ -1,9 +1,10 @@
 name: tests
 
-on: [pull_request]
+on:
+  pull_request:
 
 jobs:
-  build:
+  build-test:
     name: Building site and run our tests
     runs-on: ubuntu-latest
 
