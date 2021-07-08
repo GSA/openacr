@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES2018",
+    "module": "commonjs",
+    "strict": true,
+    "rootDir": "src",
+    "outDir": "dist",
+  },
+  "exclude": [
+    "test"
+  ]
+}
