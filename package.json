@@ -21,6 +21,6 @@
     "yargs": "^16.2.0"
   },
   "scripts": {
-    "test": "nyc ./node_modules/.bin/_mocha 'test/**/*.test.ts'"
+    "test": "nyc --reporter=text ./node_modules/.bin/_mocha 'test/**/*.test.ts'"
   }
 }

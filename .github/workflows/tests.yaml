@@ -1,0 +1,24 @@
+name: tests
+
+on: [pull_request]
+
+jobs:
+  build:
+    name: Building site and run our tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source.
+        uses: actions/checkout@v2
+
+      - name: Install dependencies.
+        run: npm install
+
+      - name: Run tests.
+        run: npm test
+
+      - name: Publish test results.
+        uses: tintef/nyc-reporter-action
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPORTER: 'text'
