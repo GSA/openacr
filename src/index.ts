@@ -1,18 +1,14 @@
-const Ajv = require("ajv")
-const ajv = new Ajv({
-    allErrors: true,
-    schemas: [
-        require("../schema/opat.schema.json")
-    ]
-})
+// src/index.ts
 
-const validate = ajv.getSchema('https://github.com/GSA/open-product-accessibility-template/schema/opat.schema.json')
+import { validateOPAT } from "./validateOPAT";
 
-test({title: "Drupal Accessibility Conformance Report"})
-test({foo: 2, bar: 4})
+const yargs = require('yargs')
 
-function test(data: any) {
-    const valid = validate(data)
-    if (valid) console.log("Valid!")
-    else console.log("Invalid: " + ajv.errorsText(validate.errors))
-}
+const args = yargs.options({
+    'file': { type: 'string', demandOption: true, alias: 'f' }
+}).argv;
+
+const fs = require('fs')
+
+const data = JSON.parse(fs.readFileSync(args['file']).toString())
+console.log(validateOPAT(data))
