@@ -4,10 +4,10 @@
  */
 
 const tsNode = require('ts-node');
-const testTSConfig = require('./test/tsconfig.json');
+const testTSConfig = require('./tests/tsconfig.json');
 
 tsNode.register({
   files: true,
   transpileOnly: true,
-  project: './test/tsconfig.json'
+  project: './tests/tsconfig.json'
 });

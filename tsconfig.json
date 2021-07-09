@@ -1,13 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "target": "ES2018",
+    "baseUrl": "src",
+    "target": "es6",
     "module": "commonjs",
     "strict": true,
-    "rootDir": "src",
-    "outDir": "dist",
-  },
-  "exclude": [
-    "test"
-  ]
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+  }
 }

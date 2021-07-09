@@ -1,4 +1,4 @@
-const { expect } = require("chai")
+import { expect } from "chai";
 import { validateOPAT } from "../src/validateOPAT";
 
 describe("validateOPAT", () => {

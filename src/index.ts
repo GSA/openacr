@@ -1,14 +1,21 @@
 // src/index.ts
 
-import { validateOPAT } from "./validateOPAT";
+/*
+ * Install dependencies command:
+ *   npm install
+ *
+ * Example commands:
+ *   npx ts-node src/index.ts -f tests/examples/valid.json # Output: Valid!
+ *   npx ts-node src/index.ts -f tests/examples/invalid.json # Output: Invalid: data must have required property 'title'
+ */
 
-const yargs = require('yargs')
+import { validateOPAT } from "./validateOPAT"
+import yargs from "yargs"
+import fs from "fs"
 
-const args = yargs.options({
+const argv = yargs.options({
     'file': { type: 'string', demandOption: true, alias: 'f' }
-}).argv;
+}).parseSync()
 
-const fs = require('fs')
-
-const data = JSON.parse(fs.readFileSync(args['file']).toString())
+const data = JSON.parse(fs.readFileSync(argv.file).toString())
 console.log(validateOPAT(data))
