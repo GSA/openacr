@@ -2,7 +2,7 @@
 
 import Ajv from "ajv";
 
-export function validateOPAT(data: string): string {
+export function validateOPAT(data: unknown): string {
     const ajv = new Ajv({
         allErrors: true,
         schemas: [

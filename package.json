@@ -24,7 +24,7 @@
     "yargs": "^17.0.1"
   },
   "scripts": {
-    "test": "nyc --reporter=text ./node_modules/.bin/_mocha 'tests/**/*.test.ts'",
+    "test": "nyc --reporter=lcov --reporter=text ./node_modules/.bin/_mocha 'tests/**/*.test.ts'",
     "lint": "eslint . --ext .ts"
   }
 }
