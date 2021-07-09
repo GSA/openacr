@@ -18,4 +18,5 @@ const argv = yargs.options({
 }).parseSync()
 
 const data = JSON.parse(fs.readFileSync(argv.file).toString())
-console.log(validateOPAT(data))
+const schema = 'https://github.com/GSA/open-product-accessibility-template/schema/opat.schema.json'
+console.log(validateOPAT(data, schema))

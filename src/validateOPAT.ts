@@ -2,7 +2,7 @@
 
 import Ajv from "ajv";
 
-export function validateOPAT(data: unknown): string {
+export function validateOPAT(data: unknown, schema: string): string {
     const ajv = new Ajv({
         allErrors: true,
         schemas: [
@@ -10,11 +10,11 @@ export function validateOPAT(data: unknown): string {
         ]
     })
 
-    const validate = ajv.getSchema('https://github.com/GSA/open-product-accessibility-template/schema/opat.schema.json')
+    const validate = ajv.getSchema(schema)
     if (validate) {
         const valid = validate(data)
         if (valid) return "Valid!"
         else return "Invalid: " + ajv.errorsText(validate.errors)
     }
-    return "Invalid: unknown error"
+    return "Invalid: schema is not valid"
 }
