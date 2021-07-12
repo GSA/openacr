@@ -1,0 +1,10 @@
+.*.swp
+.DS_Store
+.idea
+node_modules
+dist
+package-lock.json
+coverage
+.nyc_output
+test/*.js
+src/*.js

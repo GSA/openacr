@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/GSA/open-product-accessibility-template/schema/opat.schema.json",
+  "title": "OPAT",
+  "description": "Open Product Accessibility Template (OPAT)",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "The title of the report in the heading format of '[Company Name] Accessibility Conformance Report'",
+      "type": "string"
+    }
+  },
+  "required": [ "title" ]
+}
