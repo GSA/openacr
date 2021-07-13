@@ -5,10 +5,10 @@
  *   npm install
  *
  * Example commands:
- *   npx ts-node src/opat.ts -f tests/examples/valid.yaml # Output: Valid!
- *   npx ts-node src/opat.ts -f tests/examples/invalid.yaml # Output: Invalid: data must have required property 'title'
- *   npx ts-node src/opat.ts -f tests/examples/valid.json # Output: Valid!
- *   npx ts-node src/opat.ts -f tests/examples/invalid.json # Output: Invalid: data must have required property 'title'
+ *   npx ts-node src/opat.ts validate -f tests/examples/valid.yaml # Output: Valid!
+ *   npx ts-node src/opat.ts validate -f tests/examples/invalid.yaml # Output: Invalid: data must have required property 'title'
+ *   npx ts-node src/opat.ts validate -f tests/examples/valid.json # Output: Valid!
+ *   npx ts-node src/opat.ts validate -f tests/examples/invalid.json # Output: Invalid: data must have required property 'title'
  */
 
 import { validateOPAT } from "./validateOPAT";
@@ -18,9 +18,17 @@ import yaml from "js-yaml";
 import { ValidatorResult } from "./ValidatorResult";
 
 const argv = yargs
-  .options({
-    file: { type: "string", demandOption: true, alias: "f" },
+  .command("validate", "Validate OPAT content", function (yargs) {
+    return yargs.options({
+      file: {
+        type: "string",
+        description: "Content filename",
+        demandOption: true,
+        alias: "f",
+      },
+    });
   })
+  .demandCommand(1, "You must select command validate or output.")
   .parseSync();
 
 let result: ValidatorResult;
