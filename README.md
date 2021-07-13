@@ -9,7 +9,6 @@ GSA has observed that federal agencies face challenges in delivering accessible 
 To make it easier for organizations to make good decisions regarding accessibility when buying digital.
 
 By making accessibility conformance reports machine-readable:
-
 - buyers will be able to compare solutions more easily
 - managers may finally be able to evaluate what interfaces may limit their staff
 - executives can better understand the risks of present digital interfaces
