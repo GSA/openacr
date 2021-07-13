@@ -269,12 +269,12 @@ consistent-navigation:
   vis: layout progress-steps
   con: progress-steps
 consistent-identification:
-  dev:  controls forms menus structure
+  dev: controls forms menus structure
   int: buttons controls forms modals navigation
   vis: progress-steps structure
   con: consistent-experience content visual-cues buttons
 change-on-request:
-  dev:  controls forms menus events
+  dev: controls forms menus events
   int: controls forms events navigation
 error-identification:
   dev: controls errors focus forms labels

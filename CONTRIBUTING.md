@@ -1,11 +1,11 @@
 This document is about how to contribute to the gsa.gov opat template. This process looks a bit different depending on whether you're a member of the public, an GSA employee, or a member of the outreach or site team. Here's what you can find in this doc:
 
-* [Public contributions](#public-contributions)
-* [GSA contributions](#gsa-contributions)
-    - [Branches](#branches)
-    - [Front end architecture](#front-end-architecture)
-    - [Standards and benchmarks](#standards-and-benchmarks)
-* [Public domain](#public-domain)
+- [Public contributions](#public-contributions)
+- [GSA contributions](#gsa-contributions)
+  - [Branches](#branches)
+  - [Front end architecture](#front-end-architecture)
+  - [Standards and benchmarks](#standards-and-benchmarks)
+- [Public domain](#public-domain)
 
 No matter who you are, if you spot an error, omission, or bug, you're welcome to open an issue in this repo!
 
@@ -17,8 +17,8 @@ We want to ensure a welcoming environment for all of our projects. Our staff fol
 
 We encourage you to read this project's CONTRIBUTING policy (you are here), its [LICENSE](LICENSE.md), and its [README](README.md).
 
-* If you see an error or have feedback, the best way to let us know is to file an issue.
-* To contribute a specific change to the site, outside contributors will need to fork this repo.
+- If you see an error or have feedback, the best way to let us know is to file an issue.
+- To contribute a specific change to the site, outside contributors will need to fork this repo.
 
 ## GSA contributions
 
@@ -28,7 +28,7 @@ Any GSA team member should be able to make a branch of the site and submit a pul
 
 Because new blog posts are published several times a week, we use several branches to manage parallel work in a predictable way:
 
-* Submit **new design work, content changes, and features** as pull requests to the `dev` branch. This will allow us to test and review batches of changes before deploying them.
+- Submit **new design work, content changes, and features** as pull requests to the `dev` branch. This will allow us to test and review batches of changes before deploying them.
 
 **The `master`, `staging`, and `production` branches are protected.** Only administrators of the repo can push directly to those branches.
 
