@@ -14,5 +14,5 @@ Run our tests when we submit a pull request.
 
 # References
 
-* https://github.blog/2021-04-28-use-github-actions-manage-docs/#why-use-github-actions-for-project-management
-* https://pre-commit.com/
+- https://github.blog/2021-04-28-use-github-actions-manage-docs/#why-use-github-actions-for-project-management
+- https://pre-commit.com/

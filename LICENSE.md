@@ -1,16 +1,18 @@
 This project includes a mix of the following:
 
-* Open source works that are not in the public domain
-* Open source work by the U.S. government that is in the public domain
+- Open source works that are not in the public domain
+- Open source work by the U.S. government that is in the public domain
 
 ## Parts of this project that are not in the public domain
 
 Presently some W3C data files and derrivitive files are included which are released under the [W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE](https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).
 
 ### WCAG 2.0
+
 Copyright © 2008 W3C® (MIT, ERCIM, Keio), All Rights Reserved. W3C liability, trademark and document use rules apply.
 
 ### WCAG 2.1
+
 Copyright © 2017-2018 W3C® (MIT, ERCIM, Keio, Beihang). W3C liability, trademark and document use rules apply.
 
 ## The rest of this project is in the worldwide public domain

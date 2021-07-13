@@ -4,21 +4,21 @@
 
 **Version 2.4**
 
-[About This Document 1](# __RefHeading___ Toc512938911)
+[About This Document 1](# **RefHeading\_** Toc512938911)
 
-[Essential Requirements and Best Practices for Information &amp; Communications Technology (ICT) Vendors 3](# __RefHeading___ Toc512938912)
+[Essential Requirements and Best Practices for Information &amp; Communications Technology (ICT) Vendors 3](# **RefHeading\_** Toc512938912)
 
-[Getting Started 3](# __RefHeading___ Toc512938913)
+[Getting Started 3](# **RefHeading\_** Toc512938913)
 
-[Essential Requirements for Authors 3](# __RefHeading___ Toc512938914)
+[Essential Requirements for Authors 3](# **RefHeading\_** Toc512938914)
 
-[Best Practices for Authors 6](# __RefHeading___ Toc512938915)
+[Best Practices for Authors 6](# **RefHeading\_** Toc512938915)
 
-[Posting the Final Document 9](# __RefHeading___ Toc512938916)
+[Posting the Final Document 9](# **RefHeading\_** Toc512938916)
 
-[Table Information for VPAT® Readers 10](# __RefHeading___ Toc512938917)
+[Table Information for VPAT® Readers 10](# **RefHeading\_** Toc512938917)
 
-[[Company] Accessibility Conformance Report 11](# __RefHeading___ Toc512938918)
+[[Company] Accessibility Conformance Report 11](# **RefHeading\_** Toc512938918)
 
 # About This Document
 
@@ -66,7 +66,7 @@ The following are the minimum requirements to produce an Accessibility Conforman
 4. A report must contain the following content at a minimum:
 
 - **Report Title** –In the heading format of &quot;[Company Name] Accessibility Conformance Report&quot;
-- **VPAT Heading**  **Information** –Template version
+- **VPAT Heading** **Information** –Template version
 - **Name of Product/Version** –Name of Product being reported, including product version identifier if necessary
 - **Report Date** –Date of report publication. At a minimum, provide the month and year of the report publication. For example, &quot;May 2016&quot;. If date is included, ensure it is clear &quot;4 May 2016&quot; or &quot;May 4, 2016&quot;.
 - **Product Description** – A brief description of the product
@@ -96,14 +96,16 @@ The following are the minimum requirements to produce an Accessibility Conforman
 
 Note: When filling in the WCAG tables, a response may use 'Supports' where one might otherwise be inclined to use 'Not Applicable'. This is in keeping with [WCAG 2.0 Understanding Conformance](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html): This means that if there is no content to which a success criterion applies, the success criterion is satisfied.
 
-  - **Not Evaluated** : The product has not been evaluated against the criterion. This can only be used in WCAG 2.x Level AAA.
+- **Not Evaluated** : The product has not been evaluated against the criterion. This can only be used in WCAG 2.x Level AAA.
 
 - **Tables for Each Standard or Guideline** –Tables showing the responses to the criteria.
 
 1. WCAG Conformance Information – The answers in the WCAG success criteria are based on the level of conformance being reported (Level A, AA or AAA).
 
 - These tables are used to answer:
+
   - Revised Section 508:
+
     - Chapter 5 Software
     - Chapter 6 Support Documentation
 
@@ -122,11 +124,13 @@ Note: When filling in the WCAG tables, a response may use 'Supports' where one m
 - When reporting on WCAG 2.0 only criteria it is acceptable to remove the WCAG 2.1-specific criteria from the table. These are marked '2.1 only' within the row.
 
 1. Remarks and Explanations – Detailed remarks should be provided in the Remarks and Explanations column to justify your answer in the Conformance Level column.
-  - When the conformance level is 'Partially Supports' or 'Does Not Support', the remarks should identify:
-    1. The functions or features with issues
-    2. How they do not fully support
-  - If the criterion does not apply, explain why.
-  - If an accessible alternative is used, describe it.
+
+- When the conformance level is 'Partially Supports' or 'Does Not Support', the remarks should identify:
+  1. The functions or features with issues
+  2. How they do not fully support
+- If the criterion does not apply, explain why.
+- If an accessible alternative is used, describe it.
+
 2. In the Section 508 tables, when subsections of criteria do not apply to the product, the section may be summarized or removed as long as an explanation is provided explaining why a criterion does not apply. Another alternative is to leave the table and add a summary why the section does not apply. For example, in Chapter 5 the criteria in 502 and 503 will not apply to a web only application, thus those sections can be removed with a summary in the notes for the chapter, or a row in the table.
 
 ## Best Practices for Authors
@@ -184,7 +188,7 @@ ITI suggests that authors adopt the following best practices when using the VPAT
 - When publishing your Accessibility Conformance Report, be sure to remove the entire first 10 pages of this document, including the table of contents, introductory information and instructions.
 - Check for each required item in the VPAT® document:
   - **[Company Name] Accessibility Conformance Report** (report title)
-  - **(Based on VPAT****®****Version 2.4)**
+  - **(Based on VPAT\*\***®\***\*Version 2.4)**
   - **Name of Product/Version**
   - **Report Date**
   - **Product Description**

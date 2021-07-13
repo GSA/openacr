@@ -2,13 +2,14 @@
 
 ## Context
 
-GSA has observed that federal agencies face challenges in delivering accessible services to people with disabilities. Software vendors submit accessibility conformance reports (ACR) for their offerings demonstrating that their products meet Section 508 requirements. However, these ACR documents are a static representation of a product's accessibility snapshot in time rather than evidence of continuous adherence to accessibility requirements which could be validated and tested.  Currently, the government tests these claims, generating validation test results, but the data is not easily findable and thus can often lead to redundant testing and re-work.
+GSA has observed that federal agencies face challenges in delivering accessible services to people with disabilities. Software vendors submit accessibility conformance reports (ACR) for their offerings demonstrating that their products meet Section 508 requirements. However, these ACR documents are a static representation of a product's accessibility snapshot in time rather than evidence of continuous adherence to accessibility requirements which could be validated and tested. Currently, the government tests these claims, generating validation test results, but the data is not easily findable and thus can often lead to redundant testing and re-work.
 
 ## Vision
 
 To make it easier for organizations to make good decisions regarding accessibility when buying digital.
 
 By making accessibility conformance reports machine-readable:
+
 - buyers will be able to compare solutions more easily
 - managers may finally be able to evaluate what interfaces may limit their staff
 - executives can better understand the risks of present digital interfaces
@@ -22,7 +23,6 @@ The ACR will be written in YAML to allow the text to be more human readable and 
 Most users will interact with the ACR as accessible HTML files. These will be generated from the YAML files by JavaScript tool which extracts the content into structured HTML. The style elements will then be added by CSS, which vendors will be free to customize to include their branding.
 
 The repositories will be built on a git repository like GitHub so that version control is included. Authors can write the compliance report as JSON files manually, or use a tool similar to WCAG-EM.
-
 
 ## Contributing
 

@@ -9,14 +9,17 @@
  *   npx ts-node src/index.ts -f tests/examples/invalid.json # Output: Invalid: data must have required property 'title'
  */
 
-import { validateOPAT } from "./validateOPAT"
-import yargs from "yargs"
-import fs from "fs"
+import { validateOPAT } from "./validateOPAT";
+import yargs from "yargs";
+import fs from "fs";
 
-const argv = yargs.options({
-    'file': { type: 'string', demandOption: true, alias: 'f' }
-}).parseSync()
+const argv = yargs
+  .options({
+    file: { type: "string", demandOption: true, alias: "f" },
+  })
+  .parseSync();
 
-const data = JSON.parse(fs.readFileSync(argv.file).toString())
-const schema = 'https://github.com/GSA/open-product-accessibility-template/schema/opat.schema.json'
-console.log(validateOPAT(data, schema))
+const data = JSON.parse(fs.readFileSync(argv.file).toString());
+const schema =
+  "https://github.com/GSA/open-product-accessibility-template/schema/opat.schema.json";
+console.log(validateOPAT(data, schema));
