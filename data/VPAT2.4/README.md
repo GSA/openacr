@@ -15,4 +15,4 @@
 ## Comparisons
 
 ### 508 vs WCAG
-- 
+-

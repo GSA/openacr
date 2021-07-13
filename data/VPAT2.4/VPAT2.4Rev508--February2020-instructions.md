@@ -186,4 +186,3 @@ For each of the standards, the criteria are listed by chapter in a table. The st
 
 - When sections of criteria do not apply, or are deemed by the customer as not applicable, the section is noted as such and the rest of that table may be removed for that section.
 - When multiple standards are being recorded in this document, the duplicative sections are noted and responded to only one time. The duplicate entry will note the cross reference to the data.
-

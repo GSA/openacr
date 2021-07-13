@@ -44,7 +44,7 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
 
 ### Table 1: Success Criteria, Level A
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | ------------ | --------------------- | ---------------------------- |
@@ -75,7 +75,7 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
 
 ### Table 2: Success Criteria, Level AA
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -95,7 +95,7 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
 
 ### Table 3: Success Criteria, Level AAA
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -126,7 +126,7 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
 
 ## Revised Section 508 Report
 
-**Notes:** 
+**Notes:**
 
 ### Chapter 3: [Functional Performance Criteria](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria) (FPC)
 
@@ -197,36 +197,36 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
 | 408.2 Visibility | | |
 | 408.3 Flashing | | |
 | [ 409 Status Indicators ](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#409-status-indicators) | Heading cell – no response required | Heading cell – no response required |
-| 409.1 General | | | 
+| 409.1 General | | |
 | [ 410 Color Coding ](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#410-color-coding) | Heading cell – no response required | Heading cell – no response required |
-| 410.1 General | | | 
+| 410.1 General | | |
 | [ 411 Audible Signals ](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#411-audible-signals) | Heading cell – no response required | Heading cell – no response required |
-| 411.1 General | | | 
+| 411.1 General | | |
 | [ 412 ICT with Two-Way Voice Communication ](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#412-two-way-communication) | Heading cell – no response required | Heading cell – no response required |
 | _ **412.2 Volume Gain** _ | Heading cell – no response required | Heading cell – no response required |
-| 412.2.1 Volume Gain for Wireline Telephones | | | 
-| 412.2.2 Volume Gain for Non-Wireline ICT | | | 
+| 412.2.1 Volume Gain for Wireline Telephones | | |
+| 412.2.2 Volume Gain for Non-Wireline ICT | | |
 | _ **412.3 Interference Reduction and Magnetic Coupling** _ | Heading cell – no response required | Heading cell – no response required |
-| 412.3.1 Wireless Handsets | | | 
-| 412.3.2 Wireline Handsets | | | 
-| 412.4 Digital Encoding of Speech | | | 
+| 412.3.1 Wireless Handsets | | |
+| 412.3.2 Wireline Handsets | | |
+| 412.4 Digital Encoding of Speech | | |
 | 412.5 Real-Time Text Functionality | Reserved for future | Reserved for future |
-| 412.6 Caller ID | | | 
-| 412.7 Video Communication | | | 
+| 412.6 Caller ID | | |
+| 412.7 Video Communication | | |
 | _ **412.8 Legacy TTY Support** _ | Heading cell – no response required | Heading cell – no response required |
-| 412.8.1 TTY Connectability | | | 
-| 412.8.2 Voice and Hearing Carry Over | | | 
-| 412.8.3 Signal Compatibility | | | 
-| 412.8.4 Voice Mail and Other Messaging Systems | | | 
+| 412.8.1 TTY Connectability | | |
+| 412.8.2 Voice and Hearing Carry Over | | |
+| 412.8.3 Signal Compatibility | | |
+| 412.8.4 Voice Mail and Other Messaging Systems | | |
 | [ 413 Closed Caption Processing Technologies ](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#413-closed-caption) | Heading cell – no response required | Heading cell – no response required |
-| 413.1.1 Decoding and Display of Closed Captions | | | 
-| 413.1.2 Pass-Through of Closed Caption Data | | | 
+| 413.1.1 Decoding and Display of Closed Captions | | |
+| 413.1.2 Pass-Through of Closed Caption Data | | |
 | [ 414 Audio Description Processing Technologies ](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#414-audio-description) | Heading cell – no response required | Heading cell – no response required |
-| 414.1.1 Digital Television Tuners | | | 
-| 414.1.2 Other ICT | | | 
+| 414.1.1 Digital Television Tuners | | |
+| 414.1.2 Other ICT | | |
 | [ 415 User Controls for Captions and Audio Descriptions ](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#415-user-controls-captions-audio-descriptions) | Heading cell – no response required | Heading cell – no response required |
-| 415.1.1 Caption Controls | | | 
-| 415.1.2 Audio Description Controls | | | 
+| 415.1.1 Caption Controls | | |
+| 415.1.2 Audio Description Controls | | |
 
 ### Chapter 5: [Software](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#501-general)
 
@@ -236,36 +236,36 @@ Note: When reporting on conformance with the WCAG 2.0 Success Criteria, they are
 | --- | --- | --- |
 | **501.1 Scope – Incorporation of WCAG 2.0 AA** | See [WCAG 2.0](#WCAG) section | See information in WCAG 2.0 section |
 | [ 502 Interoperability with Assistive Technology ](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#502-interoperability-assistive-technology) | Heading cell – no response required | Heading cell – no response required |
-| 502.2.1 User Control of Accessibility Features | | | 
-| 502.2.2 No Disruption of Accessibility Features | | | 
+| 502.2.1 User Control of Accessibility Features | | |
+| 502.2.2 No Disruption of Accessibility Features | | |
 | _ **502.3 Accessibility Services** _ | Heading cell – no response required | Heading cell – no response required |
-| 502.3.1 Object Information | | | 
-| 502.3.2 Modification of Object Information | | | 
-| 502.3.3 Row, Column, and Headers | | | 
-| 502.3.4 Values | | | 
-| 502.3.5 Modification of Values | | | 
-| 502.3.6 Label Relationships | | | 
-| 502.3.7 Hierarchical Relationships | | | 
-| 502.3.8 Text | | | 
-| 502.3.9 Modification of Text | | | 
-| 502.3.10 List of Actions | | | 
-| 502.3.11 Actions on Objects | | | 
-| 502.3.12 Focus Cursor | | | 
-| 502.3.13 Modification of Focus Cursor | | | 
-| 502.3.14 Event Notification | | | 
-| 502.4 Platform Accessibility Features | | | 
+| 502.3.1 Object Information | | |
+| 502.3.2 Modification of Object Information | | |
+| 502.3.3 Row, Column, and Headers | | |
+| 502.3.4 Values | | |
+| 502.3.5 Modification of Values | | |
+| 502.3.6 Label Relationships | | |
+| 502.3.7 Hierarchical Relationships | | |
+| 502.3.8 Text | | |
+| 502.3.9 Modification of Text | | |
+| 502.3.10 List of Actions | | |
+| 502.3.11 Actions on Objects | | |
+| 502.3.12 Focus Cursor | | |
+| 502.3.13 Modification of Focus Cursor | | |
+| 502.3.14 Event Notification | | |
+| 502.4 Platform Accessibility Features | | |
 | [ 503 Applications ](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#503-applications) | Heading cell – no response required | Heading cell – no response required |
-| 503.2 User Preferences | | | 
-| 503.3 Alternative User Interfaces | | | 
+| 503.2 User Preferences | | |
+| 503.3 Alternative User Interfaces | | |
 | _ **503.4 User Controls for Captions and Audio Description** _ | Heading cell – no response required | Heading cell – no response required |
-| 503.4.1 Caption Controls | | | 
-| 503.4.2 Audio Description Controls | | | 
+| 503.4.1 Caption Controls | | |
+| 503.4.2 Audio Description Controls | | |
 | [ 504 Authoring Tools ](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#504-authoring-tools) | Heading cell – no response required | Heading cell – no response required |
 | 504.2 Content Creation or Editing (if not authoring tool, enter &quot;not applicable&quot;) | See [WCAG 2.0](#WCAG) section | See information in WCAG 2.0 section |
-| 504.2.1 Preservation of Information Provided for Accessibility in Format Conversion | | | 
-| 504.2.2 PDF Export | | | 
-| 504.3 Prompts | | | 
-| 504.4 Templates | | | 
+| 504.2.1 Preservation of Information Provided for Accessibility in Format Conversion | | |
+| 504.2.2 PDF Export | | |
+| 504.3 Prompts | | |
+| 504.4 Templates | | |
 
 ### Chapter 6: [Support Documentation and Services](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#601-general)
 
@@ -275,12 +275,12 @@ Notes:
 | --- | --- | --- |
 | _ **601.1 Scope** _ | Heading cell – no response required | Heading cell – no response required |
 | [ 602 Support Documentation ](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#602-support-documentation) | Heading cell – no response required | Heading cell – no response required |
-| 602.2 Accessibility and Compatibility Features | | | 
+| 602.2 Accessibility and Compatibility Features | | |
 | 602.3 Electronic Support Documentation | See [WCAG 2.0](#WCAG) section | See information in WCAG 2.0 section |
-| 602.4 Alternate Formats for Non-Electronic Support Documentation | | | 
+| 602.4 Alternate Formats for Non-Electronic Support Documentation | | |
 | [603 Support Services](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#603-support-services) | Heading cell – no response required | Heading cell – no response required |
-| 603.2 Information on Accessibility and Compatibility Features | | | 
-| 603.3 Accommodation of Communication Needs | | | 
+| 603.2 Information on Accessibility and Compatibility Features | | |
+| 603.3 Accommodation of Communication Needs | | |
 
 ## Legal Disclaimer (Company)
 

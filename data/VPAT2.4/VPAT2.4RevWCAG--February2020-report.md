@@ -40,7 +40,7 @@ Note: When reporting on conformance with the WCAG 2.x Success Criteria, they are
 
 ### Table 1: Success Criteria, Level A
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | ------------ | --------------------- | ---------------------------- |
@@ -77,7 +77,7 @@ Note: When reporting on conformance with the WCAG 2.x Success Criteria, they are
 
 ### Table 2: Success Criteria, Level AA
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -104,7 +104,7 @@ Note: When reporting on conformance with the WCAG 2.x Success Criteria, they are
 
 ### Table 3: Success Criteria, Level AAA
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |

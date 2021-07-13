@@ -48,7 +48,7 @@ Note: When reporting on conformance with the WCAG 2.x Success Criteria, they are
 
 ### Table 1: Success Criteria, Level A
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | ------------ | --------------------- | ---------------------------- |
@@ -326,7 +326,7 @@ Note: When reporting on conformance with the WCAG 2.x Success Criteria, they are
 
 ### Table 2: Success Criteria, Level AA
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -515,7 +515,7 @@ Note: When reporting on conformance with the WCAG 2.x Success Criteria, they are
 
 ### Table 3: Success Criteria, Level AAA
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -545,7 +545,7 @@ Note: When reporting on conformance with the WCAG 2.x Success Criteria, they are
 
 ## EN 301 549 Report
 
-**Notes:** 
+**Notes:**
 
 ### Chapter 4: [Functional Performance Statements](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf#page=17)(FPS)
 
@@ -567,7 +567,7 @@ Notes:
 
 ### **Chapter** [5: Generic Requirements](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf#page=20)
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -641,7 +641,7 @@ Notes:
 
 ### Chapter [7: ICT with Video Capabilities](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf#page=30)
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -659,7 +659,7 @@ Notes:
 
 ### Chapter [8: Hardware](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf#page=32)
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -699,7 +699,7 @@ Notes:
 
 ### Chapter [9: Web](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf#page=40)_(see_ [_ **WCAG 2.** __ **x** _ _ **section** _](#_WCAG_2.x_Report)_)_
 
-**Notes:** 
+**Notes:**
 
 ### Chapter [10: Non-web Documents](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf#page=47)
 
@@ -715,7 +715,7 @@ Notes:
 
 ### Chapter [11: Software](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf#page=57)
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -755,7 +755,7 @@ Notes:
 
 ### Chapter [12: Documentation and Support Services](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf#page=76)
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -769,7 +769,7 @@ Notes:
 
 ### Chapter [13: ICT Providing Relay or Emergency Service Access](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf#page=78)
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |

@@ -47,7 +47,7 @@ Note: When reporting on conformance with the WCAG 2.x Success Criteria, they are
 
 ### Table 1: Success Criteria, Level A
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | ------------ | --------------------- | ---------------------------- |
@@ -426,7 +426,7 @@ Revised Section 508 – Does not apply | Web: Electronic Docs: Software: Closed:
 
 ### Table 2: Success Criteria, Level AA
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -668,7 +668,7 @@ Revised Section 508 – Does not apply | Web: Electronic Docs: Authoring Tool: |
 
 ### Table 3: Success Criteria, Level AAA
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -703,7 +703,7 @@ Revised Section 508 – Does not apply | Web: Electronic Docs: Authoring Tool: |
 
 ## Revised Section 508 Report
 
-**Notes:** 
+**Notes:**
 
 ### Chapter 3: [Functional Performance Criteria](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#302-functional-performance-criteria) (FPC)
 
@@ -723,7 +723,7 @@ Notes:
 
 ### Chapter 4: [Hardware](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/final-rule/text-of-the-standards-and-guidelines#401-general)
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -861,7 +861,7 @@ Notes:
 
 ## EN 301 549 Report
 
-**Notes:** 
+**Notes:**
 
 ### Chapter 4: [Functional Performance Statements](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.01.01_60/en_301549v030101p.pdf#%5B%7B%22num%22%3A38%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C54%2C747%2C0%5D)(FPS)
 
@@ -883,7 +883,7 @@ Notes:
 
 ### **Chapter** [5: Generic Requirements](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.01.01_60/en_301549v030101p.pdf#%5B%7B%22num%22%3A45%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C54%2C747%2C0%5D)
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -930,7 +930,7 @@ Notes:
 
 ### **Chapter** [6: ICT with Two-Way Voice Communication](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.01.01_60/en_301549v030101p.pdf#%5B%7B%22num%22%3A60%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C54%2C747%2C0%5D)
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -957,7 +957,7 @@ Notes:
 
 ### Chapter [7: ICT with Video Capabilities](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.01.01_60/en_301549v030101p.pdf#%5B%7B%22num%22%3A70%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C54%2C747%2C0%5D)
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -975,7 +975,7 @@ Notes:
 
 ### Chapter [8: Hardware](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.01.01_60/en_301549v030101p.pdf#%5B%7B%22num%22%3A74%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C54%2C747%2C0%5D)
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -1015,7 +1015,7 @@ Notes:
 
 ### Chapter [9: Web](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.01.01_60/en_301549v030101p.pdf#%5B%7B%22num%22%3A113%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C54%2C747%2C0%5D)_(see_ [_ **WCAG 2.** __ **x** _ _ **section** _](#_WCAG_2.x_Report)_)_
 
-**Notes:** 
+**Notes:**
 
 ### Chapter [10: Non-Web Software](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.01.01_60/en_301549v030101p.pdf#%5B%7B%22num%22%3A127%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C54%2C747%2C0%5D)
 
@@ -1031,7 +1031,7 @@ Notes:
 
 ### Chapter [11: Software](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.01.01_60/en_301549v030101p.pdf#%5B%7B%22num%22%3A149%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C54%2C747%2C0%5D)
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -1071,7 +1071,7 @@ Notes:
 
 ### Chapter [12: Documentation and Support Services](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.01.01_60/en_301549v030101p.pdf#%5B%7B%22num%22%3A187%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C54%2C747%2C0%5D)
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
@@ -1086,7 +1086,7 @@ Notes:
 
 ### Chapter [13: ICT Providing Relay or Emergency Service Access](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.01.01_60/en_301549v030101p.pdf#%5B%7B%22num%22%3A191%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C54%2C747%2C0%5D)
 
-**Notes:** 
+**Notes:**
 
 | **Criteria** | **Conformance Level** | **Remarks and Explanations** |
 | --- | --- | --- |
