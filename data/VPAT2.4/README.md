@@ -1,20 +1,21 @@
 # VPAT Version 2.4
 
 ## Versions
+
 - Revised Section 508 (508)
 - WCAG 2.x (WCAG)
 - European Union (EU)
 - International (INT)
 
 ## Document types
+
 - Original Word Document
 - Full conversion of Word to Markdown
 - Just the instruction taken from the Markdown file
-- Just the report  taken from the Markdown file
+- Just the report taken from the Markdown file
 
 ## Comparisons
 
-### 508 vs WCAG
 The big difference here is that 508 include tables for **Chapter 3: Functional Performance Criteria**, **Chapter 4: Hardware**,  **Chapter 5: 501.1 Scope, 504.2 Content Creation or Editing**,  **Chapter 6: 602.3 Electronic Support Documentation** and also the . 508 also includes notes that Table 1, 2 and 3 apply to more than simply the web, but also Software; Authoring Tool and Support Documentation. The WCAG document includes both WCAG 2.0 & WCAG 2.1 criteria. None of the WCAG 2.1 Success Criteria (SC) show up in Section 508. WCAG 2.1 includes all of WCAG 2.0.
 
 ## WCAG vs EU

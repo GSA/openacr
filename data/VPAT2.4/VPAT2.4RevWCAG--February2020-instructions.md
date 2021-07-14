@@ -4,21 +4,21 @@
 
 **Version 2.4**
 
-[About This Document 1](# __RefHeading___ Toc512938826)
+[About This Document 1](# **RefHeading\_** Toc512938826)
 
-[Essential Requirements and Best Practices for Information &amp; Communications Technology (ICT) Vendors 3](# __RefHeading___ Toc512938827)
+[Essential Requirements and Best Practices for Information &amp; Communications Technology (ICT) Vendors 3](# **RefHeading\_** Toc512938827)
 
-[Getting Started 3](# __RefHeading___ Toc512938828)
+[Getting Started 3](# **RefHeading\_** Toc512938828)
 
-[Essential Requirements for Authors 3](# __RefHeading___ Toc512938829)
+[Essential Requirements for Authors 3](# **RefHeading\_** Toc512938829)
 
-[Best Practices for Authors 6](# __RefHeading___ Toc512938830)
+[Best Practices for Authors 6](# **RefHeading\_** Toc512938830)
 
-[Posting the Final Document 8](# __RefHeading___ Toc512938831)
+[Posting the Final Document 8](# **RefHeading\_** Toc512938831)
 
-[Table Information for VPAT® Readers 9](# __RefHeading___ Toc512938832)
+[Table Information for VPAT® Readers 9](# **RefHeading\_** Toc512938832)
 
-[[Company] Accessibility Conformance Report 10](# __RefHeading___ Toc512938833)
+[[Company] Accessibility Conformance Report 10](# **RefHeading\_** Toc512938833)
 
 # About This Document
 
@@ -63,7 +63,7 @@ The following are the minimum requirements to produce an Accessibility Conforman
 3. A report must contain the following content at a minimum:
 
 - **Report Title** –In the heading format of &quot;[Company Name] Accessibility Conformance Report&quot;
-- **VPAT Heading**  **Information** –Template version
+- **VPAT Heading** **Information** –Template version
 - **Name of Product/Version** –Name of Product being reported, including product version identifier if necessary
 - **Report Date** –Date of report publication. At a minimum, provide the month and year of the report publication. For example, &quot;May 2016&quot;. If date is included, ensure it is clear &quot;4 May 2016&quot; or &quot;May 4, 2016&quot;.
 - **Product Description** – A brief description of the product
@@ -90,7 +90,7 @@ The following are the minimum requirements to produce an Accessibility Conforman
 
 Note: When filling in the WCAG tables, a response may use 'Supports' where one might otherwise be inclined to use 'Not Applicable'. This is in keeping with [WCAG 2.0 Understanding Conformance](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html): This means that if there is no content to which a success criterion applies, the success criterion is satisfied.
 
-  - **Not Evaluated** : The product has not been evaluated against the criterion. This can only be used in WCAG 2.x Level AAA.
+- **Not Evaluated** : The product has not been evaluated against the criterion. This can only be used in WCAG 2.x Level AAA.
 
 - **Tables for Each Standard or Guideline** –Tables showing the responses to the criteria.
 
@@ -164,7 +164,7 @@ ITI suggests that authors adopt the following best practices when using the VPAT
 - When publishing your Accessibility Conformance Report, be sure to remove the entire first 9 pages of this document, including the table of contents, introductory information and instructions.
 - Check for each required item in the VPAT® document:
   - **[Company Name] Accessibility Conformance Report** (report title)
-  - **(Based on VPAT****®****Version 2.4)**
+  - **(Based on VPAT\*\***®\***\*Version 2.4)**
   - **Name of Product/Version**
   - **Report Date**
   - **Product Description**
