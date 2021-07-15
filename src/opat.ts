@@ -4,11 +4,13 @@
  * Install dependencies command:
  *   npm install
  *
+ * Help commands:
+ *   npx ts-node src/opat.ts --help
+ *   npx ts-node src/opat.ts validate --help
+ *
  * Example commands:
  *   npx ts-node src/opat.ts validate -f tests/examples/valid.yaml # Output: Valid!
  *   npx ts-node src/opat.ts validate -f tests/examples/invalid.yaml # Output: Invalid: data must have required property 'title'
- *   npx ts-node src/opat.ts validate -f tests/examples/valid.json # Output: Valid!
- *   npx ts-node src/opat.ts validate -f tests/examples/invalid.json # Output: Invalid: data must have required property 'title'
  */
 
 import { validateOPAT } from "./validateOPAT";
@@ -36,21 +38,14 @@ const schema =
   "https://github.com/GSA/open-product-accessibility-template/schema/opat.schema.json";
 
 if (fs.existsSync(argv.file)) {
-  // Try JSON.
   try {
-    const data = JSON.parse(fs.readFileSync(argv.file).toString());
+    const data = yaml.load(fs.readFileSync(argv.file).toString());
     result = validateOPAT(data, schema);
   } catch {
-    // Try YAML.
-    try {
-      const data = yaml.load(fs.readFileSync(argv.file).toString());
-      result = validateOPAT(data, schema);
-    } catch {
-      result = {
-        result: false,
-        message: "Invalid: file is not in JSON or YAML format",
-      };
-    }
+    result = {
+      result: false,
+      message: "Invalid: file is not in YAML format",
+    };
   }
 } else {
   result = { result: false, message: "Invalid: file does not exist" };
