@@ -1,8 +1,9 @@
 // src/validateOPAT.ts
 
 import Ajv from "ajv";
+import { ValidatorResult } from "./ValidatorResult";
 
-export function validateOPAT(data: unknown, schema: string): string {
+export function validateOPAT(data: unknown, schema: string): ValidatorResult {
   const ajv = new Ajv({
     allErrors: true,
     schemas: [require("../schema/opat.schema.json")],
@@ -11,8 +12,12 @@ export function validateOPAT(data: unknown, schema: string): string {
   const validate = ajv.getSchema(schema);
   if (validate) {
     const valid = validate(data);
-    if (valid) return "Valid!";
-    else return "Invalid: " + ajv.errorsText(validate.errors);
+    if (valid) return { result: true, message: "Valid!" };
+    else
+      return {
+        result: false,
+        message: "Invalid: " + ajv.errorsText(validate.errors),
+      };
   }
-  return "Invalid: schema is not valid";
+  return { result: false, message: "Invalid: schema is not valid" };
 }

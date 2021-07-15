@@ -6,6 +6,8 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "@testdeck/mocha": "^0.1.2",
+    "@types/chai": "^4.2.21",
+    "@types/js-yaml": "^4.0.2",
     "@types/mocha": "^8.2.3",
     "@types/node": "^16.0.1",
     "@types/yargs": "^17.0.2",
@@ -22,6 +24,7 @@
   },
   "dependencies": {
     "ajv": "^8.6.1",
+    "js-yaml": "^3.14.1",
     "yargs": "^17.0.1"
   },
   "scripts": {
