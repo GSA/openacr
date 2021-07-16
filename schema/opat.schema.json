@@ -1,14 +1,35 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/GSA/open-product-accessibility-template/schema/opat.schema.json",
+  "$id": "opat.schema.json",
   "title": "OPAT",
-  "description": "Open Product Accessibility Template (OPAT)",
+  "description": "Open Product Accessibility Template (OPAT) is a YAML file.",
   "type": "object",
   "properties": {
     "title": {
-      "description": "The title of the report in the heading format of '[Company Name] Accessibility Conformance Report'",
+      "description": "The title of the report in the heading format of '[Company Name] Accessibility Conformance Report'.",
+      "type": "string"
+    },
+    "name-product-version": {
+      "description": "Product name and version if available.",
+      "type": "string"
+    },
+    "product-description": {
+      "description": "A brief description of the product.",
+      "type": "string"
+    },
+    "contact-information": {
+      "description": "Primary contact email.",
+      "type": "string"
+    },
+    "notes": {
+      "description": "Any details or explanation about the product or the report.",
       "type": "string"
     }
   },
-  "required": ["title"]
+  "required": [
+    "title",
+    "name-product-version",
+    "product-description",
+    "contact-information"
+  ]
 }

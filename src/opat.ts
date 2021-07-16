@@ -34,8 +34,7 @@ const argv = yargs
   .parseSync();
 
 let result: ValidatorResult;
-const schema =
-  "https://github.com/GSA/open-product-accessibility-template/schema/opat.schema.json";
+const schema = "opat.schema.json";
 
 if (fs.existsSync(argv.file)) {
   try {

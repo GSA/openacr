@@ -2,11 +2,14 @@ import { expect } from "chai";
 import { validateOPAT } from "../src/validateOPAT";
 
 describe("validateOPAT", () => {
-  const validSchema =
-    "https://github.com/GSA/open-product-accessibility-template/schema/opat.schema.json";
-  const invalidSchema =
-    "https://github.com/GSA/open-product-accessibility-template/schema/opat-invalid.schema.json";
-  const validJSON = { title: "Drupal Accessibility Conformance Report" };
+  const validSchema = "opat.schema.json";
+  const invalidSchema = "opat-invalid.schema.json";
+  const validJSON = {
+    title: "Drupal Accessibility Conformance Report",
+    "name-product-version": "Drupal 9.1",
+    "product-description": "Content Management System",
+    "contact-information": "mike.gifford@civicactions.com",
+  };
   const invalidJSON = { foo: 2, bar: 4 };
   let result = null;
 
@@ -19,7 +22,10 @@ describe("validateOPAT", () => {
     result = validateOPAT(invalidJSON, validSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(
-      "Invalid: data must have required property 'title'"
+      "Invalid: data must have required property 'title', " +
+        "data must have required property 'name-product-version', " +
+        "data must have required property 'product-description', " +
+        "data must have required property 'contact-information'"
     );
   });
   it("valid JSON OPAT with invalid schema should return invalid schema message", () => {
