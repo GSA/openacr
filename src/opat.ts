@@ -34,7 +34,7 @@ const argv = yargs
   .parseSync();
 
 let result: ValidatorResult;
-const schema = "opat.schema.json";
+const schema = "opat-1.0.0.json";
 
 if (fs.existsSync(argv.file)) {
   try {

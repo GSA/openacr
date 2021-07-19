@@ -2,12 +2,15 @@ import { expect } from "chai";
 import { validateOPAT } from "../src/validateOPAT";
 
 describe("validateOPAT", () => {
-  const validSchema = "opat.schema.json";
-  const invalidSchema = "opat-invalid.schema.json";
+  const validSchema = "opat-1.0.0.json";
+  const invalidSchema = "opat-invalid.json";
   const validJSON = {
     title: "Drupal Accessibility Conformance Report",
-    "name-product-version": "Drupal 9.1",
-    "product-description": "Content Management System",
+    product: {
+      name: "Drupal",
+      version: "9.1",
+      description: "Content Management System",
+    },
     "contact-information": "mike.gifford@civicactions.com",
   };
   const invalidJSON = { foo: 2, bar: 4 };
@@ -23,8 +26,7 @@ describe("validateOPAT", () => {
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(
       "Invalid: data must have required property 'title', " +
-        "data must have required property 'name-product-version', " +
-        "data must have required property 'product-description', " +
+        "data must have required property 'product', " +
         "data must have required property 'contact-information'"
     );
   });
