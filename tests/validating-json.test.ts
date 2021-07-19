@@ -2,7 +2,7 @@ import { expect } from "chai";
 import { validateOPAT } from "../src/validateOPAT";
 
 describe("validateOPAT", () => {
-  const validSchema = "opat-1.0.0.json";
+  const validSchema = "opat-0.1.0.json";
   const invalidSchema = "opat-invalid.json";
   const validJSON = {
     title: "Drupal Accessibility Conformance Report",
