@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { validateOPAT } from "../src/validateOPAT";
 
-describe("validateOPAT", () => {
+describe("Validate OPAT metadata", () => {
   const validSchema = "opat-0.1.0.json";
   const invalidSchema = "opat-invalid.json";
   const validJSON = {
@@ -16,12 +16,12 @@ describe("validateOPAT", () => {
   const invalidJSON = { foo: 2, bar: 4 };
   let result = null;
 
-  it("valid JSON OPAT with valid schema should return valid message", () => {
+  it("pass valid JSON with valid schema should return valid message", () => {
     result = validateOPAT(validJSON, validSchema);
     expect(result.result).to.equal(true);
     expect(result.message).to.equal("Valid!");
   });
-  it("invalid JSON OPAT with valid schema should return invalid JSON message", () => {
+  it("pass invalid JSON with valid schema should return invalid JSON message", () => {
     result = validateOPAT(invalidJSON, validSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(
@@ -30,12 +30,12 @@ describe("validateOPAT", () => {
         "data must have required property 'contact-information'"
     );
   });
-  it("valid JSON OPAT with invalid schema should return invalid schema message", () => {
+  it("pass valid JSON with invalid schema should return invalid schema message", () => {
     result = validateOPAT(validJSON, invalidSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal("Invalid: schema is not valid");
   });
-  it("invalid JSON OPAT with invalid schema should return invalid schema message", () => {
+  it("pass invalid JSON with invalid schema should return invalid schema message", () => {
     result = validateOPAT(invalidJSON, invalidSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal("Invalid: schema is not valid");
