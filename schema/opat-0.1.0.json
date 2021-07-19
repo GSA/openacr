@@ -45,6 +45,10 @@
             "description": "Table or chapter number.",
             "type": "string"
           },
+          "title": {
+            "description": "Table or chapter title.",
+            "type": "string"
+          },
           "criteria": {
             "type": "array",
             "items": {
@@ -83,13 +87,16 @@
                         },
                         "required": ["level"]
                       }
-                    }
+                    },
+                    "required": ["name"]
                   }
                 }
-              }
+              },
+              "required": ["num"]
             }
           }
-        }
+        },
+        "required": ["num", "title"]
       }
     }
   },
