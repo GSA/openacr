@@ -30,22 +30,7 @@
     },
     "contact": {
       "description": "Contact information.",
-      "type": "object",
-      "properties": {
-        "email": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        },
-        "address": {
-          "type": "string"
-        },
-        "phone": {
-          "type": "string"
-        }
-      },
-      "required": ["email"]
+      "$ref": "#/definitions/contact"
     },
     "notes": {
       "description": "Any details or explanation about the product or the report.",
@@ -115,5 +100,25 @@
       }
     }
   },
-  "required": ["title", "product", "contact"]
+  "required": ["title", "product", "contact"],
+  "definitions": {
+    "contact": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        }
+      },
+      "required": ["email"]
+    }
+  }
 }
