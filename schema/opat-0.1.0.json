@@ -37,66 +37,44 @@
       "type": "string"
     },
     "chapters": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "num": {
-            "description": "Table or chapter number.",
-            "type": "string"
-          },
-          "title": {
-            "description": "Table or chapter title.",
-            "type": "string"
-          },
-          "criteria": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "num": {
-                  "description": "Criteria number.",
-                  "type": "string"
-                },
-                "components": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "name": {
-                        "description": "Name of component. E.g. Web, Electronic Docs, Authoring Tools, Software, and so on.",
-                        "type": "string"
-                      },
-                      "adherence": {
-                        "type": "object",
-                        "properties": {
-                          "level": {
-                            "description": "Conformance Level. Supports: The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.\nPartially Supports: Some functionality of the product does not meet the criterion.\nDoes Not Support: The majority of product functionality does not meet the criterion.\nNot Applicable: The criterion is not relevant to the product.\nNot Evaluated: The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.",
-                            "enum": [
-                              "supports",
-                              "partially-supports",
-                              "does-not-support",
-                              "not-applicable",
-                              "not-evaluated"
-                            ]
-                          },
-                          "notes": {
-                            "description": "Remarks and Explanations.",
-                            "type": "string"
-                          }
-                        },
-                        "required": ["level"]
-                      }
-                    },
-                    "required": ["name"]
-                  }
-                }
-              },
-              "required": ["num"]
+      "type": "object",
+      "properties": {
+        "success_criteria_level_a": {
+          "description": "Success criteria level A. Table/chapter 1 in all versions.",
+          "type": "object",
+          "properties": {
+            "num": {
+              "description": "Table or chapter number.",
+              "type": "string"
+            },
+            "notes": {
+              "description": "Any details or explanation about the chapter.",
+              "type": "string"
+            },
+            "criteria": {
+              "$ref": "#/definitions/criteria"
             }
-          }
+          },
+          "required": ["num"]
         },
-        "required": ["num", "title"]
+        "hardware": {
+          "description": "Hardware (chapter 4 in 508/WCAG/INT versions, chapter 8 in EU version).",
+          "type": "object",
+          "properties": {
+            "num": {
+              "description": "Table or chapter number.",
+              "type": "string"
+            },
+            "notes": {
+              "description": "Any details or explanation about the chapter.",
+              "type": "string"
+            },
+            "criteria": {
+              "$ref": "#/definitions/criteria"
+            }
+          },
+          "required": ["num"]
+        }
       }
     }
   },
@@ -119,6 +97,52 @@
         }
       },
       "required": ["email"]
+    },
+    "criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "num": {
+            "description": "Criteria number.",
+            "type": "string"
+          },
+          "components": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "Name of component. E.g. Web, Electronic Docs, Authoring Tools, Software, and so on.",
+                  "type": "string"
+                },
+                "adherence": {
+                  "type": "object",
+                  "properties": {
+                    "level": {
+                      "description": "Conformance Level. Supports: The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.\nPartially Supports: Some functionality of the product does not meet the criterion.\nDoes Not Support: The majority of product functionality does not meet the criterion.\nNot Applicable: The criterion is not relevant to the product.\nNot Evaluated: The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.",
+                      "enum": [
+                        "supports",
+                        "partially-supports",
+                        "does-not-support",
+                        "not-applicable",
+                        "not-evaluated"
+                      ]
+                    },
+                    "notes": {
+                      "description": "Remarks and Explanations.",
+                      "type": "string"
+                    }
+                  },
+                  "required": ["level"]
+                }
+              },
+              "required": ["name"]
+            }
+          }
+        },
+        "required": ["num"]
+      }
     }
   }
 }
