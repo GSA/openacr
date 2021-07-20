@@ -49,7 +49,7 @@ describe("Validate CLI", () => {
       expect(output).to.equal(
         "Invalid: data must have required property 'title', " +
           "data must have required property 'product', " +
-          "data must have required property 'contact-information'\n"
+          "data must have required property 'contact'\n"
       );
     });
   });

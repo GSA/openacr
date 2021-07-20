@@ -28,9 +28,24 @@
       },
       "required": ["name"]
     },
-    "contact-information": {
-      "description": "Primary contact information.",
-      "type": "string"
+    "contact": {
+      "description": "Contact information.",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        }
+      },
+      "required": ["email"]
     },
     "notes": {
       "description": "Any details or explanation about the product or the report.",
@@ -100,5 +115,5 @@
       }
     }
   },
-  "required": ["title", "product", "contact-information"]
+  "required": ["title", "product", "contact"]
 }

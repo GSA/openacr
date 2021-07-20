@@ -11,7 +11,9 @@ describe("Validate OPAT metadata", () => {
       version: "9.1",
       description: "Content Management System",
     },
-    "contact-information": "mike.gifford@civicactions.com",
+    contact: {
+      email: "mike.gifford@civicactions.com",
+    },
   };
   const invalidJSON = { foo: 2, bar: 4 };
   let result = null;
@@ -27,7 +29,7 @@ describe("Validate OPAT metadata", () => {
     expect(result.message).to.equal(
       "Invalid: data must have required property 'title', " +
         "data must have required property 'product', " +
-        "data must have required property 'contact-information'"
+        "data must have required property 'contact'"
     );
   });
   it("pass valid JSON with invalid schema should return invalid schema message", () => {

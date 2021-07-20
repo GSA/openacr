@@ -8,7 +8,9 @@ describe("Validate OPAT chapters", () => {
     product: {
       name: "Drupal",
     },
-    "contact-information": "mike.gifford@civicactions.com",
+    contact: {
+      email: "mike.gifford@civicactions.com",
+    },
     chapters: [
       {
         num: "1",
@@ -39,7 +41,9 @@ describe("Validate OPAT chapters", () => {
     product: {
       name: "Drupal",
     },
-    "contact-information": "mike.gifford@civicactions.com",
+    contact: {
+      email: "mike.gifford@civicactions.com",
+    },
     chapters: [
       {
         foo: 3,
@@ -52,7 +56,9 @@ describe("Validate OPAT chapters", () => {
     product: {
       name: "Drupal",
     },
-    "contact-information": "mike.gifford@civicactions.com",
+    contact: {
+      email: "mike.gifford@civicactions.com",
+    },
     chapters: [
       {
         num: "1",
@@ -66,7 +72,9 @@ describe("Validate OPAT chapters", () => {
     product: {
       name: "Drupal",
     },
-    "contact-information": "mike.gifford@civicactions.com",
+    contact: {
+      email: "mike.gifford@civicactions.com",
+    },
     chapters: [
       {
         num: "1",
