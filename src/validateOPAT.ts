@@ -6,7 +6,7 @@ import { ValidatorResult } from "./ValidatorResult";
 export function validateOPAT(data: unknown, schema: string): ValidatorResult {
   const ajv = new Ajv({
     allErrors: true,
-    schemas: [require("../schema/opat.schema.json")],
+    schemas: [require("../schema/opat-0.1.0.json")],
   });
 
   const validate = ajv.getSchema(schema);

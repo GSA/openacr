@@ -1,0 +1,138 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "opat-0.1.0.json",
+  "title": "OPAT",
+  "description": "Open Product Accessibility Template (OPAT) as a YAML file.",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "The title of the report in the heading format of '[Company Name] Accessibility Conformance Report'.",
+      "type": "string"
+    },
+    "product": {
+      "description": "Product information",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Product name.",
+          "type": "string"
+        },
+        "version": {
+          "description": "Product version if available.",
+          "type": "string"
+        },
+        "description": {
+          "description": "A brief description of the product.",
+          "type": "string"
+        }
+      },
+      "required": ["name"]
+    },
+    "contact": {
+      "description": "Contact information.",
+      "$ref": "#/definitions/contact"
+    },
+    "notes": {
+      "description": "Any details or explanation about the product or the report.",
+      "type": "string"
+    },
+    "chapters": {
+      "type": "object",
+      "properties": {
+        "success_criteria_level_a": {
+          "description": "Success criteria level A. Table/chapter 1 in all versions.",
+          "type": "object",
+          "properties": {
+            "notes": {
+              "description": "Any details or explanation about the chapter.",
+              "type": "string"
+            },
+            "criteria": {
+              "$ref": "#/definitions/criteria"
+            }
+          }
+        },
+        "hardware": {
+          "description": "Hardware (chapter 4 in 508/WCAG/INT versions, chapter 8 in EU version).",
+          "type": "object",
+          "properties": {
+            "notes": {
+              "description": "Any details or explanation about the chapter.",
+              "type": "string"
+            },
+            "criteria": {
+              "$ref": "#/definitions/criteria"
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": ["title", "product", "contact"],
+  "definitions": {
+    "contact": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        }
+      },
+      "required": ["email"]
+    },
+    "criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "num": {
+            "description": "Criteria number.",
+            "type": "string"
+          },
+          "components": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "Name of component. E.g. Web, Electronic Docs, Authoring Tools, Software, and so on.",
+                  "type": "string"
+                },
+                "adherence": {
+                  "type": "object",
+                  "properties": {
+                    "level": {
+                      "description": "Conformance Level. Supports: The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.\nPartially Supports: Some functionality of the product does not meet the criterion.\nDoes Not Support: The majority of product functionality does not meet the criterion.\nNot Applicable: The criterion is not relevant to the product.\nNot Evaluated: The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.",
+                      "enum": [
+                        "supports",
+                        "partially-supports",
+                        "does-not-support",
+                        "not-applicable",
+                        "not-evaluated"
+                      ]
+                    },
+                    "notes": {
+                      "description": "Remarks and Explanations.",
+                      "type": "string"
+                    }
+                  },
+                  "required": ["level"]
+                }
+              },
+              "required": ["name"]
+            }
+          }
+        },
+        "required": ["num"]
+      }
+    }
+  }
+}
