@@ -13,7 +13,6 @@ describe("Validate OPAT chapters", () => {
     },
     chapters: {
       success_criteria_level_a: {
-        num: "1",
         criteria: [
           {
             num: "1.1.1",
@@ -30,7 +29,6 @@ describe("Validate OPAT chapters", () => {
         ],
       },
       hardware: {
-        num: "4",
         notes:
           "Drupal is a web application. Hardware accessibility criteria is not applicable.",
       },
@@ -59,7 +57,6 @@ describe("Validate OPAT chapters", () => {
     },
     chapters: {
       success_criteria_level_a: {
-        num: "1",
         criteria: ["1.1.1", "1.4.1"],
       },
     },
@@ -74,7 +71,6 @@ describe("Validate OPAT chapters", () => {
     },
     chapters: {
       success_criteria_level_a: {
-        num: "1",
         criteria: [
           {
             num: "1.1.1",

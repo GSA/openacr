@@ -43,10 +43,6 @@
           "description": "Success criteria level A. Table/chapter 1 in all versions.",
           "type": "object",
           "properties": {
-            "num": {
-              "description": "Table or chapter number.",
-              "type": "string"
-            },
             "notes": {
               "description": "Any details or explanation about the chapter.",
               "type": "string"
@@ -54,17 +50,12 @@
             "criteria": {
               "$ref": "#/definitions/criteria"
             }
-          },
-          "required": ["num"]
+          }
         },
         "hardware": {
           "description": "Hardware (chapter 4 in 508/WCAG/INT versions, chapter 8 in EU version).",
           "type": "object",
           "properties": {
-            "num": {
-              "description": "Table or chapter number.",
-              "type": "string"
-            },
             "notes": {
               "description": "Any details or explanation about the chapter.",
               "type": "string"
@@ -72,8 +63,7 @@
             "criteria": {
               "$ref": "#/definitions/criteria"
             }
-          },
-          "required": ["num"]
+          }
         }
       }
     }

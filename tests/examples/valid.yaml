@@ -8,7 +8,6 @@ contact:
 notes: Links to the issues identified are included where possible to ensure that this is a living document where outstanding issues are regularly reviewed for compliance. The Authoring tool is evaluated against ATAG 2.0, Part A and B. Incorporating feedback from the Drupal community.
 chapters:
   success_criteria_level_a:
-    num: "1"
     criteria:
       - num: "1.1.1"
         components:
@@ -45,5 +44,4 @@ chapters:
               level: does-not-support
               notes: There is no additional support for authors within the authoring interface to explain how this can be done.
   hardware:
-    num: "4"
     notes: "Drupal is a web application. Hardware accessibility criteria is not applicable."
