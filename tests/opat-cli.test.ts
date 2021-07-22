@@ -313,4 +313,26 @@ describe("Validate OPAT CLI", () => {
       expect(output).to.equal("Valid!\n");
     });
   });
+
+  it("when passed an invalid criteria example and bad catalog file should return valid message", () => {
+    const valid = spawn(
+      cmd,
+      options.concat(
+        "tests/examples/invalid-criteria.yaml",
+        "--cf",
+        "tests/examples/bad-wcag2-catalog.yaml"
+      )
+    );
+    const chunks = [];
+
+    valid.stdout.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    valid.stdout.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal("Valid!\n");
+    });
+  });
 });
