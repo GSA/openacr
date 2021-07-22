@@ -10,6 +10,7 @@ describe("Validate catalog", () => {
       {
         id: "success_criteria_level_a",
         label: "Success Criteria, Level A",
+        order: 1,
         criteria: [
           {
             id: "1.1.1",
@@ -24,6 +25,7 @@ describe("Validate catalog", () => {
       {
         id: "hardware",
         label: "Hardware",
+        order: 4,
         criteria: [
           {
             id: "402",
@@ -65,6 +67,7 @@ describe("Validate catalog", () => {
     chapters: {
       id: "success_criteria_level_a",
       label: "Success Criteria, Level A",
+      order: 1,
     },
   };
   const invalidJSON2 = {
@@ -126,7 +129,8 @@ describe("Validate catalog", () => {
     result = validateCatalog(invalidJSON2, validSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(
-      "Invalid: data/chapters/0/criteria/0 must be object, " +
+      "Invalid: data/chapters/0 must have required property 'order', " +
+        "data/chapters/0/criteria/0 must be object, " +
         "data/chapters/0/criteria/1 must be object"
     );
   });

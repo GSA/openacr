@@ -36,7 +36,10 @@ describe("Validate OPAT CLI", () => {
   });
 
   it("when passed an invalid file should return invalid message", () => {
-    const invalid = spawn(cmd, options.concat("tests/examples/invalid.yaml"));
+    const invalid = spawn(
+      cmd,
+      options.concat("tests/examples/invalid-basic.yaml")
+    );
     const chunks = [];
 
     invalid.stderr.on("data", (chunk) => {

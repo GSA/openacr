@@ -2,6 +2,7 @@ title: WCAG 2.0
 chapters:
   - id: success_criteria_level_a
     label: Success Criteria, Level A
+    order: 1
     criteria:
       - id: 1.1.1
         label: Non-text Content (Level A)
@@ -9,6 +10,7 @@ chapters:
         label: 1.2.2 Captions (Prerecorded) (Level A)
   - id: hardware
     label: Hardware
+    order: 4
     criteria:
       - id: "402"
         label: Closed Functionality

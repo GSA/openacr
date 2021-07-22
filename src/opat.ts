@@ -10,7 +10,7 @@
  *
  * Example commands:
  *   npx ts-node src/opat.ts validate -f tests/examples/valid.yaml # Output: Valid!
- *   npx ts-node src/opat.ts validate -f tests/examples/invalid.yaml # Output: Invalid: data must have required property 'title'
+ *   npx ts-node src/opat.ts validate -f tests/examples/invalid-basic.yaml # Output: Invalid: ...
  */
 
 import { validateOPAT } from "./validateOPAT";
