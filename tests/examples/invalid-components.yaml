@@ -1,0 +1,29 @@
+title: Drupal Accessibility Conformance Report
+product:
+  name: Drupal
+  version: "9.1"
+  description: Content Management System
+contact:
+  email: mike.gifford@civicactions.com
+chapters:
+  success_criteria_level_a:
+    criteria:
+      - num: "1.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Drupal 8 requires alt text for images by default.
+          - name: "documents"
+            adherence:
+              level: "supports"
+              notes: Some non-textual content in the documentation does not provide a textual alternative.
+      - num: "1.2.2"
+        components:
+          - name: "website"
+            adherence:
+              level: partially-supports
+              notes: Authors can satisfy 1.2.1 Audio-only and Video-only (Prerecorded) by using text on the same page.
+          - name: "none"
+  hardware:
+    notes: "Drupal is a web application. Hardware accessibility criteria is not applicable."

@@ -13,23 +13,44 @@ export function validateOPATCatalogValues(
   const validationMessages = [];
 
   if (validCatalogResult.result) {
-    const catalogChapters = catalog.chapters;
+    if (catalog.chapters) {
+      const catalogChapters = catalog.chapters;
 
-    for (const catalogChapter of catalogChapters) {
-      if (data.chapters[catalogChapter.id].criteria) {
-        const dataCriteriaList = data.chapters[catalogChapter.id].criteria;
-        for (const dataCriteria of dataCriteriaList) {
-          if (
-            !checkForNumInCatalogChapters(
-              dataCriteria.num,
-              catalogChapter.id,
-              catalog
-            )
-          ) {
-            validationPassed = false;
-            validationMessages.push(
-              `criteria num '${dataCriteria.num}' is not included in '${catalogChapter.label}'`
-            );
+      for (const catalogChapter of catalogChapters) {
+        if (data.chapters[catalogChapter.id].criteria) {
+          const dataCriteriaList = data.chapters[catalogChapter.id].criteria;
+          for (const dataCriteria of dataCriteriaList) {
+            if (
+              !checkForNumInCatalogChapters(
+                dataCriteria.num,
+                catalogChapter.id,
+                catalogChapters
+              )
+            ) {
+              validationPassed = false;
+              validationMessages.push(
+                `criteria num '${dataCriteria.num}' is not included in '${catalogChapter.label}'`
+              );
+            }
+
+            if (dataCriteria.components) {
+              const dataComponents = dataCriteria.components;
+              if (catalog.components) {
+                for (const dataComponent of dataComponents) {
+                  if (
+                    !checkForNameInCatalogComponents(
+                      dataComponent.name,
+                      catalog.components
+                    )
+                  ) {
+                    validationPassed = false;
+                    validationMessages.push(
+                      `component name '${dataComponent.name}' is not defined in catalog '${catalog.title}'`
+                    );
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -49,10 +70,8 @@ export function validateOPATCatalogValues(
 function checkForNumInCatalogChapters(
   num: string,
   id: string,
-  catalog: any
+  chapters: any
 ): boolean {
-  const chapters = catalog.chapters;
-
   for (const chapter of chapters) {
     if (chapter.id === id) {
       for (const catalogChapterCriteria of chapter.criteria) {
@@ -60,6 +79,19 @@ function checkForNumInCatalogChapters(
           return true;
         }
       }
+    }
+  }
+
+  return false;
+}
+
+function checkForNameInCatalogComponents(
+  name: string,
+  components: any
+): boolean {
+  for (const component of components) {
+    if (component.id === name) {
+      return true;
     }
   }
 
