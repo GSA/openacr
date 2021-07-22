@@ -1,0 +1,22 @@
+title: Drupal Accessibility Conformance Report
+product:
+  name: Drupal
+  version: "9.1"
+  description: Content Management System
+contact:
+  email: mike.gifford@civicactions.com
+notes: Links to the issues identified are included where possible to ensure that this is a living document where outstanding issues are regularly reviewed for compliance. The Authoring tool is evaluated against ATAG 2.0, Part A and B. Incorporating feedback from the Drupal community.
+chapters:
+  success_criteria_level_a:
+    criteria:
+      - num: "1.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Drupal 8 requires alt text for images by default.
+      - num: "100.100.100"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"

@@ -75,22 +75,29 @@ describe("Validate OPAT CLI", () => {
     });
   });
 
-  // it("when passed an invalid criteria example should return invalid message", () => {
-  //   const invalid = spawn(cmd, options.concat("tests/examples/invalid-criteria.yaml"));
-  //   const chunks = [];
-  //
-  //   invalid.stderr.on("data", (chunk) => {
-  //     chunks.push(chunk);
-  //   });
-  //
-  //   invalid.stderr.on("end", () => {
-  //     const output = Buffer.concat(chunks).toString();
-  //
-  //     expect(output).to.equal(
-  //       "Invalid: criteria num '1.2.2' is not included in chapter 'Success Criteria, Level A'"
-  //     );
-  //   });
-  // });
+  it("when passed an invalid criteria example should return invalid message", () => {
+    const invalid = spawn(
+      cmd,
+      options.concat(
+        "tests/examples/invalid-criteria.yaml",
+        "--cf",
+        "catalog/wcag2-catalog.yaml"
+      )
+    );
+    const chunks = [];
+
+    invalid.stderr.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    invalid.stderr.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal(
+        "Invalid: criteria num '100.100.100' is not included in 'Success Criteria, Level A'\n"
+      );
+    });
+  });
 
   it("when passed a valid file should return valid message", () => {
     const valid = spawn(cmd, options.concat("tests/examples/valid.yaml"));
