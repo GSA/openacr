@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "opat-catalog-0.1.0.json",
+  "title": "OPAT Catalog",
+  "description": "Open Product Accessibility Template (OPAT) catalog.",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "The title of the catalog.",
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "chapters": {
+      "description": "Available chapters/tables.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Chapter/table ID.",
+            "type": "string"
+          },
+          "label": {
+            "description": "Human-readable label.",
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "criteria": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "Criteria ID.",
+                  "type": "string"
+                },
+                "label": {
+                  "description": "Human-readable label.",
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              },
+              "required": ["id", "label"]
+            }
+          }
+        },
+        "required": ["id", "label"]
+      }
+    },
+    "components": {
+      "description": "Available components.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Component ID.",
+            "type": "string"
+          },
+          "label": {
+            "description": "Human-readable label.",
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": ["id", "label"]
+      }
+    }
+  },
+  "required": ["title"]
+}
