@@ -6,7 +6,7 @@ The OPAT command-line interface (CLI) is built in typescript. It takes an OPAT a
 
 ## Install
 
-Before you can run the CLI you must install the dependencies with the following NPM command.
+Install the dependencies with the following NPM command.
 
 ```bash
 npm install
@@ -14,7 +14,7 @@ npm install
 
 ## Commands and examples
 
-The OPAT CLI can be executed without compiling using [`ts-node`](https://typestrong.org/ts-node/). Currently the CLI can only validate entered YAML.
+The OPAT CLI can be executed without compiling using [`ts-node`](https://typestrong.org/ts-node/). Currently, the CLI can only validate entered YAML.
 
 ### Help
 
@@ -59,18 +59,18 @@ Where:
 
 - tests/examples/valid.yaml: Current valid OPAT example (few chapters).
 - tests/examples/invalid-basic.yaml: Very incorrect OPAT example. Used for sanity checks.
-- catalog/wcag2-catalog.yaml: Current WCAG 2.0 catalog (few criterias).
-- tests/examples/invalid-criteria.yaml: Has incorrect criterias (E.g. instead of '1.1.1' it has '100.100.100').
-- tests/examples/invalid-components.yaml: Has incorrect components (E.g. instead of 'web' it has 'website').
+- catalog/wcag2-catalog.yaml: Current WCAG 2.0 catalog (few criteria).
+- tests/examples/invalid-criteria.yaml: Has incorrect criteria (E.g., instead of '1.1.1' it has '100.100.100').
+- tests/examples/invalid-components.yaml: Has incorrect components (E.g., instead of 'web' it has 'website').
 
 ## Schemas
 
 Located in the 'schema' folder
 
-- `opat-0.1.0.json`: The OPAT schema.
-- `opat-catalog-0.1.0.json`: The OPAT catalog schema. Used to create catalogs defining the criteria and components for WCAG 2.0/2.1, 508, EU, and so on.
+- `opat-0.1.0.json` the OPAT schema.
+- `opat-catalog-0.1.0.json` the OPAT catalog schema. Used to create catalogs defining the criteria and components for WCAG 2.0/2.1, 508, EU, and so on.
 
 ## Notes:
 
-- If the catalog file is not provided the `validate` command will only check that the YAML file meets the schema defined.
+- If the catalog file is missing the `validate` command will only check that the YAML file meets the schema defined.
 - The catalog file will be also validated that it meets the defined schema (`opat-catalog-0.1.0.json`).
