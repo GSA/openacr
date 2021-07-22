@@ -256,42 +256,6 @@ describe("Validate OPAT CLI", () => {
     });
   });
 
-  it("when passed an invalid criteria example with no catalog file should return valid message", () => {
-    const valid = spawn(
-      cmd,
-      options.concat("tests/examples/invalid-criteria.yaml")
-    );
-    const chunks = [];
-
-    valid.stdout.on("data", (chunk) => {
-      chunks.push(chunk);
-    });
-
-    valid.stdout.on("end", () => {
-      const output = Buffer.concat(chunks).toString();
-
-      expect(output).to.equal("Valid!\n");
-    });
-  });
-
-  it("when passed an invalid components example with no catalog file should return valid message", () => {
-    const valid = spawn(
-      cmd,
-      options.concat("tests/examples/invalid-components.yaml")
-    );
-    const chunks = [];
-
-    valid.stdout.on("data", (chunk) => {
-      chunks.push(chunk);
-    });
-
-    valid.stdout.on("end", () => {
-      const output = Buffer.concat(chunks).toString();
-
-      expect(output).to.equal("Valid!\n");
-    });
-  });
-
   it("when passed a valid file and valid catalog file should return valid message", () => {
     const valid = spawn(
       cmd,
