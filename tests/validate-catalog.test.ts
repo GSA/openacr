@@ -110,13 +110,13 @@ describe("Validate catalog", () => {
   it("pass valid JSON with invalid schema should return invalid schema message", () => {
     result = validateCatalog(validJSON, invalidSchema);
     expect(result.result).to.equal(false);
-    expect(result.message).to.equal("Invalid: schema is not valid");
+    expect(result.message).to.equal("Invalid: catalog schema is not valid");
   });
 
   it("pass invalid JSON with invalid schema should return invalid schema message", () => {
     result = validateCatalog(invalidJSON, invalidSchema);
     expect(result.result).to.equal(false);
-    expect(result.message).to.equal("Invalid: schema is not valid");
+    expect(result.message).to.equal("Invalid: catalog schema is not valid");
   });
 
   it("pass invalid chapters JSON should return invalid JSON message", () => {
