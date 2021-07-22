@@ -1,26 +1,25 @@
-// src/opat.ts
+// src/librarian.ts
 
 /*
  * Install dependencies command:
  *   npm install
  *
  * Help commands:
- *   npx ts-node src/opat.ts --help
- *   npx ts-node src/opat.ts validate --help
+ *   npx ts-node src/librarian.ts --help
+ *   npx ts-node src/librarian.ts validate --help
  *
  * Example commands:
- *   npx ts-node src/opat.ts validate -f tests/examples/valid.yaml # Output: Valid!
- *   npx ts-node src/opat.ts validate -f tests/examples/invalid.yaml # Output: Invalid: data must have required property 'title'
+ *   npx ts-node src/librarian.ts validate -f catalog/wcag2-catalog.yaml # Output: Valid!
  */
 
-import { validateOPAT } from "./validateOPAT";
 import yargs from "yargs";
 import fs from "fs";
 import yaml from "js-yaml";
 import { ValidatorResult } from "./ValidatorResult";
+import { validateCatalog } from "./validateCatalog";
 
 const argv = yargs
-  .command("validate", "Validate OPAT content", function (yargs) {
+  .command("validate", "Validate catalogs", function (yargs) {
     return yargs.options({
       file: {
         type: "string",
@@ -34,12 +33,12 @@ const argv = yargs
   .parseSync();
 
 let result: ValidatorResult;
-const schema = "opat-0.1.0.json";
+const schema = "opat-catalog-0.1.0.json";
 
 if (fs.existsSync(argv.file)) {
   try {
     const data = yaml.load(fs.readFileSync(argv.file).toString());
-    result = validateOPAT(data, schema);
+    result = validateCatalog(data, schema);
   } catch {
     result = {
       result: false,

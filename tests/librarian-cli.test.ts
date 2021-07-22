@@ -1,9 +1,9 @@
 import { expect } from "chai";
 import { spawn } from "child_process";
 
-describe("Validate OPAT CLI", () => {
+describe("Validate Librarian CLI", () => {
   const cmd = "npx";
-  const options = ["ts-node", "src/opat.ts", "validate", "-f"];
+  const options = ["ts-node", "src/librarian.ts", "validate", "-f"];
 
   it("when passed no file should return invalid message", () => {
     const invalid = spawn(cmd, options);
@@ -47,15 +47,13 @@ describe("Validate OPAT CLI", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: data must have required property 'title', " +
-          "data must have required property 'product', " +
-          "data must have required property 'contact'\n"
+        "Invalid: data must have required property 'title'\n"
       );
     });
   });
 
   it("when passed a valid file should return valid message", () => {
-    const valid = spawn(cmd, options.concat("tests/examples/valid.yaml"));
+    const valid = spawn(cmd, options.concat("catalog/wcag2-catalog.yaml"));
     const chunks = [];
 
     valid.stdout.on("data", (chunk) => {
