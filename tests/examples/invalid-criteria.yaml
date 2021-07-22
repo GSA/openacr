@@ -5,7 +5,6 @@ product:
   description: Content Management System
 contact:
   email: mike.gifford@civicactions.com
-notes: Links to the issues identified are included where possible to ensure that this is a living document where outstanding issues are regularly reviewed for compliance. The Authoring tool is evaluated against ATAG 2.0, Part A and B. Incorporating feedback from the Drupal community.
 chapters:
   success_criteria_level_a:
     criteria:
@@ -20,3 +19,10 @@ chapters:
           - name: "web"
             adherence:
               level: "supports"
+  hardware:
+    criteria:
+      - num: "400.400.400"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-evaluated"

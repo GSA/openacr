@@ -9,44 +9,41 @@ export function validateOPATCatalogValues(
 ): ValidatorResult {
   const catalogSchema = "opat-catalog-0.1.0.json";
   const validCatalogResult = validateCatalog(catalog, catalogSchema);
+  let validationPassed = true;
+  const validationMessages = [];
 
   if (validCatalogResult.result) {
-    const successCriteriaLevelA = data.chapters.success_criteria_level_a;
+    const catalogChapters = catalog.chapters;
 
-    for (const dataCriteria of successCriteriaLevelA.criteria) {
-      if (
-        !checkForNumInCatalogChapters(
-          dataCriteria.num,
-          "success_criteria_level_a",
-          catalog
-        )
-      ) {
-        return {
-          result: false,
-          message: `Invalid: criteria num '${
-            dataCriteria.num
-          }' is not included in '${getCatalogChapterLabel(
-            "success_criteria_level_a",
-            catalog
-          )}'`,
-        };
+    for (const catalogChapter of catalogChapters) {
+      if (data.chapters[catalogChapter.id].criteria) {
+        const dataCriteriaList = data.chapters[catalogChapter.id].criteria;
+        for (const dataCriteria of dataCriteriaList) {
+          if (
+            !checkForNumInCatalogChapters(
+              dataCriteria.num,
+              catalogChapter.id,
+              catalog
+            )
+          ) {
+            validationPassed = false;
+            validationMessages.push(
+              `criteria num '${dataCriteria.num}' is not included in '${catalogChapter.label}'`
+            );
+          }
+        }
       }
     }
   }
 
-  return validCatalogResult;
-}
-
-function getCatalogChapterLabel(id: string, catalog: any): string {
-  const chapters = catalog.chapters;
-
-  for (const chapter of chapters) {
-    if (chapter.id === id) {
-      return chapter.label;
-    }
+  if (validationPassed) {
+    return validCatalogResult;
+  } else {
+    return {
+      result: validationPassed,
+      message: "Invalid: " + validationMessages.join(", "),
+    };
   }
-
-  return "";
 }
 
 function checkForNumInCatalogChapters(

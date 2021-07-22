@@ -94,7 +94,8 @@ describe("Validate OPAT CLI", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: criteria num '100.100.100' is not included in 'Success Criteria, Level A'\n"
+        "Invalid: criteria num '100.100.100' is not included in 'Success Criteria, Level A', " +
+          "criteria num '400.400.400' is not included in 'Hardware'\n"
       );
     });
   });
