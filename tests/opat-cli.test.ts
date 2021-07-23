@@ -35,7 +35,7 @@ describe("Validate OPAT CLI", () => {
     });
   });
 
-  it("when passed an invalid YAML catalog file should return invalid message", () => {
+  it("when passed an invalid YAML catalog file (not in YAML format) should return invalid message", () => {
     const invalid = spawn(
       cmd,
       options.concat("tests/examples/valid.yaml", "--cf", "README.md")
@@ -50,6 +50,96 @@ describe("Validate OPAT CLI", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal("Invalid: catalog file is not in YAML format\n");
+    });
+  });
+
+  it("when passed an invalid YAML catalog file should return invalid message", () => {
+    const invalid = spawn(
+      cmd,
+      options.concat(
+        "tests/examples/valid.yaml",
+        "--cf",
+        "tests/examples/invalid-basic.yaml"
+      )
+    );
+    const chunks = [];
+
+    invalid.stderr.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    invalid.stderr.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal(
+        "Invalid: data must have required property 'title'\n"
+      );
+    });
+  });
+
+  it("when passed a YAML catalog file with missing chapters should return valid message", () => {
+    const invalid = spawn(
+      cmd,
+      options.concat(
+        "tests/examples/valid.yaml",
+        "--cf",
+        "tests/examples/catalog-missing-chapters.yaml"
+      )
+    );
+    const chunks = [];
+
+    invalid.stdout.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    invalid.stdout.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal("Valid!\n");
+    });
+  });
+
+  it("when passed a YAML catalog file with missing components should return valid message", () => {
+    const invalid = spawn(
+      cmd,
+      options.concat(
+        "tests/examples/valid.yaml",
+        "--cf",
+        "tests/examples/catalog-missing-components.yaml"
+      )
+    );
+    const chunks = [];
+
+    invalid.stdout.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    invalid.stdout.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal("Valid!\n");
+    });
+  });
+
+  it("when passed a file with missing components should return valid message", () => {
+    const invalid = spawn(
+      cmd,
+      options.concat(
+        "tests/examples/valid-missing-components.yaml",
+        "--cf",
+        "catalog/wcag2-catalog.yaml"
+      )
+    );
+    const chunks = [];
+
+    invalid.stdout.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    invalid.stdout.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal("Valid!\n");
     });
   });
 

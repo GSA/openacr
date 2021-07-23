@@ -6,7 +6,7 @@ The OPAT command-line interface (CLI) is built in typescript. It takes an OPAT a
 
 ## Install
 
-Install the dependencies with the following NPM command.
+Install the dependencies with the following NPM command:
 
 ```bash
 npm install
@@ -45,7 +45,7 @@ Options:
 
 ### Examples
 
-You can test the CLI with the following examples.
+You can test the CLI with the following examples:
 
 ```bash
 npx ts-node src/opat.ts validate -f tests/examples/valid.yaml # Output: Valid!
@@ -66,12 +66,22 @@ Where:
 
 ## Schemas
 
-Located in the 'schema' folder
+Located in the 'schema' folder:
 
 - `opat-0.1.0.json` the OPAT schema.
 - `opat-catalog-0.1.0.json` the OPAT catalog schema. Used to create catalogs defining the criteria and components for WCAG 2.0/2.1, 508, EU, and so on.
 
-## Notes:
+## Notes
 
 - If the catalog file is missing the `validate` command will only check that the YAML file meets the schema defined.
 - The catalog file will be also validated that it meets the defined schema (`opat-catalog-0.1.0.json`).
+
+## Tests
+
+Tests can be run by executing the command:
+
+```bash
+npm test
+```
+
+_Note_: If there are CLI errors, the `opat-cli.test.ts` says tests have passed initially but after that you get the assertion error and error code 7.
