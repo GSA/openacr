@@ -125,6 +125,32 @@ describe("Validate OPAT CLI", () => {
     });
   });
 
+  it("when passed an invalid components & criteria example should return invalid message", () => {
+    const invalid = spawn(
+      cmd,
+      options.concat(
+        "tests/examples/invalid-components-criteria.yaml",
+        "--cf",
+        "catalog/wcag2-catalog.yaml"
+      )
+    );
+    const chunks = [];
+
+    invalid.stderr.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    invalid.stderr.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal(
+        "Invalid: component name 'documents' is not defined in catalog 'WCAG 2.0', " +
+          "criteria num '400.400.400' is not included in 'Success Criteria, Level A', " +
+          "component name 'website' is not defined in catalog 'WCAG 2.0'\n"
+      );
+    });
+  });
+
   it("when passed a valid example with no catalog file should return valid message", () => {
     const valid = spawn(cmd, options.concat("tests/examples/valid.yaml"));
     const chunks = [];
