@@ -54,6 +54,9 @@ npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -cf catalog/2.4-ed
 npx ts-node src/opat.ts validate -f tests/examples/invalid-criteria.yaml -cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
 npx ts-node src/opat.ts validate -f tests/examples/invalid-components.yaml --cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
 npx ts-node src/opat.ts validate -f tests/examples/invalid-components-criteria.yaml --cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
+npx ts-node src/opat.ts validate -f tests/examples/valid.yaml --cf tests/examples/catalog-missing-components.yaml # Output: Valid!
+npx ts-node src/opat.ts validate -f tests/examples/valid.yaml --cf tests/examples/catalog-missing-chapters.yaml # Output: Valid!
+npx ts-node src/opat.ts validate -f tests/examples/valid.yaml --cf tests/examples/catalog-different-components.yaml # Output: Invalid: ...
 ```
 
 Where:
@@ -62,7 +65,11 @@ Where:
 - tests/examples/invalid-basic.yaml: Very incorrect OPAT example. Used for sanity checks.
 - catalog/wcag2-catalog.yaml: Current WCAG 2.0 catalog (few criteria).
 - tests/examples/invalid-criteria.yaml: Has incorrect criteria (E.g., instead of '1.1.1' it has '100.100.100').
-- tests/examples/invalid-components.yaml: Has incorrect components (E.g., instead of 'web' it has 'website').
+- tests/examples/invalid-components.yaml: Has incorrect components (E.g., includes 'none' in criteria '1.2.2').
+- tests/examples/invalid-components-criteria.yaml: Has incorrect components and criteria.
+- tests/examples/catalog-missing-components.yaml: No components.
+- tests/examples/catalog-missing-chapters.yaml: No chapters.
+- tests/examples/catalog-different-components.yaml: Has different components to test how a previous valid OPAT is invalid and vice-versa.
 
 ## Schemas
 

@@ -9,12 +9,7 @@
  *   npx ts-node src/opat.ts validate --help
  *
  * Example commands:
- *   npx ts-node src/opat.ts validate -f tests/examples/valid.yaml # Output: Valid!
- *   npx ts-node src/opat.ts validate -f tests/examples/invalid-basic.yaml # Output: Invalid: ...
- *   npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Valid!
- *   npx ts-node src/opat.ts validate -f tests/examples/invalid-criteria.yaml -cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
- *   npx ts-node src/opat.ts validate -f tests/examples/invalid-components.yaml --cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
- *   npx ts-node src/opat.ts validate -f tests/examples/invalid-components-criteria.yaml --cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
+ *   See docs/CLI.md
  */
 
 import { validateOPAT } from "./validateOPAT";
