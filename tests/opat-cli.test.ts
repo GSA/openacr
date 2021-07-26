@@ -127,7 +127,7 @@ describe("Validate OPAT CLI", () => {
       options.concat(
         "tests/examples/valid-missing-components.yaml",
         "--cf",
-        "catalog/wcag2-catalog.yaml"
+        "catalog/2.4-edition-508-wcag-2.0.yaml"
       )
     );
     const chunks = [];
@@ -171,7 +171,7 @@ describe("Validate OPAT CLI", () => {
       options.concat(
         "tests/examples/invalid-criteria.yaml",
         "--cf",
-        "catalog/wcag2-catalog.yaml"
+        "catalog/2.4-edition-508-wcag-2.0.yaml"
       )
     );
     const chunks = [];
@@ -196,7 +196,7 @@ describe("Validate OPAT CLI", () => {
       options.concat(
         "tests/examples/invalid-components.yaml",
         "--cf",
-        "catalog/wcag2-catalog.yaml"
+        "catalog/2.4-edition-508-wcag-2.0.yaml"
       )
     );
     const chunks = [];
@@ -209,8 +209,8 @@ describe("Validate OPAT CLI", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: component name 'documents' is not defined in catalog 'WCAG 2.0', " +
-          "component name 'website' is not defined in catalog 'WCAG 2.0'\n"
+        "Invalid: component name 'documents' is not defined in catalog 'VPAT 2.4 edition 508/WCAG 2.0', " +
+          "component name 'website' is not defined in catalog 'VPAT 2.4 edition 508/WCAG 2.0'\n"
       );
     });
   });
@@ -221,7 +221,7 @@ describe("Validate OPAT CLI", () => {
       options.concat(
         "tests/examples/invalid-components-criteria.yaml",
         "--cf",
-        "catalog/wcag2-catalog.yaml"
+        "catalog/2.4-edition-508-wcag-2.0.yaml"
       )
     );
     const chunks = [];
@@ -234,9 +234,9 @@ describe("Validate OPAT CLI", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: component name 'documents' is not defined in catalog 'WCAG 2.0', " +
+        "Invalid: component name 'documents' is not defined in catalog 'VPAT 2.4 edition 508/WCAG 2.0', " +
           "criteria num '400.400.400' is not included in 'Success Criteria, Level A', " +
-          "component name 'website' is not defined in catalog 'WCAG 2.0'\n"
+          "component name 'website' is not defined in catalog 'VPAT 2.4 edition 508/WCAG 2.0'\n"
       );
     });
   });
@@ -298,7 +298,7 @@ describe("Validate OPAT CLI", () => {
       options.concat(
         "tests/examples/valid.yaml",
         "--cf",
-        "catalog/wcag2-catalog.yaml"
+        "catalog/2.4-edition-508-wcag-2.0.yaml"
       )
     );
     const chunks = [];

@@ -5,7 +5,7 @@ describe("Validate catalog", () => {
   const validSchema = "opat-catalog-0.1.0.json";
   const invalidSchema = "opat-catalog-invalid.json";
   const validJSON = {
-    title: "WCAG 2.0",
+    title: "VPAT 2.4 edition 508/WCAG 2.0",
     chapters: [
       {
         id: "success_criteria_level_a",
@@ -21,6 +21,23 @@ describe("Validate catalog", () => {
             id: "1.2.2",
             label: "1.2.2 Captions (Prerecorded) (Level A)",
             key: "captions-prerecorded",
+          },
+        ],
+      },
+      {
+        id: "hardware",
+        label: "Hardware",
+        order: 4,
+        criteria: [
+          {
+            id: "402",
+            label: "Closed Functionality",
+            key: "closed-functionality",
+          },
+          {
+            id: "402.1",
+            label: "General",
+            key: "general",
           },
         ],
       },
@@ -50,7 +67,7 @@ describe("Validate catalog", () => {
   };
   const invalidJSON = { foo: 2, bar: 4 };
   const invalidJSON1 = {
-    title: "WCAG 2.0",
+    title: "VPAT 2.4 edition 508/WCAG 2.0",
     chapters: {
       id: "success_criteria_level_a",
       label: "Success Criteria, Level A",
@@ -58,7 +75,7 @@ describe("Validate catalog", () => {
     },
   };
   const invalidJSON2 = {
-    title: "WCAG 2.0",
+    title: "VPAT 2.4 edition 508/WCAG 2.0",
     chapters: [
       {
         id: "success_criteria_level_a",
@@ -68,7 +85,7 @@ describe("Validate catalog", () => {
     ],
   };
   const invalidJSON3 = {
-    title: "WCAG 2.0",
+    title: "VPAT 2.4 edition 508/WCAG 2.0",
     components: [
       {
         web: "Web",
