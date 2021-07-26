@@ -1,0 +1,31 @@
+title: Drupal Accessibility Conformance Report
+product:
+  name: Drupal
+  version: "9.1"
+  description: Content Management System
+contact:
+  email: mike.gifford@civicactions.com
+notes: Links to the issues identified are included where possible to ensure that this is a living document where outstanding issues are regularly reviewed for compliance. The Authoring tool is evaluated against ATAG 2.0, Part A and B. Incorporating feedback from the Drupal community.
+chapters:
+  success_criteria_level_a:
+    criteria:
+      - num: "1.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Drupal 8 requires alt text for images by default.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Some non-textual content in the documentation does not provide a textual alternative.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: The back end of Drupal Core was built to be  WCAG 2.0 AA compliant and non-text content in the administration interface has a textual equivalent. Audio and video can be added to the media library, but Core does not provide tools to manage transcripts and captions/subtitles for local video and audio - Drupal issue #3002770.
+      - num: "1.2.2"
+  hardware:
+    notes: "Drupal is a web application. Hardware accessibility criteria is not applicable."
