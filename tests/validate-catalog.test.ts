@@ -15,12 +15,24 @@ describe("Validate catalog", () => {
           {
             id: "1.1.1",
             label: "Non-text Content (Level A)",
-            key: "non-text-content",
+            key: "text-equiv",
+            components: [
+              "web",
+              "electronic-docs",
+              "software",
+              "authoring-tool",
+            ],
           },
           {
             id: "1.2.2",
             label: "1.2.2 Captions (Prerecorded) (Level A)",
-            key: "captions-prerecorded",
+            key: "media-equiv",
+            components: [
+              "web",
+              "electronic-docs",
+              "software",
+              "authoring-tool",
+            ],
           },
         ],
       },
@@ -32,12 +44,14 @@ describe("Validate catalog", () => {
           {
             id: "402",
             label: "Closed Functionality",
-            key: "closed-functionality",
+            key: "402-closed-functionality",
+            components: [],
           },
           {
             id: "402.1",
             label: "General",
-            key: "general",
+            key: "402.1",
+            components: [],
           },
         ],
       },
