@@ -46,11 +46,15 @@
                   "description": "Human-readable label.",
                   "type": "string"
                 },
+                "key": {
+                  "description": "Key used to find criteria in WCAG and other documentation",
+                  "type": "string"
+                },
                 "description": {
                   "type": "string"
                 }
               },
-              "required": ["id", "label"]
+              "required": ["id", "label", "key"]
             }
           }
         },

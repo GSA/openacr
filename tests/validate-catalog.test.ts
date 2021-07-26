@@ -15,25 +15,12 @@ describe("Validate catalog", () => {
           {
             id: "1.1.1",
             label: "Non-text Content (Level A)",
+            key: "non-text-content",
           },
           {
             id: "1.2.2",
             label: "1.2.2 Captions (Prerecorded) (Level A)",
-          },
-        ],
-      },
-      {
-        id: "hardware",
-        label: "Hardware",
-        order: 4,
-        criteria: [
-          {
-            id: "402",
-            label: "Closed Functionality",
-          },
-          {
-            id: "402.1",
-            label: "General",
+            key: "captions-prerecorded",
           },
         ],
       },
