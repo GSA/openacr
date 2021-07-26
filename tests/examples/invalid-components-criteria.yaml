@@ -10,20 +10,12 @@ chapters:
     criteria:
       - num: "1.1.1"
         components:
-          - name: "web"
-            adherence:
-              level: "supports"
-              notes: Drupal 8 requires alt text for images by default.
-          - name: "documents"
-            adherence:
-              level: "supports"
-              notes: Some non-textual content in the documentation does not provide a textual alternative.
+          - name: "none"
       - num: "400.400.400"
         components:
-          - name: "website"
+          - name: "web"
             adherence:
               level: partially-supports
               notes: Authors can satisfy 1.2.1 Audio-only and Video-only (Prerecorded) by using text on the same page.
-          - name: "none"
   hardware:
     notes: "Drupal is a web application. Hardware accessibility criteria is not applicable."

@@ -7,16 +7,13 @@ chapters:
       - id: 1.1.1
         label: Non-text Content (Level A)
         key: text-equiv
+        components: [web, "electronic-docs", "authoring-tool"]
       - id: 1.2.2
         label: 1.2.2 Captions (Prerecorded) (Level A)
         key: media-equiv
-  - id: hardware
-    label: Hardware
-    order: 4
-    criteria:
-      - id: "402"
-        label: Closed Functionality
-        key: 402-closed-functionality
-      - id: "402.1"
-        label: General
-        key: "402.1"
+        components: [software, "electronic-docs", "authoring-tool"]
+components:
+  - id: "electronic-docs"
+    label: Electronic Docs
+  - id: "authoring-tool"
+    label: Authoring Tool

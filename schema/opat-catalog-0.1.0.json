@@ -52,6 +52,12 @@
                 },
                 "description": {
                   "type": "string"
+                },
+                "components": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               },
               "required": ["id", "label", "key"]

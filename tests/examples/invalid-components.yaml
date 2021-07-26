@@ -14,13 +14,13 @@ chapters:
             adherence:
               level: "supports"
               notes: Drupal 8 requires alt text for images by default.
-          - name: "documents"
+          - name: "electronic-docs"
             adherence:
               level: "supports"
               notes: Some non-textual content in the documentation does not provide a textual alternative.
       - num: "1.2.2"
         components:
-          - name: "website"
+          - name: "web"
             adherence:
               level: partially-supports
               notes: Authors can satisfy 1.2.1 Audio-only and Video-only (Prerecorded) by using text on the same page.
