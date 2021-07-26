@@ -260,7 +260,8 @@ describe("Validate OPAT CLI", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: criteria num '400.400.400' is not included in 'Success Criteria, Level A'\n"
+        "Invalid: component name 'none' is not supported by criteria '1.1.1', " +
+          "criteria num '400.400.400' is not included in 'Success Criteria, Level A'\n"
       );
     });
   });
