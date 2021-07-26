@@ -143,6 +143,33 @@ describe("Validate OPAT CLI", () => {
     });
   });
 
+  it("when passed a YAML catalog file with components that have no definitions should return invalid message", () => {
+    const invalid = spawn(
+      cmd,
+      options.concat(
+        "tests/examples/valid.yaml",
+        "--cf",
+        "tests/examples/catalog-different-components.yaml"
+      )
+    );
+    const chunks = [];
+
+    invalid.stderr.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    invalid.stderr.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal(
+        "Invalid: component name 'web' in criteria '1.1.1' has no definition in catalog 'VPAT 2.4 edition 508/WCAG 2.0', " +
+          "component name 'software' in criteria '1.1.1' has no definition in catalog 'VPAT 2.4 edition 508/WCAG 2.0', " +
+          "component name 'web' in criteria '1.2.2' has no definition in catalog 'VPAT 2.4 edition 508/WCAG 2.0', " +
+          "component name 'software' in criteria '1.2.2' has no definition in catalog 'VPAT 2.4 edition 508/WCAG 2.0'\n"
+      );
+    });
+  });
+
   it("when passed an invalid file with missing metadata properties should return invalid message", () => {
     const invalid = spawn(
       cmd,
@@ -209,8 +236,7 @@ describe("Validate OPAT CLI", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: component name 'documents' is not defined in catalog 'VPAT 2.4 edition 508/WCAG 2.0', " +
-          "component name 'website' is not defined in catalog 'VPAT 2.4 edition 508/WCAG 2.0'\n"
+        "Invalid: component name 'none' is not supported by criteria '1.2.2'\n"
       );
     });
   });
@@ -234,9 +260,7 @@ describe("Validate OPAT CLI", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: component name 'documents' is not defined in catalog 'VPAT 2.4 edition 508/WCAG 2.0', " +
-          "criteria num '400.400.400' is not included in 'Success Criteria, Level A', " +
-          "component name 'website' is not defined in catalog 'VPAT 2.4 edition 508/WCAG 2.0'\n"
+        "Invalid: criteria num '400.400.400' is not included in 'Success Criteria, Level A'\n"
       );
     });
   });

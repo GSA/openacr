@@ -14,7 +14,7 @@ chapters:
             adherence:
               level: "supports"
               notes: Drupal 8 requires alt text for images by default.
-          - name: "documents"
+          - name: "electronic-docs"
             adherence:
               level: "supports"
               notes: Some non-textual content in the documentation does not provide a textual alternative.

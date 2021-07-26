@@ -31,22 +31,36 @@ export function validateOPATCatalogValues(
               validationMessages.push(
                 `criteria num '${dataCriteria.num}' is not included in '${catalogChapter.label}'`
               );
-            }
-
-            if (dataCriteria.components) {
-              const dataComponents = dataCriteria.components;
-              if (catalog.components) {
-                for (const dataComponent of dataComponents) {
-                  if (
-                    !checkForNameInCatalogComponents(
-                      dataComponent.name,
-                      catalog.components
-                    )
-                  ) {
-                    validationPassed = false;
-                    validationMessages.push(
-                      `component name '${dataComponent.name}' is not defined in catalog '${catalog.title}'`
-                    );
+            } else {
+              if (dataCriteria.components) {
+                const dataComponents = dataCriteria.components;
+                if (catalog.components) {
+                  for (const dataComponent of dataComponents) {
+                    if (
+                      !checkForCatalogComponentDefinition(
+                        dataComponent.name,
+                        catalog.components
+                      )
+                    ) {
+                      validationPassed = false;
+                      validationMessages.push(
+                        `component name '${dataComponent.name}' in criteria '${dataCriteria.num}' has no definition in catalog '${catalog.title}'`
+                      );
+                    } else {
+                      if (
+                        !checkForNameInCatalogComponents(
+                          dataComponent.name,
+                          dataCriteria.num,
+                          catalogChapter.id,
+                          catalogChapters
+                        )
+                      ) {
+                        validationPassed = false;
+                        validationMessages.push(
+                          `component name '${dataComponent.name}' is not supported by criteria '${dataCriteria.num}'`
+                        );
+                      }
+                    }
                   }
                 }
               }
@@ -86,6 +100,27 @@ function checkForNumInCatalogChapters(
 }
 
 function checkForNameInCatalogComponents(
+  name: string,
+  num: string,
+  id: string,
+  chapters: any
+): boolean {
+  for (const chapter of chapters) {
+    if (chapter.id === id) {
+      for (const catalogChapterCriteria of chapter.criteria) {
+        if (catalogChapterCriteria.id === num) {
+          if (catalogChapterCriteria.components.includes(name)) {
+            return true;
+          }
+        }
+      }
+    }
+  }
+
+  return false;
+}
+
+function checkForCatalogComponentDefinition(
   name: string,
   components: any
 ): boolean {
