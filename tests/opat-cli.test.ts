@@ -162,10 +162,10 @@ describe("Validate OPAT CLI", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: component name 'web' in criteria '1.1.1' has no definition in catalog 'VPAT 2.4 edition 508/WCAG 2.0', " +
-          "component name 'software' in criteria '1.1.1' has no definition in catalog 'VPAT 2.4 edition 508/WCAG 2.0', " +
-          "component name 'web' in criteria '1.2.2' has no definition in catalog 'VPAT 2.4 edition 508/WCAG 2.0', " +
-          "component name 'software' in criteria '1.2.2' has no definition in catalog 'VPAT 2.4 edition 508/WCAG 2.0'\n"
+        "Invalid: component 'web' in criteria '1.1.1' has no definition in catalog 'VPAT 2.4 edition 508/WCAG 2.0', " +
+          "component 'software' in criteria '1.1.1' has no definition in catalog 'VPAT 2.4 edition 508/WCAG 2.0', " +
+          "component 'web' in criteria '1.2.2' has no definition in catalog 'VPAT 2.4 edition 508/WCAG 2.0', " +
+          "component 'software' in criteria '1.2.2' has no definition in catalog 'VPAT 2.4 edition 508/WCAG 2.0'\n"
       );
     });
   });
@@ -211,8 +211,8 @@ describe("Validate OPAT CLI", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: criteria num '100.100.100' is not included in 'Success Criteria, Level A', " +
-          "criteria num '400.400.400' is not included in 'Hardware'\n"
+        "Invalid: criteria '100.100.100' is not included in 'Success Criteria, Level A', " +
+          "criteria '400.400.400' is not included in 'Hardware'\n"
       );
     });
   });
@@ -236,7 +236,7 @@ describe("Validate OPAT CLI", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: component name 'none' is not supported by criteria '1.2.2'\n"
+        "Invalid: component 'none' is not supported by criteria '1.2.2'\n"
       );
     });
   });
@@ -260,8 +260,8 @@ describe("Validate OPAT CLI", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: component name 'none' is not supported by criteria '1.1.1', " +
-          "criteria num '400.400.400' is not included in 'Success Criteria, Level A'\n"
+        "Invalid: component 'none' is not supported by criteria '1.1.1', " +
+          "criteria '400.400.400' is not included in 'Success Criteria, Level A'\n"
       );
     });
   });

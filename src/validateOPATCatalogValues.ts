@@ -29,7 +29,7 @@ export function validateOPATCatalogValues(
             ) {
               validationPassed = false;
               validationMessages.push(
-                `criteria num '${dataCriteria.num}' is not included in '${catalogChapter.label}'`
+                `criteria '${dataCriteria.num}' is not included in '${catalogChapter.label}'`
               );
             } else {
               if (dataCriteria.components) {
@@ -44,7 +44,7 @@ export function validateOPATCatalogValues(
                     ) {
                       validationPassed = false;
                       validationMessages.push(
-                        `component name '${dataComponent.name}' in criteria '${dataCriteria.num}' has no definition in catalog '${catalog.title}'`
+                        `component '${dataComponent.name}' in criteria '${dataCriteria.num}' has no definition in catalog '${catalog.title}'`
                       );
                     } else {
                       if (
@@ -57,7 +57,7 @@ export function validateOPATCatalogValues(
                       ) {
                         validationPassed = false;
                         validationMessages.push(
-                          `component name '${dataComponent.name}' is not supported by criteria '${dataCriteria.num}'`
+                          `component '${dataComponent.name}' is not supported by criteria '${dataCriteria.num}'`
                         );
                       }
                     }
