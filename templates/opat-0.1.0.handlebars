@@ -1,0 +1,31 @@
+# {{ title }}
+
+Based on {{ catalog.title }}
+
+## Name of Product/Version
+{{ product.name }}{{#if product.version }}{{ product.version }}{{/if}}
+
+## Report Date
+{{ now }}
+
+{{#if product.descriptipn }}
+## Product Description
+{{ product.description }}
+{{/if}}
+
+## Contact Information
+{{#if contact.name }}Name: {{ contact.name }}{{/if}}
+{{#if contact.address }}Address: {{ contact.address }}{{/if}}
+Email: {{ contact.email }}
+{{#if contact.phone }}Phone: {{ contact.phone }}{{/if}}
+
+## Notes
+{{ notes }}
+
+## Terms
+The terms used in the Conformance Level information are defined as follows:
+- __Supports__: The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.
+- __Partially Supports__: Some functionality of the product does not meet the criterion.
+- __Does Not Support__: The majority of product functionality does not meet the criterion.
+- __Not Applicable__: The criterion is not relevant to the product.
+- __Not Evaluated__: The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.

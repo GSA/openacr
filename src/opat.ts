@@ -18,6 +18,7 @@ import fs from "fs";
 import yaml from "js-yaml";
 import { ValidatorResult } from "./ValidatorResult";
 import { validateOPATCatalogValues } from "./validateOPATCatalogValues";
+import { outputOPAT } from "./outputOPAT";
 
 const argv = yargs
   .command("validate", "Validate OPAT content", function (yargs) {
@@ -36,6 +37,28 @@ const argv = yargs
       },
     });
   })
+  .command("output", "Output OPAT in markdown", function (yargs) {
+    return yargs.options({
+      file: {
+        type: "string",
+        description: "Content filename",
+        demandOption: true,
+        alias: "f",
+      },
+      catalogFile: {
+        type: "string",
+        description: "Catalog filename",
+        demandOption: false,
+        alias: "c",
+      },
+      outputFile: {
+        type: "string",
+        description: "Output filename",
+        demandOption: false,
+        alias: "o",
+      },
+    });
+  })
   .demandCommand(1, "You must select command validate or output.")
   .parseSync();
 
@@ -46,10 +69,11 @@ if (fs.existsSync(argv.file)) {
   try {
     const data = yaml.load(fs.readFileSync(argv.file).toString());
     result = validateOPAT(data, schema);
+    let catalog: any;
     // Validate OPAT against provided catalog.
     if (result.result && argv.catalogFile && fs.existsSync(argv.catalogFile)) {
       try {
-        const catalog = yaml.load(fs.readFileSync(argv.catalogFile).toString());
+        catalog = yaml.load(fs.readFileSync(argv.catalogFile).toString());
         result = validateOPATCatalogValues(data, catalog);
       } catch {
         result = {
@@ -57,6 +81,12 @@ if (fs.existsSync(argv.file)) {
           message: "Invalid: catalog file is not in YAML format",
         };
       }
+    }
+
+    // Output OPAT as markdown if command is set to 'output'.
+    if (argv._.includes("output")) {
+      const outputFile = argv.outputFile ?? "opat.markdown";
+      result = outputOPAT(data, catalog, outputFile);
     }
   } catch {
     result = {
