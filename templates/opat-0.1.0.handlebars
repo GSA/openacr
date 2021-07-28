@@ -1,26 +1,26 @@
-# {{ title }}
+# {{title}}
 
-Based on {{ catalog.title }}
+Based on {{catalog.title}}
 
 ## Name of Product/Version
-{{ product.name }}{{#if product.version }} {{ product.version }}{{/if}}
+{{product.name}}{{#if product.version}} {{product.version}}{{/if}}
 
 ## Report Date
 {{ now }}
 
-{{#if product.descriptipn }}
+{{#if product.descriptipn}}
 ## Product Description
-{{ product.description }}
+{{product.description}}
 {{/if}}
 
 ## Contact Information
-{{#if contact.name }}Name: {{ contact.name }}{{/if}}
-{{#if contact.address }}Address: {{ contact.address }}{{/if}}
-Email: {{ contact.email }}
-{{#if contact.phone }}Phone: {{ contact.phone }}{{/if}}
+{{#if contact.name}}Name: {{contact.name}}{{/if}}
+{{#if contact.address}}Address: {{contact.address}}{{/if}}
+Email: {{contact.email}}
+{{#if contact.phone}}Phone: {{contact.phone}}{{/if}}
 
 ## Notes
-{{ notes }}
+{{notes}}
 
 ## Terms
 The terms used in the Conformance Level information are defined as follows:
@@ -29,3 +29,23 @@ The terms used in the Conformance Level information are defined as follows:
 - __Does Not Support__: The majority of product functionality does not meet the criterion.
 - __Not Applicable__: The criterion is not relevant to the product.
 - __Not Evaluated__: The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.
+
+{{#each catalog.chapters as |catalog-chapter|}}
+## {{chapterOrTableTitle catalog-chapter}} {{catalog-chapter.order}}: {{catalog-chapter.label}}
+
+{{#with (lookup ../chapters catalog-chapter.id) as |data-catagory|}}
+{{#if data-catagory.notes}}
+Notes: {{data-catagory.notes}}
+{{/if}}
+
+{{#if data-catagory.criteria}}
+| Criteria | Conformance Level | Remarks and Explanations |
+| --- | --- | --- |
+{{#each data-catagory.criteria as |data-criteria|}}
+| {{data-criteria.num}} {{catalogCriteriaLabel catalog-chapter.id data-criteria.num}} | | |
+{{/each}}
+
+{{/if}}
+{{/with}}
+
+{{/each}}

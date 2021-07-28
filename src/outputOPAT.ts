@@ -19,6 +19,26 @@ export function outputOPAT(
     const date = new Date();
     data.now = date.toLocaleDateString();
 
+    Handlebars.registerHelper("chapterOrTableTitle", function (chapter) {
+      if (chapter.order < 4) return "Table";
+      else return "Chapter";
+    });
+
+    Handlebars.registerHelper(
+      "catalogCriteriaLabel",
+      function (chapterId, criteriaNum) {
+        for (const chapter of catalogData.chapters) {
+          if (chapter.id === chapterId) {
+            for (const catalogChapterCriteria of chapter.criteria) {
+              if (catalogChapterCriteria.id === criteriaNum) {
+                return catalogChapterCriteria.label;
+              }
+            }
+          }
+        }
+      }
+    );
+
     const result = template(data);
 
     fs.writeFile(outputFile, result, function () {
