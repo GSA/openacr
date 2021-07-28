@@ -42,7 +42,7 @@ Notes: {{data-catagory.notes}}
 | Criteria | Conformance Level | Remarks and Explanations |
 | --- | --- | --- |
 {{#each data-catagory.criteria as |data-criteria|}}
-| {{data-criteria.num}} {{catalogCriteriaLabel catalog-chapter.id data-criteria.num}} | | |
+| {{data-criteria.num}} {{catalogCriteriaLabel catalog-chapter.id data-criteria.num}} | <ul>{{#each data-criteria.components as |data-components|}}<li>__{{catalogComponentLabel data-components.name}}:__ {{levelLabel data-components.adherence.level}}</li>{{/each}} </ul> | <ul>{{#each data-criteria.components as |data-components|}}<li>__{{catalogComponentLabel data-components.name}}:__ {{data-components.adherence.notes}}</li>{{/each}} </ul> |
 {{/each}}
 
 {{/if}}

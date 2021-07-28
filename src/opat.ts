@@ -83,8 +83,8 @@ if (fs.existsSync(argv.file)) {
       }
     }
 
-    // Output OPAT as markdown if command is set to 'output'.
-    if (argv._.includes("output")) {
+    // Output OPAT as markdown if command is set to 'output' and is valid.
+    if (argv._.includes("output") && result.result) {
       const outputFile = argv.outputFile ?? "output/opat.markdown";
       result = outputOPAT(data, catalog, outputFile);
     }

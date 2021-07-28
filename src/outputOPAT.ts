@@ -28,6 +28,7 @@ export function outputOPAT(
       "catalogCriteriaLabel",
       function (chapterId, criteriaNum) {
         for (const chapter of catalogData.chapters) {
+          /* istanbul ignore else */
           if (chapter.id === chapterId) {
             for (const catalogChapterCriteria of chapter.criteria) {
               if (catalogChapterCriteria.id === criteriaNum) {
@@ -38,6 +39,36 @@ export function outputOPAT(
         }
       }
     );
+
+    Handlebars.registerHelper("catalogComponentLabel", function (componentId) {
+      for (const component of catalogData.components) {
+        if (component.id === componentId) {
+          return component.label;
+        }
+      }
+    });
+
+    Handlebars.registerHelper("levelLabel", function (level) {
+      let label = "";
+      switch (level) {
+        case "supports":
+          label = "Supports";
+          break;
+        case "partially-supports":
+          label = "Partially Supports";
+          break;
+        case "does-not-support":
+          label = "Does Not Support";
+          break;
+        case "not-applicable":
+          label = "Not Applicable";
+          break;
+        case "not-evaluated":
+          label = "Not Evaluated";
+          break;
+      }
+      return label;
+    });
 
     const result = template(data);
 
