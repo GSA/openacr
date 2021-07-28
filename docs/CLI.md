@@ -37,10 +37,10 @@ opat.ts validate
 Validate OPAT content
 
 Options:
-      --help               Show help                                   [boolean]
-      --version            Show version number                         [boolean]
-  -f, --file               Content filename                  [string] [required]
-      --catalogFile, --cf  Catalog filename                             [string]
+      --help         Show help                                         [boolean]
+      --version      Show version number                               [boolean]
+  -f, --file         Content filename                        [string] [required]
+  -c, --catalogFile  Catalog filename                                   [string]
 ```
 
 ### Examples
@@ -51,12 +51,12 @@ You can test the CLI with the following examples:
 npx ts-node src/opat.ts validate -f tests/examples/valid.yaml # Output: Valid!
 npx ts-node src/opat.ts validate -f tests/examples/invalid-basic.yaml # Output: Invalid: ...
 npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Valid!
-npx ts-node src/opat.ts validate -f tests/examples/invalid-criteria.yaml -cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
-npx ts-node src/opat.ts validate -f tests/examples/invalid-components.yaml --cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
-npx ts-node src/opat.ts validate -f tests/examples/invalid-components-criteria.yaml --cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
-npx ts-node src/opat.ts validate -f tests/examples/valid.yaml --cf tests/examples/catalog-missing-components.yaml # Output: Valid!
-npx ts-node src/opat.ts validate -f tests/examples/valid.yaml --cf tests/examples/catalog-missing-chapters.yaml # Output: Valid!
-npx ts-node src/opat.ts validate -f tests/examples/valid.yaml --cf tests/examples/catalog-different-components.yaml # Output: Invalid: ...
+npx ts-node src/opat.ts validate -f tests/examples/invalid-criteria.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
+npx ts-node src/opat.ts validate -f tests/examples/invalid-components.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
+npx ts-node src/opat.ts validate -f tests/examples/invalid-components-criteria.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
+npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/catalog-missing-components.yaml # Output: Valid!
+npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/catalog-missing-chapters.yaml # Output: Valid!
+npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/catalog-different-components.yaml # Output: Invalid: ...
 ```
 
 Where:

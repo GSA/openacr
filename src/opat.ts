@@ -32,7 +32,7 @@ const argv = yargs
         type: "string",
         description: "Catalog filename",
         demandOption: false,
-        alias: "cf",
+        alias: "c",
       },
     });
   })
