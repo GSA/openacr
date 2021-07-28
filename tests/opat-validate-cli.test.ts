@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { spawn } from "child_process";
 
-describe("Validate OPAT CLI", () => {
+describe("OPAT CLI test validation", () => {
   const cmd = "npx";
   const options = ["ts-node", "src/opat.ts", "validate", "-f"];
 

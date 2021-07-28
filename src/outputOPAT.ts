@@ -30,7 +30,7 @@ export function outputOPAT(
 
     return {
       result: true,
-      message: `Valid and output generated at ${outputFile}`,
+      message: `Valid and output generated at ${outputFile}!`,
     };
   } catch {
     return {
