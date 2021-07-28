@@ -91,4 +91,4 @@ Tests can be run by executing the command:
 npm test
 ```
 
-_Note_: If there are CLI errors, the `opat-cli.test.ts` says tests have passed initially but after that you get the assertion error and error code 7.
+_Note_: If there are CLI errors, the `opat-validate-cli.test.ts` says tests have passed initially but after that you get the assertion error and error code 7.
