@@ -70,7 +70,7 @@ npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/
 npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/catalog-missing-chapters.yaml # Output: Valid!
 npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/catalog-different-components.yaml # Output: Invalid: ...
 # Validate and Output
-npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml -o tests/examples/valid.markdown
+npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml -o tests/examples/valid.markdown # Output: Valid ...
 ```
 
 Where:
@@ -103,6 +103,12 @@ Located in the 'schema' folder:
 The `output` command can take an optional file path (default is `output/opat.markdown`) and converts the validated YAML file to markdown.
 
 The command uses [handlebars](https://handlebarsjs.com/) and the template `opat-0.1.0.handlebars` defined in `templates` to render the markdown.
+
+We checked in an example of the markdown output in `tests/examples/valid.markdown`. To regenerate the example run the command below and commit the changes:
+
+```bash
+npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml -o tests/examples/valid.markdown # Output: Valid ...
+```
 
 ## Tests
 
