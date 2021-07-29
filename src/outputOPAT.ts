@@ -5,12 +5,11 @@ import Handlebars from "handlebars";
 export function outputOPAT(
   data: any,
   catalogData: any,
-  outputFile: string
+  outputFile: string,
+  handlebarTemplate = "templates/opat-0.1.0.handlebars"
 ): ValidatorResult {
   try {
-    const templateString = fs
-      .readFileSync("templates/opat-0.1.0.handlebars")
-      .toString();
+    const templateString = fs.readFileSync(handlebarTemplate).toString();
     const template = Handlebars.compile(templateString);
 
     if (catalogData) {
