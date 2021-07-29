@@ -16,19 +16,19 @@ chapters:
         label: Captions (Prerecorded)
         key: media-equiv-audio-desc-only
         components: [web, "electronic-docs", software, "authoring-tool"]
-     - id: 1.2.3
+      - id: 1.2.3
         label: Audio Description or Media Alternative (Prerecorded)
         key: media-equiv-real-time-captions
         components: [web, "electronic-docs", software, "authoring-tool"]
-     - id: 1.3.1
+      - id: 1.3.1
         label: Info and Relationships
         key: content-structure-separation-sequence
         components: [web, "electronic-docs", software, "authoring-tool"]
-     - id: 1.3.2
+      - id: 1.3.2
         label: Meaningful Sequence
         key: content-structure-separation-sequence
         components: [web, "electronic-docs", software, "authoring-tool"]
-     - id: 1.3.3
+      - id: 1.3.3
         label: Sensory Characteristics
         key: content-structure-separation-understanding
         components: [web, "electronic-docs", software, "authoring-tool"]
