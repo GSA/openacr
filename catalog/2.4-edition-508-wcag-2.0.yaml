@@ -8,7 +8,7 @@ chapters:
         label: Non-text Content
         key: text-equiv
         components: [web, "electronic-docs", software, "authoring-tool"]
-     - id: 1.2.1
+      - id: 1.2.1
         label: Audio-only and Video-only (Prerecorded)
         key: media-equiv-captions
         components: [web, "electronic-docs", software, "authoring-tool"]
