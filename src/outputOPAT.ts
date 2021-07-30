@@ -31,7 +31,7 @@ export function outputOPAT(
           if (chapter.id === chapterId) {
             for (const catalogChapterCriteria of chapter.criteria) {
               if (catalogChapterCriteria.id === criteriaNum) {
-                return catalogChapterCriteria.label;
+                return catalogChapterCriteria.handle;
               }
             }
           }
