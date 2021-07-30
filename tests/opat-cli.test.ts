@@ -338,4 +338,26 @@ describe("Validate OPAT CLI", () => {
       expect(output).to.equal("Valid!\n");
     });
   });
+
+  it("confirm drupal example is valid", () => {
+    const valid = spawn(
+      cmd,
+      options.concat(
+        "opat/drupal-9.1.yaml",
+        "--cf",
+        "catalog/2.4-edition-508-wcag-2.0.yaml"
+      )
+    );
+    const chunks = [];
+
+    valid.stdout.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    valid.stdout.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal("Valid!\n");
+    });
+  });
 });

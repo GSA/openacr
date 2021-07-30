@@ -1,0 +1,129 @@
+title: Drupal Accessibility Conformance Report
+product:
+  name: Drupal
+  version: "9.1"
+  description: Content Management System
+contact:
+  email: mike.gifford@civicactions.com
+notes: Links to the issues identified are included where possible to ensure that this is a living document where outstanding issues are regularly reviewed for compliance. The Authoring tool is evaluated against ATAG 2.0, Part A and B. Incorporating feedback from the Drupal community.
+chapters:
+  success_criteria_level_a:
+    criteria:
+      - num: "1.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Drupal 8 requires alt text for images by default.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Some non-textual content in the documentation does not provide a textual alternative.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: The back end of Drupal Core was built to be  WCAG 2.0 AA compliant and non-text content in the administration interface has a textual equivalent. Audio and video can be added to the media library, but Core does not provide tools to manage transcripts and captions/subtitles for local video and audio - Drupal issue #3002770.
+      - num: "1.2.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Authors can satisfy 1.2.1 Audio-only and Video-only (Prerecorded) by using text on the same page.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: This is not explicitly defined in the documentation.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: There is no additional support for authors within the authoring interface to explain how this can be done.
+      - num: "1.2.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "does-not-support"
+              notes: The file module in Core lets authors upload audio and video content, and output <audio> and <video> elements and does not support captions.
+          - name: "electronic-docs"
+            adherence:
+              level: not-applicable
+          - name: "software"
+            adherence:
+              level: not-applicable
+          - name: "authoring-tool"
+            adherence:
+              level: "does-not-support"
+              notes: Drupal does not support, let alone require users to include captions. Hard coding open captions is presently the only way to satisfy this in Core.
+      - num: "1.2.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "does-not-support"
+              notes: Audio files can be uploaded, but there is no way to associate captions in Core.
+          - name: "electronic-docs"
+            adherence:
+              level: "does-not-support"
+              notes: There is no documentation on how to properly convey pre-recorded audio descriptions.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "does-not-support"
+              notes: There is no audio in the authoring interface of Drupal Core, but there is no support for authors to upload accessible audio files.
+      - num: "1.3.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Information is structured into logical relationships. Navigational lists are well used to group information. Forms have a visual and semantic representation for required fields.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Information is structured into logical relationships. Navigational lists are well used to group information.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: The authoring environment was constructed to support ATAG 2.0 AA (Part A and B)
+      - num: "1.3.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Drupal Core has been extensively tested with keyboard only users. As a proudly multilingual CMS, Drupal provides support for bidirectional navigation.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: The authoring environment was constructed to support ATAG 2.0 AA (Part A and B)
+      - num: "1.3.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Where possible Drupal Core uses combinations of text and symbols for the user interface.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: The authoring interface has been developed to not rely on symbols alone to convey information to the user.
+  hardware:
+    notes: "Drupal is a web application. Hardware accessibility criteria is not applicable."
