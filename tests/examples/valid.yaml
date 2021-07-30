@@ -118,7 +118,6 @@ chapters:
           - name: "electronic-docs"
             adherence:
               level: "supports"
-              notes:
           - name: "software"
             adherence:
               level: "not-applicable"
