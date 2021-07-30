@@ -85,7 +85,7 @@ chapters:
           - name: "electronic-docs"
             adherence:
               level: "supports"
-              notes:  Information is structured into logical relationships. Navigational lists are well used to group information.
+              notes: Information is structured into logical relationships. Navigational lists are well used to group information.
           - name: "software"
             adherence:
               level: "not-applicable"
