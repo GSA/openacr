@@ -62,7 +62,8 @@ You can test the CLI with the following examples:
 # Only validate
 npx ts-node src/opat.ts validate -f tests/examples/valid.yaml # Output: Valid!
 npx ts-node src/opat.ts validate -f tests/examples/invalid-basic.yaml # Output: Invalid: ...
-npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Valid!
+npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml # Output: Valid!
+npx ts-node src/opat.ts validate -f opat/drupal-9.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml # Output: Valid!
 npx ts-node src/opat.ts validate -f tests/examples/invalid-criteria.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
 npx ts-node src/opat.ts validate -f tests/examples/invalid-components.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
 npx ts-node src/opat.ts validate -f tests/examples/invalid-components-criteria.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
@@ -77,7 +78,8 @@ Where:
 
 - tests/examples/valid.yaml: Current valid OPAT example (few chapters).
 - tests/examples/invalid-basic.yaml: Very incorrect OPAT example. Used for sanity checks.
-- catalog/wcag2-catalog.yaml: Current WCAG 2.0 catalog (few criteria).
+- opat/drupal-9.yaml: Current Drupal 9 OPAT.
+- catalog/wcag2-catalog.yaml: Current WCAG 2.0 catalog.
 - tests/examples/invalid-criteria.yaml: Has incorrect criteria (E.g., instead of '1.1.1' it has '100.100.100').
 - tests/examples/invalid-components.yaml: Has incorrect components (E.g., includes 'none' in criteria '1.2.2').
 - tests/examples/invalid-components-criteria.yaml: Has incorrect components and criteria.

@@ -344,7 +344,7 @@ describe("OPAT CLI test validation", () => {
       cmd,
       options.concat(
         "opat/drupal-9.yaml",
-        "--cf",
+        "-c",
         "catalog/2.4-edition-508-wcag-2.0.yaml"
       )
     );
