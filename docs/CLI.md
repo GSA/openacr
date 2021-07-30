@@ -14,7 +14,7 @@ npm install
 
 ## Commands and examples
 
-The OPAT CLI can be executed without compiling using [`ts-node`](https://typestrong.org/ts-node/). Currently, the CLI can only validate entered YAML.
+The OPAT CLI can be executed without compiling using [`ts-node`](https://typestrong.org/ts-node/). Currently, the CLI can validate entered YAML and output it in markdown.
 
 ### Help
 
@@ -37,10 +37,21 @@ opat.ts validate
 Validate OPAT content
 
 Options:
-      --help               Show help                                   [boolean]
-      --version            Show version number                         [boolean]
-  -f, --file               Content filename                  [string] [required]
-      --catalogFile, --cf  Catalog filename                             [string]
+      --help         Show help                                         [boolean]
+      --version      Show version number                               [boolean]
+  -f, --file         Content filename                        [string] [required]
+  -c, --catalogFile  Catalog filename                                   [string]
+> npx ts-node src/opat.ts output --help
+opat.ts output
+
+Output OPAT in markdown
+
+Options:
+      --help         Show help                                         [boolean]
+      --version      Show version number                               [boolean]
+  -f, --file         Content filename                        [string] [required]
+  -c, --catalogFile  Catalog filename                                   [string]
+  -o, --outputFile   Output filename                                    [string]
 ```
 
 ### Examples
@@ -48,28 +59,34 @@ Options:
 You can test the CLI with the following examples:
 
 ```bash
+# Only validate
 npx ts-node src/opat.ts validate -f tests/examples/valid.yaml # Output: Valid!
 npx ts-node src/opat.ts validate -f tests/examples/invalid-basic.yaml # Output: Invalid: ...
-npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Valid!
-npx ts-node src/opat.ts validate -f tests/examples/invalid-criteria.yaml -cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
-npx ts-node src/opat.ts validate -f tests/examples/invalid-components.yaml --cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
-npx ts-node src/opat.ts validate -f tests/examples/invalid-components-criteria.yaml --cf catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
-npx ts-node src/opat.ts validate -f tests/examples/valid.yaml --cf tests/examples/catalog-missing-components.yaml # Output: Valid!
-npx ts-node src/opat.ts validate -f tests/examples/valid.yaml --cf tests/examples/catalog-missing-chapters.yaml # Output: Valid!
-npx ts-node src/opat.ts validate -f tests/examples/valid.yaml --cf tests/examples/catalog-different-components.yaml # Output: Invalid: ...
+npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml # Output: Valid!
+npx ts-node src/opat.ts validate -f opat/drupal-9.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml # Output: Valid!
+npx ts-node src/opat.ts validate -f tests/examples/invalid-criteria.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
+npx ts-node src/opat.ts validate -f tests/examples/invalid-components.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
+npx ts-node src/opat.ts validate -f tests/examples/invalid-components-criteria.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml # Output: Invalid: ...
+npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/catalog-missing-components.yaml # Output: Valid!
+npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/catalog-missing-chapters.yaml # Output: Valid!
+npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/catalog-different-components.yaml # Output: Invalid: ...
+# Validate and Output
+npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml -o tests/examples/valid.markdown # Output: Valid ...
 ```
 
 Where:
 
 - tests/examples/valid.yaml: Current valid OPAT example (few chapters).
 - tests/examples/invalid-basic.yaml: Very incorrect OPAT example. Used for sanity checks.
-- catalog/wcag2-catalog.yaml: Current WCAG 2.0 catalog (few criteria).
+- opat/drupal-9.yaml: Current Drupal 9 OPAT.
+- catalog/wcag2-catalog.yaml: Current WCAG 2.0 catalog.
 - tests/examples/invalid-criteria.yaml: Has incorrect criteria (E.g., instead of '1.1.1' it has '100.100.100').
 - tests/examples/invalid-components.yaml: Has incorrect components (E.g., includes 'none' in criteria '1.2.2').
 - tests/examples/invalid-components-criteria.yaml: Has incorrect components and criteria.
 - tests/examples/catalog-missing-components.yaml: No components.
 - tests/examples/catalog-missing-chapters.yaml: No chapters.
 - tests/examples/catalog-different-components.yaml: Has different components to test how a previous valid OPAT is invalid and vice-versa.
+- tests/examples/valid.markdown: Is a custom output markdown file of the OPAT after it has been validated.
 
 ## Schemas
 
@@ -83,6 +100,18 @@ Located in the 'schema' folder:
 - If the catalog file is missing the `validate` command will only check that the YAML file meets the schema defined.
 - The catalog file will be also validated that it meets the defined schema (`opat-catalog-0.1.0.json`).
 
+## Output
+
+The `output` command can take an optional file path (default is `output/opat.markdown`) and converts the validated YAML file to markdown.
+
+The command uses [handlebars](https://handlebarsjs.com/) and the template `opat-0.1.0.handlebars` defined in `templates` to render the markdown.
+
+We checked in an example of the markdown output in `tests/examples/valid.markdown`. To regenerate the example run the command below and commit the changes:
+
+```bash
+npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml -o tests/examples/valid.markdown # Output: Valid ...
+```
+
 ## Tests
 
 Tests can be run by executing the command:
@@ -91,4 +120,4 @@ Tests can be run by executing the command:
 npm test
 ```
 
-_Note_: If there are CLI errors, the `opat-cli.test.ts` says tests have passed initially but after that you get the assertion error and error code 7.
+_Note_: If there are CLI errors, the `opat-validate-cli.test.ts` says tests have passed initially but after that you get the assertion error and error code 7.

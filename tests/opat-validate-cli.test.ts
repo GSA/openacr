@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { spawn } from "child_process";
 
-describe("Validate OPAT CLI", () => {
+describe("OPAT CLI test validation", () => {
   const cmd = "npx";
   const options = ["ts-node", "src/opat.ts", "validate", "-f"];
 
@@ -38,7 +38,7 @@ describe("Validate OPAT CLI", () => {
   it("when passed an invalid YAML catalog file (not in YAML format) should return invalid message", () => {
     const invalid = spawn(
       cmd,
-      options.concat("tests/examples/valid.yaml", "--cf", "README.md")
+      options.concat("tests/examples/valid.yaml", "-c", "README.md")
     );
     const chunks = [];
 
@@ -58,7 +58,7 @@ describe("Validate OPAT CLI", () => {
       cmd,
       options.concat(
         "tests/examples/valid.yaml",
-        "--cf",
+        "-c",
         "tests/examples/invalid-basic.yaml"
       )
     );
@@ -82,7 +82,7 @@ describe("Validate OPAT CLI", () => {
       cmd,
       options.concat(
         "tests/examples/valid.yaml",
-        "--cf",
+        "-c",
         "tests/examples/catalog-missing-chapters.yaml"
       )
     );
@@ -104,7 +104,7 @@ describe("Validate OPAT CLI", () => {
       cmd,
       options.concat(
         "tests/examples/valid.yaml",
-        "--cf",
+        "-c",
         "tests/examples/catalog-missing-components.yaml"
       )
     );
@@ -126,7 +126,7 @@ describe("Validate OPAT CLI", () => {
       cmd,
       options.concat(
         "tests/examples/valid-missing-components.yaml",
-        "--cf",
+        "-c",
         "catalog/2.4-edition-508-wcag-2.0.yaml"
       )
     );
@@ -148,7 +148,7 @@ describe("Validate OPAT CLI", () => {
       cmd,
       options.concat(
         "tests/examples/valid.yaml",
-        "--cf",
+        "-c",
         "tests/examples/catalog-different-components.yaml"
       )
     );
@@ -197,7 +197,7 @@ describe("Validate OPAT CLI", () => {
       cmd,
       options.concat(
         "tests/examples/invalid-criteria.yaml",
-        "--cf",
+        "-c",
         "catalog/2.4-edition-508-wcag-2.0.yaml"
       )
     );
@@ -222,7 +222,7 @@ describe("Validate OPAT CLI", () => {
       cmd,
       options.concat(
         "tests/examples/invalid-components.yaml",
-        "--cf",
+        "-c",
         "catalog/2.4-edition-508-wcag-2.0.yaml"
       )
     );
@@ -246,7 +246,7 @@ describe("Validate OPAT CLI", () => {
       cmd,
       options.concat(
         "tests/examples/invalid-components-criteria.yaml",
-        "--cf",
+        "-c",
         "catalog/2.4-edition-508-wcag-2.0.yaml"
       )
     );
@@ -322,7 +322,7 @@ describe("Validate OPAT CLI", () => {
       cmd,
       options.concat(
         "tests/examples/valid.yaml",
-        "--cf",
+        "-c",
         "catalog/2.4-edition-508-wcag-2.0.yaml"
       )
     );
@@ -344,7 +344,7 @@ describe("Validate OPAT CLI", () => {
       cmd,
       options.concat(
         "opat/drupal-9.yaml",
-        "--cf",
+        "-c",
         "catalog/2.4-edition-508-wcag-2.0.yaml"
       )
     );

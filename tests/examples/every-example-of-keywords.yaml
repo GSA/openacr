@@ -45,3 +45,10 @@ chapters:
               notes: There is no additional support for authors within the authoring interface to explain how this can be done.
   hardware:
     notes: "Drupal is a web application. Hardware accessibility criteria is not applicable."
+    criteria:
+      - num: "402"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-evaluated"
+              notes: No hardware.

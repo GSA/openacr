@@ -1,0 +1,50 @@
+# {{title}}
+
+Based on {{catalog.title}}
+
+## Name of Product/Version
+{{product.name}}{{#if product.version}} {{product.version}}{{/if}}
+
+## Report Date
+{{ now }}
+
+{{#if product.descriptipn}}
+## Product Description
+{{product.description}}
+{{/if}}
+
+## Contact Information
+{{#if contact.name}}Name: {{contact.name}}{{/if}}
+{{#if contact.address}}Address: {{contact.address}}{{/if}}
+Email: {{contact.email}}
+{{#if contact.phone}}Phone: {{contact.phone}}{{/if}}
+
+## Notes
+{{notes}}
+
+## Terms
+The terms used in the Conformance Level information are defined as follows:
+- **Supports**: The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.
+- **Partially Supports**: Some functionality of the product does not meet the criterion.
+- **Does Not Support**: The majority of product functionality does not meet the criterion.
+- **Not Applicable**: The criterion is not relevant to the product.
+- **Not Evaluated**: The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.
+
+{{#each catalog.chapters as |catalog-chapter|}}
+## {{chapterOrTableTitle catalog-chapter}} {{catalog-chapter.order}}: {{catalog-chapter.label}}
+
+{{#with (lookup ../chapters catalog-chapter.id) as |data-catagory|}}
+{{#if data-catagory.notes}}
+Notes: {{data-catagory.notes}}
+{{/if}}
+
+{{#if data-catagory.criteria}}
+| Criteria | Conformance Level | Remarks and Explanations |
+| --- | --- | --- |
+{{#each data-catagory.criteria as |data-criteria|}}
+| {{data-criteria.num}} {{catalogCriteriaLabel catalog-chapter.id data-criteria.num}} | <ul>{{#each data-criteria.components as |data-components|}}<li>**{{catalogComponentLabel data-components.name}}:** {{levelLabel data-components.adherence.level}}</li>{{/each}} </ul> | <ul>{{#each data-criteria.components as |data-components|}}<li>**{{catalogComponentLabel data-components.name}}:** {{data-components.adherence.notes}}</li>{{/each}} </ul> |
+{{/each}}
+
+{{/if}}
+{{/with}}
+{{/each}}
