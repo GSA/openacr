@@ -343,7 +343,7 @@ describe("Validate OPAT CLI", () => {
     const valid = spawn(
       cmd,
       options.concat(
-        "opat/drupal-9.1.yaml",
+        "opat/drupal-9.yaml",
         "--cf",
         "catalog/2.4-edition-508-wcag-2.0.yaml"
       )
