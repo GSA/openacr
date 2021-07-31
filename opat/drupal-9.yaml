@@ -25,7 +25,7 @@ chapters:
           - name: "authoring-tool"
             adherence:
               level: "supports"
-              notes: The back end of Drupal Core was built to be  WCAG 2.0 AA compliant and non-text content in the administration interface has a textual equivalent. Audio and video can be added to the media library, but Core does not provide tools to manage transcripts and captions/subtitles for local video and audio - Drupal issue #3002770.
+              notes: The back end of Drupal Core was built to be  WCAG 2.0 AA compliant and non-text content in the administration interface has a textual equivalent. Audio and video can be added to the media library, but Core does not provide tools to manage transcripts and captions/subtitles for local video and audio - Drupal issue 3002770.
       - num: "1.2.1"
         components:
           - name: "web"
@@ -125,5 +125,296 @@ chapters:
             adherence:
               level: "supports"
               notes: The authoring interface has been developed to not rely on symbols alone to convey information to the user.
+      - num: "1.4.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Color is not used without text and often symbols to convey meaning.
+          - name: "electronic-docs"
+            adherence: "supports"
+              level:
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes:  In general, the admin theme is very accessible. The Claro Administration Theme shortcut start needs improvement - Drupal issue 3171726.
+      - num: "1.4.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "2.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Users can interact with Drupal Core with the keyboard and without specific timings for individual keystrokes.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "partialy-supports"
+              notes: Authors are largely able to engage with Drupal Core with the keyboard and without specific timings for individual keystrokes.Tooltips not displayed for keyboard navigation - Drupal issue 2933984.There are reported issues with IE11 and JAWS - Drupal issue 2852702.It is worth noting that Drupal's admin is powerful and complex, and there are other accessibility reports in the issue queue.
+      - num: "2.1.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Focus can be moved away from that component using only a keyboard interface.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Focus can be moved away from that component using only a keyboard interface.
+      - num: "2.2.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: The time limit is longer than 20 hours.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: The time limit is longer than 20 hours.
+      - num: "2.2.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "2.3.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: There are no flashing elements in Drupal Core.
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: There are no flashing elements in Drupal Core.
+      - num: "2.4.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Skip links are provided.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Skip links are provided.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Skip links are provided.
+      - num: "2.4.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Pages have titles, but in the case of multi-page events, the page number is not included - Drupal issue 2509716.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Pages have titles, but in the case of multi-page events, the page number is not included - Drupal issue 2509716.
+      - num: "2.4.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Focusable components receive focus in an order that preserves meaning and operability.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Focusable components receive focus in an order that preserves meaning and operability.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Focusable components receive focus in an order that preserves meaning and operability.
+      - num: "2.4.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Careful attention has been paid to ensure that automated "Read More" links are available in a way that is available with contextual information for screen readers.
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Careful attention has been paid to ensure that automated "Read More" links are available in a way that is available with contextual information for screen readers.
+      - num: "3.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Page language is defined semantically on every page.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Page language is defined semantically on every page.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Page language is defined semantically on every page.
+      - num: "3.2.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Change in the focus state does not initiate a change of context for the user.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Change in the focus state does not initiate a change of context for the user.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Change in the focus state does not initiate a change of context for the user.
+      - num: "3.2.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes:  Engaging with the interactive sites does not unexpectedly take control from the users.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes:  Engaging with the interactive sites does not unexpectedly take control from the users.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes:  Engaging with the interactive sites does not unexpectedly take control from the users.
+      - num: "3.3.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: The Inline Form Error module was added in Drupal 8. This needs to be enabled site-wide on installation.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: The Inline Form Error module was added in Drupal 8. This needs to be enabled site-wide on installation.
+      - num: "3.3.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Default forms all include labels.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "partialy-supports"
+              notes: There are a few places where there are problems with labels, but these are odd exceptions - Drupal issue 3015494.
+      - num: "4.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: There are no HTML5 errors or warnings that are known to impact assistive technology users.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: There are no HTML5 errors or warnings that are known to impact assistive technology users.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Generally parsing is very well supported, but there are a few places where this needs to be improved - Drupal issue 1852090 and 3144948.
+      - num: "4.1.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Public pages support this criterion.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Public pages support this criterion.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: This is generally well supported, but there are places where it has been overlooked. Drupal issue 3144948, 3019487, and 3085545.
   hardware:
     notes: "Drupal is a web application. Hardware accessibility criteria is not applicable."
