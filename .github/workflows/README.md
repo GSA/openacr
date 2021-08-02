@@ -14,7 +14,7 @@ Run our tests when we submit a pull request.
 
 ## drupal-output.yaml
 
-Generate output of the Drupal OPAT for download.
+Generates output of the Drupal OPAT for download.
 
 # References
 
