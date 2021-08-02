@@ -48,25 +48,11 @@ export function outputOPAT(
     });
 
     Handlebars.registerHelper("levelLabel", function (level) {
-      let label = "";
-      switch (level) {
-        case "supports":
-          label = "Supports";
-          break;
-        case "partially-supports":
-          label = "Partially Supports";
-          break;
-        case "does-not-support":
-          label = "Does Not Support";
-          break;
-        case "not-applicable":
-          label = "Not Applicable";
-          break;
-        case "not-evaluated":
-          label = "Not Evaluated";
-          break;
+      for (const terms of catalogData.terms) {
+        if (terms.id === level) {
+          return terms.label;
+        }
       }
-      return label;
     });
 
     const result = template(data);
