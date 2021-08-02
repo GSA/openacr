@@ -32,6 +32,78 @@ chapters:
         handle: Sensory Characteristics
         alt_id: content-structure-separation-understanding
         components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.4.1
+        handle: Use of Color
+        alt_id: visual-audio-contrast-without-color
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.4.2
+        handle: Audio Control
+        alt_id: visual-audio-contrast-dis-audio
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.1.1
+        handle: Keyboard
+        alt_id: keyboard-operation-keyboard-operable
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.1.2
+        handle: No Keyboard Trap
+        alt_id: keyboard-operation-trapping
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.2.1
+        handle: Pause, Stop, Hide
+        alt_id: time-limits-required-behaviors
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.2.2
+        handle: Timing Adjustable
+        alt_id: time-limits-pause
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.3.1
+        handle: Three Flashes or Below Threshold
+        alt_id: seizure-does-not-violate
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.4.1
+        handle: Bypass Blocks
+        alt_id: navigation-mechanisms-skip
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.4.2
+        handle: Page Titled
+        alt_id: navigation-mechanisms-title
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.4.3
+        handle: Focus Order
+        alt_id: navigation-mechanisms-focus-order
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.4.4
+        handle: Link Purpose (In Context)
+        alt_id: navigation-mechanisms-refs
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.1.1
+        handle: Language of Page
+        alt_id: meaning-doc-lang-id
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.2.1
+        handle: On Focus
+        alt_id: consistent-behavior-receive-focus
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.2.2
+        handle: On Input
+        alt_id: consistent-behavior-unpredictable-change
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.3.1
+        handle: Error Identification
+        alt_id: minimize-error-identified
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.3.2
+        handle: Labels or Instructions
+        alt_id: minimize-error-cues
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 4.1.1
+        handle: Parsing
+        alt_id: ensure-compat-parses
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 4.1.2
+        handle: Name, Role, Value
+        alt_id: ensure-compat-rsv
+        components: [web, "electronic-docs", software, "authoring-tool"]
   - id: hardware
     label: Hardware
     order: 4
