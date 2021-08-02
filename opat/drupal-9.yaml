@@ -132,15 +132,15 @@ chapters:
               level: "supports"
               notes: Color is not used without text and often symbols to convey meaning.
           - name: "electronic-docs"
-            adherence: "supports"
-              level:
+            adherence:
+              level: "supports"
           - name: "software"
             adherence:
               level: "not-applicable"
           - name: "authoring-tool"
             adherence:
               level: "supports"
-              notes:  In general, the admin theme is very accessible. The Claro Administration Theme shortcut start needs improvement - Drupal issue 3171726.
+              notes: In general, the admin theme is very accessible. The Claro Administration Theme shortcut start needs improvement - Drupal issue 3171726.
       - num: "1.4.2"
         components:
           - name: "web"
@@ -169,7 +169,7 @@ chapters:
               level: "not-applicable"
           - name: "authoring-tool"
             adherence:
-              level: "partialy-supports"
+              level: "partially-supports"
               notes: Authors are largely able to engage with Drupal Core with the keyboard and without specific timings for individual keystrokes.Tooltips not displayed for keyboard navigation - Drupal issue 2933984.There are reported issues with IE11 and JAWS - Drupal issue 2852702.It is worth noting that Drupal's admin is powerful and complex, and there are other accessibility reports in the issue queue.
       - num: "2.1.2"
         components:
@@ -338,18 +338,18 @@ chapters:
           - name: "web"
             adherence:
               level: "supports"
-              notes:  Engaging with the interactive sites does not unexpectedly take control from the users.
+              notes: Engaging with the interactive sites does not unexpectedly take control from the users.
           - name: "electronic-docs"
             adherence:
               level: "supports"
-              notes:  Engaging with the interactive sites does not unexpectedly take control from the users.
+              notes: Engaging with the interactive sites does not unexpectedly take control from the users.
           - name: "software"
             adherence:
               level: "not-applicable"
           - name: "authoring-tool"
             adherence:
               level: "supports"
-              notes:  Engaging with the interactive sites does not unexpectedly take control from the users.
+              notes: Engaging with the interactive sites does not unexpectedly take control from the users.
       - num: "3.3.1"
         components:
           - name: "web"
@@ -380,7 +380,7 @@ chapters:
               level: "not-applicable"
           - name: "authoring-tool"
             adherence:
-              level: "partialy-supports"
+              level: "partially-supports"
               notes: There are a few places where there are problems with labels, but these are odd exceptions - Drupal issue 3015494.
       - num: "4.1.1"
         components:
