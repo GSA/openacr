@@ -27,7 +27,6 @@ export function outputOPAT(
       "catalogCriteriaLabel",
       function (chapterId, criteriaNum) {
         for (const chapter of catalogData.chapters) {
-          /* istanbul ignore else */
           if (chapter.id === chapterId) {
             for (const catalogChapterCriteria of chapter.criteria) {
               if (catalogChapterCriteria.id === criteriaNum) {
@@ -40,17 +39,21 @@ export function outputOPAT(
     );
 
     Handlebars.registerHelper("catalogComponentLabel", function (componentId) {
-      for (const component of catalogData.components) {
-        if (component.id === componentId) {
-          return component.label;
+      if (catalogData.components) {
+        for (const component of catalogData.components) {
+          if (component.id === componentId) {
+            return component.label;
+          }
         }
       }
     });
 
     Handlebars.registerHelper("levelLabel", function (level) {
-      for (const terms of catalogData.terms) {
-        if (terms.id === level) {
-          return terms.label;
+      if (catalogData.terms) {
+        for (const terms of catalogData.terms) {
+          if (terms.id === level) {
+            return terms.label;
+          }
         }
       }
     });
