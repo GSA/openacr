@@ -14,8 +14,8 @@ describe("Validate catalog", () => {
         criteria: [
           {
             id: "1.1.1",
-            label: "Non-text Content (Level A)",
-            key: "text-equiv",
+            handle: "Non-text Content (Level A)",
+            alt_id: "text-equiv",
             components: [
               "web",
               "electronic-docs",
@@ -25,8 +25,8 @@ describe("Validate catalog", () => {
           },
           {
             id: "1.2.2",
-            label: "1.2.2 Captions (Prerecorded) (Level A)",
-            key: "media-equiv",
+            handle: "1.2.2 Captions (Prerecorded) (Level A)",
+            alt_id: "media-equiv",
             components: [
               "web",
               "electronic-docs",
@@ -43,14 +43,14 @@ describe("Validate catalog", () => {
         criteria: [
           {
             id: "402",
-            label: "Closed Functionality",
-            key: "402-closed-functionality",
+            handle: "Closed Functionality",
+            alt_id: "402-closed-functionality",
             components: [],
           },
           {
             id: "402.1",
-            label: "General",
-            key: "402.1",
+            handle: "General",
+            alt_id: "402.1",
             components: [],
           },
         ],

@@ -5,44 +5,44 @@ chapters:
     order: 1
     criteria:
       - id: 1.1.1
-        label: Non-text Content
-        key: text-equiv
+        handle: Non-text Content
+        alt_id: text-equiv
         components: [web, "electronic-docs", software, "authoring-tool"]
       - id: 1.2.1
-        label: Audio-only and Video-only (Prerecorded)
-        key: media-equiv-captions
+        handle: Audio-only and Video-only (Prerecorded)
+        alt_id: media-equiv-captions
         components: [web, "electronic-docs", software, "authoring-tool"]
       - id: 1.2.2
-        label: Captions (Prerecorded)
-        key: media-equiv-audio-desc-only
+        handle: Captions (Prerecorded)
+        alt_id: media-equiv-audio-desc-only
         components: [web, "electronic-docs", software, "authoring-tool"]
       - id: 1.2.3
-        label: Audio Description or Media Alternative (Prerecorded)
-        key: media-equiv-real-time-captions
+        handle: Audio Description or Media Alternative (Prerecorded)
+        alt_id: media-equiv-real-time-captions
         components: [web, "electronic-docs", software, "authoring-tool"]
       - id: 1.3.1
-        label: Info and Relationships
-        key: content-structure-separation-sequence
+        handle: Info and Relationships
+        alt_id: content-structure-separation-sequence
         components: [web, "electronic-docs", software, "authoring-tool"]
       - id: 1.3.2
-        label: Meaningful Sequence
-        key: content-structure-separation-sequence
+        handle: Meaningful Sequence
+        alt_id: content-structure-separation-sequence
         components: [web, "electronic-docs", software, "authoring-tool"]
       - id: 1.3.3
-        label: Sensory Characteristics
-        key: content-structure-separation-understanding
+        handle: Sensory Characteristics
+        alt_id: content-structure-separation-understanding
         components: [web, "electronic-docs", software, "authoring-tool"]
   - id: hardware
     label: Hardware
     order: 4
     criteria:
       - id: "402"
-        label: Closed Functionality
-        key: 402-closed-functionality
+        handle: Closed Functionality
+        alt_id: 402-closed-functionality
         components: [none]
       - id: "402.1"
-        label: General
-        key: "402.1"
+        handle: General
+        alt_id: "402.1"
         components: [none]
 components:
   - id: web

@@ -42,12 +42,12 @@
                   "description": "Criteria ID.",
                   "type": "string"
                 },
-                "label": {
-                  "description": "Human-readable label.",
+                "handle": {
+                  "description": "Criteria handle.",
                   "type": "string"
                 },
-                "key": {
-                  "description": "Key used to find criteria in WCAG and other documentation",
+                "alt_id": {
+                  "description": "Alternate ID used to find criteria in WCAG and other documentation",
                   "type": "string"
                 },
                 "description": {
@@ -60,7 +60,7 @@
                   }
                 }
               },
-              "required": ["id", "label", "key"]
+              "required": ["id", "handle", "alt_id"]
             }
           }
         },
