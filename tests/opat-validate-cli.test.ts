@@ -241,6 +241,30 @@ describe("OPAT CLI test validation", () => {
     });
   });
 
+  it("when passed an invalid terms example should return invalid message", () => {
+    const invalid = spawn(
+      cmd,
+      options.concat(
+        "tests/examples/invalid-terms.yaml",
+        "-c",
+        "catalog/2.4-edition-508-wcag-2.0.yaml"
+      )
+    );
+    const chunks = [];
+
+    invalid.stderr.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    invalid.stderr.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal(
+        "Invalid: term 'does not support' in criteria '1.2.2' has no definition in catalog 'VPAT® 2.4 edition 508/WCAG 2.0'\n"
+      );
+    });
+  });
+
   it("when passed an invalid components & criteria example should return invalid message", () => {
     const invalid = spawn(
       cmd,
@@ -303,6 +327,24 @@ describe("OPAT CLI test validation", () => {
     const valid = spawn(
       cmd,
       options.concat("tests/examples/invalid-components.yaml")
+    );
+    const chunks = [];
+
+    valid.stdout.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    valid.stdout.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal("Valid!\n");
+    });
+  });
+
+  it("when passed an invalid terms example with no catalog file should return valid message", () => {
+    const valid = spawn(
+      cmd,
+      options.concat("tests/examples/invalid-terms.yaml")
     );
     const chunks = [];
 

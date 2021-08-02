@@ -32,6 +32,7 @@ export function validateOPATCatalogValues(
                 `criteria '${dataCriteria.num}' is not included in '${catalogChapter.label}'`
               );
             } else {
+              // Criteria is valid.
               if (dataCriteria.components) {
                 const dataComponents = dataCriteria.components;
                 if (catalog.components) {
@@ -59,6 +60,21 @@ export function validateOPATCatalogValues(
                         validationMessages.push(
                           `component '${dataComponent.name}' is not supported by criteria '${dataCriteria.num}'`
                         );
+                      } else {
+                        // Component is valid.
+                        if (catalog.terms) {
+                          if (
+                            !checkForCatalogTermDefinition(
+                              dataComponent.adherence.level,
+                              catalog.terms
+                            )
+                          ) {
+                            validationPassed = false;
+                            validationMessages.push(
+                              `term '${dataComponent.adherence.level}' in criteria '${dataCriteria.num}' has no definition in catalog '${catalog.title}'`
+                            );
+                          }
+                        }
                       }
                     }
                   }
@@ -126,6 +142,16 @@ function checkForCatalogComponentDefinition(
 ): boolean {
   for (const component of components) {
     if (component.id === name) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+function checkForCatalogTermDefinition(name: string, terms: any): boolean {
+  for (const term of terms) {
+    if (term.id === name) {
       return true;
     }
   }
