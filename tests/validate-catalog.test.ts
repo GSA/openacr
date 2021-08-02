@@ -109,6 +109,17 @@ describe("Validate catalog", () => {
       },
     ],
   };
+  const invalidJSON4 = {
+    title: "VPAT 2.4 edition 508/WCAG 2.0",
+    terms: [
+      {
+        supports: "Supports",
+      },
+      {
+        "does-not-support": "Does not support",
+      },
+    ],
+  };
   let result = null;
 
   it("pass valid JSON with valid schema should return valid message", () => {
@@ -157,9 +168,21 @@ describe("Validate catalog", () => {
     result = validateCatalog(invalidJSON3, validSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(
-      "Invalid: data/components/0 must have required property 'id', data/components/0 must have required property 'label', " +
+      "Invalid: data/components/0 must have required property 'id', " +
+        "data/components/0 must have required property 'label', " +
         "data/components/1 must have required property 'id', " +
         "data/components/1 must have required property 'label'"
+    );
+  });
+
+  it("pass invalid terms JSON should return invalid JSON message", () => {
+    result = validateCatalog(invalidJSON4, validSchema);
+    expect(result.result).to.equal(false);
+    expect(result.message).to.equal(
+      "Invalid: data/terms/0 must have required property 'id', " +
+        "data/terms/0 must have required property 'label', " +
+        "data/terms/1 must have required property 'id', " +
+        "data/terms/1 must have required property 'label'"
     );
   });
 });

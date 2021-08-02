@@ -110,14 +110,8 @@
                   "type": "object",
                   "properties": {
                     "level": {
-                      "description": "Conformance Level. Supports: The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.\nPartially Supports: Some functionality of the product does not meet the criterion.\nDoes Not Support: The majority of product functionality does not meet the criterion.\nNot Applicable: The criterion is not relevant to the product.\nNot Evaluated: The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.",
-                      "enum": [
-                        "supports",
-                        "partially-supports",
-                        "does-not-support",
-                        "not-applicable",
-                        "not-evaluated"
-                      ]
+                      "description": "Conformance level.",
+                      "type": "string"
                     },
                     "notes": {
                       "description": "Remarks and Explanations.",

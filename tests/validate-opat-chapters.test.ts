@@ -61,32 +61,6 @@ describe("Validate OPAT chapters", () => {
       },
     },
   };
-  const invalidJSON3 = {
-    title: "Drupal Accessibility Conformance Report",
-    product: {
-      name: "Drupal",
-    },
-    contact: {
-      email: "mike.gifford@civicactions.com",
-    },
-    chapters: {
-      success_criteria_level_a: {
-        criteria: [
-          {
-            num: "1.1.1",
-            components: [
-              {
-                name: "web",
-                adherence: {
-                  level: "does not supports",
-                },
-              },
-            ],
-          },
-        ],
-      },
-    },
-  };
   let result = null;
 
   it("pass valid chapters JSON should return valid message", () => {
@@ -110,14 +84,6 @@ describe("Validate OPAT chapters", () => {
     expect(result.message).to.equal(
       "Invalid: data/chapters/success_criteria_level_a/criteria/0 must be object, " +
         "data/chapters/success_criteria_level_a/criteria/1 must be object"
-    );
-  });
-
-  it("pass invalid components JSON should return invalid JSON message", () => {
-    result = validateOPAT(invalidJSON3, validSchema);
-    expect(result.result).to.equal(false);
-    expect(result.message).to.equal(
-      "Invalid: data/chapters/success_criteria_level_a/criteria/0/components/0/adherence/level must be equal to one of the allowed values"
     );
   });
 });
