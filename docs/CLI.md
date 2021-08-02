@@ -72,6 +72,7 @@ npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/
 npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/catalog-different-components.yaml # Output: Invalid: ...
 # Validate and Output
 npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml -o tests/examples/valid.markdown # Output: Valid ...
+npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml -o output/drupal-9.markdown # Output: Valid ...
 ```
 
 Where:
@@ -87,6 +88,7 @@ Where:
 - tests/examples/catalog-missing-chapters.yaml: No chapters.
 - tests/examples/catalog-different-components.yaml: Has different components to test how a previous valid OPAT is invalid and vice-versa.
 - tests/examples/valid.markdown: Is a custom output markdown file of the OPAT after it has been validated.
+- output/drupal-9.markdown: Generates markdown output of the Drupal 9 OPAT.
 
 ## Schemas
 

@@ -1,0 +1,28 @@
+name: Drupal 9 OPAT output
+
+on:
+  pull_request:
+
+jobs:
+  build-test:
+    name: Building app and generate output of Drupal 9 OPAT markdown version
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source.
+        uses: actions/checkout@v2
+
+      - name: Install dependencies.
+        run: npm install
+
+      - name: Create output directory.
+        run: mkdir -p output
+
+      - name: Output.
+        run: npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml -o output/drupal-9.markdown
+
+      - name: Download output.
+        uses: actions/upload-artifact@v2
+        with:
+          name: drupal-9
+          path: output/drupal-9.markdown
