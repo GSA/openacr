@@ -429,8 +429,6 @@ chapters:
           - name: "software"
             adherence:
               level: "not-applicable"
-          - name: "authoring-tool"
-            adherence:
       - num: "1.2.5"
         components:
           - name: "web"
