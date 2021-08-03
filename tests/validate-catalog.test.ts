@@ -78,6 +78,37 @@ describe("Validate catalog", () => {
         label: "",
       },
     ],
+    terms: [
+      {
+        id: "supports",
+        label: "Supports",
+        description:
+          "The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.",
+      },
+      {
+        id: "partially-supports",
+        label: "Partially Supports",
+        description:
+          "Some functionality of the product does not meet the criterion.",
+      },
+      {
+        id: "does-not-support",
+        label: "Does Not Support",
+        description:
+          "The majority of product functionality does not meet the criterion.",
+      },
+      {
+        id: "not-applicable",
+        label: "Not Applicable",
+        description: "The criterion is not relevant to the product.",
+      },
+      {
+        id: "not-evaluated",
+        label: "Not Evaluated",
+        description:
+          "The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.",
+      },
+    ],
   };
   const invalidJSON = { foo: 2, bar: 4 };
   const invalidJSON1 = {
@@ -106,6 +137,17 @@ describe("Validate catalog", () => {
       },
       {
         "electronic-docs": "Electronic Docs",
+      },
+    ],
+  };
+  const invalidJSON4 = {
+    title: "VPAT 2.4 edition 508/WCAG 2.0",
+    terms: [
+      {
+        supports: "Supports",
+      },
+      {
+        "does-not-support": "Does not support",
       },
     ],
   };
@@ -157,9 +199,21 @@ describe("Validate catalog", () => {
     result = validateCatalog(invalidJSON3, validSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(
-      "Invalid: data/components/0 must have required property 'id', data/components/0 must have required property 'label', " +
+      "Invalid: data/components/0 must have required property 'id', " +
+        "data/components/0 must have required property 'label', " +
         "data/components/1 must have required property 'id', " +
         "data/components/1 must have required property 'label'"
+    );
+  });
+
+  it("pass invalid terms JSON should return invalid JSON message", () => {
+    result = validateCatalog(invalidJSON4, validSchema);
+    expect(result.result).to.equal(false);
+    expect(result.message).to.equal(
+      "Invalid: data/terms/0 must have required property 'id', " +
+        "data/terms/0 must have required property 'label', " +
+        "data/terms/1 must have required property 'id', " +
+        "data/terms/1 must have required property 'label'"
     );
   });
 });

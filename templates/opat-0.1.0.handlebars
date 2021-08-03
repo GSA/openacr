@@ -8,7 +8,7 @@ Based on {{catalog.title}}
 ## Report Date
 {{ now }}
 
-{{#if product.descriptipn}}
+{{#if product.description}}
 ## Product Description
 {{product.description}}
 {{/if}}
@@ -24,11 +24,9 @@ Email: {{contact.email}}
 
 ## Terms
 The terms used in the Conformance Level information are defined as follows:
-- **Supports**: The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.
-- **Partially Supports**: Some functionality of the product does not meet the criterion.
-- **Does Not Support**: The majority of product functionality does not meet the criterion.
-- **Not Applicable**: The criterion is not relevant to the product.
-- **Not Evaluated**: The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.
+{{#each catalog.terms as |catalog-term|}}
+- **{{catalog-term.label}}**: {{catalog-term.description}}
+{{/each}}
 
 {{#each catalog.chapters as |catalog-chapter|}}
 ## {{chapterOrTableTitle catalog-chapter}} {{catalog-chapter.order}}: {{catalog-chapter.label}}

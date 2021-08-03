@@ -33,7 +33,166 @@ describe("Output", () => {
       },
     },
   };
-  const validJSONCatalog = {
+  const validJSONCatalog1 = {
+    title: "VPAT 2.4 edition 508/WCAG 2.0",
+    chapters: [
+      {
+        id: "success_criteria_level_a",
+        label: "Success Criteria, Level A",
+        order: 1,
+        criteria: [
+          {
+            id: "1.1.1",
+            handle: "Non-text Content (Level A)",
+            alt_id: "text-equiv",
+            components: [
+              "web",
+              "electronic-docs",
+              "software",
+              "authoring-tool",
+            ],
+          },
+          {
+            id: "1.2.2",
+            handle: "1.2.2 Captions (Prerecorded) (Level A)",
+            alt_id: "media-equiv",
+            components: [
+              "web",
+              "electronic-docs",
+              "software",
+              "authoring-tool",
+            ],
+          },
+        ],
+      },
+      {
+        id: "hardware",
+        label: "Hardware",
+        order: 4,
+        criteria: [
+          {
+            id: "402",
+            handle: "Closed Functionality",
+            alt_id: "402-closed-functionality",
+            components: [],
+          },
+          {
+            id: "402.1",
+            handle: "General",
+            alt_id: "402.1",
+            components: [],
+          },
+        ],
+      },
+    ],
+    components: [
+      {
+        id: "web",
+        label: "Web",
+      },
+      {
+        id: "electronic-docs",
+        label: "Electronic Docs",
+      },
+      {
+        id: "software",
+        label: "Software",
+      },
+      {
+        id: "authoring-tool",
+        label: "Authoring Tool",
+      },
+      {
+        id: "none",
+        label: "",
+      },
+    ],
+    terms: [
+      {
+        id: "supports",
+        label: "Supports",
+        description:
+          "The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.",
+      },
+      {
+        id: "partially-supports",
+        label: "Partially Supports",
+        description:
+          "Some functionality of the product does not meet the criterion.",
+      },
+      {
+        id: "does-not-support",
+        label: "Does Not Support",
+        description:
+          "The majority of product functionality does not meet the criterion.",
+      },
+      {
+        id: "not-applicable",
+        label: "Not Applicable",
+        description: "The criterion is not relevant to the product.",
+      },
+      {
+        id: "not-evaluated",
+        label: "Not Evaluated",
+        description:
+          "The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.",
+      },
+    ],
+  };
+  const validJSONCatalog2 = {
+    title: "VPAT 2.4 edition 508/WCAG 2.0",
+    chapters: [
+      {
+        id: "success_criteria_level_a",
+        label: "Success Criteria, Level A",
+        order: 1,
+        criteria: [
+          {
+            id: "1.1.1",
+            handle: "Non-text Content (Level A)",
+            alt_id: "text-equiv",
+            components: [
+              "web",
+              "electronic-docs",
+              "software",
+              "authoring-tool",
+            ],
+          },
+          {
+            id: "1.2.2",
+            handle: "1.2.2 Captions (Prerecorded) (Level A)",
+            alt_id: "media-equiv",
+            components: [
+              "web",
+              "electronic-docs",
+              "software",
+              "authoring-tool",
+            ],
+          },
+        ],
+      },
+      {
+        id: "hardware",
+        label: "Hardware",
+        order: 4,
+        criteria: [
+          {
+            id: "402",
+            handle: "Closed Functionality",
+            alt_id: "402-closed-functionality",
+            components: [],
+          },
+          {
+            id: "402.1",
+            handle: "General",
+            alt_id: "402.1",
+            components: [],
+          },
+        ],
+      },
+    ],
+  };
+  const validJSONCatalog3 = {
     title: "VPAT 2.4 edition 508/WCAG 2.0",
     chapters: [
       {
@@ -108,12 +267,68 @@ describe("Output", () => {
       },
     ],
   };
+  const validJSONCatalog4 = {
+    title: "VPAT 2.4 edition 508/WCAG 2.0",
+    components: [
+      {
+        id: "web",
+        label: "Web",
+      },
+      {
+        id: "electronic-docs",
+        label: "Electronic Docs",
+      },
+      {
+        id: "software",
+        label: "Software",
+      },
+      {
+        id: "authoring-tool",
+        label: "Authoring Tool",
+      },
+      {
+        id: "none",
+        label: "",
+      },
+    ],
+    terms: [
+      {
+        id: "supports",
+        label: "Supports",
+        description:
+          "The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.",
+      },
+      {
+        id: "partially-supports",
+        label: "Partially Supports",
+        description:
+          "Some functionality of the product does not meet the criterion.",
+      },
+      {
+        id: "does-not-support",
+        label: "Does Not Support",
+        description:
+          "The majority of product functionality does not meet the criterion.",
+      },
+      {
+        id: "not-applicable",
+        label: "Not Applicable",
+        description: "The criterion is not relevant to the product.",
+      },
+      {
+        id: "not-evaluated",
+        label: "Not Evaluated",
+        description:
+          "The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.",
+      },
+    ],
+  };
   let result = null;
 
   it("pass valid data and catalog should return valid message", () => {
     result = outputOPAT(
       validJSONData,
-      validJSONCatalog,
+      validJSONCatalog1,
       "output/opat.markdown"
     );
     expect(result.result).to.equal(true);
@@ -123,8 +338,35 @@ describe("Output", () => {
   });
 
   it("pass valid data, catalog, and output file should return valid message", () => {
-    const filePath = "output/unittest.markdown";
-    result = outputOPAT(validJSONData, validJSONCatalog, filePath);
+    const filePath = "output/unittest1.markdown";
+    result = outputOPAT(validJSONData, validJSONCatalog1, filePath);
+    expect(result.result).to.equal(true);
+    expect(result.message).to.equal(
+      `Valid and output generated at ${filePath}!`
+    );
+  });
+
+  it("pass valid data, catalog with missing components and terms, and output file should return valid message", () => {
+    const filePath = "output/unittest2.markdown";
+    result = outputOPAT(validJSONData, validJSONCatalog2, filePath);
+    expect(result.result).to.equal(true);
+    expect(result.message).to.equal(
+      `Valid and output generated at ${filePath}!`
+    );
+  });
+
+  it("pass valid data, catalog with missing terms, and output file should return valid message", () => {
+    const filePath = "output/unittest3.markdown";
+    result = outputOPAT(validJSONData, validJSONCatalog3, filePath);
+    expect(result.result).to.equal(true);
+    expect(result.message).to.equal(
+      `Valid and output generated at ${filePath}!`
+    );
+  });
+
+  it("pass valid data, catalog with missing chapters, and output file should return valid message", () => {
+    const filePath = "output/unittest4.markdown";
+    result = outputOPAT(validJSONData, validJSONCatalog4, filePath);
     expect(result.result).to.equal(true);
     expect(result.message).to.equal(
       `Valid and output generated at ${filePath}!`
@@ -134,7 +376,7 @@ describe("Output", () => {
   it("pass valid data, catalog, and invalid template should return invalid template message", () => {
     result = outputOPAT(
       validJSONData,
-      validJSONCatalog,
+      validJSONCatalog1,
       "output/opat.markdown",
       ""
     );

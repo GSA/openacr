@@ -87,6 +87,27 @@
         },
         "required": ["id", "label"]
       }
+    },
+    "terms": {
+      "description": "Available terms.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Term ID.",
+            "type": "string"
+          },
+          "label": {
+            "description": "Human-readable label.",
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": ["id", "label"]
+      }
     }
   },
   "required": ["title"]
