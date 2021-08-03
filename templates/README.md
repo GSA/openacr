@@ -1,1 +1,1 @@
-See [output section in CLI documentation](docs/CLI.md#output).
+See [output section in CLI documentation](/docs/CLI.md#output).

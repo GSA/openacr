@@ -1,1 +1,1 @@
-See [tests section in CLI documentation](docs/CLI.md#tests).
+See [tests section in CLI documentation](/docs/CLI.md#tests).

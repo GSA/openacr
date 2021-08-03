@@ -1,1 +1,1 @@
-See [source section in CLI documentation](docs/CLI.md#source).
+See [source section in CLI documentation](/docs/CLI.md#source).
