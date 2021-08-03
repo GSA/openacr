@@ -60,7 +60,7 @@ Options:
 
 ### Examples
 
-You can test the CLI with the following examples:
+You can test the CLI with the following example commands:
 
 ```bash
 # Only validate
@@ -108,13 +108,15 @@ We checked in an example of the markdown output in `tests/examples/valid.markdow
 npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml -o tests/examples/valid.markdown # Output: Valid ...
 ```
 
-## OPAT
+We also have a GitHub action called 'Drupal 9 OPAT output' that will generate the markdown version of the Drupal 9 OPAT. It is run on pull requests, and the output can be downloaded to double-check it is matching expectations.
 
-Final
+## OPATs
+
+Current example OPATs that are tracked in this repository are in the `opat` directory.
 
 OPATs:
 
-- opat/drupal-9.yaml: Current Drupal 9 OPAT.
+- drupal-9.yaml: Current Drupal 9 OPAT.
 
 ## Tests
 
@@ -124,9 +126,7 @@ Tests can be run by executing the command:
 npm test
 ```
 
-Test examples are files located in `tests/examples` are different types of versions of an OPAT, catalog, markdown, and so on that are used for testing the application.
-
-Current files:
+The following files located in `tests/examples` are different types of versions of an OPAT, catalog, markdown, and so on that are used for testing the application:
 
 - catalog-different-components.yaml: Has different components to test how a previous valid OPAT is invalid and vice-versa.
 - catalog-missing-chapters.yaml: No chapters.
