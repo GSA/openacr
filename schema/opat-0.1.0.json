@@ -52,6 +52,19 @@
             }
           }
         },
+        "success_criteria_level_aa": {
+          "description": "Success criteria level AA. Table/chapter 2 in all versions.",
+          "type": "object",
+          "properties": {
+            "notes": {
+              "description": "Any details or explanation about the chapter.",
+              "type": "string"
+            },
+            "criteria": {
+              "$ref": "#/definitions/criteria"
+            }
+          }
+        },
         "hardware": {
           "description": "Hardware (chapter 4 in 508/WCAG/INT versions, chapter 8 in EU version).",
           "type": "object",

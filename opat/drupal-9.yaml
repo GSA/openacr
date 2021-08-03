@@ -92,7 +92,7 @@ chapters:
           - name: "authoring-tool"
             adherence:
               level: "supports"
-              notes: The authoring environment was constructed to support ATAG 2.0 AA (Part A and B)
+              notes: The authoring environment was constructed to support ATAG 2.0 AA (Part A and B).
       - num: "1.3.2"
         components:
           - name: "web"
@@ -108,7 +108,7 @@ chapters:
           - name: "authoring-tool"
             adherence:
               level: "supports"
-              notes: The authoring environment was constructed to support ATAG 2.0 AA (Part A and B)
+              notes: The authoring environment was constructed to support ATAG 2.0 AA (Part A and B).
       - num: "1.3.3"
         components:
           - name: "web"
@@ -416,5 +416,207 @@ chapters:
             adherence:
               level: "supports"
               notes: This is generally well supported, but there are places where it has been overlooked. Drupal issue 3144948, 3019487, and 3085545.
+  success_criteria_level_aa:
+    criteria:
+      - num: "1.2.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+      - num: "1.2.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "does-not-support"
+              notes: Audio files can be uploaded, but there is no way to associate captions in Core.
+          - name: "electronic-docs"
+            adherence:
+              level: "does-not-support"
+              notes: There is no documentation on how to properly convey pre-recorded audio descriptions.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "does-not-support"
+              notes: There is no audio in the authoring interface of Drupal Core, but there is no support for authors to upload accessible audio files.
+      - num: "1.4.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: Generally meets. Some contrast failures around grey backgrounds - Drupal issue 3040673.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: The docs have sufficient contrast.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Generally meets requirements. Some challenges with Core admin themes - Drupal issue 930508 and 3080100.
+      - num: "1.4.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: Generally support with some minor exceptions - Drupal issue 3129257.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: The docs are accessible up to 200%.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "partially-supports"
+              notes: Generally good with some exceptions - Drupal issue 3164587.
+      - num: "1.4.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Text is generally styled with CSS in the authoring tool. Should images of text be uploaded by the user, they will be required to add alternative text.
+      - num: "2.4.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: There is more than one way to locate a Web page within the CMS.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: There is more than one way to locate a Web page within the CMS.
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: There is more than one way to locate a Web page within the CMS.
+      - num: "2.4.6"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: Generally there is very good support. Some heading levels may be missed in some unique contexts - Drupal issue 1768732. Better support could be provided for threaded comments - Drupal issue 2290043.
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "partially-supports"
+              notes: Generally good, but for dynamic elements like the Layout Builder need a plan for a dynamic heading structure - Drupal issue 3007978.
+      - num: "2.4.7"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: Focus elements are well established for the front-end. Further enhancements are being developed to make it more obvious for keyboard only users.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "partially-supports"
+              notes: An IE specific bug where there are focus issues for authors and administrators in the Claro theme - Drupal issue 3048785.
+      - num: "3.1.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: Multilingual sites have language switchers with proper semantics. Unfotunately support is lacking for multi-lingual search 2992894 as well as both the Filesystem 3163915 & Views components 2496223.
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Drupal has good support for multilingual content and accessibility. To support the Language of Parts for authors, a button can be added to simplify the process of adding language specific phrases.
+      - num: "3.2.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Drupal's menu structure allows for consistent navigation across the site.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Drupal's menu structure allows for consistent navigation across the site.
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Drupal's menu structure allows for consistent navigation across the site.
+      - num: "3.2.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Components in Drupal that have the same functionality are identified consistently.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Components in Drupal that have the same functionality are identified consistently.
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Components in Drupal that have the same functionality are identified consistently.
+      - num: "3.3.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: The Inline Form Error Module is provided in Core and needs to be enabled to allow for this functionality.
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: The Inline Form Error Module is provided in Core and needs to be enabled to allow for this functionality.
+      - num: "3.3.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: By default users can editing content which they own.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Documentation could be improved.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "partially-supports"
+              notes: There is nothing to differentiate editing financial or legal data from any other data managed by Drupal.
   hardware:
     notes: "Drupal is a web application. Hardware accessibility criteria is not applicable."

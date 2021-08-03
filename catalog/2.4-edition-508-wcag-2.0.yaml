@@ -104,6 +104,62 @@ chapters:
         handle: Name, Role, Value
         alt_id: ensure-compat-rsv
         components: [web, "electronic-docs", software, "authoring-tool"]
+  - id: success_criteria_level_aa
+    label: Success Criteria, Level AA
+    order: 2
+    criteria:
+      - id: 1.2.4
+        handle: Captions (Live)
+        alt_id: media-equiv-real-time-captions
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.2.5
+        handle: Audio Description (Prerecorded)
+        alt_id: media-equiv-audio-desc-only
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.4.3
+        handle: Contrast (Minimum)
+        alt_id: visual-audio-contrast-contrast
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.4.4
+        handle: Resize text
+        alt_id: visual-audio-contrast-scale
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.4.5
+        handle: Images of Text
+        alt_id: visual-audio-contrast-text-presentation
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.4.5
+        handle: Multiple Ways
+        alt_id: navigation-mechanisms-mult-loc
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.4.6
+        handle: Headings and Labels
+        alt_id: navigation-mechanisms-descriptive
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.4.7
+        handle: Focus Visible
+        alt_id: navigation-mechanisms-focus-visible
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.1.2
+        handle: Language of Parts
+        alt_id: meaning-other-lang-id
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.2.3
+        handle: Consistent Navigation
+        alt_id: consistent-behavior-consistent-locations
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.2.4
+        handle: Consistent Identification
+        alt_id: consistent-behavior-consistent-functionality
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.3.3
+        handle: Error Suggestion
+        alt_id: minimize-error-suggestions
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.3.4
+        handle: Error Prevention (Legal, Financial, Data)
+        alt_id: minimize-error-reversible
+        components: [web, "electronic-docs", software, "authoring-tool"]
   - id: hardware
     label: Hardware
     order: 4

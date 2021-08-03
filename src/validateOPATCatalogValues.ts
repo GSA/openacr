@@ -17,7 +17,10 @@ export function validateOPATCatalogValues(
       const catalogChapters = catalog.chapters;
 
       for (const catalogChapter of catalogChapters) {
-        if (data.chapters[catalogChapter.id].criteria) {
+        if (
+          data.chapters[catalogChapter.id] &&
+          data.chapters[catalogChapter.id].criteria
+        ) {
           const dataCriteriaList = data.chapters[catalogChapter.id].criteria;
           for (const dataCriteria of dataCriteriaList) {
             if (
