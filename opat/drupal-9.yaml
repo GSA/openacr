@@ -440,7 +440,7 @@ chapters:
           - name: "electronic-docs"
             adherence:
               level: "does-not-support"
-              notes:  There is no documentation on how to properly convey pre-recorded audio descriptions.
+              notes: There is no documentation on how to properly convey pre-recorded audio descriptions.
           - name: "software"
             adherence:
               level: "not-applicable"
@@ -457,7 +457,7 @@ chapters:
           - name: "electronic-docs"
             adherence:
               level: "supports"
-              notes:  The docs have sufficient contrast.
+              notes: The docs have sufficient contrast.
           - name: "software"
             adherence:
               level: "not-applicable"
@@ -474,7 +474,7 @@ chapters:
           - name: "electronic-docs"
             adherence:
               level: "supports"
-              notes:  The docs are accessible up to 200%.
+              notes: The docs are accessible up to 200%.
           - name: "software"
             adherence:
               level: "not-applicable"
@@ -506,7 +506,7 @@ chapters:
           - name: "electronic-docs"
             adherence:
               level: "supports"
-              notes:  There is more than one way to locate a Web page within the CMS.
+              notes: There is more than one way to locate a Web page within the CMS.
           - name: "authoring-tool"
             adherence:
               level: "supports"
@@ -516,7 +516,7 @@ chapters:
           - name: "web"
             adherence:
               level: "partially-supports"
-              notes:  Generally there is very good support. Some heading levels may be missed in some unique contexts - Drupal issue 1768732. Better support could be provided for threaded comments - Drupal issue 2290043.
+              notes: Generally there is very good support. Some heading levels may be missed in some unique contexts - Drupal issue 1768732. Better support could be provided for threaded comments - Drupal issue 2290043.
           - name: "electronic-docs"
             adherence:
               level: "not-applicable"
@@ -582,7 +582,7 @@ chapters:
           - name: "electronic-docs"
             adherence:
               level: "supports"
-              notes:  Components in Drupal that have the same functionality are identified consistently.
+              notes: Components in Drupal that have the same functionality are identified consistently.
           - name: "authoring-tool"
             adherence:
               level: "supports"
@@ -612,7 +612,7 @@ chapters:
           - name: "electronic-docs"
             adherence:
               level: "supports"
-              notes:  Documentation could be improved.
+              notes: Documentation could be improved.
           - name: "software"
             adherence:
               level: "not-applicable"
