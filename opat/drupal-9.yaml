@@ -618,5 +618,132 @@ chapters:
             adherence:
               level: "partially-supports"
               notes: There is nothing to differentiate editing financial or legal data from any other data managed by Drupal.
+  success_criteria_level_aaa:
+    criteria:
+      - num: "1.2.6"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+      - num: "1.2.7"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+      - num: "1.2.8"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+      - num: "1.2.9"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+      - num: "1.4.6"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: A front-end and back-end theme could be configured to allow this to comply.
+      - num: "1.4.7"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+              notes:
+      - num: "1.4.8"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+              notes: Stable Core themes leave much of the presentation of text to user agents, so aside from line spacing this generally works.
+      - num: "1.4.9"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Text images are all supplied by the author.
+      - num: "2.1.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: The web front-end is not a barrier to keyboard only users.
+      - num: "2.2.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: There are no timeouts in Drupal Core that would affect people with disabilities.
+      - num: "2.2.4
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+      - num: "2.2.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+      - num: "2.3.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: There is no flashing content.
+      - num: "2.4.8"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Breadcrumbs are available and sitemap modules can be added to provide additional means for navigation.
+      - num: "2.4.9"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: There is a mechanism to support automated links with semantic descriptive titles.
+      - num: "2.4.10"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Drupal provides heading elements at the beginning of each section of content.
+      - num: "3.1.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+      - num: "3.1.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+      - num: "3.1.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+      - num: "3.1.6"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+      - num: "3.2.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+      - num: "3.3.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+      - num: "3.3.6"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
   hardware:
     notes: "Drupal is a web application. Hardware accessibility criteria is not applicable."
