@@ -753,5 +753,301 @@ chapters:
           - name: "web"
             adherence:
               level: "not-applicable"
+  # Note that this will likely be replaced with an automated process.
+  functional_performance_criteria:
+    - num: "302.1"
+      name: Without Vision
+      level: "supports"
+      notes: Testing has been done with JAWS, NVDA and VoiceOver.
+    - num: "302.2"
+      name: With Limited Vision
+      level: "supports"
+      notes: Testing has been done with browser zoom and ZoomText.
+    - num: "302.3"
+      name: Without Perception of Color
+      level: "supports"
+      notes: The interface has been reviewed for use of color.
+    - num: "302.4"
+      name: Without Hearing
+      level: "not-applicable"
+    - num: "302.5"
+      name: With Limited Hearing
+      level: "not-applicable"
+    - num: "302.6"
+      name: Without Speech
+      level: "not-applicable"
+    - num: "302.7"
+      name: With Limited Manipulation
+      level: "supports"
+      notes: Drupal's interface does not restrict users with limited manipulation.
+    - num: "302.8"
+      name: With Limited Reach and Strength
+      level: "supports"
+      notes: Drupal's interface does not restrict users with limited reach or strength.
+    - num: "302.9"
+      name: With Limited Language, Cognitive, and Learning Abilities
+      level: "not-applicable"
+  # Chapter 4
+  # This is included as an exmple. It should not need to be included for exclusively web based ACRs.
   hardware:
     notes: "Drupal is a web application. Hardware accessibility criteria is not applicable."
+    - num: "402.2.1"
+      name: Information Displayed On-Screen
+      level: "not-applicable"
+    - num: "402.2.2"
+      name: Transactional Outputs
+      level: "not-applicable"
+    - num: "402.2.3"
+      name: Speech Delivery Type and Coordination
+      level: "not-applicable"
+    - num: "402.2.4"
+      name: User Control
+      level: "not-applicable"
+    - num: "402.2.5"
+      name: Braille Instructions
+      level: "not-applicable"
+    - num: "402.3.1"
+      name: Private Listening
+      level: "not-applicable"
+    - num: "402.3.2"
+      name: Non-private Listening
+      level: "not-applicable"
+    - num: "402.4"
+      name: Characters on Display Screens
+      level: "not-applicable"
+    - num: "402.5"
+      name: Characters on Variable Message Signs
+      level: "not-applicable"
+    - num: "403.1"
+      name: General (Biometrics)
+      level: "not-applicable"
+    - num: "404.1"
+      name: General (Preservation of Information Provided for Accessibility)
+      level: "not-applicable"
+    - num: "405.1"
+      name: General (Privacy)
+      level: "not-applicable"
+    - num: "406.1"
+      name: General (Standard Connections)
+      level: "not-applicable"
+    - num: "407.2"
+      name: Contrast (Operable Parts)
+      level: "not-applicable"
+    - num: "407.3.1"
+      name: Tactilely Discernible
+      level: "not-applicable"
+    - num: "407.3.2"
+      name: Alphabetic Keys
+      level: "not-applicable"
+    - num: "407.3.3"
+      name: Numeric Keys
+      level: "not-applicable"
+    - num: "407.4"
+      name: Key Repeat
+      level: "not-applicable"
+    - num: "407.5"
+      name: Timed Response
+      level: "not-applicable"
+    - num: "407.6"
+      name: Operation
+      level: "not-applicable"
+    - num: "407.7"
+      name: Tickets, Fare Cards, and Keycards
+      level: "not-applicable"
+    - num: "407.8.1"
+      name: Vertical Reference Plane
+      level: "not-applicable"
+    - num: "407.8.1.1"
+      name: Vertical Plane for Side Reach
+      level: "not-applicable"
+    - num: "407.8.1.2"
+      name: Vertical Plane for Forward Reach
+      level: "not-applicable"
+    - num: "407.8.2"
+      name: Side Reach
+      level: "not-applicable"
+    - num: "407.8.2.1"
+      name: Unobstructed Side Reach
+      level: "not-applicable"
+    - num: "407.8.2.2"
+      name: Obstructed Side Reach
+      level: "not-applicable"
+    - num: "407.8.3"
+      name: Forward Reach
+      level: "not-applicable"
+    - num: "407.8.3.1"
+      name: Unobstructed Forward Reach
+      level: "not-applicable"
+    - num: "407.8.3.2"
+      name: Obstructed Forward Reach
+      level: "not-applicable"
+    - num: "407.8.3.2.1"
+      name: Operable Part Height for ICT with Obstructed Forward Reach
+      level: "not-applicable"
+    - num: "407.8.3.2.2"
+      name: Knee and Toe Space under ICT with Obstructed Forward Reach
+      level: "not-applicable"
+    - num: "408.2"
+      name: Visibility
+      level: "not-applicable"
+    - num: "408.3"
+      name: Flashing
+      level: "not-applicable"
+    - num: "409.1"
+      name: General (Status Indicators)
+      level: "not-applicable"
+    - num: "410.1"
+      name: General (Color Coding)
+      level: "not-applicable"
+    - num: "411.1"
+      name: General (Audible Signals)
+      level: "not-applicable"
+    - num: "412.2.1"
+      name: Volume Gain for Wireline Telephones
+      level: "not-applicable"
+    - num: "412.2.2"
+      name: Volume Gain for Non-Wireline ICT
+      level: "not-applicable"
+    - num: "412.3.1"
+      name: Wireless Handsets
+      level: "not-applicable"
+    - num: "412.3.2"
+      name: Wireline Handsets
+      level: "not-applicable"
+    - num: "412.4"
+      name: Digital Encoding of Speech
+      level: "not-applicable"
+    - num: "412.5"
+      name: Real-Time Text Functionality
+      level: "reserved-for-future"
+    - num: "412.6"
+      name: Caller ID
+      level: "not-applicable"
+    - num: "412.7"
+      name: Video Communication
+      level: "not-applicable"
+    - num: "412.8.1"
+      name: TTY Connectability
+      level: "not-applicable"
+    - num: "412.8.2"
+      name: Voice and Hearing Carry Over
+      level: "not-applicable"
+    - num: "412.8.3"
+      name: Signal Compatibility
+      level: "not-applicable"
+    - num: "412.8.4"
+      name: Voice Mail and Other Messaging Systems
+      level: "not-applicable"
+    - num: "413.1.1"
+      name: Decoding and Display of Closed Captions
+      level: "not-applicable"
+    - num: "413.1.2"
+      name: Pass-Through of Closed Caption Data
+      level: "not-applicable"
+    - num: "414.1.1"
+      name: Digital Television Tuners
+      level: "not-applicable"
+    - num: "414.1.2"
+      name: Other ICT
+      level: "not-applicable"
+    - num: "415.1.1"
+      name: Caption Controls
+      level: "not-applicable"
+    - num: "415.1.2"
+      name: Audio Description Controls
+      level: "not-applicable"
+  # Chapter 5
+  # This is included as an exmple. It should not need to be included for exclusively web based ACRs.
+  software:
+    notes: "Drupal is a web application. Software accessibility criteria is not applicable."
+    - num: "502.2.1"
+      name: User Control of Accessibility Features
+      level: "not-applicable"
+    - num: "502.2.2"
+      name: No Disruption of Accessibility Features
+      level: "not-applicable"
+    - num: "502.3.1"
+      name: Object Information
+      level: "not-applicable"
+    - num: "502.3.2"
+      name: Modification of Object Information
+      level: "not-applicable"
+    - num: "502.3.3"
+      name: Row, Column, and Headers
+      level: "not-applicable"
+    - num: "502.3.4"
+      name: Values
+      level: "not-applicable"
+    - num: "502.3.5"
+      name: Modification of Values
+      level: "not-applicable"
+    - num: "502.3.6"
+      name: Label Relationships
+      level: "not-applicable"
+    - num: "502.3.7"
+      name: Hierarchical Relationships
+      level: "not-applicable"
+    - num: "502.3.8"
+      name: Text
+      level: "not-applicable"
+    - num: "502.3.9"
+      name: Modification of Text
+      level: "not-applicable"
+    - num: "502.3.10"
+      name: List of Actions
+      level: "not-applicable"
+    - num: "502.3.11"
+      name: Actions on Objects
+      level: "not-applicable"
+    - num: "502.3.12"
+      name: Focus Cursor
+      level: "not-applicable"
+    - num: "502.3.13"
+      name: Modification of Focus Cursor
+      level: "not-applicable"
+    - num: "502.3.14"
+      name: Event Notification
+      level: "not-applicable"
+    - num: "502.4"
+      name:  Platform Accessibility Features
+      level: "not-applicable"
+    - num: "503.2"
+      name: User Preferences
+      level: "not-applicable"
+    - num: "503.3"
+      name: Alternative User Interfaces
+      level: "not-applicable"
+    - num: "503.4.1"
+      name:  Caption Controls
+      level: "not-applicable"
+    - num: "503.4.2"
+      name: Audio Description Controls
+      level: "not-applicable"
+    - num: "504.2.1"
+      name: Preservation of Information Provided for Accessibility in Format Conversion
+      level: "not-applicable"
+    - num: "504.2.2"
+      name: PDF Export
+      level: "not-applicable"
+    - num: "504.3"
+      name: Prompts
+      level: "not-applicable"
+    - num: "504.4"
+      name: Templates
+      level: "not-applicable"
+  # Chapter 6
+  # This is included as an exmple. It should not need to be included for exclusively web based ACRs.
+  support_documentation_and_services:
+    notes: "Drupal is a web application and all support documentation is delivered through the web. Additional documentation and services are not available."
+    - num: "602.2"
+      name: Accessibility and Compatibility Features
+      level: "not-applicable"
+    - num: "602.4"
+      name: Alternate Formats for Non-Electronic Support Documentation
+      level: "not-applicable"
+    - num: "603.2"
+      name: Information on Accessibility and Compatibility Features
+      level: "not-applicable"
+    - num: "603.3"
+      name: Accommodation of Communication Needs
+      level: "not-applicable"
