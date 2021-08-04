@@ -160,6 +160,102 @@ chapters:
         handle: Error Prevention (Legal, Financial, Data)
         alt_id: minimize-error-reversible
         components: [web, "electronic-docs", software, "authoring-tool"]
+  - id: success_criteria_level_aaa
+    label: Success Criteria, Level AAA
+    order: 3
+    criteria:
+      - id: 1.2.6
+        handle: Sign Language (Prerecorded)
+        alt_id: media-equiv-sign
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.2.7
+        handle: Extended Audio Description (Prerecorded)
+        alt_id: media-equiv-extended-ad
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.2.8
+        handle: Media Alternative (Prerecorded)
+        alt_id: media-equiv-text-doc
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.2.9
+        handle: Audio-only (Live)
+        alt_id: media-equiv-live-audio-only
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.4.6
+        handle: Contrast (Enhanced)
+        alt_id: visual-audio-contrast7
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.4.7
+        handle: Low or No Background Audio
+        alt_id: visual-audio-contrast-noaudio
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.4.8
+        handle: Visual Presentation
+        alt_id: visual-audio-contrast-visual-presentation
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.4.9
+        handle: Images of Text (No Exception)
+        alt_id: visual-audio-contrast-text-images
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.1.3
+        handle: Keyboard (No Exception)
+        alt_id: keyboard-operation-all-funcs
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.2.3
+        handle: No Timing
+        alt_id: time-limits-no-exceptions
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.2.4
+        handle: Interruptions
+        alt_id: time-limits-postponed
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.2.5
+        handle: Re-authenticating
+        alt_id: time-limits-server-timeout
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.3.2
+        handle: Three Flashes
+        alt_id: seizure-three-times
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.4.8
+        handle: Location
+        alt_id: navigation-mechanisms-location
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.4.9
+        handle: Link Purpose (Link Only)
+        alt_id: navigation-mechanisms-link
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.4.10
+        handle: Section Headings
+        alt_id: navigation-mechanisms-headings
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.1.3
+        handle: Unusual Words
+        alt_id: meaning-idioms
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.1.4
+        handle: Abbreviations
+        alt_id: meaning-located
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.1.5
+        handle: Reading Level
+        alt_id: meaning-supplements
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.1.6
+        handle: Pronunciation
+        alt_id: meaning-pronunciation
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.2.5
+        handle: Change on Request
+        alt_id: consistent-behavior-no-extreme-changes-context
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.3.5
+        handle: Help
+        alt_id: minimize-error-context-help
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 3.3.6
+        handle: Error Prevention (All)
+        alt_id: minimize-error-reversible-all
+        components: [web, "electronic-docs", software, "authoring-tool"]
   - id: hardware
     label: Hardware
     order: 4

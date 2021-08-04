@@ -40,7 +40,7 @@ Notes: {{data-catagory.notes}}
 | Criteria | Conformance Level | Remarks and Explanations |
 | --- | --- | --- |
 {{#each data-catagory.criteria as |data-criteria|}}
-| {{data-criteria.num}} {{catalogCriteriaLabel catalog-chapter.id data-criteria.num}} | <ul>{{#each data-criteria.components as |data-components|}}<li>**{{catalogComponentLabel data-components.name}}:** {{levelLabel data-components.adherence.level}}</li>{{/each}} </ul> | <ul>{{#each data-criteria.components as |data-components|}}<li>**{{catalogComponentLabel data-components.name}}:** {{data-components.adherence.notes}}</li>{{/each}} </ul> |
+| {{data-criteria.num}} {{catalogCriteriaLabel catalog-chapter.id data-criteria.num}} | {{#if data-criteria.components}}<ul>{{#each data-criteria.components as |data-components|}}{{#if data-components.adherence.level}}<li>**{{catalogComponentLabel data-components.name}}:** {{levelLabel data-components.adherence.level}}</li>{{/if}}{{/each}} </ul>{{/if}} | {{#if data-criteria.components}}<ul>{{#each data-criteria.components as |data-components|}}{{#if data-components.adherence.notes}}<li>**{{catalogComponentLabel data-components.name}}:** {{data-components.adherence.notes}}</li>{{/if}}{{/each}} </ul>{{/if}} |
 {{/each}}
 
 {{/if}}
