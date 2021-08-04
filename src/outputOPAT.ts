@@ -1,6 +1,7 @@
 import { ValidatorResult } from "./ValidatorResult";
 import * as fs from "fs";
 import Handlebars from "handlebars";
+import path from "path";
 
 export function outputOPAT(
   data: any,
@@ -59,6 +60,14 @@ export function outputOPAT(
     });
 
     const result = template(data);
+    const dir = path.dirname(outputFile);
+
+    if (!fs.existsSync(dir)) {
+      return {
+        result: false,
+        message: `Invalid: output directory '${dir}' does not exist.`,
+      };
+    }
 
     fs.writeFile(outputFile, result, function () {
       return {

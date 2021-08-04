@@ -391,6 +391,8 @@ describe("Output", () => {
       "does-not-exist-folder/opat.markdown"
     );
     expect(result.result).to.equal(false);
-    expect(result.message).to.equal("Invalid: output path is invalid.");
+    expect(result.message).to.equal(
+      "Invalid: output directory 'does-not-exist-folder' does not exist."
+    );
   });
 });
