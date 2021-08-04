@@ -383,4 +383,14 @@ describe("Output", () => {
     expect(result.result).to.equal(false);
     expect(result.message).to.equal("Invalid: template file is invalid.");
   });
+
+  it("pass valid data, catalog, and invalid output path should return invalid output message", () => {
+    result = outputOPAT(
+      validJSONData,
+      validJSONCatalog1,
+      "does-not-exist-folder/opat.markdown"
+    );
+    expect(result.result).to.equal(false);
+    expect(result.message).to.equal("Invalid: output path is invalid.");
+  });
 });

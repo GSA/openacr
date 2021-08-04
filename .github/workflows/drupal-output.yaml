@@ -15,9 +15,6 @@ jobs:
       - name: Install dependencies.
         run: npm install
 
-      - name: Create output directory.
-        run: mkdir -p output
-
       - name: Output.
         run: npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-508-wcag-2.0.yaml -o output/drupal-9.markdown
 
