@@ -31,15 +31,15 @@ The terms used in the Conformance Level information are defined as follows:
 {{#each catalog.chapters as |catalog-chapter|}}
 ## {{chapterOrTableTitle catalog-chapter}} {{catalog-chapter.order}}: {{catalog-chapter.label}}
 
-{{#with (lookup ../chapters catalog-chapter.id) as |data-catagory|}}
-{{#if data-catagory.notes}}
-Notes: {{data-catagory.notes}}
+{{#with (lookup ../chapters catalog-chapter.id) as |data-category|}}
+{{#if data-category.notes}}
+Notes: {{data-category.notes}}
 {{/if}}
 
-{{#if data-catagory.criteria}}
+{{#if data-category.criteria}}
 | Criteria | Conformance Level | Remarks and Explanations |
 | --- | --- | --- |
-{{#each data-catagory.criteria as |data-criteria|}}
+{{#each data-category.criteria as |data-criteria|}}
 | {{data-criteria.num}} {{catalogCriteriaLabel catalog-chapter.id data-criteria.num}} | {{#if data-criteria.components}}<ul>{{#each data-criteria.components as |data-components|}}{{#if data-components.adherence.level}}<li>**{{catalogComponentLabel data-components.name}}:** {{levelLabel data-components.adherence.level}}</li>{{/if}}{{/each}} </ul>{{/if}} | {{#if data-criteria.components}}<ul>{{#each data-criteria.components as |data-components|}}{{#if data-components.adherence.notes}}<li>**{{catalogComponentLabel data-components.name}}:** {{data-components.adherence.notes}}</li>{{/if}}{{/each}} </ul>{{/if}} |
 {{/each}}
 

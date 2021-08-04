@@ -110,6 +110,8 @@ npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-editi
 
 We also have a GitHub action called 'Drupal 9 OPAT output' that will generate the markdown version of the Drupal 9 OPAT. It is run on pull requests, and the output can be downloaded to double-check it is matching expectations.
 
+The tests also generates output that is stored in the `output` directory but is not tracked by git.
+
 ## OPATs
 
 Current example OPATs that are tracked in this repository are in the `opat` directory.
