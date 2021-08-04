@@ -676,7 +676,7 @@ chapters:
             adherence:
               level: "supports"
               notes: There are no timeouts in Drupal Core that would affect people with disabilities.
-      - num: "2.2.4
+      - num: "2.2.4"
         components:
           - name: "web"
             adherence:
