@@ -8,6 +8,7 @@ contact:
 notes: Links to the issues identified are included where possible to ensure that this is a living document where outstanding issues are regularly reviewed for compliance. The Authoring tool is evaluated against ATAG 2.0, Part A and B. Incorporating feedback from the Drupal community.
 chapters:
   success_criteria_level_a:
+    notes: "Drupal doesn't make a strong distinction between the front-end & back-end accessibility. Many administration interfaces can be exposed to users in a more interactive site. Generally this report focuses the Conformance Level / Remarks and Explainations so that Web comments are about elements that are typically public, while Authoring Tool is typically for authors and administrators. The goal of the authoring interface is to support ATAG 2.0 AA (Part A and B). The Drupal community strives to beek up with the latest WCAG recommendation."
     criteria:
       - num: "1.1.1"
         components:
@@ -619,6 +620,7 @@ chapters:
               level: "partially-supports"
               notes: There is nothing to differentiate editing financial or legal data from any other data managed by Drupal.
   success_criteria_level_aaa:
+    notes: Where possible the Drupal community strives to exceed AA compliance.
     criteria:
       - num: "1.2.6"
         components:
