@@ -653,7 +653,6 @@ chapters:
           - name: "web"
             adherence:
               level: "not-applicable"
-              notes:
       - num: "1.4.8"
         components:
           - name: "web"
