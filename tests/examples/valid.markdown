@@ -12,13 +12,18 @@ Drupal 9.1
 Content Management System
 
 ## Contact Information
-
-
-Email: mike.gifford@civicactions.com
-
+- Name: Mike Gifford
+- Company: CivicActions
+- Address: 3527 Mt Diablo Blvd, Unit 269, Lafayette, CA 94549
+- Email: mike.gifford@civicactions.com
+- Phone: (510) 408-7510
+- Website: https://civicactions.com/
 
 ## Notes
 Links to the issues identified are included where possible to ensure that this is a living document where outstanding issues are regularly reviewed for compliance. The Authoring tool is evaluated against ATAG 2.0, Part A and B. Incorporating feedback from the Drupal community.
+
+## Evaluation Methods Used
+Use of automated tools like WAVE and Accessibility Insights. Manual keyboard only testing. Some testing with JAWS, NVDA and VoiceOver. The evaluation process also includes a review of the Drupal Core accessibility issue queue.
 
 ## Terms
 The terms used in the Conformance Level information are defined as follows:
@@ -43,3 +48,7 @@ The terms used in the Conformance Level information are defined as follows:
 ## Chapter 4: Hardware
 
 Notes: Drupal is a web application. Hardware accessibility criteria is not applicable.
+
+
+## Legal Disclaimer (CivicActions)
+The information herein is provided in good faith based on the analysis of the web application at the time of the review and does not represent a legally-binding claim. Please contact us to report any accessibility errors or conformance claim errors for re-evaluation and correction, if necessary.

@@ -4,8 +4,15 @@ product:
   version: "9.1"
   description: Content Management System
 contact:
+  name: Mike Gifford
+  company_name: CivicActions
+  address: 3527 Mt Diablo Blvd, Unit 269, Lafayette, CA 94549
   email: mike.gifford@civicactions.com
+  phone: (510) 408-7510
+  website: https://civicactions.com/
 notes: Links to the issues identified are included where possible to ensure that this is a living document where outstanding issues are regularly reviewed for compliance. The Authoring tool is evaluated against ATAG 2.0, Part A and B. Incorporating feedback from the Drupal community.
+evaluation_methods_used: Use of automated tools like WAVE and Accessibility Insights. Manual keyboard only testing. Some testing with JAWS, NVDA and VoiceOver. The evaluation process also includes a review of the Drupal Core accessibility issue queue.
+legal_disclaimer: The information herein is provided in good faith based on the analysis of the web application at the time of the review and does not represent a legally-binding claim. Please contact us to report any accessibility errors or conformance claim errors for re-evaluation and correction, if necessary.
 chapters:
   success_criteria_level_a:
     notes: "Drupal doesn't make a strong distinction between the front-end & back-end accessibility. Many administration interfaces can be exposed to users in a more interactive site. Generally this report focuses the Conformance Level / Remarks and Explainations so that Web comments are about elements that are typically public, while Authoring Tool is typically for authors and administrators. The goal of the authoring interface is to support ATAG 2.0 AA (Part A and B). The Drupal community strives to beek up with the latest WCAG recommendation."

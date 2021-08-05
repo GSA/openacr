@@ -32,8 +32,20 @@
       "description": "Contact information.",
       "$ref": "#/definitions/contact"
     },
+    "vendor": {
+      "description": "Vendor information.",
+      "$ref": "#/definitions/contact"
+    },
     "notes": {
       "description": "Any details or explanation about the product or the report.",
+      "type": "string"
+    },
+    "evaluation_methods_used": {
+      "description": "Include a description of evaluation methods used to complete the OPAT for the product under test.",
+      "type": "string"
+    },
+    "legal_disclaimer": {
+      "description": "Area for any legal disclaimer text required by your organization..",
       "type": "string"
     },
     "chapters": {
@@ -99,16 +111,22 @@
     "contact": {
       "type": "object",
       "properties": {
-        "email": {
+        "name": {
           "type": "string"
         },
-        "name": {
+        "company_name": {
           "type": "string"
         },
         "address": {
           "type": "string"
         },
+        "email": {
+          "type": "string"
+        },
         "phone": {
+          "type": "string"
+        },
+        "website": {
           "type": "string"
         }
       },

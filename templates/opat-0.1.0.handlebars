@@ -13,14 +13,34 @@ Based on {{catalog.title}}
 {{product.description}}
 {{/if}}
 
+{{#if contact}}
 ## Contact Information
-{{#if contact.name}}Name: {{contact.name}}{{/if}}
-{{#if contact.address}}Address: {{contact.address}}{{/if}}
-Email: {{contact.email}}
-{{#if contact.phone}}Phone: {{contact.phone}}{{/if}}
+{{#if contact.name}}- Name: {{contact.name}}{{/if}}
+{{#if contact.company_name}}- Company: {{contact.company_name}}{{/if}}
+{{#if contact.address}}- Address: {{contact.address}}{{/if}}
+{{#if contact.email}}- Email: {{contact.email}}{{/if}}
+{{#if contact.phone}}- Phone: {{contact.phone}}{{/if}}
+{{#if contact.website}}- Website: {{contact.website}}{{/if}}
+{{/if}}
+{{#if vendor}}
+## Vendor Information
+{{#if vendor.name}}- Name: {{vendor.name}}{{/if}}
+{{#if vendor.company_name}}- Company: {{vendor.company_name}}{{/if}}
+{{#if vendor.address}}- Address: {{vendor.address}}{{/if}}
+{{#if vendor.email}}- Email: {{vendor.email}}{{/if}}
+{{#if vendor.phone}}- Phone: {{vendor.phone}}{{/if}}
+{{#if vendor.website}}- Website: {{vendor.website}}{{/if}}
+{{/if}}
 
+{{#if notes}}
 ## Notes
 {{notes}}
+{{/if}}
+
+{{#if evaluation_methods_used}}
+## Evaluation Methods Used
+{{evaluation_methods_used}}
+{{/if}}
 
 ## Terms
 The terms used in the Conformance Level information are defined as follows:
@@ -46,3 +66,8 @@ Notes: {{data-category.notes}}
 {{/if}}
 {{/with}}
 {{/each}}
+
+{{#if legal_disclaimer}}
+## Legal Disclaimer {{#if contact.company_name}}({{contact.company_name}}){{/if}}
+{{legal_disclaimer}}
+{{/if}}
