@@ -56,5 +56,5 @@ Notes: Drupal is a web application. Hardware accessibility criteria is not appli
 ## Chapter 6: Support Documentation and Services
 
 
-## Legal Disclaimer (CivicActions)
+## Legal Disclaimer
 The information herein is provided in good faith based on the analysis of the web application at the time of the review and does not represent a legally-binding claim. Please contact us to report any accessibility errors or conformance claim errors for re-evaluation and correction, if necessary.
