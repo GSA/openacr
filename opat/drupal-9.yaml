@@ -753,5 +753,87 @@ chapters:
           - name: "web"
             adherence:
               level: "not-applicable"
+  # Note that this will likely be replaced with an automated process.
+  functional_performance_criteria:
+    notes: Not applicable.
+    criteria:
+      - num: "302.1"
+        components:
+          - name: "none"
+            adherence:
+              level: "supports"
+              notes: Testing has been done with JAWS, NVDA and VoiceOver.
+      - num: "302.2"
+        components:
+          - name: "none"
+            adherence:
+              level: "supports"
+              notes: Testing has been done with browser zoom and ZoomText.
+      - num: "302.3"
+        components:
+          - name: "none"
+            adherence:
+              level: "supports"
+              notes: The interface has been reviewed for use of color.
+      - num: "302.4"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"
+      - num: "302.5"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"
+      - num: "302.6"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"
+      - num: "302.7"
+        components:
+          - name: "none"
+            adherence:
+              level: "supports"
+              notes: Drupal's interface does not restrict users with limited manipulation.
+      - num: "302.8"
+        components:
+          - name: "none"
+            adherence:
+              level: "supports"
+              notes: Drupal's interface does not restrict users with limited reach or strength.
+      - num: "302.9"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"
+  # Chapter 4
   hardware:
     notes: "Drupal is a web application. Hardware accessibility criteria is not applicable."
+  # Chapter 5
+  software:
+    notes: "Drupal is a web application. Software accessibility criteria is not applicable."
+  # Chapter 6
+  support_documentation_and_services:
+    notes: "Drupal is a web application and all support documentation is delivered through the web. Additional documentation and services are not available."
+    criteria:
+      - num: "602.2"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"
+      - num: "602.4"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"
+      - num: "603.2"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"
+      - num: "603.3"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"

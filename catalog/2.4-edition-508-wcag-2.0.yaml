@@ -256,6 +256,46 @@ chapters:
         handle: Error Prevention (All)
         alt_id: minimize-error-reversible-all
         components: [web, "electronic-docs", software, "authoring-tool"]
+  - id: functional_performance_criteria
+    label: Functional Performance Criteria (FPC)
+    order: 3
+    criteria:
+      - id: "302.1"
+        handle: Without Vision
+        alt_id: "302.1"
+        components: [none]
+      - id: "302.2"
+        handle: With Limited Vision
+        alt_id: "302.2"
+        components: [none]
+      - id: "302.3"
+        handle: Without Perception of Color
+        alt_id: "302.3"
+        components: [none]
+      - id: "302.4"
+        handle: Without Hearing
+        alt_id: "302.4"
+        components: [none]
+      - id: "302.5"
+        handle: With Limited Hearing
+        alt_id: "302.5"
+        components: [none]
+      - id: "302.6"
+        handle: Without Speech
+        alt_id: "302.6"
+        components: [none]
+      - id: "302.7"
+        handle: With Limited Manipulation
+        alt_id: "302.7"
+        components: [none]
+      - id: "302.8"
+        handle: With Limited Reach and Strength
+        alt_id: "302.8"
+        components: [none]
+      - id: "302.9"
+        handle: With Limited Language, Cognitive, and Learning Abilities
+        alt_id: "302.9"
+        components: [none]
   - id: hardware
     label: Hardware
     order: 4
@@ -267,6 +307,29 @@ chapters:
       - id: "402.1"
         handle: General
         alt_id: "402.1"
+        components: [none]
+  - id: software
+    label: Software
+    order: 5
+  - id: support_documentation_and_services
+    label: Support Documentation and Services
+    order: 6
+    criteria:
+      - id: "602.2"
+        handle: Accessibility and Compatibility Features
+        alt_id: "602.2"
+        components: [none]
+      - id: "602.4"
+        handle: Alternate Formats for Non-Electronic Support Documentation
+        alt_id: "602.4"
+        components: [none]
+      - id: "603.2"
+        handle: Information on Accessibility and Compatibility Features
+        alt_id: "603.2"
+        components: [none]
+      - id: "603.3"
+        handle: Accommodation of Communication Needs
+        alt_id: "603.3"
         components: [none]
 components:
   - id: web
