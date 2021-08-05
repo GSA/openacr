@@ -11,7 +11,7 @@ Drupal 9.1
 ## Product Description
 Content Management System
 
-## Contact Information
+## Author Information
 - Name: Mike Gifford
 - Company: CivicActions
 - Address: 3527 Mt Diablo Blvd, Unit 269, Lafayette, CA 94549

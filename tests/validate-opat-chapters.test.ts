@@ -8,7 +8,7 @@ describe("Validate OPAT chapters", () => {
     product: {
       name: "Drupal",
     },
-    contact: {
+    author: {
       email: "mike.gifford@civicactions.com",
     },
     chapters: {
@@ -39,7 +39,7 @@ describe("Validate OPAT chapters", () => {
     product: {
       name: "Drupal",
     },
-    contact: {
+    author: {
       email: "mike.gifford@civicactions.com",
     },
     chapters: {
@@ -52,7 +52,7 @@ describe("Validate OPAT chapters", () => {
     product: {
       name: "Drupal",
     },
-    contact: {
+    author: {
       email: "mike.gifford@civicactions.com",
     },
     chapters: {

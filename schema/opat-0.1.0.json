@@ -28,8 +28,8 @@
       },
       "required": ["name"]
     },
-    "contact": {
-      "description": "Contact information.",
+    "author": {
+      "description": "Author information.",
       "$ref": "#/definitions/contact"
     },
     "vendor": {
@@ -106,7 +106,7 @@
       }
     }
   },
-  "required": ["title", "product", "contact"],
+  "required": ["title", "product", "author"],
   "definitions": {
     "contact": {
       "type": "object",

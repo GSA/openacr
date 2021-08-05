@@ -3,7 +3,7 @@ product:
   name: Drupal
   version: "9.1"
   description: Content Management System
-contact:
+author:
   email: mike.gifford@civicactions.com
 chapters:
   success_criteria_level_a:

@@ -13,14 +13,14 @@ Based on {{catalog.title}}
 {{product.description}}
 {{/if}}
 
-{{#if contact}}
-## Contact Information
-{{#if contact.name}}- Name: {{contact.name}}{{/if}}
-{{#if contact.company_name}}- Company: {{contact.company_name}}{{/if}}
-{{#if contact.address}}- Address: {{contact.address}}{{/if}}
-{{#if contact.email}}- Email: {{contact.email}}{{/if}}
-{{#if contact.phone}}- Phone: {{contact.phone}}{{/if}}
-{{#if contact.website}}- Website: {{contact.website}}{{/if}}
+{{#if author}}
+## Author Information
+{{#if author.name}}- Name: {{author.name}}{{/if}}
+{{#if author.company_name}}- Company: {{author.company_name}}{{/if}}
+{{#if author.address}}- Address: {{author.address}}{{/if}}
+{{#if author.email}}- Email: {{author.email}}{{/if}}
+{{#if author.phone}}- Phone: {{author.phone}}{{/if}}
+{{#if author.website}}- Website: {{author.website}}{{/if}}
 {{/if}}
 {{#if vendor}}
 ## Vendor Information
@@ -68,6 +68,6 @@ Notes: {{data-category.notes}}
 {{/each}}
 
 {{#if legal_disclaimer}}
-## Legal Disclaimer {{#if contact.company_name}}({{contact.company_name}}){{/if}}
+## Legal Disclaimer {{#if author.company_name}}({{author.company_name}}){{/if}}
 {{legal_disclaimer}}
 {{/if}}

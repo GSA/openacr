@@ -187,7 +187,7 @@ describe("OPAT CLI test validation", () => {
       expect(output).to.equal(
         "Invalid: data must have required property 'title', " +
           "data must have required property 'product', " +
-          "data must have required property 'contact'\n"
+          "data must have required property 'author'\n"
       );
     });
   });

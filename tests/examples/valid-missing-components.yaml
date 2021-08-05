@@ -3,7 +3,7 @@ product:
   name: Drupal
   version: "9.1"
   description: Content Management System
-contact:
+author:
   email: mike.gifford@civicactions.com
 notes: Links to the issues identified are included where possible to ensure that this is a living document where outstanding issues are regularly reviewed for compliance. The Authoring tool is evaluated against ATAG 2.0, Part A and B. Incorporating feedback from the Drupal community.
 chapters:
