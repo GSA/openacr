@@ -46,7 +46,7 @@ chapters:
   hardware:
     notes: "Drupal is a web application. Hardware accessibility criteria is not applicable."
     criteria:
-      - num: "402"
+      - num: "402.2.1"
         components:
           - name: "none"
             adherence:
