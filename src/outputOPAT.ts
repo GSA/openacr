@@ -59,6 +59,7 @@ export function outputOPAT(
           }
         }
       }
+      // If a level is provided but has no matching terms, provide a default.
       return "Not Applicable";
     });
 
