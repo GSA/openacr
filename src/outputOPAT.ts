@@ -43,7 +43,9 @@ export function outputOPAT(
       if (catalogData.components) {
         for (const component of catalogData.components) {
           if (component.id === componentId) {
-            return component.label;
+            if (component.label != "") {
+              return "**" + component.label + "**: ";
+            }
           }
         }
       }
@@ -57,6 +59,7 @@ export function outputOPAT(
           }
         }
       }
+      return "Not Applicable";
     });
 
     const result = template(data);

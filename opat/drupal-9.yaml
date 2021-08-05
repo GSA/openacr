@@ -753,7 +753,6 @@ chapters:
           - name: "web"
             adherence:
               level: "not-applicable"
-  # Note that this will likely be replaced with an automated process.
   functional_performance_criteria:
     notes: Not applicable.
     criteria:
