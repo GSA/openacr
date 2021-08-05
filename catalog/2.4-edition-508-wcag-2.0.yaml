@@ -523,7 +523,8 @@ chapters:
   - id: software
     label: Software
     order: 5
-      - num: "502.2.1"
+    criteria:
+      - id: "502.2.1"
         handle: User Control of Accessibility Features
         alt_id: "502.2.1"
         components: [none]
@@ -588,7 +589,7 @@ chapters:
         alt_id: "502.3.14"
         components: [none]
       - id: "502.4"
-        handle:  Platform Accessibility Features
+        handle: Platform Accessibility Features
         alt_id: "502.4"
         components: [none]
       - id: "503.2"
@@ -600,7 +601,7 @@ chapters:
         alt_id: "503.3"
         components: [none]
       - id: "503.4.1"
-        handle:  Caption Controls
+        handle: Caption Controls
         alt_id: "503.4.1"
         components: [none]
       - id: "503.4.2"
