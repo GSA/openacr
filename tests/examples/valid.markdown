@@ -11,13 +11,21 @@ Drupal 9.1
 ## Product Description
 Content Management System
 
-## Author Information
+## Contact Information
+### Author Information
 - Name: Mike Gifford
 - Company: CivicActions
 - Address: 3527 Mt Diablo Blvd, Unit 269, Lafayette, CA 94549
 - Email: mike.gifford@civicactions.com
 - Phone: (510) 408-7510
 - Website: https://civicactions.com/
+### Vendor Information
+
+- Company: CivicActions
+
+- Email: contact@civicactions.com
+
+
 
 ## Notes
 Links to the issues identified are included where possible to ensure that this is a living document where outstanding issues are regularly reviewed for compliance. The Authoring tool is evaluated against ATAG 2.0, Part A and B. Incorporating feedback from the Drupal community.
@@ -56,5 +64,5 @@ Notes: Drupal is a web application. Hardware accessibility criteria is not appli
 ## Chapter 6: Support Documentation and Services
 
 
-## Legal Disclaimer
+## Legal Disclaimer (CivicActions)
 The information herein is provided in good faith based on the analysis of the web application at the time of the review and does not represent a legally-binding claim. Please contact us to report any accessibility errors or conformance claim errors for re-evaluation and correction, if necessary.
