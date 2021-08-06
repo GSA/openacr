@@ -24,6 +24,10 @@ Most users will interact with the ACR as accessible HTML files. These will be ge
 
 The repositories will be built on a git repository like GitHub so that version control is included. Authors can write the compliance report as JSON files manually, or use a tool similar to WCAG-EM.
 
+## Documentation
+
+Our documentation currently includes a [short summary of the project and our goals](https://github.com/GSA/open-product-accessibility-template/blob/main/docs/GSA-OPAT-Public.md), a [short project roadmap](https://github.com/GSA/open-product-accessibility-template/blob/main/docs/ROADMAP.md) and the [Command Line Documentation](https://github.com/GSA/open-product-accessibility-template/blob/main/docs/CLI.md) you would use to install this code locally.  
+
 ## Contributing
 
 We encourage contributions to this project. See our CONTRIBUTING.md file for more information.
