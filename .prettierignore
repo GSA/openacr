@@ -3,3 +3,4 @@ dist
 coverage
 templates
 tests/examples/*.markdown
+opat/*.markdown
