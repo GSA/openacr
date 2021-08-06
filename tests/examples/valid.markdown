@@ -1,6 +1,6 @@
 # Drupal Accessibility Conformance Report
 
-Based on VPAT® 2.4 edition 508/WCAG 2.0
+Based on VPAT® 2.4 edition WCAG 2.0/508
 
 ## Name of Product/Version
 Drupal 9.1

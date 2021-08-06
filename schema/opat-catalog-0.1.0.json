@@ -12,6 +12,28 @@
     "description": {
       "type": "string"
     },
+    "standards": {
+      "description": "Applicable Standards/Guidelines.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Standard ID.",
+            "type": "string"
+          },
+          "label": {
+            "description": "Human-readable label.",
+            "type": "string"
+          },
+          "url": {
+            "description": "Standard URL.",
+            "type": "string"
+          }
+        },
+        "required": ["id", "label", "url"]
+      }
+    },
     "chapters": {
       "description": "Available chapters/tables.",
       "type": "array",
