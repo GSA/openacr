@@ -2,7 +2,9 @@
 
 ## Introduction
 
-The Librarian command-line interface (CLI) is built in typescript. It takes different VPAT versions (508, WCAG, EU, INT) as an option and generates the corresponding catalogs.
+The Librarian command-line interface (CLI) is built in typescript. It takes different VPAT versions (508, WCAG, EU, INT) as an option and generates the corresponding catalogs. The script uses hardcoded logic to build the combined catalogs so any adjustments will have to be done in the script to change the order or anything of the combined catalogs.
+
+**Note**: The catalogs in the 'catalog' directory are auto-generated using the librarian utility. To change the text in the catalog first edit their values in the data directory and then regenerate the combined catalog.
 
 ## Install
 
@@ -38,7 +40,8 @@ Options:
 You can run the CLI with the following example commands:
 
 ```bash
-> npx ts-node src/librarian.ts -c 508 # Generates 508 catalog example.
+# Generates 508 catalog example.
+> npm run generate-508-catalog # Full command `npx ts-node src/librarian.ts -c 508`
 Warning: This will rebuild the following catalog: 508.
 Successfully created catalog ./catalog/2.4-edition-wcag-2.0-508.yaml.
 ```
