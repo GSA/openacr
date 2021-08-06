@@ -50,7 +50,7 @@ The terms used in the Conformance Level information are defined as follows:
 {{/each}}
 
 {{#each catalog.chapters as |catalog-chapter|}}
-## {{chapterOrTableTitle catalog-chapter}} {{catalog-chapter.order}}: {{catalog-chapter.label}}
+## {{catalog-chapter.label}}
 
 {{#with (lookup ../chapters catalog-chapter.id) as |data-category|}}
 {{#if data-category.notes}}
