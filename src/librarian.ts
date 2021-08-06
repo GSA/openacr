@@ -52,6 +52,7 @@ if (argv.catalog) {
       case "WCAG":
       case "EU":
       case "INT":
+      default:
         console.warn(`${catalog} is currently not supported.`);
         break;
 
@@ -70,28 +71,22 @@ if (argv.catalog) {
 
         outputFile = `./catalog/2.4-edition-${combined.standards[0].id}-${combined.standards[1].id}.yaml`;
         break;
-
-      default:
-        console.error(`Invalid: ${catalog} is not an available option.`);
-        break;
     }
 
     if (outputFile) {
       fs.writeFile(
         outputFile,
         yaml.dump(combined, { quotingType: '"' }),
-        function (error) {
-          if (error) {
-            console.error(`Failed to create catalog ${outputFile}.`);
-          } else {
-            console.log(`Successfully created catalog ${outputFile}.`);
-          }
+        function () {
+          console.log(`Successfully created catalog ${outputFile}.`);
         }
       );
     }
   } catch (e) {
-    console.error(`Invalid: data files cannot be read. Error: ${e.message}`);
+    console.error(e.message());
   }
+} else {
+  console.error("Invalid: no catalog entered.");
 }
 
 function getTerms(terms: any): any {
@@ -99,7 +94,6 @@ function getTerms(terms: any): any {
   if (valid) {
     return terms.terms;
   }
-  return "Invalid terms.";
 }
 
 function getComponents(components: any): any {
@@ -107,30 +101,32 @@ function getComponents(components: any): any {
   if (valid) {
     return components.components;
   }
-  return "Invalid components.";
 }
 
 function getChapters(first: any, second: any): any {
   if (validateCatalogDataFiles(first) && validateCatalogDataFiles(second)) {
     return first.chapters.concat(second.chapters);
   }
-  return "Invalid chapters.";
 }
 
 function getStandards(first: any, second: any): any {
   if (validateCatalogDataFiles(first) && validateCatalogDataFiles(second)) {
     return first.standard.concat(second.standard);
   }
-  return "Invalid standards.";
 }
 
-function getTitle(data: any): string {
-  return `VPAT® 2.4 edition ${data.title}`;
+function getTitle(data: any): any {
+  if (validateCatalogDataFiles(data)) {
+    return data.title;
+  }
 }
 
 function validateCatalogDataFiles(catalog: any): boolean {
   const catalogSchema = "opat-catalog-0.1.0.json";
   const validCatalogResult = validateCatalog(catalog, catalogSchema);
 
-  return validCatalogResult.result;
+  if (!validCatalogResult.result) {
+    throw new Error(`Data files are invalid. ${validCatalogResult.message}`);
+  }
+  return true;
 }

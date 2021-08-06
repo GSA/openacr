@@ -26,7 +26,7 @@ The repositories will be built on a git repository like GitHub so that version c
 
 ## Documentation
 
-Our documentation currently includes a [short summary of the project and our goals](https://github.com/GSA/open-product-accessibility-template/blob/main/docs/GSA-OPAT-Public.md), a [short project roadmap](https://github.com/GSA/open-product-accessibility-template/blob/main/docs/ROADMAP.md) and the [Command Line Documentation](https://github.com/GSA/open-product-accessibility-template/blob/main/docs/CLI.md) you would use to install this code locally.
+Our documentation currently includes a [short summary of the project and our goals](/docs/GSA-OPAT-Public.md), a [short project roadmap](/docs/ROADMAP.md) and the [Command Line Documentation](/docs/CLI.md) you would use to install this application locally.
 
 ## Contributing
 

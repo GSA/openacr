@@ -260,7 +260,7 @@ describe("OPAT CLI test validation", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: term 'does not support' in criteria '1.2.2' has no definition in catalog 'VPAT® 2.4 edition Revised Section 508 Edition'\n"
+        "Invalid: term 'does not support' in criteria '1.2.2' has no definition in catalog 'VPAT® 2.4 Revised Section 508 Edition'\n"
       );
     });
   });
