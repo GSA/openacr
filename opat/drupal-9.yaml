@@ -3,7 +3,7 @@ product:
   name: Drupal
   version: "9.1"
   description: Content Management System
-contact:
+author:
   name: Mike Gifford
   company_name: CivicActions
   address: 3527 Mt Diablo Blvd, Unit 269, Lafayette, CA 94549
@@ -753,7 +753,6 @@ chapters:
           - name: "web"
             adherence:
               level: "not-applicable"
-  # Note that this will likely be replaced with an automated process.
   functional_performance_criteria:
     notes: Not applicable.
     criteria:

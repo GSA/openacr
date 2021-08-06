@@ -110,4 +110,30 @@ describe("OPAT CLI test output", () => {
       );
     });
   });
+
+  it("confirm drupal example output is valid", () => {
+    const valid = spawn(
+      cmd,
+      options.concat(
+        "opat/drupal-9.yaml",
+        "-c",
+        "catalog/2.4-edition-508-wcag-2.0.yaml",
+        "-o",
+        "output/drupal-9.markdown"
+      )
+    );
+    const chunks = [];
+
+    valid.stdout.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    valid.stdout.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal(
+        "Valid and output generated at output/drupal-9.markdown!\n"
+      );
+    });
+  });
 });

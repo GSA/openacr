@@ -7,7 +7,7 @@ describe("Output", () => {
     product: {
       name: "Drupal",
     },
-    contact: {
+    author: {
       email: "mike.gifford@civicactions.com",
     },
     chapters: {

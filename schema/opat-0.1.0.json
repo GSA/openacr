@@ -28,8 +28,8 @@
       },
       "required": ["name"]
     },
-    "contact": {
-      "description": "Contact information.",
+    "author": {
+      "description": "Author information.",
       "$ref": "#/definitions/contact"
     },
     "vendor": {
@@ -45,7 +45,7 @@
       "type": "string"
     },
     "legal_disclaimer": {
-      "description": "Area for any legal disclaimer text required by your organization..",
+      "description": "Area for any legal disclaimer text required by your organization.",
       "type": "string"
     },
     "chapters": {
@@ -106,7 +106,7 @@
       }
     }
   },
-  "required": ["title", "product", "contact"],
+  "required": ["title", "product", "author"],
   "definitions": {
     "contact": {
       "type": "object",
