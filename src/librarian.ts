@@ -90,15 +90,13 @@ if (argv.catalog) {
 }
 
 function getTerms(terms: any): any {
-  const valid = validateCatalogDataFiles(terms);
-  if (valid) {
+  if (validateCatalogDataFiles(terms)) {
     return terms.terms;
   }
 }
 
 function getComponents(components: any): any {
-  const valid = validateCatalogDataFiles(components);
-  if (valid) {
+  if (validateCatalogDataFiles(components)) {
     return components.components;
   }
 }
