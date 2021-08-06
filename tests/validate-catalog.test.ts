@@ -163,7 +163,7 @@ describe("Validate catalog", () => {
     result = validateCatalog(invalidJSON, validSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(
-      "Invalid: data must have required property 'title'"
+      "Invalid: catalog data must have required property 'title'"
     );
   });
 
@@ -182,14 +182,16 @@ describe("Validate catalog", () => {
   it("pass invalid chapters JSON should return invalid JSON message", () => {
     result = validateCatalog(invalidJSON1, validSchema);
     expect(result.result).to.equal(false);
-    expect(result.message).to.equal("Invalid: data/chapters must be array");
+    expect(result.message).to.equal(
+      "Invalid: catalog data/chapters must be array"
+    );
   });
 
   it("pass invalid criteria JSON should return invalid JSON message", () => {
     result = validateCatalog(invalidJSON2, validSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(
-      "Invalid: data/chapters/0 must have required property 'order', " +
+      "Invalid: catalog data/chapters/0 must have required property 'order', " +
         "data/chapters/0/criteria/0 must be object, " +
         "data/chapters/0/criteria/1 must be object"
     );
@@ -199,7 +201,7 @@ describe("Validate catalog", () => {
     result = validateCatalog(invalidJSON3, validSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(
-      "Invalid: data/components/0 must have required property 'id', " +
+      "Invalid: catalog data/components/0 must have required property 'id', " +
         "data/components/0 must have required property 'label', " +
         "data/components/1 must have required property 'id', " +
         "data/components/1 must have required property 'label'"
@@ -210,7 +212,7 @@ describe("Validate catalog", () => {
     result = validateCatalog(invalidJSON4, validSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(
-      "Invalid: data/terms/0 must have required property 'id', " +
+      "Invalid: catalog data/terms/0 must have required property 'id', " +
         "data/terms/0 must have required property 'label', " +
         "data/terms/1 must have required property 'id', " +
         "data/terms/1 must have required property 'label'"

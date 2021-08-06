@@ -19,7 +19,7 @@ export function validateCatalog(
     else
       return {
         result: false,
-        message: "Invalid: " + ajv.errorsText(validate.errors),
+        message: "Invalid: catalog " + ajv.errorsText(validate.errors),
       };
   }
   return { result: false, message: "Invalid: catalog schema is not valid" };

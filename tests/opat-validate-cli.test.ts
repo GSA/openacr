@@ -72,7 +72,7 @@ describe("OPAT CLI test validation", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: data must have required property 'title'\n"
+        "Invalid: catalog data must have required property 'title'\n"
       );
     });
   });
