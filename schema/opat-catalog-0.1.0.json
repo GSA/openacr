@@ -26,12 +26,16 @@
             "description": "Human-readable label.",
             "type": "string"
           },
+          "report_heading": {
+            "description": "Used for the headings.",
+            "type": "string"
+          },
           "url": {
             "description": "Standard URL.",
             "type": "string"
           }
         },
-        "required": ["id", "label", "url"]
+        "required": ["id", "label", "report_heading", "url"]
       }
     },
     "chapters": {

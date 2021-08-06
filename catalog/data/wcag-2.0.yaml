@@ -2,6 +2,7 @@ title: WCAG 2.0
 standard:
   - id: wcag-2.0
     label: "Web Content Accessibility Guidelines 2.0"
+    report_heading: "WCAG 2.0 Report"
     url: https://www.w3.org/TR/WCAG20/
 chapters:
   - id: success_criteria_level_a
