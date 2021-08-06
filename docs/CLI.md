@@ -76,7 +76,7 @@ npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/
 npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/catalog-different-components.yaml # Output: Invalid: ...
 # Validate and Output
 npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml -o tests/examples/valid.markdown # Output: Valid ...
-npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml -o output/drupal-9.markdown # Output: Valid ...
+npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml -o opat/drupal-9.markdown # Output: Valid ...
 ```
 
 ## Schemas
@@ -88,13 +88,15 @@ Located in the 'schema' folder:
 
 ## Catalogs
 
-The catalogs are in `catalog`. The catalog file will be also validated that it meets the defined schema (`opat-catalog-0.1.0.json`) when running the commands.
+The catalogs are in `catalog`. They are generated using the librarian utility (see [Librarian docs](/docs/Librarian.md) for more details).
+
+The catalogs will be validated against a defined schema (`opat-catalog-0.1.0.json`) when running the commands.
 
 Catalogs:
 
-- `2.4-edition-wcag-2.0-508.yaml` the 508/WCAG 2.0 hand-rolled catalog.
+- `2.4-edition-wcag-2.0-508.yaml` the 508 catalog.
 
-In the validate command, if the catalog file is missing the `validate` command will only check that the YAML file meets the schema defined.
+In the validate command, if the catalog file is missing the `validate` command will only check that the YAML file meets the basic schema defined.
 
 ## Output
 
@@ -102,10 +104,11 @@ The `output` command can take an optional file path (default is `output/opat.mar
 
 The command uses [handlebars](https://handlebarsjs.com/) and the template `opat-0.1.0.handlebars` defined in `templates` to render the markdown.
 
-We checked in an example of the markdown output in `tests/examples/valid.markdown`. To regenerate the example run the command below and commit the changes:
+We checked in an example of the markdown output in `tests/examples/valid.markdown` and `opat/drupal-9.markdown`. To regenerate the examples run the following commands and commit the changes:
 
 ```bash
-npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml -o tests/examples/valid.markdown # Output: Valid ...
+npm run generate-example-output # Full command `npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml -o tests/examples/valid.markdown`
+npm run generate-drupal-output # Full command `npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml -o opat/drupal-9.markdown`
 ```
 
 We also have a GitHub action called 'Drupal 9 OPAT output' that will generate the markdown version of the Drupal 9 OPAT. It is run on pull requests, and the output can be downloaded to double-check it is matching expectations.
