@@ -93,7 +93,7 @@ describe("OPAT CLI test output", () => {
         "-c",
         "catalog/2.4-edition-wcag-2.0-508.yaml",
         "-o",
-        "output/valid.markdown"
+        "tests/examples/valid.markdown"
       )
     );
     const chunks = [];
@@ -106,7 +106,7 @@ describe("OPAT CLI test output", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Valid and output generated at output/valid.markdown!\n"
+        "Valid and output generated at tests/examples/valid.markdown!\n"
       );
     });
   });
