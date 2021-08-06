@@ -1,9 +1,9 @@
-# Open Product Accessibility Template (OPAT) 
+# Open Product Accessibility Template (OPAT)
 Machine-readable technology product accessibility conformance
 
 ## Overview
-The Open Product Accessibility Template (OPAT) is machine-readable documentation of an information and communications technology (ICT) product’s accessibility conformance.
-Based on Section 508 requirements and Web Content Accessibility Guidelines (WCAG) 2.0 conformance, OPAT is based on the Information Technology Industry Council’s Voluntary Product Accessibility Template (VPATⓇ).
+The Open Product Accessibility Template (OPAT) is machine-readable documentation of an information and communications technology (ICT) product's accessibility conformance.
+Based on Section 508 requirements and Web Content Accessibility Guidelines (WCAG) 2.0 conformance, OPAT is based on the Information Technology Industry Council's Voluntary Product Accessibility Template (VPATⓇ).
 
 ## Context
 The U.S. General Services Administration (GSA) has observed that federal agencies face challenges in delivering accessible services to people with disabilities.
@@ -17,12 +17,12 @@ To empower organizations to make better informed decisions about accessibility w
 - Executives can better understand the risks of present digital interfaces
 - Vendors can provide government better transparency into product accessibility conformance
 
-## Approach 
+## Approach
 The team is building OPAT to be an open standard. The ACR will be written in YAML because it is more human-readable and it allows us to include comments. A JSON Schema will be used to define core data structures and a catalog to list the elements needed.
 Most users will interact with the ACR as accessible HyperText Markup Language (HTML) files. These will be generated from the YAML files by a JavaScript tool that extracts the content into structured HTML. The style elements will then be added by CSS, which vendors can customize for branding.
 The repositories will be built on a Git repository like GitHub so that version control is included. Authors can write the compliance report as YAML files manually, or use a WYSIWYG editor.
 
-## Challenge 
+## Challenge
 - Most ACRs are not updated on pace with continuous ICT product releases
 - A static format (example: MS Word) makes it difficult to perform automated comparisons between versions or similar products
 - ACRs are usually private documents, difficult to find, and not visible to the public
@@ -31,7 +31,7 @@ The repositories will be built on a Git repository like GitHub so that version c
 
 ## Solution
 - A machine-readable semantic version that separates content from the presentation layer
-- An intuitive user interface that empowers software vendors to generate an ACR that can be written in open standards, allowing the product to be extended 
+- An intuitive user interface that empowers software vendors to generate an ACR that can be written in open standards, allowing the product to be extended
 - An enterprise view where multiple ACRs to be organized and consistently presented
 - A function that compares ACR versions and tracks changes over time
 - A built-in validation layer to ensure data quality and integrity
@@ -55,5 +55,4 @@ Released under [Creative Commons](https://creativecommons.org/publicdomain/zero/
 
 ## Contact
 - Industry and government inquiries: [opat@gsa.gov](mailto:opat@gsa.gov)
-- Press inquiries: [press@gsa.gov](mailto:press@gsa.gov) 
-
+- Press inquiries: [press@gsa.gov](mailto:press@gsa.gov)
