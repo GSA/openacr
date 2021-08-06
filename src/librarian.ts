@@ -12,7 +12,6 @@
  */
 
 import yargs from "yargs";
-import readline from "readline";
 import yaml from "js-yaml";
 import { validateCatalog } from "./validateCatalog";
 import fs from "fs";
@@ -29,10 +28,6 @@ const argv = yargs
   })
   .parseSync();
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
 if (argv.catalog) {
   try {
     const catalog = argv.catalog;
@@ -51,6 +46,8 @@ if (argv.catalog) {
       fs.readFileSync("./catalog/data/terms.yaml").toString()
     );
 
+    let combined;
+    let outputFile = "";
     switch (catalog) {
       case "WCAG":
       case "EU":
@@ -62,49 +59,38 @@ if (argv.catalog) {
         console.log(
           `Warning: This will rebuild the following catalog: ${catalog}.`
         );
-        rl.question(
-          "Confirm rebuild of " + catalog + " catalog (y): ",
-          (answer) => {
-            answer = answer || "y";
 
-            if (answer === "y") {
-              console.log("Rebuilding...");
+        combined = {
+          title: getTitle(section508),
+          standards: getStandards(wcag20, section508),
+          chapters: getChapters(wcag20, section508),
+          components: getComponents(components),
+          terms: getTerms(terms),
+        };
 
-              const combined = {
-                title: getTitle(section508),
-                standards: getStandards(wcag20, section508),
-                chapters: getChapters(wcag20, section508),
-                components: getComponents(components),
-                terms: getTerms(terms),
-              };
-
-              const outputFile = `./catalog/2.4-edition-${combined.standards[0].id}-${combined.standards[1].id}.yaml`;
-              fs.writeFile(
-                outputFile,
-                yaml.dump(combined, { quotingType: '"' }),
-                function (error) {
-                  if (error) {
-                    console.error(`Failed to create catalog ${outputFile}.`);
-                  } else {
-                    console.log(`Successfully created catalog ${outputFile}.`);
-                  }
-                }
-              );
-            } else {
-              console.log("Aborting...");
-            }
-            rl.close();
-          }
-        );
+        outputFile = `./catalog/2.4-edition-${combined.standards[0].id}-${combined.standards[1].id}.yaml`;
         break;
 
       default:
         console.error(`Invalid: ${catalog} is not an available option.`);
         break;
     }
+
+    if (outputFile) {
+      fs.writeFile(
+        outputFile,
+        yaml.dump(combined, { quotingType: '"' }),
+        function (error) {
+          if (error) {
+            console.error(`Failed to create catalog ${outputFile}.`);
+          } else {
+            console.log(`Successfully created catalog ${outputFile}.`);
+          }
+        }
+      );
+    }
   } catch (e) {
     console.error(`Invalid: data files cannot be read. Error: ${e.message}`);
-    rl.close();
   }
 }
 
