@@ -1,6 +1,6 @@
-# Open Product Accessibility Template (OPAT)
-
-Machine-readable technology product accessibility conformance
+![GSA Logo](nav-logo.png) 
+# Open Product Accessibility Template (OPAT) 
+Machine-readable technology product accessibility conformance 
 
 ## Overview
 
