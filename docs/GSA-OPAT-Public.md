@@ -1,5 +1,7 @@
-![GSA Logo](nav-logo.png) 
+<img align="right" alt="GSA Logo" src="nav-logo.png"/>
+
 # Open Product Accessibility Template (OPAT) 
+
 Machine-readable technology product accessibility conformance 
 
 ## Overview
