@@ -6,7 +6,7 @@ Based on VPAT® 2.4 Revised Section 508 Edition
 Drupal 9.1
 
 ## Report Date
-8/6/2021
+8/9/2021
 
 ## Product Description
 Content Management System
@@ -25,6 +25,14 @@ Links to the issues identified are included where possible to ensure that this i
 
 ## Evaluation Methods Used
 Use of automated tools like WAVE and Accessibility Insights. Manual keyboard only testing. Some testing with JAWS, NVDA and VoiceOver. The evaluation process also includes a review of the Drupal Core accessibility issue queue.
+
+## Applicable Standards/Guidelines
+This report covers the degree of conformance for the following accessibility standard/guidelines:
+
+| Standard/Guideline | Included In Report |
+| --- | --- |
+| [Web Content Accessibility Guidelines 2.0](https://www.w3.org/TR/WCAG20/) | |
+| [Revised Section 508 standards published January 18, 2017 and corrected January 22, 2018](https://www.access-board.gov/ict/) | |
 
 ## Terms
 The terms used in the Conformance Level information are defined as follows:
