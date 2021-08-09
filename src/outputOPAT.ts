@@ -19,11 +19,6 @@ export function outputOPAT(
     const date = new Date();
     data.now = date.toLocaleDateString();
 
-    Handlebars.registerHelper("chapterOrTableTitle", function (chapter) {
-      if (chapter.order < 4) return "Table";
-      else return "Chapter";
-    });
-
     Handlebars.registerHelper(
       "catalogCriteriaLabel",
       function (chapterId, criteriaNum) {

@@ -1,12 +1,12 @@
 # Drupal Accessibility Conformance Report
 
-Based on VPAT® 2.4 edition 508/WCAG 2.0
+Based on VPAT® 2.4 Revised Section 508 Edition
 
 ## Name of Product/Version
 Drupal 9.1
 
 ## Report Date
-8/5/2021
+8/6/2021
 
 ## Product Description
 Content Management System
@@ -53,7 +53,7 @@ The terms used in the Conformance Level information are defined as follows:
 
 ## Table 3: Success Criteria, Level AAA
 
-## Table 3: Functional Performance Criteria (FPC)
+## Chapter 3: Functional Performance Criteria (FPC)
 
 ## Chapter 4: Hardware
 

@@ -1,0 +1,396 @@
+title: VPAT® 2.4 Revised Section 508 Edition
+standard:
+  - id: "508"
+    label: "Revised Section 508 standards published January 18, 2017 and corrected January 22, 2018"
+    report_heading: "Revised Section 508 Report"
+    url: https://www.access-board.gov/ict/
+chapters:
+  - id: functional_performance_criteria
+    label: "Chapter 3: Functional Performance Criteria (FPC)"
+    order: 3
+    criteria:
+      - id: "302.1"
+        handle: Without Vision
+        alt_id: "302.1"
+        components: [none]
+      - id: "302.2"
+        handle: With Limited Vision
+        alt_id: "302.2"
+        components: [none]
+      - id: "302.3"
+        handle: Without Perception of Color
+        alt_id: "302.3"
+        components: [none]
+      - id: "302.4"
+        handle: Without Hearing
+        alt_id: "302.4"
+        components: [none]
+      - id: "302.5"
+        handle: With Limited Hearing
+        alt_id: "302.5"
+        components: [none]
+      - id: "302.6"
+        handle: Without Speech
+        alt_id: "302.6"
+        components: [none]
+      - id: "302.7"
+        handle: With Limited Manipulation
+        alt_id: "302.7"
+        components: [none]
+      - id: "302.8"
+        handle: With Limited Reach and Strength
+        alt_id: "302.8"
+        components: [none]
+      - id: "302.9"
+        handle: With Limited Language, Cognitive, and Learning Abilities
+        alt_id: "302.9"
+        components: [none]
+  - id: hardware
+    label: "Chapter 4: Hardware"
+    chapter_title: Chapter 4
+    order: 4
+    criteria:
+      - id: "402.2.1"
+        handle: Information Displayed On-Screen
+        alt_id: "402.2.1"
+        components: [none]
+      - id: "402.2.2"
+        handle: Transactional Outputs
+        alt_id: "402.2.2"
+        components: [none]
+      - id: "402.2.3"
+        handle: Speech Delivery Type and Coordination
+        alt_id: "402.2.3"
+        components: [none]
+      - id: "402.2.4"
+        handle: User Control
+        alt_id: "402.2.4"
+        components: [none]
+      - id: "402.2.5"
+        handle: Braille Instructions
+        alt_id: "402.2.5"
+        components: [none]
+      - id: "402.3.1"
+        handle: Private Listening
+        alt_id: "402.3.1"
+        components: [none]
+      - id: "402.3.2"
+        handle: Non-private Listening
+        alt_id: "402.3.2"
+        components: [none]
+      - id: "402.4"
+        handle: Characters on Display Screens
+        alt_id: "402.4"
+        components: [none]
+      - id: "402.5"
+        handle: Characters on Variable Message Signs
+        alt_id: "402.5"
+        components: [none]
+      - id: "403.1"
+        handle: General (Biometrics)
+        alt_id: "403.1"
+        components: [none]
+      - id: "404.1"
+        handle: General (Preservation of Information Provided for Accessibility)
+        alt_id: "404.1"
+        components: [none]
+      - id: "405.1"
+        handle: General (Privacy)
+        alt_id: "405.1"
+        components: [none]
+      - id: "406.1"
+        handle: General (Standard Connections)
+        alt_id: "406.1"
+        components: [none]
+      - id: "407.2"
+        handle: Contrast (Operable Parts)
+        alt_id: "407.2"
+        components: [none]
+      - id: "407.3.1"
+        handle: Tactilely Discernible
+        alt_id: "407.3.1"
+        components: [none]
+      - id: "407.3.2"
+        handle: Alphabetic Keys
+        alt_id: "407.3.2"
+        components: [none]
+      - id: "407.3.3"
+        handle: Numeric Keys
+        alt_id: "407.3.3"
+        components: [none]
+      - id: "407.4"
+        handle: Key Repeat
+        alt_id: "407.4"
+        components: [none]
+      - id: "407.5"
+        handle: Timed Response
+        alt_id: "407.5"
+        components: [none]
+      - id: "407.6"
+        handle: Operation
+        alt_id: "407.6"
+        components: [none]
+      - id: "407.7"
+        handle: Tickets, Fare Cards, and Keycards
+        alt_id: "407.7"
+        components: [none]
+      - id: "407.8.1"
+        handle: Vertical Reference Plane
+        alt_id: "407.8.1"
+        components: [none]
+      - id: "407.8.1.1"
+        handle: Vertical Plane for Side Reach
+        alt_id: "407.8.1.1"
+        components: [none]
+      - id: "407.8.1.2"
+        handle: Vertical Plane for Forward Reach
+        alt_id: "407.8.1.2"
+        components: [none]
+      - id: "407.8.2"
+        handle: Side Reach
+        alt_id: "407.8.2"
+        components: [none]
+      - id: "407.8.2.1"
+        handle: Unobstructed Side Reach
+        alt_id: "407.8.2.1"
+        components: [none]
+      - id: "407.8.2.2"
+        handle: Obstructed Side Reach
+        alt_id: "407.8.2.2"
+        components: [none]
+      - id: "407.8.3"
+        handle: Forward Reach
+        alt_id: "407.8.3"
+        components: [none]
+      - id: "407.8.3.1"
+        handle: Unobstructed Forward Reach
+        alt_id: "407.8.3.1"
+        components: [none]
+      - id: "407.8.3.2"
+        handle: Obstructed Forward Reach
+        alt_id: "407.8.3.2"
+        components: [none]
+      - id: "407.8.3.2.1"
+        handle: Operable Part Height for ICT with Obstructed Forward Reach
+        alt_id: "407.8.3.2.1"
+        components: [none]
+      - id: "407.8.3.2.2"
+        handle: Knee and Toe Space under ICT with Obstructed Forward Reach
+        alt_id: "407.8.3.2.2"
+        components: [none]
+      - id: "408.2"
+        handle: Visibility
+        alt_id: "408.2"
+        components: [none]
+      - id: "408.3"
+        handle: Flashing
+        alt_id: "408.3"
+        components: [none]
+      - id: "409.1"
+        handle: General (Status Indicators)
+        alt_id: "409.1"
+        components: [none]
+      - id: "410.1"
+        handle: General (Color Coding)
+        alt_id: "410.1"
+        components: [none]
+      - id: "411.1"
+        handle: General (Audible Signals)
+        alt_id: "411.1"
+        components: [none]
+      - id: "412.2.1"
+        handle: Volume Gain for Wireline Telephones
+        alt_id: "412.2.1"
+        components: [none]
+      - id: "412.2.2"
+        handle: Volume Gain for Non-Wireline ICT
+        alt_id: "412.2.2"
+        components: [none]
+      - id: "412.3.1"
+        handle: Wireless Handsets
+        alt_id: "412.3.1"
+        components: [none]
+      - id: "412.3.2"
+        handle: Wireline Handsets
+        alt_id: "412.3.2"
+        components: [none]
+      - id: "412.4"
+        handle: Digital Encoding of Speech
+        alt_id: "412.4"
+        components: [none]
+      - id: "412.5"
+        handle: Real-Time Text Functionality
+        alt_id: "412.5"
+        components: [none]
+      - id: "412.6"
+        handle: Caller ID
+        alt_id: "412.6"
+        components: [none]
+      - id: "412.7"
+        handle: Video Communication
+        alt_id: "412.7"
+        components: [none]
+      - id: "412.8.1"
+        handle: TTY Connectability
+        alt_id: "412.8.1"
+        components: [none]
+      - id: "412.8.2"
+        handle: Voice and Hearing Carry Over
+        alt_id: "412.8.2"
+        components: [none]
+      - id: "412.8.3"
+        handle: Signal Compatibility
+        alt_id: "412.8.3"
+        components: [none]
+      - id: "412.8.4"
+        handle: Voice Mail and Other Messaging Systems
+        alt_id: "412.8.4"
+        components: [none]
+      - id: "413.1.1"
+        handle: Decoding and Display of Closed Captions
+        alt_id: "413.1.1"
+        components: [none]
+      - id: "413.1.2"
+        handle: Pass-Through of Closed Caption Data
+        alt_id: "413.1.2"
+        components: [none]
+      - id: "414.1.1"
+        handle: Digital Television Tuners
+        alt_id: "414.1.1"
+        components: [none]
+      - id: "414.1.2"
+        handle: Other ICT
+        alt_id: "414.1.2"
+        components: [none]
+      - id: "415.1.1"
+        handle: Caption Controls
+        alt_id: "415.1.1"
+        components: [none]
+      - id: "415.1.2"
+        handle: Audio Description Controls
+        alt_id: "415.1.2"
+        components: [none]
+  - id: software
+    label: "Chapter 5: Software"
+    order: 5
+    criteria:
+      - id: "502.2.1"
+        handle: User Control of Accessibility Features
+        alt_id: "502.2.1"
+        components: [none]
+      - id: "502.2.2"
+        handle: No Disruption of Accessibility Features
+        alt_id: "502.2.2"
+        components: [none]
+      - id: "502.3.1"
+        handle: Object Information
+        alt_id: "502.3.1"
+        components: [none]
+      - id: "502.3.2"
+        handle: Modification of Object Information
+        alt_id: "502.3.2"
+        components: [none]
+      - id: "502.3.3"
+        handle: Row, Column, and Headers
+        alt_id: "502.3.3"
+        components: [none]
+      - id: "502.3.4"
+        handle: Values
+        alt_id: "502.3.4"
+        components: [none]
+      - id: "502.3.5"
+        handle: Modification of Values
+        alt_id: "502.3.5"
+        components: [none]
+      - id: "502.3.6"
+        handle: Label Relationships
+        alt_id: "502.3.6"
+        components: [none]
+      - id: "502.3.7"
+        handle: Hierarchical Relationships
+        alt_id: "502.3.7"
+        components: [none]
+      - id: "502.3.8"
+        handle: Text
+        alt_id: "502.3.8"
+        components: [none]
+      - id: "502.3.9"
+        handle: Modification of Text
+        alt_id: "502.3.9"
+        components: [none]
+      - id: "502.3.10"
+        handle: List of Actions
+        alt_id: "502.3.10"
+        components: [none]
+      - id: "502.3.11"
+        handle: Actions on Objects
+        alt_id: "502.3.11"
+        components: [none]
+      - id: "502.3.12"
+        handle: Focus Cursor
+        alt_id: "502.3.12"
+        components: [none]
+      - id: "502.3.13"
+        handle: Modification of Focus Cursor
+        alt_id: "502.3.13"
+        components: [none]
+      - id: "502.3.14"
+        handle: Event Notification
+        alt_id: "502.3.14"
+        components: [none]
+      - id: "502.4"
+        handle: Platform Accessibility Features
+        alt_id: "502.4"
+        components: [none]
+      - id: "503.2"
+        handle: User Preferences
+        alt_id: "503.2"
+        components: [none]
+      - id: "503.3"
+        handle: Alternative User Interfaces
+        alt_id: "503.3"
+        components: [none]
+      - id: "503.4.1"
+        handle: Caption Controls
+        alt_id: "503.4.1"
+        components: [none]
+      - id: "503.4.2"
+        handle: Audio Description Controls
+        alt_id: "503.4.2"
+        components: [none]
+      - id: "504.2.1"
+        handle: Preservation of Information Provided for Accessibility in Format Conversion
+        alt_id: "504.2.1"
+        components: [none]
+      - id: "504.2.2"
+        handle: PDF Export
+        alt_id: "504.2.2"
+        components: [none]
+      - id: "504.3"
+        handle: Prompts
+        alt_id: "504.3"
+        components: [none]
+      - id: "504.4"
+        handle: Templates
+        alt_id: "504.4"
+        components: [none]
+  - id: support_documentation_and_services
+    label: "Chapter 6: Support Documentation and Services"
+    order: 6
+    criteria:
+      - id: "602.2"
+        handle: Accessibility and Compatibility Features
+        alt_id: "602.2"
+        components: [none]
+      - id: "602.4"
+        handle: Alternate Formats for Non-Electronic Support Documentation
+        alt_id: "602.4"
+        components: [none]
+      - id: "603.2"
+        handle: Information on Accessibility and Compatibility Features
+        alt_id: "603.2"
+        components: [none]
+      - id: "603.3"
+        handle: Accommodation of Communication Needs
+        alt_id: "603.3"
+        components: [none]

@@ -72,7 +72,7 @@ describe("OPAT CLI test validation", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: data must have required property 'title'\n"
+        "Invalid: catalog data must have required property 'title'\n"
       );
     });
   });
@@ -127,7 +127,7 @@ describe("OPAT CLI test validation", () => {
       options.concat(
         "tests/examples/valid-missing-components.yaml",
         "-c",
-        "catalog/2.4-edition-508-wcag-2.0.yaml"
+        "catalog/2.4-edition-wcag-2.0-508.yaml"
       )
     );
     const chunks = [];
@@ -198,7 +198,7 @@ describe("OPAT CLI test validation", () => {
       options.concat(
         "tests/examples/invalid-criteria.yaml",
         "-c",
-        "catalog/2.4-edition-508-wcag-2.0.yaml"
+        "catalog/2.4-edition-wcag-2.0-508.yaml"
       )
     );
     const chunks = [];
@@ -211,8 +211,8 @@ describe("OPAT CLI test validation", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: criteria '100.100.100' is not included in 'Success Criteria, Level A', " +
-          "criteria '400.400.400' is not included in 'Hardware'\n"
+        "Invalid: criteria '100.100.100' is not included in 'Table 1: Success Criteria, Level A', " +
+          "criteria '400.400.400' is not included in 'Chapter 4: Hardware'\n"
       );
     });
   });
@@ -223,7 +223,7 @@ describe("OPAT CLI test validation", () => {
       options.concat(
         "tests/examples/invalid-components.yaml",
         "-c",
-        "catalog/2.4-edition-508-wcag-2.0.yaml"
+        "catalog/2.4-edition-wcag-2.0-508.yaml"
       )
     );
     const chunks = [];
@@ -247,7 +247,7 @@ describe("OPAT CLI test validation", () => {
       options.concat(
         "tests/examples/invalid-terms.yaml",
         "-c",
-        "catalog/2.4-edition-508-wcag-2.0.yaml"
+        "catalog/2.4-edition-wcag-2.0-508.yaml"
       )
     );
     const chunks = [];
@@ -260,7 +260,7 @@ describe("OPAT CLI test validation", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: term 'does not support' in criteria '1.2.2' has no definition in catalog 'VPAT® 2.4 edition 508/WCAG 2.0'\n"
+        "Invalid: term 'does not support' in criteria '1.2.2' has no definition in catalog 'VPAT® 2.4 Revised Section 508 Edition'\n"
       );
     });
   });
@@ -271,7 +271,7 @@ describe("OPAT CLI test validation", () => {
       options.concat(
         "tests/examples/invalid-components-criteria.yaml",
         "-c",
-        "catalog/2.4-edition-508-wcag-2.0.yaml"
+        "catalog/2.4-edition-wcag-2.0-508.yaml"
       )
     );
     const chunks = [];
@@ -285,7 +285,7 @@ describe("OPAT CLI test validation", () => {
 
       expect(output).to.equal(
         "Invalid: component 'none' is not supported by criteria '1.1.1', " +
-          "criteria '400.400.400' is not included in 'Success Criteria, Level A'\n"
+          "criteria '400.400.400' is not included in 'Table 1: Success Criteria, Level A'\n"
       );
     });
   });
@@ -365,7 +365,7 @@ describe("OPAT CLI test validation", () => {
       options.concat(
         "tests/examples/valid.yaml",
         "-c",
-        "catalog/2.4-edition-508-wcag-2.0.yaml"
+        "catalog/2.4-edition-wcag-2.0-508.yaml"
       )
     );
     const chunks = [];
@@ -387,7 +387,7 @@ describe("OPAT CLI test validation", () => {
       options.concat(
         "opat/drupal-9.yaml",
         "-c",
-        "catalog/2.4-edition-508-wcag-2.0.yaml"
+        "catalog/2.4-edition-wcag-2.0-508.yaml"
       )
     );
     const chunks = [];
