@@ -33,6 +33,13 @@
           "url": {
             "description": "Standard URL.",
             "type": "string"
+          },
+          "chapters": {
+            "description": "List of chapters in standard.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         },
         "required": ["id", "label", "report_heading", "url"]
