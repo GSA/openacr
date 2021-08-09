@@ -58,10 +58,13 @@ The terms used in the Conformance Level information are defined as follows:
 - **{{catalog-term.label}}**: {{catalog-term.description}}
 {{/each}}
 
-{{#each catalog.chapters as |catalog-chapter|}}
-## {{catalog-chapter.label}}
+{{#each catalog.standards as |catalog-standard|}}
+## {{catalog-standard.report_heading}}
+{{#each catalog-standard.chapters as |catalog-standard-chapter|}}
+{{#with (catalogChapter catalog-standard-chapter) as |catalog-chapter|}}
+### {{catalog-chapter.label}}
 
-{{#with (lookup ../chapters catalog-chapter.id) as |data-category|}}
+{{#with (lookup ../../../chapters catalog-chapter.id) as |data-category|}}
 {{#if data-category.notes}}
 Notes: {{data-category.notes}}
 {{/if}}
@@ -75,6 +78,8 @@ Notes: {{data-category.notes}}
 
 {{/if}}
 {{/with}}
+{{/with}}
+{{/each}}
 {{/each}}
 
 {{#if legal_disclaimer}}

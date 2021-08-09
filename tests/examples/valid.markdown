@@ -49,7 +49,8 @@ The terms used in the Conformance Level information are defined as follows:
 - **Not Applicable**: The criterion is not relevant to the product.
 - **Not Evaluated**: The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.
 
-## Table 1: Success Criteria, Level A
+## WCAG 2.0 Report
+### Table 1: Success Criteria, Level A
 
 
 | Criteria | Conformance Level | Remarks and Explanations |
@@ -57,19 +58,20 @@ The terms used in the Conformance Level information are defined as follows:
 | 1.1.1 Non-text Content | <ul><li>**Web**: Supports</li><li>**Electronic Docs**: Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Supports</li> </ul> | <ul><li>**Web**: Drupal 8 requires alt text for images by default.</li><li>**Electronic Docs**: Some non-textual content in the documentation does not provide a textual alternative.</li><li>**Authoring Tool**: The back end of Drupal Core was built to be WCAG 2.0 AA compliant and non-text content in the administration interface has a textual equivalent. Audio and video can be added to the media library, but Core does not provide tools to manage transcripts and captions/subtitles for local video and audio - Drupal issue 3002770.</li> </ul> |
 | 1.2.2 Captions (Prerecorded) | <ul><li>**Web**: Partially Supports</li><li>**Electronic Docs**: Partially Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Does Not Support</li> </ul> | <ul><li>**Web**: Authors can satisfy 1.2.1 Audio-only and Video-only (Prerecorded) by using text on the same page.</li><li>**Electronic Docs**: This is not explicitly defined in the documentation.</li><li>**Authoring Tool**: There is no additional support for authors within the authoring interface to explain how this can be done.</li> </ul> |
 
-## Table 2: Success Criteria, Level AA
+### Table 2: Success Criteria, Level AA
 
-## Table 3: Success Criteria, Level AAA
+### Table 3: Success Criteria, Level AAA
 
-## Chapter 3: Functional Performance Criteria (FPC)
+## Revised Section 508 Report
+### Chapter 3: Functional Performance Criteria (FPC)
 
-## Chapter 4: Hardware
+### Chapter 4: Hardware
 
 Notes: Drupal is a web application. Hardware accessibility criteria is not applicable.
 
-## Chapter 5: Software
+### Chapter 5: Software
 
-## Chapter 6: Support Documentation and Services
+### Chapter 6: Support Documentation and Services
 
 
 ## Legal Disclaimer (CivicActions)
