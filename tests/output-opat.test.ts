@@ -35,6 +35,23 @@ describe("Output", () => {
   };
   const validJSONCatalog1 = {
     title: "VPAT 2.4 edition 508/WCAG 2.0",
+    standards: [
+      {
+        id: "wcag-2.0",
+        label: "Web Content Accessibility Guidelines 2.0",
+        report_heading: "WCAG 2.0 Report",
+        url: "https://www.w3.org/TR/WCAG20/",
+        chapters: ["success_criteria_level_a"],
+      },
+      {
+        id: "508",
+        label:
+          "Revised Section 508 standards published January 18, 2017 and corrected January 22, 2018",
+        report_heading: "Revised Section 508 Report",
+        url: "https://www.access-board.gov/ict/",
+        chapters: ["hardware"],
+      },
+    ],
     chapters: [
       {
         id: "success_criteria_level_a",
@@ -141,6 +158,23 @@ describe("Output", () => {
   };
   const validJSONCatalog2 = {
     title: "VPAT 2.4 edition 508/WCAG 2.0",
+    standards: [
+      {
+        id: "wcag-2.0",
+        label: "Web Content Accessibility Guidelines 2.0",
+        report_heading: "WCAG 2.0 Report",
+        url: "https://www.w3.org/TR/WCAG20/",
+        chapters: ["success_criteria_level_a"],
+      },
+      {
+        id: "508",
+        label:
+          "Revised Section 508 standards published January 18, 2017 and corrected January 22, 2018",
+        report_heading: "Revised Section 508 Report",
+        url: "https://www.access-board.gov/ict/",
+        chapters: ["hardware"],
+      },
+    ],
     chapters: [
       {
         id: "success_criteria_level_a",
@@ -194,6 +228,23 @@ describe("Output", () => {
   };
   const validJSONCatalog3 = {
     title: "VPAT 2.4 edition 508/WCAG 2.0",
+    standards: [
+      {
+        id: "wcag-2.0",
+        label: "Web Content Accessibility Guidelines 2.0",
+        report_heading: "WCAG 2.0 Report",
+        url: "https://www.w3.org/TR/WCAG20/",
+        chapters: ["success_criteria_level_a"],
+      },
+      {
+        id: "508",
+        label:
+          "Revised Section 508 standards published January 18, 2017 and corrected January 22, 2018",
+        report_heading: "Revised Section 508 Report",
+        url: "https://www.access-board.gov/ict/",
+        chapters: ["hardware"],
+      },
+    ],
     chapters: [
       {
         id: "success_criteria_level_a",
@@ -269,6 +320,23 @@ describe("Output", () => {
   };
   const validJSONCatalog4 = {
     title: "VPAT 2.4 edition 508/WCAG 2.0",
+    standards: [
+      {
+        id: "wcag-2.0",
+        label: "Web Content Accessibility Guidelines 2.0",
+        report_heading: "WCAG 2.0 Report",
+        url: "https://www.w3.org/TR/WCAG20/",
+        chapters: [],
+      },
+      {
+        id: "508",
+        label:
+          "Revised Section 508 standards published January 18, 2017 and corrected January 22, 2018",
+        report_heading: "Revised Section 508 Report",
+        url: "https://www.access-board.gov/ict/",
+        chapters: [],
+      },
+    ],
     components: [
       {
         id: "web",

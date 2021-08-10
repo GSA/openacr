@@ -19,13 +19,15 @@ export function outputOPAT(
     const date = new Date();
     data.now = date.toLocaleDateString();
 
-    Handlebars.registerHelper("catalogChapter", function (chapterId) {
+    const getCatalogChapter = (chapterId: string): any => {
       for (const chapter of catalogData.chapters) {
         if (chapter.id === chapterId) {
           return chapter;
         }
       }
-    });
+    };
+
+    Handlebars.registerHelper("catalogChapter", getCatalogChapter);
 
     Handlebars.registerHelper(
       "catalogCriteriaLabel",
@@ -35,6 +37,21 @@ export function outputOPAT(
             for (const catalogChapterCriteria of chapter.criteria) {
               if (catalogChapterCriteria.id === criteriaNum) {
                 return catalogChapterCriteria.handle;
+              }
+            }
+          }
+        }
+      }
+    );
+
+    Handlebars.registerHelper(
+      "catalogCriteriaURL",
+      function (chapterId, criteriaNum, url) {
+        for (const chapter of catalogData.chapters) {
+          if (chapter.id === chapterId) {
+            for (const catalogChapterCriteria of chapter.criteria) {
+              if (catalogChapterCriteria.id === criteriaNum) {
+                return `${url}#${catalogChapterCriteria.alt_id}`;
               }
             }
           }
@@ -64,6 +81,15 @@ export function outputOPAT(
       }
       // If a level is provided but has no matching terms, provide a default.
       return "Not Applicable";
+    });
+
+    Handlebars.registerHelper("standardsIncluded", function (standardChapters) {
+      const result = [];
+      for (const standardChapter of standardChapters) {
+        const catalogChapters = getCatalogChapter(standardChapter);
+        result.push(`<li>${catalogChapters.label}</li>`);
+      }
+      return new Handlebars.SafeString(`<ul>${result.join("")}</ul>`);
     });
 
     const result = template(data);
