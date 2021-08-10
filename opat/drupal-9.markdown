@@ -31,8 +31,8 @@ This report covers the degree of conformance for the following accessibility sta
 
 | Standard/Guideline | Included In Report |
 | --- | --- |
-| [Web Content Accessibility Guidelines 2.0](https://www.w3.org/TR/WCAG20/) | |
-| [Revised Section 508 standards published January 18, 2017 and corrected January 22, 2018](https://www.access-board.gov/ict/) | |
+| [Web Content Accessibility Guidelines 2.0](https://www.w3.org/TR/WCAG20/) | <ul><li>Table 1: Success Criteria, Level A</li><li>Table 2: Success Criteria, Level AA</li><li>Table 3: Success Criteria, Level AAA</li></ul> |
+| [Revised Section 508 standards published January 18, 2017 and corrected January 22, 2018](https://www.access-board.gov/ict/) | <ul><li>Chapter 3: Functional Performance Criteria (FPC)</li><li>Chapter 4: Hardware</li><li>Chapter 5: Software</li><li>Chapter 6: Support Documentation and Services</li></ul> |
 
 ## Terms
 The terms used in the Conformance Level information are defined as follows:
