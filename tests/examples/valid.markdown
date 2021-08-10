@@ -6,7 +6,7 @@ Based on VPAT® 2.4 Revised Section 508 Edition
 Drupal 9.1
 
 ## Report Date
-8/9/2021
+8/10/2021
 
 ## Product Description
 Content Management System
@@ -55,8 +55,8 @@ The terms used in the Conformance Level information are defined as follows:
 
 | Criteria | Conformance Level | Remarks and Explanations |
 | --- | --- | --- |
-| 1.1.1 Non-text Content | <ul><li>**Web**: Supports</li><li>**Electronic Docs**: Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Supports</li> </ul> | <ul><li>**Web**: Drupal 8 requires alt text for images by default.</li><li>**Electronic Docs**: Some non-textual content in the documentation does not provide a textual alternative.</li><li>**Authoring Tool**: The back end of Drupal Core was built to be WCAG 2.0 AA compliant and non-text content in the administration interface has a textual equivalent. Audio and video can be added to the media library, but Core does not provide tools to manage transcripts and captions/subtitles for local video and audio - Drupal issue 3002770.</li> </ul> |
-| 1.2.2 Captions (Prerecorded) | <ul><li>**Web**: Partially Supports</li><li>**Electronic Docs**: Partially Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Does Not Support</li> </ul> | <ul><li>**Web**: Authors can satisfy 1.2.1 Audio-only and Video-only (Prerecorded) by using text on the same page.</li><li>**Electronic Docs**: This is not explicitly defined in the documentation.</li><li>**Authoring Tool**: There is no additional support for authors within the authoring interface to explain how this can be done.</li> </ul> |
+| [1.1.1 Non-text Content](https://www.w3.org/TR/WCAG20/#text-equiv-all) | <ul><li>**Web**: Supports</li><li>**Electronic Docs**: Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Supports</li> </ul> | <ul><li>**Web**: Drupal 8 requires alt text for images by default.</li><li>**Electronic Docs**: Some non-textual content in the documentation does not provide a textual alternative.</li><li>**Authoring Tool**: The back end of Drupal Core was built to be WCAG 2.0 AA compliant and non-text content in the administration interface has a textual equivalent. Audio and video can be added to the media library, but Core does not provide tools to manage transcripts and captions/subtitles for local video and audio - Drupal issue 3002770.</li> </ul> |
+| [1.2.2 Captions (Prerecorded)](https://www.w3.org/TR/WCAG20/#media-equiv-captions) | <ul><li>**Web**: Partially Supports</li><li>**Electronic Docs**: Partially Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Does Not Support</li> </ul> | <ul><li>**Web**: Authors can satisfy 1.2.1 Audio-only and Video-only (Prerecorded) by using text on the same page.</li><li>**Electronic Docs**: This is not explicitly defined in the documentation.</li><li>**Authoring Tool**: There is no additional support for authors within the authoring interface to explain how this can be done.</li> </ul> |
 
 ### Table 2: Success Criteria, Level AA
 

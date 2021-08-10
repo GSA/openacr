@@ -42,6 +42,21 @@ export function outputOPAT(
       }
     );
 
+    Handlebars.registerHelper(
+      "catalogCriteriaURL",
+      function (chapterId, criteriaNum, url) {
+        for (const chapter of catalogData.chapters) {
+          if (chapter.id === chapterId) {
+            for (const catalogChapterCriteria of chapter.criteria) {
+              if (catalogChapterCriteria.id === criteriaNum) {
+                return `${url}#${catalogChapterCriteria.alt_id}`;
+              }
+            }
+          }
+        }
+      }
+    );
+
     Handlebars.registerHelper("catalogComponentLabel", function (componentId) {
       if (catalogData.components) {
         for (const component of catalogData.components) {
