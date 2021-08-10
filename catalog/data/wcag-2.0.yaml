@@ -4,6 +4,12 @@ standard:
     label: "Web Content Accessibility Guidelines 2.0"
     report_heading: "WCAG 2.0 Report"
     url: https://www.w3.org/TR/WCAG20/
+    chapters:
+      [
+        success_criteria_level_a,
+        success_criteria_level_aa,
+        success_criteria_level_aaa,
+      ]
 chapters:
   - id: success_criteria_level_a
     label: "Table 1: Success Criteria, Level A"

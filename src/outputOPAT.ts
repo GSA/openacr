@@ -19,6 +19,14 @@ export function outputOPAT(
     const date = new Date();
     data.now = date.toLocaleDateString();
 
+    Handlebars.registerHelper("catalogChapter", function (chapterId) {
+      for (const chapter of catalogData.chapters) {
+        if (chapter.id === chapterId) {
+          return chapter;
+        }
+      }
+    });
+
     Handlebars.registerHelper(
       "catalogCriteriaLabel",
       function (chapterId, criteriaNum) {

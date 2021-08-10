@@ -6,7 +6,7 @@ Based on VPAT® 2.4 Revised Section 508 Edition
 Drupal 9.1
 
 ## Report Date
-8/6/2021
+8/9/2021
 
 ## Product Description
 Content Management System
@@ -26,6 +26,14 @@ Links to the issues identified are included where possible to ensure that this i
 ## Evaluation Methods Used
 Use of automated tools like WAVE and Accessibility Insights. Manual keyboard only testing. Some testing with JAWS, NVDA and VoiceOver. The evaluation process also includes a review of the Drupal Core accessibility issue queue.
 
+## Applicable Standards/Guidelines
+This report covers the degree of conformance for the following accessibility standard/guidelines:
+
+| Standard/Guideline | Included In Report |
+| --- | --- |
+| [Web Content Accessibility Guidelines 2.0](https://www.w3.org/TR/WCAG20/) | |
+| [Revised Section 508 standards published January 18, 2017 and corrected January 22, 2018](https://www.access-board.gov/ict/) | |
+
 ## Terms
 The terms used in the Conformance Level information are defined as follows:
 - **Supports**: The functionality of the product has at least one method that meets the criterion without known defects or meets with equivalent facilitation.
@@ -34,7 +42,8 @@ The terms used in the Conformance Level information are defined as follows:
 - **Not Applicable**: The criterion is not relevant to the product.
 - **Not Evaluated**: The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.
 
-## Table 1: Success Criteria, Level A
+## WCAG 2.0 Report
+### Table 1: Success Criteria, Level A
 
 Notes: Drupal doesn&#x27;t make a strong distinction between the front-end &amp; back-end accessibility. Many administration interfaces can be exposed to users in a more interactive site. Generally this report focuses the Conformance Level / Remarks and Explainations so that Web comments are about elements that are typically public, while Authoring Tool is typically for authors and administrators. The goal of the authoring interface is to support ATAG 2.0 AA (Part A and B). The Drupal community strives to beek up with the latest WCAG recommendation.
 
@@ -66,7 +75,7 @@ Notes: Drupal doesn&#x27;t make a strong distinction between the front-end &amp;
 | 4.1.1 Parsing | <ul><li>**Web**: Supports</li><li>**Electronic Docs**: Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Supports</li> </ul> | <ul><li>**Web**: There are no HTML5 errors or warnings that are known to impact assistive technology users.</li><li>**Electronic Docs**: There are no HTML5 errors or warnings that are known to impact assistive technology users.</li><li>**Authoring Tool**: Generally parsing is very well supported, but there are a few places where this needs to be improved - Drupal issue 1852090 and 3144948.</li> </ul> |
 | 4.1.2 Name, Role, Value | <ul><li>**Web**: Supports</li><li>**Electronic Docs**: Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Supports</li> </ul> | <ul><li>**Web**: Public pages support this criterion.</li><li>**Electronic Docs**: Public pages support this criterion.</li><li>**Authoring Tool**: This is generally well supported, but there are places where it has been overlooked. Drupal issue 3144948, 3019487, and 3085545.</li> </ul> |
 
-## Table 2: Success Criteria, Level AA
+### Table 2: Success Criteria, Level AA
 
 
 | Criteria | Conformance Level | Remarks and Explanations |
@@ -85,7 +94,7 @@ Notes: Drupal doesn&#x27;t make a strong distinction between the front-end &amp;
 | 3.3.3 Error Suggestion | <ul><li>**Web**: Supports</li><li>**Electronic Docs**: Not Applicable</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Supports</li> </ul> | <ul><li>**Web**: The Inline Form Error Module is provided in Core and needs to be enabled to allow for this functionality.</li><li>**Authoring Tool**: The Inline Form Error Module is provided in Core and needs to be enabled to allow for this functionality.</li> </ul> |
 | 3.3.4 Error Prevention (Legal, Financial, Data) | <ul><li>**Web**: Supports</li><li>**Electronic Docs**: Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Partially Supports</li> </ul> | <ul><li>**Web**: By default users can editing content which they own.</li><li>**Electronic Docs**: Documentation could be improved.</li><li>**Authoring Tool**: There is nothing to differentiate editing financial or legal data from any other data managed by Drupal.</li> </ul> |
 
-## Table 3: Success Criteria, Level AAA
+### Table 3: Success Criteria, Level AAA
 
 Notes: Where possible the Drupal community strives to exceed AA compliance.
 
@@ -115,7 +124,8 @@ Notes: Where possible the Drupal community strives to exceed AA compliance.
 | 3.3.5 Help | <ul><li>**Web**: Not Applicable</li> </ul> | <ul> </ul> |
 | 3.3.6 Error Prevention (All) | <ul><li>**Web**: Not Applicable</li> </ul> | <ul> </ul> |
 
-## Chapter 3: Functional Performance Criteria (FPC)
+## Revised Section 508 Report
+### Chapter 3: Functional Performance Criteria (FPC)
 
 Notes: Not applicable.
 
@@ -131,15 +141,15 @@ Notes: Not applicable.
 | 302.8 With Limited Reach and Strength | <ul><li>Supports</li> </ul> | <ul><li>Drupal&#x27;s interface does not restrict users with limited reach or strength.</li> </ul> |
 | 302.9 With Limited Language, Cognitive, and Learning Abilities | <ul><li>Not Applicable</li> </ul> | <ul> </ul> |
 
-## Chapter 4: Hardware
+### Chapter 4: Hardware
 
 Notes: Drupal is a web application. Hardware accessibility criteria is not applicable.
 
-## Chapter 5: Software
+### Chapter 5: Software
 
 Notes: Drupal is a web application. Software accessibility criteria is not applicable.
 
-## Chapter 6: Support Documentation and Services
+### Chapter 6: Support Documentation and Services
 
 Notes: Drupal is a web application and all support documentation is delivered through the web. Additional documentation and services are not available.
 

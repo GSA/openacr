@@ -43,16 +43,28 @@ Based on {{catalog.title}}
 {{evaluation_methods_used}}
 {{/if}}
 
+## Applicable Standards/Guidelines
+This report covers the degree of conformance for the following accessibility standard/guidelines:
+
+| Standard/Guideline | Included In Report |
+| --- | --- |
+{{#each catalog.standards as |catalog-standard|}}
+| [{{catalog-standard.label}}]({{catalog-standard.url}}) | |
+{{/each}}
+
 ## Terms
 The terms used in the Conformance Level information are defined as follows:
 {{#each catalog.terms as |catalog-term|}}
 - **{{catalog-term.label}}**: {{catalog-term.description}}
 {{/each}}
 
-{{#each catalog.chapters as |catalog-chapter|}}
-## {{catalog-chapter.label}}
+{{#each catalog.standards as |catalog-standard|}}
+## {{catalog-standard.report_heading}}
+{{#each catalog-standard.chapters as |catalog-standard-chapter|}}
+{{#with (catalogChapter catalog-standard-chapter) as |catalog-chapter|}}
+### {{catalog-chapter.label}}
 
-{{#with (lookup ../chapters catalog-chapter.id) as |data-category|}}
+{{#with (lookup ../../../chapters catalog-chapter.id) as |data-category|}}
 {{#if data-category.notes}}
 Notes: {{data-category.notes}}
 {{/if}}
@@ -66,6 +78,8 @@ Notes: {{data-category.notes}}
 
 {{/if}}
 {{/with}}
+{{/with}}
+{{/each}}
 {{/each}}
 
 {{#if legal_disclaimer}}
