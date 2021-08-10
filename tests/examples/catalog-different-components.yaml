@@ -1,4 +1,11 @@
 title: VPAT 2.4 edition 508/WCAG 2.0
+standards:
+  - id: wcag-2.0
+    label: Web Content Accessibility Guidelines 2.0
+    report_heading: WCAG 2.0 Report
+    url: https://www.w3.org/TR/WCAG20/
+    chapters:
+      - success_criteria_level_a
 chapters:
   - id: success_criteria_level_a
     label: Success Criteria, Level A
