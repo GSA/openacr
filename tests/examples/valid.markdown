@@ -18,7 +18,7 @@ Fake text
 - Address: Rome
 - Email: cicero@example.com
 
-- Website: https://example.com/
+- Website: https://en.wikipedia.org/wiki/Lorem_ipsum
 ### Vendor Information
 
 - Company: Fake text Inc.
