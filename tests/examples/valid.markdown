@@ -1,37 +1,37 @@
-# Drupal Accessibility Conformance Report
+# Lorem Ipsum Accessibility Conformance Report
 
 Based on VPAT® 2.4 Revised Section 508 Edition
 
 ## Name of Product/Version
-Drupal 9.1
+Lorem Ipsum 1.1
 
 ## Report Date
-8/10/2021
+8/11/2021
 
 ## Product Description
-Content Management System
+Fake text
 
 ## Contact Information
 ### Author Information
-- Name: Mike Gifford
-- Company: CivicActions
-- Address: 3527 Mt Diablo Blvd, Unit 269, Lafayette, CA 94549
-- Email: mike.gifford@civicactions.com
-- Phone: (510) 408-7510
-- Website: https://civicactions.com/
+- Name: Cicero
+- Company: Fake text Inc.
+- Address: Rome
+- Email: cicero@example.com
+
+- Website: https://example.com/
 ### Vendor Information
 
-- Company: CivicActions
+- Company: Fake text Inc.
 
-- Email: contact@civicactions.com
+- Email: contact@example.com
 
 
 
 ## Notes
-Links to the issues identified are included where possible to ensure that this is a living document where outstanding issues are regularly reviewed for compliance. The Authoring tool is evaluated against ATAG 2.0, Part A and B. Incorporating feedback from the Drupal community.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet viverra lorem. Nullam laoreet vitae lorem et semper. Donec feugiat rutrum luctus. Nunc nec scelerisque orci. Mauris non tellus congue, vestibulum felis at, consectetur dui. Aenean luctus dictum diam. Vestibulum vehicula leo nulla, nec hendrerit felis sodales a. In hac habitasse platea dictumst. Phasellus odio felis, efficitur a mattis vitae, fermentum vitae libero. Nam ut magna id sem pellentesque ultrices. Nulla sed urna vel tortor vehicula varius. Sed scelerisque porta nisi, sit amet ultricies ante ullamcorper quis.
 
 ## Evaluation Methods Used
-Use of automated tools like WAVE and Accessibility Insights. Manual keyboard only testing. Some testing with JAWS, NVDA and VoiceOver. The evaluation process also includes a review of the Drupal Core accessibility issue queue.
+Use of automated tools like WAVE and Accessibility Insights. Manual keyboard only testing. Some testing with JAWS, NVDA and VoiceOver.
 
 ## Applicable Standards/Guidelines
 This report covers the degree of conformance for the following accessibility standard/guidelines:
@@ -55,8 +55,8 @@ The terms used in the Conformance Level information are defined as follows:
 
 | Criteria | Conformance Level | Remarks and Explanations |
 | --- | --- | --- |
-| [1.1.1 Non-text Content](https://www.w3.org/TR/WCAG20/#text-equiv-all) | <ul><li>**Web**: Supports</li><li>**Electronic Docs**: Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Supports</li> </ul> | <ul><li>**Web**: Drupal 8 requires alt text for images by default.</li><li>**Electronic Docs**: Some non-textual content in the documentation does not provide a textual alternative.</li><li>**Authoring Tool**: The back end of Drupal Core was built to be WCAG 2.0 AA compliant and non-text content in the administration interface has a textual equivalent. Audio and video can be added to the media library, but Core does not provide tools to manage transcripts and captions/subtitles for local video and audio - Drupal issue 3002770.</li> </ul> |
-| [1.2.2 Captions (Prerecorded)](https://www.w3.org/TR/WCAG20/#media-equiv-captions) | <ul><li>**Web**: Partially Supports</li><li>**Electronic Docs**: Partially Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Does Not Support</li> </ul> | <ul><li>**Web**: Authors can satisfy 1.2.1 Audio-only and Video-only (Prerecorded) by using text on the same page.</li><li>**Electronic Docs**: This is not explicitly defined in the documentation.</li><li>**Authoring Tool**: There is no additional support for authors within the authoring interface to explain how this can be done.</li> </ul> |
+| [1.1.1 Non-text Content](https://www.w3.org/TR/WCAG20/#text-equiv-all) | <ul><li>**Web**: Supports</li><li>**Electronic Docs**: Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Supports</li> </ul> | <ul><li>**Web**: Cras ultrices, diam in laoreet condimentum, purus leo tempor erat, eu facilisis erat tortor at purus.</li><li>**Electronic Docs**: Curabitur tristique tellus quis ligula elementum, sit amet tincidunt est aliquet.</li><li>**Authoring Tool**: Vestibulum sit amet tortor ac nunc rutrum consequat vel sit amet risus. Nam eget mollis odio, sit amet bibendum mi. Quisque ac neque a nulla dapibus imperdiet.</li> </ul> |
+| [1.2.2 Captions (Prerecorded)](https://www.w3.org/TR/WCAG20/#media-equiv-captions) | <ul><li>**Web**: Partially Supports</li><li>**Electronic Docs**: Partially Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Does Not Support</li> </ul> | <ul><li>**Web**: Nam a cursus nulla. Vestibulum tincidunt tincidunt volutpat.</li><li>**Electronic Docs**: Sed tempor accumsan nisl viverra viverra.</li><li>**Authoring Tool**: There is no additional support for authors within the authoring interface to explain how this can be done.</li> </ul> |
 
 ### Table 2: Success Criteria, Level AA
 
@@ -67,12 +67,12 @@ The terms used in the Conformance Level information are defined as follows:
 
 ### Chapter 4: Hardware
 
-Notes: Drupal is a web application. Hardware accessibility criteria is not applicable.
+Notes: Lorem Ipsum is a web application. Hardware accessibility criteria is not applicable.
 
 ### Chapter 5: Software
 
 ### Chapter 6: Support Documentation and Services
 
 
-## Legal Disclaimer (CivicActions)
+## Legal Disclaimer (Fake text Inc.)
 The information herein is provided in good faith based on the analysis of the web application at the time of the review and does not represent a legally-binding claim. Please contact us to report any accessibility errors or conformance claim errors for re-evaluation and correction, if necessary.

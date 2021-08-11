@@ -1,10 +1,10 @@
-title: Drupal Accessibility Conformance Report
+title: Lorem Ipsum Accessibility Conformance Report
 product:
-  name: Drupal
-  version: "9.1"
-  description: Content Management System
+  name: Lorem Ipsum
+  version: "1.1"
+  description: Fake text
 author:
-  email: mike.gifford@civicactions.com
+  email: cicero@example.com
 chapters:
   success_criteria_level_a:
     criteria:
@@ -18,4 +18,4 @@ chapters:
               level: partially-supports
               notes: Authors can satisfy 1.2.1 Audio-only and Video-only (Prerecorded) by using text on the same page.
   hardware:
-    notes: "Drupal is a web application. Hardware accessibility criteria is not applicable."
+    notes: "Lorem Ipsum is a web application. Hardware accessibility criteria is not applicable."

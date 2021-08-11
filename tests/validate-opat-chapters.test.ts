@@ -4,12 +4,12 @@ import { validateOPAT } from "../src/validateOPAT";
 describe("Validate OPAT chapters", () => {
   const validSchema = "opat-0.1.0.json";
   const validJSON = {
-    title: "Drupal Accessibility Conformance Report",
+    title: "Lorem Ipsum Accessibility Conformance Report",
     product: {
-      name: "Drupal",
+      name: "Lorem Ipsum",
     },
     author: {
-      email: "mike.gifford@civicactions.com",
+      email: "cicero@example.com",
     },
     chapters: {
       success_criteria_level_a: {
@@ -21,7 +21,8 @@ describe("Validate OPAT chapters", () => {
                 name: "web",
                 adherence: {
                   level: "supports",
-                  notes: "Drupal 8 requires alt text for images by default.",
+                  notes:
+                    "Cras ultrices, diam in laoreet condimentum, purus leo tempor erat, eu facilisis erat tortor at purus.",
                 },
               },
             ],
@@ -30,17 +31,17 @@ describe("Validate OPAT chapters", () => {
       },
       hardware: {
         notes:
-          "Drupal is a web application. Hardware accessibility criteria is not applicable.",
+          "Lorem Ipsum is a web application. Hardware accessibility criteria is not applicable.",
       },
     },
   };
   const invalidJSON1 = {
-    title: "Drupal Accessibility Conformance Report",
+    title: "Lorem Ipsum Accessibility Conformance Report",
     product: {
-      name: "Drupal",
+      name: "Lorem Ipsum",
     },
     author: {
-      email: "mike.gifford@civicactions.com",
+      email: "cicero@example.com",
     },
     chapters: {
       success_criteria_level_a: 3,
@@ -48,12 +49,12 @@ describe("Validate OPAT chapters", () => {
     },
   };
   const invalidJSON2 = {
-    title: "Drupal Accessibility Conformance Report",
+    title: "Lorem Ipsum Accessibility Conformance Report",
     product: {
-      name: "Drupal",
+      name: "Lorem Ipsum",
     },
     author: {
-      email: "mike.gifford@civicactions.com",
+      email: "cicero@example.com",
     },
     chapters: {
       success_criteria_level_a: {
