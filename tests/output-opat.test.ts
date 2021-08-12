@@ -3,12 +3,12 @@ import { outputOPAT } from "../src/outputOPAT";
 
 describe("Output", () => {
   const validJSONData = {
-    title: "Drupal Accessibility Conformance Report",
+    title: "Lorem Ipsum Accessibility Conformance Report",
     product: {
-      name: "Drupal",
+      name: "Lorem Ipsum",
     },
     author: {
-      email: "mike.gifford@civicactions.com",
+      email: "cicero@example.com",
     },
     chapters: {
       success_criteria_level_a: {
@@ -20,7 +20,8 @@ describe("Output", () => {
                 name: "web",
                 adherence: {
                   level: "supports",
-                  notes: "Drupal 8 requires alt text for images by default.",
+                  notes:
+                    "Cras ultrices, diam in laoreet condimentum, purus leo tempor erat, eu facilisis erat tortor at purus.",
                 },
               },
             ],
@@ -29,7 +30,7 @@ describe("Output", () => {
       },
       hardware: {
         notes:
-          "Drupal is a web application. Hardware accessibility criteria is not applicable.",
+          "Lorem Ipsum is a web application. Hardware accessibility criteria is not applicable.",
       },
     },
   };

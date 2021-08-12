@@ -5,14 +5,14 @@ describe("Validate OPAT metadata", () => {
   const validSchema = "opat-0.1.0.json";
   const invalidSchema = "opat-invalid.json";
   const validJSON = {
-    title: "Drupal Accessibility Conformance Report",
+    title: "Lorem Ipsum Accessibility Conformance Report",
     product: {
-      name: "Drupal",
-      version: "9.1",
-      description: "Content Management System",
+      name: "Lorem Ipsum",
+      version: "1.1",
+      description: "Fake text",
     },
     author: {
-      email: "mike.gifford@civicactions.com",
+      email: "cicero@example.com",
     },
   };
   const invalidJSON = { foo: 2, bar: 4 };

@@ -1,10 +1,10 @@
-title: Drupal Accessibility Conformance Report
+title: Lorem Ipsum Accessibility Conformance Report
 product:
-  name: Drupal
-  version: "9.1"
-  description: Content Management System
+  name: Lorem Ipsum
+  version: "1.1"
+  description: Fake text
 author:
-  email: mike.gifford@civicactions.com
+  email: cicero@example.com
 chapters:
   success_criteria_level_a:
     criteria:
@@ -13,11 +13,11 @@ chapters:
           - name: "web"
             adherence:
               level: "supports"
-              notes: Drupal 8 requires alt text for images by default.
+              notes: Cras ultrices, diam in laoreet condimentum, purus leo tempor erat, eu facilisis erat tortor at purus.
           - name: "electronic-docs"
             adherence:
               level: "supports"
-              notes: Some non-textual content in the documentation does not provide a textual alternative.
+              notes: Curabitur tristique tellus quis ligula elementum, sit amet tincidunt est aliquet.
       - num: "1.2.2"
         components:
           - name: "web"
@@ -26,4 +26,4 @@ chapters:
               notes: Authors can satisfy 1.2.1 Audio-only and Video-only (Prerecorded) by using text on the same page.
           - name: "none"
   hardware:
-    notes: "Drupal is a web application. Hardware accessibility criteria is not applicable."
+    notes: "Lorem Ipsum is a web application. Hardware accessibility criteria is not applicable."
