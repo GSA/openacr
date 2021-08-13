@@ -15,11 +15,14 @@ jobs:
       - name: Install dependencies.
         run: npm install
 
-      - name: Output.
+      - name: Output markdown.
         run: npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o output/drupal-9.markdown
+
+      - name: Output HTML.
+        run: npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o output/drupal-9.html
 
       - name: Download output.
         uses: actions/upload-artifact@v2
         with:
           name: drupal-9
-          path: output/drupal-9.markdown
+          path: output/drupal-9.*
