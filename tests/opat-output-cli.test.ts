@@ -85,7 +85,7 @@ describe("OPAT CLI test output", () => {
     });
   });
 
-  it("when output file option should return valid output message matching the output file", () => {
+  it("when passed output markdown file option should return valid output message matching the output file", () => {
     const valid = spawn(
       cmd,
       options.concat(
@@ -107,6 +107,32 @@ describe("OPAT CLI test output", () => {
 
       expect(output).to.equal(
         "Valid and output generated at output/valid.markdown!\n"
+      );
+    });
+  });
+
+  it("when passed output HTML file option should return valid output message matching the output file", () => {
+    const valid = spawn(
+      cmd,
+      options.concat(
+        "tests/examples/valid.yaml",
+        "-c",
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml",
+        "-o",
+        "output/valid.html"
+      )
+    );
+    const chunks = [];
+
+    valid.stdout.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    valid.stdout.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal(
+        "Valid and output generated at output/valid.html!\n"
       );
     });
   });

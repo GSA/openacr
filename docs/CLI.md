@@ -109,14 +109,16 @@ The command uses [handlebars](https://handlebarsjs.com/) and the templates defin
 
 ### Examples
 
-We checked in an example of the markdown output in `tests/examples/valid.markdown` and `opat/drupal-9.markdown`. To regenerate the examples run the following commands and commit the changes:
+We checked in an example of the markdown and HTML output in `tests/examples` and `opat`. To regenerate the examples run the following commands and commit the changes:
 
 ```bash
 npm run generate-example-output # Full command `npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.markdown`
 npm run generate-drupal-output # Full command `npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o opat/drupal-9.markdown`
+npm run generate-example-html # Full command `npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.html`
+npm run generate-drupal-html # Full command `npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o opat/drupal-9.html`
 ```
 
-We also have a GitHub action called 'Drupal 9 OPAT output' that will generate the markdown version of the Drupal 9 OPAT. It is run on pull requests, and the output can be downloaded to double-check it is matching expectations.
+We also have a GitHub action called 'Drupal 9 OPAT output' that will generate the markdown and HTML versions of the Drupal 9 OPAT. It is run on pull requests, and the output can be downloaded to double-check it is matching expectations.
 
 The tests also generates output that is stored in the `output` directory but is not tracked by git.
 

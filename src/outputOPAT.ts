@@ -64,7 +64,14 @@ export function outputOPAT(
         for (const component of catalogData.components) {
           if (component.id === componentId) {
             if (component.label != "") {
-              return "**" + component.label + "**: ";
+              const fileExt = outputFile.split(".").pop();
+              if (fileExt === "html") {
+                return new Handlebars.SafeString(
+                  `<strong>${component.label}</strong>: `
+                );
+              } else {
+                return `**${component.label}**: `;
+              }
             }
           }
         }

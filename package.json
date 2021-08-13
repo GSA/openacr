@@ -33,6 +33,8 @@
     "lint": "eslint . --ext .ts",
     "generate-example-output": "npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.markdown",
     "generate-drupal-output": "npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o opat/drupal-9.markdown",
+    "generate-example-html": "npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.html",
+    "generate-drupal-html": "npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o opat/drupal-9.html",
     "generate-508-catalog": "npx ts-node src/librarian.ts -c 508"
   }
 }
