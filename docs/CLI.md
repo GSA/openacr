@@ -100,9 +100,14 @@ In the validate command, if the catalog file is missing the `validate` command w
 
 ## Output
 
-The `output` command can take an optional file path (default is `output/opat.markdown`) and converts the validated YAML file to markdown.
+The `output` command can take an optional file path (default is `output/opat.markdown`) and converts the validated YAML file to markdown (default) or HTML.
 
-The command uses [handlebars](https://handlebarsjs.com/) and the template `opat-0.1.0.handlebars` defined in `templates` to render the markdown.
+The command uses [handlebars](https://handlebarsjs.com/) and the templates defined in `templates` to render the output:
+
+- `opat-markdown-0.1.0.handlebars` is the markdown template.
+- `opat-html-0.1.0.handlebars` is the HTML template.
+
+### Examples
 
 We checked in an example of the markdown output in `tests/examples/valid.markdown` and `opat/drupal-9.markdown`. To regenerate the examples run the following commands and commit the changes:
 
