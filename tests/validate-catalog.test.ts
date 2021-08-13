@@ -6,6 +6,7 @@ describe("Validate catalog", () => {
   const invalidSchema = "opat-catalog-invalid.json";
   const validJSON = {
     title: "VPAT 2.4 edition 508/WCAG 2.0",
+    lang: "en",
     standards: [
       {
         id: "wcag-2.0",
@@ -130,6 +131,7 @@ describe("Validate catalog", () => {
   const invalidJSON = { foo: 2, bar: 4 };
   const invalidJSON1 = {
     title: "VPAT 2.4 edition 508/WCAG 2.0",
+    lang: "en",
     chapters: {
       id: "success_criteria_level_a",
       label: "Success Criteria, Level A",
@@ -138,6 +140,7 @@ describe("Validate catalog", () => {
   };
   const invalidJSON2 = {
     title: "VPAT 2.4 edition 508/WCAG 2.0",
+    lang: "en",
     chapters: [
       {
         id: "success_criteria_level_a",
@@ -148,6 +151,7 @@ describe("Validate catalog", () => {
   };
   const invalidJSON3 = {
     title: "VPAT 2.4 edition 508/WCAG 2.0",
+    lang: "en",
     components: [
       {
         web: "Web",
@@ -159,6 +163,7 @@ describe("Validate catalog", () => {
   };
   const invalidJSON4 = {
     title: "VPAT 2.4 edition 508/WCAG 2.0",
+    lang: "en",
     terms: [
       {
         supports: "Supports",
@@ -180,7 +185,8 @@ describe("Validate catalog", () => {
     result = validateCatalog(invalidJSON, validSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(
-      "Invalid: catalog data must have required property 'title'"
+      "Invalid: catalog data must have required property 'title', " +
+        "data must have required property 'lang'"
     );
   });
 

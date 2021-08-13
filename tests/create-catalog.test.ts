@@ -4,6 +4,7 @@ import { createCatalog } from "../src/createCatalog";
 describe("Create catalog", () => {
   const validWCAG = {
     title: "WCAG 2.0",
+    lang: "en",
     standard: [
       {
         id: "wcag-2.0",
@@ -47,6 +48,7 @@ describe("Create catalog", () => {
   };
   const validSection508 = {
     title: "WCAG 2.0",
+    lang: "en",
     standard: [
       {
         id: "508",
@@ -81,6 +83,7 @@ describe("Create catalog", () => {
   };
   const validComponents = {
     title: "Components",
+    lang: "en",
     components: [
       {
         id: "web",
@@ -106,6 +109,7 @@ describe("Create catalog", () => {
   };
   const validTerms = {
     title: "Terms",
+    lang: "en",
     terms: [
       {
         id: "supports",

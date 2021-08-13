@@ -8,6 +8,7 @@ export function createCatalog(
 ): any {
   return {
     title: getTitle(section508),
+    lang: getLang(section508),
     standards: getStandards(wcag20, section508),
     chapters: getChapters(wcag20, section508),
     components: getComponents(components),
@@ -42,6 +43,12 @@ function getStandards(first: any, second: any): any {
 function getTitle(data: any): any {
   if (validateCatalogDataFiles(data)) {
     return data.title;
+  }
+}
+
+function getLang(data: any): any {
+  if (validateCatalogDataFiles(data)) {
+    return data.lang;
   }
 }
 

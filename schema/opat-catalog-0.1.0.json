@@ -9,6 +9,10 @@
       "description": "The title of the catalog.",
       "type": "string"
     },
+    "lang": {
+      "description": "The language of the catalog.",
+      "type": "string"
+    },
     "description": {
       "type": "string"
     },
@@ -143,5 +147,5 @@
       }
     }
   },
-  "required": ["title"]
+  "required": ["title", "lang"]
 }

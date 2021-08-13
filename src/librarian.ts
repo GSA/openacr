@@ -62,7 +62,7 @@ if (argv.catalog) {
 
       combined = createCatalog(wcag20, section508, components, terms);
 
-      outputFile = `./catalog/2.4-edition-${combined.standards[0].id}-${combined.standards[1].id}.yaml`;
+      outputFile = `./catalog/2.4-edition-${combined.standards[0].id}-${combined.standards[1].id}-${combined.lang}.yaml`;
       break;
   }
 

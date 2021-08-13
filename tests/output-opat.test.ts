@@ -36,6 +36,7 @@ describe("Output", () => {
   };
   const validJSONCatalog1 = {
     title: "VPAT 2.4 edition 508/WCAG 2.0",
+    lang: "en",
     standards: [
       {
         id: "wcag-2.0",
@@ -159,6 +160,7 @@ describe("Output", () => {
   };
   const validJSONCatalog2 = {
     title: "VPAT 2.4 edition 508/WCAG 2.0",
+    lang: "en",
     standards: [
       {
         id: "wcag-2.0",
@@ -229,6 +231,7 @@ describe("Output", () => {
   };
   const validJSONCatalog3 = {
     title: "VPAT 2.4 edition 508/WCAG 2.0",
+    lang: "en",
     standards: [
       {
         id: "wcag-2.0",
@@ -321,6 +324,7 @@ describe("Output", () => {
   };
   const validJSONCatalog4 = {
     title: "VPAT 2.4 edition 508/WCAG 2.0",
+    lang: "en",
     standards: [
       {
         id: "wcag-2.0",

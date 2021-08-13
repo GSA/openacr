@@ -33,7 +33,7 @@ describe("Librarian test output", () => {
 
       expect(output).to.equal(
         "Warning: This will rebuild the following catalog: 508.\n" +
-          "Successfully created catalog ./catalog/2.4-edition-wcag-2.0-508.yaml.\n"
+          "Successfully created catalog ./catalog/2.4-edition-wcag-2.0-508-en.yaml.\n"
       );
     });
   });
