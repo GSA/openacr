@@ -72,7 +72,8 @@ describe("OPAT CLI test validation", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Invalid: catalog data must have required property 'title'\n"
+        "Invalid: catalog data must have required property 'title', " +
+          "data must have required property 'lang'\n"
       );
     });
   });
@@ -127,7 +128,7 @@ describe("OPAT CLI test validation", () => {
       options.concat(
         "tests/examples/valid-missing-components.yaml",
         "-c",
-        "catalog/2.4-edition-wcag-2.0-508.yaml"
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml"
       )
     );
     const chunks = [];
@@ -198,7 +199,7 @@ describe("OPAT CLI test validation", () => {
       options.concat(
         "tests/examples/invalid-criteria.yaml",
         "-c",
-        "catalog/2.4-edition-wcag-2.0-508.yaml"
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml"
       )
     );
     const chunks = [];
@@ -223,7 +224,7 @@ describe("OPAT CLI test validation", () => {
       options.concat(
         "tests/examples/invalid-components.yaml",
         "-c",
-        "catalog/2.4-edition-wcag-2.0-508.yaml"
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml"
       )
     );
     const chunks = [];
@@ -247,7 +248,7 @@ describe("OPAT CLI test validation", () => {
       options.concat(
         "tests/examples/invalid-terms.yaml",
         "-c",
-        "catalog/2.4-edition-wcag-2.0-508.yaml"
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml"
       )
     );
     const chunks = [];
@@ -271,7 +272,7 @@ describe("OPAT CLI test validation", () => {
       options.concat(
         "tests/examples/invalid-components-criteria.yaml",
         "-c",
-        "catalog/2.4-edition-wcag-2.0-508.yaml"
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml"
       )
     );
     const chunks = [];
@@ -365,7 +366,7 @@ describe("OPAT CLI test validation", () => {
       options.concat(
         "tests/examples/valid.yaml",
         "-c",
-        "catalog/2.4-edition-wcag-2.0-508.yaml"
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml"
       )
     );
     const chunks = [];
@@ -387,7 +388,7 @@ describe("OPAT CLI test validation", () => {
       options.concat(
         "opat/drupal-9.yaml",
         "-c",
-        "catalog/2.4-edition-wcag-2.0-508.yaml"
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml"
       )
     );
     const chunks = [];

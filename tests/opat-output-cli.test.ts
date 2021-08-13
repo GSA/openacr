@@ -43,7 +43,7 @@ describe("OPAT CLI test output", () => {
       options.concat(
         "tests/examples/valid.yaml",
         "-c",
-        "catalog/2.4-edition-wcag-2.0-508.yaml"
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml"
       )
     );
     const chunks = [];
@@ -67,7 +67,7 @@ describe("OPAT CLI test output", () => {
       options.concat(
         "tests/examples/every-example-of-keywords.yaml",
         "-c",
-        "catalog/2.4-edition-wcag-2.0-508.yaml"
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml"
       )
     );
     const chunks = [];
@@ -91,7 +91,7 @@ describe("OPAT CLI test output", () => {
       options.concat(
         "tests/examples/valid.yaml",
         "-c",
-        "catalog/2.4-edition-wcag-2.0-508.yaml",
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml",
         "-o",
         "output/valid.markdown"
       )
@@ -117,7 +117,7 @@ describe("OPAT CLI test output", () => {
       options.concat(
         "opat/drupal-9.yaml",
         "-c",
-        "catalog/2.4-edition-wcag-2.0-508.yaml",
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml",
         "-o",
         "output/drupal-9.markdown"
       )

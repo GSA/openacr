@@ -16,7 +16,7 @@ jobs:
         run: npm install
 
       - name: Output.
-        run: npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml -o output/drupal-9.markdown
+        run: npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o output/drupal-9.markdown
 
       - name: Download output.
         uses: actions/upload-artifact@v2

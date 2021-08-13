@@ -66,17 +66,17 @@ You can test the CLI with the following example commands:
 # Only validate
 npx ts-node src/opat.ts validate -f tests/examples/valid.yaml # Output: Valid!
 npx ts-node src/opat.ts validate -f tests/examples/invalid-basic.yaml # Output: Invalid: ...
-npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml # Output: Valid!
-npx ts-node src/opat.ts validate -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml # Output: Valid!
-npx ts-node src/opat.ts validate -f tests/examples/invalid-criteria.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml # Output: Invalid: ...
-npx ts-node src/opat.ts validate -f tests/examples/invalid-components.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml # Output: Invalid: ...
-npx ts-node src/opat.ts validate -f tests/examples/invalid-components-criteria.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml # Output: Invalid: ...
+npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml # Output: Valid!
+npx ts-node src/opat.ts validate -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml # Output: Valid!
+npx ts-node src/opat.ts validate -f tests/examples/invalid-criteria.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml # Output: Invalid: ...
+npx ts-node src/opat.ts validate -f tests/examples/invalid-components.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml # Output: Invalid: ...
+npx ts-node src/opat.ts validate -f tests/examples/invalid-components-criteria.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml # Output: Invalid: ...
 npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/catalog-missing-components.yaml # Output: Valid!
 npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/catalog-missing-chapters.yaml # Output: Valid!
 npx ts-node src/opat.ts validate -f tests/examples/valid.yaml -c tests/examples/catalog-different-components.yaml # Output: Invalid: ...
 # Validate and Output
-npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml -o tests/examples/valid.markdown # Output: Valid ...
-npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml -o opat/drupal-9.markdown # Output: Valid ...
+npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.markdown # Output: Valid ...
+npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o opat/drupal-9.markdown # Output: Valid ...
 ```
 
 ## Schemas
@@ -94,7 +94,7 @@ The catalogs will be validated against a defined schema (`opat-catalog-0.1.0.jso
 
 Catalogs:
 
-- `2.4-edition-wcag-2.0-508.yaml` the 508 catalog.
+- `2.4-edition-wcag-2.0-508-en.yaml` the 508 catalog.
 
 In the validate command, if the catalog file is missing the `validate` command will only check that the YAML file meets the basic schema defined.
 
@@ -112,8 +112,8 @@ The command uses [handlebars](https://handlebarsjs.com/) and the templates defin
 We checked in an example of the markdown output in `tests/examples/valid.markdown` and `opat/drupal-9.markdown`. To regenerate the examples run the following commands and commit the changes:
 
 ```bash
-npm run generate-example-output # Full command `npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml -o tests/examples/valid.markdown`
-npm run generate-drupal-output # Full command `npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508.yaml -o opat/drupal-9.markdown`
+npm run generate-example-output # Full command `npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.markdown`
+npm run generate-drupal-output # Full command `npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o opat/drupal-9.markdown`
 ```
 
 We also have a GitHub action called 'Drupal 9 OPAT output' that will generate the markdown version of the Drupal 9 OPAT. It is run on pull requests, and the output can be downloaded to double-check it is matching expectations.
