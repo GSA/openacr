@@ -10,145 +10,151 @@
 {{/if}}
 </head>
 <body>
-  <h1>{{title}}</h1>
+  <header>
+    <h1>{{title}}</h1>
 
-  Based on {{catalog.title}}
+    Based on {{catalog.title}}
+  </header>
+  <main>
+    <h2>Name of Product/Version</h2>
+    {{product.name}}{{#if product.version}} {{product.version}}{{/if}}
 
-  <h2>Name of Product/Version</h2>
-  {{product.name}}{{#if product.version}} {{product.version}}{{/if}}
+    <h2>Report Date</h2>
+    {{ now }}
 
-  <h2>Report Date</h2>
-  {{ now }}
+    {{#if product.description}}
+      <h2>Product Description</h2>
+      {{product.description}}
+    {{/if}}
 
-  {{#if product.description}}
-    <h2>Product Description</h2>
-    {{product.description}}
-  {{/if}}
+    <h2>Contact Information</h2>
+    {{#if author}}
+      <h3>Author Information</h3>
+      <ul>
+        {{#if author.name}}<li>Name: {{author.name}}</li>{{/if}}
+        {{#if author.company_name}}<li>Company: {{author.company_name}}</li>{{/if}}
+        {{#if author.address}}<li>Address: {{author.address}}</li>{{/if}}
+        {{#if author.email}}<li>Email: {{author.email}}</li>{{/if}}
+        {{#if author.phone}}<li>Phone: {{author.phone}}</li>{{/if}}
+        {{#if author.website}}<li>Website: {{author.website}}</li>{{/if}}
+      </ul>
+    {{/if}}
+    {{#if vendor}}
+      <h3>Vendor Information</h3>
+      <ul>
+      {{#if vendor.name}}<li>Name: {{vendor.name}}</li>{{/if}}
+      {{#if vendor.company_name}}<li>Company: {{vendor.company_name}}</li>{{/if}}
+      {{#if vendor.address}}<li>Address: {{vendor.address}}</li>{{/if}}
+      {{#if vendor.email}}<li>Email: {{vendor.email}}</li>{{/if}}
+      {{#if vendor.phone}}<li>Phone: {{vendor.phone}}</li>{{/if}}
+      {{#if vendor.website}}<li>Website: {{vendor.website}}</li>{{/if}}
+      </ul>
+    {{/if}}
 
-  <h2>Contact Information</h2>
-  {{#if author}}
-    <h3>Author Information</h3>
-    <ul>
-      {{#if author.name}}<li>Name: {{author.name}}</li>{{/if}}
-      {{#if author.company_name}}<li>Company: {{author.company_name}}</li>{{/if}}
-      {{#if author.address}}<li>Address: {{author.address}}</li>{{/if}}
-      {{#if author.email}}<li>Email: {{author.email}}</li>{{/if}}
-      {{#if author.phone}}<li>Phone: {{author.phone}}</li>{{/if}}
-      {{#if author.website}}<li>Website: {{author.website}}</li>{{/if}}
-    </ul>
-  {{/if}}
-  {{#if vendor}}
-    <h3>Vendor Information</h3>
-    <ul>
-    {{#if vendor.name}}<li>Name: {{vendor.name}}</li>{{/if}}
-    {{#if vendor.company_name}}<li>Company: {{vendor.company_name}}</li>{{/if}}
-    {{#if vendor.address}}<li>Address: {{vendor.address}}</li>{{/if}}
-    {{#if vendor.email}}<li>Email: {{vendor.email}}</li>{{/if}}
-    {{#if vendor.phone}}<li>Phone: {{vendor.phone}}</li>{{/if}}
-    {{#if vendor.website}}<li>Website: {{vendor.website}}</li>{{/if}}
-    </ul>
-  {{/if}}
+    {{#if notes}}
+      <h2>Notes</h2>
+      {{notes}}
+    {{/if}}
 
-  {{#if notes}}
-    <h2>Notes</h2>
-    {{notes}}
-  {{/if}}
+    {{#if evaluation_methods_used}}
+      <h2>Evaluation Methods Used</h2>
+      {{evaluation_methods_used}}
+    {{/if}}
 
-  {{#if evaluation_methods_used}}
-    <h2>Evaluation Methods Used</h2>
-    {{evaluation_methods_used}}
-  {{/if}}
+    <h2>Applicable Standards/Guidelines</h2>
+    This report covers the degree of conformance for the following accessibility standard/guidelines:
 
-  <h2>Applicable Standards/Guidelines</h2>
-  This report covers the degree of conformance for the following accessibility standard/guidelines:
-
-  <table>
-    <thead>
-      <tr>
-        <th>Standard/Guideline</th>
-        <th>Included In Report</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each catalog.standards as |catalog-standard|}}
+    <table>
+      <thead>
         <tr>
-          <td>[{{catalog-standard.label}}]({{catalog-standard.url}})</td>
-          <td>{{standardsIncluded catalog-standard.chapters}}</td>
+          <th>Standard/Guideline</th>
+          <th>Included In Report</th>
         </tr>
-      {{/each}}
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        {{#each catalog.standards as |catalog-standard|}}
+          <tr>
+            <td><a href="{{catalog-standard.url}}">{{catalog-standard.label}}</a></td>
+            <td>{{standardsIncluded catalog-standard.chapters}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
 
-  <h2>Terms</h2>
-  The terms used in the Conformance Level information are defined as follows:
-  <ul>
-  {{#each catalog.terms as |catalog-term|}}
-    <li><strong>{{catalog-term.label}}</strong>: {{catalog-term.description}}</li>
-  {{/each}}
-  </ul>
-
-  {{#each catalog.standards as |catalog-standard|}}
-    <h2>{{catalog-standard.report_heading}}</h2>
-    {{#each catalog-standard.chapters as |catalog-standard-chapter|}}
-      {{#with (catalogChapter catalog-standard-chapter) as |catalog-chapter|}}
-        <h3>{{catalog-chapter.label}}</h3>
-
-        {{#with (lookup ../../../chapters catalog-chapter.id) as |data-category|}}
-          {{#if data-category.notes}}
-            Notes: {{data-category.notes}}
-          {{/if}}
-
-          {{#if data-category.criteria}}
-            <table>
-              <thead>
-              <tr>
-                <th>Criteria</th>
-                <th>Conformance Level</th>
-                <th>Remarks and Explanations</th>
-              </tr>
-              </thead>
-              <tbody>
-                {{#each data-category.criteria as |data-criteria|}}
-                  <tr>
-                    <td>
-                      [{{data-criteria.num}} {{catalogCriteriaLabel catalog-chapter.id data-criteria.num}}]({{catalogCriteriaURL catalog-chapter.id data-criteria.num catalog-standard.url}})
-                    </td>
-                    <td>
-                      {{#if data-criteria.components}}
-                        <ul>
-                          {{#each data-criteria.components as |data-components|}}
-                            {{#if data-components.adherence.level}}
-                              <li>{{catalogComponentLabel data-components.name}}{{levelLabel data-components.adherence.level}}</li>
-                            {{/if}}
-                          {{/each}}
-                        </ul>
-                      {{/if}}
-                    </td>
-                    <td>
-                      {{#if data-criteria.components}}
-                        <ul>
-                          {{#each data-criteria.components as |data-components|}}
-                            {{#if data-components.adherence.notes}}
-                            <li>{{catalogComponentLabel data-components.name}}{{data-components.adherence.notes}}</li>
-                            {{/if}}
-                          {{/each}}
-                        </ul>
-                      {{/if}}
-                    </td>
-                  </tr>
-                {{/each}}
-              </tbody>
-            </table>
-
-          {{/if}}
-        {{/with}}
-      {{/with}}
+    <h2>Terms</h2>
+    The terms used in the Conformance Level information are defined as follows:
+    <ul>
+    {{#each catalog.terms as |catalog-term|}}
+      <li><strong>{{catalog-term.label}}</strong>: {{catalog-term.description}}</li>
     {{/each}}
-  {{/each}}
+    </ul>
 
-  {{#if legal_disclaimer}}
-    <h2>Legal Disclaimer{{#if vendor.company_name}} ({{vendor.company_name}}){{/if}}</h2>
-    {{legal_disclaimer}}
-  {{/if}}
+    {{#each catalog.standards as |catalog-standard|}}
+      <h2>{{catalog-standard.report_heading}}</h2>
+      {{#each catalog-standard.chapters as |catalog-standard-chapter|}}
+        {{#with (catalogChapter catalog-standard-chapter) as |catalog-chapter|}}
+          <h3>{{catalog-chapter.label}}</h3>
+
+          {{#with (lookup ../../../chapters catalog-chapter.id) as |data-category|}}
+            {{#if data-category.notes}}
+              Notes: {{data-category.notes}}
+            {{/if}}
+
+            {{#if data-category.criteria}}
+              <table>
+                <thead>
+                <tr>
+                  <th>Criteria</th>
+                  <th>Conformance Level</th>
+                  <th>Remarks and Explanations</th>
+                </tr>
+                </thead>
+                <tbody>
+                  {{#each data-category.criteria as |data-criteria|}}
+                    <tr>
+                      <td>
+                        <a href="{{catalogCriteriaURL catalog-chapter.id data-criteria.num catalog-standard.url}}">
+                          {{data-criteria.num}} {{catalogCriteriaLabel catalog-chapter.id data-criteria.num}}
+                        </a>
+                      </td>
+                      <td>
+                        {{#if data-criteria.components}}
+                          <ul>
+                            {{#each data-criteria.components as |data-components|}}
+                              {{#if data-components.adherence.level}}
+                                <li>{{catalogComponentLabel data-components.name}}{{levelLabel data-components.adherence.level}}</li>
+                              {{/if}}
+                            {{/each}}
+                          </ul>
+                        {{/if}}
+                      </td>
+                      <td>
+                        {{#if data-criteria.components}}
+                          <ul>
+                            {{#each data-criteria.components as |data-components|}}
+                              {{#if data-components.adherence.notes}}
+                              <li>{{catalogComponentLabel data-components.name}}{{data-components.adherence.notes}}</li>
+                              {{/if}}
+                            {{/each}}
+                          </ul>
+                        {{/if}}
+                      </td>
+                    </tr>
+                  {{/each}}
+                </tbody>
+              </table>
+
+            {{/if}}
+          {{/with}}
+        {{/with}}
+      {{/each}}
+    {{/each}}
+  </main>
+  <footer>
+    {{#if legal_disclaimer}}
+      <h2>Legal Disclaimer{{#if vendor.company_name}} ({{vendor.company_name}}){{/if}}</h2>
+      {{legal_disclaimer}}
+    {{/if}}
+  </footer>
 </body>
 </html>

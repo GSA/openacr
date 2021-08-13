@@ -8,3 +8,4 @@ coverage
 test/*.js
 src/*.js
 output/*.markdown
+output/*.html
