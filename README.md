@@ -18,11 +18,11 @@ By making accessibility conformance reports machine-readable:
 
 The team is building OPAT to be an open standard initially based on the framework provided by the [ITI VPAT®](https://www.itic.org/policy/accessibility/vpat). The VPAT® is well recognized and [VPAT 2.4Rev 508 (March 07, 2020)](https://www.itic.org/dotAsset/b282ab06-0ab2-4540-adc2-78698058dfc3.doc) (Word) allows us to build on WCAG 2.0 specifications for the initial framework.
 
-The ACR will be written in YAML to allow the text to be more human readable and allow us to include comments. This will be part of the JSON Schema used to associate a catalog/schema and provide further expansion.
+The ACR will be written in YAML to allow the text to be more human readable and allow us to include comments. Most users will interact with the ACR as either markdwon files or accessible HTML. These are generated from YAML files by a JavaScript tool which validates the data before creating the [Markdown](https://guides.github.com/features/mastering-markdown/) and HTML files. We have set up an example based on Drupal 9. The Drupal [YAML file](/opat/drupal-9.yaml) is used to generate both the [Markdown](/opat/drupal-9.markdown) & [HTML](/opat/drupal-9.html) files. On GitHub, it is actually easier to read the Markdown file, but the information will be equivalent.
 
-Most users will interact with the ACR as accessible HTML files. These will be generated from the YAML files by JavaScript tool which extracts the content into structured HTML. The style elements will then be added by CSS, which vendors will be free to customize to include their branding.
+Vendors can add style elements through CSS, if they choose to custimize the look/feel and include their branding. The main goal will be to provide a means to easily compare documents so that presentation doesn't get in the way.
 
-The repositories will be built on a git repository like GitHub so that version control is included. Authors can write the compliance report as JSON files manually, or use a tool similar to WCAG-EM.
+The repositories will be built on a git repository like GitHub so that version control is included. Authors can write the compliance report as YAML files manually, or use a tool similar to [WCAG-EM](https://www.w3.org/WAI/eval/report-tool/#!/).
 
 ## Documentation
 
