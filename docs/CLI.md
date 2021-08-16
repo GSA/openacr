@@ -122,6 +122,13 @@ We also have a GitHub action called 'Drupal 9 OPAT output' that will generate th
 
 The tests also generates output that is stored in the `output` directory but is not tracked by git.
 
+### Stylesheet
+
+The HTML output also includes two stylesheets that provide a base styling for the OPAT:
+
+- `opat.css` is provided base styling.
+- `custom.css` provided to add any customizations to the base styling.
+
 ## OPATs
 
 Current example OPATs that are tracked in this repository are in the `opat` directory.
