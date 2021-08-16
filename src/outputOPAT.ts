@@ -116,6 +116,20 @@ export function outputOPAT(
       };
     });
 
+    // Copy CSS stylesheets to the output directory.
+    fs.copyFile("templates/opat.css", `${dir}/opat.css`, (err) => {
+      return {
+        result: false,
+        message: "Invalid: opat.css file could not be copied.",
+      };
+    });
+    fs.copyFile("templates/custom.css", `${dir}/custom.css`, (err) => {
+      return {
+        result: false,
+        message: "Invalid: custom.css file could not be copied.",
+      };
+    });
+
     return {
       result: true,
       message: `Valid and output generated at ${outputFile}!`,
