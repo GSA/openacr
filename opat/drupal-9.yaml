@@ -88,8 +88,8 @@ chapters:
         components:
           - name: "web"
             adherence:
-              level: "supports"
-              notes: Information is structured into logical relationships. Navigational lists are well used to group information. Forms have a visual and semantic representation for required fields.
+              level: "partially-supports"
+              notes: Information is structured into logical relationships. Navigational lists are well used to group information. Forms have a visual and semantic representation for required fields. Message windows have ARIA role defined incorrectly as role=contentinfo which impacts content relationships - Drupal issue 2942404
           - name: "electronic-docs"
             adherence:
               level: "supports"
