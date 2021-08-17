@@ -26,6 +26,7 @@
     "ajv": "^8.6.1",
     "handlebars": "^4.7.7",
     "js-yaml": "^4.1.0",
+    "pa11y-ci": "^2.4.2",
     "yargs": "^17.0.1"
   },
   "scripts": {
@@ -35,6 +36,7 @@
     "generate-drupal-output": "npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o opat/drupal-9.markdown",
     "generate-example-html": "npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.html",
     "generate-drupal-html": "npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o opat/drupal-9.html",
-    "generate-508-catalog": "npx ts-node src/librarian.ts -c 508"
+    "generate-508-catalog": "npx ts-node src/librarian.ts -c 508",
+    "a11y-test": "pa11y-ci opat/*.html output/*.html tests/examples/*.html"
   }
 }
