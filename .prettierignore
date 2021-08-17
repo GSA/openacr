@@ -1,7 +1,7 @@
 node_modules
 dist
 coverage
-templates
+templates/*.handlebars
 tests/examples/*.markdown
 tests/examples/*.html
 opat/*.markdown
