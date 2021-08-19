@@ -77,3 +77,13 @@ table td {
   padding: 0.5em;
   border: 1px solid #999;
 }
+
+footer {
+  font-size: 80%;
+  font-weight: 800;
+  top: 5px;
+  left: 100%;
+  margin-top: 50px;
+  border-top: 5px solid #171d22;
+  width: 90%;
+}

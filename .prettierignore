@@ -4,5 +4,4 @@ coverage
 templates/*.handlebars
 tests/examples/*.markdown
 tests/examples/*.html
-opat/*.markdown
-opat/*.html
+opat/drupal-9.*
