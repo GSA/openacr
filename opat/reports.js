@@ -1,3 +1,5 @@
 $(document).ready(function () {
-  $("#reports").DataTable();
+  $("#reports").DataTable({
+    ajax: "opat-list.json",
+  });
 });
