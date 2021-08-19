@@ -12,9 +12,6 @@ jobs:
       - name: Checkout source.
         uses: actions/checkout@v2
 
-      - name: Install dependencies.
-        run: npm install
-
       - name: Download output.
         uses: actions/upload-artifact@v2
         with:
@@ -25,4 +22,5 @@ jobs:
             opat/*.js
             opat/*.markdown
             opat/*.json
+            opat/*.yaml
             catalog/2.4-edition-wcag-2.0-508-en.yaml
