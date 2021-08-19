@@ -1,11 +1,11 @@
-name: Drupal 9 OPAT output
+name: OPAT export
 
 on:
   pull_request:
 
 jobs:
   build-test:
-    name: Building app and generate output of Drupal 9 OPAT markdown version
+    name: Building app and generate export of all OPAT including the data table.
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +24,11 @@ jobs:
       - name: Download output.
         uses: actions/upload-artifact@v2
         with:
-          name: drupal-9
+          name: opat-export
           path: |
-            output/drupal-9.*
+            output/*.html
             output/*.css
+            output/*.js
+            output/*.markdown
+            output/*.json
+            catalog/2.4-edition-wcag-2.0-508-en.yaml
