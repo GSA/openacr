@@ -79,5 +79,11 @@ table td {
 }
 
 footer {
-  font-size: 14px;
+  font-size: 80%;
+  font-weight: 800;
+  top: 5px;
+  left: 100%;
+  margin-top: 50px;
+  border-top: 5px solid #171d22;
+  width: 90%;
 }
