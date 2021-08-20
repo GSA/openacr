@@ -21,6 +21,5 @@ jobs:
             opat/*.css
             opat/*.js
             opat/*.markdown
-            opat/*.json
             opat/*.yaml
             catalog/2.4-edition-wcag-2.0-508-en.yaml
