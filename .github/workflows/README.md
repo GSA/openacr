@@ -12,9 +12,9 @@ Run pre-commit hooks to clean up site based on configurations in .pre-commit-con
 
 Run our tests when we submit a pull request.
 
-## drupal-output.yaml
+## opat-export.yaml
 
-Generates output of the Drupal OPAT for download.
+Generates export of the OPATs for download including the data table and catalog.
 
 ## a11y.yaml
 

@@ -131,7 +131,7 @@ The HTML output also includes two stylesheets that provide a base styling for th
 
 ## OPATs
 
-Current example OPATs that are tracked in this repository are in the `opat` directory.
+Current example OPATs that are tracked in this repository are in the `opat` directory. The directory includes a data table representation of all the OPATs with the ability to search them.
 
 OPATs:
 
