@@ -1,4 +1,4 @@
-<img align="right" alt="GSA Logo" src="nav-logo.png"/>
+<img align="right" alt="GSA Logo" src="/docs/images/nav-logo.png"/>
 
 # Open Product Accessibility Template (OPAT)
 
