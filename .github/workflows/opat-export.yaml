@@ -22,4 +22,5 @@ jobs:
             opat/*.js
             opat/*.markdown
             opat/*.yaml
+            opat/uswds
             catalog/2.4-edition-wcag-2.0-508-en.yaml
