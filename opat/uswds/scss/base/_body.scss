@@ -1,0 +1,4 @@
+body {
+  @include set-text-and-bg($context: "Body");
+  overflow-x: hidden;
+}
