@@ -1,1 +1,1 @@
-List of images used in the documentation. 
+List of images used in the documentation.

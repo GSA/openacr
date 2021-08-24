@@ -13,12 +13,12 @@
   <tr><td>   </td><td> <img src="/docs/images/noun_directory_1421586.png" alt="Directory tool" width="150"/> </td><td> Web directory listing of available OPATs. </td></tr>
 </table>
 
-##  Optional Phases
+## Optional Phases
 
 - Coming soon
 
-
 ## Source images from the Noun Project
+
 - https://thenounproject.com/search/?q=milestones&i=2525794
 - https://thenounproject.com/search/?q=yaml&i=2604949
 - https://thenounproject.com/search/?q=valid&i=3159900
