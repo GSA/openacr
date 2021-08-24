@@ -2,16 +2,15 @@
 
 ## Baseline
 
-|---|-----------------------------------------------------------------------------------------|---------------------|
-| x | Milestones documented, project description, and initial OPAT schema and catalog drafts. | ![Milestones](/docs/images/noun_milestone_2525794.png) |
-| x | ![YAML File](/docs/images/noun_yaml file document icon_2604949.png)           | Refine the OPAT schema and provide YAML to JSON conversion code. |
-| x | OPAT schema validation code.               | ![Validated File](/docs/images/noun_construct validity_3159900.png)                                 |
-| x | ![Continuous Integreation](/docs/images/noun_continuous deployment_2661276.png)             | Continuous integration for the validation code.    |
-| x | Define outreach goals and targets.         | ![Targets](/docs/images/noun_Target_16812.png)                                                      |
-| x | ![Markdown](/docs/images/noun_html_2407184.png)                                           | Markdown output and themed HTML output.              |
-| x | Outreach and engagement with stakeholders. | ![Stakeholders](/docs/images/noun_Stakeholders_2743272.png)                                         |
-|   | ![Directory tool](/docs/images/noun_directory_1421586.png)                              | Web directory listing of available OPATs.              |
-
+|---|------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| x | Milestones documented, project description, and initial OPAT schema and catalog drafts.                    | <img src="/docs/images/noun_milestone_2525794.png" alt="Milestones" width="150"/>  |
+| x | <img src="/docs/images/noun_yaml file document icon_2604949.png" alt="YAML File" width="150"/>             | Refine the OPAT schema and provide YAML to JSON conversion code.                                                              |
+| x | OPAT schema validation code.                                                                               | <img src="/docs/images/noun_construct validity_3159900.png" alt="Validated File" width="150"/>                      |
+| x | <img src="/docs/images/noun_continuous deployment_2661276.png" alt="Continuous Integreation" width="150"/> | Continuous integration for the validation code.                                                                               |
+| x | Define outreach goals and targets.                                                                         | <img src="/docs/images/noun_Target_16812.png" alt="Targets" width="150"/>                                                   |
+| x | <img src="/docs/images/noun_html_2407184.png" alt="Markdown" width="150"/>                                 | Markdown output and themed HTML output.                                                                                       |
+| x | Outreach and engagement with stakeholders.                                                          | <img src="/docs/images/noun_Stakeholders_2743272.png" alt="Stakeholders" width="150"/>                                              |
+|   | <img src="/docs/images/noun_directory_1421586.png" alt="Directory tool" width="150"/>                      | Web directory listing of available OPATs.                                                                                     |
 
 ##  Optional Phases
 
