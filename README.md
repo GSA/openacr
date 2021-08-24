@@ -21,7 +21,7 @@ By making accessibility conformance reports machine-readable:
 The OPAT team is building this ACR to be an open standard.
 Starting with the [ITI VPAT®](https://www.itic.org/policy/accessibility/vpat) framework. VPATs® are well recognized. We will start with [VPAT 2.4Rev 508 (March 07, 2020)](https://www.itic.org/dotAsset/b282ab06-0ab2-4540-adc2-78698058dfc3.doc) (Word) which allows us to build on WCAG 2.0 specifications for the initial framework.
 
-A digital ACR needs to be highly structured, to be machine-readable. Once it is machine-readable, we will be able to extend its functionality. We looked at a few formats, but settled on YAML because it allowed the text to be more human readable. YAML stands for Yet Another Markup Language. Earlier attempts at producing a machine-readable VPAT used Extensible Markup Language (XML).
+A digital ACR needs to be highly structured, to be machine-readable. Once it is machine-readable, we will be able to extend its functionality. We looked at a few formats, but settled on YAML because it allowed the text to be more human-readable. YAML stands for Yet Another Markup Language. Earlier attempts at producing a machine-readable VPAT used Extensible Markup Language (XML).
 
 Although YAML is the foundation of OPAT, the expectation isn't for people to read. Users will read the HTML or [Markdown](https://guides.github.com/features/mastering-markdown/) output of the YAML file in a document that looks much like a VPAT.
 
@@ -43,4 +43,4 @@ We encourage contributions to this project. See our CONTRIBUTING.md file for mor
 
 ## License
 
-By default this falls under a public domain license. Some libraries included here may include other licenses. See our LICENSE.md file for more information.
+By default, this falls under a public domain license. Some libraries included here may include other licenses (see [licenses.txt](license/licenses.txt)). See our LICENSE.md file for more information.
