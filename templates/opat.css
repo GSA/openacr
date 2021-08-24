@@ -1,5 +1,9 @@
 /* Default OPAT styling */
 
+body {
+  padding-left: 35px;
+}
+
 .header-anchor {
   margin-left: -1em;
   visibility: hidden;
