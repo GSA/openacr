@@ -2,15 +2,15 @@
 
 ### Copyright ownership of Works created by U.S. federal employees
 
-This repository contains both the original design for Google Material Icons (the "Work", as defined in Section 1 of the Apache 2.0 License) and modifications made by the General Services Administration (GSA). This repository combines the Work and these GSA modifications, which is a "Modified Version" of Material Icons.
+This repository contains both the original design for Google Material Icons (the “Work”, as defined in Section 1 of the Apache 2.0 License) and modifications made by the General Services Administration (GSA). This repository combines the Work and these GSA modifications, which is a “Modified Version” of Material Icons.
 
-This repository also contains both original designs for Source Sans Pro, Merriweather, and Font Awesome (the "Font Software", as defined in Section 1 of the SIL Open Font License, version 1.1) and modifications made by the General Services Administration (GSA). This repository combines the Work and these GSA modifications, which is a "Modified Version" of Source Sans Pro, Merriweather, Public Sans, and Font Awesome respectively.
+This repository also contains both original designs for Source Sans Pro, Merriweather, and Font Awesome (the “Font Software”, as defined in Section 1 of the SIL Open Font License, version 1.1) and modifications made by the General Services Administration (GSA). This repository combines the Work and these GSA modifications, which is a “Modified Version” of Source Sans Pro, Merriweather, Public Sans, and Font Awesome respectively.
 
 As a work of the United States Government, the software modifications made by GSA are not subject to copyright within the United States. Additionally, GSA waives copyright and related rights in its software modifications worldwide through the CC0 1.0 Universal Public Domain Dedication (https://creativecommons.org/publicdomain/zero/1.0/).
 
 The Work (as defined in the Apache 2.0 License) and Font Software (as defined in the SIL Open Font License, Version 1.1) remains subject to copyright under the respective open source license. The section below lists which works are subject to particular open source licenses.
 
-This Modified Version packaged as `dist/img/sprite.svg` contains both design elements under the Apache 2.0 License and design modifications by GSA released as CC0. It is a "joint work" made of the icon set and modifications combined into a single work.
+This Modified Version packaged as `dist/img/sprite.svg` contains both design elements under the Apache 2.0 License and design modifications by GSA released as CC0. It is a “joint work” made of the icon set and modifications combined into a single work.
 
 ### Files licensed under the SIL Open Font License, Version 1.1
 
@@ -37,11 +37,11 @@ The files in `src/stylesheets/lib` are from [Normalize.css](https://github.com/n
 ```
 The MIT License (MIT)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
 ## The rest of this project is in the worldwide public domain

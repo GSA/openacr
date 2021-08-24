@@ -40,7 +40,7 @@ This repository is for the design system code itself. We maintain [another repos
 
 ## Background
 
-USWDS components and style guide follow industry-standard accessibility guidelines and use the best practices of existing style libraries and modern web design. The [U.S. Digital Service](https://www.usds.gov/) and [18F](https://18f.gsa.gov/) created USWDS for designers and developers. USWDS is a project of GSA's [Technology Transformation Service](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services), maintained by the Office of Products and Programs. They are designed for use by government product teams who want to create beautiful, easy-to-use online experiences for the public. To learn more about the project, check out this [blog post](https://18f.gsa.gov/2015/09/28/web-design-standards/) and to view websites and applications check out our list [here](docs/WHO_IS_USING_USWDS.md).
+USWDS components and style guide follow industry-standard accessibility guidelines and use the best practices of existing style libraries and modern web design. The [U.S. Digital Service](https://www.usds.gov/) and [18F](https://18f.gsa.gov/) created USWDS for designers and developers. USWDS is a project of GSA’s [Technology Transformation Service](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services), maintained by the Office of Products and Programs. They are designed for use by government product teams who want to create beautiful, easy-to-use online experiences for the public. To learn more about the project, check out this [blog post](https://18f.gsa.gov/2015/09/28/web-design-standards/) and to view websites and applications check out our list [here](docs/WHO_IS_USING_USWDS.md).
 
 ## Recent updates
 
@@ -48,7 +48,7 @@ Information about the most recent release of the design system can always be fou
 
 ## Getting started
 
-We're glad you'd like to use the design system — here's how you can get started:
+We’re glad you’d like to use the design system — here’s how you can get started:
 
 - Designers: [Check out our Getting Started for Designers information](https://designsystem.digital.gov/getting-started/designers/).
   - [Design files of all the assets included in the design system are available for download](https://github.com/uswds/uswds-assets/archive/master.zip).
@@ -132,7 +132,7 @@ How you implement the design system depends on the needs of your project and you
 
 We offer both the CSS and the JavaScript in two versions — minified and un-minified. (In the examples above, we are using the minified files.) Use the minified files in a production environment or to reduce the file size of your downloaded assets. Use the un-minified files if you are in a development environment or would like to debug the CSS or JavaScript assets in the browser.
 
-And that's it — you should now be able to copy our code samples into your `index.html` and start using the design system.
+And that’s it — you should now be able to copy our code samples into your `index.html` and start using the design system.
 
 ### Install using npm
 
@@ -153,7 +153,7 @@ And that's it — you should now be able to copy our code samples into your `ind
 
 3. Create a `package.json` file. You can do this manually, but an easier method is to use the `npm init` command. This command will prompt you with a few questions to create your `package.json` file.
 
-4. Add `uswds` to your project's `package.json`:
+4. Add `uswds` to your project’s `package.json`:
 
    ```shell
    npm install --save uswds@latest
@@ -246,18 +246,18 @@ We recommend using a **minifier** like [csso](https://github.com/css/csso) to co
 
 #### JavaScript
 
-`require('uswds')` will load all of USWDS's JavaScript onto the page. Add this line to whatever initializer you use to load JavaScript into your application.
+`require('uswds')` will load all of USWDS’s JavaScript onto the page. Add this line to whatever initializer you use to load JavaScript into your application.
 
 ### Use another framework or package manager
 
-If you're using another framework or package manager that doesn't support `npm`, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the [download instructions](#download-and-install). Please note that the core team [isn't responsible for all frameworks' implementations](https://github.com/uswds/uswds/issues/877).
+If you’re using another framework or package manager that doesn’t support `npm`, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the [download instructions](#download-and-install). Please note that the core team [isn’t responsible for all frameworks’ implementations](https://github.com/uswds/uswds/issues/877).
 
-If you're interested in maintaining a package that helps us distribute USWDS, the project's build system can help you create distribution bundles to use in your project. Please read our [contributing guidelines](CONTRIBUTING.md#building-the-project-locally-with--gulp-) to locally build distributions for your framework or package manager.
+If you’re interested in maintaining a package that helps us distribute USWDS, the project’s build system can help you create distribution bundles to use in your project. Please read our [contributing guidelines](CONTRIBUTING.md#building-the-project-locally-with--gulp-) to locally build distributions for your framework or package manager.
 
 ## CSS architecture
 
 - The CSS foundation of this site is built with the **[Sass](https://sass-lang.com)** preprocessor language.
-- The CSS organization and naming conventions follow **[18F's Front End Guide](https://frontend.18f.gov/css/)**.
+- The CSS organization and naming conventions follow **[18F’s Front End Guide](https://frontend.18f.gov/css/)**.
 - We format our code with [Prettier](https://prettier.io/), per the formatting section of the **[18F Front End Guide](https://frontend.18f.gov/css/formatting/)**.
 - CSS selectors are **prefixed** with `usa` (For example: `.usa-button`). This identifier helps the design system avoid conflicts with other styles on a site which are not part of USWDS.
 - Uses a **[BEM](http://getbem.com/)** approach for naming CSS selectors. Blocks are separated from elements with two underscores (`__`). Multi-word blocks use single hyphens instead of spaces. Modifier classes are additive — proper markup requires the base class _and_ the modifier class or classes. Modifier classes consist of the base class plus a modifier suffix, separated by two hyphens (`--`) as in `.usa-button.usa-button--secondary` or `usa-accordion.usa-accordion--bordered`.
@@ -268,7 +268,7 @@ If you're interested in maintaining a package that helps us distribute USWDS, th
 - **Spacing units** are set with the `units()` function as described in [the USWDS 2.0 documentation](https://designsystem.digital.gov/design-tokens/spacing-units/). In general, we use spacing in multiples of `8px` — expressed as a multiple in `units([multiple])`. For instance `units(2)` is the equivalent of `2 * 8px` or `16px`. In the final, compiled CSS, this value will be expressed in rem, as a multiple of the base font size set with `$theme-base-font-size`.
 
 **For more information, visit:**
-[18F's CSS Front End Guide](https://frontend.18f.gov/css/)
+[18F’s CSS Front End Guide](https://frontend.18f.gov/css/)
 
 ## JS customization
 
@@ -290,7 +290,7 @@ Each component has a standardized interface that can be used to extend it furthe
 
 Some components have additional methods based on that component's functionality. Any additional methods are found in that component's JavaScript file.
 
-**If you're using a modern framework like React or Angular you can import components and initialize them in your library's DOM ready lifecycle event.**
+**If you’re using a modern framework like React or Angular you can import components and initialize them in your library's DOM ready lifecycle event.**
 
 Importing a modular component.
 
@@ -430,11 +430,11 @@ $theme-image-path:  '../img';
 
 ## Browser support
 
-We've designed the design system to support older and newer browsers through [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement). The current major version of the design system (2.0) follows the [2% rule](https://gds.blog.gov.uk/2012/01/25/support-for-browsers/): we officially support any browser above 2% usage as observed by [analytics.usa.gov](https://analytics.usa.gov/). Currently, this means that the design system version 2.0 supports the newest versions of Chrome, Firefox, Safari, and Internet Explorer 11 and up.
+We’ve designed the design system to support older and newer browsers through [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement). The current major version of the design system (2.0) follows the [2% rule](https://gds.blog.gov.uk/2012/01/25/support-for-browsers/): we officially support any browser above 2% usage as observed by [analytics.usa.gov](https://analytics.usa.gov/). Currently, this means that the design system version 2.0 supports the newest versions of Chrome, Firefox, Safari, and Internet Explorer 11 and up.
 
 ## Accessibility
 
-The design system also meets the [WCAG 2.0 AA accessibility guidelines](https://www.w3.org/TR/WCAG20/) and conforms to the standards of [Section 508 of the Rehabilitation Act](http://www.section508.gov/). We're happy to answer questions about accessibility — email us for more information.
+The design system also meets the [WCAG 2.0 AA accessibility guidelines](https://www.w3.org/TR/WCAG20/) and conforms to the standards of [Section 508 of the Rehabilitation Act](http://www.section508.gov/). We’re happy to answer questions about accessibility — email us for more information.
 
 ## Fractal
 
@@ -480,11 +480,11 @@ If you have questions or concerns about our contributing workflow, please contac
 
 Much of the guidance in USWDS leans on open source designs, code, and patterns from other civic and government organizations, including:
 
-- Consumer Financial Protection Bureau's [Design Manual](https://cfpb.github.io/design-manual/)
-- U.S. Patent and Trademark Office's [Design Patterns](http://uspto.github.io/designpatterns/)
+- Consumer Financial Protection Bureau’s [Design Manual](https://cfpb.github.io/design-manual/)
+- U.S. Patent and Trademark Office’s [Design Patterns](http://uspto.github.io/designpatterns/)
 - Healthcare.gov [Style Guide](http://styleguide.healthcare.gov/)
-- UK's Government Digital Service's [UI Elements](http://govuk-elements.herokuapp.com/)
-- Code for America's Chime [Styleguide](https://github.com/chimecms/chime-starter)
+- UK’s Government Digital Service’s [UI Elements](http://govuk-elements.herokuapp.com/)
+- Code for America’s Chime [Styleguide](https://github.com/chimecms/chime-starter)
 - Pivotal Labs [Component Library](http://styleguide.cfapps.io/)
 
 ## Licenses and attribution
