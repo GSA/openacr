@@ -17,7 +17,7 @@ Copyright © 2017-2018 W3C® (MIT, ERCIM, Keio, Beihang). W3C liability, tradema
 
 ### Software used by this project
 
-We have used other open source software libraries to build this project. For those who are interested we have listed these and the [exact license that they use here](https://github.com/GSA/open-product-accessibility-template/tree/main/license). 
+We have used other open source software libraries to build this project. For those who are interested we have listed these and the [exact license that they use here](https://github.com/GSA/open-product-accessibility-template/tree/main/license).
 
 ## The rest of this project is in the worldwide public domain
 
