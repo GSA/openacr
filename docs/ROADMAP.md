@@ -10,7 +10,7 @@
   <tr><td> x </td><td> Define outreach goals and targets. </td><td> <img src="/docs/images/noun_Target_16812.png" alt="Targets" width="150"/> </td></tr>
   <tr><td> x </td><td> <img src="/docs/images/noun_html_2407184.png" alt="Markdown" width="150"/> </td><td> Markdown output and themed HTML output. </td></tr>
   <tr><td> x </td><td> Outreach and engagement with stakeholders. </td><td> <img src="/docs/images/noun_Stakeholders_2743272.png" alt="Stakeholders" width="150"/>  </td></tr>
-  <tr><td> x </td><td> <img src="/docs/images/noun_directory_1421586.png" alt="Directory tool" width="150"/> </td><td> Web directory listing of available OPATs. </td></tr>
+  <tr><td>   </td><td> <img src="/docs/images/noun_directory_1421586.png" alt="Directory tool" width="150"/> </td><td> Web directory listing of available OPATs. </td></tr>
 </table>
 
 ##  Optional Phases
