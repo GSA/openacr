@@ -2,15 +2,15 @@
 
 ## Baseline
 
-<table style="font-weight:bold;">
-  <tr><td> x </td><td> Milestones documented, project description, and initial OPAT schema and catalog drafts. </td><td> <img src="/docs/images/noun_milestone_2525794.png" alt="Milestones" width="150"/> </td></tr>
-  <tr><td> x </td><td> <img src="/docs/images/noun_yaml file document icon_2604949.png" alt="YAML File" width="150"/> </td><td> Refine the OPAT schema and provide YAML to JSON conversion code.  </td></tr>
-  <tr><td> x </td><td> OPAT schema validation code. </td><td> <img src="/docs/images/noun_construct validity_3159900.png" alt="Validated File" width="150"/>  </td></tr>
-  <tr><td> x </td><td> <img src="/docs/images/noun_continuous deployment_2661276.png" alt="Continuous Integreation" width="150"/> </td><td> Continuous integration for the validation code.  </td></tr>
-  <tr><td> x </td><td> Define outreach goals and targets. </td><td> <img src="/docs/images/noun_Target_16812.png" alt="Targets" width="150"/> </td></tr>
-  <tr><td> x </td><td> <img src="/docs/images/noun_html_2407184.png" alt="Markdown" width="150"/> </td><td> Markdown output and themed HTML output. </td></tr>
-  <tr><td> x </td><td> Outreach and engagement with stakeholders. </td><td> <img src="/docs/images/noun_Stakeholders_2743272.png" alt="Stakeholders" width="150"/>  </td></tr>
-  <tr><td>   </td><td> <img src="/docs/images/noun_directory_1421586.png" alt="Directory tool" width="150"/> </td><td> Web directory listing of available OPATs. </td></tr>
+<table style="font-weight:bold; border: 0;">
+  <tr><td> x </td><td> Milestones documented, project description, and initial OPAT schema and catalog drafts. </td><td style="text-align:right;"> <img src="/docs/images/noun_milestone_2525794.svg" alt="Milestones" width="100"/> </td></tr>
+  <tr><td> x </td><td> <img src="/docs/images/noun_yaml file document icon_2604949.svg" alt="YAML File" width="100"/> </td><td> Refine the OPAT schema and provide YAML to JSON conversion code.  </td></tr>
+  <tr><td> x </td><td> OPAT schema validation code. </td><td style="text-align:right;"> <img src="/docs/images/noun_construct validity_3159900.svg" alt="Validated File" width="100"/>  </td></tr>
+  <tr><td> x </td><td> <img src="/docs/images/noun_continuous deployment_2661276.svg" alt="Continuous Integreation" width="100"/> </td><td> Continuous integration for the validation code.  </td></tr>
+  <tr><td> x </td><td> Define outreach goals and targets. </td><td style="text-align:right;"> <img src="/docs/images/noun_Target_16812.svg" alt="Targets" width="100"/> </td></tr>
+  <tr><td> x </td><td> <img src="/docs/images/noun_html_2407184.svg" alt="Markdown" width="100"/> </td><td> Markdown output and themed HTML output. </td></tr>
+  <tr><td> x </td><td> Outreach and engagement with stakeholders. </td><td style="text-align:right;"> <img src="/docs/images/noun_Stakeholders_2743272.svg" alt="Stakeholders" width="100"/>  </td></tr>
+  <tr><td>   </td><td> <img src="/docs/images/noun_directory_1421586.svg" alt="Directory tool" width="100"/> </td><td> Web directory listing of available OPATs. </td></tr>
 </table>
 
 ## Optional Phases
