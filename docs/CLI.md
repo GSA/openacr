@@ -122,12 +122,14 @@ We also have a GitHub action called 'Drupal 9 OPAT output' that will generate th
 
 The tests also generates output that is stored in the `output` directory but is not tracked by git.
 
-### Stylesheet
+### USWDS Design System and stylesheets
 
-The HTML output also includes two stylesheets that provide a base styling for the OPAT:
+The HTML output comes with and uses styles from the [U.S. Web Design System (USWDS)](https://designsystem.digital.gov/).
 
-- `opat.css` is provided base styling.
-- `custom.css` provided to add any customizations to the base styling.
+The output also includes two stylesheets that provide additional styling for the OPAT:
+
+- `opat.css` has customization on top of the USWDS design system.
+- `custom.css` provided to add any additional customizations.
 
 ## OPATs
 

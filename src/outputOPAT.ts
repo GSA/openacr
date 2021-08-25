@@ -1,5 +1,6 @@
 import { ValidatorResult } from "./ValidatorResult";
 import * as fs from "fs";
+import * as fse from "fs-extra";
 import Handlebars from "handlebars";
 import path from "path";
 
@@ -127,6 +128,13 @@ export function outputOPAT(
       return {
         result: false,
         message: "Invalid: custom.css file could not be copied.",
+      };
+    });
+    // Copy USWDS design system files to the output directory.
+    fse.copy("node_modules/uswds/dist", `${dir}/uswds`, (err) => {
+      return {
+        result: false,
+        message: "Invalid: USWDS directory could not be copied.",
       };
     });
 

@@ -1,23 +1,7 @@
 /* Default OPAT styling */
 
 body {
-  padding: 2em 1em 2em 70px;
-  margin: 0;
-  font-family: sans-serif;
-  color: black;
-  background: white no-repeat fixed top left;
-}
-:link {
-  color: #00c;
-  background: transparent;
-}
-:visited {
-  color: #609;
-  background: transparent;
-}
-a:active {
-  color: #c00;
-  background: transparent;
+  padding-left: 35px;
 }
 
 .header-anchor {
@@ -27,63 +11,4 @@ a:active {
 
 :hover > .header-anchor {
   visibility: visible;
-}
-
-th,
-td {
-  font-family: sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-align: left;
-}
-h1,
-h2,
-h3 {
-  color: black;
-  background: white;
-}
-h1 {
-  font: 170% sans-serif;
-}
-h2 {
-  font: 140% sans-serif;
-}
-h3 {
-  font: 120% sans-serif;
-}
-h4 {
-  font: bold 100% sans-serif;
-}
-h5 {
-  font: italic 100% sans-serif;
-}
-h6 {
-  font: small-caps 100% sans-serif;
-}
-
-table th {
-  text-align: left;
-  background-color: #ccc;
-}
-
-table th,
-table td {
-  padding: 0.5em;
-  border: 1px solid #999;
-}
-
-footer {
-  font-size: 80%;
-  font-weight: 800;
-  top: 5px;
-  left: 100%;
-  margin-top: 50px;
-  border-top: 5px solid #171d22;
-  width: 90%;
 }
