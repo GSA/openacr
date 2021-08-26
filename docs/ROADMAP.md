@@ -3,19 +3,31 @@
 ## Baseline
 
 <table>
-  <tr><td> x </td><td> Milestones documented, project description, and initial OPAT schema and catalog drafts. </td><td> <img src="/docs/images/noun_milestone_2525794.svg"> </td></tr>
-  <tr><td> x </td><td> <img src="/docs/images/noun_yaml_file_document_2760448.svg"> </td><td> Refine the OPAT schema and provide YAML to JSON conversion code.  </td></tr>
-  <tr><td> x </td><td> OPAT schema validation code. </td><td> <img src="/docs/images/noun_construct_validity_3159900.svg">  </td></tr>
-  <tr><td> x </td><td> <img src="/docs/images/noun_continuous_deployment_2661276.svg"> </td><td> Continuous integration for the validation code.  </td></tr>
-  <tr><td> x </td><td> Define outreach goals and targets. </td><td> <img src="/docs/images/noun_Target_16812.svg"> </td></tr>
-  <tr><td> x </td><td> <img src="/docs/images/noun_html_2407184.svg"> </td><td> Markdown output and themed HTML output. </td></tr>
-  <tr><td> x </td><td> Outreach and engagement with stakeholders. </td><td> <img src="/docs/images/noun_Stakeholders_2743272.svg">  </td></tr>
-  <tr><td>   </td><td> <img src="/docs/images/noun_directory_1421586.svg"> </td><td> Web directory listing of available OPATs. </td></tr>
+  <tr><td> x </td><td> Milestones documented, project description written, and initial OPAT schema and catalog drafts published. </td><td> <img src="/docs/images/noun_milestone_2525794.svg"> </td></tr>
+  <tr><td> x </td><td> <img src="/docs/images/noun_yaml_file_document_2760448.svg"> </td><td> Create the highly structured, machine-readable document format. YAML was chosen as the markup language. Refine the YAML OPAT schema to support the requirements of the current Section 508 version of VPAT.  </td></tr>
+  <tr><td> x </td><td> Ensure that YAML documents conform to a defined structure. Build in validation code for the OPAT schema so that key elements are evaluated. </td><td> <img src="/docs/images/noun_construct_validity_3159900.svg">  </td></tr>
+  <tr><td> x </td><td> <img src="/docs/images/noun_continuous_deployment_2661276.svg"> </td><td> Build testing into the development so that errors are caught early in the process. Continuous integration should be used to validate the code and process.  </td></tr>
+  <tr><td> x </td><td> Define outreach goals and targets. This is a GSA project, but if successful it will have implications far outside of the GSA. The team will need to raise awareness about OPAT. </td><td> <img src="/docs/images/noun_Target_16812.svg"> </td></tr>
+  <tr><td> x </td><td> <img src="/docs/images/noun_html_2407184.svg"> </td><td> The OPAT document will be written in YAML, but this isn't an easily readable format. The YAML file must be converted to both Markdown and a themed HTML output. </td></tr>
+  <tr><td> x </td><td> Outreach and engagement will need to be done with stakeholders. Input will be needed for all roles of the procurement process. </td><td> <img src="/docs/images/noun_Stakeholders_2743272.svg">  </td></tr>
+  <tr><td> x </td><td> <img src="/docs/images/noun_directory_1421586.svg"> </td><td> Display a web directory listing of available OPATs. Users should be able to view a list of OPAT files as long as they are in a YAML format. These will need to be displayed in HTML in a format similar to the current VPAT. </td></tr>
 </table>
 
 ## Optional Phases
 
-- Coming soon
+<table>
+  <tr><td> - </td><td> Build process to submit vendor ACRs </td><td> </td></tr>
+  <tr><td> - </td><td>  </td><td> Proccess to get updates from vendors version control repositories (git) </td></tr>
+  <tr><td> - </td><td> OPAT Comparison Tool </td><td> </td></tr>
+  <tr><td> - </td><td>  </td><td> OPAT Editor </td></tr>
+  <tr><td> - </td><td> Procurement focused documentation </td><td> </td></tr>
+  <tr><td> - </td><td>  </td><td> Vendor/Author focused documentation </td></tr>
+  <tr><td> - </td><td> Agency Accessibility Procurement Workflow </td><td> </td></tr>
+  <tr><td> - </td><td>  </td><td> Support government-wide documentation refresh </td></tr>
+  <tr><td> - </td><td> Training </td><td> </td></tr>
+  <tr><td> - </td><td>  </td><td> Integrate with DART (Procurement Accessibility Requirements Tool) </td></tr>
+  <tr><td> - </td><td> Integrate with Accessibility Insights & WCAG-EM reporting </td><td> </td></tr>
+</table>
 
 ## Source images from the Noun Project
 
