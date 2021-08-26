@@ -3,14 +3,14 @@
 ## Baseline
 
 <table>
-  <tr><td> x </td><td> Milestones documented, project description, and initial OPAT schema and catalog drafts. </td><td> <img src="/docs/images/noun_milestone_2525794.svg" alt="Milestones" width="100"/> </td></tr>
-  <tr><td> x </td><td> <img src="/docs/images/noun_yaml_file_document_2760448.svg" alt="YAML File" width="100"/> </td><td> Refine the OPAT schema and provide YAML to JSON conversion code.  </td></tr>
-  <tr><td> x </td><td> OPAT schema validation code. </td><td> <img src="/docs/images/noun_construct_validity_3159900.svg" alt="Validated File" width="100"/>  </td></tr>
-  <tr><td> x </td><td> <img src="/docs/images/noun_continuous_deployment_2661276.svg" alt="Continuous Integreation" width="100"/> </td><td> Continuous integration for the validation code.  </td></tr>
-  <tr><td> x </td><td> Define outreach goals and targets. </td><td> <img src="/docs/images/noun_Target_16812.svg" alt="Targets" width="100"/> </td></tr>
-  <tr><td> x </td><td> <img src="/docs/images/noun_html_2407184.svg" alt="Markdown" width="100"/> </td><td> Markdown output and themed HTML output. </td></tr>
-  <tr><td> x </td><td> Outreach and engagement with stakeholders. </td><td> <img src="/docs/images/noun_Stakeholders_2743272.svg" alt="Stakeholders" width="100"/>  </td></tr>
-  <tr><td>   </td><td> <img src="/docs/images/noun_directory_1421586.svg" alt="Directory tool" width="100"/> </td><td> Web directory listing of available OPATs. </td></tr>
+  <tr><td> x </td><td> Milestones documented, project description, and initial OPAT schema and catalog drafts. </td><td> <img src="/docs/images/noun_milestone_2525794.svg"> </td></tr>
+  <tr><td> x </td><td> <img src="/docs/images/noun_yaml_file_document_2760448.svg"> </td><td> Refine the OPAT schema and provide YAML to JSON conversion code.  </td></tr>
+  <tr><td> x </td><td> OPAT schema validation code. </td><td> <img src="/docs/images/noun_construct_validity_3159900.svg">  </td></tr>
+  <tr><td> x </td><td> <img src="/docs/images/noun_continuous_deployment_2661276.svg"> </td><td> Continuous integration for the validation code.  </td></tr>
+  <tr><td> x </td><td> Define outreach goals and targets. </td><td> <img src="/docs/images/noun_Target_16812.svg"> </td></tr>
+  <tr><td> x </td><td> <img src="/docs/images/noun_html_2407184.svg"> </td><td> Markdown output and themed HTML output. </td></tr>
+  <tr><td> x </td><td> Outreach and engagement with stakeholders. </td><td> <img src="/docs/images/noun_Stakeholders_2743272.svg">  </td></tr>
+  <tr><td>   </td><td> <img src="/docs/images/noun_directory_1421586.svg"> </td><td> Web directory listing of available OPATs. </td></tr>
 </table>
 
 ## Optional Phases
