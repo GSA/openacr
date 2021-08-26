@@ -2,10 +2,10 @@
   <title>Stakeholders</title>
   <style>
     .shade1 {
-      fill: #4f4f4f;
+      fill: #171717;
     }
     .shade2 {
-      fill: #4a4a4a;
+      fill: #141414;
     }
     @media (prefers-color-scheme: dark) {
       .shade1 {
