@@ -23,7 +23,7 @@ notes: >
   Accessibility issues identified here will be documented as accessibility issues within existing issue queues. Any workarounds will be available within the issue queue until such time as the problem is resolved. The Authoring Tools components, 504, have not been reviewed in this assessment.
   Content is generally saved in a machine readable format that allows for it to be processed in many ways. All GovReady documentation is available through the web interface, so the focus is on the WCAG 2.0 Report.  Chapter 6 has been deleted as it is redundant. The documentation is being served through Read the Docs and with their default theme. Some accessibility issues have been inherited from this framework.
 evaluation_methods_used: >
-  Testing was done through a combination of manual and automated testing. We leveraged automated tools WebAim’s WAVE Toolbar and Microsoft’s Accessibility Insights. Accessibility Insights leverages Deque’s open source Axe accessibility engine. Manual testing was done using keyboard interactions and Apple’s VoiceOver. Chrome v84 was used as the browser for all tests. Unique patterns were identified and tested to see where barriers might exist. Extensive testing of the site’s functionality has been done based on this.
+  Testing was done through a combination of manual and automated testing. We leveraged automated tools WebAim's WAVE Toolbar and Microsoft's Accessibility Insights. Accessibility Insights leverages Deque's open source Axe accessibility engine. Manual testing was done using keyboard interactions and Apple's VoiceOver. Chrome v84 was used as the browser for all tests. Unique patterns were identified and tested to see where barriers might exist. Extensive testing of the site's functionality has been done based on this.
 legal_disclaimer: >
   The information herein is provided in good faith based on the analysis of the web application at the time of the review and does not represent a legally-binding claim. Please contact us to report any accessibility errors or conformance claim errors for re-evaluation and correction, if necessary.chapters:
   success_criteria_level_a:
@@ -307,7 +307,7 @@ legal_disclaimer: >
           - name: "electronic-docs"
             adherence:
               level: "partially-supports"
-              notes: Generally good, but Previous/Next buttons use titles to convey the title of the previous/next content on hover, but this isn’t accessible.
+              notes: Generally good, but Previous/Next buttons use titles to convey the title of the previous/next content on hover, but this isn't accessible.
           - name: "software"
             adherence:
               level: "not-applicable"
@@ -401,7 +401,7 @@ legal_disclaimer: >
           - name: "web"
             adherence:
               level: "partially-supports"
-              notes: Generally good. A few small instances of duplicate ID’s, tags not being closed, and empty headings. The Data Grid Question pattern includes edit/delete buttons that are not properly formed.
+              notes: Generally good. A few small instances of duplicate ID's, tags not being closed, and empty headings. The Data Grid Question pattern includes edit/delete buttons that are not properly formed.
           - name: "electronic-docs"
             adherence:
               level: "supports"
