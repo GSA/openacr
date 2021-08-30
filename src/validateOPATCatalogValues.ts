@@ -66,16 +66,18 @@ export function validateOPATCatalogValues(
                       } else {
                         // Component is valid.
                         if (catalog.terms) {
-                          if (
-                            !checkForCatalogTermDefinition(
-                              dataComponent.adherence.level,
-                              catalog.terms
-                            )
-                          ) {
-                            validationPassed = false;
-                            validationMessages.push(
-                              `term '${dataComponent.adherence.level}' in criteria '${dataCriteria.num}' has no definition in catalog '${catalog.title}'`
-                            );
+                          if (dataComponent.adherence) {
+                            if (
+                              !checkForCatalogTermDefinition(
+                                dataComponent.adherence.level,
+                                catalog.terms
+                              )
+                            ) {
+                              validationPassed = false;
+                              validationMessages.push(
+                                `term '${dataComponent.adherence.level}' in criteria '${dataCriteria.num}' has no definition in catalog '${catalog.title}'`
+                              );
+                            }
                           }
                         }
                       }
