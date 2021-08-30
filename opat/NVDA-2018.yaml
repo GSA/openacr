@@ -672,7 +672,7 @@ chapters:
           - name: "software"
             adherence:
               level: "supports"
-              notes: "In NVDA itself, there are no “breadcrumb trails” to follow."
+              notes: "In NVDA itself, there are no 'breadcrumb trails' to follow."
       - num: "2.4.9"
         components:
           - name: "web"
