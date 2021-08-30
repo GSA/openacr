@@ -229,7 +229,6 @@ chapters:
       - num: "2.4.1"
         components:
           - name: "web"
-          - name: "web"
             adherence:
               level: "supports"
               notes: ""
