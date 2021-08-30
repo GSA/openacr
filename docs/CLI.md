@@ -6,7 +6,7 @@ The OPAT command-line interface (CLI) is built in typescript. It takes an OPAT a
 
 ## Requirements
 
-You need the latest version of NPM installed.  There are multiple ways to download NPM but recommendations are to [use NVM](https://github.com/nvm-sh/nvm#install--update-script). More instructions on [updating NPM](https://www.geeksforgeeks.org/how-to-update-npm/) are also available. 
+You need the latest version of NPM installed. There are multiple ways to download NPM but recommendations are to [use NVM](https://github.com/nvm-sh/nvm#install--update-script). More instructions on [updating NPM](https://www.geeksforgeeks.org/how-to-update-npm/) are also available.
 
 ## Install
 
