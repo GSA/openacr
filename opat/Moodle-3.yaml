@@ -1,7 +1,7 @@
 title: Moodle Accessibility Conformance Report
 product:
   name: Moodle
-  version: 3.1
+  version: "3.1"
   description: The world's most customisable and trusted open-source learning management system.
 author:
   name: Sander Bangma & Jun Pataleta
