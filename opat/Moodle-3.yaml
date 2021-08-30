@@ -9,7 +9,7 @@ author:
   address: PO Box 303, West Perth WA 6872, Australia
   email: support@moodle.com
   website: https://docs.moodle.org
-notes:
+notes: ""
 evaluation_methods_used: >
   This conformance report is based on the results of an accessibility audit conducted by Web Key IT on a sample of 20 key pages. These pages were selected by Web Key IT and agreed on by Moodle as representative of the overall accessibility and functionality of the Moodle learning management system (LMS).
 
@@ -99,7 +99,7 @@ chapters:
           - name: "web"
             adherence:
               level: "supports"
-              notes:
+              notes: ""
           - name: "electronic-docs"
             adherence:
               level: "not-applicable"
@@ -114,7 +114,7 @@ chapters:
           - name: "web"
             adherence:
               level: "supports"
-              notes:
+              notes: ""
           - name: "electronic-docs"
             adherence:
               level: "not-applicable"
@@ -582,7 +582,7 @@ chapters:
             adherence:
               level: "not-applicable"
   success_criteria_level_aaa:
-    notes:
+    notes: ""
     criteria:
       - num: "1.2.6"
         components:
@@ -630,7 +630,7 @@ chapters:
           - name: "web"
             adherence:
               level: "supports"
-              notes:
+              notes: ""
       - num: "2.1.3"
         components:
           - name: "web"
@@ -656,7 +656,7 @@ chapters:
           - name: "web"
             adherence:
               level: "not-applicable"
-              notes:
+              notes: ""
       - num: "2.4.8"
         components:
           - name: "web"
