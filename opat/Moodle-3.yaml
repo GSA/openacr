@@ -2,7 +2,7 @@ title: Moodle Accessibility Conformance Report
 product:
   name: Moodle
   version: 3.1
-  description: The world’s most customisable and trusted open-source learning management system.
+  description: The world's most customisable and trusted open-source learning management system.
 author:
   name: Sander Bangma & Jun Pataleta
   company_name: Moodle Pty Ltd
@@ -204,7 +204,7 @@ chapters:
           - name: "web"
             adherence:
               level: "supports"
-              notes: Moodle’s rich text editor supports keyboard shortcuts. These shortcuts are only active when the user is in the editing area.
+              notes: Moodle's rich text editor supports keyboard shortcuts. These shortcuts are only active when the user is in the editing area.
           - name: "electronic-docs"
             adherence:
               level: "not-applicable"
@@ -449,15 +449,15 @@ chapters:
               level: "not-applicable"
       - num: "1.4.4"
         components:
-           - name: "web"
-             adherence:
-               level: "supports"
-           - name: "electronic-docs"
-             adherence:
-               level: "not-applicable"
-           - name: "software"
-             adherence:
-               level: "not-applicable"
+          - name: "web"
+            adherence:
+              level: "supports"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
       - num: "1.4.5"
         components:
           - name: "web"
@@ -688,7 +688,7 @@ chapters:
             adherence:
               level: "partially-supports"
               notes: >
-                Abbreviations in Moodle’s language strings such as KB, MB, PDF, Doc, etc., are not enclosed in <abbr> tags nor auto-linked to a dictionary definition.
+                Abbreviations in Moodle's language strings such as KB, MB, PDF, Doc, etc., are not enclosed in <abbr> tags nor auto-linked to a dictionary definition.
                 However, there is a mechanism that can enable auto-linking of user-generated content to a glossary.
       - num: "3.1.5"
         components:
@@ -696,7 +696,7 @@ chapters:
             adherence:
               level: "supports"
               notes: >
-                Moodle’s language strings in its user interface are aimed to be descriptive and concise.
+                Moodle's language strings in its user interface are aimed to be descriptive and concise.
                 It also has several language packs that can be downloaded and installed for sites that have children as the primary users.
       - num: "3.1.6"
         components:
