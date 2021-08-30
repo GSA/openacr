@@ -37,6 +37,10 @@ ACRs should be built with version control in a repository like GitHub. As with a
 
 Our documentation currently includes a [short summary of the project and our goals](/docs/GSA-OPAT-Public.md), a [short project roadmap](/docs/ROADMAP.md) and the [Command Line Documentation](/docs/CLI.md). If you want to experiment with this you will need to install this application on your computer.
 
+## Installation
+
+See the [Command Line Documentation](/docs/CLI.md#install).
+
 ## Contributing
 
 We encourage contributions to this project. See our CONTRIBUTING.md file for more information.
