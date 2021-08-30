@@ -191,15 +191,15 @@ chapters:
           - name: "authoring-tool"
             adherence:
               level: "not-applicable"
-#      WCAG 2.1
-#      - num: "2.1.4"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "supports"
-#          - name: "electronic-docs"
-#            adherence:
-#              level: "supports"
+      #      WCAG 2.1
+      #      - num: "2.1.4"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
       - num: "2.2.1"
         components:
           - name: "web"
@@ -310,39 +310,39 @@ chapters:
           - name: "authoring-tool"
             adherence:
               level: "not-applicable"
-#      WCAG 2.1
-#      - num: "2.5.1"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "supports"
-#          - name: "electronic-docs"
-#            adherence:
-#              level: "supports"
-#      - num: "2.5.2"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "supports"
-#          - name: "electronic-docs"
-#            adherence:
-#              level: "supports"
-#      - num: "2.5.3"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "supports"
-#          - name: "electronic-docs"
-#            adherence:
-#              level: "supports"
-#      - num: "2.5.4"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "supports"
-#          - name: "electronic-docs"
-#            adherence:
-#              level: "supports"
+      #      WCAG 2.1
+      #      - num: "2.5.1"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      #      - num: "2.5.2"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      #      - num: "2.5.3"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      #      - num: "2.5.4"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
       - num: "3.1.1"
         components:
           - name: "web"
@@ -484,22 +484,22 @@ chapters:
           - name: "authoring-tool"
             adherence:
               level: "not-applicable"
-#      - num: "1.3.4"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "supports"
-#          - name: "electronic-docs"
-#            adherence:
-#              level: "supports"
-#      - num: "1.3.5"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "supports"
-#          - name: "electronic-docs"
-#            adherence:
-#              level: "supports"
+      #      - num: "1.3.4"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      #      - num: "1.3.5"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
       - num: "1.4.3"
         components:
           - name: "web"
@@ -518,17 +518,17 @@ chapters:
               level: "not-applicable"
       - num: "1.4.4"
         components:
-           - name: "web"
-             adherence:
+          - name: "web"
+            adherence:
               level: "supports"
               notes: ""
-           - name: "electronic-docs"
-             adherence:
+          - name: "electronic-docs"
+            adherence:
               level: "supports"
               notes: ""
-           - name: "software"
-             adherence:
-               level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
       - num: "1.4.5"
         components:
           - name: "web"
@@ -545,39 +545,39 @@ chapters:
           - name: "authoring-tool"
             adherence:
               level: "not-applicable"
-#      WCAG 2.1
-#      - num: "1.4.10"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "supports"
-#          - name: "electronic-docs"
-#            adherence:
-#              level: "supports"
-#      - num: "1.4.11"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "supports"
-#          - name: "electronic-docs"
-#            adherence:
-#              level: "supports"
-#      - num: "1.4.12"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "supports"
-#          - name: "electronic-docs"
-#            adherence:
-#              level: "supports"
-#      - num: "1.4.13"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "supports"
-#          - name: "electronic-docs"
-#            adherence:
-#              level: "supports"
+      #      WCAG 2.1
+      #      - num: "1.4.10"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      #      - num: "1.4.11"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      #      - num: "1.4.12"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      #      - num: "1.4.13"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
       - num: "2.4.5"
         components:
           - name: "web"
@@ -656,8 +656,8 @@ chapters:
               notes: ""
           - name: "authoring-tool"
             adherence:
-                level: "supports"
-                notes: ""
+              level: "supports"
+              notes: ""
       - num: "3.2.4"
         components:
           - name: "web"
@@ -707,17 +707,17 @@ chapters:
             adherence:
               level: "supports"
               notes: ""
-#      - num: "4.1.3"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "not-applicable"
-#          - name: "electronic-docs"
-#            adherence:
-#              level: "not-applicable"
-#          - name: "authoring-tool"
-#            adherence:
-#              level: "not-applicable"
+  #      - num: "4.1.3"
+  #        components:
+  #          - name: "web"
+  #            adherence:
+  #              level: "not-applicable"
+  #          - name: "electronic-docs"
+  #            adherence:
+  #              level: "not-applicable"
+  #          - name: "authoring-tool"
+  #            adherence:
+  #              level: "not-applicable"
   success_criteria_level_aaa:
     notes: ""
     criteria:
@@ -741,12 +741,12 @@ chapters:
           - name: "web"
             adherence:
               level: "not-evaluated"
-#      WCAG 2.1
-#      - num: "1.3.6"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "not-evaluated"
+      #      WCAG 2.1
+      #      - num: "1.3.6"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "not-evaluated"
       - num: "1.4.6"
         components:
           - name: "web"
@@ -787,23 +787,23 @@ chapters:
           - name: "web"
             adherence:
               level: "not-evaluated"
-#      WCAG 2.1
-#      - num: "2.2.6"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "not-evaluated"
+      #      WCAG 2.1
+      #      - num: "2.2.6"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "not-evaluated"
       - num: "2.3.2"
         components:
           - name: "web"
             adherence:
               level: "not-evaluated"
-#      WCAG 2.1
-#      - num: "2.3.3"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "not-evaluated"
+      #      WCAG 2.1
+      #      - num: "2.3.3"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "not-evaluated"
       - num: "2.4.8"
         components:
           - name: "web"
@@ -819,17 +819,17 @@ chapters:
           - name: "web"
             adherence:
               level: "not-evaluated"
-#      WCAG 2.1
-#      - num: "2.5.5"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "not-evaluated"
-#      - num: "2.5.6"
-#        components:
-#          - name: "web"
-#            adherence:
-#              level: "not-evaluated"
+      #      WCAG 2.1
+      #      - num: "2.5.5"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "not-evaluated"
+      #      - num: "2.5.6"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "not-evaluated"
       - num: "3.1.3"
         components:
           - name: "web"
