@@ -286,7 +286,7 @@ chapters:
           - name: "web"
             adherence:
               level: "supports"
-              notes:  Focus ordering would be improved if action buttons were on the left of the screen.
+              notes: Focus ordering would be improved if action buttons were on the left of the screen.
           - name: "electronic-docs"
             adherence:
               level: "supports"
@@ -521,7 +521,7 @@ chapters:
           - name: "electronic-docs"
             adherence:
               level: "supports"
-              notes:  Pages are properly structured in a nice hierarchy. Also see 3.3.2.
+              notes: Pages are properly structured in a nice hierarchy. Also see 3.3.2.
           - name: "software"
             adherence:
               level: "not-applicable"
@@ -570,7 +570,7 @@ chapters:
           - name: "electronic-docs"
             adherence:
               level: "supports"
-              notes:  Pages are very consistent and navigation is easy to infer.
+              notes: Pages are very consistent and navigation is easy to infer.
           - name: "authoring-tool"
             adherence:
               level: "not-applicable"
