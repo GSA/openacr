@@ -31,7 +31,7 @@ chapters:
         components:
           - name: "web"
             adherence:
-              level: "Does Not Support"
+              level: "does-not-support"
               notes: There are currently no videos. Graphs are provided by a 3rd party tool. Many images do yet have proper alt text.
           - name: "electronic-docs"
             adherence:
