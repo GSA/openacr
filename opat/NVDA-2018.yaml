@@ -928,17 +928,6 @@ chapters:
           - name: "none"
             adherence:
               level: "not-applicable"
-      - num: "504.2.3"
-        components:
-          - name: "none"
-            adherence:
-              level: "not-applicable"
-      - num: "504.2.4"
-        components:
-          - name: "none"
-            adherence:
-              level: "not-applicable"
-              notes: ""
   # Chapter 6
   support_documentation_and_services:
     notes: ""
