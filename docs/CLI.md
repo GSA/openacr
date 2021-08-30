@@ -4,11 +4,23 @@
 
 The OPAT command-line interface (CLI) is built in typescript. It takes an OPAT and WCAG/508 (and other) criteria as YAML files as input and validates them using the OPAT defined schemas and OPAT catalog.
 
+## Requirements
+
+You need the latest version of NPM installed.  There are multiple ways to download NPM but recommendations are to [use NVM](https://github.com/nvm-sh/nvm#install--update-script). More instructions on [updating NPM](https://www.geeksforgeeks.org/how-to-update-npm/) are also available. 
+
 ## Install
 
-Install the dependencies with the following NPM command:
+Clone the GitHub repository and cd into that directory.
 
-```bash
+```
+git clone https://github.com/GSA/open-product-accessibility-template.git
+cd open-product-accessibility-template
+```
+
+Then install the dependencies with the following NPM command:
+
+```
+bash
 npm install
 ```
 
