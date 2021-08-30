@@ -1087,7 +1087,7 @@ chapters:
 #          - name: "none"
 #            adherence:
 #              level: "supports"
-#              notes: "NVDA itself does not contain “personal” data, however headphones or a separate audio channel may be used when the user determines they require additional privacy. Further speech may be turned off and Braille alone used if desired."
+#              notes: "NVDA itself does not contain "personal" data, however headphones or a separate audio channel may be used when the user determines they require additional privacy. Further speech may be turned off and Braille alone used if desired."
 #      - num: "5.1.3.10"
 #        components:
 #          - name: "none"
@@ -1201,7 +1201,7 @@ chapters:
 #          - name: "none"
 #            adherence:
 #              level: "supports"
-#              notes: "The NVDA key automatically becomes sticky when Windows’ Sticky Keys functionality is enabled."
+#              notes: "The NVDA key automatically becomes sticky when Windows' Sticky Keys functionality is enabled."
 #  Chapter 6
 #  en_301_549_ICT_with_2way_voice:
 #    notes: "Does not apply. NVDA does not provide two-way voice communication, however NVDA does make other software which provides two way voice communication accessible."
