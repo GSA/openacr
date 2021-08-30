@@ -31,7 +31,7 @@ evaluation_methods_used: >
 legal_disclaimer: The information herein is provided in good faith based on Moodle 3.10 at the time of the accessibility audit and does not represent a legally binding claim. Please [contact Moodle Pty Ltd](https://moodle.com/contact/) to report any accessibility errors or conformance claim errors for re-evaluation and correction, if necessary.
 chapters:
   success_criteria_level_a:
-    notes: "GovReady-Q is a web application and an authoring tool. As such the Software & Authoring Tool Notes are all included within the Web for the 'Conformance Level' and 'Remarks and Explanations'. There are some elements here that clearly fail WCAG 2.0 A."
+    notes: ""
     criteria:
       - num: "1.1.1"
         components:
@@ -777,13 +777,13 @@ chapters:
               level: "not-applicable"
   # Chapter 4
   hardware:
-    notes: "GovReady is a web application. Hardware accessibility criteria is not applicable."
+    notes: "Hardware accessibility criteria is not applicable."
   # Chapter 5
   software:
-    notes: "GovReady is a web application. Software accessibility criteria is not applicable."
+    notes: "Software accessibility criteria is not applicable."
   # Chapter 6
   support_documentation_and_services:
-    notes: "GovReady is a web application and all support documentation is delivered through the web. Additional documentation and services are not available."
+    notes: ""
     criteria:
       - num: "602.2"
         components:
