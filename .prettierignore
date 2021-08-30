@@ -6,4 +6,5 @@ tests/examples/*.markdown
 tests/examples/*.html
 tests/examples/uswds
 opat/drupal-9.*
+opat/govready-0.9.*
 opat/uswds
