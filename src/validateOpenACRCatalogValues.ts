@@ -78,6 +78,17 @@ export function validateOpenACRCatalogValues(
                               validationMessages.push(
                                 `term '${dataComponent.adherence.level}' in criteria '${dataCriteria.num}' has no definition in catalog '${catalog.title}'`
                               );
+                            } else {
+                              if (
+                                !checkForRequiredTermFields(
+                                  dataComponent.adherence
+                                )
+                              ) {
+                                validationPassed = false;
+                                validationMessages.push(
+                                  `level '${dataComponent.adherence.level}' for '${dataComponent.name}' in criteria '${dataCriteria.num}' requires 'notes'`
+                                );
+                              }
                             }
                           }
                         }
@@ -163,4 +174,17 @@ function checkForCatalogTermDefinition(name: string, terms: any): boolean {
   }
 
   return false;
+}
+
+function checkForRequiredTermFields(adherence: any): boolean {
+  if (
+    adherence.level === "supports" ||
+    adherence.level === "partially-supports"
+  ) {
+    if (typeof adherence.notes == "undefined" || adherence.notes == "") {
+      return false;
+    }
+  }
+
+  return true;
 }

@@ -310,6 +310,31 @@ describe("OpenACR CLI test validation", () => {
     });
   });
 
+  it("when passed an invalid missing notes for adherence example should return invalid message", () => {
+    const invalid = spawn(
+      cmd,
+      options.concat(
+        "tests/examples/invalid-missing-notes-for-adherence.yaml",
+        "-c",
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml"
+      )
+    );
+    const chunks = [];
+
+    invalid.stderr.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    invalid.stderr.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal(
+        "Invalid: level 'supports' for 'electronic-docs' in criteria '1.1.1' requires 'notes', " +
+          "level 'partially-supports' for 'web' in criteria '1.2.2' requires 'notes'\n"
+      );
+    });
+  });
+
   it("when passed an invalid components & criteria example should return invalid message", () => {
     const invalid = spawn(
       cmd,
