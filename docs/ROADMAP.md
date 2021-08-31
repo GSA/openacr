@@ -1,19 +1,19 @@
 # Roadmap
 
-## Baseline
+## Baseline - What We Have Done
 
 <table>
   <tr><td> x </td><td> <img src="/docs/images/noun_milestone_2525794.svg"> </td><td> Milestones documented, project description written, and initial OPAT schema and catalog drafts published. </td></tr>
-  <tr><td> x </td><td> <img src="/docs/images/noun_yaml_file_document_2760448.svg"> </td><td> Create the highly structured, machine-readable document format. YAML was chosen as the markup language. Refine the YAML OPAT schema to support the requirements of the current Section 508 version of VPAT. </td></tr>
-  <tr><td> x </td><td> <img src="/docs/images/noun_construct_validity_3159900.svg"> </td><td> Ensure that YAML documents conform to a defined structure. Build in validation code for the OPAT schema so that key elements are evaluated. </td></tr>
-  <tr><td> x </td><td> <img src="/docs/images/noun_continuous_deployment_2661276.svg"> </td><td> Build testing into the development so that errors are caught early in the process. Continuous integration should be used to validate the code and process. </td></tr>
+  <tr><td> x </td><td> <img src="/docs/images/noun_yaml_file_document_2760448.svg"> </td><td> Create the <a href="/catalog/2.4-edition-wcag-2.0-508-en.yaml">highly structured, machine-readable document format</a>. YAML was chosen as the markup language. Refine the YAML OPAT schema to support the requirements of the current Section 508 version of VPAT (ie. the example with <a href="/opat/drupal-9.yaml">Drupal 9</a>). </td></tr>
+  <tr><td> x </td><td> <img src="/docs/images/noun_construct_validity_3159900.svg"> </td><td> Ensure that YAML documents conform to a defined <a href="/schema/opat-0.1.0.json">structure</a> and <a href="/schema/opat-catalog-0.1.0.json">catalog</a>. Build in validation code for the OPAT schema so that key elements are evaluated. </td></tr>
+  <tr><td> x </td><td> <img src="/docs/images/noun_continuous_deployment_2661276.svg"> </td><td> <a href="/tests">Build testing into the development</a> so that errors are caught early in the process. Continuous integration should be used to validate the code and process. </td></tr>
   <tr><td> x </td><td> <img src="/docs/images/noun_Target_16812.svg"> </td><td> Define outreach goals and targets. This is a GSA project, but if successful it will have implications far outside of the GSA. The team will need to raise awareness about OPAT. </td></tr>
-  <tr><td> x </td><td> <img src="/docs/images/noun_html_2407184.svg"> </td><td> The OPAT document will be written in YAML, but this isn't an easily readable format. The YAML file must be converted to both Markdown and a themed HTML output. </td></tr>
+  <tr><td> x </td><td> <img src="/docs/images/noun_html_2407184.svg"> </td><td> The OPAT document will be written in YAML, but this isn't an easily readable format. The YAML file must be <a href="/opat">converted to both Markdown and a themed HTML output</a>. </td></tr>
   <tr><td> x </td><td> <img src="/docs/images/noun_Stakeholders_2743272.svg">  </td><td> Outreach and engagement will need to be done with stakeholders. Input will be needed for all roles of the procurement process. </td></tr>
-  <tr><td> x </td><td> <img src="/docs/images/noun_directory_1421586.svg"> </td><td> Display a web directory listing of available OPATs. Users should be able to view a list of OPAT files as long as they are in a YAML format. These will need to be displayed in HTML in a format similar to the current VPAT. </td></tr>
+  <tr><td> x </td><td> <img src="/docs/images/noun_directory_1421586.svg"> </td><td> Display a web directory listing of available OPATs. Users should be able to view a <a href="https://federalist-02947dd8-86df-467a-b2af-4c5b94c5b1f0.app.cloud.gov/site/gsa/opat-website/opat/">list of OPAT files</a> as long as they are in a YAML format. These will need to be displayed in HTML in a format similar to the current VPAT. </td></tr>
 </table>
 
-## Optional Phases
+## Optional Phases - Where We Are Going
 
 <table>
   <tr><td> - </td><td> <img src="/docs/images/noun_submit_1862632.svg"> </td><td> Build process to submit vendor ACRs. Vendors need to be able to submit new ACRs to the GSA. </td></tr>
