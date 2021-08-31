@@ -39,3 +39,13 @@
 - https://thenounproject.com/search/?q=html&i=2407184
 - https://thenounproject.com/search/?q=stakeholders&i=2743272
 - https://thenounproject.com/search/?q=directory&i=1421586
+- https://thenounproject.com/search/?i=1862632
+- https://thenounproject.com/search/?i=3878124
+- https://thenounproject.com/search/?i=3858497
+- https://thenounproject.com/search/?i=3159052
+- https://thenounproject.com/search/?i=3718566
+- https://thenounproject.com/search/?i=2003967
+- https://thenounproject.com/search/?i=3870491
+- https://thenounproject.com/search/?i=488088
+- https://thenounproject.com/search/?i=3324740
+
