@@ -366,6 +366,10 @@ chapters:
         handle: Audio Description Controls
         alt_id: "503.4.2"
         components: [none]
+      - id: "504.2"
+        handle: Content Creation or Editing
+        alt_id: "504.2"
+        components: [none]
       - id: "504.2.1"
         handle: Preservation of Information Provided for Accessibility in Format Conversion
         alt_id: "504.2.1"
@@ -389,6 +393,10 @@ chapters:
       - id: "602.2"
         handle: Accessibility and Compatibility Features
         alt_id: "602.2"
+        components: [none]
+      - id: "602.3"
+        handle: Electronic Support Documentation
+        alt_id: "602.3"
         components: [none]
       - id: "602.4"
         handle: Alternate Formats for Non-Electronic Support Documentation
