@@ -31,21 +31,21 @@
 
 ## Source images from the Noun Project
 
-- https://thenounproject.com/search/?q=milestones&i=2525794
-- https://thenounproject.com/search/?q=yaml&i=2760448
-- https://thenounproject.com/search/?q=valid&i=3159900
-- https://thenounproject.com/search/?q=Continuous+integration&i=2661276
-- https://thenounproject.com/search/?q=targets&i=16812
-- https://thenounproject.com/search/?q=html&i=2407184
-- https://thenounproject.com/search/?q=stakeholders&i=2743272
-- https://thenounproject.com/search/?q=directory&i=1421586
-- https://thenounproject.com/search/?i=1862632
-- https://thenounproject.com/search/?i=3878124
-- https://thenounproject.com/search/?i=3858497
-- https://thenounproject.com/search/?i=3159052
-- https://thenounproject.com/search/?i=3718566
-- https://thenounproject.com/search/?i=2003967
-- https://thenounproject.com/search/?i=3870491
-- https://thenounproject.com/search/?i=488088
-- https://thenounproject.com/search/?i=3324740
+- https://thenounproject.com/search/?q=accessibility&i=2525794
+- https://thenounproject.com/search/?q=accessibility&i=2760448
+- https://thenounproject.com/search/?q=accessibility&i=3159900
+- https://thenounproject.com/search/?q=accessibility&i=2661276
+- https://thenounproject.com/search/?q=accessibility&i=16812
+- https://thenounproject.com/search/?q=accessibility&i=2407184
+- https://thenounproject.com/search/?q=accessibility&i=2743272
+- https://thenounproject.com/search/?q=accessibility&i=1421586
+- https://thenounproject.com/search/?q=accessibility&i=1862632
+- https://thenounproject.com/search/?q=accessibility&i=3878124
+- https://thenounproject.com/search/?q=accessibility&i=3858497
+- https://thenounproject.com/search/?q=accessibility&i=3159052
+- https://thenounproject.com/search/?q=accessibility&i=3718566
+- https://thenounproject.com/search/?q=accessibility&i=2003967
+- https://thenounproject.com/search/?q=accessibility&i=3870491
+- https://thenounproject.com/search/?q=accessibility&i=488088
+- https://thenounproject.com/search/?q=accessibility&i=3324740
 
