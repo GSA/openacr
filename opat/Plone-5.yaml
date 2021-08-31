@@ -14,7 +14,6 @@ evaluation_methods_used: Testing with assistive technologies, testing is based o
 legal_disclaimer: ""
 chapters:
   success_criteria_level_a:
-    notes: "GovReady-Q is a web application and an authoring tool. As such the Software & Authoring Tool Notes are all included within the Web for the 'Conformance Level' and 'Remarks and Explanations'. There are some elements here that clearly fail WCAG 2.0 A."
     criteria:
       - num: "1.1.1"
         components:
