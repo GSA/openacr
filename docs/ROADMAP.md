@@ -16,17 +16,17 @@
 ## Optional Phases
 
 <table>
-  <tr><td> - </td><td>  </td><td> Build process to submit vendor ACRs </td></tr>
-  <tr><td> - </td><td>  </td><td> Proccess to get updates from vendors version control repositories (git) </td></tr>
-  <tr><td> - </td><td>  </td><td> OPAT Comparison Tool </td></tr>
-  <tr><td> - </td><td>  </td><td> OPAT Editor </td></tr>
-  <tr><td> - </td><td>  </td><td> Procurement focused documentation </td></tr>
-  <tr><td> - </td><td>  </td><td> Vendor/Author focused documentation </td></tr>
-  <tr><td> - </td><td>  </td><td> Agency Accessibility Procurement Workflow </td></tr>
-  <tr><td> - </td><td>  </td><td> Support government-wide documentation refresh </td></tr>
-  <tr><td> - </td><td>  </td><td> Training </td></tr>
-  <tr><td> - </td><td>  </td><td> Integrate with DART (Procurement Accessibility Requirements Tool) </td></tr>
-  <tr><td> - </td><td>  </td><td> Integrate with Accessibility Insights & WCAG-EM reporting </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_submit_1862632.svg"> </td><td> Build process to submit vendor ACRs </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_update_3878124.svg"> </td><td> Proccess to get updates from vendors version control repositories (git) </td></tr>
+  <tr><td> - </td><td> <img src="/docs/imagesnoun_comparison_3858497.svg/"> </td><td> OPAT Comparison Tool </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_text editor_2245371.svg"> </td><td> OPAT Editor </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_documentation_3159052.svg"> </td><td> Procurement focused documentation </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_documentation_3718566.svg"> </td><td> Vendor/Author focused documentation </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_Workflow_1326943.svg"> </td><td> Agency Accessibility Procurement Workflow </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_Legal Studies_2003967.svg"> </td><td> Support government-wide documentation refresh </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_training_3870491.svg"> </td><td> Training </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_Accessibility_488088.svg"> </td><td> Integrate with DART (Procurement Accessibility Requirements Tool) </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_www_3324740.svg"> </td><td> Integrate with Accessibility Insights & WCAG-EM reporting </td></tr>
 </table>
 
 ## Source images from the Noun Project
