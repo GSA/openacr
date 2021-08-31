@@ -16,17 +16,17 @@
 ## Optional Phases
 
 <table>
-  <tr><td> - </td><td> <img src="/docs/images/noun_submit_1862632.svg"> </td><td> Build process to submit vendor ACRs </td></tr>
-  <tr><td> - </td><td> <img src="/docs/images/noun_update_3878124.svg"> </td><td> Proccess to get updates from vendors version control repositories (git) </td></tr>
-  <tr><td> - </td><td> <img src="/docs/images/noun_comparison_3858497.svg/"> </td><td> OPAT Comparison Tool </td></tr>
-  <tr><td> - </td><td> <img src="/docs/images/noun_text editor_2245371.svg"> </td><td> OPAT Editor </td></tr>
-  <tr><td> - </td><td> <img src="/docs/images/noun_documentation_3159052.svg"> </td><td> Procurement focused documentation </td></tr>
-  <tr><td> - </td><td> <img src="/docs/images/noun_documentation_3718566.svg"> </td><td> Vendor/Author focused documentation </td></tr>
-  <tr><td> - </td><td> <img src="/docs/images/noun_Workflow_1326943.svg"> </td><td> Agency Accessibility Procurement Workflow </td></tr>
-  <tr><td> - </td><td> <img src="/docs/images/noun_Legal Studies_2003967.svg"> </td><td> Support government-wide documentation refresh </td></tr>
-  <tr><td> - </td><td> <img src="/docs/images/noun_training_3870491.svg"> </td><td> Training </td></tr>
-  <tr><td> - </td><td> <img src="/docs/images/noun_Accessibility_488088.svg"> </td><td> Integrate with DART (Procurement Accessibility Requirements Tool) </td></tr>
-  <tr><td> - </td><td> <img src="/docs/images/noun_www_3324740.svg"> </td><td> Integrate with Accessibility Insights & WCAG-EM reporting </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_submit_1862632.svg"> </td><td> Build process to submit vendor ACRs. Vendors need to be able to submit new ACRs to the GSA. </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_update_3878124.svg"> </td><td> Proccess to get updates from vendors version control repositories (git). Updates need to be pulled from the source from key government ICT suppliers. </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_comparison_3858497.svg/"> </td><td> OPAT Comparison Tool - it should be simple to compare OPATS to understand relative accessibility.  </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_text editor_2245371.svg"> </td><td> OPAT Editor - Editors need to be able to create, load, update and save OPAT documents in a YAML format. </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_documentation_3159052.svg"> </td><td> Procurement focused documentation. Procurement teams in government need to understand how OPAT changes their workflow. </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_documentation_3718566.svg"> </td><td> Vendor/Author focused documentation. Authors of OPATs need to understand how they should write and maintain the ACRS. </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_Workflow_1326943.svg"> </td><td> Agency Accessibility Procurement Workflow. The flow of an ACR through the GSA should be clearly understood. </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_Legal Studies_2003967.svg"> </td><td> Support government-wide documentation refresh. Current documentation is with VPAT but would need to be updated. </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_training_3870491.svg"> </td><td> Training will need to be required for government and possibly vendors. </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_Accessibility_488088.svg"> </td><td> Integrate with DART (Procurement Accessibility Requirements Tool). Procurement officers should be able to easily re-create requirements to evaluate. </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_www_3324740.svg"> </td><td> Integrate with Microsoft's Accessibility Insights & WCAG-EM reporting. Creating ACRs should be consistent and easy to implement. </td></tr>
 </table>
 
 ## Source images from the Noun Project
