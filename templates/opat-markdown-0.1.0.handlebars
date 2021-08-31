@@ -86,3 +86,15 @@ Notes: {{data-category.notes}}
 ## Legal Disclaimer{{#if vendor.company_name}} ({{vendor.company_name}}){{/if}}
 {{legal_disclaimer}}
 {{/if}}
+
+{{#if repository}}
+## OPAT Repository
+{{repository}}
+{{/if}}
+
+{{#if related_opats}}
+## Related OPATs
+{{#each related_opats as |related-opat|}}
+* {{related-opat.url}} ({{related-opat.type}})
+{{/each}}
+{{/if}}

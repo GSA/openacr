@@ -8,7 +8,7 @@ Drupal 9.1
 
 ## Report Date
 
-8/16/2021
+8/31/2021
 
 ## Product Description
 
@@ -174,3 +174,11 @@ Notes: Drupal is a web application and all support documentation is delivered th
 ## Legal Disclaimer
 
 The information herein is provided in good faith based on the analysis of the web application at the time of the review and does not represent a legally-binding claim. Please contact us to report any accessibility errors or conformance claim errors for re-evaluation and correction, if necessary.
+
+## OPAT Repository
+
+https://github.com/GSA/open-product-accessibility-template/blob/main/opat/drupal-9.yaml
+
+## Related OPATs
+
+- https://ckeditor.com/docs/ckeditor4/latest/guide/dev_section508.html (secondary)

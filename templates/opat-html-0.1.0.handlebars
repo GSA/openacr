@@ -187,8 +187,30 @@
         {{/each}}
       {{/each}}
       {{#if legal_disclaimer}}
-        <h2>Legal Disclaimer{{#if vendor.company_name}} ({{vendor.company_name}}){{/if}}</h2>
+        <h2 id="legal-disclaimer">
+          <a href="#legal-disclaimer" aria-hidden="true" class="header-anchor">#</a>
+          Legal Disclaimer{{#if vendor.company_name}} ({{vendor.company_name}}){{/if}}
+        </h2>
         {{legal_disclaimer}}
+      {{/if}}
+      {{#if repository}}
+        <h2 id="opat-repository">
+          <a href="#opat-repository" aria-hidden="true" class="header-anchor">#</a>
+          OPAT Repository
+        </h2>
+        <a href="{{repository}}">{{repository}}</a>
+      {{/if}}
+
+      {{#if related_opats}}
+        <h2 id="related-opats">
+          <a href="#related-opats" aria-hidden="true" class="header-anchor">#</a>
+          Related OPATs
+        </h2>
+        <ul>
+          {{#each related_opats as |related-opat|}}
+            <li><a href="{{related-opat.url}}">{{related-opat.url}} ({{related-opat.type}})</a></li>
+          {{/each}}
+        </ul>
       {{/if}}
     </div>
   </main>
