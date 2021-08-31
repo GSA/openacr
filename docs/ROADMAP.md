@@ -18,7 +18,7 @@
 <table>
   <tr><td> - </td><td> <img src="/docs/images/noun_submit_1862632.svg"> </td><td> Build process to submit vendor ACRs </td></tr>
   <tr><td> - </td><td> <img src="/docs/images/noun_update_3878124.svg"> </td><td> Proccess to get updates from vendors version control repositories (git) </td></tr>
-  <tr><td> - </td><td> <img src="/docs/imagesnoun_comparison_3858497.svg/"> </td><td> OPAT Comparison Tool </td></tr>
+  <tr><td> - </td><td> <img src="/docs/images/noun_comparison_3858497.svg/"> </td><td> OPAT Comparison Tool </td></tr>
   <tr><td> - </td><td> <img src="/docs/images/noun_text editor_2245371.svg"> </td><td> OPAT Editor </td></tr>
   <tr><td> - </td><td> <img src="/docs/images/noun_documentation_3159052.svg"> </td><td> Procurement focused documentation </td></tr>
   <tr><td> - </td><td> <img src="/docs/images/noun_documentation_3718566.svg"> </td><td> Vendor/Author focused documentation </td></tr>
