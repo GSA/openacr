@@ -48,6 +48,27 @@
       "description": "Area for any legal disclaimer text required by your organization.",
       "type": "string"
     },
+    "repository": {
+      "description": "Specify the place where your VPAT lives. This is helpful for people who want to contribute.",
+      "type": "string"
+    },
+    "related_opats": {
+      "description": "Link to related OPATs. E.g. CKEditor is a library used by Drupal and both have ACRs.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "description": "Link to related OPAT.",
+            "type": "string"
+          },
+          "type": {
+            "description": "Specify whether the link is a primary or secondary.",
+            "enum": ["primary", "secondary"]
+          }
+        }
+      }
+    },
     "chapters": {
       "type": "object",
       "properties": {

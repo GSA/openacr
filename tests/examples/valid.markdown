@@ -6,7 +6,7 @@ Based on VPAT® 2.4 Revised Section 508 Edition
 Lorem Ipsum 1.1
 
 ## Report Date
-8/11/2021
+8/31/2021
 
 ## Product Description
 Fake text
@@ -76,3 +76,6 @@ Notes: Lorem Ipsum is a web application. Hardware accessibility criteria is not 
 
 ## Legal Disclaimer (Fake text Inc.)
 The information herein is provided in good faith based on the analysis of the web application at the time of the review and does not represent a legally-binding claim. Please contact us to report any accessibility errors or conformance claim errors for re-evaluation and correction, if necessary.
+
+## OPAT Repository
+https://github.com/GSA/open-product-accessibility-template/blob/main/tests/examples/valid.yaml
