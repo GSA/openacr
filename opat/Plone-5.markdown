@@ -8,7 +8,7 @@ Plone 5.2
 
 ## Report Date
 
-2021-08-30
+8/31/2021
 
 ## Product Description
 
@@ -54,8 +54,6 @@ The terms used in the Conformance Level information are defined as follows:
 ## WCAG 2.0 Report
 
 ### Table 1: Success Criteria, Level A
-
-Notes: GovReady-Q is a web application and an authoring tool. As such the Software &amp; Authoring Tool Notes are all included within the Web for the &#x27;Conformance Level&#x27; and &#x27;Remarks and Explanations&#x27;. There are some elements here that clearly fail WCAG 2.0 A.
 
 | Criteria                                                                                                           | Conformance Level                                                                                                                                                    | Remarks and Explanations                                                                                                                                  |
 | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
