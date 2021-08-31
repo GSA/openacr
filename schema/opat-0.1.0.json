@@ -49,11 +49,15 @@
       "type": "string"
     },
     "repository": {
-      "description": "Specify the place where your VPAT lives. This is helpful for people who want to contribute.",
+      "description": "Specify the place where your OPAT lives. This is helpful for people who want to contribute.",
+      "type": "string"
+    },
+    "feedback": {
+      "description": "The url to your project's issue tracker to which issues should be reported. These are helpful for people who encounter issues with your OPAT.",
       "type": "string"
     },
     "related_opats": {
-      "description": "Link to related OPATs. E.g. CKEditor is a library used by Drupal and both have ACRs.",
+      "description": "Link to related OPATs. E.g. CKEditor is a library used by Drupal and both have OPATs.",
       "type": "array",
       "items": {
         "type": "object",

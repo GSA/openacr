@@ -175,9 +175,13 @@ Notes: Drupal is a web application and all support documentation is delivered th
 
 The information herein is provided in good faith based on the analysis of the web application at the time of the review and does not represent a legally-binding claim. Please contact us to report any accessibility errors or conformance claim errors for re-evaluation and correction, if necessary.
 
-## OPAT Repository
+## Repository
 
 https://github.com/GSA/open-product-accessibility-template/blob/main/opat/drupal-9.yaml
+
+## Feedback
+
+https://www.drupal.org/project/issues/drupal
 
 ## Related OPATs
 

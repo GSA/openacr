@@ -77,5 +77,8 @@ Notes: Lorem Ipsum is a web application. Hardware accessibility criteria is not 
 ## Legal Disclaimer (Fake text Inc.)
 The information herein is provided in good faith based on the analysis of the web application at the time of the review and does not represent a legally-binding claim. Please contact us to report any accessibility errors or conformance claim errors for re-evaluation and correction, if necessary.
 
-## OPAT Repository
+## Repository
 https://github.com/GSA/open-product-accessibility-template/blob/main/tests/examples/valid.yaml
+
+## Feedback
+https://github.com/GSA/open-product-accessibility-template/issues
