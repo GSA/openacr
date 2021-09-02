@@ -6,7 +6,7 @@ Based on VPAT® 2.4 Revised Section 508 Edition
 Lorem Ipsum 1.1
 
 ## Report Date
-8/31/2021
+9/2/2021
 
 ## Product Description
 Fake text
@@ -82,3 +82,10 @@ https://github.com/GSA/open-product-accessibility-template/blob/main/tests/examp
 
 ## Feedback
 https://github.com/GSA/open-product-accessibility-template/issues
+
+
+## OPAT copyright
+
+[OPAT](https://github.com/GSA/open-product-accessibility-template) is a format maintained by the [GSA](https://gsa.gov/). The content is the responsibility of the author.
+
+This content is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode).

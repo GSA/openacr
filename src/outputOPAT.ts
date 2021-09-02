@@ -3,6 +3,7 @@ import * as fs from "fs";
 import * as fse from "fs-extra";
 import Handlebars from "handlebars";
 import path from "path";
+import spdxLicenseList from "spdx-license-list";
 
 export function outputOPAT(
   data: any,
@@ -13,6 +14,7 @@ export function outputOPAT(
   try {
     const templateString = fs.readFileSync(handlebarTemplate).toString();
     const template = Handlebars.compile(templateString);
+    const fileExt = outputFile.split(".").pop();
 
     if (catalogData) {
       data.catalog = catalogData;
@@ -65,7 +67,6 @@ export function outputOPAT(
         for (const component of catalogData.components) {
           if (component.id === componentId) {
             if (component.label != "") {
-              const fileExt = outputFile.split(".").pop();
               if (fileExt === "html") {
                 return new Handlebars.SafeString(
                   `<strong>${component.label}</strong>: `
@@ -98,6 +99,32 @@ export function outputOPAT(
         result.push(`<li>${catalogChapters.label}</li>`);
       }
       return new Handlebars.SafeString(`<ul>${result.join("")}</ul>`);
+    });
+
+    Handlebars.registerHelper("opatLicense", function () {
+      if (data.license) {
+        if (spdxLicenseList[data.license]) {
+          if (fileExt === "html") {
+            return new Handlebars.SafeString(
+              `<a href="${spdxLicenseList[data.license].url}">${
+                spdxLicenseList[data.license].name
+              }</a>`
+            );
+          } else {
+            return `[${spdxLicenseList[data.license].name}](${
+              spdxLicenseList[data.license].url
+            })`;
+          }
+        }
+      } else {
+        if (fileExt === "html") {
+          return new Handlebars.SafeString(
+            `<a href="${spdxLicenseList["CC-BY-4.0"].url}">${spdxLicenseList["CC-BY-4.0"].name}</a>`
+          );
+        } else {
+          return `[${spdxLicenseList["CC-BY-4.0"].name}](${spdxLicenseList["CC-BY-4.0"].url})`;
+        }
+      }
     });
 
     const result = template(data);

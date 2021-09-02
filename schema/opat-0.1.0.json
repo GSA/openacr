@@ -28,6 +28,10 @@
       },
       "required": ["name"]
     },
+    "report_date": {
+      "description": "Report date. If none is provided today's date is used as default in any output.",
+      "type": "string"
+    },
     "author": {
       "description": "Author information.",
       "$ref": "#/definitions/contact"
@@ -47,6 +51,10 @@
     "legal_disclaimer": {
       "description": "Area for any legal disclaimer text required by your organization.",
       "type": "string"
+    },
+    "license": {
+      "type": "string",
+      "description": "You should specify a license for your OPAT so that people know how they are permitted to use it, and any restrictions you're placing on it. Must be a valid SPDX license see https://spdx.org/licenses/. If none is provided 'CC-BY-4.0' is assumed default in any output."
     },
     "repository": {
       "description": "Specify the place where your OPAT lives. This is helpful for people who want to contribute.",

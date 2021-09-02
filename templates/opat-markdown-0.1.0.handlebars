@@ -6,7 +6,11 @@ Based on {{catalog.title}}
 {{product.name}}{{#if product.version}} {{product.version}}{{/if}}
 
 ## Report Date
+{{#if report_date}}
+{{report_date}}
+{{else}}
 {{ now }}
+{{/if}}
 
 {{#if product.description}}
 ## Product Description
@@ -103,3 +107,9 @@ Notes: {{data-category.notes}}
 * {{related-opat.url}} ({{related-opat.type}})
 {{/each}}
 {{/if}}
+
+## Copyright
+
+[OPAT](https://github.com/GSA/open-product-accessibility-template) is a format maintained by the [GSA](https://gsa.gov/). The content is the responsibility of the author.
+
+This content is licensed under a {{opatLicense}}.
