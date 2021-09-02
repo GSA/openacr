@@ -103,18 +103,16 @@ export function outputOPAT(
 
     Handlebars.registerHelper("opatLicense", function () {
       if (data.license) {
-        if (spdxLicenseList[data.license]) {
-          if (fileExt === "html") {
-            return new Handlebars.SafeString(
-              `<a href="${spdxLicenseList[data.license].url}">${
-                spdxLicenseList[data.license].name
-              }</a>`
-            );
-          } else {
-            return `[${spdxLicenseList[data.license].name}](${
-              spdxLicenseList[data.license].url
-            })`;
-          }
+        if (fileExt === "html") {
+          return new Handlebars.SafeString(
+            `<a href="${spdxLicenseList[data.license].url}">${
+              spdxLicenseList[data.license].name
+            }</a>`
+          );
+        } else {
+          return `[${spdxLicenseList[data.license].name}](${
+            spdxLicenseList[data.license].url
+          })`;
         }
       } else {
         if (fileExt === "html") {
