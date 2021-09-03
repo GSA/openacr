@@ -186,3 +186,9 @@ https://www.drupal.org/project/issues/drupal
 ## Related OPATs
 
 - https://ckeditor.com/docs/ckeditor4/latest/guide/dev_section508.html (secondary)
+
+## Copyright
+
+[OPAT](https://github.com/GSA/open-product-accessibility-template) is a format maintained by the [GSA](https://gsa.gov/). The content is the responsibility of the author.
+
+This content is licensed under a [GNU General Public License v2.0 or later](https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html).

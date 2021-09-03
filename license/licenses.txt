@@ -456,8 +456,8 @@
 ├─ argparse@1.0.10
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/nodeca/argparse
-│  ├─ path: node_modules/@eslint/eslintrc/node_modules/argparse
-│  └─ licenseFile: node_modules/@eslint/eslintrc/node_modules/argparse/LICENSE
+│  ├─ path: node_modules/@istanbuljs/load-nyc-config/node_modules/argparse
+│  └─ licenseFile: node_modules/@istanbuljs/load-nyc-config/node_modules/argparse/LICENSE
 ├─ argparse@2.0.1
 │  ├─ licenses: Python-2.0
 │  ├─ repository: https://github.com/nodeca/argparse
@@ -1727,8 +1727,8 @@
 │  ├─ repository: https://github.com/nodeca/js-yaml
 │  ├─ publisher: Vladimir Zapparov
 │  ├─ email: dervus.grim@gmail.com
-│  ├─ path: node_modules/@eslint/eslintrc/node_modules/js-yaml
-│  └─ licenseFile: node_modules/@eslint/eslintrc/node_modules/js-yaml/LICENSE
+│  ├─ path: node_modules/@istanbuljs/load-nyc-config/node_modules/js-yaml
+│  └─ licenseFile: node_modules/@istanbuljs/load-nyc-config/node_modules/js-yaml/LICENSE
 ├─ js-yaml@4.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/nodeca/js-yaml
@@ -2687,6 +2687,14 @@
 │  ├─ url: https://github.com/shinnn
 │  ├─ path: node_modules/spdx-license-ids
 │  └─ licenseFile: node_modules/spdx-license-ids/README.md
+├─ spdx-license-list@6.4.0
+│  ├─ licenses: CC0-1.0
+│  ├─ repository: https://github.com/sindresorhus/spdx-license-list
+│  ├─ publisher: Sindre Sorhus
+│  ├─ email: sindresorhus@gmail.com
+│  ├─ url: https://sindresorhus.com
+│  ├─ path: node_modules/spdx-license-list
+│  └─ licenseFile: node_modules/spdx-license-list/license
 ├─ spdx-ranges@2.1.1
 │  ├─ licenses: (MIT AND CC-BY-3.0)
 │  ├─ repository: https://github.com/kemitchell/spdx-ranges.js

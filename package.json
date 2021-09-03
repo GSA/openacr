@@ -30,6 +30,7 @@
     "handlebars": "^4.7.7",
     "js-yaml": "^4.1.0",
     "pa11y-ci": "^2.4.2",
+    "spdx-license-list": "^6.4.0",
     "uswds": "^2.12.1",
     "yargs": "^17.0.1"
   },
