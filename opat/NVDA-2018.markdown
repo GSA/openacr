@@ -8,7 +8,7 @@ NVDA 2018.2.1
 
 ## Report Date
 
-2021-08-30
+9/3/2021
 
 ## Product Description
 
@@ -184,3 +184,9 @@ Notes: Hardware accessibility criteria is not applicable.
 | [602.4 Alternate Formats for Non-Electronic Support Documentation](https://www.access-board.gov/ict/#602.4) | <ul><li>Supports</li> </ul> | <ul> </ul>               |
 | [603.2 Information on Accessibility and Compatibility Features](https://www.access-board.gov/ict/#603.2)    | <ul><li>Supports</li> </ul> | <ul> </ul>               |
 | [603.3 Accommodation of Communication Needs](https://www.access-board.gov/ict/#603.3)                       | <ul><li>Supports</li> </ul> | <ul> </ul>               |
+
+## Copyright
+
+[OPAT](https://github.com/GSA/open-product-accessibility-template) is a format maintained by the [GSA](https://gsa.gov/). The content is the responsibility of the author.
+
+This content is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode).

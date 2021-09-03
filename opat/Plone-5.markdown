@@ -8,7 +8,7 @@ Plone 5.2
 
 ## Report Date
 
-8/31/2021
+9/3/2021
 
 ## Product Description
 
@@ -156,3 +156,9 @@ Notes: Software accessibility criteria is not applicable.
 ### Chapter 6: Support Documentation and Services
 
 Notes: Additional documentation and services are not available.
+
+## Copyright
+
+[OPAT](https://github.com/GSA/open-product-accessibility-template) is a format maintained by the [GSA](https://gsa.gov/). The content is the responsibility of the author.
+
+This content is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode).
