@@ -8,7 +8,7 @@ GovReady 0.9.1.36
 
 ## Report Date
 
-8/30/2021
+9/3/2021
 
 ## Product Description
 
@@ -155,3 +155,9 @@ Notes: GovReady is a web application and all support documentation is delivered 
 ## Legal Disclaimer (GovReady PBC)
 
 The information herein is provided in good faith based on the analysis of the web application at the time of the review and does not represent a legally-binding claim. Please contact us to report any accessibility errors or conformance claim errors for re-evaluation and correction, if necessary.
+
+## Copyright
+
+[OPAT](https://github.com/GSA/open-product-accessibility-template) is a format maintained by the [GSA](https://gsa.gov/). The content is the responsibility of the author.
+
+This content is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode).

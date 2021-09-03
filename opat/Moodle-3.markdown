@@ -8,7 +8,7 @@ Moodle 3.1
 
 ## Report Date
 
-8/31/2021
+9/3/2021
 
 ## Product Description
 
@@ -177,3 +177,9 @@ Notes: Software accessibility criteria is not applicable.
 ## Legal Disclaimer
 
 The information herein is provided in good faith based on Moodle 3.10 at the time of the accessibility audit and does not represent a legally binding claim. Please [contact Moodle Pty Ltd](https://moodle.com/contact/) to report any accessibility errors or conformance claim errors for re-evaluation and correction, if necessary.
+
+## Copyright
+
+[OPAT](https://github.com/GSA/open-product-accessibility-template) is a format maintained by the [GSA](https://gsa.gov/). The content is the responsibility of the author.
+
+This content is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode).
