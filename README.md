@@ -43,8 +43,8 @@ See the [Command Line Documentation](/docs/CLI.md#install).
 
 ## Contributing
 
-We encourage contributions to this project. See our CONTRIBUTING.md file for more information.
+We encourage contributions to this project. See our [CONTRIBUTING.md](CONTRIBUTING.md) file for more information.
 
 ## License
 
-By default, this falls under a public domain license. Some libraries included here may include other licenses (see [licenses.txt](license/licenses.txt)). See our LICENSE.md file for more information.
+By default, this falls under a public domain license. Some libraries included here may include other licenses (see [licenses.txt](license/licenses.txt)). See our [LICENSE.md](LICENSE.md) file for more information.
