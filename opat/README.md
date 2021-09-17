@@ -6,7 +6,7 @@ The index.html file provides a data table output for the reports. To add a new O
 
 ## Other-git-repos.md
 
-Vendors and authors of ACRs may want to include a link to their central git repository rather than sending them to the GSA. It is much easier if ACRs are made publicly available and downloadable via an open git repository. 
+Vendors and authors of ACRs may want to include a link to their central git repository rather than sending them to the GSA. It is much easier if ACRs are made publicly available and downloadable via an open git repository.
 
 ## Validating YAML files and creating HTML/Markdown
 
