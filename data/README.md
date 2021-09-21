@@ -16,4 +16,5 @@
 - mapping-wcag-to-fpc.yaml ia YAML file from the CSV above
 
 ## [Mapping of Trusted Tester ID's, WCAG SC & FPC ID's](https://github.com/Section508Coordinators/ACRT/blob/master/Resources/TT5-ID-FPC_Mapping_07-15-20.xlsx)
+
 - TT5-ID-FPC_Mapping_07-15-20.csv a CSF file exported from the original Excel file published by the [Section508Coordinators](https://github.com/Section508Coordinators)
