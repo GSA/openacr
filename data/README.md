@@ -10,7 +10,10 @@
 
 - wcag21-short-en.yaml is a YAML coversion of the [JSON WCAG 2.1 file](https://github.com/w3c/wcag-em-report-tool/blob/master/app/wcag2spec/wcag2-en.json)
 
-## [Mapping of WCAG 2.0 to Functional Performance Criteria](https://www.section508.gov/content/mapping-wcag-to-fpc)
+## [Mapping of WCAG 2.0 to Functional Performance Criteria (FPC)](https://www.section508.gov/content/mapping-wcag-to-fpc)
 
 - mapping-wcag-to-fpc.csv is a CSV file from the HTML table with an alt_id added for engagement with WCAG references
 - mapping-wcag-to-fpc.yaml ia YAML file from the CSV above
+
+## [Mapping of Trusted Tester ID's, WCAG SC & FPC ID's](https://github.com/Section508Coordinators/ACRT/blob/master/Resources/TT5-ID-FPC_Mapping_07-15-20.xlsx)
+- TT5-ID-FPC_Mapping_07-15-20.csv a CSF file exported from the original Excel file published by the [Section508Coordinators](https://github.com/Section508Coordinators)
