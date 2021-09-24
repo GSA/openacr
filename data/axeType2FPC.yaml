@@ -1,0 +1,27 @@
+- id: attention-deficit
+  axe: "Attention Deficit"
+- id: blind
+  axe: "Blind"
+  fpc: "Without Vision"
+- id: cognitive
+  axe: "Cognitive"
+  fpc: "Limited Language Cognitive and Learning Abilities"
+- id: colorblindness
+  axe: "Colorblindness"
+  fpc: "Without Perception of Color"
+- id: deafblind
+  axe: "Deafblind"
+- id: dyslexia
+  axe: "Dyslexia"
+- id: low-vision
+  axe: "Low Vision"
+  fpc: "Limited Vision"
+- id: mobility
+  axe: "Mobility"
+  fpc: "Limited Manipulation"
+- id: keyboard-only
+  axe: "Sighted Keyboard Users"
+- id: deaf
+  fpc: "Without Hearing"
+- id: hard-of-hearing
+  fpc: "Limited Hearing"
