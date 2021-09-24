@@ -25,4 +25,5 @@
 - wcagLinks.yaml is a conversion of wcagLinks.json from [Purple Hats](https://github.com/GovTechSG/purple-hats)
 
 ## Comparison of axeTypes & Functional Performance Criteria (FPC)
+
 - axeType2FPC.yaml - Needed an easier way to compare and reference disability types
