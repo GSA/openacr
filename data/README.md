@@ -18,3 +18,8 @@
 ## [Mapping of Trusted Tester ID's, WCAG SC & FPC ID's](https://github.com/Section508Coordinators/ACRT/blob/master/Resources/TT5-ID-FPC_Mapping_07-15-20.xlsx)
 
 - TT5-ID-FPC_Mapping_07-15-20.csv a CSF file exported from the original Excel file published by the [Section508Coordinators](https://github.com/Section508Coordinators)
+
+## [Purple Hats axeTypes and WCAG Links](https://github.com/GovTechSG/purple-hats/tree/master/constants)
+
+- axeTypes.yaml is a conversion of axeTypes.json from [Purple Hats](https://github.com/GovTechSG/purple-hats)
+- wcagLinks.yaml is a conversion of wcagLinks.json from [Purple Hats](https://github.com/GovTechSG/purple-hats)
