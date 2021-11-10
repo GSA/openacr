@@ -1,6 +1,6 @@
 {
   "name": "open-product-accessibility-template",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "OPAT schema validator and output generator",
   "repository": "GSA/open-product-accessibility-template",
   "license": "CC0-1.0",
