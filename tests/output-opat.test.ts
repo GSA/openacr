@@ -402,11 +402,11 @@ describe("Output", () => {
     result = outputOPAT(
       validJSONData,
       validJSONCatalog1,
-      "output/opat.markdown"
+      "output/openacr.markdown"
     );
     expect(result.result).to.equal(true);
     expect(result.message).to.equal(
-      "Valid and output generated at output/opat.markdown!"
+      "Valid and output generated at output/openacr.markdown!"
     );
   });
 
@@ -450,7 +450,7 @@ describe("Output", () => {
     result = outputOPAT(
       validJSONData,
       validJSONCatalog1,
-      "output/opat.markdown",
+      "output/openacr.markdown",
       ""
     );
     expect(result.result).to.equal(false);
@@ -461,7 +461,7 @@ describe("Output", () => {
     result = outputOPAT(
       validJSONData,
       validJSONCatalog1,
-      "does-not-exist-folder/opat.markdown"
+      "does-not-exist-folder/openacr.markdown"
     );
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(

@@ -32,7 +32,7 @@ describe("OPAT CLI test output", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Valid and output generated at output/opat.markdown!\n"
+        "Valid and output generated at output/openacr.markdown!\n"
       );
     });
   });
@@ -56,7 +56,7 @@ describe("OPAT CLI test output", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Valid and output generated at output/opat.markdown!\n"
+        "Valid and output generated at output/openacr.markdown!\n"
       );
     });
   });
@@ -80,7 +80,7 @@ describe("OPAT CLI test output", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Valid and output generated at output/opat.markdown!\n"
+        "Valid and output generated at output/openacr.markdown!\n"
       );
     });
   });

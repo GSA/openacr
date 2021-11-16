@@ -85,7 +85,7 @@ if (fs.existsSync(argv.file)) {
 
     // Output OPAT as markdown if command is set to 'output' and is valid.
     if (argv._.includes("output") && result.result) {
-      const outputFile = argv.outputFile ?? "output/opat.markdown";
+      const outputFile = argv.outputFile ?? "output/openacr.markdown";
       const fileExt = outputFile.split(".").pop();
       if (fileExt === "html") {
         result = outputOPAT(
