@@ -177,7 +177,7 @@ The information herein is provided in good faith based on the analysis of the we
 
 ## Repository
 
-https://github.com/GSA/open-product-accessibility-template/blob/main/opat/drupal-9.yaml
+https://github.com/GSA/openacr/blob/main/openacr/drupal-9.yaml
 
 ## Feedback
 

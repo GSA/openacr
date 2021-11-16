@@ -8,7 +8,7 @@ Plone 5.2
 
 ## Report Date
 
-9/3/2021
+11/16/2021
 
 ## Product Description
 
@@ -159,6 +159,6 @@ Notes: Additional documentation and services are not available.
 
 ## Copyright
 
-[OPAT](https://github.com/GSA/open-product-accessibility-template) is a format maintained by the [GSA](https://gsa.gov/). The content is the responsibility of the author.
+[OpenACR](https://github.com/GSA/openacr) is a format maintained by the [GSA](https://gsa.gov/). The content is the responsibility of the author.
 
 This content is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode).

@@ -8,7 +8,7 @@ GovReady 0.9.1.36
 
 ## Report Date
 
-9/3/2021
+11/16/2021
 
 ## Product Description
 
@@ -158,6 +158,6 @@ The information herein is provided in good faith based on the analysis of the we
 
 ## Copyright
 
-[OPAT](https://github.com/GSA/open-product-accessibility-template) is a format maintained by the [GSA](https://gsa.gov/). The content is the responsibility of the author.
+[OpenACR](https://github.com/GSA/openacr) is a format maintained by the [GSA](https://gsa.gov/). The content is the responsibility of the author.
 
 This content is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode).

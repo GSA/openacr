@@ -210,6 +210,11 @@
 │  ├─ repository: https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.walk
 │  ├─ path: node_modules/@nodelib/fs.walk
 │  └─ licenseFile: node_modules/@nodelib/fs.walk/LICENSE
+├─ @openacr/openacr@0.1.0
+│  ├─ licenses: CC0-1.0
+│  ├─ repository: https://github.com/GSA/openacr
+│  ├─ path:
+│  └─ licenseFile: LICENSE.md
 ├─ @testdeck/core@0.1.2
 │  ├─ licenses: Apache-2.0
 │  ├─ repository: https://github.com/testdeck/testdeck
@@ -456,8 +461,8 @@
 ├─ argparse@1.0.10
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/nodeca/argparse
-│  ├─ path: node_modules/@istanbuljs/load-nyc-config/node_modules/argparse
-│  └─ licenseFile: node_modules/@istanbuljs/load-nyc-config/node_modules/argparse/LICENSE
+│  ├─ path: node_modules/@eslint/eslintrc/node_modules/argparse
+│  └─ licenseFile: node_modules/@eslint/eslintrc/node_modules/argparse/LICENSE
 ├─ argparse@2.0.1
 │  ├─ licenses: Python-2.0
 │  ├─ repository: https://github.com/nodeca/argparse
@@ -1727,8 +1732,8 @@
 │  ├─ repository: https://github.com/nodeca/js-yaml
 │  ├─ publisher: Vladimir Zapparov
 │  ├─ email: dervus.grim@gmail.com
-│  ├─ path: node_modules/@istanbuljs/load-nyc-config/node_modules/js-yaml
-│  └─ licenseFile: node_modules/@istanbuljs/load-nyc-config/node_modules/js-yaml/LICENSE
+│  ├─ path: node_modules/@eslint/eslintrc/node_modules/js-yaml
+│  └─ licenseFile: node_modules/@eslint/eslintrc/node_modules/js-yaml/LICENSE
 ├─ js-yaml@4.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/nodeca/js-yaml
@@ -2070,11 +2075,6 @@
 │  ├─ url: http://blog.izs.me/
 │  ├─ path: node_modules/once
 │  └─ licenseFile: node_modules/once/LICENSE
-├─ open-product-accessibility-template@1.0.0
-│  ├─ licenses: CC0-1.0
-│  ├─ repository: https://github.com/GSA/open-product-accessibility-template
-│  ├─ path:
-│  └─ licenseFile: LICENSE.md
 ├─ optionator@0.9.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/gkz/optionator

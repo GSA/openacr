@@ -1,6 +1,6 @@
 # OpenACR
 
-[![tests](https://github.com/GSA/open-product-accessibility-template/actions/workflows/tests.yaml/badge.svg)](https://github.com/GSA/open-product-accessibility-template/actions/workflows/tests.yaml)
+[![tests](https://github.com/GSA/openacr/actions/workflows/tests.yaml/badge.svg)](https://github.com/GSA/openacr/actions/workflows/tests.yaml)
 
 ## Context
 
