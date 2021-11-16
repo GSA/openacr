@@ -1,12 +1,12 @@
-// src/opat.ts
+// src/openacr.ts
 
 /*
  * Install dependencies command:
  *   npm install
  *
  * Help commands:
- *   npx ts-node src/opat.ts --help
- *   npx ts-node src/opat.ts validate --help
+ *   npx ts-node src/openacr.ts --help
+ *   npx ts-node src/openacr.ts validate --help
  *
  * Example commands:
  *   See docs/CLI.md
@@ -21,7 +21,7 @@ import { validateOPATCatalogValues } from "./validateOPATCatalogValues";
 import { outputOPAT } from "./outputOPAT";
 
 const argv = yargs
-  .command("validate", "Validate OPAT content", function (yargs) {
+  .command("validate", "Validate OpenACR content", function (yargs) {
     return yargs.options({
       file: {
         type: "string",
@@ -37,7 +37,7 @@ const argv = yargs
       },
     });
   })
-  .command("output", "Output OPAT in markdown", function (yargs) {
+  .command("output", "Output OpenACR in markdown", function (yargs) {
     return yargs.options({
       file: {
         type: "string",
@@ -70,7 +70,7 @@ if (fs.existsSync(argv.file)) {
     const data = yaml.load(fs.readFileSync(argv.file).toString());
     result = validateOPAT(data, schema);
     let catalog: any;
-    // Validate OPAT against provided catalog.
+    // Validate OpenACR against provided catalog.
     if (result.result && argv.catalogFile && fs.existsSync(argv.catalogFile)) {
       try {
         catalog = yaml.load(fs.readFileSync(argv.catalogFile).toString());
@@ -83,7 +83,7 @@ if (fs.existsSync(argv.file)) {
       }
     }
 
-    // Output OPAT as markdown if command is set to 'output' and is valid.
+    // Output OpenACR as markdown if command is set to 'output' and is valid.
     if (argv._.includes("output") && result.result) {
       const outputFile = argv.outputFile ?? "output/openacr.markdown";
       const fileExt = outputFile.split(".").pop();

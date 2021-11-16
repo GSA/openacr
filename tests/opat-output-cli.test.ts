@@ -3,7 +3,7 @@ import { spawn } from "child_process";
 
 describe("OPAT CLI test output", () => {
   const cmd = "npx";
-  const options = ["ts-node", "src/opat.ts", "output", "-f"];
+  const options = ["ts-node", "src/openacr.ts", "output", "-f"];
 
   it("when passed no file should return invalid message", () => {
     const invalid = spawn(cmd, options);
