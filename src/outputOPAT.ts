@@ -9,7 +9,7 @@ export function outputOPAT(
   data: any,
   catalogData: any,
   outputFile: string,
-  handlebarTemplate = "templates/opat-markdown-0.1.0.handlebars"
+  handlebarTemplate = "templates/openacr-markdown-0.1.0.handlebars"
 ): ValidatorResult {
   try {
     const templateString = fs.readFileSync(handlebarTemplate).toString();

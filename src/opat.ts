@@ -92,7 +92,7 @@ if (fs.existsSync(argv.file)) {
           data,
           catalog,
           outputFile,
-          "templates/opat-html-0.1.0.handlebars"
+          "templates/openacr-html-0.1.0.handlebars"
         );
       } else {
         result = outputOPAT(data, catalog, outputFile);
