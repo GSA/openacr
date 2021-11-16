@@ -7,7 +7,7 @@
 ## Overview
 
 The OpenACR (previously known as Open Product Accessibility Template or OPAT) is machine-readable documentation of an information and communications technology (ICT) product's accessibility conformance.
-Based on Section 508 requirements and Web Content Accessibility Guidelines (WCAG) 2.0 conformance, OpenACR is based on the Information Technology Industry Council's Voluntary Product Accessibility Template (VPATⓇ). 
+Based on Section 508 requirements and Web Content Accessibility Guidelines (WCAG) 2.0 conformance, OpenACR is based on the Information Technology Industry Council's Voluntary Product Accessibility Template (VPATⓇ).
 
 ## Context
 
