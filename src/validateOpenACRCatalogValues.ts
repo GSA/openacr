@@ -1,9 +1,9 @@
-// src/validateOPATCatalogValues.ts
+// src/validateOpenACRCatalogValues.ts
 
 import { ValidatorResult } from "./ValidatorResult";
 import { validateCatalog } from "./validateCatalog";
 
-export function validateOPATCatalogValues(
+export function validateOpenACRCatalogValues(
   data: any,
   catalog: any
 ): ValidatorResult {

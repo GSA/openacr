@@ -17,7 +17,7 @@ import yargs from "yargs";
 import fs from "fs";
 import yaml from "js-yaml";
 import { ValidatorResult } from "./ValidatorResult";
-import { validateOPATCatalogValues } from "./validateOPATCatalogValues";
+import { validateOpenACRCatalogValues } from "./validateOpenACRCatalogValues";
 import { outputOpenACR } from "./outputOpenACR";
 
 const argv = yargs
@@ -74,7 +74,7 @@ if (fs.existsSync(argv.file)) {
     if (result.result && argv.catalogFile && fs.existsSync(argv.catalogFile)) {
       try {
         catalog = yaml.load(fs.readFileSync(argv.catalogFile).toString());
-        result = validateOPATCatalogValues(data, catalog);
+        result = validateOpenACRCatalogValues(data, catalog);
       } catch {
         result = {
           result: false,
