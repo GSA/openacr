@@ -1,19 +1,19 @@
 <img align="right" alt="GSA Logo" src="/docs/images/nav-logo.png"/>
 
-# Open Product Accessibility Template (OPAT)
+# OpenACR
 
 **Machine-readable technology product accessibility conformance**
 
 ## Overview
 
-The Open Product Accessibility Template (OPAT) is machine-readable documentation of an information and communications technology (ICT) product's accessibility conformance.
-Based on Section 508 requirements and Web Content Accessibility Guidelines (WCAG) 2.0 conformance, OPAT is based on the Information Technology Industry Council's Voluntary Product Accessibility Template (VPATⓇ).
+The OpenACR (previously known as Open Product Accessibility Template or OPAT) is machine-readable documentation of an information and communications technology (ICT) product's accessibility conformance.
+Based on Section 508 requirements and Web Content Accessibility Guidelines (WCAG) 2.0 conformance, OpenACR is based on the Information Technology Industry Council's Voluntary Product Accessibility Template (VPATⓇ).
 
 ## Context
 
 The U.S. General Services Administration (GSA) has observed that federal agencies face challenges in delivering accessible services to people with disabilities.
 To ensure ICT products used by the government are accessible, vendors must submit accessibility conformance reports (ACR) to demonstrate their products meet Section 508 requirements. However, these ACR documents (in the form of the VPAT) are static reports rather than evidence of continuous, timely adherence.
-The OPAT project will solve this by developing a template that enables machine-readable documentation —which thereby enables ongoing, automated accessibility testing. This pilot project will deliver a minimum viable product (MVP) with the intention of expanding and refining it over time.
+The OpenACR project will solve this by developing a template that enables machine-readable documentation —which thereby enables ongoing, automated accessibility testing. This pilot project will deliver a minimum viable product (MVP) with the intention of expanding and refining it over time.
 
 ## Vision
 
@@ -26,7 +26,7 @@ To empower organizations to make better informed decisions about accessibility w
 
 ## Approach
 
-The team is building OPAT to be an open standard. The ACR will be written in YAML because it is more human-readable and it allows us to include comments. A JSON Schema will be used to define core data structures and a catalog to list the elements needed.
+The team is building OpenACR to be an open standard. The ACR will be written in YAML because it is more human-readable and it allows us to include comments. A JSON Schema will be used to define core data structures and a catalog to list the elements needed.
 Most users will interact with the ACR as accessible HyperText Markup Language (HTML) files. These will be generated from the YAML files by a JavaScript tool that extracts the content into structured HTML. The style elements will then be added by CSS, which vendors can customize for branding.
 The repositories will be built on a Git repository like GitHub so that version control is included. Authors can write the compliance report as YAML files manually, or use a WYSIWYG editor.
 
@@ -62,9 +62,9 @@ Released under [Creative Commons](https://creativecommons.org/publicdomain/zero/
 ## Learn more
 
 - Website
-- [Repository](http://github.com/GSA/open-product-accessibility-template)
-- [Project board](https://github.com/GSA/open-product-accessibility-template/projects/1)
-- [Milestones](https://github.com/GSA/open-product-accessibility-template/milestones)
+- [Repository](http://github.com/GSA/openacr)
+- [Project board](https://github.com/GSA/openacr/projects/1)
+- [Milestones](https://github.com/GSA/openacr/milestones)
 
 ## Contact
 
