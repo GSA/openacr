@@ -1,4 +1,4 @@
-# Open Product Accessibility Template (OPAT)
+# OpenACR
 
 [![tests](https://github.com/GSA/open-product-accessibility-template/actions/workflows/tests.yaml/badge.svg)](https://github.com/GSA/open-product-accessibility-template/actions/workflows/tests.yaml)
 
@@ -20,12 +20,12 @@ By making accessibility conformance reports machine-readable:
 
 ## Approach
 
-The OPAT team is building this ACR to be an open standard.
+The OpenACR team is building this ACR to be an open standard.
 Starting with the [ITI VPAT®](https://www.itic.org/policy/accessibility/vpat) framework. VPATs® are well recognized. We will start with [VPAT 2.4Rev 508 (March 07, 2020)](https://www.itic.org/dotAsset/b282ab06-0ab2-4540-adc2-78698058dfc3.doc) (Word) which allows us to build on WCAG 2.0 specifications for the initial framework.
 
 A digital ACR needs to be highly structured, to be machine-readable. Once it is machine-readable, we will be able to extend its functionality. We looked at a few formats, but settled on YAML because it allowed the text to be more human-readable. YAML stands for Yet Another Markup Language. Earlier attempts at producing a machine-readable VPAT used Extensible Markup Language (XML).
 
-Although YAML is the foundation of OPAT, the expectation isn't for people to read. Users will read the HTML or [Markdown](https://guides.github.com/features/mastering-markdown/) output of the YAML file in a document that looks much like a VPAT.
+Although YAML is the foundation of OpenACR, the expectation isn't for people to read. Users will read the HTML or [Markdown](https://guides.github.com/features/mastering-markdown/) output of the YAML file in a document that looks much like a VPAT.
 
 Editors could write their results in YAML, but we expect most will use an editor. We are looking at creating a tool based on [WCAG-EM](https://www.w3.org/WAI/eval/report-tool/#!/).
 
@@ -38,6 +38,8 @@ ACRs should be built with version control in a repository like GitHub. As with a
 ## Documentation
 
 Our documentation currently includes a [short summary of the project and our goals](/docs/GSA-OPAT-Public.md), a [short project roadmap](/docs/ROADMAP.md) and the [Command Line Documentation](/docs/CLI.md). If you want to experiment with this you will need to install this application on your computer.
+
+Initially this project was released under the name Open Product Accessibility Template (OPAT). In November 2021, this was renamed to OpenACR.
 
 ## Installation
 
