@@ -1,4 +1,4 @@
-name: OPAT output accessibility testing
+name: OpenACR output accessibility testing
 
 on:
   pull_request:

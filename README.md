@@ -37,7 +37,7 @@ ACRs should be built with version control in a repository like GitHub. As with a
 
 ## Documentation
 
-Our documentation currently includes a [short summary of the project and our goals](/docs/GSA-OPAT-Public.md), a [short project roadmap](/docs/ROADMAP.md) and the [Command Line Documentation](/docs/CLI.md). If you want to experiment with this you will need to install this application on your computer.
+Our documentation currently includes a [short summary of the project and our goals](/docs/GSA-OpenACR-Public.md), a [short project roadmap](/docs/ROADMAP.md) and the [Command Line Documentation](/docs/CLI.md). If you want to experiment with this you will need to install this application on your computer.
 
 Initially this project was released under the name Open Product Accessibility Template (OPAT). In November 2021, this was renamed to OpenACR.
 
