@@ -408,7 +408,7 @@ describe("OpenACR CLI test validation", () => {
     const valid = spawn(
       cmd,
       options.concat(
-        "opat/drupal-9.yaml",
+        "openacr/drupal-9.yaml",
         "-c",
         "catalog/2.4-edition-wcag-2.0-508-en.yaml"
       )
