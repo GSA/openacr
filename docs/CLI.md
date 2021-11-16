@@ -144,7 +144,7 @@ The output also includes two stylesheets that provide additional styling for the
 
 ## OpenACRs
 
-Current example OpenACRs that are tracked in this repository are in the `opopenacrat` directory. The directory includes a data table representation of all the OpenACRs with the ability to search them.
+Current example OpenACRs that are tracked in this repository are in the `openacr` directory. The directory includes a data table representation of all the OpenACRs with the ability to search them.
 
 OpenACRs:
 
