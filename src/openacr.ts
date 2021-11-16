@@ -12,7 +12,7 @@
  *   See docs/CLI.md
  */
 
-import { validateOPAT } from "./validateOPAT";
+import { validateOpenACR } from "./validateOpenACR";
 import yargs from "yargs";
 import fs from "fs";
 import yaml from "js-yaml";
@@ -68,7 +68,7 @@ const schema = "openacr-0.1.0.json";
 if (fs.existsSync(argv.file)) {
   try {
     const data = yaml.load(fs.readFileSync(argv.file).toString());
-    result = validateOPAT(data, schema);
+    result = validateOpenACR(data, schema);
     let catalog: any;
     // Validate OpenACR against provided catalog.
     if (result.result && argv.catalogFile && fs.existsSync(argv.catalogFile)) {

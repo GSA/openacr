@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { validateOPAT } from "../src/validateOPAT";
+import { validateOpenACR } from "../src/validateOpenACR";
 
 describe("Validate OPAT metadata", () => {
   const validSchema = "openacr-0.1.0.json";
@@ -32,12 +32,12 @@ describe("Validate OPAT metadata", () => {
   let result = null;
 
   it("pass valid JSON with valid schema should return valid message", () => {
-    result = validateOPAT(validJSON, validSchema);
+    result = validateOpenACR(validJSON, validSchema);
     expect(result.result).to.equal(true);
     expect(result.message).to.equal("Valid!");
   });
   it("pass invalid JSON with valid schema should return invalid JSON message", () => {
-    result = validateOPAT(invalidJSON1, validSchema);
+    result = validateOpenACR(invalidJSON1, validSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(
       "Invalid: data must have required property 'title', " +
@@ -46,17 +46,17 @@ describe("Validate OPAT metadata", () => {
     );
   });
   it("pass valid JSON with invalid schema should return invalid schema message", () => {
-    result = validateOPAT(validJSON, invalidSchema);
+    result = validateOpenACR(validJSON, invalidSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal("Invalid: schema is not valid");
   });
   it("pass invalid JSON with invalid schema should return invalid schema message", () => {
-    result = validateOPAT(invalidJSON1, invalidSchema);
+    result = validateOpenACR(invalidJSON1, invalidSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal("Invalid: schema is not valid");
   });
   it("pass invalid license with valid schema should return invalid license message", () => {
-    result = validateOPAT(invalidJSON2, validSchema);
+    result = validateOpenACR(invalidJSON2, validSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(
       "Invalid: license 'INVALID' is not a recognized SPDX license (https://spdx.org/licenses/)"

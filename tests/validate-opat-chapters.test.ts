@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { validateOPAT } from "../src/validateOPAT";
+import { validateOpenACR } from "../src/validateOpenACR";
 
 describe("Validate OPAT chapters", () => {
   const validSchema = "openacr-0.1.0.json";
@@ -65,13 +65,13 @@ describe("Validate OPAT chapters", () => {
   let result = null;
 
   it("pass valid chapters JSON should return valid message", () => {
-    result = validateOPAT(validJSON, validSchema);
+    result = validateOpenACR(validJSON, validSchema);
     expect(result.result).to.equal(true);
     expect(result.message).to.equal("Valid!");
   });
 
   it("pass invalid chapters JSON should return invalid JSON message", () => {
-    result = validateOPAT(invalidJSON1, validSchema);
+    result = validateOpenACR(invalidJSON1, validSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(
       "Invalid: data/chapters/success_criteria_level_a must be object, " +
@@ -80,7 +80,7 @@ describe("Validate OPAT chapters", () => {
   });
 
   it("pass invalid criteria JSON should return invalid JSON message", () => {
-    result = validateOPAT(invalidJSON2, validSchema);
+    result = validateOpenACR(invalidJSON2, validSchema);
     expect(result.result).to.equal(false);
     expect(result.message).to.equal(
       "Invalid: data/chapters/success_criteria_level_a/criteria/0 must be object, " +

@@ -1,10 +1,10 @@
-// src/validateOPAT.ts
+// src/validateOpenACR.ts
 
 import Ajv from "ajv";
 import { ValidatorResult } from "./ValidatorResult";
 import spdxLicenseList from "spdx-license-list";
 
-export function validateOPAT(data: any, schema: string): ValidatorResult {
+export function validateOpenACR(data: any, schema: string): ValidatorResult {
   const ajv = new Ajv({
     allErrors: true,
     schemas: [require("../schema/openacr-0.1.0.json")],
