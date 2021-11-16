@@ -18,7 +18,7 @@ import fs from "fs";
 import yaml from "js-yaml";
 import { ValidatorResult } from "./ValidatorResult";
 import { validateOPATCatalogValues } from "./validateOPATCatalogValues";
-import { outputOPAT } from "./outputOPAT";
+import { outputOpenACR } from "./outputOpenACR";
 
 const argv = yargs
   .command("validate", "Validate OpenACR content", function (yargs) {
@@ -88,14 +88,14 @@ if (fs.existsSync(argv.file)) {
       const outputFile = argv.outputFile ?? "output/openacr.markdown";
       const fileExt = outputFile.split(".").pop();
       if (fileExt === "html") {
-        result = outputOPAT(
+        result = outputOpenACR(
           data,
           catalog,
           outputFile,
           "templates/openacr-html-0.1.0.handlebars"
         );
       } else {
-        result = outputOPAT(data, catalog, outputFile);
+        result = outputOpenACR(data, catalog, outputFile);
       }
     }
   } catch {

@@ -5,7 +5,7 @@ import Handlebars from "handlebars";
 import path from "path";
 import spdxLicenseList from "spdx-license-list";
 
-export function outputOPAT(
+export function outputOpenACR(
   data: any,
   catalogData: any,
   outputFile: string,

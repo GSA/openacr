@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { outputOPAT } from "../src/outputOPAT";
+import { outputOpenACR } from "../src/outputOpenACR";
 
 describe("Output", () => {
   const validJSONData = {
@@ -399,7 +399,7 @@ describe("Output", () => {
   let result = null;
 
   it("pass valid data and catalog should return valid message", () => {
-    result = outputOPAT(
+    result = outputOpenACR(
       validJSONData,
       validJSONCatalog1,
       "output/openacr.markdown"
@@ -412,7 +412,7 @@ describe("Output", () => {
 
   it("pass valid data, catalog, and output file should return valid message", () => {
     const filePath = "output/unittest1.markdown";
-    result = outputOPAT(validJSONData, validJSONCatalog1, filePath);
+    result = outputOpenACR(validJSONData, validJSONCatalog1, filePath);
     expect(result.result).to.equal(true);
     expect(result.message).to.equal(
       `Valid and output generated at ${filePath}!`
@@ -421,7 +421,7 @@ describe("Output", () => {
 
   it("pass valid data, catalog with missing components and terms, and output file should return valid message", () => {
     const filePath = "output/unittest2.markdown";
-    result = outputOPAT(validJSONData, validJSONCatalog2, filePath);
+    result = outputOpenACR(validJSONData, validJSONCatalog2, filePath);
     expect(result.result).to.equal(true);
     expect(result.message).to.equal(
       `Valid and output generated at ${filePath}!`
@@ -430,7 +430,7 @@ describe("Output", () => {
 
   it("pass valid data, catalog with missing terms, and output file should return valid message", () => {
     const filePath = "output/unittest3.markdown";
-    result = outputOPAT(validJSONData, validJSONCatalog3, filePath);
+    result = outputOpenACR(validJSONData, validJSONCatalog3, filePath);
     expect(result.result).to.equal(true);
     expect(result.message).to.equal(
       `Valid and output generated at ${filePath}!`
@@ -439,7 +439,7 @@ describe("Output", () => {
 
   it("pass valid data, catalog with missing chapters, and output file should return valid message", () => {
     const filePath = "output/unittest4.markdown";
-    result = outputOPAT(validJSONData, validJSONCatalog4, filePath);
+    result = outputOpenACR(validJSONData, validJSONCatalog4, filePath);
     expect(result.result).to.equal(true);
     expect(result.message).to.equal(
       `Valid and output generated at ${filePath}!`
@@ -447,7 +447,7 @@ describe("Output", () => {
   });
 
   it("pass valid data, catalog, and invalid template should return invalid template message", () => {
-    result = outputOPAT(
+    result = outputOpenACR(
       validJSONData,
       validJSONCatalog1,
       "output/openacr.markdown",
@@ -458,7 +458,7 @@ describe("Output", () => {
   });
 
   it("pass valid data, catalog, and invalid output path should return invalid output message", () => {
-    result = outputOPAT(
+    result = outputOpenACR(
       validJSONData,
       validJSONCatalog1,
       "does-not-exist-folder/openacr.markdown"
