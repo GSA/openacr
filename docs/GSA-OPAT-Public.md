@@ -62,9 +62,9 @@ Released under [Creative Commons](https://creativecommons.org/publicdomain/zero/
 ## Learn more
 
 - Website
-- [Repository](http://github.com/GSA/OpenACR)
-- [Project board](https://github.com/GSA/OpenACR/projects/1)
-- [Milestones](https://github.com/GSA/OpenACR/milestones)
+- [Repository](http://github.com/GSA/openacr)
+- [Project board](https://github.com/GSA/openacr/projects/1)
+- [Milestones](https://github.com/GSA/openacr/milestones)
 
 ## Contact
 
