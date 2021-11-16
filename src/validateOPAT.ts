@@ -7,7 +7,7 @@ import spdxLicenseList from "spdx-license-list";
 export function validateOPAT(data: any, schema: string): ValidatorResult {
   const ajv = new Ajv({
     allErrors: true,
-    schemas: [require("../schema/opat-0.1.0.json")],
+    schemas: [require("../schema/openacr-0.1.0.json")],
   });
 
   const validate = ajv.getSchema(schema);

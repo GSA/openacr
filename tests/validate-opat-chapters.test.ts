@@ -2,7 +2,7 @@ import { expect } from "chai";
 import { validateOPAT } from "../src/validateOPAT";
 
 describe("Validate OPAT chapters", () => {
-  const validSchema = "opat-0.1.0.json";
+  const validSchema = "openacr-0.1.0.json";
   const validJSON = {
     title: "Lorem Ipsum Accessibility Conformance Report",
     product: {

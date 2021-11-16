@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "opat-catalog-0.1.0.json",
-  "title": "OPAT Catalog",
-  "description": "Open Product Accessibility Template (OPAT) catalog.",
+  "$id": "openacr-catalog-0.1.0.json",
+  "title": "OpenACR Catalog",
+  "description": "Open Accessibility Conformance Report (OpenACR) catalog.",
   "type": "object",
   "properties": {
     "title": {

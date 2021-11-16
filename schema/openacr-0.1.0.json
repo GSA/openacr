@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "opat-0.1.0.json",
-  "title": "OPAT",
-  "description": "Open Product Accessibility Template (OPAT) as a YAML file.",
+  "$id": "openacr-0.1.0.json",
+  "title": "OpenACR",
+  "description": "Open Accessibility Conformance Report (OpenACR) as a YAML file.",
   "type": "object",
   "properties": {
     "title": {
@@ -45,7 +45,7 @@
       "type": "string"
     },
     "evaluation_methods_used": {
-      "description": "Include a description of evaluation methods used to complete the OPAT for the product under test.",
+      "description": "Include a description of evaluation methods used to complete the OpenACR for the product under test.",
       "type": "string"
     },
     "legal_disclaimer": {
@@ -54,24 +54,24 @@
     },
     "license": {
       "type": "string",
-      "description": "You should specify a license for your OPAT so that people know how they are permitted to use it, and any restrictions you're placing on it. Must be a valid SPDX license see https://spdx.org/licenses/. If none is provided 'CC-BY-4.0' is assumed default in any output."
+      "description": "You should specify a license for your OpenACR so that people know how they are permitted to use it, and any restrictions you're placing on it. Must be a valid SPDX license see https://spdx.org/licenses/. If none is provided 'CC-BY-4.0' is assumed default in any output."
     },
     "repository": {
-      "description": "Specify the place where your OPAT lives. This is helpful for people who want to contribute.",
+      "description": "Specify the place where your OpenACR lives. This is helpful for people who want to contribute.",
       "type": "string"
     },
     "feedback": {
-      "description": "The url to your project's issue tracker to which issues should be reported. These are helpful for people who encounter issues with your OPAT.",
+      "description": "The url to your project's issue tracker to which issues should be reported. These are helpful for people who encounter issues with your OpenACR.",
       "type": "string"
     },
     "related_opats": {
-      "description": "Link to related OPATs. E.g. CKEditor is a library used by Drupal and both have OPATs.",
+      "description": "Link to related OpenACRs. E.g. CKEditor is a library used by Drupal and both have OpenACRs.",
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
           "url": {
-            "description": "Link to related OPAT.",
+            "description": "Link to related OpenACR.",
             "type": "string"
           },
           "type": {
