@@ -4,9 +4,9 @@
 
 ## Context
 
-Many agencies face challenges in delivering accessible services to people with disabilities. Software vendors submit accessibility conformance reports (ACR) for their offerings. These ACRs document compliance of these products and services to Section 508 requirements. These claims are generally provided in a PDF format which is difficult to search. At best these ACR represent a static snapshot of accessibility when written. A modern ACR should show evidence of continuous adherence to accessibility requirements. It should also be at least validated to see it matches a baseline format.
+Many agencies face challenges in delivering accessible services to people with disabilities. Software vendors submit accessibility conformance reports (ACR) for their offerings. These ACRs document conformance of these products and services to Section 508 requirements. These claims are generally provided in a PDF format which is difficult to search. At best these ACR represent a static snapshot of accessibility when written. A modern ACR should show evidence of continuous adherence to accessibility requirements. It should also be at least validated to see it matches a baseline format.
 
-Responsible agencies often test these vendor compliance claims. The work of validating these claims should be easily shared back with the vendors. Finding and sharing up-to-date data should be easy.
+Responsible agencies often test these vendor conformance claims. The work of validating these claims should be easily shared back with the vendors. Finding and sharing up-to-date data should be easy.
 
 ## Vision
 
