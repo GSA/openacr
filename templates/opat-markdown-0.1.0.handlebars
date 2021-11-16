@@ -101,15 +101,15 @@ Notes: {{data-category.notes}}
 {{feedback}}
 {{/if}}
 
-{{#if related_opats}}
-## Related OPATs
-{{#each related_opats as |related-opat|}}
-* {{related-opat.url}} ({{related-opat.type}})
+{{#if related_openacrs}}
+## Related OpenACRs
+{{#each related_openacrs as |related-openacr|}}
+* {{related-openacr.url}} ({{related-openacr.type}})
 {{/each}}
 {{/if}}
 
 ## Copyright
 
-[OPAT](https://github.com/GSA/open-product-accessibility-template) is a format maintained by the [GSA](https://gsa.gov/). The content is the responsibility of the author.
+[OpenACR](https://github.com/GSA/openacr) is a format maintained by the [GSA](https://gsa.gov/). The content is the responsibility of the author.
 
-This content is licensed under a {{opatLicense}}.
+This content is licensed under a {{license}}.

@@ -17,7 +17,7 @@ legal_disclaimer: The information herein is provided in good faith based on the 
 repository: https://github.com/GSA/open-product-accessibility-template/blob/main/opat/drupal-9.yaml
 feedback: https://www.drupal.org/project/issues/drupal
 license: GPL-2.0-or-later
-related_opats:
+related_openacrs:
   - url: https://ckeditor.com/docs/ckeditor4/latest/guide/dev_section508.html
     type: secondary
 chapters:

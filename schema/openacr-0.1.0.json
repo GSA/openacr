@@ -64,7 +64,7 @@
       "description": "The url to your project's issue tracker to which issues should be reported. These are helpful for people who encounter issues with your OpenACR.",
       "type": "string"
     },
-    "related_opats": {
+    "related_openacrs": {
       "description": "Link to related OpenACRs. E.g. CKEditor is a library used by Drupal and both have OpenACRs.",
       "type": "array",
       "items": {

@@ -101,7 +101,7 @@ export function outputOPAT(
       return new Handlebars.SafeString(`<ul>${result.join("")}</ul>`);
     });
 
-    Handlebars.registerHelper("opatLicense", function () {
+    Handlebars.registerHelper("license", function () {
       if (data.license) {
         if (fileExt === "html") {
           return new Handlebars.SafeString(
@@ -143,10 +143,10 @@ export function outputOPAT(
     });
 
     // Copy CSS stylesheets to the output directory.
-    fs.copyFile("templates/opat.css", `${dir}/opat.css`, (err) => {
+    fs.copyFile("templates/openacr.css", `${dir}/openacr.css`, (err) => {
       return {
         result: false,
-        message: "Invalid: opat.css file could not be copied.",
+        message: "Invalid: openacr.css file could not be copied.",
       };
     });
     fs.copyFile("templates/custom.css", `${dir}/custom.css`, (err) => {
