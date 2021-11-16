@@ -1,4 +1,4 @@
-This document is about how to contribute to the gsa.gov opat template. This process looks a bit different depending on whether you're a member of the public, an GSA employee, or a member of the outreach or site team. Here's what you can find in this doc:
+This document is about how to contribute to the gsa.gov OpenACR template. This process looks a bit different depending on whether you're a member of the public, an GSA employee, or a member of the outreach or site team. Here's what you can find in this doc:
 
 - [Public contributions](#public-contributions)
 - [GSA contributions](#gsa-contributions)
