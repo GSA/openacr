@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { spawn } from "child_process";
 
-describe("OPAT CLI test validation", () => {
+describe("OpenACR CLI test validation", () => {
   const cmd = "npx";
   const options = ["ts-node", "src/openacr.ts", "validate", "-f"];
 

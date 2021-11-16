@@ -1,9 +1,9 @@
 import { expect } from "chai";
 import { validateOpenACR } from "../src/validateOpenACR";
 
-describe("Validate OPAT metadata", () => {
+describe("Validate OpenACR metadata", () => {
   const validSchema = "openacr-0.1.0.json";
-  const invalidSchema = "opat-invalid.json";
+  const invalidSchema = "openacr-invalid.json";
   const validJSON = {
     title: "Lorem Ipsum Accessibility Conformance Report",
     product: {

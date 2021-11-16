@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { spawn } from "child_process";
 
-describe("OPAT CLI test output", () => {
+describe("OpenACR CLI test output", () => {
   const cmd = "npx";
   const options = ["ts-node", "src/openacr.ts", "output", "-f"];
 
