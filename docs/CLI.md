@@ -14,7 +14,7 @@ Clone the GitHub repository and cd into that directory.
 
 ```bash
 git clone https://github.com/GSA/openacr.git
-cd OpenACR
+cd openacr
 ```
 
 Then install the dependencies with the following NPM command:
