@@ -13,7 +13,7 @@ You need the latest version of NPM installed. There are multiple ways to downloa
 Clone the GitHub repository and cd into that directory.
 
 ```bash
-git clone https://github.com/GSA/OpenACR.git
+git clone https://github.com/GSA/openacr.git
 cd OpenACR
 ```
 
