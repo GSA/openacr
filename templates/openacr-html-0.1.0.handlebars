@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="{{catalog.lang}}">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{title}}</title>
+  <script type="text/javascript" charset="utf8" src="uswds/js/uswds-init.min.js"></script>
+  <link rel="stylesheet" href="uswds/css/uswds.min.css">
+  <link rel="stylesheet" href="openacr.css">
+  <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+  <script type="text/javascript" charset="utf8" src="uswds/js/uswds.min.js"></script>
+  <main>
+    <div class="grid-container">
+      <h1>{{title}}</h1>
+
+      Based on {{catalog.title}}
+      <h2 id="name-of-product-version">
+        <a href="#name-of-product-version" aria-hidden="true" class="header-anchor">#</a>
+        Name of Product/Version
+      </h2>
+      {{product.name}}{{#if product.version}} {{product.version}}{{/if}}
+
+      <h2 id="report-date">
+        <a href="#report-date" aria-hidden="true" class="header-anchor">#</a>
+        Report Date
+      </h2>
+      {{#if report_date}}
+        {{report_date}}
+      {{else}}
+        {{ now }}
+      {{/if}}
+
+      {{#if product.description}}
+        <h2 id="product-description">
+          <a href="#product-description" aria-hidden="true" class="header-anchor">#</a>
+          Product Description
+        </h2>
+        {{product.description}}
+      {{/if}}
+
+      <h2 id="contact-information">
+        <a href="#contact-information" aria-hidden="true" class="header-anchor">#</a>
+        Contact Information
+      </h2>
+      {{#if author}}
+        <h3 id="author">
+          <a href="#author" aria-hidden="true" class="header-anchor">#</a>
+          Author Information
+        </h3>
+        <ul>
+          {{#if author.name}}<li>Name: {{author.name}}</li>{{/if}}
+          {{#if author.company_name}}<li>Company: {{author.company_name}}</li>{{/if}}
+          {{#if author.address}}<li>Address: {{author.address}}</li>{{/if}}
+          {{#if author.email}}<li>Email: <a href="mailto:{{author.email}}">{{author.email}}</a></li>{{/if}}
+          {{#if author.phone}}<li>Phone: {{author.phone}}</li>{{/if}}
+          {{#if author.website}}<li>Website: <a href="{{author.website}}">{{author.website}}</a></li>{{/if}}
+        </ul>
+      {{/if}}
+      {{#if vendor}}
+        <h3 id="vendor">
+          <a href="#vendor" aria-hidden="true" class="header-anchor">#</a>
+          Vendor Information
+        </h3>
+        <ul>
+        {{#if vendor.name}}<li>Name: {{vendor.name}}</li>{{/if}}
+        {{#if vendor.company_name}}<li>Company: {{vendor.company_name}}</li>{{/if}}
+        {{#if vendor.address}}<li>Address: {{vendor.address}}</li>{{/if}}
+        {{#if vendor.email}}<li>Email: <a href="mailto:{{vendor.email}}">{{vendor.email}}</a></li>{{/if}}
+        {{#if vendor.phone}}<li>Phone: {{vendor.phone}}</li>{{/if}}
+        {{#if vendor.website}}<li>Website: <a href="{{vendor.website}}">{{vendor.website}}</a></li>{{/if}}
+        </ul>
+      {{/if}}
+
+      {{#if notes}}
+        <h2 id="notes">
+          <a href="#notes" aria-hidden="true" class="header-anchor">#</a>
+          Notes
+        </h2>
+        {{notes}}
+      {{/if}}
+
+      {{#if evaluation_methods_used}}
+        <h2 id="evaluation-methods">
+          <a href="#evaluation-methods" aria-hidden="true" class="header-anchor">#</a>
+          Evaluation Methods Used
+        </h2>
+        {{evaluation_methods_used}}
+      {{/if}}
+
+      <h2 id="applicable-standards-guidelines">
+        <a href="#applicable-standards-guidelines" aria-hidden="true" class="header-anchor">#</a>
+        Applicable Standards/Guidelines
+      </h2>
+      This report covers the degree of conformance for the following accessibility standard/guidelines:
+
+      <table class="usa-table">
+        <thead>
+          <tr>
+            <th>Standard/Guideline</th>
+            <th>Included In Report</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each catalog.standards as |catalog-standard|}}
+            <tr>
+              <td><a href="{{catalog-standard.url}}">{{catalog-standard.label}}</a></td>
+              <td>{{standardsIncluded catalog-standard.chapters}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+
+      <h2 id="terms">
+        <a href="#terms" aria-hidden="true" class="header-anchor">#</a>
+        Terms
+      </h2>
+      The terms used in the Conformance Level information are defined as follows:
+      <ul>
+      {{#each catalog.terms as |catalog-term|}}
+        <li><strong>{{catalog-term.label}}</strong>: {{catalog-term.description}}</li>
+      {{/each}}
+      </ul>
+
+      {{#each catalog.standards as |catalog-standard|}}
+        <h2 id="{{catalog-standard.id}}">
+          <a href="#{{catalog-standard.id}}" aria-hidden="true" class="header-anchor">#</a>
+          {{catalog-standard.report_heading}}
+        </h2>
+        {{#each catalog-standard.chapters as |catalog-standard-chapter|}}
+          {{#with (catalogChapter catalog-standard-chapter) as |catalog-chapter|}}
+            <h3 id="{{catalog-chapter.id}}">
+              <a href="#{{catalog-chapter.id}}" aria-hidden="true" class="header-anchor">#</a>
+              {{catalog-chapter.label}}
+            </h3>
+
+            {{#with (lookup ../../../chapters catalog-chapter.id) as |data-category|}}
+              {{#if data-category.notes}}
+                Notes: {{data-category.notes}}
+              {{/if}}
+
+              {{#if data-category.criteria}}
+                <table class="usa-table">
+                  <thead>
+                  <tr>
+                    <th>Criteria</th>
+                    <th>Conformance Level</th>
+                    <th>Remarks and Explanations</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    {{#each data-category.criteria as |data-criteria|}}
+                      <tr id="{{data-criteria.num}}">
+                        <td>
+                          <a href="{{catalogCriteriaURL catalog-chapter.id data-criteria.num catalog-standard.url}}">
+                            {{data-criteria.num}} {{catalogCriteriaLabel catalog-chapter.id data-criteria.num}}
+                          </a>
+                        </td>
+                        <td>
+                          {{#if data-criteria.components}}
+                            <ul>
+                              {{#each data-criteria.components as |data-components|}}
+                                {{#if data-components.adherence.level}}
+                                  <li>{{catalogComponentLabel data-components.name}}{{levelLabel data-components.adherence.level}}</li>
+                                {{/if}}
+                              {{/each}}
+                            </ul>
+                          {{/if}}
+                        </td>
+                        <td>
+                          {{#if data-criteria.components}}
+                            <ul>
+                              {{#each data-criteria.components as |data-components|}}
+                                {{#if data-components.adherence.notes}}
+                                <li>{{catalogComponentLabel data-components.name}}{{data-components.adherence.notes}}</li>
+                                {{/if}}
+                              {{/each}}
+                            </ul>
+                          {{/if}}
+                        </td>
+                      </tr>
+                    {{/each}}
+                  </tbody>
+                </table>
+
+              {{/if}}
+            {{/with}}
+          {{/with}}
+        {{/each}}
+      {{/each}}
+      {{#if legal_disclaimer}}
+        <h2 id="legal-disclaimer">
+          <a href="#legal-disclaimer" aria-hidden="true" class="header-anchor">#</a>
+          Legal Disclaimer{{#if vendor.company_name}} ({{vendor.company_name}}){{/if}}
+        </h2>
+        {{legal_disclaimer}}
+      {{/if}}
+      {{#if repository}}
+        <h2 id="repository">
+          <a href="#repository" aria-hidden="true" class="header-anchor">#</a>
+          Repository
+        </h2>
+        <a href="{{repository}}">{{repository}}</a>
+      {{/if}}
+      {{#if feedback}}
+        <h2 id="feedback">
+          <a href="#feedback" aria-hidden="true" class="header-anchor">#</a>
+          Feedback
+        </h2>
+        <a href="{{feedback}}">{{feedback}}</a>
+      {{/if}}
+
+      {{#if related_openacrs}}
+        <h2 id="related-openacrs">
+          <a href="#related-openacrs" aria-hidden="true" class="header-anchor">#</a>
+          Related OpenACRs
+        </h2>
+        <ul>
+          {{#each related_openacrs as |related-openacr|}}
+            <li><a href="{{related-openacr.url}}">{{related-openacr.url}} ({{related-openacr.type}})</a></li>
+          {{/each}}
+        </ul>
+      {{/if}}
+    </div>
+  </main>
+  <footer class="usa-footer usa-footer usa-footer--slim">
+    <div class="usa-footer__return-to-top">
+      <div class="grid-container">
+        <a href="#">Return to top</a>
+      </div>
+    </div>
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="grid-col">
+            <a href="https://github.com/GSA/openacr">OpenACR</a> is a format maintained by the <a href="https://gsa.gov/">GSA</a>. The content is the responsibility of the author.
+          </div>
+          <div class="grid-col">
+            This content is licensed under a {{license}}.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

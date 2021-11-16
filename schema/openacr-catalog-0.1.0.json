@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "openacr-catalog-0.1.0.json",
+  "title": "OpenACR Catalog",
+  "description": "Open Accessibility Conformance Report (OpenACR) catalog.",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "The title of the catalog.",
+      "type": "string"
+    },
+    "lang": {
+      "description": "The language of the catalog.",
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "standards": {
+      "description": "Applicable Standards/Guidelines.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Standard ID.",
+            "type": "string"
+          },
+          "label": {
+            "description": "Human-readable label.",
+            "type": "string"
+          },
+          "report_heading": {
+            "description": "Used for the headings.",
+            "type": "string"
+          },
+          "url": {
+            "description": "Standard URL.",
+            "type": "string"
+          },
+          "chapters": {
+            "description": "List of chapters in standard.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": ["id", "label", "report_heading", "url"]
+      }
+    },
+    "chapters": {
+      "description": "Available chapters/tables.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Chapter/table ID.",
+            "type": "string"
+          },
+          "label": {
+            "description": "Human-readable label.",
+            "type": "string"
+          },
+          "order": {
+            "description": "Number showing where the chapter/table appears in the list.",
+            "type": "integer"
+          },
+          "description": {
+            "type": "string"
+          },
+          "criteria": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "Criteria ID.",
+                  "type": "string"
+                },
+                "handle": {
+                  "description": "Criteria handle.",
+                  "type": "string"
+                },
+                "alt_id": {
+                  "description": "Alternate ID used to find criteria in WCAG and other documentation",
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "components": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": ["id", "handle", "alt_id"]
+            }
+          }
+        },
+        "required": ["id", "label", "order"]
+      }
+    },
+    "components": {
+      "description": "Available components.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Component ID.",
+            "type": "string"
+          },
+          "label": {
+            "description": "Human-readable label.",
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": ["id", "label"]
+      }
+    },
+    "terms": {
+      "description": "Available terms.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "Term ID.",
+            "type": "string"
+          },
+          "label": {
+            "description": "Human-readable label.",
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": ["id", "label"]
+      }
+    }
+  },
+  "required": ["title", "lang"]
+}

@@ -1,0 +1,115 @@
+# {{title}}
+
+Based on {{catalog.title}}
+
+## Name of Product/Version
+{{product.name}}{{#if product.version}} {{product.version}}{{/if}}
+
+## Report Date
+{{#if report_date}}
+{{report_date}}
+{{else}}
+{{ now }}
+{{/if}}
+
+{{#if product.description}}
+## Product Description
+{{product.description}}
+{{/if}}
+
+## Contact Information
+{{#if author}}
+### Author Information
+{{#if author.name}}- Name: {{author.name}}{{/if}}
+{{#if author.company_name}}- Company: {{author.company_name}}{{/if}}
+{{#if author.address}}- Address: {{author.address}}{{/if}}
+{{#if author.email}}- Email: {{author.email}}{{/if}}
+{{#if author.phone}}- Phone: {{author.phone}}{{/if}}
+{{#if author.website}}- Website: {{author.website}}{{/if}}
+{{/if}}
+{{#if vendor}}
+### Vendor Information
+{{#if vendor.name}}- Name: {{vendor.name}}{{/if}}
+{{#if vendor.company_name}}- Company: {{vendor.company_name}}{{/if}}
+{{#if vendor.address}}- Address: {{vendor.address}}{{/if}}
+{{#if vendor.email}}- Email: {{vendor.email}}{{/if}}
+{{#if vendor.phone}}- Phone: {{vendor.phone}}{{/if}}
+{{#if vendor.website}}- Website: {{vendor.website}}{{/if}}
+{{/if}}
+
+{{#if notes}}
+## Notes
+{{notes}}
+{{/if}}
+
+{{#if evaluation_methods_used}}
+## Evaluation Methods Used
+{{evaluation_methods_used}}
+{{/if}}
+
+## Applicable Standards/Guidelines
+This report covers the degree of conformance for the following accessibility standard/guidelines:
+
+| Standard/Guideline | Included In Report |
+| --- | --- |
+{{#each catalog.standards as |catalog-standard|}}
+| [{{catalog-standard.label}}]({{catalog-standard.url}}) | {{standardsIncluded catalog-standard.chapters}} |
+{{/each}}
+
+## Terms
+The terms used in the Conformance Level information are defined as follows:
+{{#each catalog.terms as |catalog-term|}}
+- **{{catalog-term.label}}**: {{catalog-term.description}}
+{{/each}}
+
+{{#each catalog.standards as |catalog-standard|}}
+## {{catalog-standard.report_heading}}
+{{#each catalog-standard.chapters as |catalog-standard-chapter|}}
+{{#with (catalogChapter catalog-standard-chapter) as |catalog-chapter|}}
+### {{catalog-chapter.label}}
+
+{{#with (lookup ../../../chapters catalog-chapter.id) as |data-category|}}
+{{#if data-category.notes}}
+Notes: {{data-category.notes}}
+{{/if}}
+
+{{#if data-category.criteria}}
+| Criteria | Conformance Level | Remarks and Explanations |
+| --- | --- | --- |
+{{#each data-category.criteria as |data-criteria|}}
+| [{{data-criteria.num}} {{catalogCriteriaLabel catalog-chapter.id data-criteria.num}}]({{catalogCriteriaURL catalog-chapter.id data-criteria.num catalog-standard.url}}) | {{#if data-criteria.components}}<ul>{{#each data-criteria.components as |data-components|}}{{#if data-components.adherence.level}}<li>{{catalogComponentLabel data-components.name}}{{levelLabel data-components.adherence.level}}</li>{{/if}}{{/each}} </ul>{{/if}} | {{#if data-criteria.components}}<ul>{{#each data-criteria.components as |data-components|}}{{#if data-components.adherence.notes}}<li>{{catalogComponentLabel data-components.name}}{{data-components.adherence.notes}}</li>{{/if}}{{/each}} </ul>{{/if}} |
+{{/each}}
+
+{{/if}}
+{{/with}}
+{{/with}}
+{{/each}}
+{{/each}}
+
+{{#if legal_disclaimer}}
+## Legal Disclaimer{{#if vendor.company_name}} ({{vendor.company_name}}){{/if}}
+{{legal_disclaimer}}
+{{/if}}
+
+{{#if repository}}
+## Repository
+{{repository}}
+{{/if}}
+
+{{#if feedback}}
+## Feedback
+{{feedback}}
+{{/if}}
+
+{{#if related_openacrs}}
+## Related OpenACRs
+{{#each related_openacrs as |related-openacr|}}
+* {{related-openacr.url}} ({{related-openacr.type}})
+{{/each}}
+{{/if}}
+
+## Copyright
+
+[OpenACR](https://github.com/GSA/openacr) is a format maintained by the [GSA](https://gsa.gov/). The content is the responsibility of the author.
+
+This content is licensed under a {{license}}.

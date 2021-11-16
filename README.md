@@ -1,6 +1,6 @@
 # OpenACR
 
-[![tests](https://github.com/GSA/open-product-accessibility-template/actions/workflows/tests.yaml/badge.svg)](https://github.com/GSA/open-product-accessibility-template/actions/workflows/tests.yaml)
+[![tests](https://github.com/GSA/openacr/actions/workflows/tests.yaml/badge.svg)](https://github.com/GSA/openacr/actions/workflows/tests.yaml)
 
 ## Context
 
@@ -29,7 +29,7 @@ Although YAML is the foundation of OpenACR, the expectation isn't for people to 
 
 Editors could write their results in YAML, but we expect most will use an editor. We are looking at creating a tool based on [WCAG-EM](https://www.w3.org/WAI/eval/report-tool/#!/).
 
-A JavaScript tool takes the YAML files and generates both the HTML and Markdown files. This tool first validates the data before creating the files. We have set up an example based on Drupal 9. The Drupal [YAML file](/opat/drupal-9.yaml) is used to generate both the [HTML](/opat/drupal-9.html) and [Markdown](/opat/drupal-9.markdown) files. On GitHub, it is actually easier to read the Markdown file, but the information will be the same.
+A JavaScript tool takes the YAML files and generates both the HTML and Markdown files. This tool first validates the data before creating the files. We have set up an example based on Drupal 9. The Drupal [YAML file](/openacr/drupal-9.yaml) is used to generate both the [HTML](/openacr/drupal-9.html) and [Markdown](/openacr/drupal-9.markdown) files. On GitHub, it is actually easier to read the Markdown file, but the information will be the same.
 
 We have built the HTML output so that vendors can add style elements through CSS. We expect that vendors will want to customize the look/feel and include their branding. The main goal will be to provide a means to easily compare documents so that presentation doesn't get in the way.
 
@@ -37,7 +37,7 @@ ACRs should be built with version control in a repository like GitHub. As with a
 
 ## Documentation
 
-Our documentation currently includes a [short summary of the project and our goals](/docs/GSA-OPAT-Public.md), a [short project roadmap](/docs/ROADMAP.md) and the [Command Line Documentation](/docs/CLI.md). If you want to experiment with this you will need to install this application on your computer.
+Our documentation currently includes a [short summary of the project and our goals](/docs/GSA-OpenACR-Public.md), a [short project roadmap](/docs/ROADMAP.md) and the [Command Line Documentation](/docs/CLI.md). If you want to experiment with this you will need to install this application on your computer.
 
 Initially this project was released under the name Open Product Accessibility Template (OPAT). In November 2021, this was renamed to OpenACR.
 

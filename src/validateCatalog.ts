@@ -9,7 +9,7 @@ export function validateCatalog(
 ): ValidatorResult {
   const ajv = new Ajv({
     allErrors: true,
-    schemas: [require("../schema/opat-catalog-0.1.0.json")],
+    schemas: [require("../schema/openacr-catalog-0.1.0.json")],
   });
 
   const validate = ajv.getSchema(schema);

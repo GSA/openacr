@@ -1,4 +1,4 @@
-name: OPAT output accessibility testing
+name: OpenACR output accessibility testing
 
 on:
   pull_request:
@@ -16,10 +16,10 @@ jobs:
         run: npm install
 
       - name: Output Drupal HTML.
-        run: npx ts-node src/opat.ts output -f opat/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o output/drupal-9.html
+        run: npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o output/drupal-9.html
 
       - name: Output Example HTML.
-        run: npx ts-node src/opat.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o output/valid.html
+        run: npx ts-node src/openacr.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o output/valid.html
 
       - name: Run accessibility test against all HTML files.
         run: npm run a11y-test

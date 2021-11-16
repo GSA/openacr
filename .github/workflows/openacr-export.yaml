@@ -1,0 +1,26 @@
+name: OpenACR Export
+
+on:
+  pull_request:
+
+jobs:
+  build-test:
+    name: Building app and generate export of all reports including the data table.
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source.
+        uses: actions/checkout@v2
+
+      - name: Download output.
+        uses: actions/upload-artifact@v2
+        with:
+          name: openacr-export
+          path: |
+            openacr/*.html
+            openacr/*.css
+            openacr/*.js
+            openacr/*.markdown
+            openacr/*.yaml
+            openacr/uswds
+            catalog/2.4-edition-wcag-2.0-508-en.yaml

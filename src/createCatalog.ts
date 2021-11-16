@@ -53,7 +53,7 @@ function getLang(data: any): any {
 }
 
 function validateCatalogDataFiles(catalog: any): boolean {
-  const catalogSchema = "opat-catalog-0.1.0.json";
+  const catalogSchema = "openacr-catalog-0.1.0.json";
   const validCatalogResult = validateCatalog(catalog, catalogSchema);
 
   if (!validCatalogResult.result) {

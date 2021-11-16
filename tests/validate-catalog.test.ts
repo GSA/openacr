@@ -2,8 +2,8 @@ import { expect } from "chai";
 import { validateCatalog } from "../src/validateCatalog";
 
 describe("Validate catalog", () => {
-  const validSchema = "opat-catalog-0.1.0.json";
-  const invalidSchema = "opat-catalog-invalid.json";
+  const validSchema = "openacr-catalog-0.1.0.json";
+  const invalidSchema = "openacr-catalog-invalid.json";
   const validJSON = {
     title: "VPAT 2.4 edition 508/WCAG 2.0",
     lang: "en",
