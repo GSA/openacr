@@ -1,4 +1,4 @@
-This document is about how to contribute to the gsa.gov OpenACR template. This process looks a bit different depending on whether you're a member of the public, an GSA employee, or a member of the outreach or site team. Here's what you can find in this doc:
+This document is about how to contribute to the GSA's OpenACR. This process looks a bit different depending on whether you're a GSA employee or not. Here's what you can find in this doc:
 
 - [Public contributions](#public-contributions)
 - [GSA contributions](#gsa-contributions)
@@ -9,16 +9,41 @@ This document is about how to contribute to the gsa.gov OpenACR template. This p
 
 No matter who you are, if you spot an error, omission, or bug, you're welcome to open an issue in this repo!
 
+Before contributing, we encourage you to read our CONTRIBUTING policy (you are here), our [LICENSE.md](LICENSE.md), and our [README.md](README.md).
+
 ## Public contributions
 
 We're so glad you're thinking about contributing to an GSA open source project! If you're unsure about anything, just submit an issue with your question. The worst that can happen is you'll be politely asked to change something. We love all friendly contributions.
 
 We want to ensure a welcoming environment for all of our projects. Our staff follow the [TTS Code of Conduct](https://handbook.tts.gsa.gov/code-of-conduct/) and all contributors should do the same.
 
-We encourage you to read this project's CONTRIBUTING policy (you are here), its [LICENSE](LICENSE.md), and its [README](README.md).
-
 - If you see an error or have feedback, the best way to let us know is to file an issue.
-- To contribute a specific change to the site, outside contributors will need to fork this repo.
+- To contribute a specific change, contributors will need to fork this repository.
+
+### Contribution guidelines
+
+OpenACR is maintained by the General Services Administration (GSA). We encourage contributions consistent with the project's principles:
+
+-   Be free and open source.
+-   Be accessible, and meet or exceed the requirements of Section 508.
+-   Have good multilingual support.
+-   Encourage continuous improvement — strive to be better, not necessarily perfect.
+
+We accept pull requests that improve OpenACR and align with these principles. We review all contributions for code quality and consistency and we may reject contributions that do not meet our standards for code quality or conform to our principles. We will evaluate all contributions for the following aspects of code quality:
+
+-   Compiles without errors
+-   Passes code scanning and continuous integration tests
+-   Follows security, privacy & accessibility best practices
+-   Is legible and understandable
+-   Is consistent with the existing codebase
+
+Any contributors will be responsible for updating `AUTHORS.txt` and `CONTRIBUTORS.txt` as necessary. We'll review these files as part of the code review process.
+
+[`AUTHORS.txt`](AUTHORS.txt) is the official list of project authors for copyright purposes.
+
+[`CONTRIBUTORS.txt`](CONTRIBUTORS.txt) is the list of people who have contributed to this project, and includes those not listed in `AUTHORS.txt` because they are not copyright authors. For example, company employees may be listed here because their company holds the copyright and is listed in `AUTHORS.txt`.
+
+We may request changes from the author for any contributions that do not pass this evaluation. Contributions that do not pass this evaluation may be rejected. If you're unsure about anything, just ask.
 
 ## GSA contributions
 
