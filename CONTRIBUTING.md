@@ -24,18 +24,18 @@ We want to ensure a welcoming environment for all of our projects. Our staff fol
 
 OpenACR is maintained by the General Services Administration (GSA). We encourage contributions consistent with the project's principles:
 
--   Be free and open source.
--   Be accessible, and meet or exceed the requirements of Section 508.
--   Have good multilingual support.
--   Encourage continuous improvement — strive to be better, not necessarily perfect.
+- Be free and open source.
+- Be accessible, and meet or exceed the requirements of Section 508.
+- Have good multilingual support.
+- Encourage continuous improvement — strive to be better, not necessarily perfect.
 
 We accept pull requests that improve OpenACR and align with these principles. We review all contributions for code quality and consistency and we may reject contributions that do not meet our standards for code quality or conform to our principles. We will evaluate all contributions for the following aspects of code quality:
 
--   Compiles without errors
--   Passes code scanning and continuous integration tests
--   Follows security, privacy & accessibility best practices
--   Is legible and understandable
--   Is consistent with the existing codebase
+- Compiles without errors
+- Passes code scanning and continuous integration tests
+- Follows security, privacy & accessibility best practices
+- Is legible and understandable
+- Is consistent with the existing codebase
 
 Any contributors will be responsible for updating `AUTHORS.txt` and `CONTRIBUTORS.txt` as necessary. We'll review these files as part of the code review process.
 
