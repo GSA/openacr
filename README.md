@@ -28,16 +28,15 @@ A digital ACR needs to be highly structured, to be machine-readable. Once it is 
 
 Although YAML is the foundation of OpenACR, the expectation isn't for people to either read or write in this format. Most people who see an OpenACR will be will reading it as an accessible HTML document that appears much like a VPAT.
 
-Editors could write their results in YAML, but we expect most will use an editor. We have built a preliminary [OpenACR editor](https://gsa.github.io/openacr-editor/) available for people to evaluate. It is built on the [WAI's ATAG Report Tool](https://wai-atag-report-tool.netlify.app/). This allowed ups to better align with initiatives from the [W3C WAI](https://www.w3.org/WAI/), but also ensure we were building a tool that would be easier to extend in the future. 
+Editors could write their results in YAML, but we expect most will use an editor. We have built a preliminary [OpenACR editor](https://gsa.github.io/openacr-editor/) available for people to evaluate. It is built on the [WAI's ATAG Report Tool](https://wai-atag-report-tool.netlify.app/). This allowed ups to better align with initiatives from the [W3C WAI](https://www.w3.org/WAI/), but also ensure we were building a tool that would be easier to extend in the future.
 
-This accessible JavaScript editor allows an author to either build an OpenACR file from scratch, or import one that has already been written.  From this you can save OpenACR in both a YAML & HTML format. You can experiment with editing files by downloading the Drupal [YAML file](/openacr/drupal-9.yaml) file and then loading it into the editor. 
+This accessible JavaScript editor allows an author to either build an OpenACR file from scratch, or import one that has already been written. From this you can save OpenACR in both a YAML & HTML format. You can experiment with editing files by downloading the Drupal [YAML file](/openacr/drupal-9.yaml) file and then loading it into the editor.
 
-This is a stand-alone JavaScript application. Any changes are stored exclusively in your browser. You will need to save the YAML file to your computer in order to access this information in the future. We recommend saving it into a git repository so that changes can be effectively tracked over time. 
+This is a stand-alone JavaScript application. Any changes are stored exclusively in your browser. You will need to save the YAML file to your computer in order to access this information in the future. We recommend saving it into a git repository so that changes can be effectively tracked over time.
 
-ACRs should be built with version control in a repository like GitHub or Gitlab. As with all modern software development, version control is key. To see that barriers are addressed, it is important to be able to track changes over time. 
+ACRs should be built with version control in a repository like GitHub or Gitlab. As with all modern software development, version control is key. To see that barriers are addressed, it is important to be able to track changes over time.
 
 We have built the HTML output so that vendors can later edit it to add style elements through CSS. We expect that vendors will want to customize the look/feel and include their branding. The main goal will be to provide a means to easily compare documents so that presentation doesn't get in the way.
-
 
 ## Documentation
 
