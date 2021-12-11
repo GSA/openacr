@@ -4,7 +4,7 @@
 
 ## Context
 
-Many agencies face challenges in delivering accessible services to people with disabilities. Software vendors are often asked to submit accessibility conformance reports (ACR) for their offerings. Many federal contracts require ACRs, but they are also used globally in government, education and in business to business contracts. These ACRs document conformance of these products and services to Section 508 requirements. These claims are generally provided in a MS Word or PDF format which is difficult to search. 
+Many agencies face challenges in delivering accessible services to people with disabilities. Software vendors are often asked to submit accessibility conformance reports (ACR) for their offerings. Many federal contracts require ACRs, but they are also used globally in government, education and in business to business contracts. These ACRs document conformance of these products and services to Section 508 requirements. These claims are generally provided in a MS Word or PDF format which is difficult to search.
 
 These ACRs represent a static snapshot of accessibility when written. A modern ACR would show continuous adherence to accessibility requirements and be validated to see it matches a baseline format.
 
