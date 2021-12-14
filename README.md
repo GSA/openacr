@@ -4,9 +4,11 @@
 
 ## Context
 
-Many agencies face challenges in delivering accessible services to people with disabilities. Software vendors submit accessibility conformance reports (ACR) for their offerings. These ACRs document conformance of these products and services to Section 508 requirements. These claims are generally provided in a PDF format which is difficult to search. At best these ACR represent a static snapshot of accessibility when written. A modern ACR should show evidence of continuous adherence to accessibility requirements. It should also be at least validated to see it matches a baseline format.
+Many agencies face challenges in delivering accessible services to people with disabilities. Software vendors are often asked to submit accessibility conformance reports (ACR) for their offerings. Many federal contracts require ACRs, but they are also used globally in government, education and in business to business contracts. These ACRs document conformance of these products and services to Section 508 requirements. These claims are generally provided in a MS Word or PDF format which is difficult to search.
 
-Responsible agencies often test these vendor conformance claims. The work of validating these claims should be easily shared back with the vendors. Finding and sharing up-to-date data should be easy.
+These ACRs represent a static snapshot of accessibility when written. A modern ACR would show continuous adherence to accessibility requirements and be validated to see it matches a baseline format.
+
+Responsible agencies test vendor conformance claims. Agency findings should be easily shared with vendors. Finding and sharing up-to-date data should be easy.
 
 ## Vision
 
@@ -20,20 +22,23 @@ By making accessibility conformance reports machine-readable:
 
 ## Approach
 
-The OpenACR team is building this ACR to be an open standard.
+The OpenACR team is creating an open standard.
+
 Starting with the [ITI VPAT®](https://www.itic.org/policy/accessibility/vpat) framework. VPATs® are well recognized. We will start with [VPAT 2.4Rev 508 (March 07, 2020)](https://www.itic.org/dotAsset/b282ab06-0ab2-4540-adc2-78698058dfc3.doc) (Word) which allows us to build on WCAG 2.0 specifications for the initial framework.
 
-A digital ACR needs to be highly structured, to be machine-readable. Once it is machine-readable, we will be able to extend its functionality. We looked at a few formats, but settled on YAML because it allowed the text to be more human-readable. YAML stands for Yet Another Markup Language. Earlier attempts at producing a machine-readable VPAT used Extensible Markup Language (XML).
+A digital ACR should be highly structured and machine-readable. Once it is machine-readable, we are able to extend its functionality. We looked at a few formats, but settled on YAML, or Yet Another Markup Language, because it allows the text to be human-readable. Earlier attempts at producing a machine-readable ACR used Extensible Markup Language (XML).
 
-Although YAML is the foundation of OpenACR, the expectation isn't for people to read. Users will read the HTML or [Markdown](https://guides.github.com/features/mastering-markdown/) output of the YAML file in a document that looks much like a VPAT.
+Although YAML is human-readable, most people will view an OpenACR as an accessible HTML document in a web browser, as they view a webpage.
 
-Editors could write their results in YAML, but we expect most will use an editor. We are looking at creating a tool based on [WCAG-EM](https://www.w3.org/WAI/eval/report-tool/#!/).
+Editors can write their results in YAML, but you can also use the [OpenACR editor](https://gsa.github.io/openacr-editor/). This editor is a work-in-progress, and we invite feedback. It is built on the[WAI's ATAG Report Tool](https://wai-atag-report-tool.netlify.app/). This allowed us to align with initiatives from the [W3C WAI](https://www.w3.org/WAI/), but also ensure that the tool would be easy to extend in the future.
 
-A JavaScript tool takes the YAML files and generates both the HTML and Markdown files. This tool first validates the data before creating the files. We have set up an example based on Drupal 9. The Drupal [YAML file](/openacr/drupal-9.yaml) is used to generate both the [HTML](/openacr/drupal-9.html) and [Markdown](/openacr/drupal-9.markdown) files. On GitHub, it is actually easier to read the Markdown file, but the information will be the same.
+This accessible JavaScript editor allows an author to either build an OpenACR file from scratch, or import one that has already been written. From this you can save OpenACR in both a YAML & HTML format. You can experiment with editing files by downloading the Drupal [YAML file](/openacr/drupal-9.yaml) file and then loading it into the editor.
 
-We have built the HTML output so that vendors can add style elements through CSS. We expect that vendors will want to customize the look/feel and include their branding. The main goal will be to provide a means to easily compare documents so that presentation doesn't get in the way.
+This is a stand-alone JavaScript application. Any changes are stored exclusively in your browser. You will need to save the YAML file to your computer in order to access this information in the future. We recommend saving it into a git repository so that changes can be effectively tracked over time.
 
-ACRs should be built with version control in a repository like GitHub. As with all modern software development, version control is key. To see that barriers are addressed, it is important to be able to track changes over time.
+ACRs should be built with version control in a repository like GitHub or Gitlab. As with all modern software development, version control is key. To see that barriers are addressed, it is important to be able to track changes over time.
+
+We have built the HTML output so that vendors can later edit it to add style elements through CSS. We expect that vendors will want to customize the look/feel and include their branding. The main goal will be to provide a means to easily compare documents so that presentation doesn't get in the way.
 
 ## Documentation
 
