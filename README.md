@@ -30,9 +30,9 @@ A digital ACR should be highly structured and machine-readable. Once it is machi
 
 Although YAML is human-readable, most people will view an OpenACR as an accessible HTML document in a web browser, as they view a webpage.
 
-Editors can write their results in YAML, but you can also use the [OpenACR editor](https://gsa.github.io/openacr-editor/). This editor is a work-in-progress, and we invite feedback. It is built on the[WAI's ATAG Report Tool](https://wai-atag-report-tool.netlify.app/). This allowed us to align with initiatives from the [W3C WAI](https://www.w3.org/WAI/), but also ensure that the tool would be easy to extend in the future.
+Editors can write their results in YAML, but you can also use the [OpenACR editor](https://gsa.github.io/openacr-editor/). This editor is a work-in-progress, and we invite feedback. It is built on the [WAI's ATAG Report Tool](https://wai-atag-report-tool.netlify.app/). This allowed us to align with initiatives from the [W3C WAI](https://www.w3.org/WAI/), but also ensure that the tool would be easy to extend in the future.
 
-This accessible JavaScript editor allows an author to either build an OpenACR file from scratch, or import one that has already been written. From this you can save OpenACR in both a YAML & HTML format. You can experiment with editing files by downloading the Drupal [YAML file](/openacr/drupal-9.yaml) file and then loading it into the editor.
+This accessible JavaScript editor allows an author to either build an OpenACR file from scratch, or import one that has already been written. From this you can save OpenACR in both a YAML & HTML format. You can experiment with editing files by downloading the Drupal [YAML file](/openacr/drupal-9.yaml) and then loading it into the editor.
 
 This is a stand-alone JavaScript application. Any changes are stored exclusively in your browser. You will need to save the YAML file to your computer in order to access this information in the future. We recommend saving it into a git repository so that changes can be effectively tracked over time.
 
