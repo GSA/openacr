@@ -68,6 +68,7 @@ export function validateOpenACRCatalogValues(
                         if (catalog.terms) {
                           if (dataComponent.adherence) {
                             if (
+                              dataComponent.adherence.level &&
                               !checkForCatalogTermDefinition(
                                 dataComponent.adherence.level,
                                 catalog.terms

@@ -166,6 +166,28 @@ describe("OpenACR CLI test validation", () => {
     });
   });
 
+  it("when passed a file that has components with adherence level set to none should return valid message", () => {
+    const invalid = spawn(
+      cmd,
+      options.concat(
+        "tests/examples/valid-components-adherence-level-none.yaml",
+        "-c",
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml"
+      )
+    );
+    const chunks = [];
+
+    invalid.stdout.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    invalid.stdout.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal("Valid!\n");
+    });
+  });
+
   it("when passed a YAML catalog file with components that have no definitions should return invalid message", () => {
     const invalid = spawn(
       cmd,
