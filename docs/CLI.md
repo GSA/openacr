@@ -6,7 +6,7 @@ The OpenACR command-line interface (CLI) is built in typescript. It takes an Ope
 
 ## Requirements
 
-You need the latest version of NPM installed. There are multiple ways to download NPM but recommendations are to [use NVM](https://github.com/nvm-sh/nvm#install--update-script). More instructions on [updating NPM](https://www.geeksforgeeks.org/how-to-update-npm/) are also available.
+You need the latest version of [Node](https://nodejs.org/en/) and NPM installed. There are multiple ways to download NPM but recommendations are to [use NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
 ## Install
 
@@ -174,3 +174,40 @@ The following files located in `tests/examples` are different types of versions 
 - valid-missing-components.yaml: A valid OpenACR example with no components in criteria '1.2.2'.
 
 _Note_: If there are CLI errors, the `openacr-validate-cli.test.ts` says tests have passed initially but after that you get the assertion error and error code 7.
+
+## Source code management
+
+### Linting
+
+We use prettier and eslint to keep the code clean and matching common standards for typescript and javascript. The configurations are located in:
+
+- .eslintignore
+- .eslingrc
+- .prettierignore
+- .prettierrc.json
+
+**Caveat**: since we are creating a new JSON scheme the typescript code does use 'any' for various function arguments.
+
+### pre-commit
+
+We use [pre-commit](https://pre-commit.com/) to run some checks and cleanup when you make a commit:
+
+- Remove trailing whitespace.
+- Fix end of file.
+- Adjust mixed line endings.
+- Remove byte order marker.
+- Check and fix YAML/JSON files.
+- Check for any large files.
+- Replace smart quotes with regular ones.
+- Run prettier.
+
+Pre-commit is also run on pull requests and will add a commit with any changes automatically. To set it up locally install pre-commit and then run the following command in the repo folder:
+
+```bash
+pre-commit install
+```
+
+The configurations for pre-commit are located in the files:
+
+- .pre-commit-config.yaml
+- .pre-commit-search-and-replace.yaml
