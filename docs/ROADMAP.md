@@ -13,7 +13,7 @@
   <tr><td> x </td><td> <img src="/docs/images/noun_directory_1421586.svg"> </td><td> Display a web directory listing of available OpenACRs. Users should be able to view a <a href="https://federalist-02947dd8-86df-467a-b2af-4c5b94c5b1f0.app.cloud.gov/site/gsa/openacr-website/openacr/">list of OpenACR files</a> as long as they are in a YAML format. These will need to be displayed in HTML in a format similar to the current VPAT. </td></tr>
 </table>
 
-## Optional phases: where ee are going
+## Optional phases: where are we going
 
 <table>
   <tr><td> - </td><td> <img src="/docs/images/noun_submit_1862632.svg"> </td><td> Build process to submit vendor ACRs. Vendors need to be able to submit new ACRs to the GSA. </td></tr>
