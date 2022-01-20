@@ -19,6 +19,7 @@
     "license-checker-rseidelsohn": "^2.1.1",
     "mocha": "^9.0.2",
     "nyc": "^15.1.0",
+    "pa11y-ci": "^3.0.1",
     "prettier": "2.3.2",
     "ts-mockito": "^2.6.1",
     "ts-node": "^10.0.0",
@@ -29,7 +30,6 @@
     "fs-extra": "^10.0.0",
     "handlebars": "^4.7.7",
     "js-yaml": "^4.1.0",
-    "pa11y-ci": "^2.4.2",
     "spdx-license-list": "^6.4.0",
     "uswds": "^2.12.1",
     "yargs": "^17.0.1"
