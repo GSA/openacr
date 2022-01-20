@@ -180,7 +180,7 @@
               "type": "object",
               "properties": {
                 "name": {
-                  "description": "Name of component. E.g. Web, Electronic Docs, Authoring Tools, Software, and so on.",
+                  "description": "Name of component. E.g. Web, Electronic Documents, Authoring Tools, Software, and so on.",
                   "type": "string"
                 },
                 "adherence": {
