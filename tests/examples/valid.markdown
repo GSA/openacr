@@ -6,7 +6,7 @@ Based on VPAT® 2.4 Revised Section 508 Edition
 Lorem Ipsum 1.1
 
 ## Report Date
-11/23/2021
+1/20/2022
 
 ## Product Description
 Fake text
@@ -55,8 +55,8 @@ The terms used in the Conformance Level information are defined as follows:
 
 | Criteria | Conformance Level | Remarks and Explanations |
 | --- | --- | --- |
-| [1.1.1 Non-text Content](https://www.w3.org/TR/WCAG20/#text-equiv-all) | <ul><li>**Web**: Supports</li><li>**Electronic Docs**: Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Supports</li> </ul> | <ul><li>**Web**: Cras ultrices, diam in laoreet condimentum, purus leo tempor erat, eu facilisis erat tortor at purus.</li><li>**Electronic Docs**: Curabitur tristique tellus quis ligula elementum, sit amet tincidunt est aliquet.</li><li>**Authoring Tool**: Vestibulum sit amet tortor ac nunc rutrum consequat vel sit amet risus. Nam eget mollis odio, sit amet bibendum mi. Quisque ac neque a nulla dapibus imperdiet.</li> </ul> |
-| [1.2.2 Captions (Prerecorded)](https://www.w3.org/TR/WCAG20/#media-equiv-captions) | <ul><li>**Web**: Partially Supports</li><li>**Electronic Docs**: Partially Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Does Not Support</li> </ul> | <ul><li>**Web**: Nam a cursus nulla. Vestibulum tincidunt tincidunt volutpat.</li><li>**Electronic Docs**: Sed tempor accumsan nisl viverra viverra.</li><li>**Authoring Tool**: There is no additional support for authors within the authoring interface to explain how this can be done.</li> </ul> |
+| [1.1.1 Non-text Content](https://www.w3.org/TR/WCAG20/#text-equiv-all) | <ul><li>**Web**: Supports</li><li>**Electronic Documents**: Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Supports</li> </ul> | <ul><li>**Web**: Cras ultrices, diam in laoreet condimentum, purus leo tempor erat, eu facilisis erat tortor at purus.</li><li>**Electronic Documents**: Curabitur tristique tellus quis ligula elementum, sit amet tincidunt est aliquet.</li><li>**Authoring Tool**: Vestibulum sit amet tortor ac nunc rutrum consequat vel sit amet risus. Nam eget mollis odio, sit amet bibendum mi. Quisque ac neque a nulla dapibus imperdiet.</li> </ul> |
+| [1.2.2 Captions (Prerecorded)](https://www.w3.org/TR/WCAG20/#media-equiv-captions) | <ul><li>**Web**: Partially Supports</li><li>**Electronic Documents**: Partially Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Does Not Support</li> </ul> | <ul><li>**Web**: Nam a cursus nulla. Vestibulum tincidunt tincidunt volutpat.</li><li>**Electronic Documents**: Sed tempor accumsan nisl viverra viverra.</li><li>**Authoring Tool**: There is no additional support for authors within the authoring interface to explain how this can be done.</li> </ul> |
 
 ### Table 2: Success Criteria, Level AA
 

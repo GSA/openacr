@@ -81,7 +81,7 @@ describe("Validate catalog", () => {
       },
       {
         id: "electronic-docs",
-        label: "Electronic Docs",
+        label: "Electronic Documents",
       },
       {
         id: "software",
@@ -157,7 +157,7 @@ describe("Validate catalog", () => {
         web: "Web",
       },
       {
-        "electronic-docs": "Electronic Docs",
+        "electronic-docs": "Electronic Documents",
       },
     ],
   };
