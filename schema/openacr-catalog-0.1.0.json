@@ -63,6 +63,10 @@
             "description": "Human-readable label.",
             "type": "string"
           },
+          "short_label": {
+            "description": "Human-readable short label.",
+            "type": "string"
+          },
           "order": {
             "description": "Number showing where the chapter/table appears in the list.",
             "type": "integer"

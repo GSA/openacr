@@ -23,6 +23,7 @@ standards:
 chapters:
   - id: success_criteria_level_a
     label: "Table 1: Success Criteria, Level A"
+    short_label: A
     order: 1
     criteria:
       - id: 1.1.1
@@ -227,6 +228,7 @@ chapters:
           - authoring-tool
   - id: success_criteria_level_aa
     label: "Table 2: Success Criteria, Level AA"
+    short_label: AA
     order: 2
     criteria:
       - id: 1.2.4
@@ -335,6 +337,7 @@ chapters:
           - authoring-tool
   - id: success_criteria_level_aaa
     label: "Table 3: Success Criteria, Level AAA"
+    short_label: AAA
     order: 3
     criteria:
       - id: 1.2.6
@@ -523,6 +526,7 @@ chapters:
           - authoring-tool
   - id: functional_performance_criteria
     label: "Chapter 3: Functional Performance Criteria (FPC)"
+    short_label: FPC
     order: 3
     criteria:
       - id: "302.1"
@@ -572,7 +576,7 @@ chapters:
           - none
   - id: hardware
     label: "Chapter 4: Hardware"
-    chapter_title: Chapter 4
+    short_label: Hardware
     order: 4
     criteria:
       - id: 402.2.1
@@ -852,6 +856,7 @@ chapters:
           - none
   - id: software
     label: "Chapter 5: Software"
+    short_label: Software
     order: 5
     criteria:
       - id: 502.2.1
@@ -988,6 +993,7 @@ chapters:
           - none
   - id: support_documentation_and_services
     label: "Chapter 6: Support Documentation and Services"
+    short_label: Documentation
     order: 6
     criteria:
       - id: "602.2"
@@ -1019,7 +1025,7 @@ components:
   - id: web
     label: Web
   - id: electronic-docs
-    label: Electronic Docs
+    label: Electronic Documents
   - id: software
     label: Software
   - id: authoring-tool

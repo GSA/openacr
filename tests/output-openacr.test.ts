@@ -111,7 +111,7 @@ describe("Output", () => {
       },
       {
         id: "electronic-docs",
-        label: "Electronic Docs",
+        label: "Electronic Documents",
       },
       {
         id: "software",
@@ -306,7 +306,7 @@ describe("Output", () => {
       },
       {
         id: "electronic-docs",
-        label: "Electronic Docs",
+        label: "Electronic Documents",
       },
       {
         id: "software",
@@ -349,7 +349,7 @@ describe("Output", () => {
       },
       {
         id: "electronic-docs",
-        label: "Electronic Docs",
+        label: "Electronic Documents",
       },
       {
         id: "software",

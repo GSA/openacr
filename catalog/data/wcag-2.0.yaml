@@ -14,6 +14,7 @@ standard:
 chapters:
   - id: success_criteria_level_a
     label: "Table 1: Success Criteria, Level A"
+    short_label: "A"
     order: 1
     criteria:
       - id: 1.1.1
@@ -118,6 +119,7 @@ chapters:
         components: [web, "electronic-docs", software, "authoring-tool"]
   - id: success_criteria_level_aa
     label: "Table 2: Success Criteria, Level AA"
+    short_label: "AA"
     order: 2
     criteria:
       - id: 1.2.4
@@ -174,6 +176,7 @@ chapters:
         components: [web, "electronic-docs", software, "authoring-tool"]
   - id: success_criteria_level_aaa
     label: "Table 3: Success Criteria, Level AAA"
+    short_label: "AAA"
     order: 3
     criteria:
       - id: 1.2.6

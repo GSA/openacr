@@ -22,6 +22,6 @@ chapters:
         components: [software, "electronic-docs", "authoring-tool"]
 components:
   - id: "electronic-docs"
-    label: Electronic Docs
+    label: Electronic Documents
   - id: "authoring-tool"
     label: Authoring Tool

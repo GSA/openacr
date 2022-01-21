@@ -91,7 +91,7 @@ describe("Create catalog", () => {
       },
       {
         id: "electronic-docs",
-        label: "Electronic Docs",
+        label: "Electronic Documents",
       },
       {
         id: "software",

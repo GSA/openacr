@@ -149,6 +149,25 @@ Current example OpenACRs that are tracked in this repository are in the `openacr
 OpenACRs:
 
 - drupal-9.yaml: Current Drupal 9 OpenACR.
+- govready-0.9.yaml
+- Moodle-3.yaml
+- NVDA-2018.yaml
+- Plone-5.yaml
+
+To regenerate the above OpenACR markdown and HTML reports run the following commands:
+
+```bash
+npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/drupal-9.html
+npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/drupal-9.markdown
+npx ts-node src/openacr.ts output -f openacr/govready-0.9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/govready-0.9.html
+npx ts-node src/openacr.ts output -f openacr/govready-0.9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/govready-0.9.markdown
+npx ts-node src/openacr.ts output -f openacr/Moodle-3.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/Moodle-3.html
+npx ts-node src/openacr.ts output -f openacr/Moodle-3.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/Moodle-3.markdown
+npx ts-node src/openacr.ts output -f openacr/NVDA-2018.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/NVDA-2018.html
+npx ts-node src/openacr.ts output -f openacr/NVDA-2018.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/NVDA-2018.markdown
+npx ts-node src/openacr.ts output -f openacr/Plone-5.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/Plone-5.html
+npx ts-node src/openacr.ts output -f openacr/Plone-5.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/Plone-5.markdown
+```
 
 ## Tests
 
