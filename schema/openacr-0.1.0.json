@@ -92,6 +92,10 @@
               "description": "Any details or explanation about the chapter.",
               "type": "string"
             },
+            "disabled": {
+              "description": "Whether this chapter's criteria is not going to be provided in the ACR",
+              "type": "boolean"
+            },
             "criteria": {
               "$ref": "#/definitions/criteria"
             }
@@ -104,6 +108,10 @@
             "notes": {
               "description": "Any details or explanation about the chapter.",
               "type": "string"
+            },
+            "disabled": {
+              "description": "Whether this chapter's criteria is not going to be provided in the ACR",
+              "type": "boolean"
             },
             "criteria": {
               "$ref": "#/definitions/criteria"
@@ -118,18 +126,77 @@
               "description": "Any details or explanation about the chapter.",
               "type": "string"
             },
+            "disabled": {
+              "description": "Whether this chapter's criteria is not going to be provided in the ACR",
+              "type": "boolean"
+            },
+            "criteria": {
+              "$ref": "#/definitions/criteria"
+            }
+          }
+        },
+        "functional_performance_criteria": {
+          "description": "Functional Performance Criteria (FPC) (chapter 3 in 508/INT versions, chapter 4 in EU version).",
+          "type": "object",
+          "properties": {
+            "notes": {
+              "description": "Any details or explanation about the chapter.",
+              "type": "string"
+            },
+            "disabled": {
+              "description": "Whether this chapter's criteria is not going to be provided in the ACR",
+              "type": "boolean"
+            },
             "criteria": {
               "$ref": "#/definitions/criteria"
             }
           }
         },
         "hardware": {
-          "description": "Hardware (chapter 4 in 508/WCAG/INT versions, chapter 8 in EU version).",
+          "description": "Hardware (chapter 4 in 508/INT versions, chapter 8 in EU version).",
           "type": "object",
           "properties": {
             "notes": {
               "description": "Any details or explanation about the chapter.",
               "type": "string"
+            },
+            "disabled": {
+              "description": "Whether this chapter's criteria is not going to be provided in the ACR",
+              "type": "boolean"
+            },
+            "criteria": {
+              "$ref": "#/definitions/criteria"
+            }
+          }
+        },
+        "software": {
+          "description": "Software (chapter 5 in 508/INT versions, chapter 11 in EU version).",
+          "type": "object",
+          "properties": {
+            "notes": {
+              "description": "Any details or explanation about the chapter.",
+              "type": "string"
+            },
+            "disabled": {
+              "description": "Whether this chapter's criteria is not going to be provided in the ACR",
+              "type": "boolean"
+            },
+            "criteria": {
+              "$ref": "#/definitions/criteria"
+            }
+          }
+        },
+        "support_documentation_and_services": {
+          "description": "Support Documentation and Services (chapter 6 in 508/INT versions, chapter 12 in EU version).",
+          "type": "object",
+          "properties": {
+            "notes": {
+              "description": "Any details or explanation about the chapter.",
+              "type": "string"
+            },
+            "disabled": {
+              "description": "Whether this chapter's criteria is not going to be provided in the ACR",
+              "type": "boolean"
             },
             "criteria": {
               "$ref": "#/definitions/criteria"
