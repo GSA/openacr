@@ -1,6 +1,6 @@
 {
   "name": "@openacr/openacr",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "OpenACR schema validator and output generator",
   "repository": "GSA/openacr",
   "license": "CC0-1.0",
