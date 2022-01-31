@@ -7,4 +7,18 @@
 # name or J's organization's name should be added to AUTHORS.txt
 #
 # Names should be added to this file as:
-# Name <email address>
+# Name <email address> and/or (GitHub)
+
+Andrew Neilson <andrew.nielson@gsa.gov> (drewnielson)
+Bruce Bailey <bailey@access-board.gov> (bruce-usab)
+Daniel Mundra <Daniel.mundra@civicactions.com> (dmundra)
+Danita Delce <danita.delce@civicactions.com>
+Farooq Zakhilwal <farooq.zakhilwal@civicactions.com>
+Jacqueline Quintanilla <jacqueline.quintanilla@civicactions.com>
+Jonathan Avila <jon.avila@levelaccess.com>
+Luke Fretwell <luke@proudcity.com> (lukefretwell)
+Melinda Burgess <melinda.burgess@civicactions.com>
+Mike Gifford <mike.gifford@civicactions.com> (mgifford)
+Owen Barton <owen.barten@civicactions.com> (grugnog)
+Robert Linder (Malvoz)
+Syed Azeem <syed.azeem@gsa.gov> (saz33m)
