@@ -51,8 +51,6 @@ We may request changes from the author for any contributions that do not pass th
 
 Any GSA team member should be able to make a branch of the site and submit a pull request. Doing so will also generate a preview URL we can use to inspect your changes. Please do not submit a pull request from a fork of the site, because that does not permit us to inspect your changes.
 
-Because new blog posts are published several times a week, we use several branches to manage parallel work in a predictable way:
-
 - Submit **new design work, content changes, and features** as pull requests to the `dev` branch. This will allow us to test and review batches of changes before deploying them.
 
 **The `master`, `staging`, and `production` branches are protected.** Only administrators of the repo can push directly to those branches.
@@ -96,11 +94,7 @@ To test the site locally for accessibility errors.
 
 ### Performance
 
-Each of the following events should load in under a second:
-
-- Time to blog post image
-- Time to main image and callout text
-- Time until first blog post title shows up on page with all blog posts
+Most events should load in under a second.
 
 ## Public domain
 
