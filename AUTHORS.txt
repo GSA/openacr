@@ -3,4 +3,6 @@
 # See the latter for an explanation.
 #
 # Names should be added to this file as:
-# Name or Organization <email address>
+# Name or Organization <email address> (GitHub)
+Andrew Neilson <andrew.nielson@gsa.gov> (drewnielson)
+Syed Azeem <syed.azeem@gsa.gov> (saz33m)
