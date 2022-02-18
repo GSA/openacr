@@ -1,16 +1,17 @@
 import { validateCatalog } from "./validateCatalog";
 
 export function createCatalog(
-  wcag20: any,
-  section508: any,
+  catalog1: any,
+  catalog2: any,
   components: any,
-  terms: any
+  terms: any,
+  merge = false
 ): any {
   return {
-    title: getTitle(section508),
-    lang: getLang(section508),
-    standards: getStandards(wcag20, section508),
-    chapters: getChapters(wcag20, section508),
+    title: getTitle(catalog2),
+    lang: getLang(catalog2),
+    standards: getStandards(catalog1, catalog2),
+    chapters: getChapters(catalog1, catalog2, merge),
     components: getComponents(components),
     terms: getTerms(terms),
   };
@@ -28,9 +29,32 @@ function getComponents(components: any): any {
   }
 }
 
-function getChapters(first: any, second: any): any {
+function sortCriteria(firstCriteria: any, secondCriteria: any) {
+  if (firstCriteria.id < secondCriteria.id) {
+    return -1;
+  }
+  if (firstCriteria.id > secondCriteria.id) {
+    return 1;
+  }
+  return 0;
+}
+
+function getChapters(first: any, second: any, merge: boolean): any {
   if (validateCatalogDataFiles(first) && validateCatalogDataFiles(second)) {
-    return first.chapters.concat(second.chapters);
+    if (merge) {
+      first.chapters[0].criteria = first.chapters[0].criteria
+        .concat(second.chapters[0].criteria)
+        .sort(sortCriteria);
+      first.chapters[1].criteria = first.chapters[1].criteria
+        .concat(second.chapters[1].criteria)
+        .sort(sortCriteria);
+      first.chapters[2].criteria = first.chapters[2].criteria
+        .concat(second.chapters[2].criteria)
+        .sort(sortCriteria);
+      return first.chapters;
+    } else {
+      return first.chapters.concat(second.chapters);
+    }
   }
 }
 

@@ -44,15 +44,26 @@ if (argv.catalog) {
   const terms = yaml.load(
     fs.readFileSync("./catalog/data/terms.yaml").toString()
   );
+  const wcag21 = yaml.load(
+    fs.readFileSync("./catalog/data/wcag-2.1.yaml").toString()
+  );
 
   let combined;
   let outputFile = "";
   switch (catalog) {
-    case "WCAG":
     case "EU":
     case "INT":
     default:
       console.warn(`${catalog} is currently not supported.`);
+      break;
+    case "WCAG":
+      console.log(
+        `Warning: This will rebuild the following catalog: ${catalog}.`
+      );
+
+      combined = createCatalog(wcag20, wcag21, components, terms, true);
+
+      outputFile = `./catalog/2.4-edition-${combined.standards[0].id}-${combined.standards[1].id}-${combined.lang}.yaml`;
       break;
 
     case "508":

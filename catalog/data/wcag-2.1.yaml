@@ -1,0 +1,97 @@
+title: WCAG 2.1
+lang: en
+standard:
+  - id: wcag-2.1
+    label: "Web Content Accessibility Guidelines 2.1"
+    report_heading: "WCAG 2.1 Report"
+    url: https://www.w3.org/TR/WCAG21/
+    chapters:
+      [
+        success_criteria_level_a,
+        success_criteria_level_aa,
+        success_criteria_level_aaa,
+      ]
+chapters:
+  - id: success_criteria_level_a
+    label: "Table 1: Success Criteria, Level A"
+    short_label: "A"
+    order: 1
+    criteria:
+      - id: 2.1.4
+        handle: Character Key Shortcuts
+        alt_id: character-key-shortcuts
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.5.1
+        handle: Pointer Gestures
+        alt_id: pointer-gestures
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.5.2
+        handle: Pointer Cancellation
+        alt_id: pointer-cancellation
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.5.3
+        handle: Label in Name
+        alt_id: label-in-name
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.5.4
+        handle: Motion Actuation
+        alt_id: motion-actuation
+        components: [web, "electronic-docs", software, "authoring-tool"]
+  - id: success_criteria_level_aa
+    label: "Table 2: Success Criteria, Level AA"
+    short_label: "AA"
+    order: 2
+    criteria:
+      - id: 1.3.4
+        handle: Orientation
+        alt_id: orientation
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.3.5
+        handle: Identify Input Purpose
+        alt_id: identify-input-purpose
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.4.10
+        handle: Reflow
+        alt_id: reflow
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.4.11
+        handle: Non-text Contrast
+        alt_id: non-text-contrast
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.4.12
+        handle: Text Spacing
+        alt_id: text-spacing
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 1.4.13
+        handle: Content on Hover or Focus
+        alt_id: content-on-hover-or-focus
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 4.1.3
+        handle: Status Messages
+        alt_id: status-messages
+        components: [web, "electronic-docs", software, "authoring-tool"]
+  - id: success_criteria_level_aaa
+    label: "Table 3: Success Criteria, Level AAA"
+    short_label: "AAA"
+    order: 3
+    criteria:
+      - id: 1.3.6
+        handle: Identify Purpose
+        alt_id: identify-purpose
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.2.6
+        handle: Timeouts
+        alt_id: timeouts
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.3.3
+        handle: Animation from Interactions
+        alt_id: animation-from-interactions
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.5.5
+        handle: Target Size
+        alt_id: target-size
+        components: [web, "electronic-docs", software, "authoring-tool"]
+      - id: 2.5.6
+        handle: Concurrent Input Mechanisms
+        alt_id: concurrent-input-mechanisms
+        components: [web, "electronic-docs", software, "authoring-tool"]
