@@ -210,7 +210,7 @@
 │  ├─ repository: https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.walk
 │  ├─ path: node_modules/@nodelib/fs.walk
 │  └─ licenseFile: node_modules/@nodelib/fs.walk/LICENSE
-├─ @openacr/openacr@0.3.2
+├─ @openacr/openacr@0.3.4
 │  ├─ licenses: CC0-1.0
 │  ├─ repository: https://github.com/GSA/openacr
 │  ├─ path:
@@ -385,15 +385,7 @@
 │  ├─ url: https://github.com/doowb
 │  ├─ path: node_modules/ansi-colors
 │  └─ licenseFile: node_modules/ansi-colors/LICENSE
-├─ ansi-regex@3.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/chalk/ansi-regex
-│  ├─ publisher: Sindre Sorhus
-│  ├─ email: sindresorhus@gmail.com
-│  ├─ url: sindresorhus.com
-│  ├─ path: node_modules/wide-align/node_modules/ansi-regex
-│  └─ licenseFile: node_modules/wide-align/node_modules/ansi-regex/license
-├─ ansi-regex@5.0.0
+├─ ansi-regex@5.0.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/chalk/ansi-regex
 │  ├─ publisher: Sindre Sorhus
@@ -703,7 +695,7 @@
 │  ├─ email: mattmuelle@gmail.com
 │  ├─ path: node_modules/cheerio
 │  └─ licenseFile: node_modules/cheerio/LICENSE
-├─ chokidar@3.5.2
+├─ chokidar@3.5.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/paulmillr/chokidar
 │  ├─ publisher: Paul Miller
@@ -846,18 +838,11 @@
 │  ├─ url: http://feedic.com
 │  ├─ path: node_modules/css-what
 │  └─ licenseFile: node_modules/css-what/LICENSE
-├─ debug@4.3.1
+├─ debug@4.3.3
 │  ├─ licenses: MIT
-│  ├─ repository: https://github.com/visionmedia/debug
-│  ├─ publisher: TJ Holowaychuk
-│  ├─ email: tj@vision-media.ca
-│  ├─ path: node_modules/mocha/node_modules/debug
-│  └─ licenseFile: node_modules/mocha/node_modules/debug/LICENSE
-├─ debug@4.3.2
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/visionmedia/debug
-│  ├─ publisher: TJ Holowaychuk
-│  ├─ email: tj@vision-media.ca
+│  ├─ repository: https://github.com/debug-js/debug
+│  ├─ publisher: Josh Junon
+│  ├─ email: josh.junon@protonmail.com
 │  ├─ path: node_modules/debug
 │  └─ licenseFile: node_modules/debug/LICENSE
 ├─ debuglog@1.0.1
@@ -1353,7 +1338,7 @@
 │  ├─ url: https://gulpjs.com/
 │  ├─ path: node_modules/glob-parent
 │  └─ licenseFile: node_modules/glob-parent/LICENSE
-├─ glob@7.1.7
+├─ glob@7.2.0
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/isaacs/node-glob
 │  ├─ publisher: Isaac Z. Schlueter
@@ -1577,14 +1562,6 @@
 │  ├─ url: https://github.com/jonschlinkert
 │  ├─ path: node_modules/is-extglob
 │  └─ licenseFile: node_modules/is-extglob/LICENSE
-├─ is-fullwidth-code-point@2.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/sindresorhus/is-fullwidth-code-point
-│  ├─ publisher: Sindre Sorhus
-│  ├─ email: sindresorhus@gmail.com
-│  ├─ url: sindresorhus.com
-│  ├─ path: node_modules/wide-align/node_modules/is-fullwidth-code-point
-│  └─ licenseFile: node_modules/wide-align/node_modules/is-fullwidth-code-point/license
 ├─ is-fullwidth-code-point@3.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/is-fullwidth-code-point
@@ -1958,7 +1935,7 @@
 │  ├─ repository: https://github.com/isaacs/node-mkdirp
 │  ├─ path: node_modules/license-checker-rseidelsohn/node_modules/mkdirp
 │  └─ licenseFile: node_modules/license-checker-rseidelsohn/node_modules/mkdirp/LICENSE
-├─ mocha@9.0.2
+├─ mocha@9.2.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/mochajs/mocha
 │  ├─ publisher: TJ Holowaychuk
@@ -1975,7 +1952,7 @@
 │  ├─ repository: https://github.com/vercel/ms
 │  ├─ path: node_modules/mocha/node_modules/ms
 │  └─ licenseFile: node_modules/mocha/node_modules/ms/license.md
-├─ nanoid@3.1.23
+├─ nanoid@3.2.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/ai/nanoid
 │  ├─ publisher: Andrey Sitnik
@@ -1994,7 +1971,7 @@
 │  ├─ repository: https://github.com/suguru03/neo-async
 │  ├─ path: node_modules/neo-async
 │  └─ licenseFile: node_modules/neo-async/LICENSE
-├─ node-fetch@2.6.1
+├─ node-fetch@2.6.7
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/bitinn/node-fetch
 │  ├─ publisher: David Frank
@@ -2058,7 +2035,7 @@
 │  ├─ url: https://izs.me
 │  ├─ path: node_modules/npm-normalize-package-bin
 │  └─ licenseFile: node_modules/npm-normalize-package-bin/LICENSE
-├─ nth-check@2.0.0
+├─ nth-check@2.0.1
 │  ├─ licenses: BSD-2-Clause
 │  ├─ repository: https://github.com/fb55/nth-check
 │  ├─ publisher: Felix Boehm
@@ -2694,14 +2671,6 @@
 │  ├─ url: http://alexei.ro/
 │  ├─ path: node_modules/sprintf-js
 │  └─ licenseFile: node_modules/sprintf-js/LICENSE
-├─ string-width@2.1.1
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/sindresorhus/string-width
-│  ├─ publisher: Sindre Sorhus
-│  ├─ email: sindresorhus@gmail.com
-│  ├─ url: sindresorhus.com
-│  ├─ path: node_modules/wide-align/node_modules/string-width
-│  └─ licenseFile: node_modules/wide-align/node_modules/string-width/license
 ├─ string-width@4.2.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/string-width
@@ -2715,14 +2684,6 @@
 │  ├─ repository: https://github.com/nodejs/string_decoder
 │  ├─ path: node_modules/string_decoder
 │  └─ licenseFile: node_modules/string_decoder/LICENSE
-├─ strip-ansi@4.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/chalk/strip-ansi
-│  ├─ publisher: Sindre Sorhus
-│  ├─ email: sindresorhus@gmail.com
-│  ├─ url: sindresorhus.com
-│  ├─ path: node_modules/wide-align/node_modules/strip-ansi
-│  └─ licenseFile: node_modules/wide-align/node_modules/strip-ansi/license
 ├─ strip-ansi@6.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/chalk/strip-ansi
@@ -2830,6 +2791,12 @@
 │  ├─ url: https://github.com/jonschlinkert
 │  ├─ path: node_modules/to-regex-range
 │  └─ licenseFile: node_modules/to-regex-range/LICENSE
+├─ tr46@0.0.3
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/Sebmaster/tr46.js
+│  ├─ publisher: Sebastian Mayr
+│  ├─ email: npm@smayr.name
+│  └─ path: node_modules/tr46
 ├─ treeify@1.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/notatestuser/treeify
@@ -2990,6 +2957,21 @@
 │  ├─ url: https://kemitchell.com
 │  ├─ path: node_modules/validate-npm-package-license
 │  └─ licenseFile: node_modules/validate-npm-package-license/LICENSE
+├─ webidl-conversions@3.0.1
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/jsdom/webidl-conversions
+│  ├─ publisher: Domenic Denicola
+│  ├─ email: d@domenic.me
+│  ├─ url: https://domenic.me/
+│  ├─ path: node_modules/webidl-conversions
+│  └─ licenseFile: node_modules/webidl-conversions/LICENSE.md
+├─ whatwg-url@5.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jsdom/whatwg-url
+│  ├─ publisher: Sebastian Mayr
+│  ├─ email: github@smayr.name
+│  ├─ path: node_modules/whatwg-url
+│  └─ licenseFile: node_modules/whatwg-url/LICENSE.txt
 ├─ which-module@2.0.0
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/nexdrew/which-module
@@ -3004,14 +2986,6 @@
 │  ├─ url: http://blog.izs.me
 │  ├─ path: node_modules/which
 │  └─ licenseFile: node_modules/which/LICENSE
-├─ wide-align@1.1.3
-│  ├─ licenses: ISC
-│  ├─ repository: https://github.com/iarna/wide-align
-│  ├─ publisher: Rebecca Turner
-│  ├─ email: me@re-becca.org
-│  ├─ url: http://re-becca.org/
-│  ├─ path: node_modules/wide-align
-│  └─ licenseFile: node_modules/wide-align/LICENSE
 ├─ word-wrap@1.2.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/jonschlinkert/word-wrap
@@ -3027,7 +3001,7 @@
 │  ├─ url: http://substack.net
 │  ├─ path: node_modules/wordwrap
 │  └─ licenseFile: node_modules/wordwrap/LICENSE
-├─ workerpool@6.1.5
+├─ workerpool@6.2.0
 │  ├─ licenses: Apache-2.0
 │  ├─ repository: https://github.com/josdejong/workerpool
 │  ├─ publisher: Jos de Jong
