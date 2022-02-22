@@ -4,14 +4,13 @@ export function createCatalog(
   catalog1: any,
   catalog2: any,
   components: any,
-  terms: any,
-  merge = false
+  terms: any
 ): any {
   return {
     title: getTitle(catalog2),
     lang: getLang(catalog2),
     standards: getStandards(catalog1, catalog2),
-    chapters: getChapters(catalog1, catalog2, merge),
+    chapters: getChapters(catalog1, catalog2),
     components: getComponents(components),
     terms: getTerms(terms),
   };
@@ -29,38 +28,27 @@ function getComponents(components: any): any {
   }
 }
 
-function sortCriteria(firstCriteria: any, secondCriteria: any) {
-  if (firstCriteria.id < secondCriteria.id) {
-    return -1;
-  }
-  if (firstCriteria.id > secondCriteria.id) {
-    return 1;
-  }
-  return 0;
-}
-
-function getChapters(first: any, second: any, merge: boolean): any {
-  if (validateCatalogDataFiles(first) && validateCatalogDataFiles(second)) {
-    if (merge) {
-      first.chapters[0].criteria = first.chapters[0].criteria
-        .concat(second.chapters[0].criteria)
-        .sort(sortCriteria);
-      first.chapters[1].criteria = first.chapters[1].criteria
-        .concat(second.chapters[1].criteria)
-        .sort(sortCriteria);
-      first.chapters[2].criteria = first.chapters[2].criteria
-        .concat(second.chapters[2].criteria)
-        .sort(sortCriteria);
-      return first.chapters;
-    } else {
+function getChapters(first: any, second: any): any {
+  if (first) {
+    if (validateCatalogDataFiles(first) && validateCatalogDataFiles(second)) {
       return first.chapters.concat(second.chapters);
+    }
+  } else {
+    if (validateCatalogDataFiles(second)) {
+      return second.chapters;
     }
   }
 }
 
 function getStandards(first: any, second: any): any {
-  if (validateCatalogDataFiles(first) && validateCatalogDataFiles(second)) {
-    return first.standard.concat(second.standard);
+  if (first) {
+    if (validateCatalogDataFiles(first) && validateCatalogDataFiles(second)) {
+      return first.standard.concat(second.standard);
+    }
+  } else {
+    if (validateCatalogDataFiles(second)) {
+      return second.standard;
+    }
   }
 }
 

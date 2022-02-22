@@ -161,6 +161,12 @@ describe("Create catalog", () => {
     expect(result.chapters).to.be.undefined;
   });
 
+  it("pass invalid WCAG should have undefined standards and chapters", () => {
+    result = createCatalog({}, validSection508, validComponents, validTerms);
+    expect(result.standards).to.be.undefined;
+    expect(result.chapters).to.be.undefined;
+  });
+
   it("pass invalid components should have undefined components", () => {
     result = createCatalog(validWCAG, validSection508, {}, validTerms);
     expect(result.components).to.be.undefined;
@@ -169,5 +175,11 @@ describe("Create catalog", () => {
   it("pass invalid terms should have undefined terms", () => {
     result = createCatalog(validWCAG, validSection508, validComponents, {});
     expect(result.terms).to.be.undefined;
+  });
+
+  it("pass null WCAG and invalid section508 should have undefined standards and chapters", () => {
+    result = createCatalog(null, {}, validComponents, validTerms);
+    expect(result.standards).to.be.undefined;
+    expect(result.chapters).to.be.undefined;
   });
 });

@@ -1051,4 +1051,4 @@ terms:
     label: Not Evaluated
     description: >-
       The product has not been evaluated against the criterion. This can be used
-      only in WCAG 2.0 Level AAA.
+      only in WCAG 2.x Level AAA.
