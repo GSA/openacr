@@ -89,6 +89,10 @@
         }
       }
     },
+    "catalog": {
+      "description": "Name of the catalog to build and validate the OpenACR. E.g. 2.4-edition-wcag-2.0-508-en.",
+      "type": "string"
+    },
     "chapters": {
       "type": "object",
       "properties": {
