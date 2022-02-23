@@ -1,16 +1,18 @@
 import { validateCatalog } from "./validateCatalog";
 
 export function createCatalog(
-  wcag20: any,
-  section508: any,
+  catalog1: any,
+  catalog2: any,
   components: any,
-  terms: any
+  terms: any,
+  title: string,
+  lang: string
 ): any {
   return {
-    title: getTitle(section508),
-    lang: getLang(section508),
-    standards: getStandards(wcag20, section508),
-    chapters: getChapters(wcag20, section508),
+    title: title,
+    lang: lang,
+    standards: getStandards(catalog1, catalog2),
+    chapters: getChapters(catalog1, catalog2),
     components: getComponents(components),
     terms: getTerms(terms),
   };
@@ -29,26 +31,26 @@ function getComponents(components: any): any {
 }
 
 function getChapters(first: any, second: any): any {
-  if (validateCatalogDataFiles(first) && validateCatalogDataFiles(second)) {
-    return first.chapters.concat(second.chapters);
+  if (first) {
+    if (validateCatalogDataFiles(first) && validateCatalogDataFiles(second)) {
+      return first.chapters.concat(second.chapters);
+    }
+  } else {
+    if (validateCatalogDataFiles(second)) {
+      return second.chapters;
+    }
   }
 }
 
 function getStandards(first: any, second: any): any {
-  if (validateCatalogDataFiles(first) && validateCatalogDataFiles(second)) {
-    return first.standard.concat(second.standard);
-  }
-}
-
-function getTitle(data: any): any {
-  if (validateCatalogDataFiles(data)) {
-    return data.title;
-  }
-}
-
-function getLang(data: any): any {
-  if (validateCatalogDataFiles(data)) {
-    return data.lang;
+  if (first) {
+    if (validateCatalogDataFiles(first) && validateCatalogDataFiles(second)) {
+      return first.standard.concat(second.standard);
+    }
+  } else {
+    if (validateCatalogDataFiles(second)) {
+      return second.standard;
+    }
   }
 }
 

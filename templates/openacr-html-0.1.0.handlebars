@@ -29,6 +29,8 @@
       </h2>
       {{#if report_date}}
         {{report_date}}
+      {{else}}
+        {{ now }}
       {{/if}}
 
       {{#if product.description}}

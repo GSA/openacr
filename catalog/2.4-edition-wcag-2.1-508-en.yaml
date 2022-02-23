@@ -1,10 +1,10 @@
-title: VPAT® 2.4 Revised Section 508 Edition
+title: VPAT® 2.4 WCAG 2.1 and Revised Section 508 Edition
 lang: en
 standards:
-  - id: wcag-2.0
-    label: Web Content Accessibility Guidelines 2.0
-    report_heading: WCAG 2.0 Report
-    url: https://www.w3.org/TR/WCAG20/
+  - id: wcag-2.1
+    label: Web Content Accessibility Guidelines 2.1
+    report_heading: WCAG 2.1 Report
+    url: https://www.w3.org/TR/WCAG21/
     chapters:
       - success_criteria_level_a
       - success_criteria_level_aa
@@ -28,7 +28,7 @@ chapters:
     criteria:
       - id: 1.1.1
         handle: Non-text Content
-        alt_id: text-equiv-all
+        alt_id: non-text-content
         components:
           - web
           - electronic-docs
@@ -36,7 +36,7 @@ chapters:
           - authoring-tool
       - id: 1.2.1
         handle: Audio-only and Video-only (Prerecorded)
-        alt_id: media-equiv-av-only-alt
+        alt_id: audio-only-and-video-only-prerecorded
         components:
           - web
           - electronic-docs
@@ -44,7 +44,7 @@ chapters:
           - authoring-tool
       - id: 1.2.2
         handle: Captions (Prerecorded)
-        alt_id: media-equiv-captions
+        alt_id: captions-prerecorded
         components:
           - web
           - electronic-docs
@@ -52,7 +52,7 @@ chapters:
           - authoring-tool
       - id: 1.2.3
         handle: Audio Description or Media Alternative (Prerecorded)
-        alt_id: media-equiv-audio-desc
+        alt_id: audio-description-or-media-alternative-prerecorded
         components:
           - web
           - electronic-docs
@@ -60,7 +60,7 @@ chapters:
           - authoring-tool
       - id: 1.3.1
         handle: Info and Relationships
-        alt_id: content-structure-separation-programmatic
+        alt_id: info-and-relationships
         components:
           - web
           - electronic-docs
@@ -68,7 +68,7 @@ chapters:
           - authoring-tool
       - id: 1.3.2
         handle: Meaningful Sequence
-        alt_id: content-structure-separation-sequence
+        alt_id: meaningful-sequence
         components:
           - web
           - electronic-docs
@@ -76,7 +76,7 @@ chapters:
           - authoring-tool
       - id: 1.3.3
         handle: Sensory Characteristics
-        alt_id: content-structure-separation-understanding
+        alt_id: sensory-characteristics
         components:
           - web
           - electronic-docs
@@ -84,7 +84,7 @@ chapters:
           - authoring-tool
       - id: 1.4.1
         handle: Use of Color
-        alt_id: visual-audio-contrast-without-color
+        alt_id: use-of-color
         components:
           - web
           - electronic-docs
@@ -92,7 +92,7 @@ chapters:
           - authoring-tool
       - id: 1.4.2
         handle: Audio Control
-        alt_id: visual-audio-contrast-dis-audio
+        alt_id: audio-control
         components:
           - web
           - electronic-docs
@@ -100,7 +100,7 @@ chapters:
           - authoring-tool
       - id: 2.1.1
         handle: Keyboard
-        alt_id: keyboard-operation-keyboard-operable
+        alt_id: keyboard
         components:
           - web
           - electronic-docs
@@ -108,7 +108,15 @@ chapters:
           - authoring-tool
       - id: 2.1.2
         handle: No Keyboard Trap
-        alt_id: keyboard-operation-trapping
+        alt_id: no-keyboard-trap
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.1.4
+        handle: Character Key Shortcuts
+        alt_id: character-key-shortcuts
         components:
           - web
           - electronic-docs
@@ -124,7 +132,7 @@ chapters:
           - authoring-tool
       - id: 2.2.2
         handle: Timing Adjustable
-        alt_id: time-limits-pause
+        alt_id: timing-adjustable
         components:
           - web
           - electronic-docs
@@ -132,7 +140,7 @@ chapters:
           - authoring-tool
       - id: 2.3.1
         handle: Three Flashes or Below Threshold
-        alt_id: seizure-does-not-violate
+        alt_id: three-flashes-or-below-threshold
         components:
           - web
           - electronic-docs
@@ -140,7 +148,7 @@ chapters:
           - authoring-tool
       - id: 2.4.1
         handle: Bypass Blocks
-        alt_id: navigation-mechanisms-skip
+        alt_id: bypass-blocks
         components:
           - web
           - electronic-docs
@@ -148,7 +156,7 @@ chapters:
           - authoring-tool
       - id: 2.4.2
         handle: Page Titled
-        alt_id: navigation-mechanisms-title
+        alt_id: page-titled
         components:
           - web
           - electronic-docs
@@ -156,7 +164,7 @@ chapters:
           - authoring-tool
       - id: 2.4.3
         handle: Focus Order
-        alt_id: navigation-mechanisms-focus-order
+        alt_id: focus-order
         components:
           - web
           - electronic-docs
@@ -164,7 +172,39 @@ chapters:
           - authoring-tool
       - id: 2.4.4
         handle: Link Purpose (In Context)
-        alt_id: navigation-mechanisms-refs
+        alt_id: link-purpose-in-context
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.5.1
+        handle: Pointer Gestures
+        alt_id: pointer-gestures
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.5.2
+        handle: Pointer Cancellation
+        alt_id: pointer-cancellation
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.5.3
+        handle: Label in Name
+        alt_id: label-in-name
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.5.4
+        handle: Motion Actuation
+        alt_id: motion-actuation
         components:
           - web
           - electronic-docs
@@ -172,7 +212,7 @@ chapters:
           - authoring-tool
       - id: 3.1.1
         handle: Language of Page
-        alt_id: meaning-doc-lang-id
+        alt_id: language-of-page
         components:
           - web
           - electronic-docs
@@ -180,7 +220,7 @@ chapters:
           - authoring-tool
       - id: 3.2.1
         handle: On Focus
-        alt_id: consistent-behavior-receive-focus
+        alt_id: on-focus
         components:
           - web
           - electronic-docs
@@ -188,7 +228,7 @@ chapters:
           - authoring-tool
       - id: 3.2.2
         handle: On Input
-        alt_id: consistent-behavior-unpredictable-change
+        alt_id: on-input
         components:
           - web
           - electronic-docs
@@ -196,7 +236,7 @@ chapters:
           - authoring-tool
       - id: 3.3.1
         handle: Error Identification
-        alt_id: minimize-error-identified
+        alt_id: error-identification
         components:
           - web
           - electronic-docs
@@ -204,7 +244,7 @@ chapters:
           - authoring-tool
       - id: 3.3.2
         handle: Labels or Instructions
-        alt_id: minimize-error-cues
+        alt_id: labels-or-instructions
         components:
           - web
           - electronic-docs
@@ -212,7 +252,7 @@ chapters:
           - authoring-tool
       - id: 4.1.1
         handle: Parsing
-        alt_id: ensure-compat-parses
+        alt_id: parsing
         components:
           - web
           - electronic-docs
@@ -220,7 +260,7 @@ chapters:
           - authoring-tool
       - id: 4.1.2
         handle: Name, Role, Value
-        alt_id: ensure-compat-rsv
+        alt_id: name-role-value
         components:
           - web
           - electronic-docs
@@ -233,7 +273,7 @@ chapters:
     criteria:
       - id: 1.2.4
         handle: Captions (Live)
-        alt_id: media-equiv-real-time-captions
+        alt_id: captions-live
         components:
           - web
           - electronic-docs
@@ -241,7 +281,23 @@ chapters:
           - authoring-tool
       - id: 1.2.5
         handle: Audio Description (Prerecorded)
-        alt_id: media-equiv-audio-desc-only
+        alt_id: audio-description-prerecorded
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.3.4
+        handle: Orientation
+        alt_id: orientation
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.3.5
+        handle: Identify Input Purpose
+        alt_id: identify-input-purpose
         components:
           - web
           - electronic-docs
@@ -271,9 +327,41 @@ chapters:
           - electronic-docs
           - software
           - authoring-tool
+      - id: 1.4.10
+        handle: Reflow
+        alt_id: reflow
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.11
+        handle: Non-text Contrast
+        alt_id: non-text-contrast
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.12
+        handle: Text Spacing
+        alt_id: text-spacing
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.13
+        handle: Content on Hover or Focus
+        alt_id: content-on-hover-or-focus
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
       - id: 2.4.5
         handle: Multiple Ways
-        alt_id: navigation-mechanisms-mult-loc
+        alt_id: multiple-ways
         components:
           - web
           - electronic-docs
@@ -281,7 +369,7 @@ chapters:
           - authoring-tool
       - id: 2.4.6
         handle: Headings and Labels
-        alt_id: navigation-mechanisms-descriptive
+        alt_id: headings-and-labels
         components:
           - web
           - electronic-docs
@@ -289,7 +377,7 @@ chapters:
           - authoring-tool
       - id: 2.4.7
         handle: Focus Visible
-        alt_id: navigation-mechanisms-focus-visible
+        alt_id: focus-visible
         components:
           - web
           - electronic-docs
@@ -297,7 +385,7 @@ chapters:
           - authoring-tool
       - id: 3.1.2
         handle: Language of Parts
-        alt_id: meaning-other-lang-id
+        alt_id: language-of-parts
         components:
           - web
           - electronic-docs
@@ -305,7 +393,7 @@ chapters:
           - authoring-tool
       - id: 3.2.3
         handle: Consistent Navigation
-        alt_id: consistent-behavior-consistent-locations
+        alt_id: consistent-navigation
         components:
           - web
           - electronic-docs
@@ -313,7 +401,7 @@ chapters:
           - authoring-tool
       - id: 3.2.4
         handle: Consistent Identification
-        alt_id: consistent-behavior-consistent-functionality
+        alt_id: consistent-identification
         components:
           - web
           - electronic-docs
@@ -321,7 +409,7 @@ chapters:
           - authoring-tool
       - id: 3.3.3
         handle: Error Suggestion
-        alt_id: minimize-error-suggestions
+        alt_id: error-suggestion
         components:
           - web
           - electronic-docs
@@ -329,7 +417,15 @@ chapters:
           - authoring-tool
       - id: 3.3.4
         handle: Error Prevention (Legal, Financial, Data)
-        alt_id: minimize-error-reversible
+        alt_id: error-prevention-legal-financial-data
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 4.1.3
+        handle: Status Messages
+        alt_id: status-messages
         components:
           - web
           - electronic-docs
@@ -342,7 +438,7 @@ chapters:
     criteria:
       - id: 1.2.6
         handle: Sign Language (Prerecorded)
-        alt_id: media-equiv-sign
+        alt_id: sign-language-prerecorded
         components:
           - web
           - electronic-docs
@@ -350,7 +446,7 @@ chapters:
           - authoring-tool
       - id: 1.2.7
         handle: Extended Audio Description (Prerecorded)
-        alt_id: media-equiv-extended-ad
+        alt_id: extended-audio-description-prerecorded
         components:
           - web
           - electronic-docs
@@ -358,7 +454,7 @@ chapters:
           - authoring-tool
       - id: 1.2.8
         handle: Media Alternative (Prerecorded)
-        alt_id: media-equiv-text-doc
+        alt_id: media-alternative-prerecorded
         components:
           - web
           - electronic-docs
@@ -366,7 +462,15 @@ chapters:
           - authoring-tool
       - id: 1.2.9
         handle: Audio-only (Live)
-        alt_id: media-equiv-live-audio-only
+        alt_id: audio-only-live
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.3.6
+        handle: Identify Purpose
+        alt_id: identify-purpose
         components:
           - web
           - electronic-docs
@@ -374,7 +478,7 @@ chapters:
           - authoring-tool
       - id: 1.4.6
         handle: Contrast (Enhanced)
-        alt_id: visual-audio-contrast7
+        alt_id: contrast-enhanced
         components:
           - web
           - electronic-docs
@@ -382,7 +486,7 @@ chapters:
           - authoring-tool
       - id: 1.4.7
         handle: Low or No Background Audio
-        alt_id: visual-audio-contrast-noaudio
+        alt_id: low-or-no-background-audio
         components:
           - web
           - electronic-docs
@@ -390,7 +494,7 @@ chapters:
           - authoring-tool
       - id: 1.4.8
         handle: Visual Presentation
-        alt_id: visual-audio-contrast-visual-presentation
+        alt_id: visual-presentation
         components:
           - web
           - electronic-docs
@@ -398,7 +502,7 @@ chapters:
           - authoring-tool
       - id: 1.4.9
         handle: Images of Text (No Exception)
-        alt_id: visual-audio-contrast-text-images
+        alt_id: images-of-text-no-exception
         components:
           - web
           - electronic-docs
@@ -406,7 +510,7 @@ chapters:
           - authoring-tool
       - id: 2.1.3
         handle: Keyboard (No Exception)
-        alt_id: keyboard-operation-all-funcs
+        alt_id: keyboard-no-exception
         components:
           - web
           - electronic-docs
@@ -414,7 +518,7 @@ chapters:
           - authoring-tool
       - id: 2.2.3
         handle: No Timing
-        alt_id: time-limits-no-exceptions
+        alt_id: no-timing
         components:
           - web
           - electronic-docs
@@ -422,7 +526,7 @@ chapters:
           - authoring-tool
       - id: 2.2.4
         handle: Interruptions
-        alt_id: time-limits-postponed
+        alt_id: interruptions
         components:
           - web
           - electronic-docs
@@ -430,7 +534,15 @@ chapters:
           - authoring-tool
       - id: 2.2.5
         handle: Re-authenticating
-        alt_id: time-limits-server-timeout
+        alt_id: re-authenticating
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.2.6
+        handle: Timeouts
+        alt_id: timeouts
         components:
           - web
           - electronic-docs
@@ -438,7 +550,15 @@ chapters:
           - authoring-tool
       - id: 2.3.2
         handle: Three Flashes
-        alt_id: seizure-three-times
+        alt_id: three-flashes
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.3.3
+        handle: Animation from Interactions
+        alt_id: animation-from-interactions
         components:
           - web
           - electronic-docs
@@ -446,7 +566,7 @@ chapters:
           - authoring-tool
       - id: 2.4.8
         handle: Location
-        alt_id: navigation-mechanisms-location
+        alt_id: location
         components:
           - web
           - electronic-docs
@@ -454,7 +574,7 @@ chapters:
           - authoring-tool
       - id: 2.4.9
         handle: Link Purpose (Link Only)
-        alt_id: navigation-mechanisms-link
+        alt_id: link-purpose-link-only
         components:
           - web
           - electronic-docs
@@ -462,7 +582,23 @@ chapters:
           - authoring-tool
       - id: 2.4.10
         handle: Section Headings
-        alt_id: navigation-mechanisms-headings
+        alt_id: section-headings
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.5.5
+        handle: Target Size
+        alt_id: target-size
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.5.6
+        handle: Concurrent Input Mechanisms
+        alt_id: concurrent-input-mechanisms
         components:
           - web
           - electronic-docs
@@ -470,7 +606,7 @@ chapters:
           - authoring-tool
       - id: 3.1.3
         handle: Unusual Words
-        alt_id: meaning-idioms
+        alt_id: unusual-words
         components:
           - web
           - electronic-docs
@@ -478,7 +614,7 @@ chapters:
           - authoring-tool
       - id: 3.1.4
         handle: Abbreviations
-        alt_id: meaning-located
+        alt_id: abbreviations
         components:
           - web
           - electronic-docs
@@ -486,7 +622,7 @@ chapters:
           - authoring-tool
       - id: 3.1.5
         handle: Reading Level
-        alt_id: meaning-supplements
+        alt_id: reading-level
         components:
           - web
           - electronic-docs
@@ -494,7 +630,7 @@ chapters:
           - authoring-tool
       - id: 3.1.6
         handle: Pronunciation
-        alt_id: meaning-pronunciation
+        alt_id: pronunciation
         components:
           - web
           - electronic-docs
@@ -502,7 +638,7 @@ chapters:
           - authoring-tool
       - id: 3.2.5
         handle: Change on Request
-        alt_id: consistent-behavior-no-extreme-changes-context
+        alt_id: change-on-request
         components:
           - web
           - electronic-docs
@@ -510,7 +646,7 @@ chapters:
           - authoring-tool
       - id: 3.3.5
         handle: Help
-        alt_id: minimize-error-context-help
+        alt_id: help
         components:
           - web
           - electronic-docs
@@ -518,7 +654,7 @@ chapters:
           - authoring-tool
       - id: 3.3.6
         handle: Error Prevention (All)
-        alt_id: minimize-error-reversible-all
+        alt_id: error-prevention-all
         components:
           - web
           - electronic-docs
