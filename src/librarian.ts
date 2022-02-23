@@ -61,7 +61,14 @@ if (argv.catalog) {
         `Warning: This will rebuild the following catalog: ${catalog}.`
       );
 
-      combined = createCatalog(null, wcag21, components, terms);
+      combined = createCatalog(
+        null,
+        wcag21,
+        components,
+        terms,
+        "VPAT® 2.4",
+        "en"
+      );
 
       outputFile = `./catalog/2.4-edition-${combined.standards[0].id}-${combined.lang}.yaml`;
       break;
@@ -71,7 +78,14 @@ if (argv.catalog) {
         `Warning: This will rebuild the following catalog: ${catalog}.`
       );
 
-      combined = createCatalog(wcag21, section508, components, terms);
+      combined = createCatalog(
+        wcag21,
+        section508,
+        components,
+        terms,
+        "VPAT® 2.4 WCAG 2.1 and Revised Section 508 Edition",
+        "en"
+      );
 
       outputFile = `./catalog/2.4-edition-${combined.standards[0].id}-${combined.standards[1].id}-${combined.lang}.yaml`;
       break;
@@ -81,7 +95,14 @@ if (argv.catalog) {
         `Warning: This will rebuild the following catalog: ${catalog}.`
       );
 
-      combined = createCatalog(wcag20, section508, components, terms);
+      combined = createCatalog(
+        wcag20,
+        section508,
+        components,
+        terms,
+        "VPAT® 2.4 Revised Section 508 Edition",
+        "en"
+      );
 
       outputFile = `./catalog/2.4-edition-${combined.standards[0].id}-${combined.standards[1].id}-${combined.lang}.yaml`;
       break;

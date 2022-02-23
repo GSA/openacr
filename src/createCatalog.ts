@@ -4,11 +4,13 @@ export function createCatalog(
   catalog1: any,
   catalog2: any,
   components: any,
-  terms: any
+  terms: any,
+  title: string,
+  lang: string
 ): any {
   return {
-    title: getTitle(catalog2),
-    lang: getLang(catalog2),
+    title: title,
+    lang: lang,
     standards: getStandards(catalog1, catalog2),
     chapters: getChapters(catalog1, catalog2),
     components: getComponents(components),
@@ -49,18 +51,6 @@ function getStandards(first: any, second: any): any {
     if (validateCatalogDataFiles(second)) {
       return second.standard;
     }
-  }
-}
-
-function getTitle(data: any): any {
-  if (validateCatalogDataFiles(data)) {
-    return data.title;
-  }
-}
-
-function getLang(data: any): any {
-  if (validateCatalogDataFiles(data)) {
-    return data.lang;
   }
 }
 
