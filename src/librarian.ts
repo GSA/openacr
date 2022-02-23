@@ -21,7 +21,7 @@ const argv = yargs
     catalog: {
       type: "string",
       description:
-        "Select which VPAT 2.4 catalog to rebuild: WCAG, 508, EU, INT",
+        "Select which VPAT 2.4 catalog to rebuild: WCAG, 508, WCAG21508, EU, INT",
       demandOption: true,
       alias: "c",
     },
