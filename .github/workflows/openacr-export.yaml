@@ -24,3 +24,4 @@ jobs:
             openacr/*.yaml
             openacr/uswds
             catalog/2.4-edition-wcag-2.0-508-en.yaml
+            catalog/2.4-edition-wcag-2.1-508-en.yaml

@@ -1,4 +1,4 @@
-# Moodle Accessibility Conformance Report
+# Moodle
 
 Based on VPAT® 2.4 Revised Section 508 Edition
 
@@ -6,9 +6,11 @@ Based on VPAT® 2.4 Revised Section 508 Edition
 
 Moodle 3.1
 
-## Report Date
+## Report Dates and Version
 
-1/20/2022
+- Report Date:
+- Last Modified Date:
+- Version: moodle-3.1
 
 ## Product Description
 
@@ -25,7 +27,7 @@ The world&#x27;s most customisable and trusted open-source learning management s
 
 - Website: https://docs.moodle.org
 
-## Evaluation Methods Used
+## Evaluation Methods
 
 This conformance report is based on the results of an accessibility audit conducted by Web Key IT on a sample of 20 key pages. These pages were selected by Web Key IT and agreed on by Moodle as representative of the overall accessibility and functionality of the Moodle learning management system (LMS).
 The evaluation was completed following the WCAG Evaluation Methodology (WCAG-EM).
@@ -50,11 +52,18 @@ The terms used in the Conformance Level information are defined as follows:
 - **Partially Supports**: Some functionality of the product does not meet the criterion.
 - **Does Not Support**: The majority of product functionality does not meet the criterion.
 - **Not Applicable**: The criterion is not relevant to the product.
-- **Not Evaluated**: The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.
+- **Not Evaluated**: The product has not been evaluated against the criterion. This can be used only in WCAG 2.x Level AAA.
 
 ## WCAG 2.0 Report
 
 ### Table 1: Success Criteria, Level A
+
+Conformance to the 25 criteria listed below is distributed as follows:
+
+- 22 supported
+- 1 partially supported
+- 0 not supported
+- 76 not applicable
 
 | Criteria                                                                                                           | Conformance Level                                                                                                                                                               | Remarks and Explanations                                                                                                                                                                                                                                                                                     |
 | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -89,6 +98,13 @@ The terms used in the Conformance Level information are defined as follows:
 
 ### Table 2: Success Criteria, Level AA
 
+Conformance to the 13 criteria listed below is distributed as follows:
+
+- 9 supported
+- 1 partially supported
+- 0 not supported
+- 38 not applicable
+
 | Criteria                                                                                                      | Conformance Level                                                                                                                                                               | Remarks and Explanations                                                                                                                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [1.2.4 Captions (Live)](https://www.w3.org/TR/WCAG20/#media-equiv-real-time-captions)                         | <ul><li>**Web**: Not Applicable</li><li>**Electronic Documents**: Not Applicable</li><li>**Software**: Not Applicable</li> </ul>                                                | <ul><li>**Web**: Moodle does not contain synchronised media with live audio content.</li> </ul>                                                                                                                                                    |
@@ -107,6 +123,13 @@ The terms used in the Conformance Level information are defined as follows:
 | [3.3.4 Error Prevention (Legal, Financial, Data)](https://www.w3.org/TR/WCAG20/#minimize-error-reversible)    | <ul><li>**Web**: Supports</li><li>**Electronic Documents**: Not Applicable</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Not Applicable</li> </ul>           | <ul> </ul>                                                                                                                                                                                                                                         |
 
 ### Table 3: Success Criteria, Level AAA
+
+Conformance to the 23 criteria listed below is distributed as follows:
+
+- 9 supported
+- 5 partially supported
+- 0 not supported
+- 7 not applicable
 
 | Criteria                                                                                                | Conformance Level                              | Remarks and Explanations                                                                                                                                                                                                                                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -145,6 +168,13 @@ The terms used in the Conformance Level information are defined as follows:
 
 Notes: Not applicable.
 
+Conformance to the 9 criteria listed below is distributed as follows:
+
+- 2 supported
+- 0 partially supported
+- 3 not supported
+- 4 not applicable
+
 | Criteria                                                                                                  | Conformance Level                   | Remarks and Explanations                                                                                                                               |
 | --------------------------------------------------------------------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [302.1 Without Vision](https://www.access-board.gov/ict/#302.1)                                           | <ul><li>Does Not Support</li> </ul> | <ul><li>Partial compliance as per the remarks in the Success Criterion listed above. Form elements often do not have labels.</li> </ul>                |
@@ -166,6 +196,13 @@ Notes: Hardware accessibility criteria is not applicable.
 Notes: Software accessibility criteria is not applicable.
 
 ### Chapter 6: Support Documentation and Services
+
+Conformance to the 4 criteria listed below is distributed as follows:
+
+- 0 supported
+- 0 partially supported
+- 0 not supported
+- 4 not applicable
 
 | Criteria                                                                                                    | Conformance Level                 | Remarks and Explanations |
 | ----------------------------------------------------------------------------------------------------------- | --------------------------------- | ------------------------ |

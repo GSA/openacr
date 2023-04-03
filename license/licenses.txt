@@ -210,7 +210,7 @@
 │  ├─ repository: https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.walk
 │  ├─ path: node_modules/@nodelib/fs.walk
 │  └─ licenseFile: node_modules/@nodelib/fs.walk/LICENSE
-├─ @openacr/openacr@0.3.4
+├─ @openacr/openacr@0.3.5
 │  ├─ licenses: CC0-1.0
 │  ├─ repository: https://github.com/GSA/openacr
 │  ├─ path:
@@ -442,8 +442,8 @@
 ├─ argparse@1.0.10
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/nodeca/argparse
-│  ├─ path: node_modules/@istanbuljs/load-nyc-config/node_modules/argparse
-│  └─ licenseFile: node_modules/@istanbuljs/load-nyc-config/node_modules/argparse/LICENSE
+│  ├─ path: node_modules/@eslint/eslintrc/node_modules/argparse
+│  └─ licenseFile: node_modules/@eslint/eslintrc/node_modules/argparse/LICENSE
 ├─ argparse@2.0.1
 │  ├─ licenses: Python-2.0
 │  ├─ repository: https://github.com/nodeca/argparse
@@ -640,7 +640,7 @@
 │  ├─ url: https://sindresorhus.com
 │  ├─ path: node_modules/yargs-unparser/node_modules/camelcase
 │  └─ licenseFile: node_modules/yargs-unparser/node_modules/camelcase/license
-├─ caniuse-lite@1.0.30001296
+├─ caniuse-lite@1.0.30001472
 │  ├─ licenses: CC-BY-4.0
 │  ├─ repository: https://github.com/browserslist/caniuse-lite
 │  ├─ publisher: Ben Briggs
@@ -1712,8 +1712,8 @@
 │  ├─ repository: https://github.com/nodeca/js-yaml
 │  ├─ publisher: Vladimir Zapparov
 │  ├─ email: dervus.grim@gmail.com
-│  ├─ path: node_modules/@istanbuljs/load-nyc-config/node_modules/js-yaml
-│  └─ licenseFile: node_modules/@istanbuljs/load-nyc-config/node_modules/js-yaml/LICENSE
+│  ├─ path: node_modules/@eslint/eslintrc/node_modules/js-yaml
+│  └─ licenseFile: node_modules/@eslint/eslintrc/node_modules/js-yaml/LICENSE
 ├─ js-yaml@4.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/nodeca/js-yaml

@@ -1,4 +1,4 @@
-# GovReady PBC Accessibility Conformance Report
+# GovReady PBC
 
 Based on VPAT® 2.4 Revised Section 508 Edition
 
@@ -6,9 +6,11 @@ Based on VPAT® 2.4 Revised Section 508 Edition
 
 GovReady 0.9.1.36
 
-## Report Date
+## Report Dates and Version
 
-1/20/2022
+- Report Date:
+- Last Modified Date:
+- Version: govready-0.9.1.36
 
 ## Product Description
 
@@ -38,7 +40,7 @@ GovReady is a user-friendly cybersecurity Governance, Risk, and Compliance (GRC)
 
 All user interfaces for the GovReady software are done through the web interface, so the focus is on the WCAG 2.0 Report. Chapter 5 has been deleted as it is redundant. GovReady is built on the Django framework and some of the accessibility issues have been inherited from this framework. GovReady is an open source tool with an open issue queue. Accessibility issues identified here will be documented as accessibility issues within existing issue queues. Any workarounds will be available within the issue queue until such time as the problem is resolved. The Authoring Tools components, 504, have not been reviewed in this assessment. Content is generally saved in a machine readable format that allows for it to be processed in many ways. All GovReady documentation is available through the web interface, so the focus is on the WCAG 2.0 Report. Chapter 6 has been deleted as it is redundant. The documentation is being served through Read the Docs and with their default theme. Some accessibility issues have been inherited from this framework.
 
-## Evaluation Methods Used
+## Evaluation Methods
 
 Testing was done through a combination of manual and automated testing. We leveraged automated tools WebAim&#x27;s WAVE Toolbar and Microsoft&#x27;s Accessibility Insights. Accessibility Insights leverages Deque&#x27;s open source Axe accessibility engine. Manual testing was done using keyboard interactions and Apple&#x27;s VoiceOver. Chrome v84 was used as the browser for all tests. Unique patterns were identified and tested to see where barriers might exist. Extensive testing of the site&#x27;s functionality has been done based on this.
 
@@ -59,13 +61,20 @@ The terms used in the Conformance Level information are defined as follows:
 - **Partially Supports**: Some functionality of the product does not meet the criterion.
 - **Does Not Support**: The majority of product functionality does not meet the criterion.
 - **Not Applicable**: The criterion is not relevant to the product.
-- **Not Evaluated**: The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.
+- **Not Evaluated**: The product has not been evaluated against the criterion. This can be used only in WCAG 2.x Level AAA.
 
 ## WCAG 2.0 Report
 
 ### Table 1: Success Criteria, Level A
 
 Notes: GovReady-Q is a web application and an authoring tool. As such the Software &amp; Authoring Tool Notes are all included within the Web for the &#x27;Conformance Level&#x27; and &#x27;Remarks and Explanations&#x27;. There are some elements here that clearly fail WCAG 2.0 A.
+
+Conformance to the 25 criteria listed below is distributed as follows:
+
+- 32 supported
+- 9 partially supported
+- 7 not supported
+- 52 not applicable
 
 | Criteria                                                                                                           | Conformance Level                                                                                                                                                                   | Remarks and Explanations                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -97,6 +106,13 @@ Notes: GovReady-Q is a web application and an authoring tool. As such the Softwa
 
 ### Table 2: Success Criteria, Level AA
 
+Conformance to the 13 criteria listed below is distributed as follows:
+
+- 10 supported
+- 5 partially supported
+- 2 not supported
+- 30 not applicable
+
 | Criteria                                                                                                      | Conformance Level                                                                                                                                                                   | Remarks and Explanations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [1.2.4 Captions (Live)](https://www.w3.org/TR/WCAG20/#media-equiv-real-time-captions)                         | <ul><li>**Web**: Not Applicable</li><li>**Electronic Documents**: Not Applicable</li><li>**Software**: Not Applicable</li> </ul>                                                    | <ul> </ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
@@ -121,6 +137,13 @@ Notes: GovReady-Q is a web application and an authoring tool. As such the Softwa
 
 Notes: Not applicable.
 
+Conformance to the 9 criteria listed below is distributed as follows:
+
+- 2 supported
+- 0 partially supported
+- 3 not supported
+- 4 not applicable
+
 | Criteria                                                                                                  | Conformance Level                   | Remarks and Explanations                                                                                                                               |
 | --------------------------------------------------------------------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [302.1 Without Vision](https://www.access-board.gov/ict/#302.1)                                           | <ul><li>Does Not Support</li> </ul> | <ul><li>Partial compliance as per the remarks in the Success Criterion listed above. Form elements often do not have labels.</li> </ul>                |
@@ -144,6 +167,13 @@ Notes: GovReady is a web application. Software accessibility criteria is not app
 ### Chapter 6: Support Documentation and Services
 
 Notes: GovReady is a web application and all support documentation is delivered through the web. Additional documentation and services are not available.
+
+Conformance to the 4 criteria listed below is distributed as follows:
+
+- 0 supported
+- 0 partially supported
+- 0 not supported
+- 4 not applicable
 
 | Criteria                                                                                                    | Conformance Level                 | Remarks and Explanations |
 | ----------------------------------------------------------------------------------------------------------- | --------------------------------- | ------------------------ |

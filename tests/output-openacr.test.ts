@@ -451,6 +451,7 @@ describe("Output", () => {
       validJSONData,
       validJSONCatalog1,
       "output/openacr.markdown",
+      false,
       ""
     );
     expect(result.result).to.equal(false);

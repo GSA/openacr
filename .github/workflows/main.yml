@@ -1,0 +1,27 @@
+name: Deploy
+
+on:
+  pull_request:
+  push:
+    branches:
+      - gh-pages
+      - main
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - run: sed -i 's/{% render %}/render/g' openacr/uswds/README.md
+      - run: sed -i 's/{% include %}/include/g' openacr/uswds/README.md
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.3
+        with:
+          BRANCH: gh-pages
+          FOLDER: openacr
