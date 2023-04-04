@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="{{catalog.lang}}">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{title}}</title>
+  <style>
+    body,
+    html {
+      font-family: 'Nunito', sans-serif;
+      font-size: 16px;
+    }
+    body {
+      padding: 4vw;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 400;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 2.5rem;
+    }
+    h1 span {
+      display: block;
+      font-size: 0.8em;
+    }
+    h2,
+    h3 {
+      position: relative;
+    }
+    h2 {
+      margin: 1.8rem 0 0.5rem;
+    }
+    h3 {
+      margin: 1rem 0 0.5rem;
+    }
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      color: inherit;
+    }
+    .visuallyhidden {
+      border: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      white-space: nowrap;
+    }
+    .visuallyhidden.focusable:active,
+    .visuallyhidden.focusable:focus {
+      clip: auto;
+      clip-path: none;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+      white-space: inherit;
+    }
+    p,
+    li {
+      line-height: 1.4;
+      max-width: 40em;
+    }
+    li {
+      margin: 0.5rem 0;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1.5rem 0;
+    }
+    table,
+    td,
+    th {
+      border: 1px solid #3b3b3b;
+    }
+    td,
+    th {
+      padding: 1em;
+      vertical-align: top;
+      text-align: left;
+    }
+    table ul,
+    table ol {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    table li {
+      margin: 0;
+    }
+    table li + li,
+    table p + ol {
+      margin-top: 1rem;
+    }
+    table p {
+      margin-bottom: 0;
+    }
+    table li:first-child p {
+      margin: 0;
+    }
+    table {
+      page-break-inside: auto;
+    }
+    tr {
+      page-break-inside: avoid;
+      page-break-after: auto;
+    }
+    .usa-table:not(.applicable-standards-guidelines-table) td:first-child {
+      width: 25%;
+    }
+    .usa-table:not(.applicable-standards-guidelines-table) td:nth-child(2) {
+      width: 20%;
+    }
+    img, svg {
+      max-width: 100%;
+    }
+    header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      border-bottom: 2px solid #00A398;
+      margin: 0 0 2rem;
+    }
+    header div {
+      padding: 0 0 .5rem;
+    }
+    header div:first-child {
+      flex-grow: 12;
+    }
+    header div:last-child {
+      flex-grow: 1;
+    }
+    header svg {
+      height: auto;
+      max-width: 200px;
+    }
+    header p {
+      margin: 0;
+      text-align: right;
+      color: #757575;
+      font-size: 0.9em;
+    }
+    a.header-anchor {
+      display: none;
+    }
+    .applicable-standards-guidelines-table th:nth-child(1) {
+      width: 40%;
+    }
+
+    .applicable-standards-guidelines-table th:nth-child(2) {
+      width: 60%;
+    }
+
+    /* If only one level then hide the label. */
+    .component-level-count-1 .component-level-label {
+      display: none;
+    }
+
+    /* Hide the below sections */
+    .chapter-notes-section,
+    .vendor-section,
+    .notes-section {
+      display: none;
+    }
+    @media print {
+      .page-break {
+        break-after: page;
+      }
+      .page-break + h2,
+      .page-break + h3 {
+        margin-top: 0;
+      }
+      a.header-anchor,
+      footer {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body id="openACR">
+  <header>
+    <div>
+      <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1292 204" width="1292" height="204"  xmlns:v="https://vecta.io/nano">
+        <title>CivicActions</title>
+        <path d="M125.692 65.04H109.24c-5.024 0-7.53-2.514-7.516-7.542V46.356a18.33 18.33 0 0 0-5.017-13.103c-3.051-3.446-7.395-5.467-11.994-5.581H48.51c-4.584-.094-8.975 1.847-11.994 5.301a18.01 18.01 0 0 0-5.297 13.383v111.243a18.35 18.35 0 0 0 5.117 13.123c3.056 3.436 7.399 5.45 11.994 5.561h36.502a15.29 15.29 0 0 0 11.694-5.281 18.15 18.15 0 0 0 5.297-13.403v-11.422c0-4.741 2.499-7.262 7.516-7.262h16.172c5.017 0 7.516 2.521 7.516 7.262v11.422c.314 12.56-4.783 24.648-13.993 33.187-9.25 8.714-21.563 13.423-34.263 13.103H48.33c-12.608.272-24.817-4.435-33.983-13.103C4.93 182.368-.312 170.231.014 157.599V46.356C-.297 33.797 4.8 21.709 14.007 13.169 23.402 4.494 35.79-.202 48.57.066h36.222c12.7-.32 25.013 4.389 34.263 13.103 9.369 8.444 14.564 20.575 14.213 33.187v11.422c-.06 4.741-2.559 7.262-7.576 7.262zm49.016-24.165h-16.432c-5.017 0-7.536-2.521-7.536-7.242V20.511c0-4.741 2.519-7.242 7.536-7.242h16.432c5.017 0 7.536 2.501 7.536 7.242v13.063c.02 4.781-2.519 7.302-7.536 7.302h0zm0 163.014h-16.432c-5.017 0-7.536-2.501-7.536-7.242V65.58c0-4.741 2.519-7.262 7.536-7.262h16.432c5.017 0 7.536 2.521 7.536 7.262v131.047c.02 4.761-2.519 7.262-7.536 7.262h0zm103.628-5.841a7.6 7.6 0 0 1-7.996 5.841h-20.41c-3.825.312-7.332-2.14-8.356-5.841L199.595 66.42c-.263-.632-.359-1.321-.28-2 0-4.181 2.219-6.421 6.957-6.421h15.612a7.64 7.64 0 0 1 7.996 5.861l30.105 94.02 29.985-94.02c1.069-3.671 4.542-6.108 8.356-5.861h15.332c4.738 0 6.957 2.24 6.957 6.421.079.68-.017 1.369-.28 2l-41.999 131.627zm82.839-157.173h-16.432c-5.017 0-7.536-2.521-7.536-7.242V20.511c0-4.741 2.519-7.242 7.536-7.242h16.432c5.017 0 7.516 2.501 7.516 7.242v13.063c0 4.781-2.519 7.302-7.516 7.302h0zm0 163.014h-16.432c-5.017 0-7.536-2.501-7.536-7.242V65.58c0-4.741 2.519-7.262 7.536-7.262h16.432c5.017 0 7.516 2.521 7.516 7.262v131.047c0 4.761-2.519 7.262-7.516 7.262h0zM482.993 87.344c-1.65 1.918-4.266 2.699-6.697 2-9.735-2.501-23.128-4.001-39.56-4.001a15.31 15.31 0 0 0-11.694 5.301 17.81 17.81 0 0 0-5.297 13.103v54.651a18.01 18.01 0 0 0 5.017 12.823 15.67 15.67 0 0 0 11.994 5.581c16.432 0 29.545-1.4 39.3-3.901 2.362-.809 4.978-.151 6.677 1.68 1.455 1.402 2.35 3.287 2.519 5.301v11.422c0 8.362-16.165 12.543-48.496 12.543-13.653 0-25.067-4.181-34.263-12.823-9.308-8.251-14.508-20.187-14.213-32.627v-54.611c-.249-12.304 4.858-24.108 13.993-32.347 9.386-8.676 21.768-13.372 34.543-13.103 32.331 0 48.496 4.181 48.496 12.543v11.442c-.162 1.894-.983 3.67-2.319 5.021h0zm179.91 110.143c0 4.181-2.219 6.401-6.957 6.401h-17.012c-3.825.312-7.332-2.14-8.356-5.841l-15.592-49.65h-63.888l-15.612 49.65a7.62 7.62 0 0 1-7.996 5.841H510.5c-4.738 0-6.977-2.22-6.977-6.401-.072-.68.024-1.367.28-2l59.63-189.6c1.016-3.709 4.525-6.171 8.356-5.861h22.849c3.831-.31 7.34 2.152 8.356 5.861l59.29 189.72c.323.577.507 1.22.54 1.88h.08zm-79.68-150.851l-23.148 74.155h46.177l-23.029-74.155zm181.269 40.708c-1.65 1.918-4.266 2.699-6.697 2-9.735-2.501-23.108-4.001-39.56-4.001a15.39 15.39 0 0 0-11.714 5.301 18.01 18.01 0 0 0-5.277 13.103v54.651a18.15 18.15 0 0 0 5.017 12.823 15.67 15.67 0 0 0 11.994 5.581c16.452 0 29.525-1.4 39.28-3.901 2.368-.807 4.989-.15 6.697 1.68 1.451 1.403 2.339 3.288 2.499 5.301v11.422c0 8.362-16.159 12.543-48.476 12.543-13.653 0-25.087-4.181-34.263-12.823-9.308-8.251-14.508-20.187-14.213-32.627v-54.611c-.241-12.302 4.864-24.104 13.993-32.347 9.395-8.675 21.782-13.371 34.563-13.103 32.331 0 48.489 4.181 48.476 12.543v11.442c-.173 1.907-1.025 3.689-2.399 5.021h.08zm82.199 115.724l-11.714.82c-13.653.84-25.067-3.061-34.543-12.263-9.292-8.724-14.456-20.979-14.213-33.727V29.072c0-4.001 3.338-6.701 9.755-8.102l13.373-1.66c2.098-.398 4.262.217 5.837 1.66 1.546 1.453 2.452 3.46 2.519 5.581v32.347h28.626c4.998 0 7.516 2.521 7.516 7.242v12.843c0 4.741-2.519 7.242-7.516 7.242h-28.706v71.675a18.41 18.41 0 0 0 5.017 13.103 15.73 15.73 0 0 0 11.994 5.561h11.714c4.998 0 7.516 2.521 7.516 7.262v12.002c.06 4.441-2.539 6.961-7.256 7.242h.08zm50.555-162.194h-18.951c-5.017 0-7.536-2.521-7.536-7.242V20.511c0-4.741 2.519-7.242 7.536-7.242h18.951c5.017 0 7.536 2.501 7.536 7.242v13.063c-.08 4.781-2.599 7.302-7.616 7.302h.08zm0 163.014h-16.432c-5.017 0-7.536-2.501-7.536-7.242V65.58c0-4.741 2.519-7.262 7.536-7.262h16.432c5.017 0 7.536 2.521 7.536 7.262v131.047c-.08 4.761-2.599 7.262-7.616 7.262h.08zm131.654-12.823c-9.425 8.595-21.817 13.193-34.563 12.823h-21.989c-12.572.367-24.783-4.24-33.983-12.823-9.314-8.246-14.516-20.186-14.213-32.627v-54.651c-.257-12.305 4.851-24.113 13.993-32.347 9.386-8.676 21.768-13.372 34.543-13.103h21.569c13.653 0 25.087 4.181 34.283 12.823 9.305 8.252 14.505 20.188 14.213 32.627v54.651c.269 12.376-4.809 24.267-13.933 32.627h.08zm-17.551-87.278a18.15 18.15 0 0 0-5.017-12.823c-3.062-3.43-7.4-5.448-11.994-5.581h-21.809c-4.586-.099-8.979 1.842-11.994 5.301a18.73 18.73 0 0 0-5.017 13.103l-.28 54.651a18.15 18.15 0 0 0 5.017 12.823 16.71 16.71 0 0 0 12.254 5.581h21.749a15.43 15.43 0 0 0 11.714-5.281 18.01 18.01 0 0 0 5.297-13.123l.08-54.651zm160.84 100.021h-16.412c-5.017 0-7.536-2.501-7.536-7.242v-92.779a18.15 18.15 0 0 0-5.017-12.823c-3.056-3.438-7.397-5.458-11.994-5.581h-21.809c-4.583-.088-8.972 1.851-11.994 5.301a17.87 17.87 0 0 0-5.277 13.103l.26 92.859c0 4.741-2.499 7.242-7.796 7.242h-16.152c-5.017 0-7.536-2.501-7.536-7.242v-92.859c-.251-12.385 4.849-24.277 13.993-32.627 9.425-8.595 21.817-13.193 34.563-12.823h21.729c13.653 0 25.087 4.181 34.263 12.823 9.305 8.252 14.505 20.188 14.213 32.627v92.859c-.06 4.741-2.559 7.242-7.576 7.242l.08-.08zm105.947-12.003c-9.475 8.002-20.91 12.003-34.563 12.003-32.331 0-48.489-4.181-48.476-12.543v-11.422c.133-1.881.918-3.657 2.219-5.021 1.573-2.034 4.267-2.839 6.697-2 9.755 2.521 22.849 3.901 39.56 3.901 4.381.167 8.665-1.326 11.994-4.181a15.19 15.19 0 0 0 5.017-11.702c0-4.181-2.239-7.542-6.697-10.322-.82-.28-5.017-2.24-12.534-5.581-17.831-7.802-28.146-12.823-31.204-14.783-9.657-6.255-15.401-17.057-15.192-28.566 0-13.103 4.738-23.705 13.993-31.507s20.89-11.722 34.543-11.722c31.784 0 47.67 4.181 47.656 12.543v11.442c-.14 1.883-.932 3.659-2.239 5.021-1.641 1.919-4.252 2.701-6.677 2a161.39 161.39 0 0 0-38.741-4.001c-4.465-.202-8.842 1.291-12.254 4.181a16.01 16.01 0 0 0-4.738 11.722c0 4.181 2.239 7.522 6.417 10.302a119.38 119.38 0 0 0 12.534 5.581c17.012 6.981 27.306 12.002 31.484 14.783 9.649 6.321 15.344 17.188 15.052 28.726-.06 13.123-4.798 23.445-13.993 31.247l.14-.1z" fill="#d83933"/></svg>
+    </div>
+    <div><p>3527 Mt Diablo Blvd, #269, Lafayette, CA 94549</p></div>
+  </header>
+  <main>
+    <div class="grid-container">
+      <h1><span class="evaluation-title">{{title}}</span> Accessibility Conformance Report</h1>
+
+      <div class="catalog-section">Format: <b>VPAT 2.4Rev WCAG</b></div>
+
+      <div class="product-section">
+        {{headerWithAnchor "Name of Product/Version" "name-of-product-version" 2}}
+        {{product.name}}{{#if product.version}} {{product.version}}{{/if}}
+      </div>
+
+      <div class="report-dates-ver-section">
+        {{headerWithAnchor "Report Dates and Version" "report-date" 2}}
+        <ul>
+          <li>Report Date: {{report_date}}</li>
+          <li>Last Modified Date: {{last_modified_date}}</li>
+          <li>Version: {{reportFilename}}</li>
+        </ul>
+      </div>
+
+      {{#if product.description}}
+        <div class="description-section">
+          {{headerWithAnchor "Product Description" "product-description" 2}}
+          {{sanitizeMarkdown product.description}}
+        </div>
+      {{/if}}
+
+      <div id="contact-section">
+        {{headerWithAnchor "Contact Information" "contact-information" 2}}
+        {{#if author}}
+          <div class="author-section">
+            {{headerWithAnchor "Author Information" "author" 3}}
+            <ul>
+              {{#if author.name}}<li>Name: {{author.name}}</li>{{/if}}
+              {{#if author.company_name}}<li>Company: {{author.company_name}}</li>{{/if}}
+              {{#if author.address}}<li>Address: {{author.address}}</li>{{/if}}
+              {{#if author.email}}<li>Email: <a href="mailto:{{author.email}}">{{author.email}}</a></li>{{/if}}
+              {{#if author.phone}}<li>Phone: {{author.phone}}</li>{{/if}}
+              {{#if author.website}}<li>Website: <a href="{{author.website}}">{{author.website}}</a></li>{{/if}}
+            </ul>
+          </div>
+        {{/if}}
+        {{#if vendor}}
+          <div class="vendor-section">
+            {{headerWithAnchor "Vendor Information" "vendor" 3}}
+            <ul>
+            {{#if vendor.name}}<li>Name: {{vendor.name}}</li>{{/if}}
+            {{#if vendor.company_name}}<li>Company: {{vendor.company_name}}</li>{{/if}}
+            {{#if vendor.address}}<li>Address: {{vendor.address}}</li>{{/if}}
+            {{#if vendor.email}}<li>Email: <a href="mailto:{{vendor.email}}">{{vendor.email}}</a></li>{{/if}}
+            {{#if vendor.phone}}<li>Phone: {{vendor.phone}}</li>{{/if}}
+            {{#if vendor.website}}<li>Website: <a href="{{vendor.website}}">{{vendor.website}}</a></li>{{/if}}
+            </ul>
+          </div>
+        {{/if}}
+      </div>
+
+      {{#if notes}}
+        <div class="notes-section">
+          {{headerWithAnchor "Notes" "notes" 2}}
+          {{sanitizeMarkdown notes}}
+        </div>
+      {{/if}}
+
+      {{#if evaluation_methods_used}}
+        <div class="eval-section">
+          {{headerWithAnchor "Evaluation Methods" "evaluation-methods" 2}}
+          {{sanitizeMarkdown evaluation_methods_used}}
+        </div>
+      {{/if}}
+
+      <div class="standards-section">
+        {{headerWithAnchor "Applicable Standards/Guidelines" "applicable-standards-guidelines" 2}}
+
+        <table class="usa-table applicable-standards-guidelines-table">
+          <caption>This report covers the degree of conformance for the following accessibility standard/guidelines:</caption>
+          <thead>
+            <tr>
+              <th>Standard/Guideline</th>
+              <th>Included In Report</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each catalog.standards as |catalog-standard|}}
+              <tr>
+                <td><a href="{{catalog-standard.url}}" target="_blank">{{catalog-standard.label}} <span class="usa-sr-only">(opens in a new window or tab)</span></a></td>
+                <td>{{standardsIncluded catalog-standard.chapters}}</td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="terms-section">
+        {{headerWithAnchor "Terms" "terms" 2}}
+        The terms used in the Conformance Level information are defined as follows:
+        <ul>
+          {{#each catalog.terms as |catalog-term|}}
+            <li><strong>{{catalog-term.label}}</strong>: {{catalog-term.description}}</li>
+          {{/each}}
+        </ul>
+      </div>
+
+      {{#each catalog.standards as |catalog-standard|}}
+        {{headerWithAnchor catalog-standard.report_heading catalog-standard.id 2}}
+        {{#each catalog-standard.chapters as |catalog-standard-chapter|}}
+          {{#with (catalogChapter catalog-standard-chapter) as |catalog-chapter|}}
+            {{headerWithAnchor catalog-chapter.label catalog-chapter.id 3}}
+
+            {{#with (lookup ../../../chapters catalog-chapter.id) as |data-category|}}
+              {{#if data-category.notes}}
+                <div id="{{catalog-chapter.id}}-notes" class="chapter-notes-section">
+                  Notes: {{sanitizeMarkdown data-category.notes}}
+                </div>
+              {{/if}}
+
+              {{#unless data-category.disabled}}
+              {{#if data-category.criteria}}
+                <div id="{{catalog-chapter.id}}-summary">
+                  <p>
+                    Conformance to the {{data-category.criteria.length}} criteria listed below is distributed as follows:
+                  </p>
+                  <ul>
+                    {{progressPerChapter data-category.criteria}}
+                  </ul>
+                </div>
+
+                <table class="usa-table">
+                  <thead>
+                  <tr>
+                    <th>Criteria</th>
+                    <th>Conformance Level</th>
+                    <th>Remarks and Explanations</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    {{#each data-category.criteria as |data-criteria|}}
+                      <tr id="{{data-criteria.num}}">
+                        <td>
+                          <a href="{{catalogCriteriaURL catalog-chapter.id data-criteria.num catalog-standard.url}}" target="_blank">
+                            {{data-criteria.num}} {{catalogCriteriaLabel catalog-chapter.id data-criteria.num}} <span class="usa-sr-only">(opens in a new window or tab)</span>
+                          </a>
+                        </td>
+                        <td>
+                          {{#if data-criteria.components}}
+                            <ul class="component-level-count-{{levelCount data-criteria.components}}">
+                              {{#each data-criteria.components as |data-components|}}
+                                {{#if data-components.adherence.level}}
+                                  <li><span class="component-level-label">{{catalogComponentLabel data-components.name}}</span><p>{{levelLabel data-components.adherence.level}}</p></li>
+                                {{/if}}
+                              {{/each}}
+                            </ul>
+                          {{/if}}
+                        </td>
+                        <td>
+                          {{#if data-criteria.components}}
+                            <ul class="component-level-count-{{levelCount data-criteria.components}}">
+                              {{#each data-criteria.components as |data-components|}}
+                                {{#if data-components.adherence.notes}}
+                                  <li><span class="component-level-label">{{catalogComponentLabel data-components.name}}</span>{{sanitizeMarkdown data-components.adherence.notes}}</li>
+                                {{/if}}
+                              {{/each}}
+                            </ul>
+                          {{/if}}
+                        </td>
+                      </tr>
+                    {{/each}}
+                  </tbody>
+                </table>
+
+              {{/if}}
+              {{/unless}}
+            {{/with}}
+          {{/with}}
+        {{/each}}
+      {{/each}}
+      {{#if legal_disclaimer}}
+        {{headerWithAnchor (concat "Legal Disclaimer" vendor.company_name) "legal-disclaimer" 2}}
+        {{sanitizeMarkdown legal_disclaimer}}
+      {{/if}}
+      {{#if repository}}
+        {{headerWithAnchor "Repository" "repository" 2}}
+        <a href="{{repository}}">{{repository}}</a>
+      {{/if}}
+      {{#if feedback}}
+        {{headerWithAnchor "Feedback" "feedback" 2}}
+        <a href="{{feedback}}">{{feedback}}</a>
+      {{/if}}
+
+      {{#if related_openacrs}}
+        {{headerWithAnchor "Related OpenACRs" "related-openacrs" 2}}
+        <ul>
+          {{#each related_openacrs as |related-openacr|}}
+            <li><a href="{{related-openacr.url}}">{{related-openacr.url}} ({{related-openacr.type}})</a></li>
+          {{/each}}
+        </ul>
+      {{/if}}
+    </div>
+  </main>
+  <footer class="usa-footer usa-footer usa-footer--slim">
+    <div class="usa-footer__return-to-top">
+      <div class="grid-container">
+        <a href="#">Return to top</a>
+      </div>
+    </div>
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="grid-col">
+            <a href="https://github.com/GSA/openacr" target="_blank">OpenACR <span class="usa-sr-only">(opens in a new window or tab)</span></a> is a format maintained by the <a href="https://gsa.gov/" target="_blank">GSA <span class="usa-sr-only">(opens in a new window or tab)</span></a>. The content is the responsibility of the author.
+          </div>
+          <div class="grid-col">
+            This content is licensed under a {{license}}.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

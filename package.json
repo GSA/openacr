@@ -1,8 +1,8 @@
 {
-  "name": "@openacr/openacr",
-  "version": "0.3.5",
+  "name": "@civicactions/openacr",
+  "version": "0.3.6",
   "description": "OpenACR schema validator and output generator",
-  "repository": "GSA/openacr",
+  "repository": "CivicActions/openacr",
   "license": "CC0-1.0",
   "devDependencies": {
     "@testdeck/mocha": "^0.1.2",
@@ -46,6 +46,7 @@
     "generate-example-html": "npx ts-node src/openacr.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.html",
     "generate-drupal-html": "npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.html",
     "generate-drupal-simple": "npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9-simple.html -t templates/openacr-simple-html-0.1.0.handlebars",
+    "generate-drupal-ca": "npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9-ca.html -t templates/openacr-ca-html-0.1.0.handlebars",
     "generate-508-catalog": "npx ts-node src/librarian.ts -c 508",
     "generate-WCAG-catalog": "npx ts-node src/librarian.ts -c WCAG",
     "generate-WCAG21508-catalog": "npx ts-node src/librarian.ts -c WCAG21508",

@@ -6,6 +6,7 @@ on:
     branches:
       - gh-pages
       - main
+      - ca-main
   release:
     types: [created]
 

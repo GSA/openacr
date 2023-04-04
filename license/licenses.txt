@@ -166,6 +166,11 @@
 │  ├─ url: https://babel.dev/team
 │  ├─ path: node_modules/@babel/types
 │  └─ licenseFile: node_modules/@babel/types/LICENSE
+├─ @civicactions/openacr@0.3.6
+│  ├─ licenses: CC0-1.0
+│  ├─ repository: https://github.com/GSA/openacr
+│  ├─ path:
+│  └─ licenseFile: LICENSE.md
 ├─ @eslint/eslintrc@0.4.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/eslint/eslintrc
@@ -210,11 +215,6 @@
 │  ├─ repository: https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.walk
 │  ├─ path: node_modules/@nodelib/fs.walk
 │  └─ licenseFile: node_modules/@nodelib/fs.walk/LICENSE
-├─ @openacr/openacr@0.3.5
-│  ├─ licenses: CC0-1.0
-│  ├─ repository: https://github.com/GSA/openacr
-│  ├─ path:
-│  └─ licenseFile: LICENSE.md
 ├─ @testdeck/core@0.1.2
 │  ├─ licenses: Apache-2.0
 │  ├─ repository: https://github.com/testdeck/testdeck
@@ -267,6 +267,11 @@
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
 │  ├─ path: node_modules/@types/json-schema
 │  └─ licenseFile: node_modules/@types/json-schema/LICENSE
+├─ @types/marked@4.0.8
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: node_modules/@types/marked
+│  └─ licenseFile: node_modules/@types/marked/LICENSE
 ├─ @types/mocha@8.2.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
@@ -277,6 +282,11 @@
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
 │  ├─ path: node_modules/@types/node
 │  └─ licenseFile: node_modules/@types/node/LICENSE
+├─ @types/sanitize-html@2.9.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
+│  ├─ path: node_modules/@types/sanitize-html
+│  └─ licenseFile: node_modules/@types/sanitize-html/LICENSE
 ├─ @types/yargs-parser@20.2.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
@@ -442,8 +452,8 @@
 ├─ argparse@1.0.10
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/nodeca/argparse
-│  ├─ path: node_modules/@eslint/eslintrc/node_modules/argparse
-│  └─ licenseFile: node_modules/@eslint/eslintrc/node_modules/argparse/LICENSE
+│  ├─ path: node_modules/@istanbuljs/load-nyc-config/node_modules/argparse
+│  └─ licenseFile: node_modules/@istanbuljs/load-nyc-config/node_modules/argparse/LICENSE
 ├─ argparse@2.0.1
 │  ├─ licenses: Python-2.0
 │  ├─ repository: https://github.com/nodeca/argparse
@@ -883,6 +893,11 @@
 │  ├─ url: http://thlorenz.com
 │  ├─ path: node_modules/deep-is
 │  └─ licenseFile: node_modules/deep-is/LICENSE
+├─ deepmerge@4.3.1
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/TehShrike/deepmerge
+│  ├─ path: node_modules/deepmerge
+│  └─ licenseFile: node_modules/deepmerge/license.txt
 ├─ default-require-extensions@3.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/avajs/default-require-extensions
@@ -940,7 +955,14 @@
 │  ├─ email: me@feedic.com
 │  ├─ path: node_modules/dom-serializer
 │  └─ licenseFile: node_modules/dom-serializer/LICENSE
-├─ domelementtype@2.2.0
+├─ dom-serializer@2.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/cheeriojs/dom-serializer
+│  ├─ publisher: Felix Boehm
+│  ├─ email: me@feedic.com
+│  ├─ path: node_modules/sanitize-html/node_modules/dom-serializer
+│  └─ licenseFile: node_modules/sanitize-html/node_modules/dom-serializer/LICENSE
+├─ domelementtype@2.3.0
 │  ├─ licenses: BSD-2-Clause
 │  ├─ repository: https://github.com/fb55/domelementtype
 │  ├─ publisher: Felix Boehm
@@ -954,6 +976,13 @@
 │  ├─ email: me@feedic.com
 │  ├─ path: node_modules/domhandler
 │  └─ licenseFile: node_modules/domhandler/LICENSE
+├─ domhandler@5.0.3
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/fb55/domhandler
+│  ├─ publisher: Felix Boehm
+│  ├─ email: me@feedic.com
+│  ├─ path: node_modules/sanitize-html/node_modules/domhandler
+│  └─ licenseFile: node_modules/sanitize-html/node_modules/domhandler/LICENSE
 ├─ domready@1.0.8
 │  ├─ licenses: MIT*
 │  ├─ repository: https://github.com/ded/domready
@@ -969,6 +998,13 @@
 │  ├─ email: me@feedic.com
 │  ├─ path: node_modules/domutils
 │  └─ licenseFile: node_modules/domutils/LICENSE
+├─ domutils@3.0.1
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/fb55/domutils
+│  ├─ publisher: Felix Boehm
+│  ├─ email: me@feedic.com
+│  ├─ path: node_modules/sanitize-html/node_modules/domutils
+│  └─ licenseFile: node_modules/sanitize-html/node_modules/domutils/LICENSE
 ├─ electron-to-chromium@1.3.774
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/kilian/electron-to-chromium
@@ -1011,6 +1047,13 @@
 │  ├─ email: me@feedic.com
 │  ├─ path: node_modules/entities
 │  └─ licenseFile: node_modules/entities/LICENSE
+├─ entities@4.4.0
+│  ├─ licenses: BSD-2-Clause
+│  ├─ repository: https://github.com/fb55/entities
+│  ├─ publisher: Felix Boehm
+│  ├─ email: me@feedic.com
+│  ├─ path: node_modules/sanitize-html/node_modules/entities
+│  └─ licenseFile: node_modules/sanitize-html/node_modules/entities/LICENSE
 ├─ envinfo@7.8.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/tabrindle/envinfo
@@ -1475,6 +1518,13 @@
 │  ├─ email: me@feedic.com
 │  ├─ path: node_modules/htmlparser2
 │  └─ licenseFile: node_modules/htmlparser2/LICENSE
+├─ htmlparser2@8.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/fb55/htmlparser2
+│  ├─ publisher: Felix Boehm
+│  ├─ email: me@feedic.com
+│  ├─ path: node_modules/sanitize-html/node_modules/htmlparser2
+│  └─ licenseFile: node_modules/sanitize-html/node_modules/htmlparser2/LICENSE
 ├─ https-proxy-agent@5.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/TooTallNate/node-https-proxy-agent
@@ -1608,6 +1658,13 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: node_modules/is-plain-obj
 │  └─ licenseFile: node_modules/is-plain-obj/license
+├─ is-plain-object@5.0.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/jonschlinkert/is-plain-object
+│  ├─ publisher: Jon Schlinkert
+│  ├─ url: https://github.com/jonschlinkert
+│  ├─ path: node_modules/is-plain-object
+│  └─ licenseFile: node_modules/is-plain-object/LICENSE
 ├─ is-stream@2.0.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/sindresorhus/is-stream
@@ -1712,8 +1769,8 @@
 │  ├─ repository: https://github.com/nodeca/js-yaml
 │  ├─ publisher: Vladimir Zapparov
 │  ├─ email: dervus.grim@gmail.com
-│  ├─ path: node_modules/@eslint/eslintrc/node_modules/js-yaml
-│  └─ licenseFile: node_modules/@eslint/eslintrc/node_modules/js-yaml/LICENSE
+│  ├─ path: node_modules/@istanbuljs/load-nyc-config/node_modules/js-yaml
+│  └─ licenseFile: node_modules/@istanbuljs/load-nyc-config/node_modules/js-yaml/LICENSE
 ├─ js-yaml@4.1.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/nodeca/js-yaml
@@ -1882,6 +1939,12 @@
 │  ├─ email: julien.fontanet@isonoe.net
 │  ├─ path: node_modules/make-error
 │  └─ licenseFile: node_modules/make-error/LICENSE
+├─ marked@4.3.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/markedjs/marked
+│  ├─ publisher: Christopher Jeffrey
+│  ├─ path: node_modules/marked
+│  └─ licenseFile: node_modules/marked/LICENSE.md
 ├─ matches-selector@1.2.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/ForbesLindesay/matches-selector
@@ -1959,6 +2022,13 @@
 │  ├─ email: andrey@sitnik.ru
 │  ├─ path: node_modules/nanoid
 │  └─ licenseFile: node_modules/nanoid/LICENSE
+├─ nanoid@3.3.6
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/ai/nanoid
+│  ├─ publisher: Andrey Sitnik
+│  ├─ email: andrey@sitnik.ru
+│  ├─ path: node_modules/postcss/node_modules/nanoid
+│  └─ licenseFile: node_modules/postcss/node_modules/nanoid/LICENSE
 ├─ natural-compare@1.4.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/litejs/natural-compare-lite
@@ -2163,6 +2233,13 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: node_modules/parent-module
 │  └─ licenseFile: node_modules/parent-module/license
+├─ parse-srcset@1.0.2
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/albell/parse-srcset
+│  ├─ publisher: Alex Bell
+│  ├─ email: alex@bellandwhistle.net
+│  ├─ path: node_modules/parse-srcset
+│  └─ licenseFile: node_modules/parse-srcset/LICENSE
 ├─ parse5-htmlparser2-tree-adapter@6.0.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/inikulin/parse5
@@ -2232,6 +2309,12 @@
 │  ├─ email: superjoe30@gmail.com
 │  ├─ path: node_modules/pend
 │  └─ licenseFile: node_modules/pend/LICENSE
+├─ picocolors@1.0.0
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/alexeyraspopov/picocolors
+│  ├─ publisher: Alexey Raspopov
+│  ├─ path: node_modules/picocolors
+│  └─ licenseFile: node_modules/picocolors/LICENSE
 ├─ picomatch@2.3.0
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/micromatch/picomatch
@@ -2271,6 +2354,13 @@
 │  ├─ url: sindresorhus.com
 │  ├─ path: node_modules/pkg-dir
 │  └─ licenseFile: node_modules/pkg-dir/license
+├─ postcss@8.4.21
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/postcss/postcss
+│  ├─ publisher: Andrey Sitnik
+│  ├─ email: andrey@sitnik.ru
+│  ├─ path: node_modules/postcss
+│  └─ licenseFile: node_modules/postcss/LICENSE
 ├─ prelude-ls@1.2.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/gkz/prelude-ls
@@ -2504,6 +2594,12 @@
 │  ├─ url: https://feross.org
 │  ├─ path: node_modules/string_decoder/node_modules/safe-buffer
 │  └─ licenseFile: node_modules/string_decoder/node_modules/safe-buffer/LICENSE
+├─ sanitize-html@2.10.0
+│  ├─ licenses: MIT
+│  ├─ repository: https://github.com/apostrophecms/sanitize-html
+│  ├─ publisher: Apostrophe Technologies, Inc.
+│  ├─ path: node_modules/sanitize-html
+│  └─ licenseFile: node_modules/sanitize-html/LICENSE
 ├─ semver@5.7.1
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/npm/node-semver
@@ -2577,6 +2673,13 @@
 │  ├─ url: http://blog.izs.me/
 │  ├─ path: node_modules/slide
 │  └─ licenseFile: node_modules/slide/LICENSE
+├─ source-map-js@1.0.2
+│  ├─ licenses: BSD-3-Clause
+│  ├─ repository: https://github.com/7rulnik/source-map-js
+│  ├─ publisher: Valentin 7rulnik Semirulnik
+│  ├─ email: v7rulnik@gmail.com
+│  ├─ path: node_modules/source-map-js
+│  └─ licenseFile: node_modules/source-map-js/LICENSE
 ├─ source-map-support@0.5.19
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/evanw/node-source-map-support

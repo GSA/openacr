@@ -1,6 +1,6 @@
 # OpenACR
 
-[![npm version](https://img.shields.io/npm/v/@openacr/openacr.svg)](https://www.npmjs.com/package/@openacr/openacr) [![tests](https://github.com/GSA/openacr/actions/workflows/tests.yaml/badge.svg)](https://github.com/GSA/openacr/actions/workflows/tests.yaml)
+[![npm version](https://img.shields.io/npm/v/@civicactions/openacr.svg)](https://www.npmjs.com/package/@civicactions/openacr) [![tests](https://github.com/CivicActions/openacr/actions/workflows/tests.yaml/badge.svg)](https://github.com/CivicActions/openacr/actions/workflows/tests.yaml)
 
 ## Context
 
