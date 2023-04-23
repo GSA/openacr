@@ -10,8 +10,8 @@
 │  ├─ repository: https://github.com/babel/babel
 │  ├─ publisher: The Babel Team
 │  ├─ url: https://babel.dev/team
-│  ├─ path: node_modules/@babel/template/node_modules/@babel/code-frame
-│  └─ licenseFile: node_modules/@babel/template/node_modules/@babel/code-frame/LICENSE
+│  ├─ path: node_modules/@babel/traverse/node_modules/@babel/code-frame
+│  └─ licenseFile: node_modules/@babel/traverse/node_modules/@babel/code-frame/LICENSE
 ├─ @babel/compat-data@7.14.7
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/babel/babel
@@ -512,7 +512,7 @@
 │  ├─ url: github.com/kevva
 │  ├─ path: node_modules/astral-regex
 │  └─ licenseFile: node_modules/astral-regex/license
-├─ async@2.6.3
+├─ async@2.6.4
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/caolan/async
 │  ├─ publisher: Caolan McMahon
@@ -1812,7 +1812,7 @@
 │  ├─ url: http://substack.net
 │  ├─ path: node_modules/json-stable-stringify-without-jsonify
 │  └─ licenseFile: node_modules/json-stable-stringify-without-jsonify/LICENSE
-├─ json5@2.2.0
+├─ json5@2.2.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/json5/json5
 │  ├─ publisher: Aseem Kishore
@@ -1962,7 +1962,7 @@
 │  ├─ url: https://github.com/jonschlinkert
 │  ├─ path: node_modules/micromatch
 │  └─ licenseFile: node_modules/micromatch/LICENSE
-├─ minimatch@3.0.4
+├─ minimatch@3.1.2
 │  ├─ licenses: ISC
 │  ├─ repository: https://github.com/isaacs/minimatch
 │  ├─ publisher: Isaac Z. Schlueter
@@ -1970,9 +1970,17 @@
 │  ├─ url: http://blog.izs.me
 │  ├─ path: node_modules/minimatch
 │  └─ licenseFile: node_modules/minimatch/LICENSE
-├─ minimist@1.2.5
+├─ minimatch@4.2.1
+│  ├─ licenses: ISC
+│  ├─ repository: https://github.com/isaacs/minimatch
+│  ├─ publisher: Isaac Z. Schlueter
+│  ├─ email: i@izs.me
+│  ├─ url: http://blog.izs.me
+│  ├─ path: node_modules/mocha/node_modules/minimatch
+│  └─ licenseFile: node_modules/mocha/node_modules/minimatch/LICENSE
+├─ minimist@1.2.8
 │  ├─ licenses: MIT
-│  ├─ repository: https://github.com/substack/minimist
+│  ├─ repository: https://github.com/minimistjs/minimist
 │  ├─ publisher: James Halliday
 │  ├─ email: mail@substack.net
 │  ├─ url: http://substack.net
@@ -1998,7 +2006,7 @@
 │  ├─ repository: https://github.com/isaacs/node-mkdirp
 │  ├─ path: node_modules/license-checker-rseidelsohn/node_modules/mkdirp
 │  └─ licenseFile: node_modules/license-checker-rseidelsohn/node_modules/mkdirp/LICENSE
-├─ mocha@9.2.0
+├─ mocha@9.2.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/mochajs/mocha
 │  ├─ publisher: TJ Holowaychuk
@@ -2015,7 +2023,7 @@
 │  ├─ repository: https://github.com/vercel/ms
 │  ├─ path: node_modules/mocha/node_modules/ms
 │  └─ licenseFile: node_modules/mocha/node_modules/ms/license.md
-├─ nanoid@3.2.0
+├─ nanoid@3.3.1
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/ai/nanoid
 │  ├─ publisher: Andrey Sitnik

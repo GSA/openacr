@@ -206,7 +206,7 @@
           <tbody>
             {{#each catalog.standards as |catalog-standard|}}
               <tr>
-                <td><a href="{{catalog-standard.url}}" target="_blank">{{catalog-standard.label}} <span class="usa-sr-only">(opens in a new window or tab)</span></a></td>
+                <td><a href="{{catalog-standard.url}}" target="_blank">{{catalog-standard.label}}<span class="usa-sr-only"> (opens in a new window or tab)</span></a></td>
                 <td>{{standardsIncluded catalog-standard.chapters}}</td>
               </tr>
             {{/each}}
@@ -261,7 +261,7 @@
                       <tr id="{{data-criteria.num}}">
                         <td>
                           <a href="{{catalogCriteriaURL catalog-chapter.id data-criteria.num catalog-standard.url}}" target="_blank">
-                            {{data-criteria.num}} {{catalogCriteriaLabel catalog-chapter.id data-criteria.num}} <span class="usa-sr-only">(opens in a new window or tab)</span>
+                            {{data-criteria.num}} {{catalogCriteriaLabel catalog-chapter.id data-criteria.num}}<span class="usa-sr-only"> (opens in a new window or tab)</span>
                           </a>
                         </td>
                         <td>
@@ -330,7 +330,7 @@
       <div class="grid-container">
         <div class="grid-row grid-gap">
           <div class="grid-col">
-            <a href="https://github.com/GSA/openacr" target="_blank">OpenACR <span class="usa-sr-only">(opens in a new window or tab)</span></a> is a format maintained by the <a href="https://gsa.gov/" target="_blank">GSA <span class="usa-sr-only">(opens in a new window or tab)</span></a>. The content is the responsibility of the author.
+            <a href="https://github.com/GSA/openacr" target="_blank">OpenACR<span class="usa-sr-only"> (opens in a new window or tab)</span></a> is a format maintained by the <a href="https://gsa.gov/" target="_blank">GSA<span class="usa-sr-only"> (opens in a new window or tab)</span></a>. The content is the responsibility of the author.
           </div>
           <div class="grid-col">
             This content is licensed under a {{license}}.
