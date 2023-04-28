@@ -1,6 +1,6 @@
 {
   "name": "@openacr/openacr",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "OpenACR schema validator and output generator",
   "repository": "GSA/openacr",
   "license": "CC0-1.0",
@@ -12,7 +12,7 @@
     "@types/marked": "^4.0.8",
     "@types/mocha": "^8.2.3",
     "@types/node": "^16.0.1",
-    "@types/sanitize-html": "^2.9.0",
+    "@types/sanitize-html": "^2.6.2",
     "@types/yargs": "^17.0.2",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
@@ -33,12 +33,13 @@
     "handlebars": "^4.7.7",
     "js-yaml": "^4.1.0",
     "marked": "^4.3.0",
-    "sanitize-html": "^2.10.0",
+    "sanitize-html": "^2.7.3",
     "spdx-license-list": "^6.4.0",
     "uswds": "^2.12.1",
     "yargs": "^17.0.1"
   },
   "scripts": {
+    "build": "tsc",
     "test": "nyc --reporter=lcov --reporter=text ./node_modules/.bin/_mocha 'tests/**/*.test.ts'",
     "lint": "eslint . --ext .ts",
     "generate-example-output": "npx ts-node src/openacr.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.markdown",
@@ -51,5 +52,9 @@
     "generate-WCAG21508-catalog": "npx ts-node src/librarian.ts -c WCAG21508",
     "a11y-test": "pa11y-ci openacr/*.html output/*.html tests/examples/*.html",
     "generate-license-report": "license-checker-rseidelsohn --relativeLicensePath --relativeModulePath > license/licenses.txt"
+  },
+  "main": "./dist/openacr.js",
+  "bin": {
+    "openacr": "./bin/openacr.js"
   }
 }

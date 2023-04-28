@@ -1,6 +1,6 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
-exclude: '^openacr\/uswds\/|tests\/examples\/uswds\/'
+exclude: '^openacr\/uswds\/|tests\/examples\/uswds\/|dist'
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.4.0

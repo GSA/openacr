@@ -10,6 +10,18 @@ You need the latest version of [Node](https://nodejs.org/en/) and NPM installed.
 
 ## Install
 
+### Installing CLI
+
+From version v0.3.6 onwards, the CLI can be installed from https://www.npmjs.com/package/@openacr/openacr using the command without needing the source and all dependencies:
+
+```bash
+npm install @openacr/openacr
+```
+
+Then you can use the `openacr` executable version to run the sames commands as listed below.
+
+### Installing source
+
 Clone the GitHub repository and cd into that directory.
 
 ```bash
