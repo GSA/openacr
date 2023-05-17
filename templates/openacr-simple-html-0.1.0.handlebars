@@ -5,13 +5,122 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{title}}</title>
-  <script type="text/javascript" charset="utf8" src="uswds/js/uswds-init.min.js"></script>
-  <link rel="stylesheet" href="uswds/css/uswds.min.css">
-  <link rel="stylesheet" href="openacr.css">
-  <link rel="stylesheet" href="custom.css">
+  <style>
+    body#openACR {
+      padding-left: 35px;
+    }
+
+    h2,
+    h3 {
+      position: relative;
+    }
+
+    h2 a.header-anchor,
+    h3 a.header-anchor {
+      position: absolute;
+      left: -2rem;
+    }
+
+    h2 a.header-anchor:hover svg,
+    h2 a.header-anchor:focus svg,
+    h2 a.header-anchor:focus-within svg,
+    h3 a.header-anchor:hover svg,
+    h3 a.header-anchor:focus svg,
+    h3 a.header-anchor:focus-within svg {
+      fill: #0000EE;
+      opacity: 1;
+    }
+
+    h2 a.header-anchor svg,
+    h3 a.header-anchor svg {
+      width: 28px;
+      height: 28px;
+      opacity: .3;
+    }
+
+    @media all and (max-width: 63.99em) {
+      h2 a.header-anchor,
+      h3 a.header-anchor {
+        position: relative;
+        opacity: 1;
+        left: 0;
+        vertical-align: top
+      }
+    }
+
+    a.header-anchor {
+      opacity: 0.4;
+      font-size: small;
+      text-decoration: none;
+      position: relative;
+      /* left: 20px; */
+      -webkit-transition: opacity 1s, font-size 1s;
+      -moz-transition: opacity 1s, font-size 1s;
+      -o-transition: opacity 1s, font-size 1s;
+      transition: opacity 1s, font-size 1s;
+    }
+
+    a.header-anchor:focus, a.header-anchor:hover {
+      text-decoration: underline;
+      font-size: large;
+      opacity: 1
+    }
+
+    .usa-sr-only,
+    .visuallyhidden {
+      border: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      white-space: nowrap;
+
+    &
+    .focusable {
+
+    &
+    :active,
+
+    &
+    :focus {
+      clip: auto;
+      clip-path: none;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+      white-space: inherit;
+    }
+
+    }
+    }
+    .applicable-standards-guidelines-table th:nth-child(1) {
+      width: 40%;
+    }
+
+    .applicable-standards-guidelines-table th:nth-child(2) {
+      width: 60%;
+    }
+
+    /* If only one level then hide the label. */
+    .component-level-count-1 .component-level-label {
+      display: none;
+    }
+
+    table {
+       border-collapse: collapse;
+     }
+    th, td {
+      border: 1px solid #000;
+    }
+  </style>
 </head>
-<body>
-  <script type="text/javascript" charset="utf8" src="uswds/js/uswds.min.js"></script>
+<body id="openACR">
   <main>
     <div class="grid-container">
       <h1><span class="evaluation-title">{{title}}</span> Accessibility Conformance Report</h1>

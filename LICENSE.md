@@ -5,7 +5,7 @@ This project includes a mix of the following:
 
 ## Parts of this project that are not in the public domain
 
-Presently some W3C data files and derrivitive files are included which are released under the [W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE](https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).
+Presently some W3C data files and derivative files are included which are released under the [W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE](https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).
 
 ### WCAG 2.0
 

@@ -1,12 +1,14 @@
-# Lorem Ipsum Accessibility Conformance Report
+# Lorem Ipsum
 
 Based on VPAT® 2.4 Revised Section 508 Edition
 
 ## Name of Product/Version
 Lorem Ipsum 1.1
 
-## Report Date
-1/20/2022
+## Report Dates and Version
+- Report Date:
+- Last Modified Date:
+- Version: lorem ipsum-1.1
 
 ## Product Description
 Fake text
@@ -30,7 +32,7 @@ Fake text
 ## Notes
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet viverra lorem. Nullam laoreet vitae lorem et semper. Donec feugiat rutrum luctus. Nunc nec scelerisque orci. Mauris non tellus congue, vestibulum felis at, consectetur dui. Aenean luctus dictum diam. Vestibulum vehicula leo nulla, nec hendrerit felis sodales a. In hac habitasse platea dictumst. Phasellus odio felis, efficitur a mattis vitae, fermentum vitae libero. Nam ut magna id sem pellentesque ultrices. Nulla sed urna vel tortor vehicula varius. Sed scelerisque porta nisi, sit amet ultricies ante ullamcorper quis.
 
-## Evaluation Methods Used
+## Evaluation Methods
 Use of automated tools like WAVE and Accessibility Insights. Manual keyboard only testing. Some testing with JAWS, NVDA and VoiceOver.
 
 ## Applicable Standards/Guidelines
@@ -47,11 +49,18 @@ The terms used in the Conformance Level information are defined as follows:
 - **Partially Supports**: Some functionality of the product does not meet the criterion.
 - **Does Not Support**: The majority of product functionality does not meet the criterion.
 - **Not Applicable**: The criterion is not relevant to the product.
-- **Not Evaluated**: The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.
+- **Not Evaluated**: The product has not been evaluated against the criterion. This can be used only in WCAG 2.x Level AAA.
 
 ## WCAG 2.0 Report
 ### Table 1: Success Criteria, Level A
 
+
+Conformance to the 2 criteria listed below is distributed as follows:
+
+- 3 supported
+- 2 partially supported
+- 1 not supported
+- 2 not applicable
 
 | Criteria | Conformance Level | Remarks and Explanations |
 | --- | --- | --- |

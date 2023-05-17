@@ -16,7 +16,7 @@ jobs:
         run: npm ci
 
       - name: Output Drupal HTML.
-        run: npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o output/drupal-9.html
+        run: npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o output/drupal-9.html
 
       - name: Output Example HTML.
         run: npx ts-node src/openacr.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o output/valid.html

@@ -1,4 +1,4 @@
-# Plone Accessibility Conformance Report
+# Plone
 
 Based on VPAT® 2.4 Revised Section 508 Edition
 
@@ -6,9 +6,11 @@ Based on VPAT® 2.4 Revised Section 508 Edition
 
 Plone 5.2
 
-## Report Date
+## Report Dates and Version
 
-1/20/2022
+- Report Date:
+- Last Modified Date:
+- Version: plone-5.2
 
 ## Product Description
 
@@ -28,7 +30,7 @@ Open-source CMS based on Python.
 
 Testing applies to Plone with standard theme. Website-specific themes and CSS will have to be tested foraccessibility compliance by the organization deploying that Plone site. Also, the content that is added to a Plone sitewill have to be evaluated, especially when audio-visual materials are added. Testing with assistive technologies onlydone with English, Spanish and Portuguese language versions.
 
-## Evaluation Methods Used
+## Evaluation Methods
 
 Testing with assistive technologies, testing is based on general public knowledge.
 
@@ -49,11 +51,18 @@ The terms used in the Conformance Level information are defined as follows:
 - **Partially Supports**: Some functionality of the product does not meet the criterion.
 - **Does Not Support**: The majority of product functionality does not meet the criterion.
 - **Not Applicable**: The criterion is not relevant to the product.
-- **Not Evaluated**: The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.
+- **Not Evaluated**: The product has not been evaluated against the criterion. This can be used only in WCAG 2.x Level AAA.
 
 ## WCAG 2.0 Report
 
 ### Table 1: Success Criteria, Level A
+
+Conformance to the 25 criteria listed below is distributed as follows:
+
+- 45 supported
+- 1 partially supported
+- 0 not supported
+- 54 not applicable
 
 | Criteria                                                                                                           | Conformance Level                                                                                                                                                         | Remarks and Explanations                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -85,6 +94,13 @@ The terms used in the Conformance Level information are defined as follows:
 
 ### Table 2: Success Criteria, Level AA
 
+Conformance to the 13 criteria listed below is distributed as follows:
+
+- 31 supported
+- 0 partially supported
+- 0 not supported
+- 18 not applicable
+
 | Criteria                                                                                                      | Conformance Level                                                                                                                                               | Remarks and Explanations |
 | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
 | [1.2.4 Captions (Live)](https://www.w3.org/TR/WCAG20/#media-equiv-real-time-captions)                         | <ul><li>**Web**: Supports</li><li>**Electronic Documents**: Supports</li><li>**Software**: Not Applicable</li> </ul>                                            | <ul> </ul>               |
@@ -102,6 +118,13 @@ The terms used in the Conformance Level information are defined as follows:
 | [3.3.4 Error Prevention (Legal, Financial, Data)](https://www.w3.org/TR/WCAG20/#minimize-error-reversible)    | <ul><li>**Web**: Supports</li><li>**Electronic Documents**: Not Applicable</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Supports</li> </ul> | <ul> </ul>               |
 
 ### Table 3: Success Criteria, Level AAA
+
+Conformance to the 23 criteria listed below is distributed as follows:
+
+- 0 supported
+- 0 partially supported
+- 0 not supported
+- 0 not applicable
 
 | Criteria                                                                                                | Conformance Level                         | Remarks and Explanations |
 | ------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------ |
@@ -132,6 +155,13 @@ The terms used in the Conformance Level information are defined as follows:
 ## Revised Section 508 Report
 
 ### Chapter 3: Functional Performance Criteria (FPC)
+
+Conformance to the 9 criteria listed below is distributed as follows:
+
+- 8 supported
+- 1 partially supported
+- 0 not supported
+- 0 not applicable
 
 | Criteria                                                                                                  | Conformance Level                     | Remarks and Explanations                                                                                                  |
 | --------------------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |

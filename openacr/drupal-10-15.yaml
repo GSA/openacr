@@ -1,8 +1,10 @@
 title: Drupal
 product:
   name: Drupal
-  version: "9.1"
-  description: Content Management System
+  version: "10"
+  description: >-
+    Drupal is an open source content management platform supporting a variety of
+    websites ranging from personal weblogs to large community-driven websites.
 author:
   name: Mike Gifford
   company_name: CivicActions
@@ -10,13 +12,13 @@ author:
   email: mike.gifford@civicactions.com
   phone: (510) 408-7510
   website: "https://civicactions.com/"
-report_date: 8/31/2021
-last_modified_date: 1/20/2023
-version: 14
+report_date: "2023-05-12"
+last_modified_date: "2023-05-16"
+version: 15
 notes: >-
   Links to the issues identified are included where possible to ensure that this
   is a living document where outstanding issues are regularly reviewed for
-  compliance. The Authoring tool is evaluated against ATAG 2.0, Part A and B.
+  compliance. The authoring tool is evaluated against ATAG 2.0, Part A and B.
   Incorporating feedback from the Drupal community.
 evaluation_methods_used: >-
   Use of automated tools like WAVE and Accessibility Insights. Manual keyboard
@@ -27,33 +29,40 @@ legal_disclaimer: >-
   web application at the time of the review and does not represent a
   legally-binding claim. Please contact us to report any accessibility errors or
   conformance claim errors for re-evaluation and correction, if necessary.
-repository: "https://github.com/GSA/openacr/blob/main/openacr/drupal-9.yaml"
+repository: "https://github.com/CivicActions/openacr/blob/main/openacr/drupal-10-15.yaml"
 feedback: "https://www.drupal.org/project/issues/drupal"
 license: GPL-2.0-or-later
-related_openacrs:
-  - url: "https://ckeditor.com/docs/ckeditor4/latest/guide/dev_section508.html"
-    type: secondary
+related_openacrs: []
 chapters:
   success_criteria_level_a:
     notes: >-
-      Drupal doesn't make a strong distinction between the front-end &amp;
+      Drupal doesn't make a strong distinction between the front-end and
       back-end accessibility. Many administration interfaces can be exposed to
       users in a more interactive site. Generally this report focuses the
-      Conformance Level / Remarks and Explainations so that Web comments are
-      about elements that are typically public, while Authoring Tool is
-      typically for authors and administrators. The goal of the authoring
-      interface is to support ATAG 2.0 AA (Part A and B). The Drupal community
-      strives to beek up with the latest WCAG recommendation.
+      Conformance Level / Remarks and Explanations so that Web comments are
+      about elements that are typically public for all users, while Authoring
+      Tool is typically for authors and administrators. The goal of the
+      authoring interface is to support ATAG 2.0 AA (Part A and B). The Drupal
+      community strives to keep up with the latest WCAG recommendation.
     criteria:
       - num: 1.1.1
         components:
           - name: web
             adherence:
-              level: partially-supports
-              notes: Drupal 8 requires alt text for images by default.
+              level: supports
+              notes: >-
+                Drupal core has no outstanding user barriers. There are
+                improvements in the [outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag111)
+                which relate to decorative and the password strength
+                indicator.
+
+
+                All open WCAG 1.1.1 issues:  3232414, 2514218, 3272325, 3230231,
+                3275397, 3087535, 3319601
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: >-
                 Some non-textual content in the documentation does not provide a
                 textual alternative.
@@ -63,25 +72,30 @@ chapters:
               notes: ""
           - name: authoring-tool
             adherence:
-              level: supports
+              level: partially-supports
               notes: >-
-                The back end of Drupal Core was built to be  WCAG 2.0 AA
+                The back end of Drupal Core was built to be WCAG 2.1 AA
                 compliant and non-text content in the administration interface
                 has a textual equivalent. Audio and video can be added to the
                 media library, but Core does not provide tools to manage
-                transcripts and captions/subtitles for local video and audio -
-                Drupal issue 3002770.
+                transcripts and captions/subtitles for local video and audio.
+
+
+                Alternative text is required for images by default. [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag111)
+                relate to thumbnail images, management of decorative images, and
+                messages icons.
       - num: 1.2.1
         components:
           - name: web
             adherence:
-              level: supports
+              level: not-applicable
               notes: >-
                 Authors can satisfy 1.2.1 Audio-only and Video-only
                 (Prerecorded) by using text on the same page.
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: This is not explicitly defined in the documentation.
           - name: software
             adherence:
@@ -89,7 +103,7 @@ chapters:
               notes: ""
           - name: authoring-tool
             adherence:
-              level: supports
+              level: not-applicable
               notes: >-
                 There is no additional support for authors within the authoring
                 interface to explain how this can be done.
@@ -97,7 +111,7 @@ chapters:
         components:
           - name: web
             adherence:
-              level: does-not-support
+              level: not-applicable
               notes: >-
                 The file module in Core lets authors upload audio and video
                 content, and output  and  elements and does not support
@@ -112,7 +126,7 @@ chapters:
               notes: ""
           - name: authoring-tool
             adherence:
-              level: does-not-support
+              level: not-applicable
               notes: >-
                 Drupal does not support, let alone require users to include
                 captions. Hard coding open captions is presently the only way to
@@ -121,13 +135,13 @@ chapters:
         components:
           - name: web
             adherence:
-              level: does-not-support
+              level: not-applicable
               notes: >-
                 Audio files can be uploaded, but there is no way to associate
                 captions in Core.
           - name: electronic-docs
             adherence:
-              level: does-not-support
+              level: not-applicable
               notes: >-
                 There is no documentation on how to properly convey pre-recorded
                 audio descriptions.
@@ -137,7 +151,7 @@ chapters:
               notes: ""
           - name: authoring-tool
             adherence:
-              level: does-not-support
+              level: not-applicable
               notes: >-
                 There is no audio in the authoring interface of Drupal Core, but
                 there is no support for authors to upload accessible audio
@@ -148,29 +162,35 @@ chapters:
             adherence:
               level: partially-supports
               notes: >-
-                Information is structured into logical relationships.
-                Navigational lists are well used to group information. Forms
-                have a visual and semantic representation for required fields.
-                Message windows have ARIA role defined incorrectly as
-                role=contentinfo which impacts content relationships - Drupal
-                issue 2942404. aria-live announcement is not contained in a
-                landmark - Drupal issue 3098857.
+                There are barriers in the [outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag111)
+                ARIA landmarks and roles. There are also a number of errors tied
+                to forms (fieldsets, dates, radios &amp; checkboxes). There is
+                also more work needed to provide better semantics for Voice
+                Control and support for Windows High Contrast mode.
+
+
+                All open WCAG 1.3.1 issues: 3081500, 2951317, 3098857, 3347326,
+                3290899, 3171726, 2951714, 3144948, 3078334, 2942404, 3190536,
+                3301868, 3171728, 3194669, 3200642, 3206290, 3127469.
           - name: electronic-docs
             adherence:
-              level: supports
-              notes: >-
-                Information is structured into logical relationships.
-                Navigational lists are well used to group information.
+              level: not-applicable
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
               notes: ""
           - name: authoring-tool
             adherence:
-              level: supports
+              level: partially-supports
               notes: >-
-                The authoring environment was constructed to support ATAG 2.0 AA
-                (Part A and B).
+                There are elements described in the Web section of this ACR
+                which affect both user and author interfaces. All outstanding
+                issues are listed in the Web section. There are also
+                accessibility concerns with the vertical tabs and dashboards
+                available to users. Menu blocks are not getting the correct ID
+                in some instances.
       - num: 1.3.2
         components:
           - name: web
@@ -204,7 +224,7 @@ chapters:
                 for the user interface.
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
@@ -226,7 +246,7 @@ chapters:
                 meaning.
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
@@ -234,11 +254,16 @@ chapters:
               notes: ""
           - name: authoring-tool
             adherence:
-              level: supports
+              level: partially-supports
               notes: >-
-                In general, the admin theme is very accessible. The Claro
-                Administration Theme shortcut start needs improvement - Drupal
-                issue 3171726.
+                In general, the admin theme is very accessible. Color contrast
+                can be improved with the star image, the toolbar tray, table
+                drag, column severity and unpublished articles. [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag141).
+
+
+                All open WCAG 1.4.1 issues: 3097907, 3171726, 3281601, 3059168,
+                867830.
       - num: 1.4.2
         components:
           - name: web
@@ -261,13 +286,19 @@ chapters:
         components:
           - name: web
             adherence:
-              level: supports
+              level: partially-supports
               notes: >-
-                Users can interact with Drupal Core with the keyboard and
-                without specific timings for individual keystrokes.
+                Generally, users and authors can interact with Drupal Core with
+                the keyboard and without specific timings for individual
+                keystrokes. [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag211)
+                with tooltips and the header menu.
+
+
+                All open WCAG 2.1.1 issues:  2933984, 3210434
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
@@ -277,13 +308,8 @@ chapters:
             adherence:
               level: partially-supports
               notes: >-
-                Authors are largely able to engage with Drupal Core with the
-                keyboard and without specific timings for individual keystrokes.
-                Tooltips not displayed for keyboard navigation - Drupal issue
-                2933984. There are reported issues with IE11 and JAWS - Drupal
-                issue 2852702. It is worth noting that Drupal's admin is
-                powerful and complex, and there are other accessibility reports
-                in the issue queue.
+                See remarks in Web section. [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag211).
       - num: 2.1.2
         components:
           - name: web
@@ -294,7 +320,7 @@ chapters:
                 keyboard interface.
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
@@ -310,20 +336,20 @@ chapters:
         components:
           - name: web
             adherence:
-              level: ""
-              notes: ""
+              level: supports
+              notes: No known character key shortcut issues.
           - name: electronic-docs
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: authoring-tool
             adherence:
-              level: ""
-              notes: ""
+              level: supports
+              notes: No known character key shortcut issues.
       - num: 2.2.1
         components:
           - name: web
@@ -332,7 +358,7 @@ chapters:
               notes: The time limit is longer than 20 hours.
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
@@ -346,8 +372,8 @@ chapters:
         components:
           - name: web
             adherence:
-              level: not-applicable
-              notes: ""
+              level: supports
+              notes: No known timing issues.
           - name: electronic-docs
             adherence:
               level: not-applicable
@@ -358,8 +384,8 @@ chapters:
               notes: ""
           - name: authoring-tool
             adherence:
-              level: not-applicable
-              notes: ""
+              level: supports
+              notes: No known timing issues.
       - num: 2.3.1
         components:
           - name: web
@@ -386,7 +412,7 @@ chapters:
               notes: Skip links are provided.
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: Skip links are provided.
           - name: software
             adherence:
@@ -401,12 +427,10 @@ chapters:
           - name: web
             adherence:
               level: supports
-              notes: >-
-                Pages have titles, but in the case of multi-page events, the
-                page number is not included - Drupal issue 2509716.
+              notes: "Pages are titled correctly. "
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
@@ -416,8 +440,13 @@ chapters:
             adherence:
               level: supports
               notes: >-
-                Pages have titles, but in the case of multi-page events, the
-                page number is not included - Drupal issue 2509716.
+                Generally, pages are titled correctly. [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag242)
+                with a regression in how fields are displayed in editing content
+                types.
+
+
+                All open WCAG 2.4.2 issues:  2514218
       - num: 2.4.3
         components:
           - name: web
@@ -428,7 +457,7 @@ chapters:
                 meaning and operability.
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: >-
                 Focusable components receive focus in an order that preserves
                 meaning and operability.
@@ -461,83 +490,95 @@ chapters:
               notes: ""
           - name: authoring-tool
             adherence:
-              level: supports
+              level: partially-supports
               notes: >-
-                Careful attention has been paid to ensure that automated "Read
-                More" links are available in a way that is available with
-                contextual information for screen readers.
+                Generally very well-supported. [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag242)
+                with truncation of the path alias and duplicate links on edit
+                content page.
+
+
+                All open WCAG 2.4.2 issues: 3351638, 2852898
       - num: 2.5.1
         components:
           - name: web
             adherence:
-              level: ""
-              notes: ""
+              level: supports
+              notes: "No known challenges with pointer gestures. "
           - name: electronic-docs
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: authoring-tool
             adherence:
-              level: ""
-              notes: ""
+              level: not-applicable
+              notes: "No known challenges with pointer gestures. "
       - num: 2.5.2
         components:
           - name: web
             adherence:
-              level: ""
-              notes: ""
+              level: supports
+              notes: "No known problems for users with pointer cancellation. "
           - name: electronic-docs
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: authoring-tool
             adherence:
-              level: ""
-              notes: ""
+              level: partially-supports
+              notes: >-
+                The Drupal ajax framework uses 'mousedown' to capture the click.
+                [Outstanding
+                issue(s)](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag252)
+                with truncation of the path alias and duplicate links on edit
+                content page.
+
+
+                All open WCAG 2.5.2 issue(s): 2616184
       - num: 2.5.3
         components:
           - name: web
             adherence:
-              level: ""
-              notes: ""
+              level: supports
+              notes: "No known problems with labels in name. "
           - name: electronic-docs
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: authoring-tool
             adherence:
-              level: ""
-              notes: ""
+              level: supports
+              notes: "See the Web section. "
       - num: 2.5.4
         components:
           - name: web
             adherence:
-              level: ""
-              notes: ""
+              level: supports
+              notes: No known problems with user motion.
           - name: electronic-docs
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: authoring-tool
             adherence:
-              level: ""
-              notes: ""
+              level: supports
+              notes: "See Web section. "
       - num: 3.1.1
         components:
           - name: web
@@ -546,7 +587,7 @@ chapters:
               notes: Page language is defined semantically on every page.
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: Page language is defined semantically on every page.
           - name: software
             adherence:
@@ -555,7 +596,12 @@ chapters:
           - name: authoring-tool
             adherence:
               level: supports
-              notes: Page language is defined semantically on every page.
+              notes: >-
+                [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag311).
+
+
+                All open WCAG 3.1.1 issue(s): 3081526
       - num: 3.2.1
         components:
           - name: web
@@ -566,7 +612,7 @@ chapters:
                 for the user.
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: >-
                 Change in the focus state does not initiate a change of context
                 for the user.
@@ -578,8 +624,8 @@ chapters:
             adherence:
               level: supports
               notes: >-
-                Change in the focus state does not initiate a change of context
-                for the user.
+                A change in the focus state does not initiate a change of
+                context for the user.
       - num: 3.2.2
         components:
           - name: web
@@ -590,7 +636,7 @@ chapters:
                 control from the users.
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: >-
                 Engaging with the interactive sites does not unexpectedly take
                 control from the users.
@@ -608,13 +654,21 @@ chapters:
         components:
           - name: web
             adherence:
-              level: supports
+              level: partially-supports
               notes: >-
-                The Inline Form Error module was added in Drupal 8. This needs
-                to be enabled site-wide on installation.
+                The Inline Form Error module needs to be enabled site-wide on
+                installation. [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag311).
+                Most of these issues are also authoring interface, but there are
+                problems with HTML5 validation, child groupings, required
+                errors, and file uploading.
+
+
+                All open WCAG 3.3.1 issues: 3059955, 1797438, 2848507, 2563173,
+                3087305, 2455933, 3087402, 2847425, 2089703
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
@@ -622,19 +676,27 @@ chapters:
               notes: ""
           - name: authoring-tool
             adherence:
-              level: supports
+              level: partially-supports
               notes: >-
-                The Inline Form Error module was added in Drupal 8. This needs
-                to be enabled site-wide on installation.
+                See the Web section as most of these [outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag311)
+                are also likely on the user side.
       - num: 3.3.2
         components:
           - name: web
             adherence:
-              level: supports
-              notes: Default forms all include labels.
+              level: partially-supports
+              notes: >-
+                Default forms all include labels. [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag332)
+                include a lack of 'aria-describedby' and grouped fields missing
+                labels.
+
+
+                All open WCAG 3.3.2 issues: 2998857, 2608212
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
@@ -645,7 +707,9 @@ chapters:
               level: partially-supports
               notes: >-
                 There are a few places where there are problems with labels, but
-                these are odd exceptions - Drupal issue 3015494.
+                these are odd exceptions. See the Web section for details.
+                [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag332).
       - num: 4.1.1
         components:
           - name: web
@@ -656,7 +720,7 @@ chapters:
                 assistive technology users.
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: >-
                 There are no HTML5 errors or warnings that are known to impact
                 assistive technology users.
@@ -668,9 +732,12 @@ chapters:
             adherence:
               level: supports
               notes: >-
-                Generally parsing is very well supported, but there are a few
-                places where this needs to be improved - Drupal issue 1852090
-                and 3144948.
+                Generally parsing is very well-supported, but there are a few
+                places where this needs to be improved. [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag411).
+
+
+                All open WCAG 4.1.1 issue(s):  3174459
       - num: 4.1.2
         components:
           - name: web
@@ -679,7 +746,7 @@ chapters:
               notes: Public pages support this criterion.
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: Public pages support this criterion.
           - name: software
             adherence:
@@ -689,8 +756,15 @@ chapters:
             adherence:
               level: supports
               notes: >-
-                This is generally well supported, but there are places where it
-                has been overlooked. Drupal issue 3144948, 3019487, and 3085545.
+                This is generally well-supported, but there are places where it
+                has been overlooked. [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag412).
+                There are semantics missing for aria elements in the block,
+                forms, and contextual modules.
+
+
+                All open WCAG 4.1.2 issues:  3083181, 2852724, 3218877, 3028780,
+                1852090, 3085545
   success_criteria_level_aa:
     criteria:
       - num: 1.2.4
@@ -698,7 +772,7 @@ chapters:
           - name: web
             adherence:
               level: not-applicable
-              notes: ""
+              notes: "This is not a feature supported in Drupal Core. "
           - name: electronic-docs
             adherence:
               level: not-applicable
@@ -709,7 +783,7 @@ chapters:
               notes: ""
           - name: authoring-tool
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
       - num: 1.2.5
         components:
@@ -778,11 +852,18 @@ chapters:
             adherence:
               level: partially-supports
               notes: >-
-                Generally meets. Some contrast failures around grey backgrounds
-                - Drupal issue 3040673.
+                Generally meets. Some contrast failures have been identified in
+                both user and author interfaces. Asterisks, form labels,
+                disabled form elements, and some dialogs require additional
+                contrast to meet 1.4.3 requirements. [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag143).
+
+
+                All open WCAG 1.4.3 issue(s): 3266299, 3040673, 3231744,
+                3200635, 2756483, 2725539, 3076153
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: The docs have sufficient contrast.
           - name: software
             adherence:
@@ -792,19 +873,24 @@ chapters:
             adherence:
               level: supports
               notes: >-
-                Generally meets requirements. Some challenges with Core admin
-                themes - Drupal issue 930508 and 3080100.
+                Generally meets requirements. Form elements described in the web
+                section affect both user and author interfaces.  [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag143).
       - num: 1.4.4
         components:
           - name: web
             adherence:
               level: partially-supports
               notes: >-
-                Generally support with some minor exceptions - Drupal issue
-                3129257.
+                Generally support with a minor exception with focus outlines.
+                [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag144).
+
+
+                All WCAG 1.4.4 issues: 3068698, 3238618
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: The docs are accessible up to 200%.
           - name: software
             adherence:
@@ -813,13 +899,16 @@ chapters:
           - name: authoring-tool
             adherence:
               level: partially-supports
-              notes: Generally good with some exceptions - Drupal issue 3164587.
+              notes: >-
+                Generally support with some minor exception with limited
+                horizontal space.  [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag144).
       - num: 1.4.5
         components:
           - name: web
             adherence:
-              level: not-applicable
-              notes: ""
+              level: supports
+              notes: "There are no images of text in the user interface. "
           - name: electronic-docs
             adherence:
               level: supports
@@ -839,74 +928,107 @@ chapters:
         components:
           - name: web
             adherence:
-              level: ""
-              notes: ""
+              level: partially-supports
+              notes: >-
+                Generally meets. Some issues with long words, responsive tables,
+                resizing menus, and wide screen layout. [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1410).
+
+
+                All open WCAG 1.4.10 issues: 3159896, 3177475, 2280035, 3191806,
+                2574721, 3164587.
           - name: electronic-docs
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: authoring-tool
             adherence:
-              level: ""
-              notes: ""
+              level: partially-supports
+              notes: >-
+                Many of the same issues with the public user interface, also
+                apply to author interfaces. Generally support with some minor
+                exception with the action links on the modules page.
+                [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1410).
       - num: 1.4.11
         components:
           - name: web
             adherence:
-              level: ""
-              notes: ""
+              level: partially-supports
+              notes: >-
+                Generally meets. There are still some images that need to have
+                their contrast increased.  [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1411).
+
+
+                All open WCAG 1.4.11 issues: 3097907, 2910102, 3171726, 3272266,
+                3037742
           - name: electronic-docs
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: authoring-tool
             adherence:
-              level: ""
-              notes: ""
+              level: partially-supports
+              notes: >-
+                Generally supports, In addition to the Web section, there are
+                some specific color contrast errors with the Claro theme and
+                contextual links.
+
+
+                [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1411).
       - num: 1.4.12
         components:
           - name: web
             adherence:
-              level: ""
+              level: supports
               notes: ""
           - name: electronic-docs
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: authoring-tool
             adherence:
-              level: ""
-              notes: ""
+              level: partially-supports
+              notes: >+
+                Generally supports. There is a known issue with off-canvas
+                dialogs. [Outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1411).
+
+
+                All open WCAG 1.4.12 issues: 2919837
+
       - num: 1.4.13
         components:
           - name: web
             adherence:
-              level: ""
-              notes: ""
+              level: supports
+              notes: "No known problems. "
           - name: electronic-docs
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: authoring-tool
             adherence:
-              level: ""
-              notes: ""
+              level: supports
+              notes: "No known problems. "
       - num: 2.4.5
         components:
           - name: web
@@ -915,7 +1037,7 @@ chapters:
               notes: There is more than one way to locate a Web page within the CMS.
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: There is more than one way to locate a Web page within the CMS.
           - name: authoring-tool
             adherence:
@@ -923,18 +1045,14 @@ chapters:
               notes: There is more than one way to locate a Web page within the CMS.
           - name: software
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
       - num: 2.4.6
         components:
           - name: web
             adherence:
-              level: partially-supports
-              notes: >-
-                Generally there is very good support. Some heading levels may be
-                missed in some unique contexts - Drupal issue 1768732. Better
-                support could be provided for threaded comments - Drupal issue
-                2290043.
+              level: supports
+              notes: "Generally there is very good support. "
           - name: electronic-docs
             adherence:
               level: not-applicable
@@ -945,23 +1063,17 @@ chapters:
               notes: ""
           - name: authoring-tool
             adherence:
-              level: partially-supports
-              notes: >-
-                Generally good, but for dynamic elements like the Layout Builder
-                need a plan for a dynamic heading structure - Drupal issue
-                3007978.
+              level: supports
+              notes: Generally good.
       - num: 2.4.7
         components:
           - name: web
             adherence:
               level: partially-supports
-              notes: >-
-                Focus elements are well established for the front-end. Further
-                enhancements are being developed to make it more obvious for
-                keyboard only users.
+              notes: "Focus elements are well established for the front-end. "
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
@@ -971,8 +1083,14 @@ chapters:
             adherence:
               level: partially-supports
               notes: >-
-                An IE specific bug where there are focus issues for authors and
-                administrators in the Claro theme - Drupal issue 3048785.
+                Generally supports. There is a known [outstanding
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag247).
+                A block can be added with layout builder that stops authors from
+                escaping focus. The image style page also has a hidden focus
+                element.
+
+
+                All open WCAG 2.47 issues: 3302103, 3273099
       - num: 3.1.2
         components:
           - name: web
@@ -1077,7 +1195,7 @@ chapters:
               notes: By default users can editing content which they own.
           - name: electronic-docs
             adherence:
-              level: supports
+              level: not-applicable
               notes: Documentation could be improved.
           - name: software
             adherence:
@@ -1085,7 +1203,7 @@ chapters:
               notes: ""
           - name: authoring-tool
             adherence:
-              level: partially-supports
+              level: supports
               notes: >-
                 There is nothing to differentiate editing financial or legal
                 data from any other data managed by Drupal.
@@ -1093,20 +1211,20 @@ chapters:
         components:
           - name: web
             adherence:
-              level: ""
-              notes: ""
+              level: supports
+              notes: "No known problems with status messages. "
           - name: electronic-docs
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: software
             adherence:
-              level: ""
+              level: not-applicable
               notes: ""
           - name: authoring-tool
             adherence:
-              level: ""
-              notes: ""
+              level: supports
+              notes: "No known problems with status messages. "
     notes: ""
   success_criteria_level_aaa:
     notes: Where possible the Drupal community strives to exceed AA compliance.
@@ -1627,6 +1745,7 @@ chapters:
             adherence:
               level: ""
               notes: ""
+    disabled: true
   functional_performance_criteria:
     notes: Not applicable.
     criteria:
@@ -1688,6 +1807,7 @@ chapters:
             adherence:
               level: not-applicable
               notes: ""
+    disabled: true
   hardware:
     notes: >-
       Drupal is a web application. Hardware accessibility criteria is not
@@ -2221,11 +2341,4 @@ chapters:
             adherence:
               level: ""
               notes: ""
-vendor:
-  name: ""
-  company_name: ""
-  address: ""
-  email: ""
-  phone: ""
-  website: ""
-catalog: 2.4-edition-wcag-2.1-508-en
+catalog: 2.4-edition-wcag-2.1-en

@@ -8,6 +8,7 @@ export function outputOpenACR(
   data: any,
   catalogData: any,
   outputFile: string,
+  withStyleFiles = false,
   handlebarTemplate = "templates/openacr-markdown-0.1.0.handlebars"
 ): ValidatorResult {
   try {
@@ -31,26 +32,28 @@ export function outputOpenACR(
       };
     });
 
-    // Copy CSS stylesheets to the output directory.
-    fs.copyFile("templates/openacr.css", `${dir}/openacr.css`, (err) => {
-      return {
-        result: false,
-        message: "Invalid: openacr.css file could not be copied.",
-      };
-    });
-    fs.copyFile("templates/custom.css", `${dir}/custom.css`, (err) => {
-      return {
-        result: false,
-        message: "Invalid: custom.css file could not be copied.",
-      };
-    });
-    // Copy USWDS design system files to the output directory.
-    fse.copy("node_modules/uswds/dist", `${dir}/uswds`, (err) => {
-      return {
-        result: false,
-        message: "Invalid: USWDS directory could not be copied.",
-      };
-    });
+    if (withStyleFiles) {
+      // Copy CSS stylesheets to the output directory.
+      fs.copyFile("templates/openacr.css", `${dir}/openacr.css`, (err) => {
+        return {
+          result: false,
+          message: "Invalid: openacr.css file could not be copied.",
+        };
+      });
+      fs.copyFile("templates/custom.css", `${dir}/custom.css`, (err) => {
+        return {
+          result: false,
+          message: "Invalid: custom.css file could not be copied.",
+        };
+      });
+      // Copy USWDS design system files to the output directory.
+      fse.copy("node_modules/uswds/dist", `${dir}/uswds`, (err) => {
+        return {
+          result: false,
+          message: "Invalid: USWDS directory could not be copied.",
+        };
+      });
+    }
 
     return {
       result: true,

@@ -57,6 +57,12 @@ const argv = yargs
         demandOption: false,
         alias: "o",
       },
+      templateFile: {
+        type: "string",
+        description: "Handlebar template filename",
+        demandOption: false,
+        alias: "t",
+      },
     });
   })
   .demandCommand(1, "You must select command validate or output.")
@@ -88,14 +94,23 @@ if (fs.existsSync(argv.file)) {
       const outputFile = argv.outputFile ?? "output/openacr.markdown";
       const fileExt = outputFile.split(".").pop();
       if (fileExt === "html") {
+        let templateFile = "templates/openacr-html-0.1.0.handlebars";
+        let withStyles = true;
+        if (argv.templateFile) {
+          templateFile = argv.templateFile;
+          withStyles = false;
+        }
         result = outputOpenACR(
           data,
           catalog,
           outputFile,
-          "templates/openacr-html-0.1.0.handlebars"
+          withStyles,
+          templateFile
         );
       } else {
-        result = outputOpenACR(data, catalog, outputFile);
+        const templateFile =
+          argv.templateFile ?? "templates/openacr-markdown-0.1.0.handlebars";
+        result = outputOpenACR(data, catalog, outputFile, false, templateFile);
       }
     }
   } catch {

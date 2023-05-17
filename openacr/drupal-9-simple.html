@@ -4,31 +4,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>GovReady PBC</title>
-    <script
-      type="text/javascript"
-      charset="utf8"
-      src="uswds/js/uswds-init.min.js"
-    ></script>
-    <link rel="stylesheet" href="uswds/css/uswds.min.css" />
-    <link rel="stylesheet" href="openacr.css" />
-    <link rel="stylesheet" href="custom.css" />
+    <title>Drupal</title>
+    <style>
+      body#openACR {
+        padding-left: 35px;
+      }
+
+      h2,
+      h3 {
+        position: relative;
+      }
+
+      h2 a.header-anchor,
+      h3 a.header-anchor {
+        position: absolute;
+        left: -2rem;
+      }
+
+      h2 a.header-anchor:hover svg,
+      h2 a.header-anchor:focus svg,
+      h2 a.header-anchor:focus-within svg,
+      h3 a.header-anchor:hover svg,
+      h3 a.header-anchor:focus svg,
+      h3 a.header-anchor:focus-within svg {
+        fill: #0000ee;
+        opacity: 1;
+      }
+
+      h2 a.header-anchor svg,
+      h3 a.header-anchor svg {
+        width: 28px;
+        height: 28px;
+        opacity: 0.3;
+      }
+
+      @media all and (max-width: 63.99em) {
+        h2 a.header-anchor,
+        h3 a.header-anchor {
+          position: relative;
+          opacity: 1;
+          left: 0;
+          vertical-align: top;
+        }
+      }
+
+      a.header-anchor {
+        opacity: 0.4;
+        font-size: small;
+        text-decoration: none;
+        position: relative;
+        /* left: 20px; */
+        -webkit-transition: opacity 1s, font-size 1s;
+        -moz-transition: opacity 1s, font-size 1s;
+        -o-transition: opacity 1s, font-size 1s;
+        transition: opacity 1s, font-size 1s;
+      }
+
+      a.header-anchor:focus,
+      a.header-anchor:hover {
+        text-decoration: underline;
+        font-size: large;
+        opacity: 1;
+      }
+
+      .usa-sr-only,
+      .visuallyhidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        white-space: nowrap;
+
+        & .focusable {
+          & :active,
+          & :focus {
+            clip: auto;
+            clip-path: none;
+            height: auto;
+            margin: 0;
+            overflow: visible;
+            position: static;
+            width: auto;
+            white-space: inherit;
+          }
+        }
+      }
+      .applicable-standards-guidelines-table th:nth-child(1) {
+        width: 40%;
+      }
+
+      .applicable-standards-guidelines-table th:nth-child(2) {
+        width: 60%;
+      }
+
+      /* If only one level then hide the label. */
+      .component-level-count-1 .component-level-label {
+        display: none;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #000;
+      }
+    </style>
   </head>
-  <body>
-    <script
-      type="text/javascript"
-      charset="utf8"
-      src="uswds/js/uswds.min.js"
-    ></script>
+  <body id="openACR">
     <main>
       <div class="grid-container">
         <h1>
-          <span class="evaluation-title">GovReady PBC</span> Accessibility
-          Conformance Report
+          <span class="evaluation-title">Drupal</span> Accessibility Conformance
+          Report
         </h1>
 
         <div class="catalog-section">
-          Based on VPAT® 2.4 Revised Section 508 Edition
+          Based on VPAT® 2.4 WCAG 2.1 and Revised Section 508 Edition
         </div>
 
         <div class="product-section">
@@ -45,7 +142,7 @@
               <span class="visuallyhidden">Anchor link</span>
             </a>
           </h2>
-          GovReady 0.9.1.36
+          Drupal 9.1
         </div>
 
         <div class="report-dates-ver-section">
@@ -63,9 +160,9 @@
             </a>
           </h2>
           <ul>
-            <li>Report Date:</li>
-            <li>Last Modified Date:</li>
-            <li>Version: govready-0.9.1.36</li>
+            <li>Report Date: 8/31/2021</li>
+            <li>Last Modified Date: 1/20/2023</li>
+            <li>Version: drupal-9.1-14</li>
           </ul>
         </div>
 
@@ -83,12 +180,7 @@
               <span class="visuallyhidden">Anchor link</span>
             </a>
           </h2>
-          <p>
-            GovReady is a user-friendly cybersecurity Governance, Risk, and
-            Compliance (GRC) web application focused on guiding teams through
-            the NIST Risk Management Framework using Compliance-As-Code and
-            collaborative features.
-          </p>
+          <p>Content Management System</p>
         </div>
 
         <div id="contact-section">
@@ -154,22 +246,7 @@
                 <span class="visuallyhidden">Anchor link</span>
               </a>
             </h3>
-            <ul>
-              <li>Name: Greg Elin</li>
-              <li>Company: GovReady PBC</li>
-              <li>
-                Address: 32011 Crystal Drive STE 400, Arlington, VA 22202-3709
-              </li>
-              <li>
-                Email:
-                <a href="mailto:gregelin@govready.com">gregelin@govready.com</a>
-              </li>
-              <li>Phone: 202-505-1050</li>
-              <li>
-                Website:
-                <a href="https://govready.com/">https://govready.com/</a>
-              </li>
-            </ul>
+            <ul></ul>
           </div>
         </div>
 
@@ -188,22 +265,11 @@
             </a>
           </h2>
           <p>
-            All user interfaces for the GovReady software are done through the
-            web interface, so the focus is on the WCAG 2.0 Report. Chapter 5 has
-            been deleted as it is redundant. GovReady is built on the Django
-            framework and some of the accessibility issues have been inherited
-            from this framework. GovReady is an open source tool with an open
-            issue queue. Accessibility issues identified here will be documented
-            as accessibility issues within existing issue queues. Any
-            workarounds will be available within the issue queue until such time
-            as the problem is resolved. The Authoring Tools components, 504,
-            have not been reviewed in this assessment. Content is generally
-            saved in a machine readable format that allows for it to be
-            processed in many ways. All GovReady documentation is available
-            through the web interface, so the focus is on the WCAG 2.0 Report.
-            Chapter 6 has been deleted as it is redundant. The documentation is
-            being served through Read the Docs and with their default theme.
-            Some accessibility issues have been inherited from this framework.
+            Links to the issues identified are included where possible to ensure
+            that this is a living document where outstanding issues are
+            regularly reviewed for compliance. The Authoring tool is evaluated
+            against ATAG 2.0, Part A and B. Incorporating feedback from the
+            Drupal community.
           </p>
         </div>
 
@@ -222,14 +288,10 @@
             </a>
           </h2>
           <p>
-            Testing was done through a combination of manual and automated
-            testing. We leveraged automated tools WebAim's WAVE Toolbar and
-            Microsoft's Accessibility Insights. Accessibility Insights leverages
-            Deque's open source Axe accessibility engine. Manual testing was
-            done using keyboard interactions and Apple's VoiceOver. Chrome v84
-            was used as the browser for all tests. Unique patterns were
-            identified and tested to see where barriers might exist. Extensive
-            testing of the site's functionality has been done based on this.
+            Use of automated tools like WAVE and Accessibility Insights. Manual
+            keyboard only testing. Some testing with JAWS, NVDA and VoiceOver.
+            The evaluation process also includes a review of the Drupal Core
+            accessibility issue queue.
           </p>
         </div>
 
@@ -262,8 +324,8 @@
             <tbody>
               <tr>
                 <td>
-                  <a href="https://www.w3.org/TR/WCAG20/" target="_blank"
-                    >Web Content Accessibility Guidelines 2.0<span
+                  <a href="https://www.w3.org/TR/WCAG21/" target="_blank"
+                    >Web Content Accessibility Guidelines 2.1<span
                       class="usa-sr-only"
                     >
                       (opens in a new window or tab)</span
@@ -342,9 +404,9 @@
           </ul>
         </div>
 
-        <h2 id="wcag-2.0">
-          WCAG 2.0 Report
-          <a href="#wcag-2.0" class="header-anchor">
+        <h2 id="wcag-2.1">
+          WCAG 2.1 Report
+          <a href="#wcag-2.1" class="header-anchor">
             <span class="anchor-icon" aria-hidden="true">
               <svg focusable="false" aria-hidden="true" class="icon-link">
                 <path
@@ -372,23 +434,28 @@
         <div id="success_criteria_level_a-notes" class="chapter-notes-section">
           Notes:
           <p>
-            GovReady-Q is a web application and an authoring tool. As such the
-            Software &amp; Authoring Tool Notes are all included within the Web
-            for the 'Conformance Level' and 'Remarks and Explanations'. There
-            are some elements here that clearly fail WCAG 2.0 A.
+            Drupal doesn't make a strong distinction between the front-end &amp;
+            back-end accessibility. Many administration interfaces can be
+            exposed to users in a more interactive site. Generally this report
+            focuses the Conformance Level / Remarks and Explainations so that
+            Web comments are about elements that are typically public, while
+            Authoring Tool is typically for authors and administrators. The goal
+            of the authoring interface is to support ATAG 2.0 AA (Part A and B).
+            The Drupal community strives to beek up with the latest WCAG
+            recommendation.
           </p>
         </div>
 
         <div id="success_criteria_level_a-summary">
           <p>
-            Conformance to the 25 criteria listed below is distributed as
+            Conformance to the 30 criteria listed below is distributed as
             follows:
           </p>
           <ul>
-            <li>32 supported</li>
-            <li>9 partially supported</li>
-            <li>7 not supported</li>
-            <li>52 not applicable</li>
+            <li>57 supported</li>
+            <li>4 partially supported</li>
+            <li>5 not supported</li>
+            <li>34 not applicable</li>
           </ul>
         </div>
 
@@ -404,10 +471,152 @@
             <tr id="1.1.1">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#text-equiv-all"
+                  href="https://www.w3.org/TR/WCAG21/#non-text-content"
                   target="_blank"
                 >
                   1.1.1 Non-text Content<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Partially Supports</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Electronic Documents</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Software</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Drupal 8 requires alt text for images by default.</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Electronic Documents</strong>:
+                    </span>
+                    <p>
+                      Some non-textual content in the documentation does not
+                      provide a textual alternative.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>
+                      The back end of Drupal Core was built to be WCAG 2.0 AA
+                      compliant and non-text content in the administration
+                      interface has a textual equivalent. Audio and video can be
+                      added to the media library, but Core does not provide
+                      tools to manage transcripts and captions/subtitles for
+                      local video and audio - Drupal issue 3002770.
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="1.2.1">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#audio-only-and-video-only-prerecorded"
+                  target="_blank"
+                >
+                  1.2.1 Audio-only and Video-only (Prerecorded)<span
+                    class="usa-sr-only"
+                  >
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Electronic Documents</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Software</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>
+                      Authors can satisfy 1.2.1 Audio-only and Video-only
+                      (Prerecorded) by using text on the same page.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Electronic Documents</strong>:
+                    </span>
+                    <p>This is not explicitly defined in the documentation.</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>
+                      There is no additional support for authors within the
+                      authoring interface to explain how this can be done.
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="1.2.2">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#captions-prerecorded"
+                  target="_blank"
+                >
+                  1.2.2 Captions (Prerecorded)<span class="usa-sr-only">
                     (opens in a new window or tab)</span
                   >
                 </a>
@@ -424,80 +633,6 @@
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Supports</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Software</strong>:
-                    </span>
-                    <p>Not Applicable</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Authoring Tool</strong>:
-                    </span>
-                    <p>Supports</p>
-                  </li>
-                </ul>
-              </td>
-              <td>
-                <ul class="component-level-count-4">
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Web</strong>:
-                    </span>
-                    <p>
-                      There are currently no videos. Graphs are provided by a
-                      3rd party tool. Many images do yet have proper alt text.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>
-                      Some images contain complex information which would be
-                      better explained using longtext or visible captions as
-                      well as basic alt text.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Authoring Tool</strong>:
-                    </span>
-                    <p>
-                      An image is used for a horizontal rule that needs to be
-                      marked as decorative.
-                    </p>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr id="1.2.1">
-              <td>
-                <a
-                  href="https://www.w3.org/TR/WCAG20/#media-equiv-av-only-alt"
-                  target="_blank"
-                >
-                  1.2.1 Audio-only and Video-only (Prerecorded)<span
-                    class="usa-sr-only"
-                  >
-                    (opens in a new window or tab)</span
-                  >
-                </a>
-              </td>
-              <td>
-                <ul class="component-level-count-4">
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Web</strong>:
-                    </span>
-                    <p>Not Applicable</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
                     <p>Not Applicable</p>
                   </li>
                   <li>
@@ -510,24 +645,9 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Does Not Support</p>
                   </li>
                 </ul>
-              </td>
-              <td>
-                <ul class="component-level-count-4"></ul>
-              </td>
-            </tr>
-            <tr id="1.2.2">
-              <td>
-                <a
-                  href="https://www.w3.org/TR/WCAG20/#media-equiv-captions"
-                  target="_blank"
-                >
-                  1.2.2 Captions (Prerecorded)<span class="usa-sr-only">
-                    (opens in a new window or tab)</span
-                  >
-                </a>
               </td>
               <td>
                 <ul class="component-level-count-4">
@@ -535,36 +655,29 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Not Applicable</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>Not Applicable</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Software</strong>:
-                    </span>
-                    <p>Not Applicable</p>
+                    <p>
+                      The file module in Core lets authors upload audio and
+                      video content, and output and elements and does not
+                      support captions.
+                    </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>
+                      Drupal does not support, let alone require users to
+                      include captions. Hard coding open captions is presently
+                      the only way to satisfy this in Core.
+                    </p>
                   </li>
                 </ul>
-              </td>
-              <td>
-                <ul class="component-level-count-4"></ul>
               </td>
             </tr>
             <tr id="1.2.3">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#media-equiv-audio-desc"
+                  href="https://www.w3.org/TR/WCAG21/#audio-description-or-media-alternative-prerecorded"
                   target="_blank"
                 >
                   1.2.3 Audio Description or Media Alternative
@@ -579,13 +692,13 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Does Not Support</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Does Not Support</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -597,18 +710,47 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Does Not Support</p>
                   </li>
                 </ul>
               </td>
               <td>
-                <ul class="component-level-count-4"></ul>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>
+                      Audio files can be uploaded, but there is no way to
+                      associate captions in Core.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Electronic Documents</strong>:
+                    </span>
+                    <p>
+                      There is no documentation on how to properly convey
+                      pre-recorded audio descriptions.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>
+                      There is no audio in the authoring interface of Drupal
+                      Core, but there is no support for authors to upload
+                      accessible audio files.
+                    </p>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr id="1.3.1">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic"
+                  href="https://www.w3.org/TR/WCAG21/#info-and-relationships"
                   target="_blank"
                 >
                   1.3.1 Info and Relationships<span class="usa-sr-only">
@@ -651,23 +793,33 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      Most information is structured into logical relationships.
-                      Lists are well used to group information and provide
-                      navigation. Forms do not have a visual or semantic
-                      representation for required fields.
+                      Information is structured into logical relationships.
+                      Navigational lists are well used to group information.
+                      Forms have a visual and semantic representation for
+                      required fields. Message windows have ARIA role defined
+                      incorrectly as role=contentinfo which impacts content
+                      relationships - Drupal issue 2942404. aria-live
+                      announcement is not contained in a landmark - Drupal issue
+                      3098857.
                     </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Site has consistent information and relationships.</p>
+                    <p>
+                      Information is structured into logical relationships.
+                      Navigational lists are well used to group information.
+                    </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Site has consistent information and relationships.</p>
+                    <p>
+                      The authoring environment was constructed to support ATAG
+                      2.0 AA (Part A and B).
+                    </p>
                   </li>
                 </ul>
               </td>
@@ -675,7 +827,7 @@
             <tr id="1.3.2">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#content-structure-separation-sequence"
+                  href="https://www.w3.org/TR/WCAG21/#meaningful-sequence"
                   target="_blank"
                 >
                   1.3.2 Meaningful Sequence<span class="usa-sr-only">
@@ -717,19 +869,20 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Site follows a correct reading sequence.</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>Site has consistent information and relationships.</p>
+                    <p>
+                      Drupal Core has been extensively tested with keyboard only
+                      users. As a proudly multilingual CMS, Drupal provides
+                      support for bidirectional navigation.
+                    </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Site has consistent information and relationships.</p>
+                    <p>
+                      The authoring environment was constructed to support ATAG
+                      2.0 AA (Part A and B).
+                    </p>
                   </li>
                 </ul>
               </td>
@@ -737,7 +890,7 @@
             <tr id="1.3.3">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#content-structure-separation-understanding"
+                  href="https://www.w3.org/TR/WCAG21/#sensory-characteristics"
                   target="_blank"
                 >
                   1.3.3 Sensory Characteristics<span class="usa-sr-only">
@@ -779,19 +932,19 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Follows best practices.</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>Follows best practices.</p>
+                    <p>
+                      Where possible Drupal Core uses combinations of text and
+                      symbols for the user interface.
+                    </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Follows best practices.</p>
+                    <p>
+                      The authoring interface has been developed to not rely on
+                      symbols alone to convey information to the user.
+                    </p>
                   </li>
                 </ul>
               </td>
@@ -799,7 +952,7 @@
             <tr id="1.4.1">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color"
+                  href="https://www.w3.org/TR/WCAG21/#use-of-color"
                   target="_blank"
                 >
                   1.4.1 Use of Color<span class="usa-sr-only">
@@ -841,19 +994,20 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Color is used to a minimal extent.</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>Color is used to a minimal extent.</p>
+                    <p>
+                      Color is not used without text and often symbols to convey
+                      meaning.
+                    </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Color is used to a minimal extent.</p>
+                    <p>
+                      In general, the admin theme is very accessible. The Claro
+                      Administration Theme shortcut start needs improvement -
+                      Drupal issue 3171726.
+                    </p>
                   </li>
                 </ul>
               </td>
@@ -861,7 +1015,7 @@
             <tr id="1.4.2">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-dis-audio"
+                  href="https://www.w3.org/TR/WCAG21/#audio-control"
                   target="_blank"
                 >
                   1.4.2 Audio Control<span class="usa-sr-only">
@@ -904,7 +1058,7 @@
             <tr id="2.1.1">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable"
+                  href="https://www.w3.org/TR/WCAG21/#keyboard"
                   target="_blank"
                 >
                   2.1.1 Keyboard<span class="usa-sr-only">
@@ -918,7 +1072,7 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Partially Supports</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -936,7 +1090,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Partially Supports</p>
                   </li>
                 </ul>
               </td>
@@ -947,25 +1101,23 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      Generally it is excellent, but the Review pages and pages
-                      with Long Text have some elements which cannot be
-                      activated with a keyboard. On the Long Text with
-                      discussion pages it is clear that the WYSIWYG, discussion
-                      emoji and file upload functionality also have no support
-                      for keyboard only users.
+                      Users can interact with Drupal Core with the keyboard and
+                      without specific timings for individual keystrokes.
                     </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>Supports keyboard users.</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Supports keyboard users.</p>
+                    <p>
+                      Authors are largely able to engage with Drupal Core with
+                      the keyboard and without specific timings for individual
+                      keystrokes. Tooltips not displayed for keyboard navigation
+                      - Drupal issue 2933984. There are reported issues with
+                      IE11 and JAWS - Drupal issue 2852702. It is worth noting
+                      that Drupal's admin is powerful and complex, and there are
+                      other accessibility reports in the issue queue.
+                    </p>
                   </li>
                 </ul>
               </td>
@@ -973,7 +1125,7 @@
             <tr id="2.1.2">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#keyboard-operation-trapping"
+                  href="https://www.w3.org/TR/WCAG21/#no-keyboard-trap"
                   target="_blank"
                 >
                   2.1.2 No Keyboard Trap<span class="usa-sr-only">
@@ -987,7 +1139,7 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Partially Supports</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -1016,29 +1168,44 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      The Long Text pattern has no way to tab past the data
-                      entry block.
+                      Focus can be moved away from that component using only a
+                      keyboard interface.
                     </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>No keyboard traps were identified.</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>No keyboard traps were identified.</p>
+                    <p>
+                      Focus can be moved away from that component using only a
+                      keyboard interface.
+                    </p>
                   </li>
                 </ul>
+              </td>
+            </tr>
+            <tr id="2.1.4">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#character-key-shortcuts"
+                  target="_blank"
+                >
+                  2.1.4 Character Key Shortcuts<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
               </td>
             </tr>
             <tr id="2.2.1">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#time-limits-required-behaviors"
+                  href="https://www.w3.org/TR/WCAG21/#time-limits-required-behaviors"
                   target="_blank"
                 >
                   2.2.1 Pause, Stop, Hide<span class="usa-sr-only">
@@ -1052,13 +1219,13 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -1070,18 +1237,31 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
               <td>
-                <ul class="component-level-count-4"></ul>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>The time limit is longer than 20 hours.</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>The time limit is longer than 20 hours.</p>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr id="2.2.2">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#time-limits-pause"
+                  href="https://www.w3.org/TR/WCAG21/#timing-adjustable"
                   target="_blank"
                 >
                   2.2.2 Timing Adjustable<span class="usa-sr-only">
@@ -1124,7 +1304,7 @@
             <tr id="2.3.1">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#seizure-does-not-violate"
+                  href="https://www.w3.org/TR/WCAG21/#three-flashes-or-below-threshold"
                   target="_blank"
                 >
                   2.3.1 Three Flashes or Below Threshold<span
@@ -1140,7 +1320,7 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -1158,7 +1338,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
@@ -1168,13 +1348,13 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>There are no flashing elements.</p>
+                    <p>There are no flashing elements in Drupal Core.</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>There are no flashing elements.</p>
+                    <p>There are no flashing elements in Drupal Core.</p>
                   </li>
                 </ul>
               </td>
@@ -1182,7 +1362,7 @@
             <tr id="2.4.1">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip"
+                  href="https://www.w3.org/TR/WCAG21/#bypass-blocks"
                   target="_blank"
                 >
                   2.4.1 Bypass Blocks<span class="usa-sr-only">
@@ -1196,13 +1376,13 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Does Not Support</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Does Not Support</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -1214,7 +1394,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Does Not Support</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
@@ -1224,19 +1404,19 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>
-                      There are no skip link elements on the site for keyboard
-                      only users.
-                    </p>
+                    <p>Skip links are provided.</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>
-                      Similar issues 1.4.3 with Read the Docs default theme not
-                      including skip links.
-                    </p>
+                    <p>Skip links are provided.</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>Skip links are provided.</p>
                   </li>
                 </ul>
               </td>
@@ -1244,7 +1424,7 @@
             <tr id="2.4.2">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms-title"
+                  href="https://www.w3.org/TR/WCAG21/#page-titled"
                   target="_blank"
                 >
                   2.4.2 Page Titled<span class="usa-sr-only">
@@ -1286,19 +1466,19 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>All pages include a meaningful title.</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>All pages include a meaningful title.</p>
+                    <p>
+                      Pages have titles, but in the case of multi-page events,
+                      the page number is not included - Drupal issue 2509716.
+                    </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>All pages include a meaningful title.</p>
+                    <p>
+                      Pages have titles, but in the case of multi-page events,
+                      the page number is not included - Drupal issue 2509716.
+                    </p>
                   </li>
                 </ul>
               </td>
@@ -1306,7 +1486,7 @@
             <tr id="2.4.3">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-order"
+                  href="https://www.w3.org/TR/WCAG21/#focus-order"
                   target="_blank"
                 >
                   2.4.3 Focus Order<span class="usa-sr-only">
@@ -1349,8 +1529,8 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      Focus ordering would be improved if action buttons were on
-                      the left of the screen.
+                      Focusable components receive focus in an order that
+                      preserves meaning and operability.
                     </p>
                   </li>
                   <li>
@@ -1358,8 +1538,8 @@
                       ><strong>Electronic Documents</strong>:
                     </span>
                     <p>
-                      Generally good but Previous/Next links are in reverse
-                      order.
+                      Focusable components receive focus in an order that
+                      preserves meaning and operability.
                     </p>
                   </li>
                   <li>
@@ -1377,7 +1557,7 @@
             <tr id="2.4.4">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms-refs"
+                  href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context"
                   target="_blank"
                 >
                   2.4.4 Link Purpose (In Context)<span class="usa-sr-only">
@@ -1391,13 +1571,13 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Partially Supports</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Partially Supports</p>
+                    <p>Not Applicable</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -1409,7 +1589,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
@@ -1420,29 +1600,100 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      n some places links and buttons are described
-                      insufficiently to be understood in isolation. There are
-                      also empty links on some pages. The Django administration
-                      pages have many empty links.
+                      Careful attention has been paid to ensure that automated
+                      "Read More" links are available in a way that is available
+                      with contextual information for screen readers.
                     </p>
                   </li>
                   <li>
                     <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
+                      ><strong>Authoring Tool</strong>:
                     </span>
                     <p>
-                      Generally good, but Previous/Next buttons use titles to
-                      convey the title of the previous/next content on hover,
-                      but this isn't accessible.
+                      Careful attention has been paid to ensure that automated
+                      "Read More" links are available in a way that is available
+                      with contextual information for screen readers.
                     </p>
                   </li>
                 </ul>
               </td>
             </tr>
+            <tr id="2.5.1">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#pointer-gestures"
+                  target="_blank"
+                >
+                  2.5.1 Pointer Gestures<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+            </tr>
+            <tr id="2.5.2">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#pointer-cancellation"
+                  target="_blank"
+                >
+                  2.5.2 Pointer Cancellation<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+            </tr>
+            <tr id="2.5.3">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#label-in-name"
+                  target="_blank"
+                >
+                  2.5.3 Label in Name<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+            </tr>
+            <tr id="2.5.4">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#motion-actuation"
+                  target="_blank"
+                >
+                  2.5.4 Motion Actuation<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+            </tr>
             <tr id="3.1.1">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#meaning-doc-lang-id"
+                  href="https://www.w3.org/TR/WCAG21/#language-of-page"
                   target="_blank"
                 >
                   3.1.1 Language of Page<span class="usa-sr-only">
@@ -1462,7 +1713,7 @@
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Does Not Support</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -1484,25 +1735,19 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>
-                      English is the only supported language and each page is
-                      properly defined.
-                    </p>
+                    <p>Page language is defined semantically on every page.</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Language of the page is commented out in the theme.</p>
+                    <p>Page language is defined semantically on every page.</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>
-                      English is the only supported language and each page is
-                      properly defined.
-                    </p>
+                    <p>Page language is defined semantically on every page.</p>
                   </li>
                 </ul>
               </td>
@@ -1510,7 +1755,7 @@
             <tr id="3.2.1">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#consistent-behavior-receive-focus"
+                  href="https://www.w3.org/TR/WCAG21/#on-focus"
                   target="_blank"
                 >
                   3.2.1 On Focus<span class="usa-sr-only">
@@ -1553,8 +1798,8 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      Keyboard only users are able to control the focus of the
-                      page.
+                      Change in the focus state does not initiate a change of
+                      context for the user.
                     </p>
                   </li>
                   <li>
@@ -1562,8 +1807,8 @@
                       ><strong>Electronic Documents</strong>:
                     </span>
                     <p>
-                      Keyboard only users are able to control the focus of the
-                      page.
+                      Change in the focus state does not initiate a change of
+                      context for the user.
                     </p>
                   </li>
                   <li>
@@ -1571,8 +1816,8 @@
                       ><strong>Authoring Tool</strong>:
                     </span>
                     <p>
-                      Keyboard only users are able to control the focus of the
-                      page.
+                      Change in the focus state does not initiate a change of
+                      context for the user.
                     </p>
                   </li>
                 </ul>
@@ -1581,7 +1826,7 @@
             <tr id="3.2.2">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#consistent-behavior-unpredictable-change"
+                  href="https://www.w3.org/TR/WCAG21/#on-input"
                   target="_blank"
                 >
                   3.2.2 On Input<span class="usa-sr-only">
@@ -1633,8 +1878,8 @@
                       ><strong>Electronic Documents</strong>:
                     </span>
                     <p>
-                      The search elements of the site do not unexpectedly take
-                      control from the users.
+                      Engaging with the interactive sites does not unexpectedly
+                      take control from the users.
                     </p>
                   </li>
                   <li>
@@ -1652,7 +1897,7 @@
             <tr id="3.3.1">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#minimize-error-identified"
+                  href="https://www.w3.org/TR/WCAG21/#error-identification"
                   target="_blank"
                 >
                   3.3.1 Error Identification<span class="usa-sr-only">
@@ -1666,122 +1911,7 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Does Not Support</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>Not Applicable</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Software</strong>:
-                    </span>
-                    <p>Not Applicable</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Authoring Tool</strong>:
-                    </span>
-                    <p>Not Applicable</p>
-                  </li>
-                </ul>
-              </td>
-              <td>
-                <ul class="component-level-count-4">
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Web</strong>:
-                    </span>
-                    <p>
-                      No error identification is currently built into the
-                      application.
-                    </p>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr id="3.3.2">
-              <td>
-                <a
-                  href="https://www.w3.org/TR/WCAG20/#minimize-error-cues"
-                  target="_blank"
-                >
-                  3.3.2 Labels or Instructions<span class="usa-sr-only">
-                    (opens in a new window or tab)</span
-                  >
-                </a>
-              </td>
-              <td>
-                <ul class="component-level-count-4">
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Web</strong>:
-                    </span>
-                    <p>Partially Supports</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>Does Not Support</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Software</strong>:
-                    </span>
-                    <p>Not Applicable</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Authoring Tool</strong>:
-                    </span>
-                    <p>Not Applicable</p>
-                  </li>
-                </ul>
-              </td>
-              <td>
-                <ul class="component-level-count-4">
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Web</strong>:
-                    </span>
-                    <p>
-                      There are some forms without labels in the current
-                      version. Generally the context is clear for most forms,
-                      but it should be improved. Date fields should be in a
-                      fieldset. The Django administration pages have many fields
-                      without labels.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>There are no labels on the search.</p>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr id="4.1.1">
-              <td>
-                <a
-                  href="https://www.w3.org/TR/WCAG20/#ensure-compat-parses"
-                  target="_blank"
-                >
-                  4.1.1 Parsing<span class="usa-sr-only">
-                    (opens in a new window or tab)</span
-                  >
-                </a>
-              </td>
-              <td>
-                <ul class="component-level-count-4">
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Web</strong>:
-                    </span>
-                    <p>Partially Supports</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -1799,7 +1929,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
@@ -1810,17 +1940,147 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      Generally good. A few small instances of duplicate ID's,
-                      tags not being closed, and empty headings. The Data Grid
-                      Question pattern includes edit/delete buttons that are not
-                      properly formed.
+                      The Inline Form Error module was added in Drupal 8. This
+                      needs to be enabled site-wide on installation.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>
+                      The Inline Form Error module was added in Drupal 8. This
+                      needs to be enabled site-wide on installation.
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="3.3.2">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#labels-or-instructions"
+                  target="_blank"
+                >
+                  3.3.2 Labels or Instructions<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Electronic Documents</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Software</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>Partially Supports</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Default forms all include labels.</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>
+                      There are a few places where there are problems with
+                      labels, but these are odd exceptions - Drupal issue
+                      3015494.
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="4.1.1">
+              <td>
+                <a href="https://www.w3.org/TR/WCAG21/#parsing" target="_blank">
+                  4.1.1 Parsing<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Electronic Documents</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Software</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>
+                      There are no HTML5 errors or warnings that are known to
+                      impact assistive technology users.
                     </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Generally very good but a few warnings.</p>
+                    <p>
+                      There are no HTML5 errors or warnings that are known to
+                      impact assistive technology users.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>
+                      Generally parsing is very well supported, but there are a
+                      few places where this needs to be improved - Drupal issue
+                      1852090 and 3144948.
+                    </p>
                   </li>
                 </ul>
               </td>
@@ -1828,7 +2088,7 @@
             <tr id="4.1.2">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#ensure-compat-rsv"
+                  href="https://www.w3.org/TR/WCAG21/#name-role-value"
                   target="_blank"
                 >
                   4.1.2 Name, Role, Value<span class="usa-sr-only">
@@ -1842,13 +2102,13 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Partially Supports</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Partially Supports</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -1860,7 +2120,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
@@ -1870,19 +2130,23 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>
-                      There are some forms without labels in the current
-                      version. Generally the context is clear for most forms,
-                      but it should be improved. Date fields should be in a
-                      fieldset. The Django administration pages have many fields
-                      without labels.
-                    </p>
+                    <p>Public pages support this criterion.</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>There are no labels on the search forms.</p>
+                    <p>Public pages support this criterion.</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>
+                      This is generally well supported, but there are places
+                      where it has been overlooked. Drupal issue 3144948,
+                      3019487, and 3085545.
+                    </p>
                   </li>
                 </ul>
               </td>
@@ -1906,14 +2170,14 @@
 
         <div id="success_criteria_level_aa-summary">
           <p>
-            Conformance to the 13 criteria listed below is distributed as
+            Conformance to the 20 criteria listed below is distributed as
             follows:
           </p>
           <ul>
-            <li>10 supported</li>
-            <li>5 partially supported</li>
-            <li>2 not supported</li>
-            <li>30 not applicable</li>
+            <li>20 supported</li>
+            <li>9 partially supported</li>
+            <li>3 not supported</li>
+            <li>16 not applicable</li>
           </ul>
         </div>
 
@@ -1929,7 +2193,7 @@
             <tr id="1.2.4">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#media-equiv-real-time-captions"
+                  href="https://www.w3.org/TR/WCAG21/#captions-live"
                   target="_blank"
                 >
                   1.2.4 Captions (Live)<span class="usa-sr-only">
@@ -1966,7 +2230,7 @@
             <tr id="1.2.5">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#media-equiv-audio-desc-only"
+                  href="https://www.w3.org/TR/WCAG21/#audio-description-prerecorded"
                   target="_blank"
                 >
                   1.2.5 Audio Description (Prerecorded)<span
@@ -1982,13 +2246,13 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Does Not Support</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Does Not Support</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2000,18 +2264,83 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Does Not Support</p>
                   </li>
                 </ul>
               </td>
               <td>
-                <ul class="component-level-count-4"></ul>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>
+                      Audio files can be uploaded, but there is no way to
+                      associate captions in Core.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Electronic Documents</strong>:
+                    </span>
+                    <p>
+                      There is no documentation on how to properly convey
+                      pre-recorded audio descriptions.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>
+                      There is no audio in the authoring interface of Drupal
+                      Core, but there is no support for authors to upload
+                      accessible audio files.
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="1.3.4">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#orientation"
+                  target="_blank"
+                >
+                  1.3.4 Orientation<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+            </tr>
+            <tr id="1.3.5">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#identify-input-purpose"
+                  target="_blank"
+                >
+                  1.3.5 Identify Input Purpose<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
               </td>
             </tr>
             <tr id="1.4.3">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast"
+                  href="https://www.w3.org/TR/WCAG21/#visual-audio-contrast-contrast"
                   target="_blank"
                 >
                   1.4.3 Contrast (Minimum)<span class="usa-sr-only">
@@ -2031,7 +2360,7 @@
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Partially Supports</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2054,31 +2383,24 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      There are contrast issues in the navigation and in some
-                      detail pages where the user experience was aiming to
-                      reduce importance. Gradients are used to provide a nice
-                      visual effect, but often provide some issues with
-                      contrast. Review pages also have elements without
-                      sufficient contrast. The Django administration pages have
-                      many contrast errors.
+                      Generally meets. Some contrast failures around grey
+                      backgrounds - Drupal issue 3040673.
                     </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>
-                      Most of the content meets requirements but the site is
-                      built off of the Read the Docs default theme
-                      sphinx_rtd_theme which has color contrast issues that will
-                      need to be overwritten.
-                    </p>
+                    <p>The docs have sufficient contrast.</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Generally follows contrast requirements.</p>
+                    <p>
+                      Generally meets requirements. Some challenges with Core
+                      admin themes - Drupal issue 930508 and 3080100.
+                    </p>
                   </li>
                 </ul>
               </td>
@@ -2086,7 +2408,7 @@
             <tr id="1.4.4">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-scale"
+                  href="https://www.w3.org/TR/WCAG21/#visual-audio-contrast-scale"
                   target="_blank"
                 >
                   1.4.4 Resize text<span class="usa-sr-only">
@@ -2095,12 +2417,12 @@
                 </a>
               </td>
               <td>
-                <ul class="component-level-count-3">
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Partially Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2114,23 +2436,38 @@
                     </span>
                     <p>Not Applicable</p>
                   </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>Partially Supports</p>
+                  </li>
                 </ul>
               </td>
               <td>
-                <ul class="component-level-count-3">
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Site is built to be responsive for mobile devices.</p>
+                    <p>
+                      Generally support with some minor exceptions - Drupal
+                      issue 3129257.
+                    </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
+                    <p>The docs are accessible up to 200%.</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
                     <p>
-                      Site is built to be a simple reflection of a git
-                      repository using simple accessible MarkDown.
+                      Generally good with some exceptions - Drupal issue
+                      3164587.
                     </p>
                   </li>
                 </ul>
@@ -2139,7 +2476,7 @@
             <tr id="1.4.5">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-presentation"
+                  href="https://www.w3.org/TR/WCAG21/#visual-audio-contrast-text-presentation"
                   target="_blank"
                 >
                   1.4.5 Images of Text<span class="usa-sr-only">
@@ -2159,7 +2496,7 @@
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2171,18 +2508,98 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
               <td>
-                <ul class="component-level-count-4"></ul>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>
+                      Text is generally styled with CSS in the authoring tool.
+                      Should images of text be uploaded by the user, they will
+                      be required to add alternative text.
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="1.4.10">
+              <td>
+                <a href="https://www.w3.org/TR/WCAG21/#reflow" target="_blank">
+                  1.4.10 Reflow<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+            </tr>
+            <tr id="1.4.11">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#non-text-contrast"
+                  target="_blank"
+                >
+                  1.4.11 Non-text Contrast<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+            </tr>
+            <tr id="1.4.12">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#text-spacing"
+                  target="_blank"
+                >
+                  1.4.12 Text Spacing<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+            </tr>
+            <tr id="1.4.13">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus"
+                  target="_blank"
+                >
+                  1.4.13 Content on Hover or Focus<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
               </td>
             </tr>
             <tr id="2.4.5">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms-mult-loc"
+                  href="https://www.w3.org/TR/WCAG21/#multiple-ways"
                   target="_blank"
                 >
                   2.4.5 Multiple Ways<span class="usa-sr-only">
@@ -2196,7 +2613,7 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2208,7 +2625,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
@@ -2219,15 +2636,27 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      This software is all built around a process which makes it
-                      exempt from this SC.
+                      There is more than one way to locate a Web page within the
+                      CMS.
                     </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>There is a built-in search engine.</p>
+                    <p>
+                      There is more than one way to locate a Web page within the
+                      CMS.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>
+                      There is more than one way to locate a Web page within the
+                      CMS.
+                    </p>
                   </li>
                 </ul>
               </td>
@@ -2235,7 +2664,7 @@
             <tr id="2.4.6">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive"
+                  href="https://www.w3.org/TR/WCAG21/#headings-and-labels"
                   target="_blank"
                 >
                   2.4.6 Headings and Labels<span class="usa-sr-only">
@@ -2255,7 +2684,7 @@
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Not Applicable</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2267,7 +2696,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Partially Supports</p>
                   </li>
                 </ul>
               </td>
@@ -2278,26 +2707,21 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      Most of the content is structured. Pages are missing an
-                      H1. Lists need a heading before them and this is missing
-                      in the navigational elements. There are also empty
-                      headings on some pages. Also see 3.3.2.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>
-                      Pages are properly structured in a nice hierarchy. Also
-                      see 3.3.2.
+                      Generally there is very good support. Some heading levels
+                      may be missed in some unique contexts - Drupal issue
+                      1768732. Better support could be provided for threaded
+                      comments - Drupal issue 2290043.
                     </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Generated content begins at H2.</p>
+                    <p>
+                      Generally good, but for dynamic elements like the Layout
+                      Builder need a plan for a dynamic heading structure -
+                      Drupal issue 3007978.
+                    </p>
                   </li>
                 </ul>
               </td>
@@ -2305,7 +2729,7 @@
             <tr id="2.4.7">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-visible"
+                  href="https://www.w3.org/TR/WCAG21/#focus-visible"
                   target="_blank"
                 >
                   2.4.7 Focus Visible<span class="usa-sr-only">
@@ -2325,7 +2749,7 @@
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Partially Supports</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2337,7 +2761,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Partially Supports</p>
                   </li>
                 </ul>
               </td>
@@ -2348,18 +2772,19 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      Generally focus is clear when tabbing through the site but
-                      focus is lost under some dialog boxes which can be
-                      confusing to the user.
+                      Focus elements are well established for the front-end.
+                      Further enhancements are being developed to make it more
+                      obvious for keyboard only users.
                     </p>
                   </li>
                   <li>
                     <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
+                      ><strong>Authoring Tool</strong>:
                     </span>
                     <p>
-                      Previous/Next buttons do not indicate that they have
-                      focus.
+                      An IE specific bug where there are focus issues for
+                      authors and administrators in the Claro theme - Drupal
+                      issue 3048785.
                     </p>
                   </li>
                 </ul>
@@ -2368,7 +2793,7 @@
             <tr id="3.1.2">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#meaning-other-lang-id"
+                  href="https://www.w3.org/TR/WCAG21/#language-of-parts"
                   target="_blank"
                 >
                   3.1.2 Language of Parts<span class="usa-sr-only">
@@ -2382,7 +2807,7 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Partially Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2400,7 +2825,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
@@ -2411,16 +2836,22 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      This software assumes that content will be provided in a
-                      single language. There is no support for strings in
-                      alternate languages.
+                      Multilingual sites have language switchers with proper
+                      semantics. Unfotunately support is lacking for
+                      multi-lingual search 2992894 as well as both the
+                      Filesystem 3163915 &amp; Views components 2496223.
                     </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>All documentation is in the same language.</p>
+                    <p>
+                      Drupal has good support for multilingual content and
+                      accessibility. To support the Language of Parts for
+                      authors, a button can be added to simplify the process of
+                      adding language specific phrases.
+                    </p>
                   </li>
                 </ul>
               </td>
@@ -2428,7 +2859,7 @@
             <tr id="3.2.3">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-locations"
+                  href="https://www.w3.org/TR/WCAG21/#consistent-navigation"
                   target="_blank"
                 >
                   3.2.3 Consistent Navigation<span class="usa-sr-only">
@@ -2454,7 +2885,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
@@ -2465,7 +2896,8 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      Pages are very consistent and navigation is easy to infer.
+                      Drupal's menu structure allows for consistent navigation
+                      across the site.
                     </p>
                   </li>
                   <li>
@@ -2473,7 +2905,17 @@
                       ><strong>Electronic Documents</strong>:
                     </span>
                     <p>
-                      Pages are very consistent and navigation is easy to infer.
+                      Drupal's menu structure allows for consistent navigation
+                      across the site.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>
+                      Drupal's menu structure allows for consistent navigation
+                      across the site.
                     </p>
                   </li>
                 </ul>
@@ -2482,7 +2924,7 @@
             <tr id="3.2.4">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-functionality"
+                  href="https://www.w3.org/TR/WCAG21/#consistent-identification"
                   target="_blank"
                 >
                   3.2.4 Consistent Identification<span class="usa-sr-only">
@@ -2508,7 +2950,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
@@ -2518,13 +2960,28 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>UX patterns are well defined and consistent.</p>
+                    <p>
+                      Components in Drupal that have the same functionality are
+                      identified consistently.
+                    </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>UX patterns are well defined and consistent.</p>
+                    <p>
+                      Components in Drupal that have the same functionality are
+                      identified consistently.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>
+                      Components in Drupal that have the same functionality are
+                      identified consistently.
+                    </p>
                   </li>
                 </ul>
               </td>
@@ -2532,7 +2989,7 @@
             <tr id="3.3.3">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#minimize-error-suggestions"
+                  href="https://www.w3.org/TR/WCAG21/#error-suggestion"
                   target="_blank"
                 >
                   3.3.3 Error Suggestion<span class="usa-sr-only">
@@ -2546,7 +3003,7 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Does Not Support</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2564,18 +3021,37 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
               <td>
-                <ul class="component-level-count-4"></ul>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>
+                      The Inline Form Error Module is provided in Core and needs
+                      to be enabled to allow for this functionality.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>
+                      The Inline Form Error Module is provided in Core and needs
+                      to be enabled to allow for this functionality.
+                    </p>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr id="3.3.4">
               <td>
                 <a
-                  href="https://www.w3.org/TR/WCAG20/#minimize-error-reversible"
+                  href="https://www.w3.org/TR/WCAG21/#error-prevention-legal-financial-data"
                   target="_blank"
                 >
                   3.3.4 Error Prevention (Legal, Financial, Data)<span
@@ -2591,13 +3067,13 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Does Not Support</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2609,12 +3085,52 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Partially Supports</p>
                   </li>
                 </ul>
               </td>
               <td>
-                <ul class="component-level-count-4"></ul>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>By default users can editing content which they own.</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Electronic Documents</strong>:
+                    </span>
+                    <p>Documentation could be improved.</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>
+                      There is nothing to differentiate editing financial or
+                      legal data from any other data managed by Drupal.
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="4.1.3">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#status-messages"
+                  target="_blank"
+                >
+                  4.1.3 Status Messages<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
               </td>
             </tr>
           </tbody>
@@ -2633,6 +3149,791 @@
             <span class="visuallyhidden">Anchor link</span>
           </a>
         </h3>
+
+        <div
+          id="success_criteria_level_aaa-notes"
+          class="chapter-notes-section"
+        >
+          Notes:
+          <p>
+            Where possible the Drupal community strives to exceed AA compliance.
+          </p>
+        </div>
+
+        <div id="success_criteria_level_aaa-summary">
+          <p>
+            Conformance to the 28 criteria listed below is distributed as
+            follows:
+          </p>
+          <ul>
+            <li>7 supported</li>
+            <li>1 partially supported</li>
+            <li>0 not supported</li>
+            <li>14 not applicable</li>
+          </ul>
+        </div>
+
+        <table class="usa-table">
+          <thead>
+            <tr>
+              <th>Criteria</th>
+              <th>Conformance Level</th>
+              <th>Remarks and Explanations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="1.2.6">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#sign-language-prerecorded"
+                  target="_blank"
+                >
+                  1.2.6 Sign Language (Prerecorded)<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="1.2.7">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#extended-audio-description-prerecorded"
+                  target="_blank"
+                >
+                  1.2.7 Extended Audio Description (Prerecorded)<span
+                    class="usa-sr-only"
+                  >
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="1.2.8">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#media-alternative-prerecorded"
+                  target="_blank"
+                >
+                  1.2.8 Media Alternative (Prerecorded)<span
+                    class="usa-sr-only"
+                  >
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="1.2.9">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#audio-only-live"
+                  target="_blank"
+                >
+                  1.2.9 Audio-only (Live)<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="1.3.6">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#identify-purpose"
+                  target="_blank"
+                >
+                  1.3.6 Identify Purpose<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+            </tr>
+            <tr id="1.4.6">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#contrast-enhanced"
+                  target="_blank"
+                >
+                  1.4.6 Contrast (Enhanced)<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>
+                      A front-end and back-end theme could be configured to
+                      allow this to comply.
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="1.4.7">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#low-or-no-background-audio"
+                  target="_blank"
+                >
+                  1.4.7 Low or No Background Audio<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="1.4.8">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#visual-presentation"
+                  target="_blank"
+                >
+                  1.4.8 Visual Presentation<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Not Evaluated</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>
+                      Stable Core themes leave much of the presentation of text
+                      to user agents, so aside from line spacing this generally
+                      works.
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="1.4.9">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#images-of-text-no-exception"
+                  target="_blank"
+                >
+                  1.4.9 Images of Text (No Exception)<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Text images are all supplied by the author.</p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="2.1.3">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#keyboard-no-exception"
+                  target="_blank"
+                >
+                  2.1.3 Keyboard (No Exception)<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>
+                      The web front-end is not a barrier to keyboard only users.
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="2.2.3">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#no-timing"
+                  target="_blank"
+                >
+                  2.2.3 No Timing<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>
+                      There are no timeouts in Drupal Core that would affect
+                      people with disabilities.
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="2.2.4">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#interruptions"
+                  target="_blank"
+                >
+                  2.2.4 Interruptions<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="2.2.5">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#re-authenticating"
+                  target="_blank"
+                >
+                  2.2.5 Re-authenticating<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="2.2.6">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#timeouts"
+                  target="_blank"
+                >
+                  2.2.6 Timeouts<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+            </tr>
+            <tr id="2.3.2">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#three-flashes"
+                  target="_blank"
+                >
+                  2.3.2 Three Flashes<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>There is no flashing content.</p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="2.3.3">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#animation-from-interactions"
+                  target="_blank"
+                >
+                  2.3.3 Animation from Interactions<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+            </tr>
+            <tr id="2.4.8">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#location"
+                  target="_blank"
+                >
+                  2.4.8 Location<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>
+                      Breadcrumbs are available and sitemap modules can be added
+                      to provide additional means for navigation.
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="2.4.9">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only"
+                  target="_blank"
+                >
+                  2.4.9 Link Purpose (Link Only)<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Partially Supports</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>
+                      There is a mechanism to support automated links with
+                      semantic descriptive titles.
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="2.4.10">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#section-headings"
+                  target="_blank"
+                >
+                  2.4.10 Section Headings<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>
+                      Drupal provides heading elements at the beginning of each
+                      section of content.
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr id="2.5.5">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#target-size"
+                  target="_blank"
+                >
+                  2.5.5 Target Size<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+            </tr>
+            <tr id="2.5.6">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#concurrent-input-mechanisms"
+                  target="_blank"
+                >
+                  2.5.6 Concurrent Input Mechanisms<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+            </tr>
+            <tr id="3.1.3">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#unusual-words"
+                  target="_blank"
+                >
+                  3.1.3 Unusual Words<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="3.1.4">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#abbreviations"
+                  target="_blank"
+                >
+                  3.1.4 Abbreviations<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="3.1.5">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#reading-level"
+                  target="_blank"
+                >
+                  3.1.5 Reading Level<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="3.1.6">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#pronunciation"
+                  target="_blank"
+                >
+                  3.1.6 Pronunciation<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="3.2.5">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#change-on-request"
+                  target="_blank"
+                >
+                  3.2.5 Change on Request<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="3.3.5">
+              <td>
+                <a href="https://www.w3.org/TR/WCAG21/#help" target="_blank">
+                  3.3.5 Help<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="3.3.6">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#error-prevention-all"
+                  target="_blank"
+                >
+                  3.3.6 Error Prevention (All)<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
         <h2 id="508">
           Revised Section 508 Report
@@ -2675,9 +3976,9 @@
             follows:
           </p>
           <ul>
-            <li>2 supported</li>
+            <li>5 supported</li>
             <li>0 partially supported</li>
-            <li>3 not supported</li>
+            <li>0 not supported</li>
             <li>4 not applicable</li>
           </ul>
         </div>
@@ -2706,7 +4007,7 @@
                 <ul class="component-level-count-1">
                   <li>
                     <span class="component-level-label"></span>
-                    <p>Does Not Support</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
@@ -2714,11 +4015,7 @@
                 <ul class="component-level-count-1">
                   <li>
                     <span class="component-level-label"></span>
-                    <p>
-                      Partial compliance as per the remarks in the Success
-                      Criterion listed above. Form elements often do not have
-                      labels.
-                    </p>
+                    <p>Testing has been done with JAWS, NVDA and VoiceOver.</p>
                   </li>
                 </ul>
               </td>
@@ -2746,7 +4043,7 @@
                 <ul class="component-level-count-1">
                   <li>
                     <span class="component-level-label"></span>
-                    <p>Screen magnification users are supported.</p>
+                    <p>Testing has been done with browser zoom and ZoomText.</p>
                   </li>
                 </ul>
               </td>
@@ -2766,7 +4063,7 @@
                 <ul class="component-level-count-1">
                   <li>
                     <span class="component-level-label"></span>
-                    <p>Does Not Support</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
@@ -2774,11 +4071,7 @@
                 <ul class="component-level-count-1">
                   <li>
                     <span class="component-level-label"></span>
-                    <p>
-                      Partial compliance as per the remarks in the Success
-                      Criterion listed above. Color alone is not used to convey
-                      information.
-                    </p>
+                    <p>The interface has been reviewed for use of color.</p>
                   </li>
                 </ul>
               </td>
@@ -2867,7 +4160,7 @@
                 <ul class="component-level-count-1">
                   <li>
                     <span class="component-level-label"></span>
-                    <p>Does Not Support</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
@@ -2876,9 +4169,8 @@
                   <li>
                     <span class="component-level-label"></span>
                     <p>
-                      Limitations for keyboard only users as per the remarks in
-                      the Success Criterion listed above. There are still a few
-                      keyboard traps.
+                      Drupal's interface does not restrict users with limited
+                      manipulation.
                     </p>
                   </li>
                 </ul>
@@ -2909,7 +4201,10 @@
                 <ul class="component-level-count-1">
                   <li>
                     <span class="component-level-label"></span>
-                    <p>No limits for strength.</p>
+                    <p>
+                      Drupal's interface does not restrict users with limited
+                      reach or strength.
+                    </p>
                   </li>
                 </ul>
               </td>
@@ -2958,8 +4253,8 @@
         <div id="hardware-notes" class="chapter-notes-section">
           Notes:
           <p>
-            GovReady is a web application. Hardware accessibility criteria is
-            not applicable.
+            Drupal is a web application. Hardware accessibility criteria is not
+            applicable.
           </p>
         </div>
 
@@ -2980,8 +4275,8 @@
         <div id="software-notes" class="chapter-notes-section">
           Notes:
           <p>
-            GovReady is a web application. Software accessibility criteria is
-            not applicable.
+            Drupal is a web application. Software accessibility criteria is not
+            applicable.
           </p>
         </div>
 
@@ -3005,7 +4300,7 @@
         >
           Notes:
           <p>
-            GovReady is a web application and all support documentation is
+            Drupal is a web application and all support documentation is
             delivered through the web. Additional documentation and services are
             not available.
           </p>
@@ -3013,7 +4308,7 @@
 
         <div id="support_documentation_and_services-summary">
           <p>
-            Conformance to the 4 criteria listed below is distributed as
+            Conformance to the 5 criteria listed below is distributed as
             follows:
           </p>
           <ul>
@@ -3131,11 +4426,31 @@
                 <ul class="component-level-count-1"></ul>
               </td>
             </tr>
+            <tr id="602.3">
+              <td>
+                <a
+                  href="https://www.access-board.gov/ict/#602.3"
+                  target="_blank"
+                >
+                  602.3 Electronic Support Documentation<span
+                    class="usa-sr-only"
+                  >
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+            </tr>
           </tbody>
         </table>
 
         <h2 id="legal-disclaimer">
-          Legal DisclaimerGovReady PBC
+          Legal Disclaimer
           <a href="#legal-disclaimer" class="header-anchor">
             <span class="anchor-icon" aria-hidden="true">
               <svg focusable="false" aria-hidden="true" class="icon-link">
@@ -3154,6 +4469,62 @@
           accessibility errors or conformance claim errors for re-evaluation and
           correction, if necessary.
         </p>
+
+        <h2 id="repository">
+          Repository
+          <a href="#repository" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
+                <path
+                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
+        </h2>
+        <a href="https://github.com/GSA/openacr/blob/main/openacr/drupal-9.yaml"
+          >https://github.com/GSA/openacr/blob/main/openacr/drupal-9.yaml</a
+        >
+        <h2 id="feedback">
+          Feedback
+          <a href="#feedback" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
+                <path
+                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
+        </h2>
+        <a href="https://www.drupal.org/project/issues/drupal"
+          >https://www.drupal.org/project/issues/drupal</a
+        >
+
+        <h2 id="related-openacrs">
+          Related OpenACRs
+          <a href="#related-openacrs" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
+                <path
+                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
+        </h2>
+        <ul>
+          <li>
+            <a
+              href="https://ckeditor.com/docs/ckeditor4/latest/guide/dev_section508.html"
+              >https://ckeditor.com/docs/ckeditor4/latest/guide/dev_section508.html
+              (secondary)</a
+            >
+          </li>
+        </ul>
       </div>
     </main>
     <footer class="usa-footer usa-footer usa-footer--slim">
@@ -3181,9 +4552,9 @@
             <div class="grid-col">
               This content is licensed under a
               <a
-                href="https://creativecommons.org/licenses/by/4.0/legalcode"
+                href="https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html"
                 target="_blank"
-                >Creative Commons Attribution 4.0 International<span
+                >GNU General Public License v2.0 or later<span
                   class="usa-sr-only"
                 >
                   (opens in a new window or tab)</span

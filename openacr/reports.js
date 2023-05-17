@@ -1,8 +1,14 @@
 const dataSet = [
   [
-    "<a href='drupal-9.html'>Drupal Accessibility Conformance Report</a>",
+    "<a href='drupal-10-15-simple.html'>Drupal 10 Accessibility Conformance Report</a>",
     "Content Management System",
-    "Drupal 9.1",
+    "Drupal 10",
+    "<a href='drupal-10-15.yaml'>drupal-10-15.yaml</a>",
+  ],
+  [
+    "<a href='drupal-9.html'>Drupal 9 Accessibility Conformance Report</a>",
+    "Content Management System",
+    "Drupal 9",
     "<a href='drupal-9.yaml'>drupal-9.yaml</a>",
   ],
   [

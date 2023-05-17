@@ -432,7 +432,7 @@ describe("OpenACR CLI test validation", () => {
       options.concat(
         "openacr/drupal-9.yaml",
         "-c",
-        "catalog/2.4-edition-wcag-2.0-508-en.yaml"
+        "catalog/2.4-edition-wcag-2.1-508-en.yaml"
       )
     );
     const chunks = [];
