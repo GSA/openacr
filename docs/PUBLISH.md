@@ -11,6 +11,11 @@ The above package is under the organization https://www.npmjs.com/org/civicactio
 1. Run `npm run build` to build latest CLI version.
 2. Run `./bin/openacr.js` to test that it works as expected.
 
+## Build CLI version manually
+
+1. Run `npm run build` to build latest CLI version.
+2. Run `./bin/openacr.js` to test that it works as expected.
+
 ## Publish package manually
 
 1. Create a `.npmrc` file with contents `//registry.npmjs.org/:_authToken=${NPM_TOKEN}`.
