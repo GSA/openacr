@@ -135,14 +135,17 @@ The command uses [handlebars](https://handlebarsjs.com/) and the default templat
 
 ### Examples
 
-We checked in an example of the markdown and HTML output in `tests/examples` and `openacr`. To regenerate the examples run the following commands and commit the changes:
+We checked in an examples of the markdown and HTML output in `tests/examples` and `openacr`. To regenerate the examples run the following commands and commit the changes:
 
 ```bash
-npm run generate-example-output # Full command `npx ts-node src/openacr.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.markdown`
-npm run generate-drupal-output # Full command `npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.markdown`
-npm run generate-example-html # Full command `npx ts-node src/openacr.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.html`
-npm run generate-drupal-html # Full command `npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.html`
-npm run generate-drupal-simple # Full command `npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9-simple.html -t templates/openacr-simple-html-0.1.0.handlebar`
+npm run generate-example-output
+npm run generate-drupal-output
+npm run generate-example-html
+npm run generate-drupal-html
+npm run generate-drupal-simple
+npm run generate-drupal-10-output
+npm run generate-drupal-10-html
+npm run generate-drupal-10-simple
 ```
 
 We also have a GitHub action called 'Drupal 9 OpenACRs output' that will generate the markdown and HTML versions of the Drupal 9 OpenACRs. It is run on pull requests, and the output can be downloaded to double-check it is matching expectations.
@@ -168,7 +171,8 @@ Current example OpenACRs that are tracked in this repository are in the `openacr
 
 OpenACRs:
 
-- drupal-9.yaml: Current Drupal 9 OpenACR.
+- drupal-10-15.yaml: Drupal 10 OpenACR.
+- drupal-9.yaml: Drupal 9 OpenACR.
 - govready-0.9.yaml
 - Moodle-3.yaml
 - NVDA-2018.yaml
@@ -177,6 +181,7 @@ OpenACRs:
 To regenerate the above OpenACR markdown and HTML reports run the following commands:
 
 ```bash
+npx ts-node src/openacr.ts output -f openacr/drupal-10-15.yaml -c catalog/2.4-edition-wcag-2.1-en.yaml -o openacr/drupal-10-15.html
 npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.html
 npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.markdown
 npx ts-node src/openacr.ts output -f openacr/govready-0.9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/govready-0.9.html
