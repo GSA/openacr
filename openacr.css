@@ -1,0 +1,102 @@
+/* Default OpenACR styling */
+
+body {
+  padding-left: 35px;
+}
+
+h2,
+h3 {
+  position: relative;
+}
+
+h2 a.header-anchor,
+h3 a.header-anchor {
+  position: absolute;
+  left: -2rem;
+}
+
+h2 a.header-anchor:hover svg,
+h2 a.header-anchor:focus svg,
+h2 a.header-anchor:focus-within svg,
+h3 a.header-anchor:hover svg,
+h3 a.header-anchor:focus svg,
+h3 a.header-anchor:focus-within svg {
+  fill: #0000ee;
+  opacity: 1;
+}
+
+h2 a.header-anchor svg,
+h3 a.header-anchor svg {
+  width: 28px;
+  height: 28px;
+  opacity: 0.3;
+}
+
+@media all and (max-width: 63.99em) {
+  h2 a.header-anchor,
+  h3 a.header-anchor {
+    position: relative;
+    opacity: 1;
+    left: 0;
+    vertical-align: top;
+  }
+}
+
+a.header-anchor {
+  opacity: 0.4;
+  font-size: small;
+  text-decoration: none;
+  position: relative;
+  /* left: 20px; */
+  -webkit-transition: opacity 1s, font-size 1s;
+  -moz-transition: opacity 1s, font-size 1s;
+  -o-transition: opacity 1s, font-size 1s;
+  transition: opacity 1s, font-size 1s;
+}
+
+a.header-anchor:focus,
+a.header-anchor:hover {
+  text-decoration: underline;
+  font-size: large;
+  opacity: 1;
+}
+
+.usa-sr-only,
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+
+  & .focusable {
+    & :active,
+    & :focus {
+      clip: auto;
+      clip-path: none;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+      white-space: inherit;
+    }
+  }
+}
+
+.applicable-standards-guidelines-table th:nth-child(1) {
+  width: 40%;
+}
+.applicable-standards-guidelines-table th:nth-child(2) {
+  width: 60%;
+}
+
+/* If only one level then hide the label. */
+.component-level-count-1 .component-level-label {
+  display: none;
+}

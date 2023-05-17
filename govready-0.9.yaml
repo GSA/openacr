@@ -1,0 +1,700 @@
+title: GovReady PBC
+product:
+  name: GovReady
+  version: "0.9.1.36"
+  description: GovReady is a user-friendly cybersecurity Governance, Risk, and Compliance (GRC) web application focused on guiding teams through the NIST Risk Management Framework using Compliance-As-Code and collaborative features.
+author:
+  name: Mike Gifford
+  company_name: CivicActions
+  address: 3527 Mt Diablo Blvd, Unit 269, Lafayette, CA 94549
+  email: mike.gifford@civicactions.com
+  phone: (510) 408-7510
+  website: https://civicactions.com/
+vendor:
+  name: Greg Elin
+  company_name: GovReady PBC
+  address: 32011 Crystal Drive STE 400, Arlington, VA 22202-3709
+  email: gregelin@govready.com
+  phone: 202-505-1050
+  website: https://govready.com/
+notes: >
+  All user interfaces for the GovReady software are done through the web interface, so the focus is on the WCAG 2.0 Report.  Chapter 5  has been deleted as it is redundant.  GovReady is built on the Django framework and some of the accessibility issues have been inherited from this framework. GovReady is an open source tool with an open issue queue.
+  Accessibility issues identified here will be documented as accessibility issues within existing issue queues. Any workarounds will be available within the issue queue until such time as the problem is resolved. The Authoring Tools components, 504, have not been reviewed in this assessment.
+  Content is generally saved in a machine readable format that allows for it to be processed in many ways. All GovReady documentation is available through the web interface, so the focus is on the WCAG 2.0 Report.  Chapter 6 has been deleted as it is redundant. The documentation is being served through Read the Docs and with their default theme. Some accessibility issues have been inherited from this framework.
+evaluation_methods_used: >
+  Testing was done through a combination of manual and automated testing. We leveraged automated tools WebAim's WAVE Toolbar and Microsoft's Accessibility Insights. Accessibility Insights leverages Deque's open source Axe accessibility engine. Manual testing was done using keyboard interactions and Apple's VoiceOver. Chrome v84 was used as the browser for all tests. Unique patterns were identified and tested to see where barriers might exist. Extensive testing of the site's functionality has been done based on this.
+legal_disclaimer: >
+  The information herein is provided in good faith based on the analysis of the web application at the time of the review and does not represent a legally-binding claim. Please contact us to report any accessibility errors or conformance claim errors for re-evaluation and correction, if necessary.
+chapters:
+  success_criteria_level_a:
+    notes: "GovReady-Q is a web application and an authoring tool. As such the Software & Authoring Tool Notes are all included within the Web for the 'Conformance Level' and 'Remarks and Explanations'. There are some elements here that clearly fail WCAG 2.0 A."
+    criteria:
+      - num: "1.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "does-not-support"
+              notes: There are currently no videos. Graphs are provided by a 3rd party tool. Many images do yet have proper alt text.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Some images contain complex information which would be better explained using longtext or visible captions as well as basic alt text.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: An image is used for a horizontal rule that needs to be marked as decorative.
+      - num: "1.2.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "1.2.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "1.2.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "1.3.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: Most information is structured into logical relationships. Lists are well used to group information and provide navigation.  Forms do not have a visual or semantic representation for required fields.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Site has consistent information and relationships.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Site has consistent information and relationships.
+      - num: "1.3.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Site follows a correct reading sequence.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Site has consistent information and relationships.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Site has consistent information and relationships.
+      - num: "1.3.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Follows best practices.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Follows best practices.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Follows best practices.
+      - num: "1.4.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Color is used to a minimal extent.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Color is used to a minimal extent.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Color is used to a minimal extent.
+      - num: "1.4.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "2.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: Generally it is excellent, but the Review pages and pages with Long Text have some elements which cannot be activated with a keyboard. On the Long Text with discussion pages it is clear that the WYSIWYG, discussion emoji and file upload functionality also have no support for keyboard only users.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Supports keyboard users.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Supports keyboard users.
+      - num: "2.1.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: The Long Text pattern has no way to tab past the data entry block.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: No keyboard traps were identified.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: No keyboard traps were identified.
+      - num: "2.2.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "2.2.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "2.3.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+              notes: There are no flashing elements.
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+              notes: There are no flashing elements.
+      - num: "2.4.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "does-not-support"
+              notes: There are no skip link elements on the site for keyboard only users.
+          - name: "electronic-docs"
+            adherence:
+              level: "does-not-support"
+              notes: Similar issues 1.4.3 with Read the Docs default theme not including skip links.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "does-not-support"
+      - num: "2.4.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: All pages include a meaningful title.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: All pages include a meaningful title.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: All pages include a meaningful title.
+      - num: "2.4.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Focus ordering would be improved if action buttons were on the left of the screen.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Generally good but Previous/Next links are in reverse order.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Focusable components receive focus in an order that preserves meaning and operability.
+      - num: "2.4.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: n some places links and buttons are described insufficiently to be understood in isolation. There are also empty links on some pages. The Django administration pages have many empty links.
+          - name: "electronic-docs"
+            adherence:
+              level: "partially-supports"
+              notes: Generally good, but Previous/Next buttons use titles to convey the title of the previous/next content on hover, but this isn't accessible.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "3.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: English is the only supported language and each page is properly defined.
+          - name: "electronic-docs"
+            adherence:
+              level: "does-not-support"
+              notes: Language of the page is commented out in the theme.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: English is the only supported language and each page is properly defined.
+      - num: "3.2.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Keyboard only users are able to control the focus of the page.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Keyboard only users are able to control the focus of the page.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Keyboard only users are able to control the focus of the page.
+      - num: "3.2.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Engaging with the interactive sites does not unexpectedly take control from the users.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: The search elements of the site do not unexpectedly take control from the users.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Engaging with the interactive sites does not unexpectedly take control from the users.
+      - num: "3.3.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "does-not-support"
+              notes: No error identification is currently built into the application.
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "3.3.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: There are some forms without labels in the current version. Generally the context is clear for most forms, but it should be improved. Date fields should be in a fieldset. The Django administration pages have many fields without labels.
+          - name: "electronic-docs"
+            adherence:
+              level: "does-not-support"
+              notes: There are no labels on the search.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "4.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: Generally good. A few small instances of duplicate ID's, tags not being closed, and empty headings. The Data Grid Question pattern includes edit/delete buttons that are not properly formed.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Generally very good but a few warnings.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "4.1.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: There are some forms without labels in the current version. Generally the context is clear for most forms, but it should be improved. Date fields should be in a fieldset. The Django administration pages have many fields without labels.
+          - name: "electronic-docs"
+            adherence:
+              level: "partially-supports"
+              notes: There are no labels on the search forms.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+  success_criteria_level_aa:
+    criteria:
+      - num: "1.2.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+      - num: "1.2.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "1.4.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: There are contrast issues in the navigation and in some detail pages where the user experience was aiming to reduce importance. Gradients are used to provide a nice visual effect, but often provide some issues with contrast. Review pages also have elements without sufficient contrast. The Django administration pages have many contrast errors.
+          - name: "electronic-docs"
+            adherence:
+              level: "partially-supports"
+              notes: Most of the content meets requirements but the site is built off of the Read the Docs default theme sphinx_rtd_theme which has color contrast issues that will need to be overwritten.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Generally follows contrast requirements.
+      - num: "1.4.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Site is built to be responsive for mobile devices.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Site is built to be a simple reflection of a git repository using simple accessible MarkDown.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+      - num: "1.4.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "2.4.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+              notes: This software is all built around a process which makes it exempt from this SC.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: There is a built-in search engine.
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "2.4.6"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: Most of the content is structured. Pages are missing an H1. Lists need a heading before them and this is missing in the navigational elements. There are also empty headings on some pages. Also see 3.3.2.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Pages are properly structured in a nice hierarchy. Also see 3.3.2.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Generated content begins at H2.
+      - num: "2.4.7"
+        components:
+          - name: "web"
+            adherence:
+              level: "partially-supports"
+              notes: Generally focus is clear when tabbing through the site but focus is lost under some dialog boxes which can be confusing to the user.
+          - name: "electronic-docs"
+            adherence:
+              level: "partially-supports"
+              notes: Previous/Next buttons do not indicate that they have focus.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "3.1.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-applicable"
+              notes: This software assumes that content will be provided in a single language. There is no support for strings in alternate languages.
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+              notes: All documentation is in the same language.
+      - num: "3.2.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Pages are very consistent and navigation is easy to infer.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Pages are very consistent and navigation is easy to infer.
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "3.2.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: UX patterns are well defined and consistent.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: UX patterns are well defined and consistent.
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "3.3.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "does-not-support"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "3.3.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "does-not-support"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+  functional_performance_criteria:
+    notes: Not applicable.
+    criteria:
+      - num: "302.1"
+        components:
+          - name: "none"
+            adherence:
+              level: "does-not-support"
+              notes: Partial compliance as per the remarks in the Success Criterion listed above. Form elements often do not have labels.
+      - num: "302.2"
+        components:
+          - name: "none"
+            adherence:
+              level: "supports"
+              notes: Screen magnification users are supported.
+      - num: "302.3"
+        components:
+          - name: "none"
+            adherence:
+              level: "does-not-support"
+              notes: Partial compliance as per the remarks in the Success Criterion listed above. Color alone is not used to convey information.
+      - num: "302.4"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"
+      - num: "302.5"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"
+      - num: "302.6"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"
+      - num: "302.7"
+        components:
+          - name: "none"
+            adherence:
+              level: "does-not-support"
+              notes: Limitations for keyboard only users as per the remarks in the Success Criterion listed above. There are still a few keyboard traps.
+      - num: "302.8"
+        components:
+          - name: "none"
+            adherence:
+              level: "supports"
+              notes: No limits for strength.
+      - num: "302.9"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"
+  # Chapter 4
+  hardware:
+    notes: "GovReady is a web application. Hardware accessibility criteria is not applicable."
+  # Chapter 5
+  software:
+    notes: "GovReady is a web application. Software accessibility criteria is not applicable."
+  # Chapter 6
+  support_documentation_and_services:
+    notes: "GovReady is a web application and all support documentation is delivered through the web. Additional documentation and services are not available."
+    criteria:
+      - num: "602.2"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"
+      - num: "602.4"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"
+      - num: "603.2"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"
+      - num: "603.3"
+        components:
+          - name: "none"
+            adherence:
+              level: "not-applicable"

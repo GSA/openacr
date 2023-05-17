@@ -1,0 +1,1029 @@
+title: Plone
+product:
+  name: Plone
+  version: "5.2"
+  # report_date: June 2020
+  description: Open-source CMS based on Python.
+author:
+  company_name: Plone Foundation
+  address: PO Box 431, Fishers IN 46038, USA
+  email: a11y@plone.org
+  website: https://plone.org
+notes: "Testing applies to Plone with standard theme. Website-specific themes and CSS will have to be tested foraccessibility compliance by the organization deploying that Plone site. Also, the content that is added to a Plone sitewill have to be evaluated, especially when audio-visual materials are added. Testing with assistive technologies onlydone with English, Spanish and Portuguese language versions."
+evaluation_methods_used: Testing with assistive technologies, testing is based on general public knowledge.
+legal_disclaimer: ""
+chapters:
+  success_criteria_level_a:
+    criteria:
+      - num: "1.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "partially-supports"
+              notes: "Some images in the documentation donot yet have descriptive enough ALT text descriptions.This is being worked on."
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "1.2.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "1.2.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "1.2.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "1.3.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "1.3.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "1.3.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "1.4.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "1.4.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "2.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "2.1.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      #      WCAG 2.1
+      #      - num: "2.1.4"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      - num: "2.2.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "2.2.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "2.3.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "2.4.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "2.4.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "2.4.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "2.4.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      #      WCAG 2.1
+      #      - num: "2.5.1"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      #      - num: "2.5.2"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      #      - num: "2.5.3"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      #      - num: "2.5.4"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      - num: "3.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "3.2.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "3.2.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "3.3.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "3.3.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "4.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "4.1.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+  success_criteria_level_aa:
+    criteria:
+      - num: "1.2.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+      - num: "1.2.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      #      - num: "1.3.4"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      #      - num: "1.3.5"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      - num: "1.4.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      - num: "1.4.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+      - num: "1.4.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "not-applicable"
+      #      WCAG 2.1
+      #      - num: "1.4.10"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      #      - num: "1.4.11"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      #      - num: "1.4.12"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      #      - num: "1.4.13"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "supports"
+      #          - name: "electronic-docs"
+      #            adherence:
+      #              level: "supports"
+      - num: "2.4.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: ""
+      - num: "2.4.6"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: ""
+      - num: "2.4.7"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: ""
+      - num: "3.1.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: ""
+      - num: "3.2.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: ""
+      - num: "3.2.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: ""
+      - num: "3.3.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: ""
+      - num: "3.3.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: ""
+          - name: "electronic-docs"
+            adherence:
+              level: "not-applicable"
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: ""
+  #      - num: "4.1.3"
+  #        components:
+  #          - name: "web"
+  #            adherence:
+  #              level: "not-applicable"
+  #          - name: "electronic-docs"
+  #            adherence:
+  #              level: "not-applicable"
+  #          - name: "authoring-tool"
+  #            adherence:
+  #              level: "not-applicable"
+  success_criteria_level_aaa:
+    notes: ""
+    criteria:
+      - num: "1.2.6"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "1.2.7"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "1.2.8"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "1.2.9"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      #      WCAG 2.1
+      #      - num: "1.3.6"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "not-evaluated"
+      - num: "1.4.6"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "1.4.7"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "1.4.8"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "1.4.9"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "2.1.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "2.2.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "2.2.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "2.2.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      #      WCAG 2.1
+      #      - num: "2.2.6"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "not-evaluated"
+      - num: "2.3.2"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      #      WCAG 2.1
+      #      - num: "2.3.3"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "not-evaluated"
+      - num: "2.4.8"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "2.4.9"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "2.4.10"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      #      WCAG 2.1
+      #      - num: "2.5.5"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "not-evaluated"
+      #      - num: "2.5.6"
+      #        components:
+      #          - name: "web"
+      #            adherence:
+      #              level: "not-evaluated"
+      - num: "3.1.3"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "3.1.4"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "3.1.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "3.1.6"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "3.2.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "3.3.5"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+      - num: "3.3.6"
+        components:
+          - name: "web"
+            adherence:
+              level: "not-evaluated"
+  functional_performance_criteria:
+    notes: ""
+    criteria:
+      - num: "302.1"
+        components:
+          - name: "none"
+            adherence:
+              level: "supports"
+              notes: ""
+      - num: "302.2"
+        components:
+          - name: "none"
+            adherence:
+              level: "supports"
+              notes: ""
+      - num: "302.3"
+        components:
+          - name: "none"
+            adherence:
+              level: "supports"
+              notes: ""
+      - num: "302.4"
+        components:
+          - name: "none"
+            adherence:
+              level: "supports"
+              notes: ""
+      - num: "302.5"
+        components:
+          - name: "none"
+            adherence:
+              level: "supports"
+              notes: ""
+      - num: "302.6"
+        components:
+          - name: "none"
+            adherence:
+              level: "supports"
+              notes: ""
+      - num: "302.7"
+        components:
+          - name: "none"
+            adherence:
+              level: "supports"
+              notes: ""
+      - num: "302.8"
+        components:
+          - name: "none"
+            adherence:
+              level: "supports"
+              notes: ""
+      - num: "302.9"
+        components:
+          - name: "none"
+            adherence:
+              level: "partially-supports"
+              notes: "Administration section of the website Partially Supports relies on abstract concepts and ICT knowledge"
+  # Chapter 4
+  hardware:
+    notes: "Hardware accessibility criteria is not applicable."
+  # Chapter 5
+  software:
+    notes: "Software accessibility criteria is not applicable."
+  # Chapter 6
+  support_documentation_and_services:
+    notes: "Additional documentation and services are not available."
+# EN 301 549
+# Chapter 4
+#  en_301_549_functional_performance_criteria:
+#    criteria:
+#      - num: "4.2.1"
+#        components:
+#          - name: "none"
+#            adherence:
+#              level: "supports"
+#    criteria:
+#      - num: "4.2.2"
+#        components:
+#          - name: "none"
+#            adherence:
+#              level: "supports"
+#    criteria:
+#      - num: "4.2.3"
+#        components:
+#          - name: "none"
+#            adherence:
+#              level: "supports"
+#    criteria:
+#      - num: "4.2.4"
+#        components:
+#          - name: "none"
+#            adherence:
+#              level: "supports"
+#    criteria:
+#      - num: "4.2.5"
+#        components:
+#          - name: "none"
+#            adherence:
+#              level: "supports"
+#    criteria:
+#      - num: "4.2.6"
+#        components:
+#          - name: "none"
+#            adherence:
+#              level: "supports"
+#    criteria:
+#      - num: "4.2.7"
+#        components:
+#          - name: "none"
+#            adherence:
+#              level: "supports"
+#    criteria:
+#      - num: "4.2.8"
+#        components:
+#          - name: "none"
+#            adherence:
+#              level: "supports"
+#    criteria:
+#      - num: "4.2.9"
+#        components:
+#          - name: "none"
+#            adherence:
+#              level: "supports"
+#    criteria:
+#      - num: "4.2.10"
+#        components:
+#          - name: "none"
+#            adherence:
+#              level: "partially-supports"
+#              notes: "Administration section of the website Partially Supports relies on abstract concepts and ICT knowledge"
+#    criteria:
+#      - num: "4.2.11"
+#        components:
+#          - name: "none"
+#            adherence:
+#              level: "supports"
+#  Chapter 5
+#  en_301_549_generic_requirements:
+#    notes: "Not applicable."
+#  Chapter 6
+#  en_301_549_ICT_with_2way_voice:
+#    notes: "Not applicable."
+#  Chapter 7
+#  en_301_549_ICT_with_Video:
+#    notes: "Not applicable."
+#  Chapter 8
+#  en_301_549_hardware:
+#    notes: "Not applicable."
+#  Chapter 9
+#  See WCAG 2.x section
+#
+#  Chapter 10
+#  en_301_549_non_web_software:
+#    notes: "Not applicable."
+#  Chapter 11
+#  en_301_549_software:
+#    notes: "Not applicable."
+#  Chapter 12
+#  en_301_549_documentation_and_support_services:
+#    notes: "Not applicable."
+#  Chapter 13
+#  en_301_549_documentation_and_support_services:
+#    notes: "Not applicable."

@@ -1,0 +1,24 @@
+@mixin external-link(
+  $external-link,
+  $external-link-hover,
+  $image-path: $theme-image-path
+) {
+  &::after {
+    $external-link-size: 1.75ex;
+    background-image: url("#{$image-path}/#{$external-link}.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: "";
+    height: $external-link-size;
+    margin-left: units(2px);
+    // Use following inline styling to prevent icon splitting over line breaks
+    background-position: center;
+    display: inline;
+    padding-left: $external-link-size;
+    vertical-align: middle;
+  }
+
+  &:hover::after {
+    @include add-background-svg("#{$external-link-hover}", $image-path);
+  }
+}
