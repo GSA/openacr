@@ -143,7 +143,6 @@ npm run generate-drupal-output
 npm run generate-example-html
 npm run generate-drupal-html
 npm run generate-drupal-simple
-npm run generate-drupal-10-output
 npm run generate-drupal-10-html
 npm run generate-drupal-10-simple
 ```

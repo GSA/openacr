@@ -119,9 +119,16 @@
         {{headerWithAnchor catalog-standard.report_heading catalog-standard.id 2}}
         {{#each catalog-standard.chapters as |catalog-standard-chapter|}}
           {{#with (catalogChapter catalog-standard-chapter) as |catalog-chapter|}}
-            {{headerWithAnchor catalog-chapter.label catalog-chapter.id 3}}
-
             {{#with (lookup ../../../chapters catalog-chapter.id) as |data-category|}}
+
+              {{#unless data-category.disabled}}
+                {{headerWithAnchor catalog-chapter.label catalog-chapter.id 3}}
+              {{else}}
+                {{#if data-category.notes}}
+                  {{headerWithAnchor catalog-chapter.label catalog-chapter.id 3}}
+                {{/if}}
+              {{/unless}}
+
               {{#if data-category.notes}}
                 <div id="{{catalog-chapter.id}}-notes" class="chapter-notes-section">
                   Notes: {{sanitizeMarkdown data-category.notes}}
