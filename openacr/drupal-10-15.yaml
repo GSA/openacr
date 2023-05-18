@@ -1227,7 +1227,7 @@ chapters:
               notes: "No known problems with status messages. "
     notes: ""
   success_criteria_level_aaa:
-    notes: Where possible the Drupal community strives to exceed AA compliance.
+    notes: ""
     criteria:
       - num: 1.2.6
         components:

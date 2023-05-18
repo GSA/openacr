@@ -40,8 +40,8 @@ This report covers the degree of conformance for the following accessibility sta
 
 | Standard/Guideline | Included In Report |
 | --- | --- |
-| [Web Content Accessibility Guidelines 2.0](https://www.w3.org/TR/WCAG20/) | <ul><li>Table 1: Success Criteria, Level A</li><li>Table 2: Success Criteria, Level AA</li><li>Table 3: Success Criteria, Level AAA</li></ul> |
-| [Revised Section 508 standards published January 18, 2017 and corrected January 22, 2018](https://www.access-board.gov/ict/) | <ul><li>Chapter 3: Functional Performance Criteria (FPC)</li><li>Chapter 4: Hardware</li><li>Chapter 5: Software</li><li>Chapter 6: Support Documentation and Services</li></ul> |
+| [Web Content Accessibility Guidelines 2.0](https://www.w3.org/TR/WCAG20/) | <ul><li>Table 1: Success Criteria, Level A</li></ul> |
+| [Revised Section 508 standards published January 18, 2017 and corrected January 22, 2018](https://www.access-board.gov/ict/) | <ul><li>Chapter 4: Hardware</li></ul> |
 
 ## Terms
 The terms used in the Conformance Level information are defined as follows:
@@ -52,6 +52,7 @@ The terms used in the Conformance Level information are defined as follows:
 - **Not Evaluated**: The product has not been evaluated against the criterion. This can be used only in WCAG 2.x Level AAA.
 
 ## WCAG 2.0 Report
+
 ### Table 1: Success Criteria, Level A
 
 
@@ -67,20 +68,11 @@ Conformance to the 2 criteria listed below is distributed as follows:
 | [1.1.1 Non-text Content](https://www.w3.org/TR/WCAG20/#text-equiv-all) | <ul><li>**Web**: Supports</li><li>**Electronic Documents**: Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Supports</li> </ul> | <ul><li>**Web**: Cras ultrices, diam in laoreet condimentum, purus leo tempor erat, eu facilisis erat tortor at purus.</li><li>**Electronic Documents**: Curabitur tristique tellus quis ligula elementum, sit amet tincidunt est aliquet.</li><li>**Authoring Tool**: Vestibulum sit amet tortor ac nunc rutrum consequat vel sit amet risus. Nam eget mollis odio, sit amet bibendum mi. Quisque ac neque a nulla dapibus imperdiet.</li> </ul> |
 | [1.2.2 Captions (Prerecorded)](https://www.w3.org/TR/WCAG20/#media-equiv-captions) | <ul><li>**Web**: Partially Supports</li><li>**Electronic Documents**: Partially Supports</li><li>**Software**: Not Applicable</li><li>**Authoring Tool**: Does Not Support</li> </ul> | <ul><li>**Web**: Nam a cursus nulla. Vestibulum tincidunt tincidunt volutpat.</li><li>**Electronic Documents**: Sed tempor accumsan nisl viverra viverra.</li><li>**Authoring Tool**: There is no additional support for authors within the authoring interface to explain how this can be done.</li> </ul> |
 
-### Table 2: Success Criteria, Level AA
-
-### Table 3: Success Criteria, Level AAA
-
 ## Revised Section 508 Report
-### Chapter 3: Functional Performance Criteria (FPC)
 
 ### Chapter 4: Hardware
 
 Notes: Lorem Ipsum is a web application. Hardware accessibility criteria is not applicable.
-
-### Chapter 5: Software
-
-### Chapter 6: Support Documentation and Services
 
 
 ## Legal Disclaimer (Fake text Inc.)
