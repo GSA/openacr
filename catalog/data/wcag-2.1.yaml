@@ -114,16 +114,16 @@ chapters:
           - software
           - authoring-tool
       - id: 2.2.1
-        handle: Pause, Stop, Hide
-        alt_id: time-limits-required-behaviors
+        handle: Timing Adjustable
+        alt_id: timing-adjustable
         components:
           - web
           - electronic-docs
           - software
           - authoring-tool
       - id: 2.2.2
-        handle: Timing Adjustable
-        alt_id: timing-adjustable
+        handle: Pause, Stop, Hide
+        alt_id: pause-stop-hide
         components:
           - web
           - electronic-docs

@@ -75,6 +75,9 @@ Conformance to the 2 criteria listed below is distributed as follows:
 Notes: Lorem Ipsum is a web application. Hardware accessibility criteria is not applicable.
 
 
+
+
+
 ## Legal Disclaimer (Fake text Inc.)
 The information herein is provided in good faith based on the analysis of the web application at the time of the review and does not represent a legally-binding claim. Please contact us to report any accessibility errors or conformance claim errors for re-evaluation and correction, if necessary.
 

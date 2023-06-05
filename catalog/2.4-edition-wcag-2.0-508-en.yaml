@@ -115,7 +115,7 @@ chapters:
           - software
           - authoring-tool
       - id: 2.2.1
-        handle: Pause, Stop, Hide
+        handle: Timing Adjustable
         alt_id: time-limits-required-behaviors
         components:
           - web
@@ -123,7 +123,7 @@ chapters:
           - software
           - authoring-tool
       - id: 2.2.2
-        handle: Timing Adjustable
+        handle: Pause, Stop, Hide
         alt_id: time-limits-pause
         components:
           - web
