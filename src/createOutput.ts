@@ -91,7 +91,14 @@ export function createOutput(
     const result = [];
     for (const standardChapter of standardChapters) {
       const catalogChapters = getCatalogChapter(standardChapter);
-      result.push(`<li>${catalogChapters.label}</li>`);
+      if (data.chapters[standardChapter]) {
+        if (
+          !data.chapters[standardChapter].disabled ||
+          data.chapters[standardChapter].notes
+        ) {
+          result.push(`<li>${catalogChapters.label}</li>`);
+        }
+      }
     }
     return new Handlebars.SafeString(`<ul>${result.join("")}</ul>`);
   });

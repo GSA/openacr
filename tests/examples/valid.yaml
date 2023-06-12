@@ -56,3 +56,5 @@ chapters:
               notes: There is no additional support for authors within the authoring interface to explain how this can be done.
   hardware:
     notes: "Lorem Ipsum is a web application. Hardware accessibility criteria is not applicable."
+  software:
+    disabled: true
