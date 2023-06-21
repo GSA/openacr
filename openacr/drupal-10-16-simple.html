@@ -124,7 +124,9 @@
           Report
         </h1>
 
-        <div class="catalog-section">Based on VPAT® 2.4</div>
+        <div class="catalog-section">
+          Based on VPAT® 2.4 WCAG 2.1 and Revised Section 508 Edition
+        </div>
 
         <div class="product-section">
           <h2 id="name-of-product-version">
@@ -159,8 +161,8 @@
           </h2>
           <ul>
             <li>Report Date: 2023-05-12</li>
-            <li>Last Modified Date: 2023-05-16</li>
-            <li>Version: drupal-10-15</li>
+            <li>Last Modified Date: 2023-06-19</li>
+            <li>Version: drupal-10-16</li>
           </ul>
         </div>
 
@@ -228,11 +230,25 @@
               <li>Phone: (510) 408-7510</li>
               <li>
                 Website:
-                <a href="https://civicactions.com/"
-                  >https://civicactions.com/</a
-                >
+                <a href="https://civicactions.com">https://civicactions.com</a>
               </li>
             </ul>
+          </div>
+          <div class="vendor-section">
+            <h3 id="vendor">
+              Vendor Information
+              <a href="#vendor" class="header-anchor">
+                <span class="anchor-icon" aria-hidden="true">
+                  <svg focusable="false" aria-hidden="true" class="icon-link">
+                    <path
+                      d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+                    />
+                  </svg>
+                </span>
+                <span class="visuallyhidden">Anchor link</span>
+              </a>
+            </h3>
+            <ul></ul>
           </div>
         </div>
 
@@ -322,6 +338,25 @@
                   <ul>
                     <li>Table 1: Success Criteria, Level A</li>
                     <li>Table 2: Success Criteria, Level AA</li>
+                    <li>Table 3: Success Criteria, Level AAA</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://www.access-board.gov/ict/" target="_blank"
+                    >Revised Section 508 standards published January 18, 2017
+                    and corrected January 22, 2018<span class="usa-sr-only">
+                      (opens in a new window or tab)</span
+                    ></a
+                  >
+                </td>
+                <td>
+                  <ul>
+                    <li>Chapter 3: Functional Performance Criteria (FPC)</li>
+                    <li>Chapter 4: Hardware</li>
+                    <li>Chapter 5: Software</li>
+                    <li>Chapter 6: Support Documentation and Services</li>
                   </ul>
                 </td>
               </tr>
@@ -420,8 +455,8 @@
             follows:
           </p>
           <ul>
-            <li>40 supported</li>
-            <li>12 partially supported</li>
+            <li>32 supported</li>
+            <li>20 partially supported</li>
             <li>0 not supported</li>
             <li>68 not applicable</li>
           </ul>
@@ -453,7 +488,7 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Partially Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -482,27 +517,20 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      Drupal core has no outstanding user barriers. There are
-                      improvements in the
+                      There are minor barriers which may present themselves to
+                      users. There are improvements in the
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag111"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag111"
                         >outstanding issues</a
                       >
-                      which relate to decorative and the password strength
-                      indicator.
+                      which relate to decorative images and the password
+                      strength indicator. Status messages should be clearly
+                      marked as decorative. Most of the issues are tied to the
+                      administration interface.
                     </p>
                     <p>
-                      All open WCAG 1.1.1 issues: 3232414, 2514218, 3272325,
-                      3230231, 3275397, 3087535, 3319601
-                    </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>
-                      Some non-textual content in the documentation does not
-                      provide a textual alternative.
+                      All open WCAG 1.1.1 issue(s): 2921627, 3083994, 3232414,
+                      2514218, 3272325, 3230231, 3275397, 3087535, 3319601
                     </p>
                   </li>
                   <li>
@@ -520,7 +548,7 @@
                     <p>
                       Alternative text is required for images by default.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag111"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag111"
                         >Outstanding issues</a
                       >
                       relate to thumbnail images, management of decorative
@@ -581,12 +609,6 @@
                       Authors can satisfy 1.2.1 Audio-only and Video-only
                       (Prerecorded) by using text on the same page.
                     </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>This is not explicitly defined in the documentation.</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -717,15 +739,6 @@
                   </li>
                   <li>
                     <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>
-                      There is no documentation on how to properly convey
-                      pre-recorded audio descriptions.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
                     <p>
@@ -785,20 +798,21 @@
                     <p>
                       There are barriers in the
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag111"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag131"
                         >outstanding issues</a
                       >
                       ARIA landmarks and roles. There are also a number of
                       errors tied to forms (fieldsets, dates, radios &amp;
-                      checkboxes). There is also more work needed to provide
-                      better semantics for Voice Control and support for Windows
-                      High Contrast mode.
+                      checkboxes). More work is needed to provide better
+                      semantics for Voice Control and support for Windows High
+                      Contrast mode.
                     </p>
                     <p>
-                      All open WCAG 1.3.1 issues: 3081500, 2951317, 3098857,
-                      3347326, 3290899, 3171726, 2951714, 3144948, 3078334,
-                      2942404, 3190536, 3301868, 3171728, 3194669, 3200642,
-                      3206290, 3127469.
+                      All open WCAG 1.3.1 issue(s): 3182458, 3037726, 3037730,
+                      3037733, 3037725, 3037625, 2921627, 2937640, 3037446,
+                      3081500, 2951317, 3098857, 3347326, 3290899, 3171726,
+                      2951714, 3144948, 3078334, 2942404, 3190536, 3301868,
+                      3171728, 3194669, 3200642.
                     </p>
                   </li>
                   <li>
@@ -812,6 +826,10 @@
                       are also accessibility concerns with the vertical tabs and
                       dashboards available to users. Menu blocks are not getting
                       the correct ID in some instances.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag131"
+                        >Outstanding issues</a
+                      >.
                     </p>
                   </li>
                 </ul>
@@ -840,7 +858,7 @@
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Not Applicable</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -959,7 +977,7 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Partially Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -988,8 +1006,18 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      Color is not used without text and often symbols to convey
-                      meaning.
+                      Color is generally not used without text and often symbols
+                      to convey meaning.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag141"
+                        >Outstanding issues</a
+                      >
+                      are mostly tied to authoring tools, but table drag
+                      components may also be exposed to an unauthorized user.
+                    </p>
+                    <p>
+                      All open WCAG 1.4.1 issue(s): 3097907, 3171726, 3059168,
+                      867830
                     </p>
                   </li>
                   <li>
@@ -1002,13 +1030,11 @@
                       tray, table drag, column severity and unpublished
                       articles.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag141"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag141"
                         >Outstanding issues</a
-                      >.
-                    </p>
-                    <p>
-                      All open WCAG 1.4.1 issues: 3097907, 3171726, 3281601,
-                      3059168, 867830.
+                      >
+                      also include the active toolbar tray, and the admin status
+                      report pages.
                     </p>
                   </li>
                 </ul>
@@ -1054,7 +1080,28 @@
                 </ul>
               </td>
               <td>
-                <ul class="component-level-count-4"></ul>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>
+                      The file module in Core lets authors upload audio and
+                      video content, and output and elements and does not
+                      support captions.
+                    </p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>
+                      The file module in Core lets authors upload audio and
+                      video content, and output and elements and does not
+                      support captions.
+                    </p>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr id="2.1.1">
@@ -1107,21 +1154,27 @@
                       with the keyboard and without specific timings for
                       individual keystrokes.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag211"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag211"
                         >Outstanding issues</a
                       >
-                      with tooltips and the header menu.
+                      with tooltips and the header menu. There are also legacy
+                      issues with jQuery UI &amp; header menus. Items like
+                      datepickers can also be exposed to users.
                     </p>
-                    <p>All open WCAG 2.1.1 issues: 2933984, 3210434</p>
+                    <p>
+                      All open WCAG 2.1.1 issue(s): 3085811, 3229647, 3081515,
+                      2991686, 2911932, 3210434, 3038336, 2933984, 2852702
+                    </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
                     <p>
-                      See remarks in Web section.
+                      Issues with the toolbar buttons, datepicker, contextual
+                      links, and tooltips. Also see remarks in Web section.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag211"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag211"
                         >Outstanding issues</a
                       >.
                     </p>
@@ -1175,17 +1228,27 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      Focus can be moved away from that component using only a
-                      keyboard interface.
+                      Users can move focus away from that component using only a
+                      keyboard interface. There is a known problem with the
+                      admin interface.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag212"
+                        >Outstanding issues</a
+                      >.
                     </p>
+                    <p>All open WCAG 2.1.2 issue(s): 2627788</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
                     <p>
-                      Focus can be moved away from that component using only a
-                      keyboard interface.
+                      There is a known issue with focus states on text field
+                      AJAX calls.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag212"
+                        >Outstanding issues</a
+                      >.
                     </p>
                   </li>
                 </ul>
@@ -1466,12 +1529,6 @@
                   </li>
                   <li>
                     <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>Skip links are provided.</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
                     <p>Skip links are provided.</p>
@@ -1496,7 +1553,7 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Partially Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -1514,7 +1571,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Partially Supports</p>
                   </li>
                 </ul>
               </td>
@@ -1524,7 +1581,16 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Pages are titled correctly.</p>
+                    <p>
+                      Pages are titled for users correctly. There is an
+                      outstanding issue for authors.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag242"
+                        >Outstanding issues</a
+                      >
+                      are tied to pagination.
+                    </p>
+                    <p>All open WCAG 2.1.2 issue(s): 2514218, 2509716</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -1533,13 +1599,12 @@
                     <p>
                       Generally, pages are titled correctly.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag242"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag242"
                         >Outstanding issues</a
                       >
                       with a regression in how fields are displayed in editing
                       content types.
                     </p>
-                    <p>All open WCAG 2.4.2 issues: 2514218</p>
                   </li>
                 </ul>
               </td>
@@ -1561,7 +1626,7 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Partially Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -1579,7 +1644,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Partially Supports</p>
                   </li>
                 </ul>
               </td>
@@ -1590,17 +1655,17 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      Focusable components receive focus in an order that
-                      preserves meaning and operability.
+                      Generally, focusable components receive focus in an order
+                      that preserves meaning and operability. Most of these
+                      issues are tied to the administration interface.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag243"
+                        >Outstanding issues</a
+                      >.
                     </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
                     <p>
-                      Focusable components receive focus in an order that
-                      preserves meaning and operability.
+                      All open WCAG 2.1.2 issue(s): 3019849, 3042107, 3047730,
+                      2973114, 2925295, 3273086
                     </p>
                   </li>
                   <li>
@@ -1608,8 +1673,15 @@
                       ><strong>Authoring Tool</strong>:
                     </span>
                     <p>
-                      Focusable components receive focus in an order that
-                      preserves meaning and operability.
+                      Generally, focusable components receive focus in an order
+                      that preserves meaning and operability.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag243"
+                        >Outstanding issues</a
+                      >. Some elements of the authoring interface to don't
+                      return the focus where an editor should expect it to.
+                      There are elements with table drag and Layout Builder
+                      which should be addressed.
                     </p>
                   </li>
                 </ul>
@@ -1632,7 +1704,7 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Partially Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -1664,6 +1736,14 @@
                       Careful attention has been paid to ensure that automated
                       "Read More" links are available in a way that is available
                       with contextual information for screen readers.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag244"
+                        >Outstanding issues</a
+                      >
+                      can be tied to user comments.
+                    </p>
+                    <p>
+                      All open WCAG 2.4.4 issue(s): 2922435, 3351638, 2852898
                     </p>
                   </li>
                   <li>
@@ -1673,13 +1753,12 @@
                     <p>
                       Generally very well-supported.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag242"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag244"
                         >Outstanding issues</a
                       >
                       with truncation of the path alias and duplicate links on
                       edit content page.
                     </p>
-                    <p>All open WCAG 2.4.2 issues: 3351638, 2852898</p>
                   </li>
                 </ul>
               </td>
@@ -1719,7 +1798,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Not Applicable</p>
+                    <p>Supports</p>
                   </li>
                 </ul>
               </td>
@@ -1729,7 +1808,7 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>No known challenges with pointer gestures.</p>
+                    <p>Pointer gestures are generally very good.</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -1786,7 +1865,16 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      No known problems for users with pointer cancellation.
+                      No known problems for users with pointer cancellation for
+                      users.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag252"
+                        >Outstanding issue(s)</a
+                      >.
+                    </p>
+                    <p>
+                      All open WCAG 2.5.2 issue(s): 2616184, 2968637, 2960840,
+                      2958654
                     </p>
                   </li>
                   <li>
@@ -1797,13 +1885,12 @@
                       The Drupal ajax framework uses 'mousedown' to capture the
                       click.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag252"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag252"
                         >Outstanding issue(s)</a
                       >
                       with truncation of the path alias and duplicate links on
                       edit content page.
                     </p>
-                    <p>All open WCAG 2.5.2 issue(s): 2616184</p>
                   </li>
                 </ul>
               </td>
@@ -1969,21 +2056,9 @@
                   </li>
                   <li>
                     <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>Page language is defined semantically on every page.</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>
-                      <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag311"
-                        >Outstanding issues</a
-                      >.
-                    </p>
-                    <p>All open WCAG 3.1.1 issue(s): 3081526</p>
+                    <p>Page language is defined semantically on every page.</p>
                   </li>
                 </ul>
               </td>
@@ -2032,15 +2107,6 @@
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
-                    </span>
-                    <p>
-                      Change in the focus state does not initiate a change of
-                      context for the user.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
                     </span>
                     <p>
                       Change in the focus state does not initiate a change of
@@ -2111,15 +2177,6 @@
                   </li>
                   <li>
                     <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>
-                      Engaging with the interactive sites does not unexpectedly
-                      take control from the users.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
                     <p>
@@ -2179,15 +2236,15 @@
                       The Inline Form Error module needs to be enabled site-wide
                       on installation.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag311"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag331"
                         >Outstanding issues</a
                       >. Most of these issues are also authoring interface, but
                       there are problems with HTML5 validation, child groupings,
                       required errors, and file uploading.
                     </p>
                     <p>
-                      All open WCAG 3.3.1 issues: 3059955, 1797438, 2848507,
-                      2563173, 3087305, 2455933, 3087402, 2847425, 2089703
+                      All open WCAG 3.3.1 issue(s): 2848307, 2560467, 2876321,
+                      3279596, 3087385, 3059955, 1797438, 2848507, 2563173
                     </p>
                   </li>
                   <li>
@@ -2197,7 +2254,7 @@
                     <p>
                       See the Web section as most of these
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag311"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag331"
                         >outstanding issues</a
                       >
                       are also likely on the user side.
@@ -2254,13 +2311,17 @@
                     <p>
                       Default forms all include labels.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag332"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag332"
                         >Outstanding issues</a
                       >
                       include a lack of 'aria-describedby' and grouped fields
-                      missing labels.
+                      missing labels. There are some exceptions like Views
+                      search filter label isn't associated with the input.
                     </p>
-                    <p>All open WCAG 3.3.2 issues: 2998857, 2608212</p>
+                    <p>
+                      All open WCAG 3.3.2 issue(s): 2608180, 2942037, 3037446,
+                      2998857, 2608212
+                    </p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2271,9 +2332,10 @@
                       labels, but these are odd exceptions. See the Web section
                       for details.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag332"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag332"
                         >Outstanding issues</a
-                      >.
+                      >. There are known issues with the Admin list filter and
+                      grouped publishing status messages.
                     </p>
                   </li>
                 </ul>
@@ -2324,16 +2386,12 @@
                     <p>
                       There are no HTML5 errors or warnings that are known to
                       impact assistive technology users.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag411"
+                        >Outstanding issues</a
+                      >.
                     </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>
-                      There are no HTML5 errors or warnings that are known to
-                      impact assistive technology users.
-                    </p>
+                    <p>All open WCAG 4.1.1 issue(s): 3174459</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2343,11 +2401,11 @@
                       Generally parsing is very well-supported, but there are a
                       few places where this needs to be improved.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag411"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag411"
                         >Outstanding issues</a
-                      >.
+                      >. There is an error identified with fields in articles
+                      that has not been independently validated.
                     </p>
-                    <p>All open WCAG 4.1.1 issue(s): 3174459</p>
                   </li>
                 </ul>
               </td>
@@ -2369,7 +2427,7 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Partially Supports</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2397,13 +2455,18 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Public pages support this criterion.</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>Public pages support this criterion.</p>
+                    <p>
+                      Public pages generally support this criterion.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag412"
+                        >Outstanding issues</a
+                      >. There are issues when Views List is filtered.
+                    </p>
+                    <p>
+                      All open WCAG 4.1.2 issue(s): 3050559, 2805499, 2913378,
+                      2805227, 1096124, 2047089, 3272316, 2942232, 3087313,
+                      2719453
+                    </p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2413,14 +2476,10 @@
                       This is generally well-supported, but there are places
                       where it has been overlooked.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag412"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag412"
                         >Outstanding issues</a
                       >. There are semantics missing for aria elements in the
-                      block, forms, and contextual modules.
-                    </p>
-                    <p>
-                      All open WCAG 4.1.2 issues: 3083181, 2852724, 3218877,
-                      3028780, 1852090, 3085545
+                      block, forms, media, bulk actions and contextual modules.
                     </p>
                   </li>
                 </ul>
@@ -2450,9 +2509,9 @@
           </p>
           <ul>
             <li>24 supported</li>
-            <li>11 partially supported</li>
-            <li>3 not supported</li>
-            <li>32 not applicable</li>
+            <li>13 partially supported</li>
+            <li>2 not supported</li>
+            <li>40 not applicable</li>
           </ul>
         </div>
 
@@ -2512,6 +2571,12 @@
                     </span>
                     <p>This is not a feature supported in Drupal Core.</p>
                   </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>This is not a feature supported in Drupal Core.</p>
+                  </li>
                 </ul>
               </td>
             </tr>
@@ -2540,7 +2605,7 @@
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Does Not Support</p>
+                    <p>Not Applicable</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2569,15 +2634,6 @@
                   </li>
                   <li>
                     <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>
-                      There is no documentation on how to properly convey
-                      pre-recorded audio descriptions.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
                     <p>
@@ -2601,10 +2657,48 @@
                 </a>
               </td>
               <td>
-                <ul class="component-level-count-0"></ul>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Electronic Documents</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Software</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                </ul>
               </td>
               <td>
-                <ul class="component-level-count-0"></ul>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>No known problems with orientation.</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>No known problems with orientation.</p>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr id="1.3.5">
@@ -2619,10 +2713,48 @@
                 </a>
               </td>
               <td>
-                <ul class="component-level-count-0"></ul>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Electronic Documents</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Software</strong>:
+                    </span>
+                    <p>Not Applicable</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>Supports</p>
+                  </li>
+                </ul>
               </td>
               <td>
-                <ul class="component-level-count-0"></ul>
+                <ul class="component-level-count-4">
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>No known problems with input purpose.</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Authoring Tool</strong>:
+                    </span>
+                    <p>No known problems with input purpose.</p>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr id="1.4.3">
@@ -2676,20 +2808,14 @@
                       form labels, disabled form elements, and some dialogs
                       require additional contrast to meet 1.4.3 requirements.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag143"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag143"
                         >Outstanding issues</a
                       >.
                     </p>
                     <p>
-                      All open WCAG 1.4.3 issue(s): 3266299, 3040673, 3231744,
-                      3200635, 2756483, 2725539, 3076153
+                      All open WCAG 1.4.3 issue(s): 3271652, 3318394, 3266299,
+                      3040673, 3231744, 3200635, 2756483, 2725539, 3076153
                     </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>The docs have sufficient contrast.</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2699,7 +2825,7 @@
                       Generally meets requirements. Form elements described in
                       the web section affect both user and author interfaces.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag143"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag143"
                         >Outstanding issues</a
                       >.
                     </p>
@@ -2756,17 +2882,11 @@
                       Generally support with a minor exception with focus
                       outlines.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag144"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag144"
                         >Outstanding issues</a
                       >.
                     </p>
-                    <p>All WCAG 1.4.4 issues: 3068698, 3238618</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>The docs are accessible up to 200%.</p>
+                    <p>All WCAG 1.4.4 issue(s): 3068698, 3238618, 2384203</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -2776,7 +2896,7 @@
                       Generally support with some minor exception with limited
                       horizontal space.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag144"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag144"
                         >Outstanding issues</a
                       >.
                     </p>
@@ -2890,13 +3010,13 @@
                       Generally meets. Some issues with long words, responsive
                       tables, resizing menus, and wide screen layout.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1410"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1410"
                         >Outstanding issues</a
                       >.
                     </p>
                     <p>
-                      All open WCAG 1.4.10 issues: 3159896, 3177475, 2280035,
-                      3191806, 2574721, 3164587.
+                      All open WCAG 1.4.10 issue(s): 2313471, 3159896, 3177475,
+                      2280035, 3191806, 2574721, 3164587
                     </p>
                   </li>
                   <li>
@@ -2909,7 +3029,7 @@
                       some minor exception with the action links on the modules
                       page.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1410"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1410"
                         >Outstanding issues</a
                       >.
                     </p>
@@ -2966,13 +3086,14 @@
                       Generally meets. There are still some images that need to
                       have their contrast increased.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1411"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1411"
                         >Outstanding issues</a
                       >.
                     </p>
                     <p>
-                      All open WCAG 1.4.11 issues: 3097907, 2910102, 3171726,
-                      3272266, 3037742
+                      All open WCAG 1.4.11 issue(s): 3273806, 3270130, 3269420,
+                      3269342, 3277262, 2990766, 3097907, 2910102, 3171726,
+                      3272266
                     </p>
                   </li>
                   <li>
@@ -2986,7 +3107,7 @@
                     </p>
                     <p>
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1411"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1411"
                         >Outstanding issues</a
                       >.
                     </p>
@@ -3037,17 +3158,29 @@
                 <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
+                      ><strong>Web</strong>:
+                    </span>
+                    <p>
+                      All known related issues are tied to the admin interface.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1412"
+                        >Outstanding issues</a
+                      >.
+                    </p>
+                    <p>All open WCAG 1.4.12 issue(s): 2919837</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
                     <p>
                       Generally supports. There is a known issue with off-canvas
                       dialogs.
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1411"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1412"
                         >Outstanding issues</a
                       >.
                     </p>
-                    <p>All open WCAG 1.4.12 issues: 2919837</p>
                   </li>
                 </ul>
               </td>
@@ -3160,15 +3293,6 @@
                   </li>
                   <li>
                     <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>
-                      There is more than one way to locate a Web page within the
-                      CMS.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
                     <p>
@@ -3214,7 +3338,7 @@
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Partially Supports</p>
                   </li>
                 </ul>
               </td>
@@ -3224,13 +3348,32 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>Generally there is very good support.</p>
+                    <p>
+                      Generally there is very good support.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag246"
+                        >Outstanding issues</a
+                      >
+                      are for the admin interface.
+                    </p>
+                    <p>
+                      All open WCAG 2.4.6 issue(s): 3232222, 3277785, 2614950,
+                      3333401, 3293673
+                    </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Generally good.</p>
+                    <p>
+                      Generally good.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag246"
+                        >Outstanding issues</a
+                      >
+                      are tied to header for the pager template can be outside
+                      the document hierarchy order.
+                    </p>
                   </li>
                 </ul>
               </td>
@@ -3281,7 +3424,16 @@
                       ><strong>Web</strong>:
                     </span>
                     <p>
-                      Focus elements are well established for the front-end.
+                      Generally there is very good support.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag247"
+                        >Outstanding issues</a
+                      >.
+                    </p>
+                    <p>
+                      All open WCAG 2.4.7 issue(s): 2990588, 2822778, 3273054,
+                      3200584, 3191727, 3270230, 3091534, 3335411, 3302103,
+                      3273099
                     </p>
                   </li>
                   <li>
@@ -3289,15 +3441,15 @@
                       ><strong>Authoring Tool</strong>:
                     </span>
                     <p>
-                      Generally supports. There is a known
+                      Generally supports. There is an
                       <a
-                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag247"
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag247"
                         >outstanding issues</a
                       >. A block can be added with layout builder that stops
                       authors from escaping focus. The image style page also has
-                      a hidden focus element.
+                      a hidden focus element. There are issues with modal popups
+                      in Views and with Toolbar focus styles.
                     </p>
-                    <p>All open WCAG 2.47 issues: 3302103, 3273099</p>
                   </li>
                 </ul>
               </td>
@@ -3349,9 +3501,18 @@
                     </span>
                     <p>
                       Multilingual sites have language switchers with proper
-                      semantics. Unfotunately support is lacking for
-                      multi-lingual search 2992894 as well as both the
-                      Filesystem 3163915 &amp; Views components 2496223.
+                      semantics. Unfortunately support is lacking for
+                      multilingual search as well as both the Filesystem and
+                      Views components.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag312"
+                        >Outstanding issues</a
+                      >.
+                    </p>
+                    <p>
+                      All open WCAG 3.1.2 issue(s): 3300835, 3361370, 3361375,
+                      3362791, 2036277, 3300836, 3042984, 82751, 3163915,
+                      3049122
                     </p>
                   </li>
                   <li>
@@ -3363,6 +3524,11 @@
                       accessibility. To support the Language of Parts for
                       authors, a button can be added to simplify the process of
                       adding language specific phrases.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag312"
+                        >Outstanding issues</a
+                      >. There are untranslatable fields in parts of the
+                      administration interface that are known.
                     </p>
                   </li>
                 </ul>
@@ -3380,7 +3546,7 @@
                 </a>
               </td>
               <td>
-                <ul class="component-level-count-3">
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3391,18 +3557,24 @@
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Not Applicable</p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Partially Supports</p>
+                  </li>
+                  <li>
+                    <span class="component-level-label"
+                      ><strong>Software</strong>:
+                    </span>
+                    <p>Not Applicable</p>
                   </li>
                 </ul>
               </td>
               <td>
-                <ul class="component-level-count-3">
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3410,15 +3582,14 @@
                     <p>
                       Drupal's menu structure allows for consistent navigation
                       across the site.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag323"
+                        >Outstanding issues</a
+                      >. There are some minor issues with mobile in Olivero.
                     </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
                     <p>
-                      Drupal's menu structure allows for consistent navigation
-                      across the site.
+                      All open WCAG 3.2.3 issue(s): 3129257, 3209129, 3350947,
+                      3084554, 2895388
                     </p>
                   </li>
                   <li>
@@ -3428,6 +3599,11 @@
                     <p>
                       Drupal's menu structure allows for consistent navigation
                       across the site.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag323"
+                        >Outstanding issues</a
+                      >. There are issues with scrolling with layout builder and
+                      with the Modules Uninstall filter.
                     </p>
                   </li>
                 </ul>
@@ -3456,7 +3632,7 @@
                     <span class="component-level-label"
                       ><strong>Electronic Documents</strong>:
                     </span>
-                    <p>Supports</p>
+                    <p>Not Applicable</p>
                   </li>
                   <li>
                     <span class="component-level-label"
@@ -3471,15 +3647,6 @@
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
-                    </span>
-                    <p>
-                      Components in Drupal that have the same functionality are
-                      identified consistently.
-                    </p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
                     </span>
                     <p>
                       Components in Drupal that have the same functionality are
@@ -3611,12 +3778,6 @@
                   </li>
                   <li>
                     <span class="component-level-label"
-                      ><strong>Electronic Documents</strong>:
-                    </span>
-                    <p>Documentation could be improved.</p>
-                  </li>
-                  <li>
-                    <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
                     <p>
@@ -3672,15 +3833,305 @@
                     <span class="component-level-label"
                       ><strong>Web</strong>:
                     </span>
-                    <p>No known problems with status messages.</p>
+                    <p>
+                      No known problems with status messages.
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag413"
+                        >Outstanding issues</a
+                      >.
+                    </p>
+                    <p>
+                      All open WCAG 4.1.3 issue(s): 2973116, 2893663, 3035435,
+                      3159933, 2973140
+                    </p>
                   </li>
                   <li>
                     <span class="component-level-label"
                       ><strong>Authoring Tool</strong>:
                     </span>
-                    <p>No known problems with status messages.</p>
+                    <p>
+                      <a
+                        href="https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_11.&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag413"
+                        >Outstanding issues</a
+                      >
+                      are known after enabling/disabling a View, with the
+                      dropdown buttons, and with progress messages.
+                    </p>
                   </li>
                 </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 id="success_criteria_level_aaa">
+          Table 3: Success Criteria, Level AAA
+          <a href="#success_criteria_level_aaa" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
+                <path
+                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
+        </h3>
+
+        <div
+          id="success_criteria_level_aaa-notes"
+          class="chapter-notes-section"
+        >
+          Notes:
+          <p>
+            Where possible the Drupal community strives to exceed AA compliance.
+          </p>
+        </div>
+
+        <h2 id="508">
+          Revised Section 508 Report
+          <a href="#508" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
+                <path
+                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
+        </h2>
+
+        <h3 id="functional_performance_criteria">
+          Chapter 3: Functional Performance Criteria (FPC)
+          <a href="#functional_performance_criteria" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
+                <path
+                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
+        </h3>
+
+        <div
+          id="functional_performance_criteria-notes"
+          class="chapter-notes-section"
+        >
+          Notes:
+          <p>Not applicable.</p>
+        </div>
+
+        <h3 id="hardware">
+          Chapter 4: Hardware
+          <a href="#hardware" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
+                <path
+                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
+        </h3>
+
+        <div id="hardware-notes" class="chapter-notes-section">
+          Notes:
+          <p>
+            Drupal is a web application. Hardware accessibility criteria is not
+            applicable.
+          </p>
+        </div>
+
+        <h3 id="software">
+          Chapter 5: Software
+          <a href="#software" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
+                <path
+                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
+        </h3>
+
+        <div id="software-notes" class="chapter-notes-section">
+          Notes:
+          <p>
+            Drupal is a web application. Software accessibility criteria is not
+            applicable.
+          </p>
+        </div>
+
+        <h3 id="support_documentation_and_services">
+          Chapter 6: Support Documentation and Services
+          <a href="#support_documentation_and_services" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
+                <path
+                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
+        </h3>
+
+        <div
+          id="support_documentation_and_services-notes"
+          class="chapter-notes-section"
+        >
+          Notes:
+          <p>
+            Drupal is a web application and all support documentation is
+            delivered through the web. Additional documentation and services are
+            not available.
+          </p>
+        </div>
+
+        <div id="support_documentation_and_services-summary">
+          <p>
+            Conformance to the 5 criteria listed below is distributed as
+            follows:
+          </p>
+          <ul>
+            <li>0 supported</li>
+            <li>0 partially supported</li>
+            <li>0 not supported</li>
+            <li>4 not applicable</li>
+          </ul>
+        </div>
+
+        <table class="usa-table">
+          <thead>
+            <tr>
+              <th>Criteria</th>
+              <th>Conformance Level</th>
+              <th>Remarks and Explanations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="602.2">
+              <td>
+                <a
+                  href="https://www.access-board.gov/ict/#602.2"
+                  target="_blank"
+                >
+                  602.2 Accessibility and Compatibility Features<span
+                    class="usa-sr-only"
+                  >
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"></span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="602.4">
+              <td>
+                <a
+                  href="https://www.access-board.gov/ict/#602.4"
+                  target="_blank"
+                >
+                  602.4 Alternate Formats for Non-Electronic Support
+                  Documentation<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"></span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="603.2">
+              <td>
+                <a
+                  href="https://www.access-board.gov/ict/#603.2"
+                  target="_blank"
+                >
+                  603.2 Information on Accessibility and Compatibility
+                  Features<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"></span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="603.3">
+              <td>
+                <a
+                  href="https://www.access-board.gov/ict/#603.3"
+                  target="_blank"
+                >
+                  603.3 Accommodation of Communication Needs<span
+                    class="usa-sr-only"
+                  >
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-1">
+                  <li>
+                    <span class="component-level-label"></span>
+                    <p>Not Applicable</p>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul class="component-level-count-1"></ul>
+              </td>
+            </tr>
+            <tr id="602.3">
+              <td>
+                <a
+                  href="https://www.access-board.gov/ict/#602.3"
+                  target="_blank"
+                >
+                  602.3 Electronic Support Documentation<span
+                    class="usa-sr-only"
+                  >
+                    (opens in a new window or tab)</span
+                  >
+                </a>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
+              </td>
+              <td>
+                <ul class="component-level-count-0"></ul>
               </td>
             </tr>
           </tbody>
@@ -3721,8 +4172,8 @@
           </a>
         </h2>
         <a
-          href="https://github.com/CivicActions/openacr/blob/main/openacr/drupal-10-15.yaml"
-          >https://github.com/CivicActions/openacr/blob/main/openacr/drupal-10-15.yaml</a
+          href="https://github.com/CivicActions/openacr/blob/main/openacr/drupal-10-16.yaml"
+          >https://github.com/CivicActions/openacr/blob/main/openacr/drupal-10-16.yaml</a
         >
         <h2 id="feedback">
           Feedback
@@ -3740,6 +4191,23 @@
         <a href="https://www.drupal.org/project/issues/drupal"
           >https://www.drupal.org/project/issues/drupal</a
         >
+
+        <h2 id="related-openacrs">
+          Related OpenACRs
+          <a href="#related-openacrs" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
+                <path
+                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
+        </h2>
+        <ul>
+          <li><a href=""> (secondary)</a></li>
+        </ul>
       </div>
     </main>
     <footer class="usa-footer usa-footer usa-footer--slim">

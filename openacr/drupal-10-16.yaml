@@ -29,7 +29,7 @@ legal_disclaimer: >-
   web application at the time of the review and does not represent a
   legally-binding claim. Please contact us to report any accessibility errors or
   conformance claim errors for re-evaluation and correction, if necessary.
-repository: "https://github.com/GSA/openacr/blob/main/openacr/drupal-10-16.yaml"
+repository: "https://github.com/CivicActions/openacr/blob/main/openacr/drupal-10-16.yaml"
 feedback: "https://www.drupal.org/project/issues/drupal"
 license: GPL-2.0-or-later
 related_openacrs:

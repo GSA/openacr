@@ -52,8 +52,8 @@
     "generate-WCAG21508-catalog": "npx ts-node src/librarian.ts -c WCAG21508",
     "a11y-test": "pa11y-ci openacr/*.html output/*.html tests/examples/*.html",
     "generate-license-report": "license-checker-rseidelsohn --relativeLicensePath --relativeModulePath > license/licenses.txt",
-    "generate-drupal-10-html": "npx ts-node src/openacr.ts output -f openacr/drupal-10-15.yaml -c catalog/2.4-edition-wcag-2.1-en.yaml -o openacr/drupal-10-15.html",
-    "generate-drupal-10-simple": "npx ts-node src/openacr.ts output -f openacr/drupal-10-15.yaml -c catalog/2.4-edition-wcag-2.1-en.yaml -o openacr/drupal-10-15-simple.html -t templates/openacr-simple-html-0.1.0.handlebars"
+    "generate-drupal-10-html": "npx ts-node src/openacr.ts output -f openacr/drupal-10-16.yaml -c catalog/2.4-edition-wcag-2.1-en.yaml -o openacr/drupal-10-16.html",
+    "generate-drupal-10-simple": "npx ts-node src/openacr.ts output -f openacr/drupal-10-16.yaml -c catalog/2.4-edition-wcag-2.1-en.yaml -o openacr/drupal-10-16-simple.html -t templates/openacr-simple-html-0.1.0.handlebars"
   },
   "main": "./dist/openacr.js",
   "bin": {
