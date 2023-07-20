@@ -57,12 +57,14 @@ The terms used in the Conformance Level information are defined as follows:
 
 ### Table 1: Success Criteria, Level A
 
-Conformance to the 25 criteria listed below is distributed as follows:
+Conformance to the 25 criteria listed below is distributed within each category as follows:
 
-- 45 supported
-- 1 partially supported
-- 0 not supported
-- 54 not applicable
+| Conformance Level  | Web | Electronic Documents | Software | Authoring Tool |
+| ------------------ | --- | -------------------- | -------- | -------------- |
+| Supports           | 25  | 20                   | 0        | 0              |
+| Partially Supports | 0   | 1                    | 0        | 0              |
+| Does Not Support   | 0   | 0                    | 0        | 0              |
+| Not Applicable     | 0   | 4                    | 25       | 25             |
 
 | Criteria                                                                                                           | Conformance Level                                                                                                                                                         | Remarks and Explanations                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -94,12 +96,14 @@ Conformance to the 25 criteria listed below is distributed as follows:
 
 ### Table 2: Success Criteria, Level AA
 
-Conformance to the 13 criteria listed below is distributed as follows:
+Conformance to the 13 criteria listed below is distributed within each category as follows:
 
-- 31 supported
-- 0 partially supported
-- 0 not supported
-- 18 not applicable
+| Conformance Level  | Web | Electronic Documents | Software | Authoring Tool |
+| ------------------ | --- | -------------------- | -------- | -------------- |
+| Supports           | 13  | 10                   | 0        | 8              |
+| Partially Supports | 0   | 0                    | 0        | 0              |
+| Does Not Support   | 0   | 0                    | 0        | 0              |
+| Not Applicable     | 0   | 3                    | 12       | 3              |
 
 | Criteria                                                                                                      | Conformance Level                                                                                                                                               | Remarks and Explanations |
 | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
@@ -119,12 +123,14 @@ Conformance to the 13 criteria listed below is distributed as follows:
 
 ### Table 3: Success Criteria, Level AAA
 
-Conformance to the 23 criteria listed below is distributed as follows:
+Conformance to the 23 criteria listed below is distributed within each category as follows:
 
-- 0 supported
-- 0 partially supported
-- 0 not supported
-- 0 not applicable
+| Conformance Level  | Web |
+| ------------------ | --- |
+| Supports           | 0   |
+| Partially Supports | 0   |
+| Does Not Support   | 0   |
+| Not Applicable     | 0   |
 
 | Criteria                                                                                                | Conformance Level                         | Remarks and Explanations |
 | ------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ------------------------ |
@@ -156,12 +162,14 @@ Conformance to the 23 criteria listed below is distributed as follows:
 
 ### Chapter 3: Functional Performance Criteria (FPC)
 
-Conformance to the 9 criteria listed below is distributed as follows:
+Conformance to the 9 criteria listed below is distributed within each category as follows:
 
-- 8 supported
-- 1 partially supported
-- 0 not supported
-- 0 not applicable
+| Conformance Level  | All |
+| ------------------ | --- |
+| Supports           | 8   |
+| Partially Supports | 1   |
+| Does Not Support   | 0   |
+| Not Applicable     | 0   |
 
 | Criteria                                                                                                  | Conformance Level                     | Remarks and Explanations                                                                                                  |
 | --------------------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |

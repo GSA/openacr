@@ -109,6 +109,7 @@
 
       table {
         border-collapse: collapse;
+        margin: 10px 0;
       }
       th,
       td {
@@ -124,9 +125,7 @@
           Report
         </h1>
 
-        <div class="catalog-section">
-          Based on VPAT® 2.4 WCAG 2.1 and Revised Section 508 Edition
-        </div>
+        <div class="catalog-section">Based on VPAT® 2.4</div>
 
         <div class="product-section">
           <h2 id="name-of-product-version">
@@ -342,24 +341,6 @@
                   </ul>
                 </td>
               </tr>
-              <tr>
-                <td>
-                  <a href="https://www.access-board.gov/ict/" target="_blank"
-                    >Revised Section 508 standards published January 18, 2017
-                    and corrected January 22, 2018<span class="usa-sr-only">
-                      (opens in a new window or tab)</span
-                    ></a
-                  >
-                </td>
-                <td>
-                  <ul>
-                    <li>Chapter 3: Functional Performance Criteria (FPC)</li>
-                    <li>Chapter 4: Hardware</li>
-                    <li>Chapter 5: Software</li>
-                    <li>Chapter 6: Support Documentation and Services</li>
-                  </ul>
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
@@ -450,16 +431,49 @@
         </div>
 
         <div id="success_criteria_level_a-summary">
-          <p>
-            Conformance to the 30 criteria listed below is distributed as
-            follows:
-          </p>
-          <ul>
-            <li>32 supported</li>
-            <li>20 partially supported</li>
-            <li>0 not supported</li>
-            <li>68 not applicable</li>
-          </ul>
+          <table class="usa-table">
+            <caption>
+              Conformance to the 30 criteria listed below is distributed within
+              each category as follows:
+            </caption>
+            <thead>
+              <tr>
+                <th>Conformance Level</th>
+                <th>Web</th>
+                <th>Electronic Documents</th>
+                <th>Software</th>
+                <th>Authoring Tool</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Supports</td>
+              <td>16</td>
+              <td>0</td>
+              <td>0</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>Partially Supports</td>
+              <td>10</td>
+              <td>0</td>
+              <td>0</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Does Not Support</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Not Applicable</td>
+              <td>4</td>
+              <td>30</td>
+              <td>30</td>
+              <td>4</td>
+            </tr>
+          </table>
         </div>
 
         <table class="usa-table">
@@ -2503,16 +2517,49 @@
         </h3>
 
         <div id="success_criteria_level_aa-summary">
-          <p>
-            Conformance to the 20 criteria listed below is distributed as
-            follows:
-          </p>
-          <ul>
-            <li>24 supported</li>
-            <li>13 partially supported</li>
-            <li>2 not supported</li>
-            <li>40 not applicable</li>
-          </ul>
+          <table class="usa-table">
+            <caption>
+              Conformance to the 20 criteria listed below is distributed within
+              each category as follows:
+            </caption>
+            <thead>
+              <tr>
+                <th>Conformance Level</th>
+                <th>Web</th>
+                <th>Electronic Documents</th>
+                <th>Software</th>
+                <th>Authoring Tool</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Supports</td>
+              <td>12</td>
+              <td>1</td>
+              <td>0</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>Partially Supports</td>
+              <td>6</td>
+              <td>0</td>
+              <td>0</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>Does Not Support</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Not Applicable</td>
+              <td>1</td>
+              <td>19</td>
+              <td>19</td>
+              <td>1</td>
+            </tr>
+          </table>
         </div>
 
         <table class="usa-table">
@@ -3887,255 +3934,6 @@
             Where possible the Drupal community strives to exceed AA compliance.
           </p>
         </div>
-
-        <h2 id="508">
-          Revised Section 508 Report
-          <a href="#508" class="header-anchor">
-            <span class="anchor-icon" aria-hidden="true">
-              <svg focusable="false" aria-hidden="true" class="icon-link">
-                <path
-                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                />
-              </svg>
-            </span>
-            <span class="visuallyhidden">Anchor link</span>
-          </a>
-        </h2>
-
-        <h3 id="functional_performance_criteria">
-          Chapter 3: Functional Performance Criteria (FPC)
-          <a href="#functional_performance_criteria" class="header-anchor">
-            <span class="anchor-icon" aria-hidden="true">
-              <svg focusable="false" aria-hidden="true" class="icon-link">
-                <path
-                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                />
-              </svg>
-            </span>
-            <span class="visuallyhidden">Anchor link</span>
-          </a>
-        </h3>
-
-        <div
-          id="functional_performance_criteria-notes"
-          class="chapter-notes-section"
-        >
-          Notes:
-          <p>Not applicable.</p>
-        </div>
-
-        <h3 id="hardware">
-          Chapter 4: Hardware
-          <a href="#hardware" class="header-anchor">
-            <span class="anchor-icon" aria-hidden="true">
-              <svg focusable="false" aria-hidden="true" class="icon-link">
-                <path
-                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                />
-              </svg>
-            </span>
-            <span class="visuallyhidden">Anchor link</span>
-          </a>
-        </h3>
-
-        <div id="hardware-notes" class="chapter-notes-section">
-          Notes:
-          <p>
-            Drupal is a web application. Hardware accessibility criteria is not
-            applicable.
-          </p>
-        </div>
-
-        <h3 id="software">
-          Chapter 5: Software
-          <a href="#software" class="header-anchor">
-            <span class="anchor-icon" aria-hidden="true">
-              <svg focusable="false" aria-hidden="true" class="icon-link">
-                <path
-                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                />
-              </svg>
-            </span>
-            <span class="visuallyhidden">Anchor link</span>
-          </a>
-        </h3>
-
-        <div id="software-notes" class="chapter-notes-section">
-          Notes:
-          <p>
-            Drupal is a web application. Software accessibility criteria is not
-            applicable.
-          </p>
-        </div>
-
-        <h3 id="support_documentation_and_services">
-          Chapter 6: Support Documentation and Services
-          <a href="#support_documentation_and_services" class="header-anchor">
-            <span class="anchor-icon" aria-hidden="true">
-              <svg focusable="false" aria-hidden="true" class="icon-link">
-                <path
-                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                />
-              </svg>
-            </span>
-            <span class="visuallyhidden">Anchor link</span>
-          </a>
-        </h3>
-
-        <div
-          id="support_documentation_and_services-notes"
-          class="chapter-notes-section"
-        >
-          Notes:
-          <p>
-            Drupal is a web application and all support documentation is
-            delivered through the web. Additional documentation and services are
-            not available.
-          </p>
-        </div>
-
-        <div id="support_documentation_and_services-summary">
-          <p>
-            Conformance to the 5 criteria listed below is distributed as
-            follows:
-          </p>
-          <ul>
-            <li>0 supported</li>
-            <li>0 partially supported</li>
-            <li>0 not supported</li>
-            <li>4 not applicable</li>
-          </ul>
-        </div>
-
-        <table class="usa-table">
-          <thead>
-            <tr>
-              <th>Criteria</th>
-              <th>Conformance Level</th>
-              <th>Remarks and Explanations</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr id="602.2">
-              <td>
-                <a
-                  href="https://www.access-board.gov/ict/#602.2"
-                  target="_blank"
-                >
-                  602.2 Accessibility and Compatibility Features<span
-                    class="usa-sr-only"
-                  >
-                    (opens in a new window or tab)</span
-                  >
-                </a>
-              </td>
-              <td>
-                <ul class="component-level-count-1">
-                  <li>
-                    <span class="component-level-label"></span>
-                    <p>Not Applicable</p>
-                  </li>
-                </ul>
-              </td>
-              <td>
-                <ul class="component-level-count-1"></ul>
-              </td>
-            </tr>
-            <tr id="602.4">
-              <td>
-                <a
-                  href="https://www.access-board.gov/ict/#602.4"
-                  target="_blank"
-                >
-                  602.4 Alternate Formats for Non-Electronic Support
-                  Documentation<span class="usa-sr-only">
-                    (opens in a new window or tab)</span
-                  >
-                </a>
-              </td>
-              <td>
-                <ul class="component-level-count-1">
-                  <li>
-                    <span class="component-level-label"></span>
-                    <p>Not Applicable</p>
-                  </li>
-                </ul>
-              </td>
-              <td>
-                <ul class="component-level-count-1"></ul>
-              </td>
-            </tr>
-            <tr id="603.2">
-              <td>
-                <a
-                  href="https://www.access-board.gov/ict/#603.2"
-                  target="_blank"
-                >
-                  603.2 Information on Accessibility and Compatibility
-                  Features<span class="usa-sr-only">
-                    (opens in a new window or tab)</span
-                  >
-                </a>
-              </td>
-              <td>
-                <ul class="component-level-count-1">
-                  <li>
-                    <span class="component-level-label"></span>
-                    <p>Not Applicable</p>
-                  </li>
-                </ul>
-              </td>
-              <td>
-                <ul class="component-level-count-1"></ul>
-              </td>
-            </tr>
-            <tr id="603.3">
-              <td>
-                <a
-                  href="https://www.access-board.gov/ict/#603.3"
-                  target="_blank"
-                >
-                  603.3 Accommodation of Communication Needs<span
-                    class="usa-sr-only"
-                  >
-                    (opens in a new window or tab)</span
-                  >
-                </a>
-              </td>
-              <td>
-                <ul class="component-level-count-1">
-                  <li>
-                    <span class="component-level-label"></span>
-                    <p>Not Applicable</p>
-                  </li>
-                </ul>
-              </td>
-              <td>
-                <ul class="component-level-count-1"></ul>
-              </td>
-            </tr>
-            <tr id="602.3">
-              <td>
-                <a
-                  href="https://www.access-board.gov/ict/#602.3"
-                  target="_blank"
-                >
-                  602.3 Electronic Support Documentation<span
-                    class="usa-sr-only"
-                  >
-                    (opens in a new window or tab)</span
-                  >
-                </a>
-              </td>
-              <td>
-                <ul class="component-level-count-0"></ul>
-              </td>
-              <td>
-                <ul class="component-level-count-0"></ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
 
         <h2 id="legal-disclaimer">
           Legal Disclaimer

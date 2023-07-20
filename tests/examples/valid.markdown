@@ -56,12 +56,15 @@ The terms used in the Conformance Level information are defined as follows:
 ### Table 1: Success Criteria, Level A
 
 
-Conformance to the 2 criteria listed below is distributed as follows:
+Conformance to the 2 criteria listed below is distributed within each category as follows:
 
-- 3 supported
-- 2 partially supported
-- 1 not supported
-- 2 not applicable
+| Conformance Level | Web | Electronic Documents | Software | Authoring Tool |
+| --- | --- | --- | --- | --- |
+| Supports | 1 | 1 | 0 | 1 |
+| Partially Supports | 1 | 1 | 0 | 0 |
+| Does Not Support | 0 | 0 | 0 | 1 |
+| Not Applicable | 0 | 0 | 2 | 0 |
+
 
 | Criteria | Conformance Level | Remarks and Explanations |
 | --- | --- | --- |

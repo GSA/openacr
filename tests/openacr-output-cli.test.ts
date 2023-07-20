@@ -111,6 +111,58 @@ describe("OpenACR CLI test output", () => {
     });
   });
 
+  it("when passed example file with one missing component and valid catalog file should return valid output message", () => {
+    const valid = spawn(
+      cmd,
+      options.concat(
+        "tests/examples/valid-missing-one-component.yaml",
+        "-c",
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml",
+        "-o",
+        "output/valid-missing-one-component.html"
+      )
+    );
+    const chunks = [];
+
+    valid.stdout.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    valid.stdout.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal(
+        "Valid and output generated at output/valid-missing-one-component.html!\n"
+      );
+    });
+  });
+
+  it("when passed example file with one missing component and valid catalog file should return valid output message, markdown example", () => {
+    const valid = spawn(
+      cmd,
+      options.concat(
+        "tests/examples/valid-missing-one-component.yaml",
+        "-c",
+        "catalog/2.4-edition-wcag-2.0-508-en.yaml",
+        "-o",
+        "output/valid-missing-one-component.markdown"
+      )
+    );
+    const chunks = [];
+
+    valid.stdout.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    valid.stdout.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal(
+        "Valid and output generated at output/valid-missing-one-component.markdown!\n"
+      );
+    });
+  });
+
   it("when passed file that has components with missing adherence and valid catalog file should return valid output message", () => {
     const valid = spawn(
       cmd,

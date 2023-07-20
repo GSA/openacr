@@ -45,6 +45,20 @@ function createOutput(data, catalogData, templateType, templateString) {
             }
         }
     });
+    const getCatalogComponentLabel = (componentId) => {
+        if (catalogData.components) {
+            for (const component of catalogData.components) {
+                if (component.id === componentId) {
+                    if (component.label != "") {
+                        return component.label;
+                    }
+                    else {
+                        return "All";
+                    }
+                }
+            }
+        }
+    };
     handlebars_1.default.registerHelper("catalogComponentLabel", function (componentId) {
         if (catalogData.components) {
             for (const component of catalogData.components) {
@@ -61,7 +75,7 @@ function createOutput(data, catalogData, templateType, templateString) {
             }
         }
     });
-    handlebars_1.default.registerHelper("levelLabel", function (level) {
+    const getLevelLabel = (level) => {
         if (catalogData.terms) {
             for (const terms of catalogData.terms) {
                 if (terms.id === level) {
@@ -71,7 +85,8 @@ function createOutput(data, catalogData, templateType, templateString) {
         }
         // If a level is provided but has no matching terms, provide a default.
         return "Not Applicable";
-    });
+    };
+    handlebars_1.default.registerHelper("levelLabel", getLevelLabel);
     handlebars_1.default.registerHelper("standardsIncluded", function (standardChapters) {
         const result = [];
         for (const standardChapter of standardChapters) {
@@ -145,42 +160,88 @@ function createOutput(data, catalogData, templateType, templateString) {
         return levelCount;
     });
     handlebars_1.default.registerHelper("progressPerChapter", function (criterias) {
-        let supportCount = 0;
-        let partiallySupportCount = 0;
-        let doesNotSupportCount = 0;
-        let notApplicableCount = 0;
+        let tableHeader = "";
+        let tableHeaderMarkdownUnderline = "";
+        const tableCounts = [];
+        for (const component of criterias[0].components) {
+            if (templateType === "html") {
+                tableHeader += `<th>${getCatalogComponentLabel(component.name)}</th>`;
+            }
+            else {
+                tableHeader += ` | ${getCatalogComponentLabel(component.name)}`;
+                tableHeaderMarkdownUnderline += " | ---";
+            }
+            tableCounts[component.name] = [];
+        }
         for (const criteria of criterias) {
             if (criteria.components) {
                 for (const component of criteria.components) {
-                    if (component.adherence && component.adherence.level === "supports") {
-                        supportCount = supportCount + 1;
+                    if (component.adherence) {
+                        if (tableCounts[component.name] === undefined) {
+                            if (templateType === "html") {
+                                tableHeader += `<th>${getCatalogComponentLabel(component.name)}</th>`;
+                            }
+                            else {
+                                tableHeader += ` | ${getCatalogComponentLabel(component.name)}`;
+                                tableHeaderMarkdownUnderline += " | ---";
+                            }
+                            tableCounts[component.name] = [];
+                        }
+                        if (tableCounts[component.name][component.adherence.level]) {
+                            tableCounts[component.name][component.adherence.level] += 1;
+                        }
+                        else {
+                            tableCounts[component.name][component.adherence.level] = 1;
+                        }
                     }
-                    else if (component.adherence &&
-                        component.adherence.level === "partially-supports") {
-                        partiallySupportCount = partiallySupportCount + 1;
+                }
+            }
+        }
+        let tableBody = "";
+        if (catalogData.terms) {
+            for (const term of catalogData.terms) {
+                if (term.label != "" && term.id != "not-evaluated") {
+                    if (templateType === "html") {
+                        tableBody += `<tr><td>${getLevelLabel(term.id)}</td>`;
                     }
-                    else if (component.adherence &&
-                        component.adherence.level === "does-not-support") {
-                        doesNotSupportCount = doesNotSupportCount + 1;
+                    else {
+                        tableBody += `| ${getLevelLabel(term.id)}`;
                     }
-                    else if (component.adherence &&
-                        component.adherence.level === "not-applicable") {
-                        notApplicableCount = notApplicableCount + 1;
+                    for (const component in tableCounts) {
+                        if (templateType === "html") {
+                            if (tableCounts[component] && tableCounts[component][term.id]) {
+                                tableBody += `<td>${tableCounts[component][term.id]}</td>`;
+                            }
+                            else {
+                                tableBody += "<td>0</td>";
+                            }
+                        }
+                        else {
+                            if (tableCounts[component] && tableCounts[component][term.id]) {
+                                tableBody += ` | ${tableCounts[component][term.id]}`;
+                            }
+                            else {
+                                tableBody += " | 0";
+                            }
+                        }
+                    }
+                    if (templateType === "html") {
+                        tableBody += "</tr>";
+                    }
+                    else {
+                        tableBody += ` |
+`;
                     }
                 }
             }
         }
         if (templateType === "html") {
-            return new handlebars_1.default.SafeString(`<li>${supportCount} supported</li>
-        <li>${partiallySupportCount} partially supported</li>
-        <li>${doesNotSupportCount} not supported</li>
-        <li>${notApplicableCount} not applicable</li>`);
+            return new handlebars_1.default.SafeString(`<thead><tr><th>Conformance Level</th>${tableHeader}</tr></thead>${tableBody}`);
         }
         else {
-            return `- ${supportCount} supported
-- ${partiallySupportCount} partially supported
-- ${doesNotSupportCount} not supported
-- ${notApplicableCount} not applicable`;
+            return `| Conformance Level${tableHeader} |
+| ---${tableHeaderMarkdownUnderline} |
+${tableBody}`;
         }
     });
     handlebars_1.default.registerHelper("sanitizeMarkdown", function (text) {
