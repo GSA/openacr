@@ -32,25 +32,25 @@ if (argv.catalog) {
   const catalog = argv.catalog;
 
   // Load data files.
-  let wcag20 = yaml.load(
+  const wcag20 = yaml.load(
     fs.readFileSync("./catalog/data/wcag-2.0.yaml").toString()
   );
-  let wcag21 = yaml.load(
+  const wcag21 = yaml.load(
     fs.readFileSync("./catalog/data/wcag-2.1.yaml").toString()
   );
-  let wcag22 = yaml.load(
+  const wcag22 = yaml.load(
     fs.readFileSync("./catalog/data/wcag-2.2.yaml").toString()
   );
-  let section508 = yaml.load(
+  const section508 = yaml.load(
     fs.readFileSync("./catalog/data/508.yaml").toString()
   );
-  let en301549 = yaml.load(
+  const en301549 = yaml.load(
     fs.readFileSync("./catalog/data/en-301-549.yaml").toString()
   );
-  let components = yaml.load(
+  const components = yaml.load(
     fs.readFileSync("./catalog/data/components.yaml").toString()
   );
-  let terms = yaml.load(
+  const terms = yaml.load(
     fs.readFileSync("./catalog/data/terms.yaml").toString()
   );
 

@@ -4,8 +4,8 @@ export function createCatalog(
   catalogs: any,
   components: any,
   terms: any,
-  title: string,
-  lang: string
+  title: any,
+  lang: any
 ): any {
   return {
     title: title,
@@ -31,17 +31,16 @@ function getComponents(components: any): any {
 
 function getChapters(catalogs: any): any {
   let chapters: string[] = [];
-  for(var index in catalogs)  { 
+  for(const index in catalogs)  { 
     if (!validateCatalogDataFiles(catalogs[index])) return;
     chapters = chapters.concat(catalogs[index].chapters);
-    // console.dir(catalogs[index].chapters);
   }
   return chapters;
 }
 
 function getStandards(catalogs: any): any {
   let standard: string[] = [];
-  for(var index in catalogs)  { 
+  for(const index in catalogs)  { 
     if (!validateCatalogDataFiles(catalogs[index])) return;
     standard = standard.concat(catalogs[index].standard);
   }
