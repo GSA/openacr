@@ -1,8 +1,7 @@
 import { validateCatalog } from "./validateCatalog";
 
 export function createCatalog(
-  catalog1: any,
-  catalog2: any,
+  catalogs: any,
   components: any,
   terms: any,
   title: string,
@@ -11,8 +10,8 @@ export function createCatalog(
   return {
     title: title,
     lang: lang,
-    standards: getStandards(catalog1, catalog2),
-    chapters: getChapters(catalog1, catalog2),
+    standards: getStandards(catalogs),
+    chapters: getChapters(catalogs),
     components: getComponents(components),
     terms: getTerms(terms),
   };
@@ -30,28 +29,23 @@ function getComponents(components: any): any {
   }
 }
 
-function getChapters(first: any, second: any): any {
-  if (first) {
-    if (validateCatalogDataFiles(first) && validateCatalogDataFiles(second)) {
-      return first.chapters.concat(second.chapters);
-    }
-  } else {
-    if (validateCatalogDataFiles(second)) {
-      return second.chapters;
-    }
+function getChapters(catalogs: any): any {
+  let chapters: string[] = [];
+  for(var index in catalogs)  { 
+    if (!validateCatalogDataFiles(catalogs[index])) return;
+    chapters = chapters.concat(catalogs[index].chapters);
+    // console.dir(catalogs[index].chapters);
   }
+  return chapters;
 }
 
-function getStandards(first: any, second: any): any {
-  if (first) {
-    if (validateCatalogDataFiles(first) && validateCatalogDataFiles(second)) {
-      return first.standard.concat(second.standard);
-    }
-  } else {
-    if (validateCatalogDataFiles(second)) {
-      return second.standard;
-    }
+function getStandards(catalogs: any): any {
+  let standard: string[] = [];
+  for(var index in catalogs)  { 
+    if (!validateCatalogDataFiles(catalogs[index])) return;
+    standard = standard.concat(catalogs[index].standard);
   }
+  return standard;
 }
 
 function validateCatalogDataFiles(catalog: any): boolean {

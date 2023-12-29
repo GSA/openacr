@@ -38,7 +38,6 @@
         - en_301_549_software
         - en_301_549_documentation_and_support_services
         - en_301_549_ICT-providing-relay-or-emergency-service-access
-        - en_301_549_ICT_providing_relay_or_emergency_service_access
   chapters:
     - id: success_criteria_level_a
       label: "Table 1: Success Criteria, Level A"
