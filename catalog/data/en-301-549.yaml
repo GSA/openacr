@@ -3,8 +3,8 @@ lang: en
 standard:
   - id: "eu"
     label: "EN 301 549 Accessibility requirements for ICT products and services - V3.2.1 (2021-03)"
-    report_heading: "Revised Section 508 Report"
-    url: https://www.access-board.gov/ict/
+    report_heading: "EN 301 549 Report"
+    url: https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf
     chapters:
       [
         en_301_549_functional_performance,
