@@ -33,7 +33,7 @@ describe("Librarian test output", () => {
 
       expect(output).to.equal(
         "Warning: This will rebuild the following catalog: 508.\n" +
-          "Successfully created catalog ./catalog/2.4-edition-wcag-2.0-508-en.yaml.\n"
+          "Successfully created catalog ./catalog/2.5-edition-wcag-2.0-508-en.yaml.\n"
       );
     });
   });
@@ -51,13 +51,13 @@ describe("Librarian test output", () => {
 
       expect(output).to.equal(
         "Warning: This will rebuild the following catalog: WCAG.\n" +
-          "Successfully created catalog ./catalog/2.4-edition-wcag-2.1-en.yaml.\n"
+          "Successfully created catalog ./catalog/2.5-edition-wcag-2.2-en.yaml.\n"
       );
     });
   });
 
-  it("confirm WCAG21508 example output is valid", () => {
-    const valid = spawn(cmd, options.concat("WCAG21508"));
+  it("confirm WCAG21-508 example output is valid", () => {
+    const valid = spawn(cmd, options.concat("WCAG21-508"));
     const chunks = [];
 
     valid.stdout.on("data", (chunk) => {
@@ -68,13 +68,49 @@ describe("Librarian test output", () => {
       const output = Buffer.concat(chunks).toString();
 
       expect(output).to.equal(
-        "Warning: This will rebuild the following catalog: WCAG21508.\n" +
-          "Successfully created catalog ./catalog/2.4-edition-wcag-2.1-508-en.yaml.\n"
+        "Warning: This will rebuild the following catalog: WCAG21-508.\n" +
+          "Successfully created catalog ./catalog/2.5-edition-wcag-2.1-508-en.yaml.\n"
       );
     });
   });
 
-  const other_catalogs = ["EU", "INT", "RANDOM"];
+  it("confirm WCAG22-508 example output is valid", () => {
+    const valid = spawn(cmd, options.concat("WCAG22-508"));
+    const chunks = [];
+
+    valid.stdout.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    valid.stdout.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal(
+        "Warning: This will rebuild the following catalog: WCAG22-508.\n" +
+          "Successfully created catalog ./catalog/2.5-edition-wcag-2.2-508-en.yaml.\n"
+      );
+    });
+  });
+
+  it("confirm INT example output is valid", () => {
+    const valid = spawn(cmd, options.concat("INT"));
+    const chunks = [];
+
+    valid.stdout.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    valid.stdout.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal(
+        "Warning: This will rebuild the following catalog: INT.\n" +
+          "Successfully created catalog ./catalog/2.5-edition-wcag-2.2-508-eu-en.yaml.\n"
+      );
+    });
+  });
+
+  const other_catalogs = ["EU", "RANDOM"];
 
   for (const other_catalog of other_catalogs) {
     it(`confirm ${other_catalog} example output is valid`, () => {

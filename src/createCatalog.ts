@@ -31,7 +31,7 @@ function getComponents(components: any): any {
 
 function getChapters(catalogs: any): any {
   let chapters: string[] = [];
-  for(const index in catalogs)  { 
+  for (const index in catalogs) {
     if (!validateCatalogDataFiles(catalogs[index])) return;
     chapters = chapters.concat(catalogs[index].chapters);
   }
@@ -40,7 +40,7 @@ function getChapters(catalogs: any): any {
 
 function getStandards(catalogs: any): any {
   let standard: string[] = [];
-  for(const index in catalogs)  { 
+  for (const index in catalogs) {
     if (!validateCatalogDataFiles(catalogs[index])) return;
     standard = standard.concat(catalogs[index].standard);
   }

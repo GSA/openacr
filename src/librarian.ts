@@ -79,7 +79,7 @@ if (argv.catalog) {
       );
 
       combined = createCatalog(
-        [wcag20,section508],
+        [wcag20, section508],
         components,
         terms,
         "VPAT® 2.5 Revised Section 508 Edition",
@@ -95,7 +95,7 @@ if (argv.catalog) {
       );
 
       combined = createCatalog(
-        [wcag21,section508],
+        [wcag21, section508],
         components,
         terms,
         "VPAT® 2.5 WCAG 2.1 and Revised Section 508 Edition",
@@ -111,7 +111,7 @@ if (argv.catalog) {
       );
 
       combined = createCatalog(
-        [wcag22,section508],
+        [wcag22, section508],
         components,
         terms,
         "VPAT® 2.5 WCAG 2.2 and Revised Section 508 Edition",
@@ -127,7 +127,7 @@ if (argv.catalog) {
       );
 
       combined = createCatalog(
-        [wcag22,section508,en301549],
+        [wcag22, section508, en301549],
         components,
         terms,
         "VPAT® 2.5 International Edition",
@@ -141,7 +141,6 @@ if (argv.catalog) {
     default:
       console.warn(`${catalog} is currently not supported.`);
       break;
-    
   }
 
   if (outputFile) {
