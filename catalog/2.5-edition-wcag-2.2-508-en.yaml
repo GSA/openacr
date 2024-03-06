@@ -644,6 +644,14 @@ chapters:
           - electronic-docs
           - software
           - authoring-tool
+      - id: 2.4.13
+        handle: Focus Appearance
+        alt_id: focus-appearance
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
       - id: 2.5.5
         handle: Target Size (Enhanced)
         alt_id: target-size-enhanced

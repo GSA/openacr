@@ -1,4 +1,4 @@
-title: WCAG 2.1
+title: WCAG 2.2
 lang: en
 standard:
   - id: wcag-2.2
@@ -630,6 +630,14 @@ chapters:
       - id: 2.4.12
         handle: Focus Not Obscured (Enhanced)
         alt_id: focus-not-obscured-enhanced
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.4.13
+        handle: Focus Appearance
+        alt_id: focus-appearance
         components:
           - web
           - electronic-docs
