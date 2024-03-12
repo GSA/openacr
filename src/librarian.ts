@@ -21,7 +21,7 @@ const argv = yargs
     catalog: {
       type: "string",
       description:
-        "Select which VPAT 2.4 catalog to rebuild: WCAG, 508, WCAG21508, EU, INT",
+        "Select which VPAT 2.5 catalog to rebuild: WCAG, 508, WCAG21-508, WCAG22-508, EU, INT",
       demandOption: true,
       alias: "c",
     },
@@ -35,8 +35,17 @@ if (argv.catalog) {
   const wcag20 = yaml.load(
     fs.readFileSync("./catalog/data/wcag-2.0.yaml").toString()
   );
+  const wcag21 = yaml.load(
+    fs.readFileSync("./catalog/data/wcag-2.1.yaml").toString()
+  );
+  const wcag22 = yaml.load(
+    fs.readFileSync("./catalog/data/wcag-2.2.yaml").toString()
+  );
   const section508 = yaml.load(
     fs.readFileSync("./catalog/data/508.yaml").toString()
+  );
+  const en301549 = yaml.load(
+    fs.readFileSync("./catalog/data/en-301-549.yaml").toString()
   );
   const components = yaml.load(
     fs.readFileSync("./catalog/data/components.yaml").toString()
@@ -44,50 +53,24 @@ if (argv.catalog) {
   const terms = yaml.load(
     fs.readFileSync("./catalog/data/terms.yaml").toString()
   );
-  const wcag21 = yaml.load(
-    fs.readFileSync("./catalog/data/wcag-2.1.yaml").toString()
-  );
 
   let combined;
   let outputFile = "";
   switch (catalog) {
-    case "EU":
-    case "INT":
-    default:
-      console.warn(`${catalog} is currently not supported.`);
-      break;
     case "WCAG":
       console.log(
         `Warning: This will rebuild the following catalog: ${catalog}.`
       );
 
       combined = createCatalog(
-        null,
-        wcag21,
+        [wcag22],
         components,
         terms,
-        "VPAT® 2.4",
+        "VPAT® 2.5 WCAG Edition",
         "en"
       );
 
-      outputFile = `./catalog/2.4-edition-${combined.standards[0].id}-${combined.lang}.yaml`;
-      break;
-
-    case "WCAG21508":
-      console.log(
-        `Warning: This will rebuild the following catalog: ${catalog}.`
-      );
-
-      combined = createCatalog(
-        wcag21,
-        section508,
-        components,
-        terms,
-        "VPAT® 2.4 WCAG 2.1 and Revised Section 508 Edition",
-        "en"
-      );
-
-      outputFile = `./catalog/2.4-edition-${combined.standards[0].id}-${combined.standards[1].id}-${combined.lang}.yaml`;
+      outputFile = `./catalog/2.5-edition-${combined.standards[0].id}-${combined.lang}.yaml`;
       break;
 
     case "508":
@@ -96,15 +79,67 @@ if (argv.catalog) {
       );
 
       combined = createCatalog(
-        wcag20,
-        section508,
+        [wcag20, section508],
         components,
         terms,
-        "VPAT® 2.4 Revised Section 508 Edition",
+        "VPAT® 2.5 Revised Section 508 Edition",
         "en"
       );
 
-      outputFile = `./catalog/2.4-edition-${combined.standards[0].id}-${combined.standards[1].id}-${combined.lang}.yaml`;
+      outputFile = `./catalog/2.5-edition-${combined.standards[0].id}-${combined.standards[1].id}-${combined.lang}.yaml`;
+      break;
+
+    case "WCAG21-508":
+      console.log(
+        `Warning: This will rebuild the following catalog: ${catalog}.`
+      );
+
+      combined = createCatalog(
+        [wcag21, section508],
+        components,
+        terms,
+        "VPAT® 2.5 WCAG 2.1 and Revised Section 508 Edition",
+        "en"
+      );
+
+      outputFile = `./catalog/2.5-edition-${combined.standards[0].id}-${combined.standards[1].id}-${combined.lang}.yaml`;
+      break;
+
+    case "WCAG22-508":
+      console.log(
+        `Warning: This will rebuild the following catalog: ${catalog}.`
+      );
+
+      combined = createCatalog(
+        [wcag22, section508],
+        components,
+        terms,
+        "VPAT® 2.5 WCAG 2.2 and Revised Section 508 Edition",
+        "en"
+      );
+
+      outputFile = `./catalog/2.5-edition-${combined.standards[0].id}-${combined.standards[1].id}-${combined.lang}.yaml`;
+      break;
+
+    case "INT":
+      console.log(
+        `Warning: This will rebuild the following catalog: ${catalog}.`
+      );
+
+      combined = createCatalog(
+        [wcag22, section508, en301549],
+        components,
+        terms,
+        "VPAT® 2.5 International Edition",
+        "en"
+      );
+
+      outputFile = `./catalog/2.5-edition-${combined.standards[0].id}-${combined.standards[1].id}-${combined.standards[2].id}-${combined.lang}.yaml`;
+      break;
+
+    case "EU":
+    default:
+      console.warn(`${catalog} is currently not supported.`);
       break;
   }
 

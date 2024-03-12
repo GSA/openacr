@@ -146,39 +146,70 @@ describe("Create catalog", () => {
 
   it("pass valid catalogs should have valid standards", () => {
     result = createCatalog(
-      validWCAG,
-      validSection508,
+      [validWCAG, validSection508],
       validComponents,
-      validTerms
+      validTerms,
+      "VPAT",
+      "en"
     );
     expect(result.standards[0].id).to.equal("wcag-2.0");
     expect(result.standards[1].id).to.equal("508");
   });
 
   it("pass invalid section508 should have undefined standards and chapters", () => {
-    result = createCatalog(validWCAG, {}, validComponents, validTerms);
+    result = createCatalog(
+      [validWCAG, {}],
+      validComponents,
+      validTerms,
+      "VPAT",
+      "en"
+    );
     expect(result.standards).to.be.undefined;
     expect(result.chapters).to.be.undefined;
   });
 
   it("pass invalid WCAG should have undefined standards and chapters", () => {
-    result = createCatalog({}, validSection508, validComponents, validTerms);
+    result = createCatalog(
+      [{}, validSection508],
+      validComponents,
+      validTerms,
+      "VPAT",
+      "en"
+    );
     expect(result.standards).to.be.undefined;
     expect(result.chapters).to.be.undefined;
   });
 
   it("pass invalid components should have undefined components", () => {
-    result = createCatalog(validWCAG, validSection508, {}, validTerms);
+    result = createCatalog(
+      [validWCAG, validSection508],
+      {},
+      validTerms,
+      "VPAT",
+      "en"
+    );
     expect(result.components).to.be.undefined;
   });
 
   it("pass invalid terms should have undefined terms", () => {
-    result = createCatalog(validWCAG, validSection508, validComponents, {});
+    result = createCatalog(
+      [validWCAG, validSection508],
+      validComponents,
+      {},
+      "VPAT",
+      "en"
+    );
     expect(result.terms).to.be.undefined;
   });
 
   it("pass null WCAG and invalid section508 should have undefined standards and chapters", () => {
-    result = createCatalog(null, {}, validComponents, validTerms);
+    result = createCatalog(
+      [null, {}],
+      validComponents,
+      validTerms,
+      "VPAT",
+      "en"
+    );
     expect(result.standards).to.be.undefined;
     expect(result.chapters).to.be.undefined;
   });

@@ -1,0 +1,1262 @@
+title: VPAT® 2.5 WCAG 2.2 and Revised Section 508 Edition
+lang: en
+standards:
+  - id: wcag-2.2
+    label: Web Content Accessibility Guidelines 2.2
+    report_heading: WCAG 2.2 Report
+    url: https://www.w3.org/TR/WCAG22/
+    chapters:
+      - success_criteria_level_a
+      - success_criteria_level_aa
+      - success_criteria_level_aaa
+  - id: "508"
+    label: >-
+      Revised Section 508 standards published January 18, 2017 and corrected
+      January 22, 2018
+    report_heading: Revised Section 508 Report
+    url: https://www.access-board.gov/ict/
+    chapters:
+      - functional_performance_criteria
+      - hardware
+      - software
+      - support_documentation_and_services
+chapters:
+  - id: success_criteria_level_a
+    label: "Table 1: Success Criteria, Level A"
+    short_label: A
+    order: 1
+    criteria:
+      - id: 1.1.1
+        handle: Non-text Content
+        alt_id: non-text-content
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.2.1
+        handle: Audio-only and Video-only (Prerecorded)
+        alt_id: audio-only-and-video-only-prerecorded
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.2.2
+        handle: Captions (Prerecorded)
+        alt_id: captions-prerecorded
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.2.3
+        handle: Audio Description or Media Alternative (Prerecorded)
+        alt_id: audio-description-or-media-alternative-prerecorded
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.3.1
+        handle: Info and Relationships
+        alt_id: info-and-relationships
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.3.2
+        handle: Meaningful Sequence
+        alt_id: meaningful-sequence
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.3.3
+        handle: Sensory Characteristics
+        alt_id: sensory-characteristics
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.1
+        handle: Use of Color
+        alt_id: use-of-color
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.2
+        handle: Audio Control
+        alt_id: audio-control
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.1.1
+        handle: Keyboard
+        alt_id: keyboard
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.1.2
+        handle: No Keyboard Trap
+        alt_id: no-keyboard-trap
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.1.4
+        handle: Character Key Shortcuts
+        alt_id: character-key-shortcuts
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.2.1
+        handle: Timing Adjustable
+        alt_id: timing-adjustable
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.2.2
+        handle: Pause, Stop, Hide
+        alt_id: pause-stop-hide
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.3.1
+        handle: Three Flashes or Below Threshold
+        alt_id: three-flashes-or-below-threshold
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.4.1
+        handle: Bypass Blocks
+        alt_id: bypass-blocks
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.4.2
+        handle: Page Titled
+        alt_id: page-titled
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.4.3
+        handle: Focus Order
+        alt_id: focus-order
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.4.4
+        handle: Link Purpose (In Context)
+        alt_id: link-purpose-in-context
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.5.1
+        handle: Pointer Gestures
+        alt_id: pointer-gestures
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.5.2
+        handle: Pointer Cancellation
+        alt_id: pointer-cancellation
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.5.3
+        handle: Label in Name
+        alt_id: label-in-name
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.5.4
+        handle: Motion Actuation
+        alt_id: motion-actuation
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.1.1
+        handle: Language of Page
+        alt_id: language-of-page
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.2.1
+        handle: On Focus
+        alt_id: on-focus
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.2.2
+        handle: On Input
+        alt_id: on-input
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.2.6
+        handle: Consistent Help
+        alt_id: consistent-help
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.3.1
+        handle: Error Identification
+        alt_id: error-identification
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.3.2
+        handle: Labels or Instructions
+        alt_id: labels-or-instructions
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.3.7
+        handle: Redundant Entry
+        alt_id: redundant-entry
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 4.1.1
+        handle: Parsing
+        alt_id: parsing
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 4.1.2
+        handle: Name, Role, Value
+        alt_id: name-role-value
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+  - id: success_criteria_level_aa
+    label: "Table 2: Success Criteria, Level AA"
+    short_label: AA
+    order: 2
+    criteria:
+      - id: 1.2.4
+        handle: Captions (Live)
+        alt_id: captions-live
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.2.5
+        handle: Audio Description (Prerecorded)
+        alt_id: audio-description-prerecorded
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.3.4
+        handle: Orientation
+        alt_id: orientation
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.3.5
+        handle: Identify Input Purpose
+        alt_id: identify-input-purpose
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.3
+        handle: Contrast (Minimum)
+        alt_id: visual-audio-contrast-contrast
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.4
+        handle: Resize text
+        alt_id: visual-audio-contrast-scale
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.5
+        handle: Images of Text
+        alt_id: visual-audio-contrast-text-presentation
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.10
+        handle: Reflow
+        alt_id: reflow
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.11
+        handle: Non-text Contrast
+        alt_id: non-text-contrast
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.12
+        handle: Text Spacing
+        alt_id: text-spacing
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.13
+        handle: Content on Hover or Focus
+        alt_id: content-on-hover-or-focus
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.4.5
+        handle: Multiple Ways
+        alt_id: multiple-ways
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.4.6
+        handle: Headings and Labels
+        alt_id: headings-and-labels
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.4.7
+        handle: Focus Visible
+        alt_id: focus-visible
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.4.11
+        handle: Focus Not Obscured (Minimum)
+        alt_id: focus-not-obscured-minimum
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.5.7
+        handle: Dragging Movements
+        alt_id: dragging-movements
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.5.8
+        handle: Target Size (Minimum)
+        alt_id: target-size-minimum
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.1.2
+        handle: Language of Parts
+        alt_id: language-of-parts
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.2.3
+        handle: Consistent Navigation
+        alt_id: consistent-navigation
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.2.4
+        handle: Consistent Identification
+        alt_id: consistent-identification
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.3.3
+        handle: Error Suggestion
+        alt_id: error-suggestion
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.3.4
+        handle: Error Prevention (Legal, Financial, Data)
+        alt_id: error-prevention-legal-financial-data
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.3.8
+        handle: Accessible Authentication (Minimum)
+        alt_id: accessible-authentication-minimum
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 4.1.3
+        handle: Status Messages
+        alt_id: status-messages
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+  - id: success_criteria_level_aaa
+    label: "Table 3: Success Criteria, Level AAA"
+    short_label: AAA
+    order: 3
+    criteria:
+      - id: 1.2.6
+        handle: Sign Language (Prerecorded)
+        alt_id: sign-language-prerecorded
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.2.7
+        handle: Extended Audio Description (Prerecorded)
+        alt_id: extended-audio-description-prerecorded
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.2.8
+        handle: Media Alternative (Prerecorded)
+        alt_id: media-alternative-prerecorded
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.2.9
+        handle: Audio-only (Live)
+        alt_id: audio-only-live
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.3.6
+        handle: Identify Purpose
+        alt_id: identify-purpose
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.6
+        handle: Contrast (Enhanced)
+        alt_id: contrast-enhanced
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.7
+        handle: Low or No Background Audio
+        alt_id: low-or-no-background-audio
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.8
+        handle: Visual Presentation
+        alt_id: visual-presentation
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 1.4.9
+        handle: Images of Text (No Exception)
+        alt_id: images-of-text-no-exception
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.1.3
+        handle: Keyboard (No Exception)
+        alt_id: keyboard-no-exception
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.2.3
+        handle: No Timing
+        alt_id: no-timing
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.2.4
+        handle: Interruptions
+        alt_id: interruptions
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.2.5
+        handle: Re-authenticating
+        alt_id: re-authenticating
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.2.6
+        handle: Timeouts
+        alt_id: timeouts
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.3.2
+        handle: Three Flashes
+        alt_id: three-flashes
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.3.3
+        handle: Animation from Interactions
+        alt_id: animation-from-interactions
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.4.8
+        handle: Location
+        alt_id: location
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.4.9
+        handle: Link Purpose (Link Only)
+        alt_id: link-purpose-link-only
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.4.10
+        handle: Section Headings
+        alt_id: section-headings
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.4.12
+        handle: Focus Not Obscured (Enhanced)
+        alt_id: focus-not-obscured-enhanced
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.4.13
+        handle: Focus Appearance
+        alt_id: focus-appearance
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.5.5
+        handle: Target Size (Enhanced)
+        alt_id: target-size-enhanced
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 2.5.6
+        handle: Concurrent Input Mechanisms
+        alt_id: concurrent-input-mechanisms
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.1.3
+        handle: Unusual Words
+        alt_id: unusual-words
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.1.4
+        handle: Abbreviations
+        alt_id: abbreviations
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.1.5
+        handle: Reading Level
+        alt_id: reading-level
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.1.6
+        handle: Pronunciation
+        alt_id: pronunciation
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.2.5
+        handle: Change on Request
+        alt_id: change-on-request
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.3.5
+        handle: Help
+        alt_id: help
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.3.6
+        handle: Error Prevention (All)
+        alt_id: error-prevention-all
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+      - id: 3.3.9
+        handle: Accessible Authentication (Enhanced)
+        alt_id: accessible-authentication-enhanced
+        components:
+          - web
+          - electronic-docs
+          - software
+          - authoring-tool
+  - id: functional_performance_criteria
+    label: "Chapter 3: Functional Performance Criteria (FPC)"
+    short_label: FPC
+    order: 3
+    criteria:
+      - id: "302.1"
+        handle: Without Vision
+        alt_id: "302.1"
+        components:
+          - none
+      - id: "302.2"
+        handle: With Limited Vision
+        alt_id: "302.2"
+        components:
+          - none
+      - id: "302.3"
+        handle: Without Perception of Color
+        alt_id: "302.3"
+        components:
+          - none
+      - id: "302.4"
+        handle: Without Hearing
+        alt_id: "302.4"
+        components:
+          - none
+      - id: "302.5"
+        handle: With Limited Hearing
+        alt_id: "302.5"
+        components:
+          - none
+      - id: "302.6"
+        handle: Without Speech
+        alt_id: "302.6"
+        components:
+          - none
+      - id: "302.7"
+        handle: With Limited Manipulation
+        alt_id: "302.7"
+        components:
+          - none
+      - id: "302.8"
+        handle: With Limited Reach and Strength
+        alt_id: "302.8"
+        components:
+          - none
+      - id: "302.9"
+        handle: With Limited Language, Cognitive, and Learning Abilities
+        alt_id: "302.9"
+        components:
+          - none
+  - id: hardware
+    label: "Chapter 4: Hardware"
+    short_label: Hardware
+    order: 4
+    criteria:
+      - id: 402.2.1
+        handle: Information Displayed On-Screen
+        alt_id: 402.2.1
+        components:
+          - none
+      - id: 402.2.2
+        handle: Transactional Outputs
+        alt_id: 402.2.2
+        components:
+          - none
+      - id: 402.2.3
+        handle: Speech Delivery Type and Coordination
+        alt_id: 402.2.3
+        components:
+          - none
+      - id: 402.2.4
+        handle: User Control
+        alt_id: 402.2.4
+        components:
+          - none
+      - id: 402.2.5
+        handle: Braille Instructions
+        alt_id: 402.2.5
+        components:
+          - none
+      - id: 402.3.1
+        handle: Private Listening
+        alt_id: 402.3.1
+        components:
+          - none
+      - id: 402.3.2
+        handle: Non-private Listening
+        alt_id: 402.3.2
+        components:
+          - none
+      - id: "402.4"
+        handle: Characters on Display Screens
+        alt_id: "402.4"
+        components:
+          - none
+      - id: "402.5"
+        handle: Characters on Variable Message Signs
+        alt_id: "402.5"
+        components:
+          - none
+      - id: "403.1"
+        handle: General (Biometrics)
+        alt_id: "403.1"
+        components:
+          - none
+      - id: "404.1"
+        handle: General (Preservation of Information Provided for Accessibility)
+        alt_id: "404.1"
+        components:
+          - none
+      - id: "405.1"
+        handle: General (Privacy)
+        alt_id: "405.1"
+        components:
+          - none
+      - id: "406.1"
+        handle: General (Standard Connections)
+        alt_id: "406.1"
+        components:
+          - none
+      - id: "407.2"
+        handle: Contrast (Operable Parts)
+        alt_id: "407.2"
+        components:
+          - none
+      - id: 407.3.1
+        handle: Tactilely Discernible
+        alt_id: 407.3.1
+        components:
+          - none
+      - id: 407.3.2
+        handle: Alphabetic Keys
+        alt_id: 407.3.2
+        components:
+          - none
+      - id: 407.3.3
+        handle: Numeric Keys
+        alt_id: 407.3.3
+        components:
+          - none
+      - id: "407.4"
+        handle: Key Repeat
+        alt_id: "407.4"
+        components:
+          - none
+      - id: "407.5"
+        handle: Timed Response
+        alt_id: "407.5"
+        components:
+          - none
+      - id: "407.6"
+        handle: Operation
+        alt_id: "407.6"
+        components:
+          - none
+      - id: "407.7"
+        handle: Tickets, Fare Cards, and Keycards
+        alt_id: "407.7"
+        components:
+          - none
+      - id: 407.8.1
+        handle: Vertical Reference Plane
+        alt_id: 407.8.1
+        components:
+          - none
+      - id: 407.8.1.1
+        handle: Vertical Plane for Side Reach
+        alt_id: 407.8.1.1
+        components:
+          - none
+      - id: 407.8.1.2
+        handle: Vertical Plane for Forward Reach
+        alt_id: 407.8.1.2
+        components:
+          - none
+      - id: 407.8.2
+        handle: Side Reach
+        alt_id: 407.8.2
+        components:
+          - none
+      - id: 407.8.2.1
+        handle: Unobstructed Side Reach
+        alt_id: 407.8.2.1
+        components:
+          - none
+      - id: 407.8.2.2
+        handle: Obstructed Side Reach
+        alt_id: 407.8.2.2
+        components:
+          - none
+      - id: 407.8.3
+        handle: Forward Reach
+        alt_id: 407.8.3
+        components:
+          - none
+      - id: 407.8.3.1
+        handle: Unobstructed Forward Reach
+        alt_id: 407.8.3.1
+        components:
+          - none
+      - id: 407.8.3.2
+        handle: Obstructed Forward Reach
+        alt_id: 407.8.3.2
+        components:
+          - none
+      - id: 407.8.3.2.1
+        handle: Operable Part Height for ICT with Obstructed Forward Reach
+        alt_id: 407.8.3.2.1
+        components:
+          - none
+      - id: 407.8.3.2.2
+        handle: Knee and Toe Space under ICT with Obstructed Forward Reach
+        alt_id: 407.8.3.2.2
+        components:
+          - none
+      - id: "408.2"
+        handle: Visibility
+        alt_id: "408.2"
+        components:
+          - none
+      - id: "408.3"
+        handle: Flashing
+        alt_id: "408.3"
+        components:
+          - none
+      - id: "409.1"
+        handle: General (Status Indicators)
+        alt_id: "409.1"
+        components:
+          - none
+      - id: "410.1"
+        handle: General (Color Coding)
+        alt_id: "410.1"
+        components:
+          - none
+      - id: "411.1"
+        handle: General (Audible Signals)
+        alt_id: "411.1"
+        components:
+          - none
+      - id: 412.2.1
+        handle: Volume Gain for Wireline Telephones
+        alt_id: 412.2.1
+        components:
+          - none
+      - id: 412.2.2
+        handle: Volume Gain for Non-Wireline ICT
+        alt_id: 412.2.2
+        components:
+          - none
+      - id: 412.3.1
+        handle: Wireless Handsets
+        alt_id: 412.3.1
+        components:
+          - none
+      - id: 412.3.2
+        handle: Wireline Handsets
+        alt_id: 412.3.2
+        components:
+          - none
+      - id: "412.4"
+        handle: Digital Encoding of Speech
+        alt_id: "412.4"
+        components:
+          - none
+      - id: "412.5"
+        handle: Real-Time Text Functionality
+        alt_id: "412.5"
+        components:
+          - none
+      - id: "412.6"
+        handle: Caller ID
+        alt_id: "412.6"
+        components:
+          - none
+      - id: "412.7"
+        handle: Video Communication
+        alt_id: "412.7"
+        components:
+          - none
+      - id: 412.8.1
+        handle: TTY Connectability
+        alt_id: 412.8.1
+        components:
+          - none
+      - id: 412.8.2
+        handle: Voice and Hearing Carry Over
+        alt_id: 412.8.2
+        components:
+          - none
+      - id: 412.8.3
+        handle: Signal Compatibility
+        alt_id: 412.8.3
+        components:
+          - none
+      - id: 412.8.4
+        handle: Voice Mail and Other Messaging Systems
+        alt_id: 412.8.4
+        components:
+          - none
+      - id: 413.1.1
+        handle: Decoding and Display of Closed Captions
+        alt_id: 413.1.1
+        components:
+          - none
+      - id: 413.1.2
+        handle: Pass-Through of Closed Caption Data
+        alt_id: 413.1.2
+        components:
+          - none
+      - id: 414.1.1
+        handle: Digital Television Tuners
+        alt_id: 414.1.1
+        components:
+          - none
+      - id: 414.1.2
+        handle: Other ICT
+        alt_id: 414.1.2
+        components:
+          - none
+      - id: 415.1.1
+        handle: Caption Controls
+        alt_id: 415.1.1
+        components:
+          - none
+      - id: 415.1.2
+        handle: Audio Description Controls
+        alt_id: 415.1.2
+        components:
+          - none
+  - id: software
+    label: "Chapter 5: Software"
+    short_label: Software
+    order: 5
+    criteria:
+      - id: 502.2.1
+        handle: User Control of Accessibility Features
+        alt_id: 502.2.1
+        components:
+          - none
+      - id: 502.2.2
+        handle: No Disruption of Accessibility Features
+        alt_id: 502.2.2
+        components:
+          - none
+      - id: 502.3.1
+        handle: Object Information
+        alt_id: 502.3.1
+        components:
+          - none
+      - id: 502.3.2
+        handle: Modification of Object Information
+        alt_id: 502.3.2
+        components:
+          - none
+      - id: 502.3.3
+        handle: Row, Column, and Headers
+        alt_id: 502.3.3
+        components:
+          - none
+      - id: 502.3.4
+        handle: Values
+        alt_id: 502.3.4
+        components:
+          - none
+      - id: 502.3.5
+        handle: Modification of Values
+        alt_id: 502.3.5
+        components:
+          - none
+      - id: 502.3.6
+        handle: Label Relationships
+        alt_id: 502.3.6
+        components:
+          - none
+      - id: 502.3.7
+        handle: Hierarchical Relationships
+        alt_id: 502.3.7
+        components:
+          - none
+      - id: 502.3.8
+        handle: Text
+        alt_id: 502.3.8
+        components:
+          - none
+      - id: 502.3.9
+        handle: Modification of Text
+        alt_id: 502.3.9
+        components:
+          - none
+      - id: 502.3.10
+        handle: List of Actions
+        alt_id: 502.3.10
+        components:
+          - none
+      - id: 502.3.11
+        handle: Actions on Objects
+        alt_id: 502.3.11
+        components:
+          - none
+      - id: 502.3.12
+        handle: Focus Cursor
+        alt_id: 502.3.12
+        components:
+          - none
+      - id: 502.3.13
+        handle: Modification of Focus Cursor
+        alt_id: 502.3.13
+        components:
+          - none
+      - id: 502.3.14
+        handle: Event Notification
+        alt_id: 502.3.14
+        components:
+          - none
+      - id: "502.4"
+        handle: Platform Accessibility Features
+        alt_id: "502.4"
+        components:
+          - none
+      - id: "503.2"
+        handle: User Preferences
+        alt_id: "503.2"
+        components:
+          - none
+      - id: "503.3"
+        handle: Alternative User Interfaces
+        alt_id: "503.3"
+        components:
+          - none
+      - id: 503.4.1
+        handle: Caption Controls
+        alt_id: 503.4.1
+        components:
+          - none
+      - id: 503.4.2
+        handle: Audio Description Controls
+        alt_id: 503.4.2
+        components:
+          - none
+      - id: "504.2"
+        handle: Content Creation or Editing
+        alt_id: "504.2"
+        components:
+          - none
+      - id: 504.2.1
+        handle: >-
+          Preservation of Information Provided for Accessibility in Format
+          Conversion
+        alt_id: 504.2.1
+        components:
+          - none
+      - id: 504.2.2
+        handle: PDF Export
+        alt_id: 504.2.2
+        components:
+          - none
+      - id: "504.3"
+        handle: Prompts
+        alt_id: "504.3"
+        components:
+          - none
+      - id: "504.4"
+        handle: Templates
+        alt_id: "504.4"
+        components:
+          - none
+  - id: support_documentation_and_services
+    label: "Chapter 6: Support Documentation and Services"
+    short_label: Documentation
+    order: 6
+    criteria:
+      - id: "602.2"
+        handle: Accessibility and Compatibility Features
+        alt_id: "602.2"
+        components:
+          - none
+      - id: "602.3"
+        handle: Electronic Support Documentation
+        alt_id: "602.3"
+        components:
+          - none
+      - id: "602.4"
+        handle: Alternate Formats for Non-Electronic Support Documentation
+        alt_id: "602.4"
+        components:
+          - none
+      - id: "603.2"
+        handle: Information on Accessibility and Compatibility Features
+        alt_id: "603.2"
+        components:
+          - none
+      - id: "603.3"
+        handle: Accommodation of Communication Needs
+        alt_id: "603.3"
+        components:
+          - none
+components:
+  - id: web
+    label: Web
+  - id: electronic-docs
+    label: Electronic Documents
+  - id: software
+    label: Software
+  - id: authoring-tool
+    label: Authoring Tool
+  - id: none
+    label: ""
+terms:
+  - id: supports
+    label: Supports
+    description: >-
+      The functionality of the product has at least one method that meets the
+      criterion without known defects or meets with equivalent facilitation.
+  - id: partially-supports
+    label: Partially Supports
+    description: Some functionality of the product does not meet the criterion.
+  - id: does-not-support
+    label: Does Not Support
+    description: The majority of product functionality does not meet the criterion.
+  - id: not-applicable
+    label: Not Applicable
+    description: The criterion is not relevant to the product.
+  - id: not-evaluated
+    label: Not Evaluated
+    description: >-
+      The product has not been evaluated against the criterion. This can only be
+      used in WCAG Level AAA criteria.

@@ -20,5 +20,6 @@ Luke Fretwell <luke@proudcity.com> (lukefretwell)
 Melinda Burgess <melinda.burgess@civicactions.com>
 Mike Gifford <mike.gifford@civicactions.com> (mgifford)
 Owen Barton <owen.barten@civicactions.com> (grugnog)
+Patrick H. Lauke <plauke@tetralogical.com> (patrick_h_lauke)
 Robert Linder (Malvoz)
 Syed Azeem <syed.azeem@gsa.gov> (saz33m)

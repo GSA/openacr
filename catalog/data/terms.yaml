@@ -15,4 +15,4 @@ terms:
     description: The criterion is not relevant to the product.
   - id: "not-evaluated"
     label: Not Evaluated
-    description: The product has not been evaluated against the criterion. This can be used only in WCAG 2.x Level AAA.
+    description: The product has not been evaluated against the criterion. This can only be used in WCAG Level AAA criteria.

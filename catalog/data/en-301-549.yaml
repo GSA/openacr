@@ -1,0 +1,880 @@
+title: EN 301 549
+lang: en
+standard:
+  - id: "eu"
+    label: "EN 301 549 Accessibility requirements for ICT products and services - V3.2.1 (2021-03)"
+    report_heading: "EN 301 549 Report"
+    url: https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf
+    chapters:
+      [
+        en_301_549_functional_performance,
+        en_301_549_generic_requirements,
+        en_301_549_ict_with_two-way_voice,
+        en_301_549_ict_with_video,
+        en_301_549_hardware,
+        en_301_549_web,
+        en_301_549_non-web-documents,
+        en_301_549_software,
+        en_301_549_documentation_and_support_services,
+        en_301_549_ict_providing_relay_or_emergency_service_access,
+      ]
+chapters:
+  - id: en_301_549_functional_performance
+    label: "Chapter 4: Functional Performance Statements"
+    short_label: functional-performance
+    order: 8
+    criteria:
+      - id: 4.2.1
+        handle: Usage without vision
+        alt_id: usage-without-vision
+        components:
+          - none
+      - id: 4.2.2
+        handle: Usage with limited vision
+        alt_id: usage-with-limited-vision
+        components:
+          - none
+      - id: 4.2.3
+        handle: Usage without perception of colour
+        alt_id: usage-without-perception-of-colour
+        components:
+          - none
+      - id: 4.2.4
+        handle: Usage without hearing
+        alt_id: usage-without-hearing
+        components:
+          - none
+      - id: 4.2.5
+        handle: Usage with limited hearing
+        alt_id: usage-with-limited-hearing
+        components:
+          - none
+      - id: 4.2.6
+        handle: Usage with no or limited vocal capability
+        alt_id: usage-with-no-or-limited-vocal-capability
+        components:
+          - none
+      - id: 4.2.7
+        handle: Usage with limited manipulation or strength
+        alt_id: usage-with-limited-manipulation-or-strength
+        components:
+          - none
+      - id: 4.2.8
+        handle: Usage with limited reach
+        alt_id: usage-with-limited-reach
+        components:
+          - none
+      - id: 4.2.9
+        handle: Minimize photosensitive seizure triggers
+        alt_id: minimize-photosensitive-seizure-triggers
+        components:
+          - none
+      - id: 4.2.10
+        handle: Usage with limited cognition, language or learning
+        alt_id: usage-with-limited-cognition-language-or-learning
+        components:
+          - none
+      - id: 4.2.11
+        handle: Privacy
+        alt_id: privacy
+        components:
+          - none
+  - id: en_301_549_generic_requirements
+    label: "Chapter 5: Generic Requirements"
+    short_label: generic-requirements
+    order: 9
+    criteria:
+      - id: "5.1"
+        handle: Closed functionality
+        alt_id: closed-functionality
+        components:
+          - none
+      - id: 5.1.2
+        handle: General
+        alt_id: general
+        components:
+          - none
+      - id: 5.1.2.1
+        handle: Closed functionality
+        alt_id: closed-functionality
+        components:
+          - none
+      - id: 5.1.2.2
+        handle: Assistive technology
+        alt_id: assistive-technology
+        components:
+          - none
+      - id: 5.1.3
+        handle: Non-visual access
+        alt_id: non-visual-access
+        components:
+          - none
+      - id: 5.1.3.1
+        handle: Audio output of visual information
+        alt_id: audio-output-of-visual-information
+        components:
+          - none
+      - id: 5.1.3.2
+        handle: Auditory output delivery including speech
+        alt_id: auditory-output-delivery-including-speech
+        components:
+          - none
+      - id: 5.1.3.3
+        handle: Auditory output correlation
+        alt_id: auditory-output-correlation
+        components:
+          - none
+      - id: 5.1.3.4
+        handle: Speech output user control
+        alt_id: speech-output-user-control
+        components:
+          - none
+      - id: 5.1.3.5
+        handle: Speech output automatic interruption
+        alt_id: speech-output-automatic-interruption
+        components:
+          - none
+      - id: 5.1.3.6
+        handle: Speech output for non-text content
+        alt_id: speech-output-for-non-text-content
+        components:
+          - none
+      - id: 5.1.3.7
+        handle: Speech output for video information
+        alt_id: speech-output-for-video-information
+        components:
+          - none
+      - id: 5.1.3.8
+        handle: Masked entry
+        alt_id: masked-entry
+        components:
+          - none
+      - id: 5.1.3.9
+        handle: Private access to personal data
+        alt_id: private-access-to-personal-data
+        components:
+          - none
+      - id: 5.1.3.10
+        handle: Non-interfering audio output
+        alt_id: non-interfering-audio-output
+        components:
+          - none
+      - id: 5.1.3.11
+        handle: Private listening volume
+        alt_id: private-listening-volume
+        components:
+          - none
+      - id: 5.1.3.12
+        handle: Speaker volume
+        alt_id: speaker-volume
+        components:
+          - none
+      - id: 5.1.3.13
+        handle: Volume reset
+        alt_id: volume-reset
+        components:
+          - none
+      - id: 5.1.3.14
+        handle: Spoken languages
+        alt_id: spoken-languages
+        components:
+          - none
+      - id: 5.1.3.15
+        handle: Non-visual error identification
+        alt_id: non-visual-error-identification
+        components:
+          - none
+      - id: 5.1.3.16
+        handle: Receipts, tickets, and transactional outputs
+        alt_id: receipts-tickets-and-transactional-outputs
+        components:
+          - none
+      - id: 5.1.4
+        handle: Functionality closed to text enlargement
+        alt_id: functionality-closed-to-text-enlargement
+        components:
+          - none
+      - id: 5.1.5
+        handle: Visual output for auditory information
+        alt_id: visual-output-for-auditory-information
+        components:
+          - none
+      - id: 5.1.6
+        handle: Operation without keyboard interface
+        alt_id: operation-without-keyboard-interface
+        components:
+          - none
+      - id: 5.1.6.1
+        handle: Closed functionality
+        alt_id: closed-functionality
+        components:
+          - none
+      - id: 5.1.6.2
+        handle: Input focus
+        alt_id: input-focus
+        components:
+          - none
+      - id: 5.1.7
+        handle: Access without speech
+        alt_id: access-without-speech
+        components:
+          - none
+      - id: "5.2"
+        handle: Activation of accessibility features
+        alt_id: activation-of-accessibility-features
+        components:
+          - none
+      - id: "5.3"
+        handle: Biometrics
+        alt_id: biometrics
+        components:
+          - none
+      - id: "5.4"
+        handle: Preservation of accessibility information during conversion
+        alt_id: preservation-of-accessibility-information-during-conversion
+        components:
+          - none
+      - id: "5.5"
+        handle: Operable parts
+        alt_id: operable-parts
+        components:
+          - none
+      - id: 5.5.1
+        handle: Means of operation
+        alt_id: means-of-operation
+        components:
+          - none
+      - id: 5.5.2
+        handle: Operable parts discernibility
+        alt_id: operable-parts-discernibility
+        components:
+          - none
+      - id: "5.6"
+        handle: Locking or toggle controls
+        alt_id: locking-or-toggle-controls
+        components:
+          - none
+      - id: 5.6.1
+        handle: Tactile or auditory status
+        alt_id: tactile-or-auditory-status
+        components:
+          - none
+      - id: 5.6.2
+        handle: Visual status
+        alt_id: visual-status
+        components:
+          - none
+      - id: "5.7"
+        handle: Key repeat
+        alt_id: key-repeat
+        components:
+          - none
+      - id: "5.8"
+        handle: Double-strike key acceptance
+        alt_id: double-strike-key-acceptance
+        components:
+          - none
+      - id: "5.9"
+        handle: Simultaneous user actions
+        alt_id: simultaneous-user-actions
+        components:
+          - none
+  - id: en_301_549_ict_with_two-way_voice
+    label: "Chapter 6: ICT with Two-Way Voice Communication"
+    short_label: itc-two-way
+    order: 10
+    criteria:
+      - id: "6.1"
+        handle: Audio bandwidth for speech
+        alt_id: audio-bandwidth-for-speech
+        components:
+          - none
+      - id: "6.2"
+        handle: Real-time text (RTT) functionality
+        alt_id: real-time-text-rtt-functionality
+        components:
+          - none
+      - id: 6.2.1.1
+        handle: RTT communication
+        alt_id: rtt-communication
+        components:
+          - none
+      - id: 6.2.1.2
+        handle: Concurrent voice and text
+        alt_id: concurrent-voice-and-text
+        components:
+          - none
+      - id: 6.2.2.1
+        handle: Visually distinguishable display
+        alt_id: visually-distinguishable-display
+        components:
+          - none
+      - id: 6.2.2.2
+        handle: Programmatically determinable send and receive direction
+        alt_id: programmatically-determinable-send-and-receive-direction
+        components:
+          - none
+      - id: 6.2.2.3
+        handle: Speaker identification
+        alt_id: speaker-identification
+        components:
+          - none
+      - id: 6.2.2.4
+        handle: Visual indicator of Audio with RTT
+        alt_id: visual-indicator-of-audio-with-rtt
+        components:
+          - none
+      - id: 6.2.3
+        handle: Interoperability
+        alt_id: interoperability
+        components:
+          - none
+      - id: 6.2.4
+        handle: RTT responsiveness
+        alt_id: rtt-responsiveness
+        components:
+          - none
+      - id: "6.3"
+        handle: Caller ID
+        alt_id: caller-id
+        components:
+          - none
+      - id: "6.4"
+        handle: Alternatives to voice-based services
+        alt_id: alternatives-to-voice-based-services
+        components:
+          - none
+      - id: "6.5"
+        handle: Video communication
+        alt_id: video-communication
+        components:
+          - none
+      - id: 6.5.1
+        handle: General (informative)
+        alt_id: general-informative
+        components:
+          - none
+      - id: 6.5.2
+        handle: Resolution
+        alt_id: resolution
+        components:
+          - none
+      - id: 6.5.3
+        handle: Frame rate
+        alt_id: frame-rate
+        components:
+          - none
+      - id: 6.5.4
+        handle: Synchronization between audio and video
+        alt_id: synchronization-between-audio-and-video
+        components:
+          - none
+      - id: 6.5.5
+        handle: Visual indicator of audio with video
+        alt_id: visual-indicator-of-audio-with-video
+        components:
+          - none
+      - id: 6.5.6
+        handle: Speaker identification with video (sign language) communication
+        alt_id: speaker-identification-with-video-sign-language-communication
+        components:
+          - none
+      - id: "6.6"
+        handle: Alternatives to video-based services (advisory only)
+        alt_id: alternatives-to-video-based-services-advisory-only
+        components:
+          - none
+  - id: en_301_549_ict_with_video
+    label: "Chapter 7: ICT with Video Capabilities"
+    short_label: itc-video
+    order: 11
+    criteria:
+      - id: "7.1"
+        handle: Caption processing technology
+        alt_id: caption-processing-technology
+        components:
+          - none
+      - id: 7.1.1
+        handle: Captioning playback
+        alt_id: captioning-playback
+        components:
+          - none
+      - id: 7.1.2
+        handle: Captioning synchronization
+        alt_id: captioning-synchronization
+        components:
+          - none
+      - id: 7.1.3
+        handle: Preservation of captioning
+        alt_id: preservation-of-captioning
+        components:
+          - none
+      - id: 7.1.4
+        handle: Captions characteristics
+        alt_id: captions-characteristics
+        components:
+          - none
+      - id: 7.1.5
+        handle: Spoken subtitles
+        alt_id: spoken-subtitles
+        components:
+          - none
+      - id: 7.2.1
+        handle: Audio description playback
+        alt_id: audio-description-playback
+        components:
+          - none
+      - id: 7.2.2
+        handle: Audio description synchronization
+        alt_id: audio-description-synchronization
+        components:
+          - none
+      - id: 7.2.3
+        handle: Preservation of audio description
+        alt_id: preservation-of-audio-description
+        components:
+          - none
+      - id: "7.3"
+        handle: User controls for captions and audio description
+        alt_id: user-controls-for-captions-and-audio-description
+        components:
+          - none
+  - id: en_301_549_hardware
+    label: "Chapter 8: Hardware"
+    short_label: hardware
+    order: 12
+    criteria:
+      - id: 8.1.1
+        handle: Generic requirements
+        alt_id: generic-requirements
+        components:
+          - none
+      - id: 8.1.2
+        handle: Standard connections
+        alt_id: standard-connections
+        components:
+          - none
+      - id: 8.1.3
+        handle: Colour
+        alt_id: colour
+        components:
+          - none
+      - id: "8.2"
+        handle: Hardware products with speech output
+        alt_id: hardware-products-with-speech-output
+        components:
+          - none
+      - id: 8.2.1.1
+        handle: Speech volume range
+        alt_id: speech-volume-range
+        components:
+          - none
+      - id: 8.2.1.2
+        handle: Incremental volume control
+        alt_id: incremental-volume-control
+        components:
+          - none
+      - id: 8.2.2.1
+        handle: Fixed-line devices
+        alt_id: fixed-line-devices
+        components:
+          - none
+      - id: 8.2.2.2
+        handle: Wireless communication devices
+        alt_id: wireless-communication-devices
+        components:
+          - none
+      - id: "8.3"
+        handle: Stationary ICT
+        alt_id: stationary-ict
+        components:
+          - none
+      - id: 8.3.2.1
+        handle: Unobstructed high forward reach
+        alt_id: unobstructed-high-forward-reach
+        components:
+          - none
+      - id: 8.3.2.2
+        handle: Unobstructed low forward reach
+        alt_id: unobstructed-low-forward-reach
+        components:
+          - none
+      - id: 8.3.2.3.1
+        handle: Clear space
+        alt_id: clear-space
+        components:
+          - none
+      - id: 8.3.2.3.2
+        handle: Obstructed (< 510 mm) forward reach
+        alt_id: obstructed-510-mm-forward-reach
+        components:
+          - none
+      - id: 8.3.2.3.3
+        handle: Obstructed (< 635 mm) forward reach
+        alt_id: obstructed-635-mm-forward-reach
+        components:
+          - none
+      - id: 8.3.2.4
+        handle: Knee and toe clearance width
+        alt_id: knee-and-toe-clearance-width
+        components:
+          - none
+      - id: 8.3.2.5
+        handle: Toe clearance
+        alt_id: toe-clearance
+        components:
+          - none
+      - id: 8.3.2.6
+        handle: Knee clearance
+        alt_id: knee-clearance
+        components:
+          - none
+      - id: 8.3.3.1
+        handle: Unobstructed high side reach
+        alt_id: unobstructed-high-side-reach
+        components:
+          - none
+      - id: 8.3.3.2
+        handle: Unobstructed low side reach
+        alt_id: unobstructed-low-side-reach
+        components:
+          - none
+      - id: 8.3.3.3.1
+        handle: Obstructed (≤ 255 mm) side reach
+        alt_id: obstructed-255-mm-side-reach
+        components:
+          - none
+      - id: 8.3.3.3.2
+        handle: Obstructed (≤ 610 mm) side reach
+        alt_id: obstructed-610-mm-side-reach
+        components:
+          - none
+      - id: 8.3.4.1
+        handle: Change in level
+        alt_id: change-in-level
+        components:
+          - none
+      - id: 8.3.4.2
+        handle: Clear floor or ground space
+        alt_id: clear-floor-or-ground-space
+        components:
+          - none
+      - id: 8.3.4.3.2
+        handle: Forward approach
+        alt_id: forward-approach
+        components:
+          - none
+      - id: 8.3.4.3.3
+        handle: Parallel approach
+        alt_id: parallel-approach
+        components:
+          - none
+      - id: 8.3.5
+        handle: Visibility
+        alt_id: visibility
+        components:
+          - none
+      - id: 8.3.6
+        handle: Installation instructions
+        alt_id: installation-instructions
+        components:
+          - none
+      - id: "8.4"
+        handle: Mechanically Operable parts
+        alt_id: mechanically-operable-parts
+        components:
+          - none
+      - id: 8.4.1
+        handle: Numeric keys
+        alt_id: numeric-keys
+        components:
+          - none
+      - id: 8.4.2.1
+        handle: Means of operation of mechanical parts
+        alt_id: means-of-operation-of-mechanical-parts
+        components:
+          - none
+      - id: 8.4.2.2
+        handle: Force of operation of mechanical parts
+        alt_id: force-of-operation-of-mechanical-parts
+        components:
+          - none
+      - id: 8.4.3
+        handle: Keys, tickets and fare cards
+        alt_id: keys-tickets-and-fare-cards
+        components:
+          - none
+      - id: "8.5"
+        handle: Tactile indication of speech mode
+        alt_id: tactile-indication-of-speech-mode
+        components:
+          - none
+  - id: en_301_549_web
+    label: "Chapter 9: Web"
+    short_label: web
+    order: 13
+  - id: en_301_549_non-web-documents
+    label: "Chapter 10: Non-Web Documents"
+    short_label: non-web-documents
+    order: 14
+    criteria:
+      - id: "10.0"
+        handle: General (informative)
+        alt_id: general-informative
+        components:
+          - none
+      - id: "10.5"
+        handle: Caption positioning
+        alt_id: caption-positioning
+        components:
+          - none
+      - id: "10.6"
+        handle: Audio description timing
+        alt_id: audio-description-timing
+        components:
+          - none
+  - id: en_301_549_software
+    label: "Chapter 11: Software"
+    short_label: software
+    order: 15
+    criteria:
+      - id: "11.0"
+        handle: General (informative)
+        alt_id: general-informative
+        components:
+          - none
+      - id: "11.5"
+        handle: Interoperability with assistive technology
+        alt_id: interoperability-with-assistive-technology
+        components:
+          - none
+      - id: 11.5.1
+        handle: Closed functionality
+        alt_id: closed-functionality
+        components:
+          - none
+      - id: 11.5.2
+        handle: Accessibility services
+        alt_id: accessibility-services
+        components:
+          - none
+      - id: 11.5.2.1
+        handle: Platform accessibility service support for software that provides a user interface
+        alt_id: platform-accessibility-service-support-for-software-that-provides-a-user-interface
+        components:
+          - none
+      - id: 11.5.2.2
+        handle: Platform accessibility service support for assistive technologies
+        alt_id: platform-accessibility-service-support-for-assistive-technologies
+        components:
+          - none
+      - id: 11.5.2.3
+        handle: Use of accessibility services
+        alt_id: use-of-accessibility-services
+        components:
+          - none
+      - id:  11.5.2.4
+        handle: 11.5.2.4 Assistive technology
+        alt_id: assistive-technology
+        components:
+          - none
+      - id: 11.5.2.5
+        handle: Object information
+        alt_id: object-information
+        components:
+          - none
+      - id: 11.5.2.6
+        handle: Row, column, and headers
+        alt_id: row-column-and-headers
+        components:
+          - none
+      - id: 11.5.2.7
+        handle: Values
+        alt_id: values
+        components:
+          - none
+      - id: 11.5.2.8
+        handle: Label relationships
+        alt_id: label-relationships
+        components:
+          - none
+      - id: 11.5.2.9
+        handle: Parent-child relationships
+        alt_id: parent-child-relationships
+        components:
+          - none
+      - id: 11.5.2.10
+        handle: Text
+        alt_id: text
+        components:
+          - none
+      - id: 11.5.2.11
+        handle: List of available actions
+        alt_id: list-of-available-actions
+        components:
+          - none
+      - id: 11.5.2.12
+        handle: Execution of available actions
+        alt_id: execution-of-available-actions
+        components:
+          - none
+      - id: 11.5.2.13
+        handle: Tracking of focus and selection attributes
+        alt_id: tracking-of-focus-and-selection-attributes
+        components:
+          - none
+      - id: 11.5.2.14
+        handle: Modification of focus and selection attributes
+        alt_id: modification-of-focus-and-selection-attributes
+        components:
+          - none
+      - id: 11.5.2.15
+        handle: Change notification
+        alt_id: change-notification
+        components:
+          - none
+      - id: 11.5.2.16
+        handle: Modifications of states and properties
+        alt_id: modifications-of-states-and-properties
+        components:
+          - none
+      - id: 11.5.2.17
+        handle: Modifications of values and text
+        alt_id: modifications-of-values-and-text
+        components:
+          - none
+      - id: "11.6"
+        handle: Documented accessibility usage
+        alt_id: documented-accessibility-usage
+        components:
+          - none
+      - id: 11.6.1
+        handle: User control of accessibility features
+        alt_id: user-control-of-accessibility-features
+        components:
+          - none
+      - id: 11.6.2
+        handle: No disruption of accessibility features
+        alt_id: no-disruption-of-accessibility-features
+        components:
+          - none
+      - id: "11.7"
+        handle: User preferences
+        alt_id: user-preferences
+        components:
+          - none
+      - id: "11.8"
+        handle: Authoring tools
+        alt_id: authoring-tools
+        components:
+          - none
+      - id: 11.8.1
+        handle: Content technology
+        alt_id: content-technology
+        components:
+          - none
+      - id: 11.8.2
+        handle: Accessible content creation
+        alt_id: accessible-content-creation
+        components:
+          - none
+      - id: 11.8.3
+        handle: Preservation of accessibility information in transformations
+        alt_id: preservation-of-accessibility-information-in-transformations
+        components:
+          - none
+      - id: 11.8.4
+        handle: Repair assistance
+        alt_id: repair-assistance
+        components:
+          - none
+      - id: 11.8.5
+        handle: Templates
+        alt_id: templates
+        components:
+          - none
+  - id: en_301_549_documentation_and_support_services
+    label: "Chapter 12: Documentation and Support Services"
+    short_label: documentation-and-support-services
+    order: 16
+    criteria:
+      - id: "12.1"
+        handle: Product documentation
+        alt_id: product-documentation
+        components:
+          - none
+      - id: 12.1.1
+        handle: Accessibility and compatibility features
+        alt_id: accessibility-and-compatibility-features
+        components:
+          - none
+      - id: 12.1.2
+        handle: Accessible documentation
+        alt_id: accessible-documentation
+        components:
+          - none
+      - id: "12.2"
+        handle: Support services
+        alt_id: support-services
+        components:
+          - none
+      - id: 12.2.2
+        handle: Information on accessibility and compatibility features
+        alt_id: information-on-accessibility-and-compatibility-features
+        components:
+          - none
+      - id: 12.2.3
+        handle: Effective communication
+        alt_id: effective-communication
+        components:
+          - none
+      - id: 12.2.4
+        handle: Accessible documentation
+        alt_id: accessible-documentation
+        components:
+          - none
+  - id: en_301_549_ict_providing_relay_or_emergency_service_access
+    label: 'Chapter 13: ICT Providing Relay or Emergency Service Access'
+    short_label: itc-providing-relay-or-emergency-service-access
+    order: 17
+    criteria:
+      - id: "13.1"
+        handle: Relay services requirements
+        alt_id: relay-services-requirements
+        components:
+          - none
+      - id: 13.1.2
+        handle: Text relay services
+        alt_id: text-relay-services
+        components:
+          - none
+      - id: 13.1.3
+        handle: Sign relay services
+        alt_id: sign-relay-services
+        components:
+          - none
+      - id: 13.1.4
+        handle: Lip-reading relay services
+        alt_id: lip-reading-relay-services
+        components:
+          - none
+      - id: 13.1.5
+        handle: Captioned telephony services
+        alt_id: captioned-telephony-services
+        components:
+          - none
+      - id: 13.1.6
+        handle: Speech to speech relay services
+        alt_id: speech-to-speech-relay-services
+        components:
+          - none
+      - id: "13.2"
+        handle: Access to relay services
+        alt_id: access-to-relay-services
+        components:
+          - none
+      - id: "13.3"
+        handle: Access to emergency services
+        alt_id: access-to-emergency-services
+        components:
+          - none
