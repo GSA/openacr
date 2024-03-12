@@ -170,7 +170,7 @@ Current example OpenACRs that are tracked in this repository are in the `openacr
 
 OpenACRs:
 
-- drupal-10-15.yaml: Drupal 10 OpenACR.
+- drupal-10-16.yaml: Drupal 10 OpenACR.
 - drupal-9.yaml: Drupal 9 OpenACR.
 - govready-0.9.yaml
 - Moodle-3.yaml
@@ -180,7 +180,7 @@ OpenACRs:
 To regenerate the above OpenACR markdown and HTML reports run the following commands:
 
 ```bash
-npx ts-node src/openacr.ts output -f openacr/drupal-10-15.yaml -c catalog/2.4-edition-wcag-2.1-en.yaml -o openacr/drupal-10-15.html
+npx ts-node src/openacr.ts output -f openacr/drupal-10-16.yaml -c catalog/2.4-edition-wcag-2.1-en.yaml -o openacr/drupal-10-16.html
 npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.html
 npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.markdown
 npx ts-node src/openacr.ts output -f openacr/govready-0.9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/govready-0.9.html

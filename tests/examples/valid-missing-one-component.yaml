@@ -1,0 +1,32 @@
+title: Lorem Ipsum Accessibility Conformance Report
+product:
+  name: Lorem Ipsum
+  version: "1.1"
+  description: Fake text
+author:
+  email: cicero@example.com
+notes: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet viverra lorem. Nullam laoreet vitae lorem et semper. Donec feugiat rutrum luctus. Nunc nec scelerisque orci. Mauris non tellus congue, vestibulum felis at, consectetur dui. Aenean luctus dictum diam. Vestibulum vehicula leo nulla, nec hendrerit felis sodales a. In hac habitasse platea dictumst. Phasellus odio felis, efficitur a mattis vitae, fermentum vitae libero. Nam ut magna id sem pellentesque ultrices. Nulla sed urna vel tortor vehicula varius. Sed scelerisque porta nisi, sit amet ultricies ante ullamcorper quis.
+chapters:
+  success_criteria_level_a:
+    criteria:
+      - num: "1.1.1"
+        components:
+          - name: "web"
+            adherence:
+              level: "supports"
+              notes: Cras ultrices, diam in laoreet condimentum, purus leo tempor erat, eu facilisis erat tortor at purus.
+          - name: "electronic-docs"
+            adherence:
+              level: "supports"
+              notes: Curabitur tristique tellus quis ligula elementum, sit amet tincidunt est aliquet.
+          - name: "software"
+            adherence:
+              level: "not-applicable"
+      - num: "1.2.2"
+        components:
+          - name: "authoring-tool"
+            adherence:
+              level: "supports"
+              notes: Vestibulum sit amet tortor ac nunc rutrum consequat vel sit amet risus. Nam eget mollis odio, sit amet bibendum mi. Quisque ac neque a nulla dapibus imperdiet.
+  hardware:
+    notes: "Lorem Ipsum is a web application. Hardware accessibility criteria is not applicable."
