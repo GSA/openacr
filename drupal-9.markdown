@@ -62,12 +62,14 @@ The terms used in the Conformance Level information are defined as follows:
 
 Notes: Drupal doesn&#x27;t make a strong distinction between the front-end &amp;amp; back-end accessibility. Many administration interfaces can be exposed to users in a more interactive site. Generally this report focuses the Conformance Level / Remarks and Explainations so that Web comments are about elements that are typically public, while Authoring Tool is typically for authors and administrators. The goal of the authoring interface is to support ATAG 2.0 AA (Part A and B). The Drupal community strives to beek up with the latest WCAG recommendation.
 
-Conformance to the 30 criteria listed below is distributed as follows:
+Conformance to the 30 criteria listed below is distributed within each category as follows:
 
-- 57 supported
-- 4 partially supported
-- 5 not supported
-- 34 not applicable
+| Conformance Level  | Web | Electronic Documents | Software | Authoring Tool |
+| ------------------ | --- | -------------------- | -------- | -------------- |
+| Supports           | 19  | 19                   | 0        | 19             |
+| Partially Supports | 2   | 0                    | 0        | 2              |
+| Does Not Support   | 2   | 1                    | 0        | 2              |
+| Not Applicable     | 2   | 5                    | 25       | 2              |
 
 | Criteria                                                                                                                                       | Conformance Level                                                                                                                                                                 | Remarks and Explanations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -104,12 +106,14 @@ Conformance to the 30 criteria listed below is distributed as follows:
 
 ### Table 2: Success Criteria, Level AA
 
-Conformance to the 20 criteria listed below is distributed as follows:
+Conformance to the 20 criteria listed below is distributed within each category as follows:
 
-- 20 supported
-- 9 partially supported
-- 3 not supported
-- 16 not applicable
+| Conformance Level  | Web | Electronic Documents | Software | Authoring Tool |
+| ------------------ | --- | -------------------- | -------- | -------------- |
+| Supports           | 5   | 8                    | 0        | 7              |
+| Partially Supports | 5   | 0                    | 0        | 4              |
+| Does Not Support   | 1   | 1                    | 0        | 1              |
+| Not Applicable     | 2   | 4                    | 10       | 0              |
 
 | Criteria                                                                                                               | Conformance Level                                                                                                                                                                   | Remarks and Explanations                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -138,12 +142,14 @@ Conformance to the 20 criteria listed below is distributed as follows:
 
 Notes: Where possible the Drupal community strives to exceed AA compliance.
 
-Conformance to the 28 criteria listed below is distributed as follows:
+Conformance to the 28 criteria listed below is distributed within each category as follows:
 
-- 7 supported
-- 1 partially supported
-- 0 not supported
-- 14 not applicable
+| Conformance Level  | Web | Electronic Documents | Software | Authoring Tool |
+| ------------------ | --- | -------------------- | -------- | -------------- |
+| Supports           | 7   | 0                    | 0        | 0              |
+| Partially Supports | 1   | 0                    | 0        | 0              |
+| Does Not Support   | 0   | 0                    | 0        | 0              |
+| Not Applicable     | 14  | 0                    | 0        | 0              |
 
 | Criteria                                                                                                               | Conformance Level                              | Remarks and Explanations                                                                                                                               |
 | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -182,12 +188,14 @@ Conformance to the 28 criteria listed below is distributed as follows:
 
 Notes: Not applicable.
 
-Conformance to the 9 criteria listed below is distributed as follows:
+Conformance to the 9 criteria listed below is distributed within each category as follows:
 
-- 5 supported
-- 0 partially supported
-- 0 not supported
-- 4 not applicable
+| Conformance Level  | All |
+| ------------------ | --- |
+| Supports           | 5   |
+| Partially Supports | 0   |
+| Does Not Support   | 0   |
+| Not Applicable     | 4   |
 
 | Criteria                                                                                                  | Conformance Level                 | Remarks and Explanations                                                                           |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -213,12 +221,14 @@ Notes: Drupal is a web application. Software accessibility criteria is not appli
 
 Notes: Drupal is a web application and all support documentation is delivered through the web. Additional documentation and services are not available.
 
-Conformance to the 5 criteria listed below is distributed as follows:
+Conformance to the 5 criteria listed below is distributed within each category as follows:
 
-- 0 supported
-- 0 partially supported
-- 0 not supported
-- 4 not applicable
+| Conformance Level  | All |
+| ------------------ | --- |
+| Supports           | 0   |
+| Partially Supports | 0   |
+| Does Not Support   | 0   |
+| Not Applicable     | 4   |
 
 | Criteria                                                                                                    | Conformance Level                 | Remarks and Explanations |
 | ----------------------------------------------------------------------------------------------------------- | --------------------------------- | ------------------------ |

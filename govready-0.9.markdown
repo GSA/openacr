@@ -69,12 +69,14 @@ The terms used in the Conformance Level information are defined as follows:
 
 Notes: GovReady-Q is a web application and an authoring tool. As such the Software &amp; Authoring Tool Notes are all included within the Web for the &#x27;Conformance Level&#x27; and &#x27;Remarks and Explanations&#x27;. There are some elements here that clearly fail WCAG 2.0 A.
 
-Conformance to the 25 criteria listed below is distributed as follows:
+Conformance to the 25 criteria listed below is distributed within each category as follows:
 
-- 32 supported
-- 9 partially supported
-- 7 not supported
-- 52 not applicable
+| Conformance Level  | Web | Electronic Documents | Software | Authoring Tool |
+| ------------------ | --- | -------------------- | -------- | -------------- |
+| Supports           | 8   | 12                   | 0        | 12             |
+| Partially Supports | 7   | 2                    | 0        | 0              |
+| Does Not Support   | 3   | 3                    | 0        | 1              |
+| Not Applicable     | 7   | 8                    | 25       | 12             |
 
 | Criteria                                                                                                           | Conformance Level                                                                                                                                                                   | Remarks and Explanations                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -106,12 +108,14 @@ Conformance to the 25 criteria listed below is distributed as follows:
 
 ### Table 2: Success Criteria, Level AA
 
-Conformance to the 13 criteria listed below is distributed as follows:
+Conformance to the 13 criteria listed below is distributed within each category as follows:
 
-- 10 supported
-- 5 partially supported
-- 2 not supported
-- 30 not applicable
+| Conformance Level  | Web | Electronic Documents | Software | Authoring Tool |
+| ------------------ | --- | -------------------- | -------- | -------------- |
+| Supports           | 3   | 5                    | 0        | 2              |
+| Partially Supports | 3   | 2                    | 0        | 0              |
+| Does Not Support   | 2   | 0                    | 0        | 0              |
+| Not Applicable     | 5   | 6                    | 10       | 9              |
 
 | Criteria                                                                                                      | Conformance Level                                                                                                                                                                   | Remarks and Explanations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -135,12 +139,14 @@ Conformance to the 13 criteria listed below is distributed as follows:
 
 Notes: Not applicable.
 
-Conformance to the 9 criteria listed below is distributed as follows:
+Conformance to the 9 criteria listed below is distributed within each category as follows:
 
-- 2 supported
-- 0 partially supported
-- 3 not supported
-- 4 not applicable
+| Conformance Level  | All |
+| ------------------ | --- |
+| Supports           | 2   |
+| Partially Supports | 0   |
+| Does Not Support   | 3   |
+| Not Applicable     | 4   |
 
 | Criteria                                                                                                  | Conformance Level                   | Remarks and Explanations                                                                                                                               |
 | --------------------------------------------------------------------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -166,12 +172,14 @@ Notes: GovReady is a web application. Software accessibility criteria is not app
 
 Notes: GovReady is a web application and all support documentation is delivered through the web. Additional documentation and services are not available.
 
-Conformance to the 4 criteria listed below is distributed as follows:
+Conformance to the 4 criteria listed below is distributed within each category as follows:
 
-- 0 supported
-- 0 partially supported
-- 0 not supported
-- 4 not applicable
+| Conformance Level  | All |
+| ------------------ | --- |
+| Supports           | 0   |
+| Partially Supports | 0   |
+| Does Not Support   | 0   |
+| Not Applicable     | 4   |
 
 | Criteria                                                                                                    | Conformance Level                 | Remarks and Explanations |
 | ----------------------------------------------------------------------------------------------------------- | --------------------------------- | ------------------------ |
