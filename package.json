@@ -19,7 +19,7 @@
     "chai": "^4.3.4",
     "eslint": "^7.30.0",
     "license-checker-rseidelsohn": "^2.1.1",
-    "mocha": "^9.0.2",
+    "mocha": "^11.0.1",
     "nyc": "^15.1.0",
     "pa11y-ci": "^3.0.1",
     "prettier": "2.3.2",
@@ -40,7 +40,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "nyc --reporter=lcov --reporter=text ./node_modules/.bin/_mocha 'tests/**/*.test.ts'",
+    "test": "./node_modules/.bin/_mocha 'tests/**/*.test.ts'",
+    "test-with-code-coverage": "nyc --reporter=lcov --reporter=text ./node_modules/.bin/_mocha 'tests/**/*.test.ts'",
     "lint": "eslint . --ext .ts",
     "generate-example-output": "npx ts-node src/openacr.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.markdown",
     "generate-drupal-output": "npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.markdown",

@@ -673,7 +673,7 @@ chapters:
         alt_id: use-of-accessibility-services
         components:
           - none
-      - id:  11.5.2.4
+      - id: 11.5.2.4
         handle: 11.5.2.4 Assistive technology
         alt_id: assistive-technology
         components:
@@ -834,7 +834,7 @@ chapters:
         components:
           - none
   - id: en_301_549_ict_providing_relay_or_emergency_service_access
-    label: 'Chapter 13: ICT Providing Relay or Emergency Service Access'
+    label: "Chapter 13: ICT Providing Relay or Emergency Service Access"
     short_label: itc-providing-relay-or-emergency-service-access
     order: 17
     criteria:
